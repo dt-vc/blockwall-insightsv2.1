@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Reports Archive | Blockwall</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="index.html" class="nav-link active">Monthly</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Home
+    </a>
+
+    <div class="archive-header">
+      <h1 class="archive-title">Monthly Reports</h1>
+      <p class="archive-subtitle">Deep-dive monthly reports covering macro trends, thesis updates, sector analysis, and
+        portfolio performance.</p>
+    </div>
+
+    <div class="daily-grid" id="monthly-grid">
+      <!-- Cards loaded dynamically from monthly.json -->
+      <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading...</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+      <span>Blockwall Capital</span>
+    </div>
+    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    // Load and render monthly cards
+    async function loadMonthlyCards() {
+      const grid = document.getElementById('monthly-grid');
+
+      try {
+        const response = await fetch('../data/monthly.json');
+        if (!response.ok) throw new Error('Failed to load data');
+
+        const monthlyData = await response.json();
+
+        if (!monthlyData || monthlyData.length === 0) {
+          grid.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-muted);">No monthly reports available yet.</div>';
+          return;
+        }
+
+        grid.innerHTML = monthlyData.map((item, index) => `
+          <a href="${item.filename}" class="daily-card">
+            <div class="daily-card-image">
+              <img src="${item.thumbnail}" alt="${item.month}" onerror="this.src='https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=200&fit=crop'">
+              ${index === 0 ? '<div class="daily-card-badge">Latest</div>' : ''}
+            </div>
+            <div class="daily-card-content">
+              <div class="daily-card-date">${item.month}</div>
+              <h3 class="daily-card-title">${item.title}</h3>
+              <p class="daily-card-snippet">${item.snippet}</p>
+              <div class="daily-card-stats">
+                <span class="daily-card-stat">📊 ${item.stories} stories</span>
+                <span class="daily-card-stat bullish">🟢 ${item.bullish}</span>
+                <span class="daily-card-stat bearish">🔴 ${item.bearish}</span>
+              </div>
+            </div>
+          </a>
+        `).join('');
+
+      } catch (error) {
+        console.error('Error loading monthly data:', error);
+        grid.innerHTML = `
+          <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+            Unable to load monthly reports. Please refresh the page.
+          </div>
+        `;
+      }
+    }
+
+    // Load on page ready
+    document.addEventListener('DOMContentLoaded', loadMonthlyCards);
+  </script>
+</body>
+
+</html>

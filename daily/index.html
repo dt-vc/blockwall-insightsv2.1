@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Insights Archive | Blockwall</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Home
+    </a>
+
+    <div class="archive-header">
+      <h1 class="archive-title">Daily Insights</h1>
+      <p class="archive-subtitle">Archive of all daily newsletters. Click any edition to read.</p>
+    </div>
+
+    <div class="daily-grid" id="daily-grid">
+      <!-- Cards loaded dynamically from daily.json -->
+      <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading...</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+      <span>Blockwall Capital</span>
+    </div>
+    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    // Format date for display
+    function formatDate(dateStr) {
+      const date = new Date(dateStr + 'T00:00:00');
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    }
+
+    // Check if date is today or yesterday
+    function isRecent(dateStr) {
+      const today = new Date();
+      const date = new Date(dateStr + 'T00:00:00');
+      const diffDays = Math.floor((today - date) / (1000 * 60 * 60 * 24));
+      return diffDays <= 1;
+    }
+
+    // Load and render daily cards
+    async function loadDailyCards() {
+      const grid = document.getElementById('daily-grid');
+      
+      try {
+        const response = await fetch('../data/daily.json');
+        if (!response.ok) throw new Error('Failed to load data');
+        
+        const dailyData = await response.json();
+        
+        if (!dailyData || dailyData.length === 0) {
+          grid.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-muted);">No newsletters available yet.</div>';
+          return;
+        }
+
+        // Sort by date descending (newest first)
+        dailyData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        grid.innerHTML = dailyData.map((item, index) => `
+          <a href="${item.filename}" class="daily-card">
+            <div class="daily-card-image">
+              <img src="${item.thumbnail}" alt="${formatDate(item.date)}" onerror="this.src='https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=200&fit=crop'">
+              ${index === 0 ? '<div class="daily-card-badge">Latest</div>' : ''}
+            </div>
+            <div class="daily-card-content">
+              <div class="daily-card-date">${formatDate(item.date)}</div>
+              <h3 class="daily-card-title">${item.title}</h3>
+              <p class="daily-card-snippet">${item.snippet}</p>
+              <div class="daily-card-stats">
+                <span class="daily-card-stat">📊 ${item.sources} sources</span>
+                <span class="daily-card-stat bullish">🟢 ${item.bullish}</span>
+                <span class="daily-card-stat bearish">🔴 ${item.bearish}</span>
+              </div>
+            </div>
+          </a>
+        `).join('');
+
+      } catch (error) {
+        console.error('Error loading daily data:', error);
+        grid.innerHTML = `
+          <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+            Unable to load newsletters. Please refresh the page.
+          </div>
+        `;
+      }
+    }
+
+    // Load on page ready
+    document.addEventListener('DOMContentLoaded', loadDailyCards);
+  </script>
+</body>
+</html>

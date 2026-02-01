@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Insights | Crypto & Web3 Intelligence</title>
+  <meta name="description" content="Strategic crypto intelligence for founders, investors, and Web3 professionals. Daily analysis from 100+ sources.">
+  <link rel="icon" type="image/png" href="assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-theme="dark">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="daily/index.html" class="nav-link">Daily</a>
+        <a href="weekly/index.html" class="nav-link">Weekly</a>
+        <a href="monthly/index.html" class="nav-link">Monthly</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Updated daily at 9:00 CET
+    </div>
+    <h1>Blockwall Insights</h1>
+    <p class="hero-subtitle">
+      Strategic crypto intelligence for founders, investors, and Web3 professionals.
+    </p>
+    <a href="daily/index.html" class="hero-cta">
+      Read Latest Edition
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">100+</div>
+        <div class="stat-label">Sources Daily</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">6</div>
+        <div class="stat-label">Key Stories</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">24h</div>
+        <div class="stat-label">Coverage</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">AI</div>
+        <div class="stat-label">Curated</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Archive -->
+  <section class="section alt-bg">
+    <div class="section-header">
+      <span class="section-label">Newsletter Archive</span>
+      <h2 class="section-title">Choose Your Format</h2>
+      <p class="section-desc">From daily briefs to monthly deep-dives, get the crypto intelligence that fits your schedule.</p>
+    </div>
+
+    <div class="types-grid">
+      <a href="daily/index.html" class="type-card">
+        <div class="type-icon">📰</div>
+        <h3 class="type-title">Daily Insights</h3>
+        <p class="type-desc">Essential crypto developments, funding rounds, and regulatory updates.</p>
+        <div class="type-meta">
+          <span>~100 sources</span>
+          <span>6 stories</span>
+          <span>2 min</span>
+        </div>
+      </a>
+
+      <a href="weekly/index.html" class="type-card">
+        <div class="type-icon">📊</div>
+        <h3 class="type-title">Weekly Digest</h3>
+        <p class="type-desc">Comprehensive weekly analysis with market trends and portfolio insights.</p>
+        <div class="type-meta">
+          <span>~500 sources</span>
+          <span>15 stories</span>
+          <span>8 min</span>
+        </div>
+      </a>
+
+      <a href="monthly/index.html" class="type-card">
+        <div class="type-icon">📈</div>
+        <h3 class="type-title">Monthly Report</h3>
+        <p class="type-desc">Deep-dive reports covering macro trends, thesis updates, and sector analysis.</p>
+        <div class="type-meta">
+          <span>~800 sources</span>
+          <span>20 stories</span>
+          <span>15 min</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Substack Articles -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-label">From Our Blog</span>
+      <h2 class="section-title">Latest Analysis</h2>
+      <p class="section-desc">Long-form research and investment theses from the Blockwall team.</p>
+    </div>
+
+    <div class="substack-grid" id="substack-grid">
+      <div class="loading-text">Loading articles...</div>
+    </div>
+  </section>
+
+  <!-- LinkedIn Activity -->
+  <section class="section alt-bg">
+    <div class="section-header">
+      <span class="section-label">From LinkedIn</span>
+      <h2 class="section-title">Dominic's Take</h2>
+      <p class="section-desc">Real-time perspectives and industry commentary.</p>
+    </div>
+
+    <div class="linkedin-grid" id="linkedin-grid">
+      <div class="loading-text">Loading posts...</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+          <span>Blockwall Capital</span>
+        </div>
+        <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    // Format date helper
+    function formatDate(dateStr) {
+      const date = new Date(dateStr);
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    }
+
+    // Relative date helper
+    function relativeDate(dateStr) {
+      const date = new Date(dateStr);
+      const now = new Date();
+      const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+      if (diffDays === 0) return 'Today';
+      if (diffDays === 1) return 'Yesterday';
+      if (diffDays < 7) return `${diffDays}d ago`;
+      return formatDate(dateStr);
+    }
+
+    // Load Substack articles
+    async function loadSubstack() {
+      const grid = document.getElementById('substack-grid');
+      
+      try {
+        const response = await fetch('data/substack.json');
+        if (!response.ok) throw new Error('Failed to load');
+        
+        const articles = await response.json();
+        
+        if (!articles.length) {
+          grid.innerHTML = '<div class="empty-state">No articles available.</div>';
+          return;
+        }
+
+        grid.innerHTML = articles.slice(0, 3).map(article => `
+          <a href="${article.url}" target="_blank" class="substack-card">
+            <div class="substack-card-image">
+              <img src="${article.image}" alt="${article.title}" onerror="this.style.display='none'">
+            </div>
+            <div class="substack-card-content">
+              <div class="substack-card-meta">
+                <span class="substack-card-author">${article.author}</span>
+                <span class="substack-card-dot"></span>
+                <span class="substack-card-date">${formatDate(article.date)}</span>
+              </div>
+              <h3 class="substack-card-title">${article.title}</h3>
+              <p class="substack-card-excerpt">${article.excerpt}</p>
+            </div>
+          </a>
+        `).join('');
+
+      } catch (error) {
+        console.error('Substack load error:', error);
+        grid.innerHTML = '<div class="empty-state">Unable to load articles.</div>';
+      }
+    }
+
+    // Load LinkedIn posts
+    async function loadLinkedIn() {
+      const grid = document.getElementById('linkedin-grid');
+      
+      try {
+        const response = await fetch('data/linkedin.json');
+        if (!response.ok) throw new Error('Failed to load');
+        
+        const posts = await response.json();
+        
+        if (!posts.length) {
+          grid.innerHTML = '<div class="empty-state">No posts available.</div>';
+          return;
+        }
+
+        grid.innerHTML = posts.slice(0, 3).map(post => `
+          <a href="${post.url}" target="_blank" class="linkedin-card">
+            <div class="linkedin-card-header">
+              <img src="assets/images/blockwall-logo.png" alt="${post.author}" class="linkedin-card-avatar">
+              <div class="linkedin-card-author-info">
+                <div class="linkedin-card-author">${post.author}</div>
+                <div class="linkedin-card-handle">${post.handle}</div>
+              </div>
+              <span class="linkedin-card-type ${post.type === 'repost' ? 'repost' : ''}">${post.type}</span>
+            </div>
+            <div class="linkedin-card-content">${post.content}</div>
+            <div class="linkedin-card-footer">
+              <span class="linkedin-card-date">${relativeDate(post.date)}</span>
+              <span class="linkedin-card-link">
+                View on LinkedIn
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </span>
+            </div>
+          </a>
+        `).join('');
+
+      } catch (error) {
+        console.error('LinkedIn load error:', error);
+        grid.innerHTML = '<div class="empty-state">Unable to load posts.</div>';
+      }
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      loadSubstack();
+      loadLinkedIn();
+    });
+  </script>
+</body>
+</html>

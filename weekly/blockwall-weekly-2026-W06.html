@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Weekly Insights - Week 6, 2026</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img {
+      max-height: 220px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .exec-summary {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+    }
+
+    .exec-summary h2 {
+      color: #8b7cf6;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .exec-summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exec-summary li {
+      padding: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .exec-summary li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #8b7cf6;
+      font-weight: bold;
+    }
+
+    .signals-section {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+    }
+
+    .signal-item {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .signal-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .signal-title {
+      color: #22c55e;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .signal-analysis {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .category-section {
+      margin: 36px 0;
+    }
+
+    .category-title {
+      color: #8b7cf6;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #8b7cf6;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-count {
+      background: #8b7cf6;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+    }
+
+    .week-badge {
+      display: inline-block;
+      background: #8b7cf6;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    @media (max-width: 768px) {
+      .stories-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .story-card {
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .story-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .story-card-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .story-card-content {
+      padding: 16px;
+    }
+
+    .story-card-title {
+      color: #f8fafc;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .story-card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .story-card-title a:hover {
+      color: #8b7cf6;
+    }
+
+    .story-card-meta {
+      color: #64748b;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .story-card-summary {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .secondary-section {
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+
+    .secondary-title {
+      color: #f8fafc;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="index.html" class="nav-link active">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">🌙</span></button>
+    </div>
+  </nav>
+
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Weekly Archive
+    </a>
+
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital • Weekly Digest</div>
+      <h1>Week 6 Insights</h1>
+      <div class="newsletter-date">January 26 - February 1, 2026</div>
+    </div>
+
+    <div class="newsletter-stats">
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">493</div>
+        <div class="newsletter-stat-label">Stories Analyzed</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">15</div>
+        <div class="newsletter-stat-label">Key Stories</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bullish">105</div>
+        <div class="newsletter-stat-label">Bullish</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bearish">166</div>
+        <div class="newsletter-stat-label">Bearish</div>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Executive Summary</h2>
+      <ul>
+        <li>UAE-backed investor acquires 49% stake in Trump-linked World Liberty Financial for $500 million signaling
+          strong institutional crypto interest ahead of policy shifts.</li>
+        <li>Step Finance treasury breach causes $27 million SOL loss with STEP token crashing 90% underscoring urgent
+          need for enhanced DeFi security protocols.</li>
+        <li>Crypto ETFs record $1.7 billion outflows amid market crash erasing $100 billion as Bitcoin dips to $77,000
+          and liquidations exceed $2.5 billion.</li>
+        <li>Ethereum trader liquidation triggers $220 million loss during 10% ETH plunge highlighting leverage risks in
+          volatile derivatives markets.</li>
+        <li>Bitcoin ETFs see $818 million single-day pullback reflecting institutional repositioning yet total AUM
+          remains resilient at $124.8 billion.</li>
+        <li>North Korean KONNI group deploys AI malware against blockchain developers while address poisoning scams
+          drain $12.4 million in Ether demanding vigilant defenses.</li>
+        <li>Persistent ETF outflows signal tactical risk-off but structural demand intact positioning crypto for rebound
+          with macro easing on horizon.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">&#x1F525; Top Stories of the Week</h2>
+    <div class="story">
+      <h2 class="story-title">UAE-Backed Investor Took 49% Stake in Trump-Linked Crypto Firm for $500M</h2>
+      <img class="story-img"
+        src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2025-12/019b5031-0b53-72e0-8f7d-0099450df5ec.jpg"
+        alt="UAE-Backed Investor Took 49% Stake in Trump-Linked Crypto Firm for $500M"
+        onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Investment &bull; 2026-02-01 &bull; Score: 7/10</div>
+      <p class="story-summary">A UAE-backed investment vehicle is acquiring a 49% stake in World Liberty Financial, a
+        crypto firm linked to Donald Trump, for $500 million. The deal precedes Trump's potential return to office.</p>
+      <a class="story-link"
+        href="https://cointelegraph.com/news/uae-backed-firm-buys-49-percent-trump-linked-world-liberty-wsj"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Step Finance Treasury Breach Sparks $27M SOL Loss, STEP Plunges</h2>
+      <img class="story-img"
+        src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c1836-a550-7fe6-98db-1cbb83b613f7.jpg"
+        alt="Step Finance Treasury Breach Sparks $27M SOL Loss, STEP Plunges" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Security &bull; 2026-02-01 &bull; Score: 7/10</div>
+      <p class="story-summary">Step Finance experienced a treasury wallet breach resulting in the loss of 261,854 SOL,
+        valued at approximately $27 million. The STEP token price plummeted by 90% following the incident.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/step-finance-treasury-breach-solana-step-token-crash"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto ETFs see biggest exit since November – Assessing the $1.7B drain!</h2>
+      <img class="story-img" src="https://ambcrypto.com/wp-content/uploads/2026/01/Lazaro-62.jpg"
+        alt="Crypto ETFs see biggest exit since November – Assessing the $1.7B drain!"
+        onerror="this.style.display='none'">
+      <div class="story-meta">Muriuki Lazaro &bull; Investment &bull; 2026-02-01 &bull; Score: 7/10</div>
+      <p class="story-summary">Crypto markets experienced a significant $1.7 billion outflow from ETFs, indicating a
+        contraction in liquidity. This outflow suggests repositioning driven by rotation within the crypto investment
+        landscape.</p>
+      <a class="story-link"
+        href="https://ambcrypto.com/crypto-etfs-see-biggest-exit-since-november-assessing-the-1-7b-drain/"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Ethereum news: One trader just lost $220 million as ETH plunged 10%</h2>
+      <img class="story-img"
+        src="https://cdn.sanity.io/images/s3y3vcno/production/4e61fe65085f3552db4ece2a2464a9d39eb136ac-1920x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg"
+        alt="Ethereum news: One trader just lost $220 million as ETH plunged 10%" onerror="this.style.display='none'">
+      <div class="story-meta">Shaurya Malwa &bull; Ethereum &bull; 2026-02-01 &bull; Score: 7/10</div>
+      <p class="story-summary">A trader lost $220 million due to an ETH price plunge, triggered by a massive liquidation
+        on Hyperliquid. This event contributed to over $2.5 billion in total crypto liquidations within 24 hours.</p>
+      <a class="story-link"
+        href="https://www.coindesk.com/markets/2026/02/01/single-trader-just-lost-usd220-million-as-ether-plunged-10"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto Crash: Liquidations Top $2.5 Billion as Bitcoin, Ethereum and XRP Prices Plummet
+      </h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop"
+        alt="Crypto Crash: Liquidations Top $2.5 Billion as Bitcoin, Ethereum and XRP Prices Plummet"
+        onerror="this.style.display='none'">
+      <div class="story-meta">Andrew Hayward &bull; Bitcoin &bull; 2026-01-31 &bull; Score: 7/10</div>
+      <p class="story-summary">The crypto market experienced a significant crash, with Bitcoin falling to nearly
+        $77,000. Liquidations topped $2.5 billion as Bitcoin, Ethereum, and XRP prices plummeted.</p>
+      <a class="story-link"
+        href="https://decrypt.co/356557/crypto-crash-liquidations-2-5-billion-bitcoin-ethereum-xrp-plummet"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Investors Pull Nearly $818 Million From Bitcoin ETFs as Cryptocurrency Tanks </h2>
+      <img class="story-img"
+        src="https://cdn.benzinga.com/files/images/story/2026/01/31/3d-Rendering-Of-Exchange-Traded-Fund-etf.jpeg?width=1200&height=800&fit=crop"
+        alt="Investors Pull Nearly $818 Million From Bitcoin ETFs as Cryptocurrency Tanks "
+        onerror="this.style.display='none'">
+      <div class="story-meta">Bibhu Pattnaik &bull; Bitcoin &bull; 2026-01-31 &bull; Score: 7/10</div>
+      <p class="story-summary">Bitcoin ETFs experienced a significant one-day reversal last week with investors pulling
+        nearly $818 million. This occurred as the price of Bitcoin decreased.</p>
+      <a class="story-link"
+        href="https://www.benzinga.com/crypto/cryptocurrency/26/01/50286755/investors-pull-nearly-818-million-from-bitcoin-etfs-as-cryptocurrency-tanks"
+        target="_blank">Read full article &rarr;</a>
+    </div>
+
+    <h3 class="section-title" style="margin-top: 32px;">&#x1F4F0; More Key Stories</h3>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_wired.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1769874772/wired_hacklab-i-escaped-chinese-mafia-crypto-slavery.jpg?mbid=social_retweet"
+          alt="I Escaped Chinese Mafia Crypto Slavery" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://www.wired.com/video/watch/hacklab-i-escaped-chinese-mafia-crypto-slavery/" target="_blank">I
+              Escaped Chinese Mafia Crypto Slavery</a></div>
+          <div class="story-card-meta">Condé Nast &bull; Security &bull; 2026-01-31</div>
+          <div class="story-card-summary">A computer engineer from India was trapped in a forced labor operation in
+            Laos, where he was forced to lure Western victims into fake crypto investmen...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://cryptoslate.com/wp-content/uploads/2026/01/ethereum-xrp-down.jpg"
+          alt="Weekend crypto market crash erases $100B as Israel strikes Gaza with ETH and XRP leading losses"
+          onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://cryptoslate.com/weekend-crypto-market-crash-erases-100b-as-israel-strikes-gaza-with-eth-and-xrp-leading-losses/"
+              target="_blank">Weekend crypto market crash erases $100B as Israel strikes Gaza with ETH and XRP leading
+              losses</a></div>
+          <div class="story-card-meta">Liam 'Akiba' Wright &bull; Other &bull; 2026-01-31</div>
+          <div class="story-card-summary">The crypto market experienced a significant crash over the weekend, erasing
+            $100 billion in value. ETH and XRP led the losses, triggered by geopolitic...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://mdb.ad-hoc-news.de/bilder/bild-2451597_600_800.jpg"
+          alt="KONNI-Gruppe setzt KI-generierte Schadsoftware gegen Blockchain-Entwickler ein"
+          onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://www.ad-hoc-news.de/boerse/ueberblick/konni-gruppe-setzt-ki-generierte-schadsoftware-gegen-blockchain-entwickler/68538204"
+              target="_blank">KONNI-Gruppe setzt KI-generierte Schadsoftware gegen Blockchain-Entwickler ein</a></div>
+          <div class="story-card-meta">Redaktion ad-hoc-news.de &bull; Security &bull; 2026-01-31</div>
+          <div class="story-card-summary">North Korean hackers are using AI to create sophisticated malware targeting
+            blockchain developers. The KONNI group is reportedly behind this new tacti...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop"
+          alt="Crypto Investor Loses Over $12 Million in Ethereum to ‘Address Poisoning’ Scam"
+          onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://beincrypto.com/ethereum-holder-address-poisoning-attack/"
+              target="_blank">Crypto Investor Loses Over $12 Million in Ethereum to ‘Address Poisoning’ Scam</a></div>
+          <div class="story-card-meta">Oluwapelumi Adejumo &bull; Security &bull; 2026-01-31</div>
+          <div class="story-card-summary">A crypto investor lost $12.4 million in Ether due to an address poisoning scam
+            where the attacker spoofed the victim's wallet address. This highlights...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://imgcdn.cna.com.tw/Eng/images/default.png"
+          alt="9 detained in NT$5 billion crypto fraud affecting nearly 1,000 victims "
+          onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://focustaiwan.tw/society/202601310014" target="_blank">9 detained
+              in NT$5 billion crypto fraud affecting nearly 1,000 victims </a></div>
+          <div class="story-card-meta">Focus Taiwan - CNA English News &bull; Security &bull; 2026-01-31</div>
+          <div class="story-card-summary">Nine individuals were detained for their alleged involvement in a
+            cryptocurrency scam that defrauded nearly 1,000 victims of more than NT$5 billion (U...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-01/019c1385-7cd0-71d2-ae7b-e20dd0faa66c.jpg"
+          alt="US Treasury Sanctions Iran-Linked Crypto Exchanges for First Time" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://cointelegraph.com/news/us-treasury-sanctions-iran-linked-crypto-exchanges-first-time"
+              target="_blank">US Treasury Sanctions Iran-Linked Crypto Exchanges for First Time</a></div>
+          <div class="story-card-meta">News &bull; Regulation &bull; 2026-01-31</div>
+          <div class="story-card-summary">The US Treasury has sanctioned two crypto exchanges linked to Iran, marking
+            the first time digital asset platforms have been targeted as part of sanct...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-01/019c133a-1702-7f2e-bc14-a660adfead20.jpg"
+          alt="Bitcoin And Ether ETFs Post $1.82B Outflows Across Trading Week" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://cointelegraph.com/news/crypto-etf-bitcoin-ether-outflows-metals-sentiment-down"
+              target="_blank">Bitcoin And Ether ETFs Post $1.82B Outflows Across Trading Week</a></div>
+          <div class="story-card-meta">News &bull; Bitcoin &bull; 2026-01-31</div>
+          <div class="story-card-summary">Spot Bitcoin and Ether ETFs experienced significant outflows of approximately
+            $1.82 billion during the trading week. This outflow is attributed to wea...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://www.dlnews.com/resizer/v2/IWUFQTYRYJAH7AXFAMBVFD6HOE.jpg?smart=true&auth=a68ce3b5b1d184b33f655b7cadec75fd24673d5395427859d43ff4db8189367b&width=1200&height=630"
+          alt="VCs indulge in $1.4bn crypto bonanza in January" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://www.dlnews.com/articles/markets/vcs-indulge-in-over-1bn-crypto-bonanza-in-january/"
+              target="_blank">VCs indulge in $1.4bn crypto bonanza in January</a></div>
+          <div class="story-card-meta">Lance Datskoluo &bull; Investment &bull; 2026-01-31</div>
+          <div class="story-card-summary">Venture capital investment in crypto reached $1.4 billion in January,
+            indicating renewed interest in the sector. Institutional infrastructure is the m...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img"
+          src="https://www.dlnews.com/resizer/v2/WOUOTA3FDJCGPMK3LJLVLVO56E.jpg?smart=true&auth=27b774389249489121addd65ae70c8af232045ca6b9f6fc17faa510d198a9adc&width=1200&height=630"
+          alt="TheDAO returns with $220m to fund Ethereum security 10 years after catastrophic hack"
+          onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a
+              href="https://www.dlnews.com/articles/defi/thedao-returns-to-fund-ethereum-safety-10-years-after-hack/"
+              target="_blank">TheDAO returns with $220m to fund Ethereum security 10 years after catastrophic hack</a>
+          </div>
+          <div class="story-card-meta">Aleks Gilbert &bull; Ethereum &bull; 2026-01-30</div>
+          <div class="story-card-summary">TheDAO is relaunching nearly 10 years after its infamous hack, with plans to
+            stake approximately 75,000 unclaimed Ether to fund Ethereum security init...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signals-section">
+      <h2 class="section-title" style="color: #22c55e; margin-bottom: 24px;">&#x1F4E1; Notable Signals &amp; Patterns
+      </h2>
+      <div class="signal-item">
+        <div class="signal-title">Massive ETF Outflows Signal Institutional Rotation</div>
+        <p class="signal-analysis">Crypto ETFs recorded $1.82 billion in outflows over the trading week, with Bitcoin
+          ETFs alone seeing $1.137 billion net exits from January 20 to 26, marking the heaviest weekly drain since
+          early January. This shift from spot ETFs to alternatives like precious metals or private deals indicates
+          weakening spot demand and repositioning amid price volatility, as BTC tested support at $86,000 and orderbook
+          depth dropped 7.2 percent below seven-day averages. The rotation underscores a broader contraction in public
+          market liquidity favoring less regulated channels.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">VC Capital Floods Institutional Infrastructure</div>
+        <p class="signal-analysis">Venture capital poured $1.4 billion into crypto in January, the highest monthly total
+          recently, with institutional infrastructure emerging as the top sector amid renewed investor appetite. Deals
+          like the UAE-backed $500 million acquisition of 49 percent stake in Trump-linked World Liberty Financial and
+          Kraken-backed SPAC's $345 million Nasdaq IPO highlight accelerating private capital inflows into compliant
+          platforms. This contrasts sharply with public ETF outflows, pointing to a structural pivot toward
+          venture-backed builds over traded assets.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Regulatory Enforcement Targets Sanctions Evasion and Mixers</div>
+        <p class="signal-analysis">US Treasury sanctioned Iran-linked crypto exchanges for the first time while DOJ
+          finalized $400 million forfeiture from Helix mixer tied to darknet laundering, escalating crackdowns on
+          illicit finance. Arrests like the Barcelona Chinese salon owner funneling $715,000 to Hamas via crypto further
+          signal global authorities weaponizing crypto trails against terror funding. These actions mark a hardening
+          stance, potentially fragmenting exchange liquidity and pushing volume toward decentralized or offshore
+          alternatives.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Security Breaches Expose Wallet and Developer Vulnerabilities</div>
+        <p class="signal-analysis">Step Finance lost $27 million in SOL to a treasury breach, crashing STEP token 90
+          percent, while a $12.4 million Ethereum address poisoning scam and North Korean KONNI group's AI malware
+          against blockchain devs underscore rising sophistication in attacks. TheDAO's $220 million relaunch from
+          unclaimed hack funds to bolster Ethereum security reflects ecosystem response to persistent threats. This
+          cluster indicates evolving attack vectors beyond phishing, driving demand for advanced audits and insurance in
+          DeFi.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Stablecoin Divergence Reflects Retail vs Institutional Flows</div>
+        <p class="signal-analysis">Stablecoin supply contracted $3.2 billion weekly, led by $3.6 billion USDC burns
+          signaling institutional redemptions, while USDT gained $864 million on retail and offshore preference. This
+          USDT-USDC split amid $267.9 billion total supply highlights shifting liquidity preferences, with Tether
+          capturing flight-to-safety flows during market stress. The pattern suggests deepening market segmentation,
+          where regulated stables face outflows as unregulated ones consolidate dominance.</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="category-section">
+      <h3 class="category-title">Investment <span class="category-count">28</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/uae-backed-firm-buys-49-percent-trump-linked-world-liberty-wsj"
+            target="_blank">UAE-Backed Investor Took 49% Stake in Trump-Linked Crypto Firm for $500M</a> <span
+            class="other-source">(News, 2026-02-01)</span></li>
+        <li><a href="https://ambcrypto.com/crypto-etfs-see-biggest-exit-since-november-assessing-the-1-7b-drain/"
+            target="_blank">Crypto ETFs see biggest exit since November – Assessing the $1.7B drain!</a> <span
+            class="other-source">(Muriuki Lazaro, 2026-02-01)</span></li>
+        <li><a href="https://www.dlnews.com/articles/markets/vcs-indulge-in-over-1bn-crypto-bonanza-in-january/"
+            target="_blank">VCs indulge in $1.4bn crypto bonanza in January</a> <span class="other-source">(Lance
+            Datskoluo, 2026-01-31)</span></li>
+        <li><a href="https://cointelegraph.com/news/kraken-krakacquisition-spac-345m-upsized-nasdaq-ipo"
+            target="_blank">Kraken-Backed SPAC Closes $345M Nasdaq IPO</a> <span class="other-source">(News,
+            2026-01-30)</span></li>
+        <li><a href="https://cointelegraph.com/news/talos-series-b-150m-robinhood-sony" target="_blank">Talos Extends
+            Series B to $150M with Robinhood, Sony Backing</a> <span class="other-source">(News, 2026-01-29)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Security <span class="category-count">32</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/step-finance-treasury-breach-solana-step-token-crash"
+            target="_blank">Step Finance Treasury Breach Sparks $27M SOL Loss, STEP Plunges</a> <span
+            class="other-source">(News, 2026-02-01)</span></li>
+        <li><a href="https://www.wired.com/video/watch/hacklab-i-escaped-chinese-mafia-crypto-slavery/"
+            target="_blank">I Escaped Chinese Mafia Crypto Slavery</a> <span class="other-source">(Condé Nast,
+            2026-01-31)</span></li>
+        <li><a
+            href="https://www.ad-hoc-news.de/boerse/ueberblick/konni-gruppe-setzt-ki-generierte-schadsoftware-gegen-blockchain-entwickler/68538204"
+            target="_blank">KONNI-Gruppe setzt KI-generierte Schadsoftware gegen Blockchain-Entwickler ein</a> <span
+            class="other-source">(Redaktion ad-hoc-news.de, 2026-01-31)</span></li>
+        <li><a href="https://beincrypto.com/ethereum-holder-address-poisoning-attack/" target="_blank">Crypto Investor
+            Loses Over $12 Million in Ethereum to ‘Address Poisoning’ Scam</a> <span class="other-source">(Oluwapelumi
+            Adejumo, 2026-01-31)</span></li>
+        <li><a href="https://focustaiwan.tw/society/202601310014" target="_blank">9 detained in NT$5 billion crypto
+            fraud affecting nearly 1,000 victims </a> <span class="other-source">(Focus Taiwan - CNA English News,
+            2026-01-31)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Ethereum <span class="category-count">24</span></h3>
+      <ul class="other-list">
+        <li><a
+            href="https://www.coindesk.com/markets/2026/02/01/single-trader-just-lost-usd220-million-as-ether-plunged-10"
+            target="_blank">Ethereum news: One trader just lost $220 million as ETH plunged 10%</a> <span
+            class="other-source">(Shaurya Malwa, 2026-02-01)</span></li>
+        <li><a href="https://www.dlnews.com/articles/defi/thedao-returns-to-fund-ethereum-safety-10-years-after-hack/"
+            target="_blank">TheDAO returns with $220m to fund Ethereum security 10 years after catastrophic hack</a>
+          <span class="other-source">(Aleks Gilbert, 2026-01-30)</span>
+        </li>
+        <li><a
+            href="https://cvj.ch/aktuell/news/thedao-startet-als-ethereum-security-fund-mit-220-millionen-dollar-neu/"
+            target="_blank">TheDAO startet als Ethereum Security Fund mit 220 Millionen Dollar neu</a> <span
+            class="other-source">(Redaktion cvj.ch, 2026-01-29)</span></li>
+        <li><a
+            href="https://www.theblock.co/post/387927/infamous-hyperunit-whale-exits-entire-eth-position-for-250-million-loss-left-with-53-in-account-arkham"
+            target="_blank">Infamous 'Hyperunit whale' exits entire ETH position for $250 million loss, left with $53 in
+            account: Arkham</a> <span class="other-source">(Zack Abrams, 2026-01-31)</span></li>
+        <li><a href="https://cointelegraph.com/news/bitmine-immersion-technologies-ether-losses-crypto-liquidation"
+            target="_blank">BitMine Faces $6B Unrealized Ether Loss as Crypto Sell-Off Deepens</a> <span
+            class="other-source">(News, 2026-01-31)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Bitcoin <span class="category-count">108</span></h3>
+      <ul class="other-list">
+        <li><a href="https://decrypt.co/356557/crypto-crash-liquidations-2-5-billion-bitcoin-ethereum-xrp-plummet"
+            target="_blank">Crypto Crash: Liquidations Top $2.5 Billion as Bitcoin, Ethereum and XRP Prices Plummet</a>
+          <span class="other-source">(Andrew Hayward, 2026-01-31)</span>
+        </li>
+        <li><a
+            href="https://www.benzinga.com/crypto/cryptocurrency/26/01/50286755/investors-pull-nearly-818-million-from-bitcoin-etfs-as-cryptocurrency-tanks"
+            target="_blank">Investors Pull Nearly $818 Million From Bitcoin ETFs as Cryptocurrency Tanks </a> <span
+            class="other-source">(Bibhu Pattnaik, 2026-01-31)</span></li>
+        <li><a href="https://cointelegraph.com/news/crypto-etf-bitcoin-ether-outflows-metals-sentiment-down"
+            target="_blank">Bitcoin And Ether ETFs Post $1.82B Outflows Across Trading Week</a> <span
+            class="other-source">(News, 2026-01-31)</span></li>
+        <li><a href="https://ambcrypto.com/all-about-metaplanets-bitcoin-strategy-after-raising-137m/"
+            target="_blank">All about Metaplanet’s Bitcoin strategy after raising $137M</a> <span
+            class="other-source">(Emilio Munoru, 2026-01-30)</span></li>
+        <li><a href="https://cointelegraph.com/news/bitcoin-falls-to-81k-causing-billions-in-liquidations"
+            target="_blank">Bitcoin Crashes To Nine-Month Low On Tariffs, Liquidations</a> <span
+            class="other-source">(News, 2026-01-30)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Other <span class="category-count">47</span></h3>
+      <ul class="other-list">
+        <li><a
+            href="https://cryptoslate.com/weekend-crypto-market-crash-erases-100b-as-israel-strikes-gaza-with-eth-and-xrp-leading-losses/"
+            target="_blank">Weekend crypto market crash erases $100B as Israel strikes Gaza with ETH and XRP leading
+            losses</a> <span class="other-source">(Liam 'Akiba' Wright, 2026-01-31)</span></li>
+        <li><a
+            href="https://www.coindesk.com/markets/2026/01/31/eth-sol-and-doge-slide-7-as-usd850-million-bullish-bets-end-up-liquidated"
+            target="_blank">ETH, SOL, DOGE price news: Tokens drop 6% as weekend liquidations hit crypto majors</a>
+          <span class="other-source">(Shaurya Malwa, 2026-01-31)</span>
+        </li>
+        <li><a
+            href="https://www.dlnews.com/articles/people-culture/iranians-tap-mesh-network-to-reveal-depths-of-chaos/"
+            target="_blank">Iranians tap decentralised networks to reveal depths of chaos as thousands revolt </a> <span
+            class="other-source">(Liam Kelly, 2026-01-31)</span></li>
+        <li><a
+            href="https://news.bitcoin.com/de/ich-bin-sehr-optimistisch-ripple-ceo-geht-auf-rekord-und-prognostiziert-crypto-allzeithoch/"
+            target="_blank">'Ich bin sehr optimistisch': Ripple-CEO geht auf Rekord und prognostiziert Crypto
+            Allzeithoch</a> <span class="other-source">(Kevin Helms, 2026-01-26)</span></li>
+        <li><a href="https://www.binance.com/fr-AF/square/post/35599045891641" target="_blank">Ripple’s Strategic $109
+            Billion XRP Sales Reveal Decentralization Blueprint</a> <span class="other-source">(Binance Square,
+            2026-01-26)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Regulation <span class="category-count">122</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/us-treasury-sanctions-iran-linked-crypto-exchanges-first-time"
+            target="_blank">US Treasury Sanctions Iran-Linked Crypto Exchanges for First Time</a> <span
+            class="other-source">(News, 2026-01-31)</span></li>
+        <li><a
+            href="https://www.scmp.com/news/world/europe/article/3341897/spain-arrests-chinese-hair-salon-owner-funding-hamas-crypto"
+            target="_blank">Chinese hair salon owner arrested in Barcelona for funding Hamas via crypto</a> <span
+            class="other-source">(South China Morning Post, 2026-01-30)</span></li>
+        <li><a href="https://cryptonews.com/news/us-doj-finalizes-400m-forfeiture-linked-to-helix-crypto-mixer/"
+            target="_blank">US DOJ Finalizes $400M Forfeiture Linked to Helix Crypto Mixer</a> <span
+            class="other-source">(Amin Ayan, 2026-01-30)</span></li>
+        <li><a href="https://www.propublica.org/article/todd-blanche-crypto-conflict-senator-letter" target="_blank">Six
+            Senators Accuse Deputy Attorney General of “Glaring” Crypto Conflict, Cite ProPublica Investigation</a>
+          <span class="other-source">(Diego Sorbara, 2026-01-29)</span>
+        </li>
+        <li><a
+            href="https://www.cnbc.com/2026/01/29/senate-ag-committee-advances-crypto-bill-to-establish-cftc-regulatory-authority.html"
+            target="_blank">Senate Ag Committee advances crypto bill to establish CFTC regulatory authority</a> <span
+            class="other-source">(Talia Kaplan, 2026-01-29)</span></li>
+      </ul>
+    </div>
+    <div class="secondary-section">
+      <h3 class="secondary-title">&#x1F4D1; Also Worth Reading (15 more stories)</h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/kraken-krakacquisition-spac-345m-upsized-nasdaq-ipo"
+            target="_blank">Kraken-Backed SPAC Closes $345M Nasdaq IPO</a> <span class="other-source">(News)</span></li>
+        <li><a
+            href="https://www.scmp.com/news/world/europe/article/3341897/spain-arrests-chinese-hair-salon-owner-funding-hamas-crypto"
+            target="_blank">Chinese hair salon owner arrested in Barcelona for funding Hamas via crypto</a> <span
+            class="other-source">(South China Morning Post)</span></li>
+        <li><a href="https://www.insurancejournal.com/news/international/2026/01/30/856280.htm" target="_blank">Crypto
+            Money-Laundering Hit $82 Billion in 2025, Researchers Say</a> <span class="other-source">(Elizabeth
+            Howcroft)</span></li>
+        <li><a href="https://ambcrypto.com/all-about-metaplanets-bitcoin-strategy-after-raising-137m/"
+            target="_blank">All about Metaplanet’s Bitcoin strategy after raising $137M</a> <span
+            class="other-source">(Emilio Munoru)</span></li>
+        <li><a href="https://cryptonews.com/news/us-doj-finalizes-400m-forfeiture-linked-to-helix-crypto-mixer/"
+            target="_blank">US DOJ Finalizes $400M Forfeiture Linked to Helix Crypto Mixer</a> <span
+            class="other-source">(Amin Ayan)</span></li>
+        <li><a href="https://cointelegraph.com/news/bitcoin-falls-to-81k-causing-billions-in-liquidations"
+            target="_blank">Bitcoin Crashes To Nine-Month Low On Tariffs, Liquidations</a> <span
+            class="other-source">(News)</span></li>
+        <li><a
+            href="https://www.coindesk.com/markets/2026/01/30/rollercoaster-bitcoin-price-moves-end-up-liquidating-usd1-7-billion-in-bullish-crypto-bets"
+            target="_blank">Bitcoin price now: BTC moves end up liquidating $1.7 billion in bullish crypto bets</a>
+          <span class="other-source">(Shaurya Malwa)</span>
+        </li>
+        <li><a href="https://www.propublica.org/article/todd-blanche-crypto-conflict-senator-letter" target="_blank">Six
+            Senators Accuse Deputy Attorney General of “Glaring” Crypto Conflict, Cite ProPublica Investigation</a>
+          <span class="other-source">(Diego Sorbara)</span>
+        </li>
+        <li><a href="https://cointelegraph.com/news/escape-velocity-capital-raise-depin-projects" target="_blank">Escape
+            Velocity Raises $62M DePIN Fund Even as Crypto VC Slows</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://cointelegraph.com/news/talos-series-b-150m-robinhood-sony" target="_blank">Talos Extends
+            Series B to $150M with Robinhood, Sony Backing</a> <span class="other-source">(News)</span></li>
+        <li><a
+            href="https://cvj.ch/aktuell/news/thedao-startet-als-ethereum-security-fund-mit-220-millionen-dollar-neu/"
+            target="_blank">TheDAO startet als Ethereum Security Fund mit 220 Millionen Dollar neu</a> <span
+            class="other-source">(Redaktion cvj.ch)</span></li>
+        <li><a href="https://www.housingwire.com/articles/propy-secures-100-million-for-ai-powered-closing-platform/"
+            target="_blank">Propy secures $100 million for AI-powered closing platform</a> <span
+            class="other-source">(Jonathan Delozier)</span></li>
+        <li><a href="https://www.theblock.co/post/387720/andre-cronje-flying-tulip-additional-funding-token-crypto"
+            target="_blank">Andre Cronje's Flying Tulip raises additional $75.5 million at $1 billion token
+            valuation</a> <span class="other-source">(Yogita Khatri)</span></li>
+        <li><a
+            href="https://www.cnbc.com/2026/01/29/senate-ag-committee-advances-crypto-bill-to-establish-cftc-regulatory-authority.html"
+            target="_blank">Senate Ag Committee advances crypto bill to establish CFTC regulatory authority</a> <span
+            class="other-source">(Talia Kaplan)</span></li>
+        <li><a
+            href="https://www.abc.net.au/news/2026-01-29/cryptocurrency-qoin-company-fined-14m-misleading-conduct/106278720"
+            target="_blank">Gold Coast firm fined $14m over Qoin cryptocurrency</a> <span
+            class="other-source">(News)</span></li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box">
+      <h3>&#x1F4BC; LinkedIn Ready</h3>
+      <p class="linkedin-label">Copy and paste:</p>
+      <div class="linkedin-content">Dear Founders, Investors, and Friends,
+
+This week in crypto revealed a market in flux, testing conviction across multiple fronts. Here's what moved the needle.
+
+Political Capital Meets Crypto Capital A UAE-backed investment vehicle acquired a 49% stake in World Liberty Financial for $500 million, signaling institutional appetite for politically-connected crypto ventures. This deal underscores how traditional finance and geopolitical dynamics increasingly shape crypto's trajectory.
+
+Security Failures Demand Accountability Step Finance's treasury breach resulted in a $27 million SOL loss, with STEP token collapsing 90% in the aftermath. This incident reminds us that technical robustness remains non-negotiable. Security isn't a feature, it's foundational infrastructure.
+
+Market Mechanics Under Pressure The week saw $1.7 billion drain from crypto ETFs, the largest exit since November, signaling investor repositioning. Simultaneously, liquidations topped $2.5 billion as Bitcoin fell to $77,000 and Ethereum experienced a 10% plunge. One trader alone lost $220 million on Hyperliquid, illustrating the leverage risks embedded in derivatives markets.
+
+What This Means These developments paint a picture of a maturing but volatile ecosystem. Institutional capital is flowing in through traditional vehicles and high-net-worth channels, yet retail and leveraged positions remain fragile. The gap between long-term builders and short-term traders has never been wider.
+
+At Blockwall, we remain focused on fundamental value creation in Web3. Market volatility is noise for investors with conviction and proper time horizons. The projects solving real problems, whether in tokenized assets, decentralized infrastructure, or digital economies, will emerge stronger from periods like this.
+
+The question isn't whether crypto survives volatility. It's whether your portfolio is positioned to thrive through it.
+
+What's your thesis for the week ahead? Are you rotating into defensive positions or doubling down on conviction plays?
+
+#Web3 #Crypto #Blockchain #CryptoVC #WeeklyDigest</div>
+    </div>
+    <div>
+      <h3 class="section-title">&#x1F4DA; Sources</h3>
+      <ul class="sources-list">
+        <li><span class="source-num">[1]</span> <a
+            href="https://cointelegraph.com/news/uae-backed-firm-buys-49-percent-trump-linked-world-liberty-wsj">UAE-Backed
+            Investor Took 49% Stake in Trump-Linked Crypto Firm for $500M</a> <span class="other-source">(News)</span>
+        </li>
+        <li><span class="source-num">[2]</span> <a
+            href="https://cointelegraph.com/news/step-finance-treasury-breach-solana-step-token-crash">Step Finance
+            Treasury Breach Sparks $27M SOL Loss, STEP Plunges</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[3]</span> <a
+            href="https://ambcrypto.com/crypto-etfs-see-biggest-exit-since-november-assessing-the-1-7b-drain/">Crypto
+            ETFs see biggest exit since November – Assessing the $1.7B drain!</a> <span class="other-source">(Muriuki
+            Lazaro)</span></li>
+        <li><span class="source-num">[4]</span> <a
+            href="https://www.coindesk.com/markets/2026/02/01/single-trader-just-lost-usd220-million-as-ether-plunged-10">Ethereum
+            news: One trader just lost $220 million as ETH plunged 10%</a> <span class="other-source">(Shaurya
+            Malwa)</span></li>
+        <li><span class="source-num">[5]</span> <a
+            href="https://decrypt.co/356557/crypto-crash-liquidations-2-5-billion-bitcoin-ethereum-xrp-plummet">Crypto
+            Crash: Liquidations Top $2.5 Billion as Bitcoin, Ethereum and XRP Prices Plummet</a> <span
+            class="other-source">(Andrew Hayward)</span></li>
+        <li><span class="source-num">[6]</span> <a
+            href="https://www.benzinga.com/crypto/cryptocurrency/26/01/50286755/investors-pull-nearly-818-million-from-bitcoin-etfs-as-cryptocurrency-tanks">Investors
+            Pull Nearly $818 Million From Bitcoin ETFs as Cryptocurrency Tanks </a> <span class="other-source">(Bibhu
+            Pattnaik)</span></li>
+        <li><span class="source-num">[7]</span> <a
+            href="https://www.wired.com/video/watch/hacklab-i-escaped-chinese-mafia-crypto-slavery/">I Escaped Chinese
+            Mafia Crypto Slavery</a> <span class="other-source">(Condé Nast)</span></li>
+        <li><span class="source-num">[8]</span> <a
+            href="https://cryptoslate.com/weekend-crypto-market-crash-erases-100b-as-israel-strikes-gaza-with-eth-and-xrp-leading-losses/">Weekend
+            crypto market crash erases $100B as Israel strikes Gaza with ETH and XRP leading losses</a> <span
+            class="other-source">(Liam 'Akiba' Wright)</span></li>
+        <li><span class="source-num">[9]</span> <a
+            href="https://www.ad-hoc-news.de/boerse/ueberblick/konni-gruppe-setzt-ki-generierte-schadsoftware-gegen-blockchain-entwickler/68538204">KONNI-Gruppe
+            setzt KI-generierte Schadsoftware gegen Blockchain-Entwickler ein</a> <span class="other-source">(Redaktion
+            ad-hoc-news.de)</span></li>
+        <li><span class="source-num">[10]</span> <a
+            href="https://beincrypto.com/ethereum-holder-address-poisoning-attack/">Crypto Investor Loses Over $12
+            Million in Ethereum to ‘Address Poisoning’ Scam</a> <span class="other-source">(Oluwapelumi Adejumo)</span>
+        </li>
+        <li><span class="source-num">[11]</span> <a href="https://focustaiwan.tw/society/202601310014">9 detained in
+            NT$5 billion crypto fraud affecting nearly 1,000 victims </a> <span class="other-source">(Focus Taiwan - CNA
+            English News)</span></li>
+        <li><span class="source-num">[12]</span> <a
+            href="https://cointelegraph.com/news/us-treasury-sanctions-iran-linked-crypto-exchanges-first-time">US
+            Treasury Sanctions Iran-Linked Crypto Exchanges for First Time</a> <span class="other-source">(News)</span>
+        </li>
+        <li><span class="source-num">[13]</span> <a
+            href="https://cointelegraph.com/news/crypto-etf-bitcoin-ether-outflows-metals-sentiment-down">Bitcoin And
+            Ether ETFs Post $1.82B Outflows Across Trading Week</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[14]</span> <a
+            href="https://www.dlnews.com/articles/markets/vcs-indulge-in-over-1bn-crypto-bonanza-in-january/">VCs
+            indulge in $1.4bn crypto bonanza in January</a> <span class="other-source">(Lance Datskoluo)</span></li>
+        <li><span class="source-num">[15]</span> <a
+            href="https://www.dlnews.com/articles/defi/thedao-returns-to-fund-ethereum-safety-10-years-after-hack/">TheDAO
+            returns with $220m to fund Ethereum security 10 years after catastrophic hack</a> <span
+            class="other-source">(Aleks Gilbert)</span></li>
+      </ul>
+    </div>
+    <div class="newsletter-cta">
+      <h3>Help Us Improve</h3>
+      <p>Your feedback shapes future editions</p>
+      <a class="newsletter-cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+      <span>Blockwall Capital</span>
+    </div>
+    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+    <div class="footer-links">
+      <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+      <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+      <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  </script>
+</body>
+
+</html>
