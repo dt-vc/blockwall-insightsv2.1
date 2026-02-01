@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blockwall Insights | Crypto & Web3 Intelligence</title>
-  <meta name="description" content="Strategic crypto intelligence for founders, investors, and Web3 professionals. Daily analysis from 100+ sources.">
+  <meta name="description"
+    content="Strategic crypto intelligence for founders, investors, and Web3 professionals. Daily analysis from 100+ sources.">
   <link rel="icon" type="image/png" href="assets/images/blockwall-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body data-theme="dark">
   <!-- Navigation -->
   <nav class="nav">
@@ -43,7 +46,7 @@
     <a href="daily/index.html" class="hero-cta">
       Read Latest Edition
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
       </svg>
     </a>
   </section>
@@ -75,7 +78,8 @@
     <div class="section-header">
       <span class="section-label">Newsletter Archive</span>
       <h2 class="section-title">Choose Your Format</h2>
-      <p class="section-desc">From daily briefs to monthly deep-dives, get the crypto intelligence that fits your schedule.</p>
+      <p class="section-desc">From daily briefs to monthly deep-dives, get the crypto intelligence that fits your
+        schedule.</p>
     </div>
 
     <div class="types-grid">
@@ -122,8 +126,10 @@
       <p class="section-desc">Long-form research and investment theses from the Blockwall team.</p>
     </div>
 
-    <div class="substack-grid" id="substack-grid">
-      <div class="loading-text">Loading articles...</div>
+    <div class="substack-scroll-container">
+      <div class="substack-grid" id="substack-grid">
+        <div class="loading-text">Loading articles...</div>
+      </div>
     </div>
   </section>
 
@@ -132,11 +138,28 @@
     <div class="section-header">
       <span class="section-label">From LinkedIn</span>
       <h2 class="section-title">Dominic's Take</h2>
-      <p class="section-desc">Real-time perspectives and industry commentary.</p>
+      <p class="section-desc">Real-time perspectives and industry commentary from Dominic Briggs.</p>
     </div>
 
-    <div class="linkedin-grid" id="linkedin-grid">
-      <div class="loading-text">Loading posts...</div>
+    <div class="linkedin-embed-container">
+      <div class="linkedin-embed-scroll">
+        <div class="linkedin-embed-item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7423162386561343488?collapsed=1"
+            height="400" width="100%" frameborder="0" allowfullscreen="" title="Dominic Briggs LinkedIn Post"></iframe>
+        </div>
+        <div class="linkedin-embed-item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7422207859301462017?collapsed=1"
+            height="400" width="100%" frameborder="0" allowfullscreen="" title="Dominic Briggs LinkedIn Post"></iframe>
+        </div>
+        <div class="linkedin-embed-item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7417971425363472384?collapsed=1"
+            height="400" width="100%" frameborder="0" allowfullscreen="" title="Dominic Briggs LinkedIn Post"></iframe>
+        </div>
+        <div class="linkedin-embed-item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7417873107425689600?collapsed=1"
+            height="400" width="100%" frameborder="0" allowfullscreen="" title="Dominic Briggs LinkedIn Post"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -201,13 +224,13 @@
     // Load Substack articles
     async function loadSubstack() {
       const grid = document.getElementById('substack-grid');
-      
+
       try {
         const response = await fetch('data/substack.json');
         if (!response.ok) throw new Error('Failed to load');
-        
+
         const articles = await response.json();
-        
+
         if (!articles.length) {
           grid.innerHTML = '<div class="empty-state">No articles available.</div>';
           return;
@@ -236,53 +259,11 @@
       }
     }
 
-    // Load LinkedIn posts
-    async function loadLinkedIn() {
-      const grid = document.getElementById('linkedin-grid');
-      
-      try {
-        const response = await fetch('data/linkedin.json');
-        if (!response.ok) throw new Error('Failed to load');
-        
-        const posts = await response.json();
-        
-        if (!posts.length) {
-          grid.innerHTML = '<div class="empty-state">No posts available.</div>';
-          return;
-        }
-
-        grid.innerHTML = posts.slice(0, 3).map(post => `
-          <a href="${post.url}" target="_blank" class="linkedin-card">
-            <div class="linkedin-card-header">
-              <img src="assets/images/blockwall-logo.png" alt="${post.author}" class="linkedin-card-avatar">
-              <div class="linkedin-card-author-info">
-                <div class="linkedin-card-author">${post.author}</div>
-                <div class="linkedin-card-handle">${post.handle}</div>
-              </div>
-              <span class="linkedin-card-type ${post.type === 'repost' ? 'repost' : ''}">${post.type}</span>
-            </div>
-            <div class="linkedin-card-content">${post.content}</div>
-            <div class="linkedin-card-footer">
-              <span class="linkedin-card-date">${relativeDate(post.date)}</span>
-              <span class="linkedin-card-link">
-                View on LinkedIn
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </span>
-            </div>
-          </a>
-        `).join('');
-
-      } catch (error) {
-        console.error('LinkedIn load error:', error);
-        grid.innerHTML = '<div class="empty-state">Unable to load posts.</div>';
-      }
-    }
-
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
       loadSubstack();
-      loadLinkedIn();
     });
   </script>
 </body>
+
 </html>
