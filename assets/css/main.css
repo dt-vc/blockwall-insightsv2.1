@@ -318,15 +318,18 @@ img {
 }
 
 .stat-value {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -0.02em;
 }
 
 .stat-label {
   font-size: 11px;
-  color: var(--text-dim);
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 4px;
@@ -866,26 +869,28 @@ img {
 }
 
 /* =============================================
-   Footer - Enhanced
+   Footer - Centered Layout (matching v2)
    ============================================= */
 
 .footer {
   padding: var(--space-2xl) var(--space-lg);
   border-top: 1px solid var(--bw-border);
+  text-align: center;
 }
 
 .footer-inner {
   max-width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--space-xl);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: var(--space-md);
 }
 
 .footer-brand {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -904,12 +909,13 @@ img {
 .footer-text {
   color: var(--text-dim);
   font-size: 13px;
-  margin-top: 6px;
+  margin-top: 0;
 }
 
 .footer-links {
   display: flex;
   gap: var(--space-lg);
+  margin-top: var(--space-sm);
 }
 
 .footer-link {
