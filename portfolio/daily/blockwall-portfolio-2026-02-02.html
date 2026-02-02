@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Portfolio Insights - February 2, 2026</title>
+  <link rel="icon" type="image/png" href="../../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/newsletter.css">
+  <style>
+    .portfolio-badge { display: inline-block; background: linear-gradient(135deg, var(--bw-accent), var(--bw-accent-bright)); color: white; padding: 6px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .company-tag { display: inline-block; background: var(--bw-card); border: 1px solid var(--bw-border); color: var(--text-secondary); padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 500; margin-right: 8px; }
+    .sector-tag { display: inline-block; background: var(--bw-accent); color: white; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 500; }
+    .sentiment-badge { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+    .sentiment-badge.bullish { background: rgba(16, 185, 129, 0.15); color: var(--bw-green); }
+    .sentiment-badge.bearish { background: rgba(239, 68, 68, 0.15); color: var(--bw-red); }
+    .sentiment-badge.neutral { background: rgba(136, 144, 160, 0.15); color: var(--text-muted); }
+    .story-img { max-height: 200px; width: 100%; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 12px; }
+    .company-section { background: var(--bw-card); border: 1px solid var(--bw-border); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px; }
+    .company-section h3 { color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+    .company-item { border-left: 3px solid var(--bw-accent); padding-left: 16px; margin-bottom: 16px; }
+    .company-item:last-child { margin-bottom: 0; }
+    .company-item-title { color: var(--text-primary); font-weight: 600; margin-bottom: 6px; }
+    .company-item-title a { color: inherit; text-decoration: none; transition: color var(--transition-fast); }
+    .company-item-title a:hover { color: var(--bw-accent-bright); }
+    .company-item-meta { color: var(--text-muted); font-size: 13px; margin-bottom: 8px; }
+    .company-item-summary { color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+    .exec-summary { background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur)); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: var(--bw-accent-bright); margin-bottom: 16px; font-size: 18px; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: var(--bw-accent-bright); font-weight: bold; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../../index.html" class="nav-brand">
+      <img src="../../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+      <span class="nav-brand-text">Blockwall Insights</span>
+    </a>
+    <div class="nav-links">
+      <a href="../../daily/index.html" class="nav-link">Daily</a>
+      <a href="../../weekly/index.html" class="nav-link">Weekly</a>
+      <a href="../../monthly/index.html" class="nav-link">Monthly</a>
+      <a href="../index.html" class="nav-link active">Portfolio</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+  </div></nav>
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Portfolio Daily Archive
+    </a>
+    <div class="newsletter-header">
+      <span class="portfolio-badge">Portfolio Intelligence</span>
+      <div class="newsletter-label">Blockwall Capital Portfolio</div>
+      <h1>Daily Portfolio Digest</h1>
+      <div class="newsletter-date">February 2, 2026</div>
+    </div>
+    <div class="newsletter-stats">
+      <div class="newsletter-stat"><div class="newsletter-stat-value">1</div><div class="newsletter-stat-label">Updates</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value">1</div><div class="newsletter-stat-label">Companies</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bullish">0</div><div class="newsletter-stat-label">Bullish</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bearish">0</div><div class="newsletter-stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>Today's Portfolio Signals</h2>
+      <ul>
+        <li><strong>BloXmove</strong>: Busha</li>
+      </ul>
+    </div>
+    <h2 class="section-title">Key Portfolio Updates</h2>
+    <div class="story">
+      <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+        <span class="company-tag">BloXmove</span>
+        <span class="sector-tag">Mobility</span>
+        <span class="sentiment-badge neutral">neutral</span>
+      </div>
+      <h2 class="story-title">Busha</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=400&fit=crop" alt="Busha" onerror="this.style.display='none'">
+      <div class="story-meta">dash.busha.io &bull; Score: 5/10 &bull; 2/2/2026</div>
+      <p class="story-summary">Busha</p>
+      <a class="story-link" href="https://dash.busha.io/login?continue=%2F" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">Updates by Company</h2>
+    <div class="company-section">
+      <h3>
+        <span>BloXmove</span>
+        <span class="sector-tag">Mobility</span>
+        <span style="color: var(--text-muted); font-size: 13px; font-weight: 400;">1 update</span>
+      </h3>
+      <div class="company-item">
+        <div class="company-item-title"><a href="https://dash.busha.io/login?continue=%2F" target="_blank">Busha</a></div>
+        <div class="company-item-meta">dash.busha.io &bull; Score: 5/10</div>
+        <div class="company-item-summary">Busha</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div><h3 class="section-title">All Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://dash.busha.io/login?continue=%2F">Busha</a> <span class="other-source">(BloXmove - dash.busha.io)</span></li>
+    </ul></div>
+    <div class="newsletter-cta"><h3>Help Us Improve</h3><p>Your feedback shapes portfolio intelligence</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="newsletter-footer">Blockwall Capital Portfolio Intelligence &bull; February 2, 2026</div>
+  </div>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  </script>
+</body>
+</html>

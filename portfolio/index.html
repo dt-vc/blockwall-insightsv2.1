@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Companies | Blockwall Insights</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .portfolio-stats {
+      padding: 0 var(--space-lg) var(--space-2xl);
+    }
+    .companies-section {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-3xl);
+    }
+    .portfolio-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-md);
+      letter-spacing: -0.02em;
+    }
+    .sector-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: var(--space-lg);
+    }
+    .sector-btn {
+      padding: 8px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--bw-border-light);
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+    .sector-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--bw-accent);
+      background: var(--bw-accent-muted);
+    }
+    .sector-btn.active {
+      background: var(--bw-accent);
+      border-color: var(--bw-accent);
+      color: white;
+    }
+    .companies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-2xl);
+    }
+    .company-card {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      transition: all var(--transition-base);
+      display: block;
+    }
+    .company-card:hover {
+      border-color: var(--bw-border-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    }
+    .company-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .company-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--bw-accent-muted), rgba(168, 85, 247, 0.25));
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .company-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 15px;
+    }
+    .company-sector {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .company-description {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .company-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+    .company-updates {
+      color: var(--bw-accent-bright);
+    }
+    .company-link-text {
+      color: var(--text-dim);
+      transition: color var(--transition-fast);
+    }
+    .company-card:hover .company-link-text {
+      color: var(--bw-accent);
+    }
+    .latest-updates-card {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-2xl);
+    }
+    .update-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--bw-border);
+    }
+    .update-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .update-item:first-child {
+      padding-top: 0;
+    }
+    .update-company {
+      font-size: 12px;
+      color: var(--bw-accent-bright);
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .update-title {
+      color: var(--text-primary);
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .update-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .update-title a:hover {
+      color: var(--bw-accent-bright);
+    }
+    .update-meta {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    @media (max-width: 768px) {
+      .companies-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="index.html" class="nav-link active">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Home
+    </a>
+
+    <div class="archive-header">
+      <h1 class="archive-title">Portfolio Companies</h1>
+      <p class="archive-subtitle">Real-time intelligence on Blockwall's 24 portfolio companies across the Web3 ecosystem.</p>
+    </div>
+  </main>
+
+  <section class="portfolio-stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value" id="total-companies">24</div>
+        <div class="stat-label">Companies</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="total-sectors">10</div>
+        <div class="stat-label">Sectors</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="total-updates">&mdash;</div>
+        <div class="stat-label">Updates This Week</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="bullish-ratio">&mdash;</div>
+        <div class="stat-label">Bullish %</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="companies-section">
+    <div class="latest-updates-card">
+      <h2 class="portfolio-section-title">Latest Updates</h2>
+      <div id="updates-feed">
+        <div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 14px;">Loading latest updates...</div>
+      </div>
+    </div>
+
+    <h2 class="portfolio-section-title">Portfolio Directory</h2>
+    <div class="sector-filter">
+      <button class="sector-btn active" data-sector="all">All</button>
+      <button class="sector-btn" data-sector="Infrastructure">Infrastructure</button>
+      <button class="sector-btn" data-sector="Payments">Payments</button>
+      <button class="sector-btn" data-sector="DeFi">DeFi</button>
+      <button class="sector-btn" data-sector="Identity">Identity</button>
+      <button class="sector-btn" data-sector="Gaming">Gaming</button>
+      <button class="sector-btn" data-sector="Other">Other</button>
+    </div>
+
+    <div class="companies-grid" id="companies-grid"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+        <span>Blockwall Capital</span>
+      </div>
+      <p class="footer-text">European Crypto Venture Capital &bull; Frankfurt, Germany</p>
+      <div class="footer-links">
+        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    // Company data
+    const companies = [
+      { slug: 'bloxmove', name: 'BloXmove', sector: 'Mobility', description: 'Blockchain-based mobility ecosystem' },
+      { slug: 'xylene', name: 'Xylene GmbH', sector: 'Infrastructure', description: 'Web3 development infrastructure' },
+      { slug: 'busha', name: 'Busha Ltd', sector: 'Exchange', description: 'Nigerian cryptocurrency exchange' },
+      { slug: 'staex', name: 'Staex GmbH', sector: 'Infrastructure', description: 'Secure IoT connectivity platform' },
+      { slug: 'saltox', name: 'Salto X', sector: 'DeFi', description: 'Decentralized trading platform' },
+      { slug: 'blinklabs', name: 'Blink Labs', sector: 'Infrastructure', description: 'Cardano developer tools' },
+      { slug: 'spiko', name: 'Spiko SAS', sector: 'Tokenization', description: 'Tokenized money market funds' },
+      { slug: 'zealy', name: 'Zealy', sector: 'Community', description: 'Web3 community engagement platform' },
+      { slug: 'validationcloud', name: 'Validation Cloud', sector: 'Infrastructure', description: 'Enterprise Web3 infrastructure' },
+      { slug: 'opfn', name: 'Opfn', sector: 'Infrastructure', description: 'Decentralized compute network' },
+      { slug: 'spherity', name: 'Spherity GmbH', sector: 'Identity', description: 'Decentralized identity solutions' },
+      { slug: 'tlon', name: 'TLON Corporation', sector: 'Infrastructure', description: 'Urbit decentralized computing' },
+      { slug: 'nilos', name: 'Nilos', sector: 'Payments', description: 'Stablecoin infrastructure' },
+      { slug: 'tranched', name: 'Tranched', sector: 'DeFi', description: 'Decentralized credit protocols' },
+      { slug: 'river', name: 'River Platform', sector: 'Infrastructure', description: 'Web3 application protocol' },
+      { slug: 'byzantine', name: 'Byzantine Finance', sector: 'DeFi', description: 'Restaking infrastructure' },
+      { slug: 'rebind', name: 'Rebind', sector: 'Infrastructure', description: 'Web3 data indexing' },
+      { slug: 'kirha', name: 'Kirha', sector: 'AI', description: 'AI agents for Web3' },
+      { slug: 'blu', name: 'Blu Financiero', sector: 'Payments', description: 'Crypto financial services LATAM' },
+      { slug: 'spectarium', name: 'Spectarium', sector: 'Gaming', description: 'Web3 gaming studio' },
+      { slug: 'kulipa', name: 'Kulipa', sector: 'Payments', description: 'Crypto debit cards' },
+      { slug: 'den', name: 'Den Technologies', sector: 'Infrastructure', description: 'On-chain treasury management' },
+      { slug: 'yousend', name: 'Yousend', sector: 'Payments', description: 'Crypto remittance' },
+      { slug: 'flyra', name: 'Flyra', sector: 'Infrastructure', description: 'Web3 payments infrastructure' }
+    ];
+
+    let activeFilter = 'all';
+
+    function renderCompanies() {
+      const grid = document.getElementById('companies-grid');
+      const filtered = activeFilter === 'all'
+        ? companies
+        : companies.filter(c => {
+            if (activeFilter === 'Other') {
+              return !['Infrastructure', 'Payments', 'DeFi', 'Identity', 'Gaming'].includes(c.sector);
+            }
+            return c.sector === activeFilter;
+          });
+
+      grid.innerHTML = filtered.map(c => `
+        <a href="companies/${c.slug}.html" class="company-card">
+          <div class="company-header">
+            <div class="company-logo">${c.name.substring(0, 2).toUpperCase()}</div>
+            <div>
+              <div class="company-name">${c.name}</div>
+              <div class="company-sector">${c.sector}</div>
+            </div>
+          </div>
+          <p class="company-description">${c.description}</p>
+          <div class="company-meta">
+            <span class="company-updates" id="updates-${c.slug}">&mdash;</span>
+            <span class="company-link-text">View Details &rarr;</span>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Sector filter
+    document.querySelectorAll('.sector-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.sector-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.sector;
+        renderCompanies();
+      });
+    });
+
+    // Load latest updates
+    async function loadLatestUpdates() {
+      const feed = document.getElementById('updates-feed');
+      try {
+        const response = await fetch('../data/portfolio/indexes/latest.json');
+        if (!response.ok) throw new Error('No data');
+        const data = await response.json();
+        const items = data.items || [];
+
+        if (items.length === 0) throw new Error('Empty');
+
+        const weekAgo = new Date();
+        weekAgo.setDate(weekAgo.getDate() - 7);
+        const weekItems = items.filter(i => new Date(i.date_published) >= weekAgo);
+        document.getElementById('total-updates').textContent = weekItems.length;
+
+        const bullish = items.filter(i => i.sentiment === 'bullish').length;
+        const ratio = items.length > 0 ? Math.round((bullish / items.length) * 100) : 0;
+        document.getElementById('bullish-ratio').textContent = ratio + '%';
+
+        feed.innerHTML = items.slice(0, 5).map(item => `
+          <div class="update-item">
+            <div class="update-company">${escapeHtml(item.company_name || item.company_slug)}</div>
+            <div class="update-title">
+              <a href="${escapeHtml(item.url)}" target="_blank">${escapeHtml(item.title)}</a>
+            </div>
+            <div class="update-meta">${formatDate(item.date_published)} &bull; ${escapeHtml(item.sentiment || 'neutral')}</div>
+          </div>
+        `).join('');
+      } catch (e) {
+        feed.innerHTML = `
+          <div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 14px;">
+            <p>Tracking Active</p>
+            <p style="font-size: 13px; margin-top: 8px; color: var(--text-dim);">Portfolio updates will appear here once collected.</p>
+          </div>
+        `;
+        document.getElementById('total-updates').textContent = '0';
+        document.getElementById('bullish-ratio').textContent = '\u2014';
+      }
+    }
+
+    function formatDate(dateStr) {
+      try {
+        return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      } catch (e) { return dateStr; }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    renderCompanies();
+    loadLatestUpdates();
+  </script>
+</body>
+</html>

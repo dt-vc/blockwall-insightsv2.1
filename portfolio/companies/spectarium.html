@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectarium | Portfolio Companies | Blockwall Insights</title>
+  <link rel="icon" type="image/png" href="../../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .company-hero-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-xl);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xl);
+    }
+    .company-logo-large {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--bw-accent-muted), rgba(168, 85, 247, 0.25));
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .company-info h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .company-sector-badge {
+      display: inline-block;
+      background: var(--bw-accent);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .company-description {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .company-location {
+      color: var(--text-dim);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    .company-ext-links {
+      display: flex;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+    .company-ext-link {
+      color: var(--bw-accent-bright);
+      font-size: 13px;
+      font-weight: 500;
+      transition: color var(--transition-fast);
+    }
+    .company-ext-link:hover {
+      color: var(--text-primary);
+    }
+    .company-stats {
+      padding: 0 0 var(--space-xl);
+    }
+    .updates-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-md);
+      letter-spacing: -0.02em;
+    }
+    .timeline-item {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+      border-left: 3px solid var(--bw-accent);
+      transition: all var(--transition-base);
+    }
+    .timeline-item:hover {
+      border-color: var(--bw-border-light);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .timeline-date {
+      color: var(--bw-accent-bright);
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .timeline-title {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .timeline-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .timeline-title a:hover {
+      color: var(--bw-accent-bright);
+    }
+    .timeline-meta {
+      color: var(--text-dim);
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .timeline-summary {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .sentiment-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .sentiment-badge.bullish { background: rgba(16, 185, 129, 0.15); color: var(--bw-green); }
+    .sentiment-badge.bearish { background: rgba(239, 68, 68, 0.15); color: var(--bw-red); }
+    .sentiment-badge.neutral { background: rgba(136, 144, 160, 0.15); color: var(--text-muted); }
+    .empty-updates {
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--text-muted);
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      font-size: 14px;
+    }
+    .empty-updates h3 {
+      color: var(--text-primary);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 768px) {
+      .company-hero-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--space-lg);
+      }
+      .company-ext-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../daily/index.html" class="nav-link">Daily</a>
+        <a href="../../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="../index.html" class="nav-link active">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Portfolio
+    </a>
+
+    <div class="company-hero-card">
+      <div class="company-logo-large">SP</div>
+      <div class="company-info">
+        <h1>Spectarium</h1>
+        <span class="company-sector-badge">Gaming</span>
+        <p class="company-location">Finland</p>
+        <p class="company-description">Web3 gaming studio and infrastructure</p>
+        <div class="company-ext-links">
+          <a href="https://spectarium.games" target="_blank" class="company-ext-link">Website &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="company-stats">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value" id="total-updates">&mdash;</div>
+          <div class="stat-label">Total Updates</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="bullish-count">&mdash;</div>
+          <div class="stat-label">Bullish</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="bearish-count">&mdash;</div>
+          <div class="stat-label">Bearish</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="latest-date">&mdash;</div>
+          <div class="stat-label">Latest Update</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="updates-section-title">News &amp; Updates</h2>
+    <div id="updates-container">
+      <div class="empty-updates">
+        <h3>Tracking Active</h3>
+        <p>No news found yet for Spectarium. Updates will appear here as they're discovered.</p>
+        <p style="margin-top: 8px; font-size: 13px; color: var(--text-dim);">Portfolio tracking runs daily at 6:00 UTC.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+        <span>Blockwall Capital</span>
+      </div>
+      <p class="footer-text">European Crypto Venture Capital &bull; Frankfurt, Germany</p>
+      <div class="footer-links">
+        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    const slug = 'spectarium';
+
+    async function loadCompanyUpdates() {
+      const container = document.getElementById('updates-container');
+      try {
+        const response = await fetch(`../../data/portfolio/indexes/by-company/${slug}.json`);
+        if (!response.ok) throw new Error('No data');
+        const data = await response.json();
+        const items = data.items || [];
+
+        document.getElementById('total-updates').textContent = items.length;
+        document.getElementById('bullish-count').textContent = items.filter(i => i.sentiment === 'bullish').length;
+        document.getElementById('bearish-count').textContent = items.filter(i => i.sentiment === 'bearish').length;
+
+        if (items.length > 0) {
+          const latestDate = new Date(items[0].date_published);
+          document.getElementById('latest-date').textContent = latestDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+          container.innerHTML = items.map(item => `
+            <div class="timeline-item">
+              <div class="timeline-date">${formatDate(item.date_published)}</div>
+              <div class="timeline-title">
+                <a href="${item.url}" target="_blank">${escapeHtml(item.title)}</a>
+              </div>
+              <div class="timeline-meta">
+                <span>${escapeHtml(item.source_name || 'News')}</span>
+                <span class="sentiment-badge ${item.sentiment}">${getSentimentLabel(item.sentiment)}</span>
+                <span>Score: ${item.significance_score || 5}/10</span>
+              </div>
+              ${item.summary_short ? `<p class="timeline-summary">${escapeHtml(item.summary_short)}</p>` : ''}
+            </div>
+          `).join('');
+        }
+      } catch (e) {
+        document.getElementById('total-updates').textContent = '0';
+        document.getElementById('bullish-count').textContent = '0';
+        document.getElementById('bearish-count').textContent = '0';
+        document.getElementById('latest-date').textContent = 'N/A';
+      }
+    }
+
+    function formatDate(dateStr) {
+      try {
+        const date = new Date(dateStr);
+        return date.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+      } catch (e) { return dateStr; }
+    }
+
+    function getSentimentLabel(sentiment) {
+      const labels = { bullish: 'Bullish', bearish: 'Bearish', neutral: 'Neutral' };
+      return labels[sentiment] || 'Neutral';
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    loadCompanyUpdates();
+  </script>
+</body>
+</html>

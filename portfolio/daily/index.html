@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Portfolio Updates | Blockwall Insights</title>
+  <link rel="icon" type="image/png" href="../../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .date-picker {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+      flex-wrap: wrap;
+    }
+    .date-input {
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--bw-border-light);
+      background: var(--bw-card);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+    }
+    .date-btn {
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: var(--bw-accent);
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .date-btn:hover {
+      background: var(--bw-accent-bright);
+    }
+    .archive-list {
+      display: grid;
+      gap: var(--space-md);
+    }
+    .archive-item {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all var(--transition-base);
+    }
+    .archive-item:hover {
+      border-color: var(--bw-border-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .archive-item a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .archive-date {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 15px;
+    }
+    .archive-item-stats {
+      display: flex;
+      gap: var(--space-lg);
+      color: var(--text-muted);
+      font-size: 13px;
+      align-items: center;
+    }
+    .archive-item-link {
+      color: var(--bw-accent-bright);
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .empty-archive {
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--text-muted);
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      font-size: 14px;
+    }
+    .empty-archive h3 {
+      color: var(--text-primary);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 768px) {
+      .archive-item {
+        flex-direction: column;
+        gap: var(--space-sm);
+        align-items: flex-start;
+      }
+      .archive-item a {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../daily/index.html" class="nav-link">Daily</a>
+        <a href="../../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="../index.html" class="nav-link active">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Portfolio
+    </a>
+
+    <div class="archive-header">
+      <h1 class="archive-title">Daily Portfolio Updates</h1>
+      <p class="archive-subtitle">Browse historical portfolio intelligence by date.</p>
+    </div>
+
+    <div class="date-picker">
+      <input type="date" id="date-input" class="date-input">
+      <button class="date-btn" onclick="loadDate()">Load Date</button>
+    </div>
+
+    <div class="archive-list" id="archive-list">
+      <div style="text-align: center; padding: 40px; color: var(--text-muted); font-size: 14px;">Loading...</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+        <span>Blockwall Capital</span>
+      </div>
+      <p class="footer-text">European Crypto Venture Capital &bull; Frankfurt, Germany</p>
+      <div class="footer-links">
+        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    // Set default date to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date-input').value = today;
+
+    async function loadArchive() {
+      const list = document.getElementById('archive-list');
+
+      try {
+        const response = await fetch('../../data/portfolio.json');
+        if (!response.ok) throw new Error('No data');
+        const data = await response.json();
+
+        if (!data || data.length === 0) throw new Error('Empty');
+
+        data.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        list.innerHTML = data.map((item, index) => `
+          <div class="archive-item">
+            <a href="${item.filename}">
+              <div>
+                <div class="archive-date">${formatDate(item.date)}</div>
+              </div>
+              <div class="archive-item-stats">
+                <span>${item.updates || 0} updates</span>
+                <span>${item.companies || 0} companies</span>
+                <span class="archive-item-link">View Digest &rarr;</span>
+              </div>
+            </a>
+          </div>
+        `).join('');
+      } catch (e) {
+        list.innerHTML = `
+          <div class="empty-archive">
+            <h3>Archive Building</h3>
+            <p>Daily digests will appear here as they're generated.</p>
+            <p style="margin-top: 8px; font-size: 13px; color: var(--text-dim);">Portfolio tracking runs daily at 6:00 UTC.</p>
+          </div>
+        `;
+      }
+    }
+
+    function loadDate() {
+      const date = document.getElementById('date-input').value;
+      if (date) {
+        window.location.href = `blockwall-portfolio-${date}.html`;
+      }
+    }
+
+    function formatDate(dateStr) {
+      try {
+        return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+      } catch (e) { return dateStr; }
+    }
+
+    loadArchive();
+  </script>
+</body>
+</html>
