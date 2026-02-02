@@ -35,7 +35,55 @@
       color: var(--text-primary);
       font-size: 1.5rem;
       flex-shrink: 0;
+      overflow: hidden;
     }
+    .company-logo-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    .source-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: var(--space-md);
+    }
+    .source-btn {
+      padding: 5px 12px;
+      border-radius: 100px;
+      border: 1px solid var(--bw-border-light);
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+    .source-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--bw-accent);
+      background: var(--bw-accent-muted);
+    }
+    .source-btn.active {
+      background: var(--bw-accent);
+      border-color: var(--bw-accent);
+      color: white;
+    }
+    .source-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .source-news { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+    .source-blog { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+    .source-x { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
+    .source-rss { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
     .company-info h1 {
       font-size: 24px;
       font-weight: 700;
@@ -202,7 +250,9 @@
     </a>
 
     <div class="company-hero-card">
-      <div class="company-logo-large">XY</div>
+      <div class="company-logo-large">
+        <img src="../../assets/companies/xylene.png" alt="Xylene GmbH" onerror="this.style.display='none';this.parentElement.textContent='XY'">
+      </div>
       <div class="company-info">
         <h1>Xylene GmbH</h1>
         <span class="company-sector-badge">Infrastructure</span>
@@ -236,6 +286,12 @@
     </div>
 
     <h2 class="updates-section-title">News &amp; Updates</h2>
+    <div class="source-filter">
+      <button class="source-btn active" data-source="all">All</button>
+      <button class="source-btn" data-source="news">News</button>
+      <button class="source-btn" data-source="blog">Blog</button>
+      <button class="source-btn" data-source="x">X / Twitter</button>
+    </div>
     <div id="updates-container">
       <div class="empty-updates">
         <h3>Tracking Active</h3>
@@ -280,6 +336,74 @@
     document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
 
     const slug = 'xylene';
+    let allItems = [];
+    let activeSourceFilter = 'all';
+
+    function sourceTypeClass(type) {
+      if (!type) return 'source-news';
+      const t = type.toLowerCase();
+      if (t === 'blog' || t === 'blog_rss') return 'source-blog';
+      if (t === 'x' || t === 'twitter') return 'source-x';
+      if (t === 'rss') return 'source-rss';
+      return 'source-news';
+    }
+
+    function sourceTypeLabel(type) {
+      if (!type) return 'News';
+      const t = type.toLowerCase();
+      if (t === 'blog' || t === 'blog_rss') return 'Blog';
+      if (t === 'x' || t === 'twitter') return 'X';
+      if (t === 'rss') return 'RSS';
+      return 'News';
+    }
+
+    function renderTimeline(items) {
+      const container = document.getElementById('updates-container');
+      const filtered = activeSourceFilter === 'all'
+        ? items
+        : items.filter(i => {
+            const t = (i.source_type || 'news').toLowerCase();
+            if (activeSourceFilter === 'news') return t === 'news' || t === 'google_news';
+            if (activeSourceFilter === 'blog') return t === 'blog' || t === 'blog_rss';
+            if (activeSourceFilter === 'x') return t === 'x' || t === 'twitter';
+            return true;
+          });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty-updates">
+            <h3>No updates</h3>
+            <p>No updates found for this source type.</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => `
+        <div class="timeline-item">
+          <div class="timeline-date">${formatDate(item.date_published)}</div>
+          <div class="timeline-title">
+            <a href="${item.url}" target="_blank">${escapeHtml(item.title)}</a>
+          </div>
+          <div class="timeline-meta">
+            <span class="source-badge ${sourceTypeClass(item.source_type)}">${sourceTypeLabel(item.source_type)}</span>
+            <span>${escapeHtml(item.source_name || 'News')}</span>
+            <span class="sentiment-badge ${item.sentiment}">${getSentimentLabel(item.sentiment)}</span>
+            <span>Score: ${item.significance_score || 5}/10</span>
+          </div>
+          ${item.summary_short ? `<p class="timeline-summary">${escapeHtml(item.summary_short)}</p>` : ''}
+        </div>
+      `).join('');
+    }
+
+    // Source filter
+    document.querySelectorAll('.source-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeSourceFilter = btn.dataset.source;
+        renderTimeline(allItems);
+      });
+    });
 
     async function loadCompanyUpdates() {
       const container = document.getElementById('updates-container');
@@ -288,6 +412,7 @@
         if (!response.ok) throw new Error('No data');
         const data = await response.json();
         const items = data.items || [];
+        allItems = items;
 
         document.getElementById('total-updates').textContent = items.length;
         document.getElementById('bullish-count').textContent = items.filter(i => i.sentiment === 'bullish').length;
@@ -296,21 +421,7 @@
         if (items.length > 0) {
           const latestDate = new Date(items[0].date_published);
           document.getElementById('latest-date').textContent = latestDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-
-          container.innerHTML = items.map(item => `
-            <div class="timeline-item">
-              <div class="timeline-date">${formatDate(item.date_published)}</div>
-              <div class="timeline-title">
-                <a href="${item.url}" target="_blank">${escapeHtml(item.title)}</a>
-              </div>
-              <div class="timeline-meta">
-                <span>${escapeHtml(item.source_name || 'News')}</span>
-                <span class="sentiment-badge ${item.sentiment}">${getSentimentLabel(item.sentiment)}</span>
-                <span>Score: ${item.significance_score || 5}/10</span>
-              </div>
-              ${item.summary_short ? `<p class="timeline-summary">${escapeHtml(item.summary_short)}</p>` : ''}
-            </div>
-          `).join('');
+          renderTimeline(items);
         }
       } catch (e) {
         document.getElementById('total-updates').textContent = '0';
