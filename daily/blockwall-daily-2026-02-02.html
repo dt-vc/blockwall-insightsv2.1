@@ -10,6 +10,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .exec-summary {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+    }
+
+    .exec-summary h3 {
+      color: #8b7cf6;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+
+    .exec-summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exec-summary li {
+      padding: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .exec-summary li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #8b7cf6;
+      font-weight: bold;
+    }
+
+    [data-theme="light"] .exec-summary {
+      background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+    }
+
+    [data-theme="light"] .exec-summary li {
+      color: #1a1a2e;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: var(--text-primary);
+    }
+  </style>
 </head>
 
 <body data-theme="dark">
@@ -37,7 +90,7 @@
     </a>
 
     <div class="newsletter-header">
-      <div class="newsletter-label">Blockwall Capital</div>
+      <div class="newsletter-label">Blockwall Capital • Daily Digest</div>
       <h1>Daily Insights</h1>
       <div class="newsletter-date">February 2, 2026</div>
     </div>
@@ -61,13 +114,6 @@
       </div>
     </div>
 
-    <div class="newsletter-intro">
-      Dear Founders, Investors, and Friends,<br><br>
-      The crypto market faces a defining moment as Bitcoin plummets amid a $1.7 billion liquidation cascade triggered by
-      margin calls and algorithmic feedback loops. Meanwhile, strategic capital flows continue reshaping the landscape,
-      with major institutional players repositioning across digital assets and traditional finance.
-    </div>
-
     <div class="exec-summary">
       <h3>📊 Today's Key Signals</h3>
       <ul>
@@ -81,6 +127,15 @@
           market volatility and investor desperation</li>
       </ul>
     </div>
+
+    <div class="newsletter-intro">
+      Dear Founders, Investors, and Friends,<br><br>
+      The crypto market faces a defining moment as Bitcoin plummets amid a $1.7 billion liquidation cascade triggered by
+      margin calls and algorithmic feedback loops. Meanwhile, strategic capital flows continue reshaping the landscape,
+      with major institutional players repositioning across digital assets and traditional finance.
+    </div>
+
+    <h2 class="section-title">🔥 Key Developments</h2>
 
     <div class="story">
       <h2 class="story-title">Krypto Crash: Das steckt hinter der massiven Entwertung von BTC und Co</h2>
@@ -166,7 +221,7 @@
 
     <div class="story">
       <h2 class="story-title">Crypto Losses Hit $370M in January 2026, Highest in 11 Months: CertiK</h2>
-      <img class="story-image" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop"
+      <img class="story-image" src="https://cryptonews.com/wp-content/uploads/2026/02/crypto-hack.jpg"
         alt="Crypto Losses Hit $370M in January 2026, Highest in 11 Months: CertiK" onerror="this.style.display='none'">
       <div class="story-meta">Amin Ayan • Security • Score: 7/10</div>
       <p class="story-summary">
