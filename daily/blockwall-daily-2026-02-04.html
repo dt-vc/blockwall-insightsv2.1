@@ -10,13 +10,57 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/newsletter.css">
   <style>
-    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
-    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
-    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
-    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
-    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
-    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
-    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .exec-summary {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+    }
+
+    .exec-summary h3 {
+      color: #8b7cf6;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+
+    .exec-summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exec-summary li {
+      padding: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .exec-summary li:before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: #8b7cf6;
+      font-weight: bold;
+    }
+
+    [data-theme="light"] .exec-summary {
+      background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+    }
+
+    [data-theme="light"] .exec-summary li {
+      color: #1a1a2e;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: var(--text-primary);
+    }
   </style>
 </head>
 <body data-theme="dark">
@@ -37,22 +81,40 @@
       </button>
     </div>
   </nav>
-  <div class="container">
-    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
-    <div class="header">
-      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
-      <div class="header-label">Blockwall Capital</div>
+
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Daily Archive
+    </a>
+
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital</div>
       <h1>Daily Insights</h1>
-      <div class="header-date">February 4, 2026</div>
+      <div class="newsletter-date">February 4, 2026</div>
     </div>
-    <div class="stats">
-      <div class="stat"><div class="stat-value">100</div><div class="stat-label">Sources</div></div>
-      <div class="stat"><div class="stat-value">6</div><div class="stat-label">Key Stories</div></div>
-      <div class="stat"><div class="stat-value bullish">11</div><div class="stat-label">Bullish</div></div>
-      <div class="stat"><div class="stat-value bearish">12</div><div class="stat-label">Bearish</div></div>
+
+    <div class="newsletter-stats">
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">100</div>
+        <div class="newsletter-stat-label">Sources</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">6</div>
+        <div class="newsletter-stat-label">Key Stories</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bullish">11</div>
+        <div class="newsletter-stat-label">Bullish</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bearish">12</div>
+        <div class="newsletter-stat-label">Bearish</div>
+      </div>
     </div>
+
     <div class="exec-summary">
-      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <h3>Today's Key Signals</h3>
       <ul>
         <li>TRM Labs hits $1 billion valuation with $70 million raise, boosting blockchain forensics for compliance.</li>
         <li>SEC guidance structures RWA disclosures, aiding tokenized asset compliance and investor clarity.</li>
@@ -60,67 +122,96 @@
         <li>Vitalik pushes Ethereum native rollups, shifting scaling strategy from dominant L2 reliance.</li>
       </ul>
     </div>
-    <div class="intro">Dear Founders, Investors, and Friends, The crypto landscape is evolving rapidly as regulatory clarity accelerates institutional adoption, with the SEC providing much-needed guidance on digital asset disclosures while security innovations like blockchain analytics continue strengthening the ecosystem's integrity. Meanwhile, strategic capital deployment remains critical as investors navigate market volatility, with opportunities emerging across Bitcoin investments, climate tech, and Web3 infrastructure for those positioned to capitalize on this transformative moment.</div>
-    <h2 class="section-title">&#x1F525; Key Developments</h2>
+
+    <div class="newsletter-intro">
+      Dear Founders, Investors, and Friends,<br><br>
+      The crypto landscape is evolving rapidly as regulatory clarity accelerates institutional adoption, with the SEC providing much-needed guidance on digital asset disclosures while security innovations like blockchain analytics continue strengthening the ecosystem's integrity. Meanwhile, strategic capital deployment remains critical as investors navigate market volatility, with opportunities emerging across Bitcoin investments, climate tech, and Web3 infrastructure for those positioned to capitalize on this transformative moment.
+    </div>
+
+    <h2 class="section-title">Key Developments</h2>
+
     <div class="story">
-      <h2 class="story-title">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round </h2>
-      <img class="story-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2206432671-e1770167851528.jpg?resize=1200,600" alt="Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round " onerror="this.style.display='none'">
+      <h2 class="story-title">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</h2>
+      <img class="story-image" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2206432671-e1770167851528.jpg?resize=1200,600" alt="Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round" onerror="this.style.display='none'">
       <div class="story-meta">Leo Schwartz &bull; Security &bull; Score: 7/10</div>
-      <p class="story-summary">TRM Labs, a leading provider of blockchain analytics tools for detecting and investigating crypto-related crimes, raised $70 million in funding to reach a $1 billion valuation. The platform enables financial institutions, law enforcement agencies like the FBI, and crypto businesses to trace illicit funds across blockchains, identify real-world entities behind addresses, and generate court-ready evidence. This milestone underscores growing institutional demand for reliable blockchain intelligence amid rising crypto fraud, ransomware, and sanctions evasion risks. For institutional investors, TRM's expansion signals a maturing compliance infrastructure essential for scaling crypto asset management while meeting AML/CFT standards.</p>
+      <p class="story-summary">
+        TRM Labs, a leading provider of blockchain analytics tools for detecting and investigating crypto-related crimes, raised $70 million in funding to reach a $1 billion valuation. The platform enables financial institutions, law enforcement agencies like the FBI, and crypto businesses to trace illicit funds across blockchains, identify real-world entities behind addresses, and generate court-ready evidence. This milestone underscores growing institutional demand for reliable blockchain intelligence amid rising crypto fraud, ransomware, and sanctions evasion risks. For institutional investors, TRM's expansion signals a maturing compliance infrastructure essential for scaling crypto asset management while meeting AML/CFT standards.
+      </p>
       <a class="story-link" href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="story">
       <h2 class="story-title">RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool</h2>
-      <img class="story-img" src="https://cdn.prod.website-files.com/6470c67dbb66a109d9a2e811/67f90b035471abb7be8ae122_Template%2016.png" alt="RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool" onerror="this.style.display='none'">
+      <img class="story-image" src="https://cdn.prod.website-files.com/6470c67dbb66a109d9a2e811/67f90b035471abb7be8ae122_Template%2016.png" alt="RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool" onerror="this.style.display='none'">
       <div class="story-meta">Johnny Reinsch &amp; Prof. Chris Brummer &bull; Regulation &bull; Score: 7/10</div>
-      <p class="story-summary">The SEC has released guidance clarifying how traditional securities disclosure obligations apply to digital assets and tokenized ecosystems. This provides structure for the crypto industry.</p>
+      <p class="story-summary">
+        The SEC has released guidance clarifying how traditional securities disclosure obligations apply to digital assets and tokenized ecosystems. This provides structure for the crypto industry.
+      </p>
       <a class="story-link" href="https://rwa.xyz/blog/the-sec-has-logged-on-crypto-disclosure-enters-the-mempool" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="story">
       <h2 class="story-title">Tian Ruixiang Says Investor to Contribute 15,000 Bitcoin for Equity</h2>
-      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c24f0-709b-7ba1-9d5a-669edf69a784.jpg" alt="Tian Ruixiang Says Investor to Contribute 15,000 Bitcoin for Equity" onerror="this.style.display='none'">
+      <img class="story-image" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c24f0-709b-7ba1-9d5a-669edf69a784.jpg" alt="Tian Ruixiang Says Investor to Contribute 15,000 Bitcoin for Equity" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Bitcoin &bull; Score: 6/10</div>
-      <p class="story-summary">Nasdaq-listed insurance brokerage Tian Ruixiang announced that an investor will contribute 15,000 Bitcoin in exchange for equity in the company. This represents a significant investment in the company and could signal growing institutional interest in Bitcoin.</p>
+      <p class="story-summary">
+        Nasdaq-listed insurance brokerage Tian Ruixiang announced that an investor will contribute 15,000 Bitcoin in exchange for equity in the company. This represents a significant investment in the company and could signal growing institutional interest in Bitcoin.
+      </p>
       <a class="story-link" href="https://cointelegraph.com/news/tian-ruixiang-plans-acquire-15-000-bitcoin-equity-linked-deal" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="story">
       <h2 class="story-title">Galaxy Digital reports $482m loss as Bitcoin price takes a beating</h2>
-      <img class="story-img" src="https://www.dlnews.com/resizer/v2/WPUR7PO6QBGLDPE6TE2N6S55RQ.jpg?smart=true&auth=606bbbfc07d92e08cdb41e40fd1a290a51275339dfbd0a0829062630adc8e442&width=1200&height=630" alt="Galaxy Digital reports $482m loss as Bitcoin price takes a beating" onerror="this.style.display='none'">
+      <img class="story-image" src="https://www.dlnews.com/resizer/v2/WPUR7PO6QBGLDPE6TE2N6S55RQ.jpg?smart=true&auth=606bbbfc07d92e08cdb41e40fd1a290a51275339dfbd0a0829062630adc8e442&width=1200&height=630" alt="Galaxy Digital reports $482m loss as Bitcoin price takes a beating" onerror="this.style.display='none'">
       <div class="story-meta">Pedro Solimano &bull; Investment &bull; Score: 6/10</div>
-      <p class="story-summary">Galaxy Digital reported a $241 million net loss in Q4 2025, contributing to a $482 million loss overall. The losses are attributed to unrealized losses on digital asset holdings, though CEO Mike Novogratz remains optimistic about future price recovery.</p>
+      <p class="story-summary">
+        Galaxy Digital reported a $241 million net loss in Q4 2025, contributing to a $482 million loss overall. The losses are attributed to unrealized losses on digital asset holdings, though CEO Mike Novogratz remains optimistic about future price recovery.
+      </p>
       <a class="story-link" href="https://www.dlnews.com/articles/markets/galaxy-digital-reports-half-billion-loss-amid-bitcoin-plunge/" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="story">
-      <h2 class="story-title">Exclusive: Eventbrite cofounder launches new €250m climate fund</h2>
-      <img class="story-img" src="https://images.sifted.eu/wp-content/uploads/2026/02/03122529/SlateVC-Team-scaled.jpg?w=2048&h=1367&q=75&fit=crop&auto=compress,format" alt="Exclusive: Eventbrite cofounder launches new €250m climate fund" onerror="this.style.display='none'">
+      <h2 class="story-title">Exclusive: Eventbrite cofounder launches new &euro;250m climate fund</h2>
+      <img class="story-image" src="https://images.sifted.eu/wp-content/uploads/2026/02/03122529/SlateVC-Team-scaled.jpg?w=2048&h=1367&q=75&fit=crop&auto=compress,format" alt="Exclusive: Eventbrite cofounder launches new climate fund" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Investment &bull; Score: 6/10</div>
-      <p class="story-summary">Eventbrite cofounder Renaud Visage launches a new €250m climate fund. Visage believes the climate tech downturn presents an opportunity for investors.</p>
+      <p class="story-summary">
+        Eventbrite cofounder Renaud Visage launches a new &euro;250m climate fund. Visage believes the climate tech downturn presents an opportunity for investors.
+      </p>
       <a class="story-link" href="https://sifted.eu/articles/slate-vc-250m-growth-fund-climate-tech/" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="story">
       <h2 class="story-title">Vitalik Buterin Says Ethereum Scaling Should Move From L2s</h2>
-      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c261a-d504-7aa5-9a04-c1a9af4c7a0a.jpg" alt="Vitalik Buterin Says Ethereum Scaling Should Move From L2s" onerror="this.style.display='none'">
+      <img class="story-image" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c261a-d504-7aa5-9a04-c1a9af4c7a0a.jpg" alt="Vitalik Buterin Says Ethereum Scaling Should Move From L2s" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Ethereum &bull; Score: 6/10</div>
-      <p class="story-summary">Vitalik Buterin suggests Ethereum scaling should shift focus towards native rollups on the mainnet, implying a potential change in strategy from relying solely on Layer 2 solutions.</p>
+      <p class="story-summary">
+        Vitalik Buterin suggests Ethereum scaling should shift focus towards native rollups on the mainnet, implying a potential change in strategy from relying solely on Layer 2 solutions.
+      </p>
       <a class="story-link" href="https://cointelegraph.com/news/ethereum-scaling-pivot-l2s-mainnet-vitalik-buterin" target="_blank">Read full article &rarr;</a>
     </div>
+
     <div class="divider"></div>
-    <div><h2 class="section-title">&#x1F4F0; Also Worth Reading</h2><ul class="other-list">
+    <h3 class="section-heading">Also Worth Reading</h3>
+    <ul class="other-list">
       <li><a href="https://cointelegraph.com/news/kraken-parent-payward-revenues-jump-crypto-traders-flock-in" target="_blank">Payward Revenues Jump 33% as Traders Flock to Kraken</a> <span class="other-source">(News)</span></li>
       <li><a href="https://www.theblock.co/post/388372/canada-ciro-crypto-custody" target="_blank">Canada's investment watchdog sets new rules for crypto custody</a> <span class="other-source">(Danny Park)</span></li>
       <li><a href="https://cointelegraph.com/news/bitwise-acquire-chorus-one-crypto-staking-demand-surges" target="_blank">Bitwise to Acquire Chorus One as Crypto Staking Demand Accelerates</a> <span class="other-source">(News)</span></li>
-      <li><a href="https://www.galaxy.com/insights/research/bitcoin-wallet-opreturn-salomon-brothers-abandoned-property-constructive-possession" target="_blank">The Great Bitcoin Dusting: A ‘Salomon Brothers’ Client Tries to Claim Dormant Wallets</a> <span class="other-source">(Galaxy)</span></li>
+      <li><a href="https://www.galaxy.com/insights/research/bitcoin-wallet-opreturn-salomon-brothers-abandoned-property-constructive-possession" target="_blank">The Great Bitcoin Dusting: A 'Salomon Brothers' Client Tries to Claim Dormant Wallets</a> <span class="other-source">(Galaxy)</span></li>
       <li><a href="https://www.dlnews.com/articles/markets/ethereum-layer-2-rethink-vitalik-buterin-floats-new-roadmap/" target="_blank">Ethereum layer 2 rethink? Vitalik Buterin floats new roadmap amid price plunge</a> <span class="other-source">(Lance Datskoluo)</span></li>
-      <li><a href="https://ambcrypto.com/stablecoin-volume-hit-10t-in-january-heres-why-its-the-most-bullish-signal/" target="_blank">Stablecoin volume hit $10T in January – Here’s why it’s THE most bullish signal!</a> <span class="other-source">(Ritika Gupta)</span></li>
+      <li><a href="https://ambcrypto.com/stablecoin-volume-hit-10t-in-january-heres-why-its-the-most-bullish-signal/" target="_blank">Stablecoin volume hit $10T in January - Here's why it's THE most bullish signal!</a> <span class="other-source">(Ritika Gupta)</span></li>
       <li><a href="https://www.theblock.co/post/388397/south-korean-crypto-ceo-3-year-prison" target="_blank">South Korean crypto CEO gets 3-year prison term in market manipulation case: report</a> <span class="other-source">(theblock.co)</span></li>
       <li><a href="https://rwa.xyz/blog/tokenized-treasuries-report" target="_blank">RWA.xyz Blog - An Allocator's Guide to Tokenized Treasuries</a> <span class="other-source">(Jack Chong)</span></li>
       <li><a href="https://cointelegraph.com/news/tether-20-billion-raise-trim-500-billion-valuation-skepticism" target="_blank">Tether Cuts $20B Funding Plan Amid Investor Caution: Report</a> <span class="other-source">(News)</span></li>
       <li><a href="https://www.theblock.co/post/388426/coinbases-prediction-markets-draw-fire-from-nevada-regulator-over-alleged-unlicensed-sports-betting" target="_blank">Coinbase's prediction markets draw fire from Nevada regulator over alleged unlicensed sports betting</a> <span class="other-source">(theblock.co)</span></li>
       <li><a href="https://cointelegraph.com/news/canada-ciro-interim-crypto-custody-framework" target="_blank">CIRO Formalizes Interim Crypto Custody Framework in Canada</a> <span class="other-source">(News)</span></li>
-      <li><a href="https://fortune.com/2026/02/03/project-vault-critical-minerals-stockpile-rare-earths-first-step-break-china-chokehold/" target="_blank">New ‘Project Vault’ critical minerals stockpile is ‘first step of many’ needed for U.S. to break China’s supply chain chokehold </a> <span class="other-source">(Jordan Blum)</span></li>
-    </ul></div>
+      <li><a href="https://fortune.com/2026/02/03/project-vault-critical-minerals-stockpile-rare-earths-first-step-break-china-chokehold/" target="_blank">New 'Project Vault' critical minerals stockpile is 'first step of many' needed for U.S. to break China's supply chain chokehold</a> <span class="other-source">(Jordan Blum)</span></li>
+    </ul>
+
     <div class="divider"></div>
-    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends,
+    <div class="linkedin-box">
+      <h3>LinkedIn Ready</h3>
+      <p class="linkedin-label">Copy and paste:</p>
+      <div class="linkedin-content">Dear Founders, Investors, and Friends,
 
 The crypto landscape is evolving rapidly, and three developments this week highlight why we're more committed than ever to backing bold Web3 builders.
 
@@ -136,17 +227,44 @@ The question isn't whether Web3 will reshape the digital economy, it's whether y
 
 What problem are you solving in Web3 today?
 
-#Web3 #Crypto #Blockchain #CryptoVC</div></div>
-    <div><h3 class="section-title">&#x1F4DA; Sources</h3><ul class="sources-list">
-      <li><span class="source-num">[1]</span> <a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round </a> <span class="other-source">(Leo Schwartz)</span></li>
+#Web3 #Crypto #Blockchain #CryptoVC</div>
+    </div>
+
+    <h3 class="section-heading">Sources</h3>
+    <ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</a> <span class="other-source">(Leo Schwartz)</span></li>
       <li><span class="source-num">[2]</span> <a href="https://rwa.xyz/blog/the-sec-has-logged-on-crypto-disclosure-enters-the-mempool">RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool</a> <span class="other-source">(Johnny Reinsch &amp; Prof. Chris Brummer)</span></li>
       <li><span class="source-num">[3]</span> <a href="https://cointelegraph.com/news/tian-ruixiang-plans-acquire-15-000-bitcoin-equity-linked-deal">Tian Ruixiang Says Investor to Contribute 15,000 Bitcoin for Equity</a> <span class="other-source">(News)</span></li>
       <li><span class="source-num">[4]</span> <a href="https://www.dlnews.com/articles/markets/galaxy-digital-reports-half-billion-loss-amid-bitcoin-plunge/">Galaxy Digital reports $482m loss as Bitcoin price takes a beating</a> <span class="other-source">(Pedro Solimano)</span></li>
-      <li><span class="source-num">[5]</span> <a href="https://sifted.eu/articles/slate-vc-250m-growth-fund-climate-tech/">Exclusive: Eventbrite cofounder launches new €250m climate fund</a> <span class="other-source">(News)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://sifted.eu/articles/slate-vc-250m-growth-fund-climate-tech/">Exclusive: Eventbrite cofounder launches new climate fund</a> <span class="other-source">(News)</span></li>
       <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/news/ethereum-scaling-pivot-l2s-mainnet-vitalik-buterin">Vitalik Buterin Says Ethereum Scaling Should Move From L2s</a> <span class="other-source">(News)</span></li>
-    </ul></div>
-    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
-    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+    </ul>
+
+    <div class="newsletter-cta">
+      <h3>Help Us Improve</h3>
+      <p>Your feedback shapes future editions</p>
+      <a class="newsletter-cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a>
+    </div>
+
+    <div class="newsletter-footer">
+      Blockwall Capital &bull; Frankfurt, Germany
+    </div>
   </div>
-  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
-</body></html>
+
+  <script>
+    function toggleTheme() {
+      const b = document.body, i = document.getElementById('theme-icon');
+      if (b.getAttribute('data-theme') === 'dark') {
+        b.setAttribute('data-theme', 'light'); i.textContent = '\u2600\uFE0F';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        b.setAttribute('data-theme', 'dark'); i.textContent = '\uD83C\uDF19';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const t = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', t);
+    document.getElementById('theme-icon').textContent = t === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
+  </script>
+</body>
+</html>
