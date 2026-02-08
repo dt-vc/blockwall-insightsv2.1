@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Weekly Insights - Week 7, 2026</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img {
+      max-height: 220px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .exec-summary {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+    }
+
+    .exec-summary h2 {
+      color: #8b7cf6;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .exec-summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exec-summary li {
+      padding: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .exec-summary li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #8b7cf6;
+      font-weight: bold;
+    }
+
+    .signals-section {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+    }
+
+    .signal-item {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .signal-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .signal-title {
+      color: #22c55e;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .signal-analysis {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .category-section {
+      margin: 36px 0;
+    }
+
+    .category-title {
+      color: #8b7cf6;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #8b7cf6;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-count {
+      background: #8b7cf6;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+    }
+
+    .week-badge {
+      display: inline-block;
+      background: #8b7cf6;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    @media (max-width: 768px) {
+      .stories-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .story-card {
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .story-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .story-card-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .story-card-content {
+      padding: 16px;
+    }
+
+    .story-card-title {
+      color: #f8fafc;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .story-card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .story-card-title a:hover {
+      color: #8b7cf6;
+    }
+
+    .story-card-meta {
+      color: #64748b;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .story-card-summary {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .secondary-section {
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+
+    .secondary-title {
+      color: #f8fafc;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="index.html" class="nav-link active">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="../portfolio/index.html" class="nav-link">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+    </div>
+  </nav>
+
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Weekly Archive
+    </a>
+
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital • Weekly Digest</div>
+      <h1>Week 7 Insights</h1>
+      <div class="newsletter-date">February 2 - February 8, 2026</div>
+    </div>
+
+    <div class="newsletter-stats">
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">430</div>
+        <div class="newsletter-stat-label">Stories Analyzed</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">15</div>
+        <div class="newsletter-stat-label">Key Stories</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bullish">66</div>
+        <div class="newsletter-stat-label">Bullish</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bearish">160</div>
+        <div class="newsletter-stat-label">Bearish</div>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Executive Summary</h2>
+      <ul>
+        <li>Tether freezes $500M in crypto for Turkish authorities, underscoring stablecoin compliance leadership amid global crime fights.</li>
+        <li>Erebor secures first US bank charter under Trump's second term, accelerating crypto integration into traditional finance.</li>
+        <li>Crypto firms raise $258M from Goldman Sachs and Citi despite $2T market drawdown, proving investor conviction in mature projects.</li>
+        <li>PBOC bans unapproved yuan stablecoins, tightening China's grip while US regulatory thaw favors innovation.</li>
+        <li>BlackRock's Bitcoin ETF hits $10B daily volume record amid 13% drop, highlighting resilient institutional liquidity.</li>
+        <li>Bitcoin ETFs see $545M daily outflows as BTC dips below $70K, yet gold tokenization via Tether's $150M investment signals diversification.</li>
+        <li>Bearish sentiment yields to ETF inflow signals and whale accumulation, positioning market for strategic rebound opportunities.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">&#x1F525; Top Stories of the Week</h2>
+    <div class="story">
+      <h2 class="story-title">Tether helped Turkish investigators by freezing half a billion dollars in crypto: report</h2>
+      <img class="story-image" src="https://www.dlnews.com/resizer/v2/OPTZEJGZTVHWTJ2TKVUUE6TWIA.jpg?smart=true&auth=d8f85c0c105585f22ce207bc3a05924e553fbe6c749b6a9a827fe9af0ee5d973&width=1200&height=630" alt="Tether helped Turkish investigators by freezing half a billion dollars in crypto: report" onerror="this.style.display='none'">
+      <div class="story-meta">Mathew Di Salvo &bull; Stablecoins &bull; 2026-02-07 &bull; Score: 7/10</div>
+      <p class="story-summary">Tether assisted Turkish investigators by freezing over $500 million in cryptocurrency related to an illegal betting case. This action demonstrates Tether's cooperation with law enforcement agencies globally in combating crime.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/tether-froze-over-500-million-dollars-in-crypto-for-turkish-investigators/" target="_blank">Read full article →</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Erebor Secures First New US Bank Charter of Trump's Second Term</h2>
+      <img class="story-image" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c36ce-5a33-781b-aa51-456342834541.jpg" alt="Erebor Secures First New US Bank Charter of Trump's Second Term" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Regulation &bull; 2026-02-07 &bull; Score: 7/10</div>
+      <p class="story-summary">Erebor Bank, a crypto-focused startup lender, has secured a national bank charter from US regulators. This marks the first new US bank charter granted since Trump's second term and signals increasing regulatory acceptance of crypto-related financial institutions.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-erebor-first-new-us-bank-charter-trump-second-term" target="_blank">Read full article →</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto firms raise $258m despite $2 trillion market drawdown</h2>
+      <img class="story-image" src="https://www.dlnews.com/resizer/v2/5BHIMUTY2BHE5DF2UF5LJBCBAM.jpg?smart=true&auth=e2d38bae6002326d3e38b3caba0dc7f985823c27e8b340c4381a825b0abe821f&width=1200&height=630" alt="Crypto firms raise $258m despite $2 trillion market drawdown" onerror="this.style.display='none'">
+      <div class="story-meta">Lance Datskoluo &bull; Investment &bull; 2026-02-07 &bull; Score: 7/10</div>
+      <p class="story-summary">Crypto firms have raised $258 million despite the market downturn, indicating continued investor interest. Mature companies are attracting more investment, with top investors including Goldman Sachs, Citi, and Galaxy Digital.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Read full article →</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">PBOC Officially Bans 'Unapproved' Yuan-Pegged Stablecoins</h2>
+      <img class="story-image" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c33c8-f50f-775e-b57b-1b5815cd61d9.jpg" alt="PBOC Officially Bans 'Unapproved' Yuan-Pegged Stablecoins" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Regulation &bull; 2026-02-06 &bull; Score: 7/10</div>
+      <p class="story-summary">The People's Bank of China (PBOC) has officially banned the issuance of yuan-pegged stablecoins and the tokenization of assets without prior approval. This regulatory action signals a tightening of control over cryptocurrency-related activities within China.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/china-bans-stablecoin-rwa-foreign-domestic" target="_blank">Read full article →</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">U.S. Marshals Service under scrutiny after insider allegedly stole $25 million from federal crypto wallets</h2>
+      <img class="story-image" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/Fortune-Crypto-Trump-e1770389059471.jpg?resize=1200,600" alt="U.S. Marshals Service under scrutiny after insider allegedly stole $25 million from federal crypto wallets" onerror="this.style.display='none'">
+      <div class="story-meta">Jeff John Roberts &bull; Security &bull; 2026-02-06 &bull; Score: 7/10</div>
+      <p class="story-summary">An insider at the U.S. Marshals Service allegedly stole $25 million from federal crypto wallets. A security researcher found evidence connecting the theft to a subcontractor.</p>
+      <a class="story-link" href="https://fortune.com/2026/02/06/us-marshals-service-scrutiny-insider-allegedly-stole-25-million-federal-crypto-wallets/" target="_blank">Read full article →</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin ETFs Record $434M Outflows Amid BTC Slide Below $70K</h2>
+      <img class="story-image" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c31b8-40c8-7d6a-a03f-5136b8762ed0.jpg" alt="Bitcoin ETFs Record $434M Outflows Amid BTC Slide Below $70K" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Bitcoin &bull; 2026-02-06 &bull; Score: 7/10</div>
+      <p class="story-summary">Bitcoin ETFs experienced significant outflows of $434 million on Thursday as the price of Bitcoin declined below $70,000. Total assets held in Bitcoin ETFs have decreased to $81 billion.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/bitcoin-etf-434-million-outflows-price-touches-60k" target="_blank">Read full article →</a>
+    </div>
+
+    <h3 class="section-title" style="margin-top: 32px;">&#x1F4F0; More Key Stories</h3>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img class="story-card-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c3140-b513-729a-9334-fd46893931ed.jpg" alt="Tether Invests $150M in Gold.com to expand gold tokenization" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/tether-invests-150-million-in-gold-com" target="_blank">Tether Invests $150M in Gold.com to expand gold tokenization</a></div>
+          <div class="story-card-meta">News &bull; Tokenization &bull; 2026-02-06</div>
+          <div class="story-card-summary">Tether has invested $150 million in Gold.com for a 12% stake. This investment aims to expand Tether's tokenized gold offerings by listing its token on...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c30a1-02ba-7c98-bffa-b731034f0029.jpg" alt="BlackRock's Bitcoin ETF Hits Daily Volume Record of $10B" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/blackrock-ibit-daily-volume-record-10-billion-bitcoin-crash" target="_blank">BlackRock's Bitcoin ETF Hits Daily Volume Record of $10B</a></div>
+          <div class="story-card-meta">News &bull; Bitcoin &bull; 2026-02-06</div>
+          <div class="story-card-summary">BlackRock's iShares Bitcoin Trust ETF (IBIT) reached a daily volume record of $10 billion on Thursday. This occurred as the ETF experienced a 13% pric...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://www.tbstat.com/wp/uploads/2025/12/20251208_Microstrategy_News_2.jpg" alt="Strategy posts $12.6 billion Q4 loss as bitcoin slide triggers one of largest quarterly hits in corporate history" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://www.theblock.co/post/388730/strategy-12-6b-q4-loss-bitcoin-slide-triggers-one-largest-quarterly-hits-corporate-history" target="_blank">Strategy posts $12.6 billion Q4 loss as bitcoin slide triggers one of largest quarterly hits in corporate history</a></div>
+          <div class="story-card-meta">Kyle Baird &bull; Bitcoin &bull; 2026-02-05</div>
+          <div class="story-card-summary">Strategy reported a $12.6 billion Q4 loss due to the decline in Bitcoin's price, marking a significant quarterly hit. Bitcoin's price drop below Strat...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c2cda-02e0-7845-b7de-99100fc3a14a.jpg" alt="Bitcoin ETFs Extend Losses As Daily Outflows Hit $545 Million" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/bitcoin-etf-545-million-outflows-btc-nears-70k" target="_blank">Bitcoin ETFs Extend Losses As Daily Outflows Hit $545 Million</a></div>
+          <div class="story-card-meta">News &bull; Bitcoin &bull; 2026-02-05</div>
+          <div class="story-card-summary">Bitcoin ETFs experienced significant outflows on Wednesday, totaling $545 million. This has resulted in a negative weekly flow of $255 million....</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://www.tbstat.com/wp/uploads/2025/12/20251229_Bitcoin_News_3.jpg" alt="Spot bitcoin ETFs register second consecutive day of outflows totaling $545 million" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://www.theblock.co/post/388609/spot-bitcoin-etfs-second-day-outflows-545-million" target="_blank">Spot bitcoin ETFs register second consecutive day of outflows totaling $545 million</a></div>
+          <div class="story-card-meta">Brian Danga &bull; Bitcoin &bull; 2026-02-05</div>
+          <div class="story-card-summary">US spot bitcoin ETFs experienced significant outflows for the second consecutive day, totaling $544.94 million on Wednesday. This occurred as the pric...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2210409716-e1770279560245.jpg?resize=1200,600" alt="Developer Hongkong Land launches a $6.5B Singapore real estate fund, the country's largest, as part of CEO Michael Smith's strategic pivot" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://fortune.com/2026/02/05/hongkong-land-ceo-michael-smith-singapore-fund-qatar/" target="_blank">Developer Hongkong Land launches a $6.5B Singapore real estate fund, the country's largest, as part of CEO Michael Smith's strategic pivot</a></div>
+          <div class="story-card-meta">Angelica Ang &bull; Investment &bull; 2026-02-05</div>
+          <div class="story-card-summary">Hongkong Land launches a $6.5B Singapore real estate fund, the country's largest, as part of CEO Michael Smith's strategic pivot to expand to Asia's g...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c2bb4-8763-7289-95c1-d151052a2c94.jpg" alt="Feds Crypto Trace Gets Incognito Market Creator 30 Years" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/crypto-made-undid-100m-incognito-dark-web-market" target="_blank">Feds Crypto Trace Gets Incognito Market Creator 30 Years</a></div>
+          <div class="story-card-meta">News &bull; Regulation &bull; 2026-02-05</div>
+          <div class="story-card-summary">Incognito Market creator Rui-Siang Lin received a 30-year prison sentence after the FBI traced cryptocurrency transactions from the online drug market...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c2a87-62a4-7b43-9eb2-c47c69dbb6fe.jpg" alt="$2.9B Bitcoin ETF Outflow, Bearish Futures Data Project More BTC Downside" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/spot-bitcoin-etf-outflows-total-2-9b-as-btc-price-drops-to-new-2026-low" target="_blank">$2.9B Bitcoin ETF Outflow, Bearish Futures Data Project More BTC Downside</a></div>
+          <div class="story-card-meta">News &bull; Bitcoin &bull; 2026-02-04</div>
+          <div class="story-card-summary">Bitcoin is facing potential downside pressure as indicated by a $2.9B outflow from Bitcoin ETFs and bearish repositioning in futures markets. Traders ...</div>
+        </div>
+      </div>
+      <div class="story-card">
+        <img class="story-card-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2206432671-e1770167851528.jpg?resize=1200,600" alt="Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round" onerror="this.style.display='none'">
+        <div class="story-card-content">
+          <div class="story-card-title"><a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/" target="_blank">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</a></div>
+          <div class="story-card-meta">Leo Schwartz &bull; Security &bull; 2026-02-04</div>
+          <div class="story-card-summary">TRM Labs, a crypto crime-fighting startup that provides blockchain analytics tools, has raised $70 million in a new funding round, achieving a valuati...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signals-section">
+      <h2 class="section-title" style="color: #22c55e; margin-bottom: 24px;">&#x1F4E1; Notable Signals &amp; Patterns</h2>
+      <div class="signal-item">
+        <div class="signal-title">Institutional Capitulation Amid Liquidity Crisis</div>
+        <p class="signal-analysis">Bitcoin ETFs recorded $434 million in outflows on Thursday and $545 million on Wednesday as BTC slid below $70,000, with total ETF assets declining to $81 billion. This represents a sharp reversal from the institutional adoption narrative that dominated late 2025, signaling that even regulated investment vehicles are experiencing significant redemptions during the market downturn. The $2.5 billion in 24-hour network liquidations and MicroStrategy's $12.6 billion Q4 loss indicate that leverage unwinding is forcing institutional players to reduce exposure rather than accumulate at lower prices.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Stablecoin Dominance Accelerating During Market Stress</div>
+        <p class="signal-analysis">Tether's USDt reached $187.3 billion in Q4 2025 while competing stablecoins shrank, with USDT now commanding 68.4% user dominance and growing by 35 million new users. The parallel growth of stablecoin transaction volume (92% linked to crypto trading and on-ramps) during a period of extreme fear suggests that market participants are rotating into stablecoins as a holding pattern rather than exiting crypto entirely. This concentration of liquidity in a single stablecoin issuer creates structural risk while simultaneously validating stablecoins as the primary bridge between traditional and decentralized finance.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Regulatory Clarity Enabling Institutional Infrastructure</div>
+        <p class="signal-analysis">The CFTC's amendment recognizing national trust banks as stablecoin issuers, combined with Erebor Bank securing the first new US bank charter of Trump's second term, marks a shift from regulatory uncertainty to explicit institutional onboarding frameworks. These developments occurred during the market downturn, indicating that regulatory progress is decoupling from price action and creating durable infrastructure for traditional finance integration. The SEC's new guidance on digital asset disclosure obligations further signals that compliance frameworks are maturing faster than market sentiment recovers.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Real Asset Tokenization Moving Beyond Experimentation</div>
+        <p class="signal-analysis">Tether's $150 million investment in Gold.com to expand tokenized gold offerings, combined with the launch of Strium for institutional FX and RWA trading and CME Group's exploration of proprietary tokens for collateral, demonstrates that tokenization is shifting from pilot projects to capital deployment. These moves by major financial institutions and stablecoin issuers suggest that the infrastructure for tokenized real-world assets is being built during a bear market, positioning early movers to capture institutional demand when risk appetite recovers. The focus on institutional-grade platforms rather than retail speculation indicates maturation of the tokenization thesis.</p>
+      </div>
+      <div class="signal-item">
+        <div class="signal-title">Law Enforcement Effectiveness Reshaping Crypto Risk Landscape</div>
+        <p class="signal-analysis">Crypto crime losses hit $370.3 million in January 2026, the highest in 11 months, while simultaneously TRM Labs achieved a $1 billion valuation with $70 million in new funding and the FBI successfully traced Incognito Market creator Rui-Siang Lin through cryptocurrency transactions. This paradox reflects a structural shift where rising losses are driving institutional demand for compliance and analytics tools, while improving law enforcement capabilities are making privacy-focused platforms increasingly untenable. Tether's cooperation with Turkish investigators in freezing $500 million in illicit funds demonstrates that stablecoin issuers are becoming active enforcement partners, fundamentally altering the risk calculus for bad actors.</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="category-section">
+      <h3 class="category-title">Stablecoins <span class="category-count">22</span></h3>
+      <ul class="other-list">
+        <li><a href="https://www.dlnews.com/articles/regulation/tether-froze-over-500-million-dollars-in-crypto-for-turkish-investigators/" target="_blank">Tether helped Turkish investigators by freezing half a billion dollars in crypto: report</a> <span class="other-source">(Mathew Di Salvo, 2026-02-07)</span></li>
+        <li><a href="https://cointelegraph.com/news/cftc-stablecoins-national-trust-banks" target="_blank">CFTC Amends Guidance, Includes National Trust Banks As Stablecoin Issuers</a> <span class="other-source">(News, 2026-02-07)</span></li>
+        <li><a href="https://ambcrypto.com/how-usdts-185b-growth-could-challenge-ethereums-position/" target="_blank">How USDT's $185B growth could challenge Ethereum's position</a> <span class="other-source">(Samyukhtha L KM, 2026-02-05)</span></li>
+        <li><a href="https://cointelegraph.com/news/tether-usdt-q4-2025-record-market-cap-onchain-activity" target="_blank">Tether's USDt Hits $187B in Q4 as Rivals Shrink Amid Crypto Downturn</a> <span class="other-source">(News, 2026-02-05)</span></li>
+        <li><a href="https://cointelegraph.com/news/tether-20-billion-raise-trim-500-billion-valuation-skepticism" target="_blank">Tether Cuts $20B Funding Plan Amid Investor Caution: Report</a> <span class="other-source">(News, 2026-02-04)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Regulation <span class="category-count">41</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/crypto-erebor-first-new-us-bank-charter-trump-second-term" target="_blank">Erebor Secures First New US Bank Charter of Trump's Second Term</a> <span class="other-source">(News, 2026-02-07)</span></li>
+        <li><a href="https://cointelegraph.com/news/china-bans-stablecoin-rwa-foreign-domestic" target="_blank">PBOC Officially Bans 'Unapproved' Yuan-Pegged Stablecoins</a> <span class="other-source">(News, 2026-02-06)</span></li>
+        <li><a href="https://cointelegraph.com/news/crypto-made-undid-100m-incognito-dark-web-market" target="_blank">Feds Crypto Trace Gets Incognito Market Creator 30 Years</a> <span class="other-source">(News, 2026-02-05)</span></li>
+        <li><a href="https://rwa.xyz/blog/the-sec-has-logged-on-crypto-disclosure-enters-the-mempool" target="_blank">RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool</a> <span class="other-source">(Johnny Reinsch &amp; Prof. Chris Brummer, 2026-02-04)</span></li>
+        <li><a href="https://cointelegraph.com/news/vietnam-crypto-tax-0-1-percent-trading-levy-draft-policy" target="_blank">Vietnam Draft Rules Propose 0.1% Tax on Crypto Transfers</a> <span class="other-source">(News, 2026-02-07)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Investment <span class="category-count">33</span></h3>
+      <ul class="other-list">
+        <li><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a> <span class="other-source">(Lance Datskoluo, 2026-02-07)</span></li>
+        <li><a href="https://fortune.com/2026/02/05/hongkong-land-ceo-michael-smith-singapore-fund-qatar/" target="_blank">Developer Hongkong Land launches a $6.5B Singapore real estate fund, the country's largest, as part of CEO Michael Smith's strategic pivot</a> <span class="other-source">(Angelica Ang, 2026-02-05)</span></li>
+        <li><a href="https://www.washingtonpost.com/politics/2026/02/01/trump-uae-crypto-world-liberty-financial/" target="_blank">Trump family crypto firm sold major stake to UAE investment firm</a> <span class="other-source">(Matt Viser, 2026-02-02)</span></li>
+        <li><a href="https://www.ft.com/content/188bc9f1-cb43-4b04-a548-79805153a20b" target="_blank">Abu Dhabi royal bought big stake in Trump family crypto venture</a> <span class="other-source">(James Politi,Andrew England,George Steer, 2026-02-01)</span></li>
+        <li><a href="https://cointelegraph.com/news/ark-sells-22m-coinbase-adds-bullish-across-etfs" target="_blank">ARK Sells $22M in Coinbase Shares, Buys Bullish Across ETFs</a> <span class="other-source">(News, 2026-02-08)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Security <span class="category-count">21</span></h3>
+      <ul class="other-list">
+        <li><a href="https://fortune.com/2026/02/06/us-marshals-service-scrutiny-insider-allegedly-stole-25-million-federal-crypto-wallets/" target="_blank">U.S. Marshals Service under scrutiny after insider allegedly stole $25 million from federal crypto wallets</a> <span class="other-source">(Jeff John Roberts, 2026-02-06)</span></li>
+        <li><a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/" target="_blank">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</a> <span class="other-source">(Leo Schwartz, 2026-02-04)</span></li>
+        <li><a href="https://cryptonews.com/news/crypto-losses-hit-370m-in-january-2026-highest-in-11-months-certik/" target="_blank">Crypto Losses Hit $370M in January 2026, Highest in 11 Months: CertiK</a> <span class="other-source">(Amin Ayan, 2026-02-02)</span></li>
+        <li><a href="https://cointelegraph.com/news/crypto-stolen-370m-january-quadrupling-year-on-year-certik" target="_blank">Crypto Thefts Rise Fourfold Over Year to $370M in January</a> <span class="other-source">(News, 2026-02-02)</span></li>
+        <li><a href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/" target="_blank">Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe</a> <span class="other-source">(Tim Alper, 2026-02-08)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Bitcoin <span class="category-count">134</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/bitcoin-etf-434-million-outflows-price-touches-60k" target="_blank">Bitcoin ETFs Record $434M Outflows Amid BTC Slide Below $70K</a> <span class="other-source">(News, 2026-02-06)</span></li>
+        <li><a href="https://cointelegraph.com/news/blackrock-ibit-daily-volume-record-10-billion-bitcoin-crash" target="_blank">BlackRock's Bitcoin ETF Hits Daily Volume Record of $10B</a> <span class="other-source">(News, 2026-02-06)</span></li>
+        <li><a href="https://www.theblock.co/post/388730/strategy-12-6b-q4-loss-bitcoin-slide-triggers-one-largest-quarterly-hits-corporate-history" target="_blank">Strategy posts $12.6 billion Q4 loss as bitcoin slide triggers one of largest quarterly hits in corporate history</a> <span class="other-source">(Kyle Baird, 2026-02-05)</span></li>
+        <li><a href="https://cointelegraph.com/news/bitcoin-etf-545-million-outflows-btc-nears-70k" target="_blank">Bitcoin ETFs Extend Losses As Daily Outflows Hit $545 Million</a> <span class="other-source">(News, 2026-02-05)</span></li>
+        <li><a href="https://www.theblock.co/post/388609/spot-bitcoin-etfs-second-day-outflows-545-million" target="_blank">Spot bitcoin ETFs register second consecutive day of outflows totaling $545 million</a> <span class="other-source">(Brian Danga, 2026-02-05)</span></li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <h3 class="category-title">Tokenization <span class="category-count">16</span></h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/tether-invests-150-million-in-gold-com" target="_blank">Tether Invests $150M in Gold.com to expand gold tokenization</a> <span class="other-source">(News, 2026-02-06)</span></li>
+        <li><a href="https://www.theblock.co/post/388729/tether-deepens-metals-exposure-with-150-million-investment-in-gold-com" target="_blank">Tether deepens metals exposure with $150 million investment in Gold.com</a> <span class="other-source">(Daniel Kuhn, 2026-02-05)</span></li>
+        <li><a href="https://cointelegraph.com/news/startale-sbi-launch-strium-blockchain-institutional-fx-rwa-trading" target="_blank">Startale, SBI launch Strium for institutional FX, RWA trading</a> <span class="other-source">(News, 2026-02-05)</span></li>
+        <li><a href="https://cointelegraph.com/news/cme-group-exploring-issuing-token" target="_blank">CME Group Weighs Issuing Proprietary Token for Collateral and Margin</a> <span class="other-source">(News, 2026-02-04)</span></li>
+        <li><a href="https://www.theblock.co/post/388540/cme-group-tokenized-cash-coin-developed-google-use-crypto-collateral-roll-out-this-year" target="_blank">CME Group says tokenized cash coin developed with Google for use as crypto collateral to roll out this year</a> <span class="other-source">(Daniel Kuhn, 2026-02-04)</span></li>
+      </ul>
+    </div>
+    <div class="secondary-section">
+      <h3 class="secondary-title">&#x1F4D1; Also Worth Reading (20 more stories)</h3>
+      <ul class="other-list">
+        <li><a href="https://rwa.xyz/blog/the-sec-has-logged-on-crypto-disclosure-enters-the-mempool" target="_blank">RWA.xyz Blog - The SEC Has Logged On: Crypto Disclosure Enters the Mempool</a> <span class="other-source">(Johnny Reinsch &amp; Prof. Chris Brummer)</span></li>
+        <li><a href="https://www.reuters.com/markets/wealth/crypto-market-volatility-triggers-25-billion-bitcoin-liquidations-2026-02-02/" target="_blank">Crypto market volatility triggers $2.5 billion in bitcoin liquidations</a> <span class="other-source">(Hannah Lang)</span></li>
+        <li><a href="https://cointelegraph.com/news/parafi-capital-35m-investment-jupiter" target="_blank">ParaFi Capital Backs Jupiter with $35M Strategic Investment</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://cryptonews.com/news/crypto-losses-hit-370m-in-january-2026-highest-in-11-months-certik/" target="_blank">Crypto Losses Hit $370M in January 2026, Highest in 11 Months: CertiK</a> <span class="other-source">(Amin Ayan)</span></li>
+        <li><a href="https://cointelegraph.com/news/crypto-stolen-370m-january-quadrupling-year-on-year-certik" target="_blank">Crypto Thefts Rise Fourfold Over Year to $370M in January</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://cointelegraph.com/news/average-bitcoin-etf-buy-underwater-after-investors-pull-2-8b-2-weeks" target="_blank">Bitcoin ETF Investors Underwater After $2.8B Outflow Wave</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://www.washingtonpost.com/politics/2026/02/01/trump-uae-crypto-world-liberty-financial/" target="_blank">Trump family crypto firm sold major stake to UAE investment firm</a> <span class="other-source">(Matt Viser)</span></li>
+        <li><a href="https://www.ft.com/content/188bc9f1-cb43-4b04-a548-79805153a20b" target="_blank">Abu Dhabi royal bought big stake in Trump family crypto venture</a> <span class="other-source">(James Politi,Andrew England,George Steer)</span></li>
+        <li><a href="https://cointelegraph.com/news/jack-dorsey-block-may-cut-10-percent-staff-restructuring" target="_blank">Jack Dorsey's Block May Slash Up To 10% of Staff: Report</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/" target="_blank">Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe</a> <span class="other-source">(Tim Alper)</span></li>
+        <li><a href="https://cointelegraph.com/news/ark-sells-22m-coinbase-adds-bullish-across-etfs" target="_blank">ARK Sells $22M in Coinbase Shares, Buys Bullish Across ETFs</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://cointelegraph.com/news/bithumb-claws-back-99-7-of-overpaid-bitcoin-covers-remaining-shortfall" target="_blank">Bithumb Recovers Overpaid Bitcoin, Covers 1,788 BTC Shortfall</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://fortune.com/2026/02/07/next-gen-nuclear-tipping-point-meta-hyperscalers-bill-gates-terrapower-sam-altman-oklo/" target="_blank">Next-gen nuclear sees a tipping point as Meta and hyperscalers start dealmaking with Bill Gates' TerraPower, Sam Altman-backed Oklo and more</a> <span class="other-source">(Jordan Blum)</span></li>
+        <li><a href="https://cointelegraph.com/news/cftc-stablecoins-national-trust-banks" target="_blank">CFTC Amends Guidance, Includes National Trust Banks As Stablecoin Issuers</a> <span class="other-source">(News)</span></li>
+        <li><a href="https://www.theblock.co/post/388958/teens-face-felony-charges-after-600-mile-drive-to-allegedly-attempt-a-66-million-crypto-robbery-reports" target="_blank">Teens face felony charges after 600-mile drive to allegedly attempt a $66 million crypto robbery: reports</a> <span class="other-source">(Zack Abrams)</span></li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box">
+      <h3>&#x1F4BC; LinkedIn Ready</h3>
+      <p class="linkedin-label">Copy and paste:</p>
+      <div class="linkedin-content">Dear Founders, Investors, and Friends,
+
+Welcome to Blockwall Capital's WEEKLY crypto digest for February 2 to February 8, 2026. Our team analyzed 430 stories to distill the dominant themes: regulatory maturation across borders, resilient capital flows amid market volatility, and the intensifying tug-of-war between innovation and oversight. These signals point to a crypto ecosystem hardening for mainstream adoption.
+
+Tether's freeze of over $500 million in crypto tied to Turkish illegal betting operations underscores stablecoin issuers' growing role as law enforcement partners. This proactive stance bolsters credibility and paves the way for broader institutional trust. Meanwhile, Erebor Bank's national charter from U.S. regulators marks the first such approval in Trump's second term. With FDIC insurance and Federal Reserve access, Erebor targets crypto, AI, defense, and manufacturing sectors, filling voids left by traditional banks like post-Silicon Valley Bank gaps. Backed by heavyweights including Palmer Luckey and Peter Thiel, it signals Washington's pivot toward crypto-friendly banking infrastructure.
+
+Investor conviction remains unshaken. Crypto firms raised $258 million last week despite a $2 trillion market drawdown. Mature players drew the lion's share, with Goldman Sachs, Citi, and Galaxy Digital leading deployments. This capital resilience highlights discerning allocators betting on quality over hype.
+
+Contrasts emerged in policy arenas. China's PBOC banned unapproved yuan-pegged stablecoins and unauthorized asset tokenization, tightening domestic controls. Yet U.S. developments like Erebor suggest divergent paths, with America leaning into regulated innovation.
+
+A stark reminder of risks surfaced too: a U.S. Marshals Service insider allegedly stole $25 million from federal crypto wallets, linked to a subcontractor. Such breaches demand ironclad custody protocols as assets scale.
+
+These threads reveal crypto's evolution from fringe to foundational finance. Regulatory clarity in the U.S. and investor fortitude position builders for outsized gains, even as global enforcers calibrate boundaries.
+
+What bold moves will define next week's narrative?
+
+#Web3 #Crypto #Blockchain #CryptoVC #WeeklyDigest</div>
+    </div>
+    <div>
+      <h3 class="section-title">&#x1F4DA; Sources</h3>
+      <ul class="sources-list">
+        <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/regulation/tether-froze-over-500-million-dollars-in-crypto-for-turkish-investigators/">Tether helped Turkish investigators by freezing half a billion dollars in crypto: report</a> <span class="other-source">(Mathew Di Salvo)</span></li>
+        <li><span class="source-num">[2]</span> <a href="https://cointelegraph.com/news/crypto-erebor-first-new-us-bank-charter-trump-second-term">Erebor Secures First New US Bank Charter of Trump's Second Term</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/">Crypto firms raise $258m despite $2 trillion market drawdown</a> <span class="other-source">(Lance Datskoluo)</span></li>
+        <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/news/china-bans-stablecoin-rwa-foreign-domestic">PBOC Officially Bans 'Unapproved' Yuan-Pegged Stablecoins</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[5]</span> <a href="https://fortune.com/2026/02/06/us-marshals-service-scrutiny-insider-allegedly-stole-25-million-federal-crypto-wallets/">U.S. Marshals Service under scrutiny after insider allegedly stole $25 million from federal crypto wallets</a> <span class="other-source">(Jeff John Roberts)</span></li>
+        <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/news/bitcoin-etf-434-million-outflows-price-touches-60k">Bitcoin ETFs Record $434M Outflows Amid BTC Slide Below $70K</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[7]</span> <a href="https://cointelegraph.com/news/tether-invests-150-million-in-gold-com">Tether Invests $150M in Gold.com to expand gold tokenization</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/news/blackrock-ibit-daily-volume-record-10-billion-bitcoin-crash">BlackRock's Bitcoin ETF Hits Daily Volume Record of $10B</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[9]</span> <a href="https://www.theblock.co/post/388730/strategy-12-6b-q4-loss-bitcoin-slide-triggers-one-largest-quarterly-hits-corporate-history">Strategy posts $12.6 billion Q4 loss as bitcoin slide triggers one of largest quarterly hits in corporate history</a> <span class="other-source">(Kyle Baird)</span></li>
+        <li><span class="source-num">[10]</span> <a href="https://cointelegraph.com/news/bitcoin-etf-545-million-outflows-btc-nears-70k">Bitcoin ETFs Extend Losses As Daily Outflows Hit $545 Million</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[11]</span> <a href="https://www.theblock.co/post/388609/spot-bitcoin-etfs-second-day-outflows-545-million">Spot bitcoin ETFs register second consecutive day of outflows totaling $545 million</a> <span class="other-source">(Brian Danga)</span></li>
+        <li><span class="source-num">[12]</span> <a href="https://fortune.com/2026/02/05/hongkong-land-ceo-michael-smith-singapore-fund-qatar/">Developer Hongkong Land launches a $6.5B Singapore real estate fund, the country's largest, as part of CEO Michael Smith's strategic pivot</a> <span class="other-source">(Angelica Ang)</span></li>
+        <li><span class="source-num">[13]</span> <a href="https://cointelegraph.com/news/crypto-made-undid-100m-incognito-dark-web-market">Feds Crypto Trace Gets Incognito Market Creator 30 Years</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[14]</span> <a href="https://cointelegraph.com/news/spot-bitcoin-etf-outflows-total-2-9b-as-btc-price-drops-to-new-2026-low">$2.9B Bitcoin ETF Outflow, Bearish Futures Data Project More BTC Downside</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[15]</span> <a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</a> <span class="other-source">(Leo Schwartz)</span></li>
+      </ul>
+    </div>
+    <div class="newsletter-cta">
+      <h3>Help Us Improve</h3>
+      <p>Your feedback shapes future editions</p>
+      <a class="newsletter-cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+      <span>Blockwall Capital</span>
+    </div>
+    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+    <div class="footer-links">
+      <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+      <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+      <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  </script>
+</body>
+
+</html>
