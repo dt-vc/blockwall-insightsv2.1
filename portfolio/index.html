@@ -218,6 +218,143 @@
         grid-template-columns: 1fr;
       }
     }
+    .status-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 100px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-left: 8px;
+    }
+    .status-active { background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .status-inactive { background: rgba(107, 114, 128, 0.15); color: #9ca3af; border: 1px solid rgba(107, 114, 128, 0.3); }
+    .status-write-off { background: rgba(156, 163, 175, 0.15); color: #9ca3af; border: 1px solid rgba(156, 163, 175, 0.3); }
+    .status-wind-down { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .linkedin-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      margin-left: 6px;
+      color: #0A66C2;
+      opacity: 0.7;
+      transition: opacity var(--transition-fast);
+    }
+    .linkedin-icon:hover { opacity: 1; }
+    .company-name-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .company-industry {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+    /* Market Intelligence Section */
+    .market-intel-section {
+      margin-bottom: var(--space-2xl);
+    }
+    .intel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: var(--space-md);
+    }
+    .intel-card {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      border-left: 3px solid #8b5cf6;
+    }
+    .intel-sector-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #a78bfa;
+      margin-bottom: 4px;
+    }
+    .intel-companies {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-bottom: var(--space-md);
+    }
+    .intel-item {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--bw-border);
+    }
+    .intel-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .intel-item-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .intel-item-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .intel-item-title a:hover {
+      color: #a78bfa;
+    }
+    .intel-item-meta {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
+    .intel-item-implication {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+    .intel-view-all {
+      display: inline-block;
+      margin-top: var(--space-sm);
+      font-size: 12px;
+      color: #a78bfa;
+      font-weight: 500;
+    }
+    .intel-empty {
+      text-align: center;
+      padding: var(--space-xl);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .intel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sub-nav {
+      display: flex;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--bw-border);
+      padding-bottom: var(--space-md);
+    }
+    .sub-nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: all var(--transition-fast);
+    }
+    .sub-nav-link:hover {
+      color: var(--text-primary);
+    }
+    .sub-nav-link.active {
+      color: var(--bw-accent-bright);
+      border-bottom-color: var(--bw-accent);
+    }
   </style>
 </head>
 <body data-theme="dark">
@@ -266,13 +403,18 @@
         <div class="stat-label">Updates This Week</div>
       </div>
       <div class="stat-item">
-        <div class="stat-value" id="bullish-ratio">&mdash;</div>
-        <div class="stat-label">Bullish %</div>
+        <div class="stat-value" id="last-updated">&mdash;</div>
+        <div class="stat-label">Last Updated</div>
       </div>
     </div>
   </section>
 
   <div class="companies-section">
+    <div class="sub-nav">
+      <a href="index.html" class="sub-nav-link active">Companies</a>
+      <a href="dealflow.html" class="sub-nav-link">Dealflow</a>
+    </div>
+
     <div class="latest-updates-card">
       <h2 class="portfolio-section-title">Latest Updates</h2>
       <div class="source-filter">
@@ -286,12 +428,20 @@
       </div>
     </div>
 
+    <div class="market-intel-section">
+      <h2 class="portfolio-section-title">Market Intelligence</h2>
+      <div class="intel-grid" id="intel-grid">
+        <div class="intel-empty">Market intelligence updates daily at 6AM UTC</div>
+      </div>
+    </div>
+
     <h2 class="portfolio-section-title">Portfolio Directory</h2>
     <div class="sector-filter">
       <button class="sector-btn active" data-sector="all">All</button>
       <button class="sector-btn" data-sector="Infrastructure">Infrastructure</button>
       <button class="sector-btn" data-sector="Payments">Payments</button>
       <button class="sector-btn" data-sector="DeFi">DeFi</button>
+      <button class="sector-btn" data-sector="Social">Social</button>
       <button class="sector-btn" data-sector="Identity">Identity</button>
       <button class="sector-btn" data-sector="Gaming">Gaming</button>
       <button class="sector-btn" data-sector="Other">Other</button>
@@ -335,42 +485,34 @@
     document.body.setAttribute('data-theme', savedTheme);
     document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
 
-    // Company data
-    const companies = [
-      { slug: 'bloxmove', name: 'BloXmove', sector: 'Mobility', description: 'Blockchain-based mobility ecosystem' },
-      { slug: 'xylene', name: 'Xylene GmbH', sector: 'Infrastructure', description: 'Web3 development infrastructure' },
-      { slug: 'busha', name: 'Busha Ltd', sector: 'Exchange', description: 'Nigerian cryptocurrency exchange' },
-      { slug: 'staex', name: 'Staex GmbH', sector: 'Infrastructure', description: 'Secure IoT connectivity platform' },
-      { slug: 'saltox', name: 'Salto X', sector: 'DeFi', description: 'Decentralized trading platform' },
-      { slug: 'blinklabs', name: 'Blink Labs', sector: 'Infrastructure', description: 'Cardano developer tools' },
-      { slug: 'spiko', name: 'Spiko SAS', sector: 'Tokenization', description: 'Tokenized money market funds' },
-      { slug: 'zealy', name: 'Zealy', sector: 'Community', description: 'Web3 community engagement platform' },
-      { slug: 'validationcloud', name: 'Validation Cloud', sector: 'Infrastructure', description: 'Enterprise Web3 infrastructure' },
-      { slug: 'opfn', name: 'Opfn', sector: 'Infrastructure', description: 'Decentralized compute network' },
-      { slug: 'spherity', name: 'Spherity GmbH', sector: 'Identity', description: 'Decentralized identity solutions' },
-      { slug: 'tlon', name: 'TLON Corporation', sector: 'Infrastructure', description: 'Urbit decentralized computing' },
-      { slug: 'nilos', name: 'Nilos', sector: 'Payments', description: 'Stablecoin infrastructure' },
-      { slug: 'tranched', name: 'Tranched', sector: 'DeFi', description: 'Decentralized credit protocols' },
-      { slug: 'river', name: 'River Platform', sector: 'Infrastructure', description: 'Web3 application protocol' },
-      { slug: 'byzantine', name: 'Byzantine Finance', sector: 'DeFi', description: 'Restaking infrastructure' },
-      { slug: 'rebind', name: 'Rebind', sector: 'Infrastructure', description: 'Web3 data indexing' },
-      { slug: 'kirha', name: 'Kirha', sector: 'AI', description: 'AI agents for Web3' },
-      { slug: 'blu', name: 'Blu Financiero', sector: 'Payments', description: 'Crypto financial services LATAM' },
-      { slug: 'spectarium', name: 'Spectarium', sector: 'Gaming', description: 'Web3 gaming studio' },
-      { slug: 'kulipa', name: 'Kulipa', sector: 'Payments', description: 'Crypto debit cards' },
-      { slug: 'den', name: 'Den Technologies', sector: 'Infrastructure', description: 'On-chain treasury management' },
-      { slug: 'yousend', name: 'Yousend', sector: 'Payments', description: 'Crypto remittance' },
-      { slug: 'flyra', name: 'Flyra', sector: 'Infrastructure', description: 'Web3 payments infrastructure' }
-    ];
-
+    // Company data - loaded from JSON
+    let companies = [];
     let activeFilter = 'all';
     let activeSourceFilter = 'all';
     let allUpdateItems = [];
 
     function logoPath(slug) {
-      // flyra uses SVG, rest use PNG
       const ext = slug === 'flyra' ? 'svg' : 'png';
       return `../assets/companies/${slug}.${ext}`;
+    }
+
+    function getStatusClass(status) {
+      const statusMap = {
+        'Active': 'status-active',
+        'Inactive': 'status-inactive',
+        'Write-off': 'status-write-off',
+        'Wind-down': 'status-wind-down'
+      };
+      return statusMap[status] || 'status-active';
+    }
+
+    function getLinkedInIcon(url) {
+      if (!url) return '';
+      return `<a href="${url}" target="_blank" class="linkedin-icon" onclick="event.stopPropagation();" title="LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>`;
     }
 
     function renderCompanies() {
@@ -379,7 +521,7 @@
         ? companies
         : companies.filter(c => {
             if (activeFilter === 'Other') {
-              return !['Infrastructure', 'Payments', 'DeFi', 'Identity', 'Gaming'].includes(c.sector);
+              return !['Infrastructure', 'Payments', 'DeFi', 'Identity', 'Gaming', 'Social'].includes(c.sector);
             }
             return c.sector === activeFilter;
           });
@@ -391,17 +533,39 @@
               <img src="${logoPath(c.slug)}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none';this.parentElement.textContent='${c.name.substring(0, 2).toUpperCase()}'">
             </div>
             <div>
-              <div class="company-name">${c.name}</div>
+              <div class="company-name-row">
+                <span class="company-name">${escapeHtml(c.name)}</span>
+                ${getLinkedInIcon(c.linkedin_url)}
+                <span class="status-badge ${getStatusClass(c.status)}">${c.status || 'Active'}</span>
+              </div>
               <div class="company-sector">${c.sector}</div>
+              ${c.industry ? `<div class="company-industry">${escapeHtml(c.industry)}</div>` : ''}
             </div>
           </div>
-          <p class="company-description">${c.description}</p>
+          <p class="company-description">${escapeHtml(c.description)}</p>
           <div class="company-meta">
             <span class="company-updates" id="updates-${c.slug}">&mdash;</span>
             <span class="company-link-text">View Details &rarr;</span>
           </div>
         </a>
       `).join('');
+    }
+
+    // Load companies from JSON
+    async function loadCompanies() {
+      try {
+        const response = await fetch('../data/portfolio/companies.json');
+        if (!response.ok) throw new Error('Failed to load companies');
+        const data = await response.json();
+        companies = data.companies || [];
+        document.getElementById('total-companies').textContent = companies.length;
+        document.getElementById('total-sectors').textContent = data.sectors?.length || 10;
+        renderCompanies();
+      } catch (e) {
+        console.error('Error loading companies:', e);
+        // Fallback to static rendering if JSON fails
+        document.getElementById('companies-grid').innerHTML = '<p style="text-align: center; color: var(--text-muted);">Loading portfolio companies...</p>';
+      }
     }
 
     // Sector filter
@@ -460,7 +624,7 @@
           <div class="update-title">
             <a href="${escapeHtml(item.url)}" target="_blank">${escapeHtml(item.title)}</a>
           </div>
-          <div class="update-meta">${formatDate(item.date_published)} &bull; ${escapeHtml(item.sentiment || 'neutral')}</div>
+          <div class="update-meta">${formatDate(item.date_published)} &bull; ${escapeHtml(item.publisher || 'News')}</div>
         </div>
       `).join('');
     }
@@ -492,9 +656,11 @@
         const weekItems = items.filter(i => new Date(i.date_published) >= weekAgo);
         document.getElementById('total-updates').textContent = weekItems.length;
 
-        const bullish = items.filter(i => i.sentiment === 'bullish').length;
-        const ratio = items.length > 0 ? Math.round((bullish / items.length) * 100) : 0;
-        document.getElementById('bullish-ratio').textContent = ratio + '%';
+        // Set last updated date
+        if (items.length > 0) {
+          const latestDate = new Date(items[0].date_published);
+          document.getElementById('last-updated').textContent = latestDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
 
         renderUpdates(items);
       } catch (e) {
@@ -505,7 +671,7 @@
           </div>
         `;
         document.getElementById('total-updates').textContent = '0';
-        document.getElementById('bullish-ratio').textContent = '\u2014';
+        document.getElementById('last-updated').textContent = 'N/A';
       }
     }
 
@@ -520,8 +686,49 @@
       return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    renderCompanies();
+    // Load Market Intelligence
+    async function loadPeerIntel() {
+      const grid = document.getElementById('intel-grid');
+      try {
+        const response = await fetch('../data/portfolio/indexes/peerintel-latest.json');
+        if (!response.ok) throw new Error('No data');
+        const data = await response.json();
+        const sectors = data.sectors || {};
+
+        if (Object.keys(sectors).length === 0) throw new Error('Empty');
+
+        grid.innerHTML = Object.entries(sectors).slice(0, 6).map(([sectorName, sectorData]) => {
+          const items = (sectorData.items || []).slice(0, 2);
+          const companies = sectorData.portfolio_companies || [];
+
+          return `
+            <div class="intel-card">
+              <div class="intel-sector-title">${escapeHtml(sectorName)}</div>
+              <div class="intel-companies">Relevant to: ${companies.join(', ')}</div>
+              ${items.map(item => `
+                <div class="intel-item">
+                  <div class="intel-item-title">
+                    <a href="${escapeHtml(item.url)}" target="_blank">${escapeHtml(item.title)}</a>
+                  </div>
+                  <div class="intel-item-meta">${escapeHtml(item.publisher)} &bull; ${formatDate(item.date)}</div>
+                  <div class="intel-item-implication">${escapeHtml(item.implications)}</div>
+                </div>
+              `).join('')}
+            </div>
+          `;
+        }).join('');
+      } catch (e) {
+        grid.innerHTML = `
+          <div class="intel-empty">
+            <p>Market intelligence updates daily at 6AM UTC</p>
+          </div>
+        `;
+      }
+    }
+
+    loadCompanies();
     loadLatestUpdates();
+    loadPeerIntel();
   </script>
 </body>
 </html>

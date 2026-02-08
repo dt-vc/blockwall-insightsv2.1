@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealflow Tracker | Blockwall Insights</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .dealflow-section {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-3xl);
+    }
+    .dealflow-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-md);
+      letter-spacing: -0.02em;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+      align-items: center;
+    }
+    .filter-group {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--bw-border-light);
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+    .filter-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--bw-accent);
+      background: var(--bw-accent-muted);
+    }
+    .filter-btn.active {
+      background: var(--bw-accent);
+      border-color: var(--bw-accent);
+      color: white;
+    }
+    .deals-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .deal-card {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-md) var(--space-lg);
+      display: grid;
+      grid-template-columns: 1fr 120px 100px 180px 100px;
+      gap: var(--space-md);
+      align-items: center;
+      transition: all var(--transition-base);
+    }
+    .deal-card:hover {
+      border-color: var(--bw-border-light);
+      background: rgba(30, 36, 50, 0.9);
+    }
+    .deal-card.portfolio-match {
+      border-left: 3px solid #22c55e;
+    }
+    .deal-project {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .deal-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+    .deal-description {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .deal-amount {
+      font-weight: 700;
+      color: #22c55e;
+      font-size: 15px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .deal-round {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      background: var(--bw-accent-muted);
+      color: var(--bw-accent-bright);
+    }
+    .deal-investors {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    .deal-investors .lead {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    .deal-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 11px;
+      color: var(--text-dim);
+      text-align: right;
+    }
+    .deal-source a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .deal-source a:hover {
+      color: var(--bw-accent-bright);
+    }
+    .portfolio-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 100px;
+      font-size: 10px;
+      font-weight: 600;
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+      margin-left: 8px;
+    }
+    .sector-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 10px;
+      font-weight: 500;
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      margin-left: 6px;
+    }
+    .empty-state {
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--text-muted);
+    }
+    @media (max-width: 1024px) {
+      .deal-card {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+      }
+      .deal-meta {
+        text-align: left;
+        flex-direction: row;
+        gap: var(--space-md);
+      }
+    }
+    .sub-nav {
+      display: flex;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--bw-border);
+      padding-bottom: var(--space-md);
+    }
+    .sub-nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: all var(--transition-fast);
+    }
+    .sub-nav-link:hover {
+      color: var(--text-primary);
+    }
+    .sub-nav-link.active {
+      color: var(--bw-accent-bright);
+      border-bottom-color: var(--bw-accent);
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="index.html" class="nav-link active">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="archive-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Portfolio
+    </a>
+
+    <div class="archive-header">
+      <h1 class="archive-title">Dealflow Tracker</h1>
+      <p class="archive-subtitle">Recent fundraising and investment activity across Web3</p>
+    </div>
+  </main>
+
+  <section class="portfolio-stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value" id="total-raises">—</div>
+        <div class="stat-label">Raises (7d)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="total-volume">—</div>
+        <div class="stat-label">Total Volume</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="portfolio-matches">0</div>
+        <div class="stat-label">Portfolio Matches</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="top-sector">—</div>
+        <div class="stat-label">Top Sector</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dealflow-section">
+    <div class="sub-nav">
+      <a href="index.html" class="sub-nav-link">Companies</a>
+      <a href="dealflow.html" class="sub-nav-link active">Dealflow</a>
+    </div>
+
+    <div class="filter-bar">
+      <div class="filter-group" id="round-filter">
+        <button class="filter-btn active" data-round="all">All Rounds</button>
+        <button class="filter-btn" data-round="Seed">Seed</button>
+        <button class="filter-btn" data-round="Series A">Series A</button>
+        <button class="filter-btn" data-round="Series B">Series B</button>
+        <button class="filter-btn" data-round="Strategic">Strategic</button>
+      </div>
+      <div class="filter-group" id="sector-filter">
+        <button class="filter-btn active" data-sector="all">All Sectors</button>
+        <button class="filter-btn" data-sector="Infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-sector="DeFi">DeFi</button>
+        <button class="filter-btn" data-sector="Payments">Payments</button>
+        <button class="filter-btn" data-sector="Tokenization">Tokenization</button>
+      </div>
+    </div>
+
+    <div class="deals-list" id="deals-list">
+      <div class="empty-state">Loading dealflow data...</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+        <span>Blockwall Capital</span>
+      </div>
+      <p class="footer-text">European Crypto Venture Capital &bull; Frankfurt, Germany</p>
+      <div class="footer-links">
+        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    let allDeals = [];
+    let activeRoundFilter = 'all';
+    let activeSectorFilter = 'all';
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function formatDate(dateStr) {
+      try {
+        return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      } catch (e) { return dateStr; }
+    }
+
+    function renderDeals() {
+      const list = document.getElementById('deals-list');
+      let filtered = allDeals;
+
+      if (activeRoundFilter !== 'all') {
+        filtered = filtered.filter(d => d.round_type === activeRoundFilter);
+      }
+      if (activeSectorFilter !== 'all') {
+        filtered = filtered.filter(d => d.sector === activeSectorFilter);
+      }
+
+      if (filtered.length === 0) {
+        list.innerHTML = '<div class="empty-state">No deals found matching filters.</div>';
+        return;
+      }
+
+      list.innerHTML = filtered.map(deal => `
+        <div class="deal-card ${deal.is_portfolio_match ? 'portfolio-match' : ''}">
+          <div class="deal-project">
+            <div class="deal-name">
+              ${escapeHtml(deal.project)}
+              ${deal.is_portfolio_match ? '<span class="portfolio-badge">Portfolio Company</span>' : ''}
+              <span class="sector-badge">${escapeHtml(deal.sector)}</span>
+            </div>
+            <div class="deal-description">${escapeHtml(deal.description)}</div>
+          </div>
+          <div class="deal-amount">${deal.amount}</div>
+          <div><span class="deal-round">${escapeHtml(deal.round_type)}</span></div>
+          <div class="deal-investors">
+            <span class="lead">${escapeHtml(deal.lead_investor)}</span>
+            ${deal.investors.length > 1 ? ` + ${deal.investors.length - 1} more` : ''}
+          </div>
+          <div class="deal-meta">
+            <div>${formatDate(deal.date)}</div>
+            <div class="deal-source"><a href="${escapeHtml(deal.source_url)}" target="_blank">${escapeHtml(deal.source)}</a></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter handlers
+    document.querySelectorAll('#round-filter .filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#round-filter .filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeRoundFilter = btn.dataset.round;
+        renderDeals();
+      });
+    });
+
+    document.querySelectorAll('#sector-filter .filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#sector-filter .filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeSectorFilter = btn.dataset.sector;
+        renderDeals();
+      });
+    });
+
+    async function loadDealflow() {
+      const list = document.getElementById('deals-list');
+      try {
+        const response = await fetch('../data/portfolio/indexes/dealflow.json');
+        if (!response.ok) throw new Error('No data');
+        const data = await response.json();
+
+        allDeals = data.items || [];
+
+        // Update stats
+        document.getElementById('total-raises').textContent = data.summary?.total_raises_7d || allDeals.length;
+        document.getElementById('total-volume').textContent = data.summary?.total_volume_7d || '$0';
+        document.getElementById('portfolio-matches').textContent = allDeals.filter(d => d.is_portfolio_match).length;
+        document.getElementById('top-sector').textContent = data.summary?.top_sector || 'N/A';
+
+        renderDeals();
+      } catch (e) {
+        list.innerHTML = `
+          <div class="empty-state">
+            <p>Dealflow data updates daily.</p>
+            <p style="font-size: 13px; margin-top: 8px; color: var(--text-dim);">Check back soon for the latest fundraising activity.</p>
+          </div>
+        `;
+      }
+    }
+
+    loadDealflow();
+  </script>
+</body>
+</html>
