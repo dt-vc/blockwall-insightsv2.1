@@ -82,6 +82,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-bottom: var(--space-lg);
     }
     .filter-pill {
       padding: 8px 16px;
@@ -134,34 +135,35 @@
     }
     .companies-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: var(--space-lg);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
     .company-card {
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
       border-radius: var(--radius-lg);
-      padding: var(--space-lg);
+      padding: 20px;
       transition: all var(--transition-base);
       display: flex;
       flex-direction: column;
-      min-height: 200px;
+      height: 220px;
+      text-decoration: none;
     }
     .company-card:hover {
-      border-color: var(--bw-border-light);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      border-color: var(--bw-accent);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
     }
     .company-header {
       display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      margin-bottom: 14px;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
     }
     .company-logo {
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius-md);
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
       background: linear-gradient(135deg, var(--bw-accent-muted), rgba(168, 85, 247, 0.25));
       border: 1px solid var(--glass-border);
       display: flex;
@@ -169,7 +171,7 @@
       justify-content: center;
       font-weight: 700;
       color: var(--text-primary);
-      font-size: 16px;
+      font-size: 14px;
       flex-shrink: 0;
       overflow: hidden;
     }
@@ -177,7 +179,7 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 8px;
+      padding: 6px;
     }
     .company-info {
       flex: 1;
@@ -186,68 +188,72 @@
     .company-name-row {
       display: flex;
       align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 4px;
+      gap: 6px;
+      margin-bottom: 2px;
     }
     .company-name {
       font-weight: 600;
       color: var(--text-primary);
-      font-size: 16px;
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .linkedin-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       color: #0A66C2;
       opacity: 0.7;
       transition: opacity var(--transition-fast);
+      flex-shrink: 0;
     }
     .linkedin-btn:hover { opacity: 1; }
-    .linkedin-btn svg { width: 14px; height: 14px; }
+    .linkedin-btn svg { width: 12px; height: 12px; }
     .status-badge {
       display: inline-block;
-      padding: 3px 8px;
+      padding: 2px 6px;
       border-radius: 100px;
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.3px;
+      flex-shrink: 0;
     }
     .status-active { background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); }
     .status-inactive { background: rgba(107, 114, 128, 0.15); color: #9ca3af; border: 1px solid rgba(107, 114, 128, 0.3); }
     .status-write-off { background: rgba(156, 163, 175, 0.15); color: #9ca3af; border: 1px solid rgba(156, 163, 175, 0.3); }
     .status-wind-down { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
     .company-sector {
-      font-size: 13px;
+      font-size: 12px;
       color: var(--bw-accent-bright);
       font-weight: 500;
-    }
-    .company-industry {
-      font-size: 11px;
-      color: var(--text-dim);
-      margin-top: 2px;
     }
     .company-description {
       color: var(--text-muted);
       font-size: 13px;
-      line-height: 1.55;
+      line-height: 1.5;
       flex: 1;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .company-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 14px;
+      padding-top: 12px;
       border-top: 1px solid var(--bw-border);
       font-size: 12px;
+      margin-top: auto;
     }
     .company-metrics {
       display: flex;
-      gap: var(--space-md);
+      gap: 12px;
     }
     .metric {
       display: flex;
@@ -265,6 +271,7 @@
     .company-link {
       color: var(--text-dim);
       font-weight: 500;
+      font-size: 11px;
       transition: color var(--transition-fast);
     }
     .company-card:hover .company-link {
@@ -295,10 +302,15 @@
       text-align: center;
       padding: var(--space-3xl);
       color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+    @media (max-width: 1024px) {
+      .companies-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
       .portfolio-stats { grid-template-columns: repeat(2, 1fr); }
       .companies-grid { grid-template-columns: 1fr; }
+      .company-card { height: auto; min-height: 180px; }
       .section-header { flex-direction: column; align-items: flex-start; }
       .portfolio-hero h1 { font-size: 28px; }
     }
@@ -325,7 +337,7 @@
 
   <div class="portfolio-hero">
     <h1>Portfolio Companies</h1>
-    <p>Real-time intelligence on Blockwall's portfolio across the Web3 ecosystem. Track news, blog posts, and updates from our investments.</p>
+    <p>Real-time intelligence on Blockwall's portfolio across the Web3 ecosystem.</p>
     <div class="portfolio-stats">
       <div class="stat-card">
         <div class="stat-value" id="total-companies">24</div>
@@ -390,31 +402,28 @@
   </footer>
 
   <script>
-    // Theme
     function toggleTheme() {
       const body = document.body;
       const icon = document.getElementById('theme-icon');
       if (body.getAttribute('data-theme') === 'dark') {
         body.setAttribute('data-theme', 'light');
-        icon.textContent = '\\u2600\\uFE0F';
+        icon.textContent = '\u2600\uFE0F';
         localStorage.setItem('bw-theme', 'light');
       } else {
         body.setAttribute('data-theme', 'dark');
-        icon.textContent = '\\uD83C\\uDF19';
+        icon.textContent = '\uD83C\uDF19';
         localStorage.setItem('bw-theme', 'dark');
       }
     }
     const savedTheme = localStorage.getItem('bw-theme') || 'dark';
     document.body.setAttribute('data-theme', savedTheme);
-    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '\\uD83C\\uDF19' : '\\u2600\\uFE0F';
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
 
-    // State
     let companies = [];
     let updateCounts = {};
     let sectorFilter = 'all';
     let statusFilter = 'all';
 
-    // Helpers
     function escapeHtml(str) {
       if (!str) return '';
       return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -431,14 +440,13 @@
 
     function linkedInButton(url) {
       if (!url) return '';
-      return `<a href="${url}" target="_blank" class="linkedin-btn" onclick="event.stopPropagation();" title="View on LinkedIn">
+      return `<a href="${url}" target="_blank" class="linkedin-btn" onclick="event.stopPropagation();" title="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
         </svg>
       </a>`;
     }
 
-    // Render
     function renderCompanies() {
       const grid = document.getElementById('companies-grid');
       let filtered = companies;
@@ -471,7 +479,6 @@
                   <span class="status-badge ${getStatusClass(c.status)}">${c.status}</span>
                 </div>
                 <div class="company-sector">${escapeHtml(c.sector)}</div>
-                ${c.industry ? `<div class="company-industry">${escapeHtml(c.industry)}</div>` : ''}
               </div>
             </div>
             <p class="company-description">${escapeHtml(c.description)}</p>
@@ -505,7 +512,6 @@
       });
     }
 
-    // Status filter
     document.querySelectorAll('.status-pill').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.status-pill').forEach(b => b.classList.remove('active'));
@@ -515,7 +521,6 @@
       });
     });
 
-    // Load data
     async function loadCompanies() {
       try {
         const res = await fetch('../data/portfolio/companies.json');
@@ -548,7 +553,6 @@
           document.getElementById('last-updated').textContent = latest.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         }
 
-        // Count updates per company (last 7 days)
         weekItems.forEach(item => {
           updateCounts[item.company_slug] = (updateCounts[item.company_slug] || 0) + 1;
         });
