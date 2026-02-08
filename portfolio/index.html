@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
       padding: var(--space-2xl) var(--space-lg);
       text-align: center;
     }
+
     .portfolio-hero h1 {
       font-size: 36px;
       font-weight: 700;
@@ -23,6 +25,7 @@
       margin-bottom: var(--space-sm);
       letter-spacing: -0.03em;
     }
+
     .portfolio-hero p {
       font-size: 16px;
       color: var(--text-muted);
@@ -30,6 +33,7 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+
     .portfolio-stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -37,6 +41,7 @@
       max-width: 800px;
       margin: var(--space-xl) auto 0;
     }
+
     .stat-card {
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
@@ -44,21 +49,25 @@
       padding: var(--space-md);
       text-align: center;
     }
+
     .stat-value {
       font-size: 28px;
       font-weight: 700;
       color: var(--bw-accent-bright);
     }
+
     .stat-label {
       font-size: 12px;
       color: var(--text-muted);
       margin-top: 4px;
     }
+
     .companies-section {
       max-width: 1140px;
       margin: 0 auto;
       padding: 0 var(--space-lg) var(--space-3xl);
     }
+
     .section-header {
       display: flex;
       align-items: center;
@@ -67,23 +76,27 @@
       flex-wrap: wrap;
       gap: var(--space-md);
     }
+
     .section-title {
       font-size: 20px;
       font-weight: 700;
       color: var(--text-primary);
       letter-spacing: -0.02em;
     }
+
     .filter-group {
       display: flex;
       gap: var(--space-md);
       flex-wrap: wrap;
     }
+
     .filter-pills {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: var(--space-lg);
     }
+
     .filter-pill {
       padding: 8px 16px;
       border-radius: 100px;
@@ -96,20 +109,24 @@
       font-weight: 500;
       transition: all var(--transition-fast);
     }
+
     .filter-pill:hover {
       color: var(--text-primary);
       border-color: var(--bw-accent);
       background: var(--bw-accent-muted);
     }
+
     .filter-pill.active {
       background: var(--bw-accent);
       border-color: var(--bw-accent);
       color: white;
     }
+
     .status-filter {
       display: flex;
       gap: 6px;
     }
+
     .status-pill {
       padding: 6px 12px;
       border-radius: 100px;
@@ -124,46 +141,78 @@
       letter-spacing: 0.3px;
       transition: all var(--transition-fast);
     }
+
     .status-pill:hover {
       border-color: var(--text-muted);
       color: var(--text-muted);
     }
+
     .status-pill.active {
       border-color: var(--bw-accent);
       color: var(--bw-accent-bright);
       background: var(--bw-accent-muted);
     }
+
     .companies-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 24px;
     }
+
     .company-card {
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
       border-radius: var(--radius-lg);
-      padding: 20px;
       transition: all var(--transition-base);
       display: flex;
       flex-direction: column;
-      height: 220px;
+      min-height: 280px;
       text-decoration: none;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
     }
+
+    .company-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bw-accent), var(--gradient-purple), var(--gradient-pink));
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
     .company-card:hover {
       border-color: var(--bw-accent);
-      transform: translateY(-3px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 40px var(--bw-glow);
     }
+
+    .company-card:hover::before {
+      opacity: 1;
+    }
+
+    .card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
     .company-header {
       display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
     }
+
     .company-logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
       background: linear-gradient(135deg, var(--bw-accent-muted), rgba(168, 85, 247, 0.25));
       border: 1px solid var(--glass-border);
       display: flex;
@@ -171,112 +220,163 @@
       justify-content: center;
       font-weight: 700;
       color: var(--text-primary);
-      font-size: 14px;
+      font-size: 16px;
       flex-shrink: 0;
       overflow: hidden;
     }
+
     .company-logo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 6px;
+      padding: 8px;
     }
+
     .company-info {
       flex: 1;
       min-width: 0;
     }
+
     .company-name-row {
       display: flex;
       align-items: center;
-      gap: 6px;
-      margin-bottom: 2px;
+      gap: 8px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
     }
+
     .company-name {
       font-weight: 600;
       color: var(--text-primary);
-      font-size: 15px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-size: 16px;
+      line-height: 1.3;
     }
+
     .linkedin-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 16px;
-      height: 16px;
+      width: 22px;
+      height: 22px;
       color: #0A66C2;
-      opacity: 0.7;
-      transition: opacity var(--transition-fast);
+      background: rgba(10, 102, 194, 0.1);
+      border-radius: 6px;
+      opacity: 0.8;
+      transition: all var(--transition-fast);
       flex-shrink: 0;
     }
-    .linkedin-btn:hover { opacity: 1; }
-    .linkedin-btn svg { width: 12px; height: 12px; }
+
+    .linkedin-btn:hover {
+      opacity: 1;
+      background: rgba(10, 102, 194, 0.2);
+      transform: scale(1.05);
+    }
+
+    .linkedin-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
     .status-badge {
       display: inline-block;
-      padding: 2px 6px;
+      padding: 4px 10px;
       border-radius: 100px;
-      font-size: 9px;
+      font-size: 10px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.4px;
       flex-shrink: 0;
     }
-    .status-active { background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); }
-    .status-inactive { background: rgba(107, 114, 128, 0.15); color: #9ca3af; border: 1px solid rgba(107, 114, 128, 0.3); }
-    .status-write-off { background: rgba(156, 163, 175, 0.15); color: #9ca3af; border: 1px solid rgba(156, 163, 175, 0.3); }
-    .status-wind-down { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+    .status-active {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .status-inactive {
+      background: rgba(107, 114, 128, 0.15);
+      color: #9ca3af;
+      border: 1px solid rgba(107, 114, 128, 0.3);
+    }
+
+    .status-write-off {
+      background: rgba(156, 163, 175, 0.15);
+      color: #9ca3af;
+      border: 1px solid rgba(156, 163, 175, 0.3);
+    }
+
+    .status-wind-down {
+      background: rgba(245, 158, 11, 0.15);
+      color: #f59e0b;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
     .company-sector {
+      display: inline-block;
       font-size: 12px;
       color: var(--bw-accent-bright);
       font-weight: 500;
+      margin-top: 4px;
     }
+
     .company-description {
       color: var(--text-muted);
-      font-size: 13px;
-      line-height: 1.5;
+      font-size: 14px;
+      line-height: 1.6;
       flex: 1;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .company-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 12px;
+      padding-top: 16px;
       border-top: 1px solid var(--bw-border);
       font-size: 12px;
       margin-top: auto;
     }
+
     .company-metrics {
       display: flex;
-      gap: 12px;
+      gap: 16px;
     }
+
     .metric {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
       color: var(--text-dim);
     }
+
     .metric-value {
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 600;
     }
+
     .metric-value.has-updates {
       color: var(--bw-accent-bright);
     }
+
     .company-link {
       color: var(--text-dim);
-      font-weight: 500;
-      font-size: 11px;
+      font-weight: 600;
+      font-size: 12px;
       transition: color var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
+
     .company-card:hover .company-link {
       color: var(--bw-accent-bright);
     }
+
     .sub-nav {
       display: flex;
       gap: var(--space-md);
@@ -284,6 +384,7 @@
       border-bottom: 1px solid var(--bw-border);
       padding-bottom: var(--space-md);
     }
+
     .sub-nav-link {
       color: var(--text-muted);
       text-decoration: none;
@@ -293,29 +394,54 @@
       border-bottom: 2px solid transparent;
       transition: all var(--transition-fast);
     }
-    .sub-nav-link:hover { color: var(--text-primary); }
+
+    .sub-nav-link:hover {
+      color: var(--text-primary);
+    }
+
     .sub-nav-link.active {
       color: var(--bw-accent-bright);
       border-bottom-color: var(--bw-accent);
     }
+
     .empty-state {
       text-align: center;
       padding: var(--space-3xl);
       color: var(--text-muted);
       grid-column: 1 / -1;
     }
+
     @media (max-width: 1024px) {
-      .companies-grid { grid-template-columns: repeat(2, 1fr); }
+      .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+
     @media (max-width: 768px) {
-      .portfolio-stats { grid-template-columns: repeat(2, 1fr); }
-      .companies-grid { grid-template-columns: 1fr; }
-      .company-card { height: auto; min-height: 180px; }
-      .section-header { flex-direction: column; align-items: flex-start; }
-      .portfolio-hero h1 { font-size: 28px; }
+      .portfolio-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .companies-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .company-card {
+        min-height: auto;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .portfolio-hero h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
+
 <body data-theme="dark">
   <nav class="nav">
     <div class="nav-inner">
@@ -467,31 +593,33 @@
         const count = updateCounts[c.slug] || 0;
         const hasUpdates = count > 0;
         return `
-          <a href="companies/${c.slug}.html" class="company-card">
-            <div class="company-header">
-              <div class="company-logo">
-                <img src="${logoPath(c)}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none';this.parentElement.textContent='${c.name.substring(0, 2).toUpperCase()}'">
-              </div>
-              <div class="company-info">
-                <div class="company-name-row">
-                  <span class="company-name">${escapeHtml(c.name)}</span>
-                  ${linkedInButton(c.linkedin_url)}
-                  <span class="status-badge ${getStatusClass(c.status)}">${c.status}</span>
+          <div class="company-card" onclick="if(!event.target.closest('.linkedin-btn')) window.location.href='companies/${c.slug}.html'">
+            <div class="card-body">
+              <div class="company-header">
+                <div class="company-logo">
+                  <img src="${logoPath(c)}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none';this.parentElement.textContent='${c.name.substring(0, 2).toUpperCase()}'">
                 </div>
-                <div class="company-sector">${escapeHtml(c.sector)}</div>
-              </div>
-            </div>
-            <p class="company-description">${escapeHtml(c.description)}</p>
-            <div class="company-footer">
-              <div class="company-metrics">
-                <div class="metric">
-                  <span>Updates:</span>
-                  <span class="metric-value ${hasUpdates ? 'has-updates' : ''}">${count}</span>
+                <div class="company-info">
+                  <div class="company-name-row">
+                    <span class="company-name">${escapeHtml(c.name)}</span>
+                    ${linkedInButton(c.linkedin_url)}
+                    <span class="status-badge ${getStatusClass(c.status)}">${c.status}</span>
+                  </div>
+                  <div class="company-sector">${escapeHtml(c.sector)}</div>
                 </div>
               </div>
-              <span class="company-link">View Details &rarr;</span>
+              <p class="company-description">${escapeHtml(c.description)}</p>
+              <div class="company-footer">
+                <div class="company-metrics">
+                  <div class="metric">
+                    <span>Updates:</span>
+                    <span class="metric-value ${hasUpdates ? 'has-updates' : ''}">${count}</span>
+                  </div>
+                </div>
+                <span class="company-link">View Details &rarr;</span>
+              </div>
             </div>
-          </a>
+          </div>
         `;
       }).join('');
     }
@@ -568,4 +696,5 @@
     loadUpdates();
   </script>
 </body>
+
 </html>
