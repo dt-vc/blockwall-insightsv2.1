@@ -99,6 +99,95 @@
       font-size: 16px;
       margin-bottom: 8px;
     }
+    .tabs-container {
+      display: flex;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      border-bottom: 1px solid var(--bw-border);
+      padding-bottom: var(--space-md);
+    }
+    .tab-btn {
+      padding: 10px 20px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: var(--bw-accent-muted);
+    }
+    .tab-btn.active {
+      color: var(--bw-accent-bright);
+      background: var(--bw-accent-muted);
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .intel-featured {
+      margin-bottom: var(--space-xl);
+    }
+    .intel-card-featured {
+      display: block;
+      background: linear-gradient(135deg, var(--bw-card), rgba(99, 102, 241, 0.1));
+      border: 1px solid var(--bw-accent);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-decoration: none;
+      transition: all var(--transition-base);
+    }
+    .intel-card-featured:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(99, 102, 241, 0.2);
+    }
+    .intel-card-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--bw-accent), #4f46e5);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+    .intel-card-featured h3 {
+      color: var(--text-primary);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .intel-date {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: var(--space-md);
+    }
+    .intel-stats {
+      display: flex;
+      gap: var(--space-lg);
+      color: var(--text-dim);
+      font-size: 13px;
+      margin-bottom: var(--space-md);
+    }
+    .intel-summary {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: var(--space-md);
+    }
+    .intel-link {
+      color: var(--bw-accent-bright);
+      font-weight: 600;
+      font-size: 14px;
+    }
     @media (max-width: 768px) {
       .archive-item {
         flex-direction: column;
@@ -143,6 +232,28 @@
       <p class="archive-subtitle">Browse historical portfolio intelligence by date.</p>
     </div>
 
+    <div class="tabs-container">
+      <button class="tab-btn active" data-tab="intel">Market Intel</button>
+      <button class="tab-btn" data-tab="archive">Historical Archive</button>
+    </div>
+
+    <div id="intel-tab" class="tab-content active">
+      <div class="intel-featured">
+        <a href="blockwall-portco-news-2026-02-08.html" class="intel-card-featured">
+          <div class="intel-card-badge">Latest</div>
+          <h3>Daily PortCo News</h3>
+          <p class="intel-date">February 8, 2026</p>
+          <div class="intel-stats">
+            <span>18 companies with news</span>
+            <span>80 RSS articles analyzed</span>
+          </div>
+          <p class="intel-summary">AI-powered market intelligence for portfolio companies. Covers stablecoin trends, RWA tokenization, crypto payments, and infrastructure updates.</p>
+          <span class="intel-link">View Full Report &rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="archive-tab" class="tab-content">
     <div class="date-picker">
       <input type="date" id="date-input" class="date-input">
       <button class="date-btn" onclick="loadDate()">Load Date</button>
@@ -150,6 +261,7 @@
 
     <div class="archive-list" id="archive-list">
       <div style="text-align: center; padding: 40px; color: var(--text-muted); font-size: 14px;">Loading...</div>
+    </div>
     </div>
   </main>
 
@@ -248,6 +360,16 @@
     }
 
     loadArchive();
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab + '-tab').classList.add('active');
+      });
+    });
   </script>
 </body>
 </html>

@@ -193,10 +193,108 @@
     }
     .badge-news { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
     .badge-blog { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+    .intel-card {
+      padding: var(--space-lg);
+    }
+    .intel-summary {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-md);
+    }
+    .intel-sentiment {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+    .sentiment-bullish { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+    .sentiment-neutral { background: rgba(107, 114, 128, 0.15); color: #9ca3af; }
+    .sentiment-bearish { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+    .intel-sources {
+      border-top: 1px solid var(--bw-border);
+      padding-top: var(--space-md);
+    }
+    .intel-source {
+      display: block;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+      text-decoration: none;
+    }
+    .intel-source:hover { color: var(--bw-accent-bright); }
+    .linkedin-scroll-container {
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin: 0 -8px;
+      padding: 0 8px;
+    }
+    .linkedin-posts-row {
+      display: flex;
+      gap: var(--space-md);
+      min-width: min-content;
+    }
+    .linkedin-card {
+      flex: 0 0 320px;
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      transition: all var(--transition-fast);
+    }
+    .linkedin-card:hover {
+      border-color: var(--bw-accent);
+      background: var(--bw-accent-muted);
+    }
+    .linkedin-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: var(--space-sm);
+    }
+    .linkedin-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--bw-accent), #4f46e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .linkedin-author { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+    .linkedin-date { font-size: 11px; color: var(--text-dim); }
+    .linkedin-content {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .linkedin-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: var(--space-sm);
+      font-size: 12px;
+      color: #0A66C2;
+      text-decoration: none;
+    }
+    .linkedin-link:hover { text-decoration: underline; }
     @media (max-width: 768px) {
       .hero-header { flex-direction: column; align-items: center; text-align: center; }
       .hero-name { font-size: 24px; }
       .hero-name-row { justify-content: center; }
+      .linkedin-card { flex: 0 0 280px; }
     }
   </style>
 </head>
@@ -275,6 +373,34 @@
     <div class="content-card">
       <div id="news-mentions">
         <div class="empty-state">Loading mentions...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+      Today's Market Intel
+    </h2>
+    <div class="content-card">
+      <div id="daily-intel">
+        <div class="empty-state">Loading intel...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+      Latest LinkedIn Posts
+    </h2>
+    <div class="linkedin-scroll-container">
+      <div id="linkedin-posts" class="linkedin-posts-row">
+        <div class="empty-state">Loading LinkedIn posts...</div>
       </div>
     </div>
   </div>
@@ -379,8 +505,69 @@
       }
     }
 
+    // Load daily intel
+    async function loadDailyIntel() {
+      const container = document.getElementById('daily-intel');
+      try {
+        const res = await fetch('../../data/portfolio/indexes/peerintel-latest.json');
+        if (!res.ok) throw new Error('No intel data');
+        const data = await res.json();
+        const intel = data.by_company?.[COMPANY_SLUG];
+
+        if (!intel) {
+          container.innerHTML = '<div class="empty-state">No market intel available today.</div>';
+          return;
+        }
+
+        const sentimentClass = intel.sentiment === 'bullish' ? 'sentiment-bullish' :
+                               intel.sentiment === 'bearish' ? 'sentiment-bearish' : 'sentiment-neutral';
+        const sentimentIcon = intel.sentiment === 'bullish' ? '&uarr;' :
+                              intel.sentiment === 'bearish' ? '&darr;' : '&rarr;';
+
+        container.innerHTML = `
+          <div class="intel-card">
+            <div class="intel-sentiment ${sentimentClass}">${sentimentIcon} ${intel.sentiment}</div>
+            <p class="intel-summary">${escapeHtml(intel.summary)}</p>
+            <div class="intel-sources">
+              ${intel.sources.map(s => `<a href="${escapeHtml(s.url)}" target="_blank" class="intel-source">${escapeHtml(s.title)} - ${escapeHtml(s.publisher)}</a>`).join('')}
+            </div>
+          </div>
+        `;
+      } catch (e) {
+        container.innerHTML = '<div class="empty-state">No market intel available today.</div>';
+      }
+    }
+
+    // Load LinkedIn posts
+    async function loadLinkedInPosts() {
+      const container = document.getElementById('linkedin-posts');
+
+      if (!LINKEDIN_URL) {
+        container.innerHTML = '<div class="empty-state">LinkedIn page not available.</div>';
+        return;
+      }
+
+      container.innerHTML = `
+        <a href="${LINKEDIN_URL}" target="_blank" class="linkedin-card">
+          <div class="linkedin-header">
+            <div class="linkedin-avatar">${COMPANY_SLUG.substring(0, 2).toUpperCase()}</div>
+            <div>
+              <div class="linkedin-author">Company Updates</div>
+              <div class="linkedin-date">View on LinkedIn</div>
+            </div>
+          </div>
+          <p class="linkedin-content">Follow our LinkedIn page for the latest news, product updates, team announcements, and industry insights.</p>
+          <span class="linkedin-link">View LinkedIn Profile &rarr;</span>
+        </a>
+      `;
+    }
+
+    const LINKEDIN_URL = 'https://www.linkedin.com/company/salto-x/';
+
     loadBlogPosts();
     loadNewsMentions();
+    loadDailyIntel();
+    loadLinkedInPosts();
   </script>
 </body>
 </html>
