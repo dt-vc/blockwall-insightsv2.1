@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blink Labs | Portfolio Companies | Blockwall Insights</title>
+  <title>Blink Labs | Blockwall Portfolio</title>
   <link rel="icon" type="image/png" href="../../assets/images/blockwall-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <style>
-    .company-hero-card {
-      background: var(--glass-bg);
-      backdrop-filter: blur(var(--glass-blur));
-      -webkit-backdrop-filter: blur(var(--glass-blur));
-      border: 1px solid var(--glass-border);
+    .company-hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--space-2xl) var(--space-lg);
+    }
+    .hero-card {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
       border-radius: var(--radius-xl);
       padding: var(--space-xl);
-      margin-bottom: var(--space-xl);
-      display: flex;
-      align-items: center;
-      gap: var(--space-xl);
     }
-    .company-logo-large {
+    .hero-header {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-lg);
+    }
+    .hero-logo {
       width: 80px;
       height: 80px;
       border-radius: var(--radius-lg);
@@ -33,269 +38,165 @@
       justify-content: center;
       font-weight: 700;
       color: var(--text-primary);
-      font-size: 1.5rem;
+      font-size: 24px;
       flex-shrink: 0;
       overflow: hidden;
     }
-    .company-logo-large img {
+    .hero-logo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 10px;
+      padding: 12px;
     }
-    .source-filter {
+    .hero-info {
+      flex: 1;
+    }
+    .hero-name-row {
       display: flex;
+      align-items: center;
+      gap: 10px;
       flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: var(--space-md);
+      margin-bottom: 6px;
     }
-    .source-btn {
-      padding: 5px 12px;
-      border-radius: 100px;
-      border: 1px solid var(--bw-border-light);
-      background: transparent;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      transition: all var(--transition-fast);
-    }
-    .source-btn:hover {
+    .hero-name {
+      font-size: 28px;
+      font-weight: 700;
       color: var(--text-primary);
-      border-color: var(--bw-accent);
-      background: var(--bw-accent-muted);
+      letter-spacing: -0.02em;
     }
-    .source-btn.active {
-      background: var(--bw-accent);
-      border-color: var(--bw-accent);
-      color: white;
+    .linkedin-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      color: #0A66C2;
+      opacity: 0.7;
+      transition: opacity var(--transition-fast);
     }
-    .source-badge {
+    .linkedin-btn:hover { opacity: 1; }
+    .linkedin-btn svg { width: 18px; height: 18px; }
+    .status-badge {
       display: inline-block;
-      padding: 2px 8px;
-      border-radius: var(--radius-sm);
-      font-size: 10px;
+      padding: 4px 10px;
+      border-radius: 100px;
+      font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.3px;
     }
-    .source-news { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-    .source-blog { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
-    .source-x { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
-    .source-rss { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
-    .company-info h1 {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
-    }
-    .company-sector-badge {
-      display: inline-block;
-      background: var(--bw-accent);
-      color: white;
-      padding: 4px 12px;
-      border-radius: 100px;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
-    .company-description {
-      color: var(--text-muted);
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-    .company-location {
-      color: var(--text-dim);
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-    .company-ext-links {
-      display: flex;
-      gap: var(--space-md);
-      flex-wrap: wrap;
-    }
-    .company-ext-link {
-      color: var(--bw-accent-bright);
-      font-size: 13px;
-      font-weight: 500;
-      transition: color var(--transition-fast);
-    }
-    .company-ext-link:hover {
-      color: var(--text-primary);
-    }
-    .company-stats {
-      padding: 0 0 var(--space-xl);
-    }
-    .updates-section-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: var(--space-md);
-      letter-spacing: -0.02em;
-    }
-    .timeline-item {
-      background: var(--bw-card);
-      border: 1px solid var(--bw-border);
-      border-radius: var(--radius-md);
-      padding: var(--space-lg);
-      margin-bottom: var(--space-md);
-      border-left: 3px solid var(--bw-accent);
-      transition: all var(--transition-base);
-    }
-    .timeline-item:hover {
-      border-color: var(--bw-border-light);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    }
-    .timeline-date {
-      color: var(--bw-accent-bright);
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .timeline-title {
-      color: var(--text-primary);
-      font-weight: 600;
+    .status-active { background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .status-inactive { background: rgba(107, 114, 128, 0.15); color: #9ca3af; border: 1px solid rgba(107, 114, 128, 0.3); }
+    .status-write-off { background: rgba(156, 163, 175, 0.15); color: #9ca3af; border: 1px solid rgba(156, 163, 175, 0.3); }
+    .status-wind-down { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .hero-sector {
       font-size: 15px;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-    .timeline-title a {
-      color: inherit;
-      text-decoration: none;
-      transition: color var(--transition-fast);
-    }
-    .timeline-title a:hover {
       color: var(--bw-accent-bright);
+      font-weight: 500;
     }
-    .timeline-meta {
-      color: var(--text-dim);
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-    }
-    .timeline-summary {
-      color: var(--text-muted);
+    .hero-industry {
       font-size: 13px;
-      line-height: 1.5;
+      color: var(--text-dim);
+      margin-top: 2px;
     }
-    .sentiment-badge {
+    .hero-description {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: var(--space-lg);
+    }
+    .website-link {
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      padding: 2px 8px;
-      border-radius: var(--radius-sm);
-      font-size: 11px;
-      font-weight: 600;
-    }
-    .sentiment-badge.bullish { background: rgba(16, 185, 129, 0.15); color: var(--bw-green); }
-    .sentiment-badge.bearish { background: rgba(239, 68, 68, 0.15); color: var(--bw-red); }
-    .sentiment-badge.neutral { background: rgba(136, 144, 160, 0.15); color: var(--text-muted); }
-    .empty-updates {
-      text-align: center;
-      padding: var(--space-2xl);
       color: var(--text-muted);
-      background: var(--bw-card);
-      border: 1px solid var(--bw-border);
-      border-radius: var(--radius-lg);
       font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--bw-border);
+      transition: all var(--transition-fast);
     }
-    .empty-updates h3 {
-      color: var(--text-primary);
-      font-size: 16px;
-      margin-bottom: 8px;
+    .website-link:hover {
+      color: var(--bw-accent-bright);
+      border-color: var(--bw-accent);
+      background: var(--bw-accent-muted);
     }
-    /* LinkedIn Updates Section */
-    .linkedin-section {
-      margin-top: var(--space-xl);
-      margin-bottom: var(--space-xl);
+    .website-link .arrow { font-size: 12px; }
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-2xl);
     }
-    .linkedin-section-title {
+    .section-title {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--text-primary);
       margin-bottom: var(--space-md);
       display: flex;
       align-items: center;
       gap: 8px;
     }
-    .linkedin-section-title svg {
-      color: #0A66C2;
+    .section-title .icon {
+      width: 20px;
+      height: 20px;
+      color: var(--bw-accent-bright);
     }
-    .linkedin-posts {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-md);
-    }
-    .linkedin-post-card {
+    .content-card {
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
-      border-radius: var(--radius-md);
-      padding: var(--space-lg);
-      border-left: 3px solid #0A66C2;
-      transition: all var(--transition-base);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
     }
-    .linkedin-post-card:hover {
-      border-color: var(--bw-border-light);
+    .post-item {
+      padding: var(--space-md) var(--space-lg);
+      border-bottom: 1px solid var(--bw-border);
+      transition: background var(--transition-fast);
     }
-    .linkedin-post-title {
+    .post-item:last-child { border-bottom: none; }
+    .post-item:hover { background: var(--bw-accent-muted); }
+    .post-title {
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .post-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .post-title a:hover { color: var(--bw-accent-bright); }
+    .post-meta {
+      font-size: 12px;
+      color: var(--text-dim);
       margin-bottom: 6px;
     }
-    .linkedin-post-snippet {
+    .post-excerpt {
       font-size: 13px;
       color: var(--text-muted);
       line-height: 1.5;
-      margin-bottom: 10px;
     }
-    .linkedin-post-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .linkedin-post-date {
-      font-size: 12px;
-      color: var(--text-dim);
-    }
-    .linkedin-post-link {
-      font-size: 12px;
-      color: #0A66C2;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    .linkedin-post-link:hover {
-      text-decoration: underline;
-    }
-    .linkedin-empty {
+    .empty-state {
+      padding: var(--space-xl);
       text-align: center;
-      padding: var(--space-lg);
       color: var(--text-muted);
-      font-size: 13px;
-      background: var(--bw-card);
-      border: 1px solid var(--bw-border);
-      border-radius: var(--radius-md);
+      font-size: 14px;
     }
-    .linkedin-empty a {
-      color: #0A66C2;
+    .news-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 8px;
     }
+    .badge-news { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+    .badge-blog { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
     @media (max-width: 768px) {
-      .company-hero-card {
-        flex-direction: column;
-        text-align: center;
-        padding: var(--space-lg);
-      }
-      .company-ext-links {
-        justify-content: center;
-      }
+      .hero-header { flex-direction: column; align-items: center; text-align: center; }
+      .hero-name { font-size: 24px; }
+      .hero-name-row { justify-content: center; }
     }
   </style>
 </head>
@@ -313,7 +214,7 @@
         <a href="../index.html" class="nav-link active">Portfolio</a>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
+        <span id="theme-icon"></span>
       </button>
     </div>
   </nav>
@@ -323,69 +224,56 @@
       <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
       Back to Portfolio
     </a>
-
-    <div class="company-hero-card">
-      <div class="company-logo-large">
-        <img src="../../assets/companies/blinklabs.png" alt="Blink Labs" onerror="this.style.display='none';this.parentElement.textContent='BL'">
-      </div>
-      <div class="company-info">
-        <h1>Blink Labs</h1>
-        <span class="company-sector-badge">Infrastructure</span>
-        
-        <p class="company-description">Developer tools and infrastructure for Cardano blockchain</p>
-        <div class="company-ext-links">
-          <a href="https://blinklabs.xyz" target="_blank" class="company-ext-link">Website &rarr;</a>
-          <a href="https://twitter.com/blaboratories" target="_blank" class="company-ext-link">Twitter &rarr;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="company-stats">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-value" id="total-updates">&mdash;</div>
-          <div class="stat-label">Total Updates</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value" id="news-count">&mdash;</div>
-          <div class="stat-label">News</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value" id="blog-count">&mdash;</div>
-          <div class="stat-label">Blog</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value" id="latest-date">&mdash;</div>
-          <div class="stat-label">Latest Update</div>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="updates-section-title">News &amp; Updates</h2>
-    <div class="source-filter">
-      <button class="source-btn active" data-source="all">All</button>
-      <button class="source-btn" data-source="news">News</button>
-      <button class="source-btn" data-source="blog">Blog</button>
-      <button class="source-btn" data-source="x">X / Twitter</button>
-    </div>
-    <div id="updates-container">
-      <div class="empty-updates">
-        <h3>Tracking Active</h3>
-        <p>No news found yet for Blink Labs. Updates will appear here as they're discovered.</p>
-        <p style="margin-top: 8px; font-size: 13px; color: var(--text-dim);">Portfolio tracking runs daily at 6:00 UTC.</p>
-      </div>
-    </div>
-
-    <div class="linkedin-section">
-      <h2 class="linkedin-section-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn Updates
-      </h2>
-      <div id="linkedin-posts" class="linkedin-posts">
-        <div class="linkedin-empty">Loading LinkedIn posts...</div>
-      </div>
-    </div>
   </main>
+
+  <div class="company-hero">
+    <div class="hero-card">
+      <div class="hero-header">
+        <div class="hero-logo">
+          <img src="../../assets/companies/blinklabs.png" alt="Blink Labs" onerror="this.style.display='none';this.parentElement.textContent='BL'">
+        </div>
+        <div class="hero-info">
+          <div class="hero-name-row">
+            <span class="hero-name">Blink Labs</span>
+            
+            <span class="status-badge status-active">Active</span>
+          </div>
+          <div class="hero-sector">Infrastructure</div>
+          <div class="hero-industry">Financial Services - MEV</div>
+        </div>
+      </div>
+      <p class="hero-description">Cardano infrastructure tools and developer solutions provider</p>
+      <a href="https://blinklabs.xyz" target="_blank" class="website-link">blinklabs.xyz <span class="arrow">↗</span></a>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+      </svg>
+      Latest Blog Posts
+    </h2>
+    <div class="content-card">
+      <div id="blog-posts">
+        <div class="empty-state">Loading blog posts...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-.586-1.414l-4.5-4.5A2 2 0 0015.5 3H10"/>
+      </svg>
+      Latest Mentions
+    </h2>
+    <div class="content-card">
+      <div id="news-mentions">
+        <div class="empty-state">Loading mentions...</div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer-inner">
@@ -394,181 +282,101 @@
         <span>Blockwall Capital</span>
       </div>
       <p class="footer-text">European Crypto Venture Capital &bull; Frankfurt, Germany</p>
-      <div class="footer-links">
-        <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
-        <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
-        <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
-        <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
-      </div>
     </div>
   </footer>
 
   <script>
+    const COMPANY_SLUG = 'blinklabs';
+    const COMPANY_DOMAIN = 'blinklabs.xyz';
+
+    // Theme
     function toggleTheme() {
       const body = document.body;
       const icon = document.getElementById('theme-icon');
       if (body.getAttribute('data-theme') === 'dark') {
         body.setAttribute('data-theme', 'light');
-        icon.textContent = '☀️';
+        icon.textContent = '\u2600\uFE0F';
         localStorage.setItem('bw-theme', 'light');
       } else {
         body.setAttribute('data-theme', 'dark');
-        icon.textContent = '🌙';
+        icon.textContent = '\uD83C\uDF19';
         localStorage.setItem('bw-theme', 'dark');
       }
     }
     const savedTheme = localStorage.getItem('bw-theme') || 'dark';
     document.body.setAttribute('data-theme', savedTheme);
-    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
-
-    const slug = 'blinklabs';
-    let allItems = [];
-    let activeSourceFilter = 'all';
-
-    function sourceTypeClass(type) {
-      if (!type) return 'source-news';
-      const t = type.toLowerCase();
-      if (t === 'blog' || t === 'blog_rss') return 'source-blog';
-      if (t === 'x' || t === 'twitter') return 'source-x';
-      if (t === 'rss') return 'source-rss';
-      return 'source-news';
-    }
-
-    function sourceTypeLabel(type) {
-      if (!type) return 'News';
-      const t = type.toLowerCase();
-      if (t === 'blog' || t === 'blog_rss') return 'Blog';
-      if (t === 'x' || t === 'twitter') return 'X';
-      if (t === 'rss') return 'RSS';
-      return 'News';
-    }
-
-    function renderTimeline(items) {
-      const container = document.getElementById('updates-container');
-      const filtered = activeSourceFilter === 'all'
-        ? items
-        : items.filter(i => {
-            const t = (i.source_type || 'news').toLowerCase();
-            if (activeSourceFilter === 'news') return t === 'news' || t === 'google_news';
-            if (activeSourceFilter === 'blog') return t === 'blog' || t === 'blog_rss';
-            if (activeSourceFilter === 'x') return t === 'x' || t === 'twitter';
-            return true;
-          });
-
-      if (filtered.length === 0) {
-        container.innerHTML = `
-          <div class="empty-updates">
-            <h3>No updates</h3>
-            <p>No updates found for this source type.</p>
-          </div>`;
-        return;
-      }
-
-      container.innerHTML = filtered.map(item => `
-        <div class="timeline-item">
-          <div class="timeline-date">${formatDate(item.date_published)}</div>
-          <div class="timeline-title">
-            <a href="${item.url}" target="_blank">${escapeHtml(item.title)}</a>
-          </div>
-          <div class="timeline-meta">
-            <span class="source-badge ${sourceTypeClass(item.source_type)}">${sourceTypeLabel(item.source_type)}</span>
-            <span>${escapeHtml(item.source_name || 'News')}</span>
-            
-            <span>Score: ${item.significance_score || 5}/10</span>
-          </div>
-          ${item.summary_short ? `<p class="timeline-summary">${escapeHtml(item.summary_short)}</p>` : ''}
-        </div>
-      `).join('');
-    }
-
-    // Source filter
-    document.querySelectorAll('.source-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeSourceFilter = btn.dataset.source;
-        renderTimeline(allItems);
-      });
-    });
-
-    async function loadCompanyUpdates() {
-      const container = document.getElementById('updates-container');
-      try {
-        const response = await fetch(`../../data/portfolio/indexes/by-company/${slug}.json`);
-        if (!response.ok) throw new Error('No data');
-        const data = await response.json();
-        const items = data.items || [];
-        allItems = items;
-
-        document.getElementById('total-updates').textContent = items.length;
-        document.getElementById('news-count').textContent = items.filter(i => (i.source_type || 'news').toLowerCase() === 'news' || i.source_type === 'google_news').length;
-        document.getElementById('blog-count').textContent = items.filter(i => (i.source_type || '').toLowerCase() === 'blog' || i.source_type === 'blog_rss').length;
-
-        if (items.length > 0) {
-          const latestDate = new Date(items[0].date_published);
-          document.getElementById('latest-date').textContent = latestDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-          renderTimeline(items);
-        }
-      } catch (e) {
-        document.getElementById('total-updates').textContent = '0';
-        document.getElementById('news-count').textContent = '0';
-        document.getElementById('blog-count').textContent = '0';
-        document.getElementById('latest-date').textContent = 'N/A';
-      }
-    }
-
-    function formatDate(dateStr) {
-      try {
-        const date = new Date(dateStr);
-        return date.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
-      } catch (e) { return dateStr; }
-    }
-
-    function getSentimentLabel(sentiment) {
-      const labels = { bullish: 'Bullish', bearish: 'Bearish', neutral: 'Neutral' };
-      return labels[sentiment] || 'Neutral';
-    }
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
 
     function escapeHtml(str) {
       if (!str) return '';
       return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    loadCompanyUpdates();
-
-    // Load LinkedIn posts
-    async function loadLinkedInPosts() {
-      const container = document.getElementById('linkedin-posts');
+    function formatDate(dateStr) {
       try {
-        const response = await fetch('../../data/portfolio/linkedin_seeds.json');
-        if (!response.ok) throw new Error('No data');
-        const data = await response.json();
-        const companyData = data.companies[slug];
-        
-        if (!companyData || !companyData.posts || companyData.posts.length === 0) {
-          const linkedinUrl = companyData?.linkedin_url || '';
-          container.innerHTML = linkedinUrl 
-            ? `<div class="linkedin-empty">No LinkedIn posts tracked yet. <a href="${linkedinUrl}" target="_blank">Check their LinkedIn page</a></div>`
-            : `<div class="linkedin-empty">No LinkedIn posts tracked yet.</div>`;
+        return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      } catch (e) { return dateStr; }
+    }
+
+    // Load blog posts
+    async function loadBlogPosts() {
+      const container = document.getElementById('blog-posts');
+      try {
+        const res = await fetch(`../../data/portfolio/blog/${COMPANY_SLUG}.json`);
+        if (!res.ok) throw new Error('No blog data');
+        const data = await res.json();
+        const posts = data.posts || [];
+
+        if (posts.length === 0) {
+          container.innerHTML = '<div class="empty-state">No blog posts available.</div>';
           return;
         }
-        
-        container.innerHTML = companyData.posts.slice(0, 5).map(post => `
-          <div class="linkedin-post-card">
-            <div class="linkedin-post-title">${escapeHtml(post.title)}</div>
-            <div class="linkedin-post-snippet">${escapeHtml(post.snippet)}</div>
-            <div class="linkedin-post-meta">
-              <span class="linkedin-post-date">${formatDate(post.date)}</span>
-              <a href="${post.post_url}" target="_blank" class="linkedin-post-link">Open on LinkedIn</a>
+
+        container.innerHTML = posts.slice(0, 5).map(post => `
+          <div class="post-item">
+            <div class="post-title">
+              <a href="${escapeHtml(post.url)}" target="_blank">${escapeHtml(post.title)}</a>
+              <span class="news-badge badge-blog">Blog</span>
             </div>
+            <div class="post-meta">${formatDate(post.date_published)} ${post.author ? '&bull; ' + escapeHtml(post.author) : ''}</div>
+            <div class="post-excerpt">${escapeHtml(post.excerpt)}</div>
           </div>
         `).join('');
       } catch (e) {
-        container.innerHTML = `<div class="linkedin-empty">Unable to load LinkedIn posts.</div>`;
+        container.innerHTML = '<div class="empty-state">No blog posts available for this company.</div>';
       }
     }
-    
-    loadLinkedInPosts();
+
+    // Load news mentions (validated)
+    async function loadNewsMentions() {
+      const container = document.getElementById('news-mentions');
+      try {
+        const res = await fetch('../../data/portfolio/indexes/latest-validated.json');
+        if (!res.ok) throw new Error('No data');
+        const data = await res.json();
+        const items = (data.items || []).filter(i => i.company_slug === COMPANY_SLUG);
+
+        if (items.length === 0) {
+          container.innerHTML = '<div class="empty-state">No verified mentions found.</div>';
+          return;
+        }
+
+        container.innerHTML = items.slice(0, 5).map(item => `
+          <div class="post-item">
+            <div class="post-title">
+              <a href="${escapeHtml(item.url)}" target="_blank">${escapeHtml(item.title)}</a>
+              <span class="news-badge badge-news">News</span>
+            </div>
+            <div class="post-meta">${formatDate(item.date_published)} &bull; ${escapeHtml(item.publisher)}</div>
+          </div>
+        `).join('');
+      } catch (e) {
+        container.innerHTML = '<div class="empty-state">No verified mentions found.</div>';
+      }
+    }
+
+    loadBlogPosts();
+    loadNewsMentions();
   </script>
 </body>
 </html>
