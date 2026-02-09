@@ -417,6 +417,166 @@
       }
     }
 
+    /* Portfolio Daily Digest Section */
+    .digest-section {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-2xl);
+    }
+
+    .digest-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-lg);
+    }
+
+    .digest-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .digest-link {
+      color: var(--bw-accent-bright);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition-fast);
+    }
+
+    .digest-link:hover {
+      color: var(--gradient-purple);
+    }
+
+    .digest-scroll {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: var(--bw-border-light) transparent;
+    }
+
+    .digest-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .digest-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .digest-scroll::-webkit-scrollbar-thumb {
+      background: var(--bw-border-light);
+      border-radius: 3px;
+    }
+
+    .digest-card {
+      flex: 0 0 340px;
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-decoration: none;
+      transition: all var(--transition-base);
+      scroll-snap-align: start;
+    }
+
+    .digest-card:hover {
+      border-color: var(--bw-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--bw-glow);
+    }
+
+    .digest-card-header {
+      background: linear-gradient(135deg, var(--bw-accent-muted), rgba(168, 85, 247, 0.15));
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--bw-border);
+    }
+
+    .digest-card-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--bw-accent), #4f46e5);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .digest-card-date {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .digest-card-body {
+      padding: 16px 20px;
+    }
+
+    .digest-card-stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .digest-stat {
+      text-align: center;
+    }
+
+    .digest-stat-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--bw-accent-bright);
+      display: block;
+    }
+
+    .digest-stat-label {
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .digest-card-snippet {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .digest-card-link {
+      color: var(--bw-accent-bright);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .digest-card:hover .digest-card-link {
+      color: var(--gradient-purple);
+    }
+
+    .digest-empty {
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
     @media (max-width: 768px) {
       .portfolio-stats {
         grid-template-columns: repeat(2, 1fr);
@@ -437,6 +597,10 @@
 
       .portfolio-hero h1 {
         font-size: 28px;
+      }
+
+      .digest-card {
+        flex: 0 0 300px;
       }
     }
   </style>
@@ -484,9 +648,20 @@
     </div>
   </div>
 
+  <div class="digest-section">
+    <div class="digest-header">
+      <h2 class="digest-title">Daily Portfolio Intelligence</h2>
+      <a href="daily/index.html" class="digest-link">View All &rarr;</a>
+    </div>
+    <div class="digest-scroll" id="digest-scroll">
+      <div class="digest-empty">Loading intelligence reports...</div>
+    </div>
+  </div>
+
   <div class="companies-section">
     <div class="sub-nav">
       <a href="index.html" class="sub-nav-link active">Companies</a>
+      <a href="daily/index.html" class="sub-nav-link">Daily Intel</a>
       <a href="dealflow.html" class="sub-nav-link">Dealflow</a>
     </div>
 
@@ -694,6 +869,53 @@
 
     loadCompanies();
     loadUpdates();
+
+    // Load Portfolio Daily Digest
+    async function loadDigest() {
+      const scroll = document.getElementById('digest-scroll');
+      try {
+        const res = await fetch('../data/portfolio-daily.json');
+        const data = await res.json();
+        if (!data || data.length === 0) throw new Error('Empty');
+
+        data.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        scroll.innerHTML = data.map((item, index) => {
+          const date = new Date(item.date + 'T00:00:00');
+          const dateStr = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+          return `
+            <a href="daily/${item.filename}" class="digest-card">
+              <div class="digest-card-header">
+                ${index === 0 ? '<div class="digest-card-badge">Latest</div>' : ''}
+                <div class="digest-card-date">${dateStr}</div>
+              </div>
+              <div class="digest-card-body">
+                <div class="digest-card-stats">
+                  <div class="digest-stat">
+                    <span class="digest-stat-value">${item.companies_with_news}</span>
+                    <span class="digest-stat-label">Companies</span>
+                  </div>
+                  <div class="digest-stat">
+                    <span class="digest-stat-value">${item.total_tracked}</span>
+                    <span class="digest-stat-label">Tracked</span>
+                  </div>
+                  <div class="digest-stat">
+                    <span class="digest-stat-value">${item.rss_articles}</span>
+                    <span class="digest-stat-label">Sources</span>
+                  </div>
+                </div>
+                <p class="digest-card-snippet">${item.snippet}</p>
+                <span class="digest-card-link">View Report &rarr;</span>
+              </div>
+            </a>
+          `;
+        }).join('');
+      } catch (e) {
+        scroll.innerHTML = '<div class="digest-empty">Daily intelligence reports will appear here as they\'re generated.</div>';
+      }
+    }
+
+    loadDigest();
   </script>
 </body>
 
