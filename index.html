@@ -23,20 +23,22 @@
       margin: 0 auto var(--space-lg);
       padding: 0 var(--space-lg);
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      text-align: center;
+      gap: var(--space-sm);
     }
 
     .carousel-header-left {
-      text-align: left;
+      text-align: center;
     }
 
     .carousel-header .section-label {
-      margin-bottom: var(--space-sm);
+      margin-bottom: var(--space-xs);
     }
 
     .carousel-header .section-title {
-      margin-bottom: 0;
+      margin-bottom: var(--space-sm);
     }
 
     .carousel-link {
@@ -71,6 +73,14 @@
       -webkit-overflow-scrolling: touch;
       padding: 0 var(--space-lg) var(--space-md);
       scroll-behavior: smooth;
+      justify-content: center;
+    }
+
+    /* On smaller screens, use left alignment for scroll behavior */
+    @media (max-width: 1200px) {
+      .carousel-scroll {
+        justify-content: flex-start;
+      }
     }
 
     .carousel-scroll::-webkit-scrollbar {
@@ -91,14 +101,14 @@
       background: var(--bw-accent);
     }
 
-    /* Substack Embed Card */
+    /* Substack Embed Card - Smaller size */
     .substack-embed-card {
-      flex: 0 0 380px;
-      min-height: 280px;
+      flex: 0 0 320px;
+      min-height: 200px;
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
       border-radius: var(--radius-lg);
-      padding: var(--space-lg);
+      padding: var(--space-md);
       scroll-snap-align: start;
       transition: all var(--transition-base);
       display: flex;
@@ -108,7 +118,7 @@
     .substack-embed-card:hover {
       border-color: var(--bw-accent);
       transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--bw-glow);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 20px var(--bw-glow);
     }
 
     .substack-embed-card .substack-post-embed {
@@ -118,14 +128,14 @@
     }
 
     .substack-embed-card .substack-post-embed p {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       color: var(--text-secondary);
-      font-size: 14px;
-      line-height: 1.6;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     .substack-embed-card .substack-post-embed p:first-child {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       color: var(--text-primary);
       line-height: 1.4;
@@ -203,7 +213,7 @@
     }
 
     .youtube-card {
-      flex: 0 0 420px;
+      flex: 0 0 360px;
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
       border-radius: var(--radius-lg);
@@ -215,7 +225,7 @@
     .youtube-card:hover {
       border-color: var(--bw-accent);
       transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--bw-glow);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 20px var(--bw-glow);
     }
 
     .youtube-video-wrapper {
@@ -261,9 +271,8 @@
 
     @media (max-width: 768px) {
       .carousel-header {
-        flex-direction: column;
         align-items: flex-start;
-        gap: var(--space-md);
+        text-align: left;
       }
 
       .carousel-header-left {
@@ -271,11 +280,11 @@
       }
 
       .substack-embed-card {
-        flex: 0 0 320px;
+        flex: 0 0 280px;
       }
 
       .youtube-card {
-        flex: 0 0 340px;
+        flex: 0 0 300px;
       }
 
       .carousel-btn {
@@ -400,9 +409,9 @@
       <a href="https://insights.blockwall.vc/?sort=new" target="_blank" class="carousel-link">
         View on Substack
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-          <polyline points="15 3 21 3 21 9"/>
-          <line x1="10" y1="14" x2="21" y2="3"/>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
         </svg>
       </a>
     </div>
@@ -410,196 +419,397 @@
     <div class="carousel-wrapper">
       <button class="carousel-btn carousel-btn-left" id="substack-prev" aria-label="Previous">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M15 18l-6-6 6-6"/>
+          <path d="M15 18l-6-6 6-6" />
         </svg>
       </button>
 
       <div class="carousel-scroll" id="substack-carousel">
         <!-- 1 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">How Wallets Will Reshape Financial Services by Blockwall</p><p>Why user-controlled wallets are poised to replace banks and brokerages as the primary gateway to global finance</p><a data-post-link href="https://insights.blockwall.vc/p/how-wallets-will-reshape-financial">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">How Wallets Will Reshape Financial Services by Blockwall</p>
+            <p>Why user-controlled wallets are poised to replace banks and brokerages as the primary gateway to global
+              finance</p><a data-post-link
+              href="https://insights.blockwall.vc/p/how-wallets-will-reshape-financial">Read on Substack</a>
+          </div>
         </div>
         <!-- 2 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">The Hidden Power of Prediction Markets: Beyond Gambling, Into Data Mining by Blockwall</p><p>How financial incentives turn speculation into truth discovery.</p><a data-post-link href="https://insights.blockwall.vc/p/the-hidden-power-of-prediction-markets">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">The Hidden Power of Prediction Markets: Beyond Gambling, Into Data Mining by Blockwall</p>
+            <p>How financial incentives turn speculation into truth discovery.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/the-hidden-power-of-prediction-markets">Read on Substack</a>
+          </div>
         </div>
         <!-- 3 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review 2025 by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2025">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall's Year in Review 2025 by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2025">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 4 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Stablecoins: The Internet's Financial Base Layer by Blockwall</p><p>The stablecoin thesis: infrastructure, global adoption, and the path to a $16 trillion opportunity in programmable money.</p><a data-post-link href="https://insights.blockwall.vc/p/stablecoins-the-internets-financial">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Stablecoins: The Internet's Financial Base Layer by Blockwall</p>
+            <p>The stablecoin thesis: infrastructure, global adoption, and the path to a $16 trillion opportunity in
+              programmable money.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/stablecoins-the-internets-financial">Read on Substack</a>
+          </div>
         </div>
         <!-- 5 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">From keys to cards, bridging self-custody and everyday payments by Blockwall</p><p>Disclosing Blockwall's investment in Kulipa and our take on the future of direct digital payments</p><a data-post-link href="https://insights.blockwall.vc/p/from-keys-to-cards-bridging-self">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">From keys to cards, bridging self-custody and everyday payments by Blockwall</p>
+            <p>Disclosing Blockwall's investment in Kulipa and our take on the future of direct digital payments</p><a
+              data-post-link href="https://insights.blockwall.vc/p/from-keys-to-cards-bridging-self">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 6 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - October 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - October 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 7 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - September 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - September 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2025-what-happened">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 8 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - August 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - August 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 9 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - July 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - July 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 10 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - June 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - June 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 11 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Web3 Handbook by Blockwall</p><p>Web3 Handbook</p><a data-post-link href="https://insights.blockwall.vc/p/web3-handbook">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Web3 Handbook by Blockwall</p>
+            <p>Web3 Handbook</p><a data-post-link href="https://insights.blockwall.vc/p/web3-handbook">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 12 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">DeFi Needs a Jony Ive Moment: Why We Invested in Rebind by Blockwall</p><p>Diving into DeFi's long-standing user experience challenges and the reasons why we're investing in Rebind.</p><a data-post-link href="https://insights.blockwall.vc/p/defi-needs-a-jony-ive-moment-why">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">DeFi Needs a Jony Ive Moment: Why We Invested in Rebind by Blockwall</p>
+            <p>Diving into DeFi's long-standing user experience challenges and the reasons why we're investing in
+              Rebind.</p><a data-post-link href="https://insights.blockwall.vc/p/defi-needs-a-jony-ive-moment-why">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 13 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - May 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - May 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 14 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - April 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - April 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 15 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - March 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - March 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 16 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - February 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - February 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2025-what-happened">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 17 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">An overview of (Re)Staking pt2 by Blockwall</p><p>Fresh from our deep dive into staking, we're now exploring the next logical step—restaking—and announcing our most recent investment in Byzantine.fi</p><a data-post-link href="https://insights.blockwall.vc/p/an-overview-of-restaking-pt2">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">An overview of (Re)Staking pt2 by Blockwall</p>
+            <p>Fresh from our deep dive into staking, we're now exploring the next logical step—restaking—and announcing
+              our most recent investment in Byzantine.fi</p><a data-post-link
+              href="https://insights.blockwall.vc/p/an-overview-of-restaking-pt2">Read on Substack</a>
+          </div>
         </div>
         <!-- 18 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Big Shifts, New Frontiers: The Blockwall Investor Summit Recap by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/big-shifts-new-frontiers-the-blockwall">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Big Shifts, New Frontiers: The Blockwall Investor Summit Recap by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/big-shifts-new-frontiers-the-blockwall">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 19 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - January 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2025-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - January 2025 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2025-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 20 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review - 2024 by Blockwall</p><p>And we wish you a joyous, safe holiday season and a happy and healthy New Year!</p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2024">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall's Year in Review - 2024 by Blockwall</p>
+            <p>And we wish you a joyous, safe holiday season and a happy and healthy New Year!</p><a data-post-link
+              href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2024">Read on Substack</a>
+          </div>
         </div>
         <!-- 21 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Introduction to Fully Homomorphic Encryption (FHE): What It Is and Why It Matters? by Blockwall</p><p>Navigating the exciting realm of Fully Homomorphic Encryption.</p><a data-post-link href="https://insights.blockwall.vc/p/introduction-to-fully-homomorphic">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Introduction to Fully Homomorphic Encryption (FHE): What It Is and Why It Matters? by Blockwall
+            </p>
+            <p>Navigating the exciting realm of Fully Homomorphic Encryption.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/introduction-to-fully-homomorphic">Read on Substack</a>
+          </div>
         </div>
         <!-- 22 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - October 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - October 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 23 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Bringing Securitization Into the Digital Age: Why We Invested in Tranched by Blockwall</p><p>Announcing our most recent investment in Tranched.fi and why we believe the future of securitization will be on-chain.</p><a data-post-link href="https://insights.blockwall.vc/p/bringing-securitization-into-the">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Bringing Securitization Into the Digital Age: Why We Invested in Tranched by Blockwall</p>
+            <p>Announcing our most recent investment in Tranched.fi and why we believe the future of securitization will
+              be on-chain.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/bringing-securitization-into-the">Read on Substack</a>
+          </div>
         </div>
         <!-- 24 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">IRL: The Next Theme of the Internet and Why We Invested in River by Blockwall</p><p>Exploring the growth of community and real-life engagements as our internet evolves. We are also excited to announce our investment in River.</p><a data-post-link href="https://insights.blockwall.vc/p/irl-the-next-theme-of-the-internet">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">IRL: The Next Theme of the Internet and Why We Invested in River by Blockwall</p>
+            <p>Exploring the growth of community and real-life engagements as our internet evolves. We are also excited
+              to announce our investment in River.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/irl-the-next-theme-of-the-internet">Read on Substack</a>
+          </div>
         </div>
         <!-- 25 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - September 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - September 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2024-what-happened">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 26 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall's Thesis 3.0 by Blockwall</p><p>Unpacking the core ideas shaping our investment thesis and the guiding principles that drive us as a team.</p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-thesis-30">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall's Thesis 3.0 by Blockwall</p>
+            <p>Unpacking the core ideas shaping our investment thesis and the guiding principles that drive us as a
+              team.</p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-thesis-30">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 27 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - August 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - August 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 28 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">An overview of Staking pt. 1 by Blockwall</p><p>In this suite of articles, we're diving into the wonderful world of staking, a pivotal concept in the crypto ecosystem that not only secures networks but also offers lucrative rewards to participants.</p><a data-post-link href="https://insights.blockwall.vc/p/an-overview-of-staking-pt-1">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">An overview of Staking pt. 1 by Blockwall</p>
+            <p>In this suite of articles, we're diving into the wonderful world of staking, a pivotal concept in the
+              crypto ecosystem that not only secures networks but also offers lucrative rewards to participants.</p><a
+              data-post-link href="https://insights.blockwall.vc/p/an-overview-of-staking-pt-1">Read on Substack</a>
+          </div>
         </div>
         <!-- 29 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - July 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - July 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 30 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - June 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - June 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 31 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - May 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - May 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 32 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Open Capital Market on Crypto Rails by Blockwall</p><p>Announcing our investment in Spiko's €4m seed round — and why the tokenization of Real-World-Asset matters for TradFi & DeFi.</p><a data-post-link href="https://insights.blockwall.vc/p/open-capital-market-on-crypto-rails">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Open Capital Market on Crypto Rails by Blockwall</p>
+            <p>Announcing our investment in Spiko's €4m seed round — and why the tokenization of Real-World-Asset
+              matters for TradFi & DeFi.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/open-capital-market-on-crypto-rails">Read on Substack</a>
+          </div>
         </div>
         <!-- 33 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - April 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - April 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 34 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - March 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - March 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 35 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Why we invested in Spherity: Powering the Future of B2B Interactions in Regulated Industries by Blockwall</p><p>Exploring the impact of decentralised identity in today's digital era. We are also excited to announce our investment in Spherity!</p><a data-post-link href="https://insights.blockwall.vc/p/why-we-invested-in-spherity-powering">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Why we invested in Spherity: Powering the Future of B2B Interactions in Regulated Industries by
+              Blockwall</p>
+            <p>Exploring the impact of decentralised identity in today's digital era. We are also excited to announce
+              our investment in Spherity!</p><a data-post-link
+              href="https://insights.blockwall.vc/p/why-we-invested-in-spherity-powering">Read on Substack</a>
+          </div>
         </div>
         <!-- 36 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - February 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - February 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2024-what-happened">Read
+              on Substack</a>
+          </div>
         </div>
         <!-- 37 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Zero Knowledge Proofs: Empowering the Future of Data Privacy and Scalable Infrastructure by Blockwall</p><p>Exploring Zero-Knowledge Proofs (ZKPs), use cases and their potential in improving our digital lives.</p><a data-post-link href="https://insights.blockwall.vc/p/zero-knowledge-proofs-empowering">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Zero Knowledge Proofs: Empowering the Future of Data Privacy and Scalable Infrastructure by
+              Blockwall</p>
+            <p>Exploring Zero-Knowledge Proofs (ZKPs), use cases and their potential in improving our digital lives.</p>
+            <a data-post-link href="https://insights.blockwall.vc/p/zero-knowledge-proofs-empowering">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 38 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Applying Metcalfe's Law to a Valuation of the Urbit Network by Blockwall</p><p>This article was originally written between 07-10 2022. It is highly speculative and reflects solely the authors own vision for a potential adoption path of Urbit, which depends on many assumptions.</p><a data-post-link href="https://insights.blockwall.vc/p/applying-metcalfes-law-to-a-valuation">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Applying Metcalfe's Law to a Valuation of the Urbit Network by Blockwall</p>
+            <p>This article was originally written between 07-10 2022. It is highly speculative and reflects solely the
+              authors own vision for a potential adoption path of Urbit, which depends on many assumptions.</p><a
+              data-post-link href="https://insights.blockwall.vc/p/applying-metcalfes-law-to-a-valuation">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 39 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall - January 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2024-what-happened">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall - January 2024 - What happened in Web3? by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2024-what-happened">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 40 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">From Customers to Advocates: The Art of Community-Led Growth by Blockwall</p><p>Exploring the benefits of Community-Led Growth strategy. We are also excited to announce our investment in Zealy!</p><a data-post-link href="https://insights.blockwall.vc/p/from-customers-to-advocates-the-art">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">From Customers to Advocates: The Art of Community-Led Growth by Blockwall</p>
+            <p>Exploring the benefits of Community-Led Growth strategy. We are also excited to announce our investment
+              in Zealy!</p><a data-post-link
+              href="https://insights.blockwall.vc/p/from-customers-to-advocates-the-art">Read on Substack</a>
+          </div>
         </div>
         <!-- 41 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Blockwall's Year in Review by Blockwall</p>
+            <p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review">Read on
+              Substack</a>
+          </div>
         </div>
         <!-- 42 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Cloud for Web3 and Why We Invested in Validation Cloud by Blockwall</p><p>Exploring blockchain infrastructure, the crucial component that connects users and applications to blockchains. We are also thrilled to announce our investment in Validation Cloud.</p><a data-post-link href="https://insights.blockwall.vc/p/cloud-for-web3-and-why-we-invested">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Cloud for Web3 and Why We Invested in Validation Cloud by Blockwall</p>
+            <p>Exploring blockchain infrastructure, the crucial component that connects users and applications to
+              blockchains. We are also thrilled to announce our investment in Validation Cloud.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/cloud-for-web3-and-why-we-invested">Read on Substack</a>
+          </div>
         </div>
         <!-- 43 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Maximal Extractable Value (MEV) Supply Chain and why we invested in Blink Labs. by Blockwall</p><p>Exploring the dynamics of decisions, intentions, and incentives that led to the emergence of MEV. We're also excited to announce our investment in Blink Labs.</p><a data-post-link href="https://insights.blockwall.vc/p/maximal-extractable-value-mev-supply">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Maximal Extractable Value (MEV) Supply Chain and why we invested in Blink Labs. by Blockwall
+            </p>
+            <p>Exploring the dynamics of decisions, intentions, and incentives that led to the emergence of MEV. We're
+              also excited to announce our investment in Blink Labs.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/maximal-extractable-value-mev-supply">Read on Substack</a>
+          </div>
         </div>
         <!-- 44 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">What is Urbit? by Blockwall</p><p>An introduction for those interested in the future of the internet.</p><a data-post-link href="https://insights.blockwall.vc/p/what-is-urbit">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">What is Urbit? by Blockwall</p>
+            <p>An introduction for those interested in the future of the internet.</p><a data-post-link
+              href="https://insights.blockwall.vc/p/what-is-urbit">Read on Substack</a>
+          </div>
         </div>
         <!-- 45 -->
         <div class="substack-embed-card">
-          <div class="substack-post-embed"><p lang="en">Announcing Blockwall Insights by Blockwall</p><p>Introducing our new blog and newsletter, dedicated to all Web3 enthusiasts</p><a data-post-link href="https://insights.blockwall.vc/p/announcing-blockwall-insights">Read on Substack</a></div>
+          <div class="substack-post-embed">
+            <p lang="en">Announcing Blockwall Insights by Blockwall</p>
+            <p>Introducing our new blog and newsletter, dedicated to all Web3 enthusiasts</p><a data-post-link
+              href="https://insights.blockwall.vc/p/announcing-blockwall-insights">Read on Substack</a>
+          </div>
         </div>
       </div>
 
       <button class="carousel-btn carousel-btn-right" id="substack-next" aria-label="Next">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 18l6-6-6-6"/>
+          <path d="M9 18l6-6-6-6" />
         </svg>
       </button>
     </div>
@@ -615,9 +825,9 @@
       <a href="https://youtube.com/@blockwall_vc?si=GT76fEFbJ4xWY0U6" target="_blank" class="carousel-link">
         Subscribe on YouTube
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-          <polyline points="15 3 21 3 21 9"/>
-          <line x1="10" y1="14" x2="21" y2="3"/>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
         </svg>
       </a>
     </div>
@@ -625,7 +835,7 @@
     <div class="carousel-wrapper">
       <button class="carousel-btn carousel-btn-left" id="youtube-prev" aria-label="Previous">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M15 18l-6-6 6-6"/>
+          <path d="M15 18l-6-6 6-6" />
         </svg>
       </button>
 
@@ -649,7 +859,7 @@
 
       <button class="carousel-btn carousel-btn-right" id="youtube-next" aria-label="Next">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 18l6-6-6-6"/>
+          <path d="M9 18l6-6-6-6" />
         </svg>
       </button>
     </div>
