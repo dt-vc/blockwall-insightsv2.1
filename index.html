@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Substack embed script - must load early for proper rendering -->
+  <script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
   <style>
     /* Substack Carousel Styles */
     .carousel-section {
@@ -73,14 +75,7 @@
       -webkit-overflow-scrolling: touch;
       padding: 0 var(--space-lg) var(--space-md);
       scroll-behavior: smooth;
-      justify-content: center;
-    }
-
-    /* On smaller screens, use left alignment for scroll behavior */
-    @media (max-width: 1200px) {
-      .carousel-scroll {
-        justify-content: flex-start;
-      }
+      justify-content: flex-start;
     }
 
     .carousel-scroll::-webkit-scrollbar {
@@ -101,14 +96,14 @@
       background: var(--bw-accent);
     }
 
-    /* Substack Embed Card - Smaller size */
+    /* Substack Embed Card - Match YouTube card size */
     .substack-embed-card {
-      flex: 0 0 320px;
-      min-height: 200px;
+      flex: 0 0 360px;
+      min-height: 280px;
       background: var(--bw-card);
       border: 1px solid var(--bw-border);
       border-radius: var(--radius-lg);
-      padding: var(--space-md);
+      overflow: hidden;
       scroll-snap-align: start;
       transition: all var(--transition-base);
       display: flex;
@@ -121,41 +116,82 @@
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 20px var(--bw-glow);
     }
 
+    /* Let Substack embed script style the content with images */
     .substack-embed-card .substack-post-embed {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style Substack embed widget when loaded */
+    .substack-embed-card .substack-post-embed-wrapper {
       flex: 1;
       display: flex;
       flex-direction: column;
     }
 
-    .substack-embed-card .substack-post-embed p {
-      margin: 0 0 10px;
-      color: var(--text-secondary);
-      font-size: 13px;
-      line-height: 1.5;
+    /* Fallback styling before Substack script loads */
+    .substack-embed-card .substack-post-embed:not(.rendered) {
+      padding: var(--space-md);
     }
 
-    .substack-embed-card .substack-post-embed p:first-child {
-      font-size: 15px;
+    .substack-embed-card .substack-post-embed:not(.rendered) p {
+      margin: 0 0 10px;
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .substack-embed-card .substack-post-embed:not(.rendered) p:first-child {
+      font-size: 16px;
       font-weight: 600;
       color: var(--text-primary);
       line-height: 1.4;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
-    .substack-embed-card .substack-post-embed a[data-post-link] {
+    .substack-embed-card .substack-post-embed:not(.rendered) a[data-post-link] {
       margin-top: auto;
       display: inline-flex;
       align-items: center;
       gap: 6px;
       color: var(--bw-accent-bright);
       font-weight: 500;
-      font-size: 13px;
+      font-size: 14px;
       text-decoration: none;
       transition: color var(--transition-fast);
     }
 
-    .substack-embed-card .substack-post-embed a[data-post-link]:hover {
+    .substack-embed-card .substack-post-embed:not(.rendered) a[data-post-link]:hover {
       color: var(--gradient-purple);
+    }
+
+    /* Override Substack's default widget styling for dark theme */
+    .substack-embed-card iframe {
+      border-radius: 0 !important;
+      border: none !important;
+      width: 100% !important;
+      min-height: 280px !important;
+    }
+
+    /* When Substack script renders the embed, it replaces content with iframe */
+    .substack-embed-card .substack-post-embed iframe {
+      width: 100% !important;
+      height: 280px !important;
+      border: none !important;
+    }
+
+    /* Hide original text content after Substack renders */
+    .substack-embed-card .substack-post-embed p,
+    .substack-embed-card .substack-post-embed a[data-post-link] {
+      display: block;
+    }
+
+    .substack-embed-card .substack-post-embed:has(iframe) p,
+    .substack-embed-card .substack-post-embed:has(iframe) a[data-post-link] {
+      display: none !important;
     }
 
     /* Carousel Arrow Buttons */
@@ -280,7 +316,8 @@
       }
 
       .substack-embed-card {
-        flex: 0 0 280px;
+        flex: 0 0 300px;
+        min-height: 240px;
       }
 
       .youtube-card {
@@ -997,40 +1034,11 @@
       youtubeCards.forEach(card => observer.observe(card));
     }
 
-    // Lazy load Substack embeds
-    function setupSubstackLazyLoad() {
-      const substackSection = document.getElementById('substack-section');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Load Substack embed script once when section is visible
-            if (!document.querySelector('script[src*="substack.com/embedjs"]')) {
-              const script = document.createElement('script');
-              script.src = 'https://substack.com/embedjs/embed.js';
-              script.async = true;
-              script.charset = 'utf-8';
-              document.body.appendChild(script);
-            }
-            observer.unobserve(substackSection);
-          }
-        });
-      }, {
-        rootMargin: '300px',
-        threshold: 0.1
-      });
-
-      if (substackSection) {
-        observer.observe(substackSection);
-      }
-    }
-
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
       setupCarousel('substack-carousel', 'substack-prev', 'substack-next');
       setupCarousel('youtube-carousel', 'youtube-prev', 'youtube-next');
       setupYouTubeLazyLoad();
-      setupSubstackLazyLoad();
     });
   </script>
 </body>
