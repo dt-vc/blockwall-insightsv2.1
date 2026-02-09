@@ -12,6 +12,277 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Substack Carousel Styles */
+    .carousel-section {
+      position: relative;
+    }
+
+    .carousel-header {
+      max-width: 1200px;
+      margin: 0 auto var(--space-lg);
+      padding: 0 var(--space-lg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .carousel-header-left {
+      text-align: left;
+    }
+
+    .carousel-header .section-label {
+      margin-bottom: var(--space-sm);
+    }
+
+    .carousel-header .section-title {
+      margin-bottom: 0;
+    }
+
+    .carousel-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--bw-accent-bright);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color var(--transition-fast);
+    }
+
+    .carousel-link:hover {
+      color: var(--gradient-purple);
+    }
+
+    .carousel-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      max-width: 100%;
+    }
+
+    .carousel-scroll {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 var(--space-lg) var(--space-md);
+      scroll-behavior: smooth;
+    }
+
+    .carousel-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel-scroll::-webkit-scrollbar-track {
+      background: var(--bw-dark);
+      border-radius: 4px;
+    }
+
+    .carousel-scroll::-webkit-scrollbar-thumb {
+      background: var(--bw-border-light);
+      border-radius: 4px;
+    }
+
+    .carousel-scroll::-webkit-scrollbar-thumb:hover {
+      background: var(--bw-accent);
+    }
+
+    /* Substack Embed Card */
+    .substack-embed-card {
+      flex: 0 0 380px;
+      min-height: 280px;
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      scroll-snap-align: start;
+      transition: all var(--transition-base);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .substack-embed-card:hover {
+      border-color: var(--bw-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--bw-glow);
+    }
+
+    .substack-embed-card .substack-post-embed {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .substack-embed-card .substack-post-embed p {
+      margin: 0 0 12px;
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .substack-embed-card .substack-post-embed p:first-child {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .substack-embed-card .substack-post-embed a[data-post-link] {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--bw-accent-bright);
+      font-weight: 500;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .substack-embed-card .substack-post-embed a[data-post-link]:hover {
+      color: var(--gradient-purple);
+    }
+
+    /* Carousel Arrow Buttons */
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+      z-index: 10;
+      opacity: 0;
+    }
+
+    .carousel-wrapper:hover .carousel-btn {
+      opacity: 1;
+    }
+
+    .carousel-btn:hover {
+      background: var(--bw-accent);
+      border-color: var(--bw-accent);
+    }
+
+    .carousel-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .carousel-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .carousel-btn-left {
+      left: 8px;
+    }
+
+    .carousel-btn-right {
+      right: 8px;
+    }
+
+    /* YouTube Section */
+    .youtube-section {
+      padding: var(--space-3xl) var(--space-lg);
+    }
+
+    .youtube-card {
+      flex: 0 0 420px;
+      background: var(--bw-card);
+      border: 1px solid var(--bw-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      scroll-snap-align: start;
+      transition: all var(--transition-base);
+    }
+
+    .youtube-card:hover {
+      border-color: var(--bw-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--bw-glow);
+    }
+
+    .youtube-video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bw-dark);
+    }
+
+    .youtube-video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .youtube-video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bw-dark);
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    /* Lazy loading placeholder */
+    .embed-placeholder {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+      }
+
+      .carousel-header-left {
+        text-align: left;
+      }
+
+      .substack-embed-card {
+        flex: 0 0 320px;
+      }
+
+      .youtube-card {
+        flex: 0 0 340px;
+      }
+
+      .carousel-btn {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body data-theme="dark">
@@ -29,7 +300,7 @@
         <a href="portfolio/index.html" class="nav-link">Portfolio</a>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
+        <span id="theme-icon"></span>
       </button>
     </div>
   </nav>
@@ -119,23 +390,273 @@
     </div>
   </section>
 
-  <!-- Substack Articles -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-label">From Our Blog</span>
-      <h2 class="section-title">Latest Analysis</h2>
-      <p class="section-desc">Long-form research and investment theses from the Blockwall team.</p>
+  <!-- Latest Analysis (Substack Carousel) -->
+  <section class="section carousel-section" id="substack-section">
+    <div class="carousel-header">
+      <div class="carousel-header-left">
+        <span class="section-label">From Our Blog</span>
+        <h2 class="section-title">Latest Analysis</h2>
+      </div>
+      <a href="https://insights.blockwall.vc/?sort=new" target="_blank" class="carousel-link">
+        View on Substack
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
     </div>
 
-    <div class="substack-scroll-container">
-      <div class="substack-grid" id="substack-grid">
-        <div class="loading-text">Loading articles...</div>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn carousel-btn-left" id="substack-prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+
+      <div class="carousel-scroll" id="substack-carousel">
+        <!-- 1 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">How Wallets Will Reshape Financial Services by Blockwall</p><p>Why user-controlled wallets are poised to replace banks and brokerages as the primary gateway to global finance</p><a data-post-link href="https://insights.blockwall.vc/p/how-wallets-will-reshape-financial">Read on Substack</a></div>
+        </div>
+        <!-- 2 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">The Hidden Power of Prediction Markets: Beyond Gambling, Into Data Mining by Blockwall</p><p>How financial incentives turn speculation into truth discovery.</p><a data-post-link href="https://insights.blockwall.vc/p/the-hidden-power-of-prediction-markets">Read on Substack</a></div>
+        </div>
+        <!-- 3 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review 2025 by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2025">Read on Substack</a></div>
+        </div>
+        <!-- 4 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Stablecoins: The Internet's Financial Base Layer by Blockwall</p><p>The stablecoin thesis: infrastructure, global adoption, and the path to a $16 trillion opportunity in programmable money.</p><a data-post-link href="https://insights.blockwall.vc/p/stablecoins-the-internets-financial">Read on Substack</a></div>
+        </div>
+        <!-- 5 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">From keys to cards, bridging self-custody and everyday payments by Blockwall</p><p>Disclosing Blockwall's investment in Kulipa and our take on the future of direct digital payments</p><a data-post-link href="https://insights.blockwall.vc/p/from-keys-to-cards-bridging-self">Read on Substack</a></div>
+        </div>
+        <!-- 6 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - October 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 7 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - September 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 8 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - August 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 9 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - July 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 10 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - June 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 11 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Web3 Handbook by Blockwall</p><p>Web3 Handbook</p><a data-post-link href="https://insights.blockwall.vc/p/web3-handbook">Read on Substack</a></div>
+        </div>
+        <!-- 12 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">DeFi Needs a Jony Ive Moment: Why We Invested in Rebind by Blockwall</p><p>Diving into DeFi's long-standing user experience challenges and the reasons why we're investing in Rebind.</p><a data-post-link href="https://insights.blockwall.vc/p/defi-needs-a-jony-ive-moment-why">Read on Substack</a></div>
+        </div>
+        <!-- 13 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - May 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 14 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - April 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 15 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - March 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 16 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - February 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 17 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">An overview of (Re)Staking pt2 by Blockwall</p><p>Fresh from our deep dive into staking, we're now exploring the next logical step—restaking—and announcing our most recent investment in Byzantine.fi</p><a data-post-link href="https://insights.blockwall.vc/p/an-overview-of-restaking-pt2">Read on Substack</a></div>
+        </div>
+        <!-- 18 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Big Shifts, New Frontiers: The Blockwall Investor Summit Recap by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/big-shifts-new-frontiers-the-blockwall">Read on Substack</a></div>
+        </div>
+        <!-- 19 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - January 2025 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2025-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 20 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review - 2024 by Blockwall</p><p>And we wish you a joyous, safe holiday season and a happy and healthy New Year!</p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review-2024">Read on Substack</a></div>
+        </div>
+        <!-- 21 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Introduction to Fully Homomorphic Encryption (FHE): What It Is and Why It Matters? by Blockwall</p><p>Navigating the exciting realm of Fully Homomorphic Encryption.</p><a data-post-link href="https://insights.blockwall.vc/p/introduction-to-fully-homomorphic">Read on Substack</a></div>
+        </div>
+        <!-- 22 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - October 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-october-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 23 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Bringing Securitization Into the Digital Age: Why We Invested in Tranched by Blockwall</p><p>Announcing our most recent investment in Tranched.fi and why we believe the future of securitization will be on-chain.</p><a data-post-link href="https://insights.blockwall.vc/p/bringing-securitization-into-the">Read on Substack</a></div>
+        </div>
+        <!-- 24 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">IRL: The Next Theme of the Internet and Why We Invested in River by Blockwall</p><p>Exploring the growth of community and real-life engagements as our internet evolves. We are also excited to announce our investment in River.</p><a data-post-link href="https://insights.blockwall.vc/p/irl-the-next-theme-of-the-internet">Read on Substack</a></div>
+        </div>
+        <!-- 25 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - September 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-september-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 26 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall's Thesis 3.0 by Blockwall</p><p>Unpacking the core ideas shaping our investment thesis and the guiding principles that drive us as a team.</p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-thesis-30">Read on Substack</a></div>
+        </div>
+        <!-- 27 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - August 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-august-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 28 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">An overview of Staking pt. 1 by Blockwall</p><p>In this suite of articles, we're diving into the wonderful world of staking, a pivotal concept in the crypto ecosystem that not only secures networks but also offers lucrative rewards to participants.</p><a data-post-link href="https://insights.blockwall.vc/p/an-overview-of-staking-pt-1">Read on Substack</a></div>
+        </div>
+        <!-- 29 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - July 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-july-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 30 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - June 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-june-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 31 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - May 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-may-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 32 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Open Capital Market on Crypto Rails by Blockwall</p><p>Announcing our investment in Spiko's €4m seed round — and why the tokenization of Real-World-Asset matters for TradFi & DeFi.</p><a data-post-link href="https://insights.blockwall.vc/p/open-capital-market-on-crypto-rails">Read on Substack</a></div>
+        </div>
+        <!-- 33 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - April 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-april-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 34 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - March 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-march-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 35 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Why we invested in Spherity: Powering the Future of B2B Interactions in Regulated Industries by Blockwall</p><p>Exploring the impact of decentralised identity in today's digital era. We are also excited to announce our investment in Spherity!</p><a data-post-link href="https://insights.blockwall.vc/p/why-we-invested-in-spherity-powering">Read on Substack</a></div>
+        </div>
+        <!-- 36 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - February 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-february-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 37 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Zero Knowledge Proofs: Empowering the Future of Data Privacy and Scalable Infrastructure by Blockwall</p><p>Exploring Zero-Knowledge Proofs (ZKPs), use cases and their potential in improving our digital lives.</p><a data-post-link href="https://insights.blockwall.vc/p/zero-knowledge-proofs-empowering">Read on Substack</a></div>
+        </div>
+        <!-- 38 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Applying Metcalfe's Law to a Valuation of the Urbit Network by Blockwall</p><p>This article was originally written between 07-10 2022. It is highly speculative and reflects solely the authors own vision for a potential adoption path of Urbit, which depends on many assumptions.</p><a data-post-link href="https://insights.blockwall.vc/p/applying-metcalfes-law-to-a-valuation">Read on Substack</a></div>
+        </div>
+        <!-- 39 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall - January 2024 - What happened in Web3? by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwall-january-2024-what-happened">Read on Substack</a></div>
+        </div>
+        <!-- 40 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">From Customers to Advocates: The Art of Community-Led Growth by Blockwall</p><p>Exploring the benefits of Community-Led Growth strategy. We are also excited to announce our investment in Zealy!</p><a data-post-link href="https://insights.blockwall.vc/p/from-customers-to-advocates-the-art">Read on Substack</a></div>
+        </div>
+        <!-- 41 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Blockwall's Year in Review by Blockwall</p><p></p><a data-post-link href="https://insights.blockwall.vc/p/blockwalls-year-in-review">Read on Substack</a></div>
+        </div>
+        <!-- 42 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Cloud for Web3 and Why We Invested in Validation Cloud by Blockwall</p><p>Exploring blockchain infrastructure, the crucial component that connects users and applications to blockchains. We are also thrilled to announce our investment in Validation Cloud.</p><a data-post-link href="https://insights.blockwall.vc/p/cloud-for-web3-and-why-we-invested">Read on Substack</a></div>
+        </div>
+        <!-- 43 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Maximal Extractable Value (MEV) Supply Chain and why we invested in Blink Labs. by Blockwall</p><p>Exploring the dynamics of decisions, intentions, and incentives that led to the emergence of MEV. We're also excited to announce our investment in Blink Labs.</p><a data-post-link href="https://insights.blockwall.vc/p/maximal-extractable-value-mev-supply">Read on Substack</a></div>
+        </div>
+        <!-- 44 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">What is Urbit? by Blockwall</p><p>An introduction for those interested in the future of the internet.</p><a data-post-link href="https://insights.blockwall.vc/p/what-is-urbit">Read on Substack</a></div>
+        </div>
+        <!-- 45 -->
+        <div class="substack-embed-card">
+          <div class="substack-post-embed"><p lang="en">Announcing Blockwall Insights by Blockwall</p><p>Introducing our new blog and newsletter, dedicated to all Web3 enthusiasts</p><a data-post-link href="https://insights.blockwall.vc/p/announcing-blockwall-insights">Read on Substack</a></div>
+        </div>
       </div>
+
+      <button class="carousel-btn carousel-btn-right" id="substack-next" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- YouTube Section -->
+  <section class="section alt-bg carousel-section" id="youtube-section">
+    <div class="carousel-header">
+      <div class="carousel-header-left">
+        <span class="section-label">Video Content</span>
+        <h2 class="section-title">From YouTube</h2>
+      </div>
+      <a href="https://youtube.com/@blockwall_vc?si=GT76fEFbJ4xWY0U6" target="_blank" class="carousel-link">
+        Subscribe on YouTube
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn carousel-btn-left" id="youtube-prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+
+      <div class="carousel-scroll" id="youtube-carousel">
+        <div class="youtube-card" data-video-id="WiWcPnUSly4">
+          <div class="youtube-video-wrapper">
+            <div class="youtube-video-placeholder">Click to load video</div>
+          </div>
+        </div>
+        <div class="youtube-card" data-video-id="fwZ2rFxF9Ds">
+          <div class="youtube-video-wrapper">
+            <div class="youtube-video-placeholder">Click to load video</div>
+          </div>
+        </div>
+        <div class="youtube-card" data-video-id="p9ZSWZsQUWk">
+          <div class="youtube-video-wrapper">
+            <div class="youtube-video-placeholder">Click to load video</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn carousel-btn-right" id="youtube-next" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
     </div>
   </section>
 
   <!-- LinkedIn Activity -->
-  <section class="section alt-bg">
+  <section class="section">
     <div class="section-header">
       <span class="section-label">From LinkedIn</span>
       <h2 class="section-title">Dominic's Take</h2>
@@ -177,6 +698,7 @@
         <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
         <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
         <a href="https://insights.blockwall.vc" target="_blank" class="footer-link">Substack</a>
+        <a href="https://youtube.com/@blockwall_vc" target="_blank" class="footer-link">YouTube</a>
       </div>
     </div>
   </footer>
@@ -188,11 +710,11 @@
       const icon = document.getElementById('theme-icon');
       if (body.getAttribute('data-theme') === 'dark') {
         body.setAttribute('data-theme', 'light');
-        icon.textContent = '☀️';
+        icon.textContent = '\u2600\uFE0F';
         localStorage.setItem('bw-theme', 'light');
       } else {
         body.setAttribute('data-theme', 'dark');
-        icon.textContent = '🌙';
+        icon.textContent = '\uD83C\uDF19';
         localStorage.setItem('bw-theme', 'dark');
       }
     }
@@ -200,67 +722,105 @@
     // Load saved theme
     const savedTheme = localStorage.getItem('bw-theme') || 'dark';
     document.body.setAttribute('data-theme', savedTheme);
-    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
 
-    // Format date helper
-    function formatDate(dateStr) {
-      const date = new Date(dateStr);
-      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    // Carousel Navigation
+    function setupCarousel(carouselId, prevBtnId, nextBtnId) {
+      const carousel = document.getElementById(carouselId);
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+
+      if (!carousel || !prevBtn || !nextBtn) return;
+
+      const scrollAmount = 400;
+
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
+
+      // Update button states on scroll
+      carousel.addEventListener('scroll', () => {
+        prevBtn.disabled = carousel.scrollLeft <= 0;
+        nextBtn.disabled = carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 10;
+      });
+
+      // Initial state
+      prevBtn.disabled = true;
     }
 
-    // Relative date helper
-    function relativeDate(dateStr) {
-      const date = new Date(dateStr);
-      const now = new Date();
-      const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-      if (diffDays === 0) return 'Today';
-      if (diffDays === 1) return 'Yesterday';
-      if (diffDays < 7) return `${diffDays}d ago`;
-      return formatDate(dateStr);
+    // Lazy load YouTube videos with IntersectionObserver
+    function setupYouTubeLazyLoad() {
+      const youtubeCards = document.querySelectorAll('.youtube-card[data-video-id]');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const card = entry.target;
+            const videoId = card.dataset.videoId;
+            const wrapper = card.querySelector('.youtube-video-wrapper');
+
+            if (wrapper && !wrapper.querySelector('iframe')) {
+              wrapper.innerHTML = `
+                <iframe
+                  src="https://www.youtube.com/embed/${videoId}?si=lazy"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              `;
+            }
+            observer.unobserve(card);
+          }
+        });
+      }, {
+        rootMargin: '200px',
+        threshold: 0.1
+      });
+
+      youtubeCards.forEach(card => observer.observe(card));
     }
 
-    // Load Substack articles
-    async function loadSubstack() {
-      const grid = document.getElementById('substack-grid');
+    // Lazy load Substack embeds
+    function setupSubstackLazyLoad() {
+      const substackSection = document.getElementById('substack-section');
 
-      try {
-        const response = await fetch('data/substack.json');
-        if (!response.ok) throw new Error('Failed to load');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Load Substack embed script once when section is visible
+            if (!document.querySelector('script[src*="substack.com/embedjs"]')) {
+              const script = document.createElement('script');
+              script.src = 'https://substack.com/embedjs/embed.js';
+              script.async = true;
+              script.charset = 'utf-8';
+              document.body.appendChild(script);
+            }
+            observer.unobserve(substackSection);
+          }
+        });
+      }, {
+        rootMargin: '300px',
+        threshold: 0.1
+      });
 
-        const articles = await response.json();
-
-        if (!articles.length) {
-          grid.innerHTML = '<div class="empty-state">No articles available.</div>';
-          return;
-        }
-
-        grid.innerHTML = articles.slice(0, 3).map(article => `
-          <a href="${article.url}" target="_blank" class="substack-card">
-            <div class="substack-card-image">
-              <img src="${article.image}" alt="${article.title}" onerror="this.style.display='none'">
-            </div>
-            <div class="substack-card-content">
-              <div class="substack-card-meta">
-                <span class="substack-card-author">${article.author}</span>
-                <span class="substack-card-dot"></span>
-                <span class="substack-card-date">${formatDate(article.date)}</span>
-              </div>
-              <h3 class="substack-card-title">${article.title}</h3>
-              <p class="substack-card-excerpt">${article.excerpt}</p>
-            </div>
-          </a>
-        `).join('');
-
-      } catch (error) {
-        console.error('Substack load error:', error);
-        grid.innerHTML = '<div class="empty-state">Unable to load articles.</div>';
+      if (substackSection) {
+        observer.observe(substackSection);
       }
     }
 
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
-      loadSubstack();
+      setupCarousel('substack-carousel', 'substack-prev', 'substack-next');
+      setupCarousel('youtube-carousel', 'youtube-prev', 'youtube-next');
+      setupYouTubeLazyLoad();
+      setupSubstackLazyLoad();
     });
   </script>
 </body>
