@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,53 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/newsletter.css">
   <style>
-    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
-    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
-    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
-    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
-    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
-    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .story-img {
+      max-height: 280px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .exec-summary {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+
+    .exec-summary h2 {
+      color: #8b7cf6;
+      margin-bottom: 16px;
+      font-size: 1.25rem;
+    }
+
+    .exec-summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exec-summary li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .exec-summary li:before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: #8b7cf6;
+      font-weight: bold;
+    }
 
     [data-theme="light"] .exec-summary {
       background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
     }
+
     [data-theme="light"] .exec-summary li {
       color: #1a1a2e;
     }
@@ -31,27 +69,116 @@
       margin-top: 48px;
       color: var(--text-primary);
     }
+
     /* === MORE TO WATCH === */
-    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
-    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
-    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
-    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
-    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
-    .watch-item a:hover { color: #8b7cf6; }
-    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
-    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .watch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 16px 0 32px;
+    }
+
+    @media (max-width: 640px) {
+      .watch-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .watch-item {
+      background: rgba(139, 124, 246, 0.06);
+      border: 1px solid rgba(139, 124, 246, 0.15);
+      border-radius: 8px;
+      padding: 14px 16px;
+      transition: border-color 0.2s;
+    }
+
+    .watch-item:hover {
+      border-color: rgba(139, 124, 246, 0.4);
+    }
+
+    .watch-item a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      display: block;
+    }
+
+    .watch-item a:hover {
+      color: #8b7cf6;
+    }
+
+    .watch-meta {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      margin-top: 6px;
+    }
+
+    .watch-summary {
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
     /* === ALL RESOURCES === */
-    .resources-section { margin: 24px 0; }
-    .resources-toggle { background: rgba(139,124,246,0.1); border: 1px solid rgba(139,124,246,0.2); color: #8b7cf6; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: 600; width: 100%; text-align: left; }
-    .resources-toggle:hover { background: rgba(139,124,246,0.15); }
-    .resources-list-full { margin-top: 12px; }
-    .resources-list-full li { padding: 6px 0; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
-    .resources-list-full li:last-child { border-bottom: none; }
-    .resources-list-full a { color: #cbd5e1; text-decoration: none; }
-    .resources-list-full a:hover { color: #8b7cf6; }
-    .resource-cat { display: inline-block; background: rgba(139,124,246,0.12); color: #a78bfa; padding: 1px 6px; border-radius: 4px; font-size: 0.7rem; margin-left: 6px; }
+    .resources-section {
+      margin: 24px 0;
+    }
+
+    .resources-toggle {
+      background: rgba(139, 124, 246, 0.1);
+      border: 1px solid rgba(139, 124, 246, 0.2);
+      color: #8b7cf6;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      width: 100%;
+      text-align: left;
+    }
+
+    .resources-toggle:hover {
+      background: rgba(139, 124, 246, 0.15);
+    }
+
+    .resources-list-full {
+      margin-top: 12px;
+    }
+
+    .resources-list-full li {
+      padding: 6px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .resources-list-full li:last-child {
+      border-bottom: none;
+    }
+
+    .resources-list-full a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    .resources-list-full a:hover {
+      color: #8b7cf6;
+    }
+
+    .resource-cat {
+      display: inline-block;
+      background: rgba(139, 124, 246, 0.12);
+      color: #a78bfa;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      margin-left: 6px;
+    }
   </style>
 </head>
+
 <body data-theme="dark">
   <nav class="nav">
     <div class="nav-inner">
@@ -73,7 +200,9 @@
 
   <div class="newsletter-container">
     <a href="index.html" class="back-link">
-      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
       Back to Daily Archive
     </a>
 
@@ -91,10 +220,6 @@
       <div class="newsletter-stat">
         <div class="newsletter-stat-value">12</div>
         <div class="newsletter-stat-label">Highlights</div>
-      </div>
-      <div class="newsletter-stat">
-        <div class="newsletter-stat-value">4</div>
-        <div class="newsletter-stat-label">Watching</div>
       </div>
       <div class="newsletter-stat">
         <div class="newsletter-stat-value bullish">10</div>
@@ -116,215 +241,576 @@
         <li>Stablecoins eyed to finance AI infrastructure via US Treasury holdings.</li>
       </ul>
     </div>
-    <div class="intro">Dear Founders, Investors, and Friends, Bitcoin resets amid whale selling and leverage flush while its Sharpe ratio hits bear market lows. South Korea ramps up crypto probes and the Fed weighs master account access as stablecoins gear up to finance AI infrastructure.</div>
+    <div class="intro">Dear Founders, Investors, and Friends, Bitcoin resets amid whale selling and leverage flush while
+      its Sharpe ratio hits bear market lows. South Korea ramps up crypto probes and the Fed weighs master account
+      access as stablecoins gear up to finance AI infrastructure.</div>
     <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
     <div class="story">
       <h2 class="story-title">Bitcoin enters a reset phase: Whales sell as BTC leverage gets flushed</h2>
-      <img class="story-img" src="https://ambcrypto.com/wp-content/uploads/2026/02/HYPERUNIT-WHALE-SOLD-340M-BTC.webp" alt="Bitcoin enters a reset phase: Whales sell as BTC leverage gets flushed" onerror="this.style.display='none'">
+      <img class="story-img" src="https://ambcrypto.com/wp-content/uploads/2026/02/HYPERUNIT-WHALE-SOLD-340M-BTC.webp"
+        alt="Bitcoin enters a reset phase: Whales sell as BTC leverage gets flushed"
+        onerror="this.style.display='none'">
       <div class="story-meta">Ishika Kumari &bull; Bitcoin &bull; Score: 6/10</div>
-      <p class="story-summary">Bitcoin is entering a reset phase as large whales, including the Hyperunit wallet linked to Garrett Jin, sell substantial holdings, with over $340 million in BTC sent to Binance and positions dropping from a peak of $11.5 billion to $2.2 billion. This deleveraging follows the unraveling of aggressive leveraged bets on BTC, ETH, and Solana, which incurred heavy losses and exposed risks amid weak market signals and ETF outflows. For institutional investors, the selling signals a shift toward caution and capital preservation, potentially stabilizing prices after profit-taking from coins acquired near $50,000 while derivatives markets see rising perp exposure. This reset may create opportunities for selective accumulation, as some whales quietly add BTC during dips near $71,000-$73,000 despite broader spot weakness.</p>
-      <a class="story-link" href="https://ambcrypto.com/bitcoin-enters-a-reset-phase-whales-sell-as-btc-leverage-gets-flushed/" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Bitcoin is entering a reset phase as large whales, including the Hyperunit wallet linked
+        to Garrett Jin, sell substantial holdings, with over $340 million in BTC sent to Binance and positions dropping
+        from a peak of $11.5 billion to $2.2 billion. This deleveraging follows the unraveling of aggressive leveraged
+        bets on BTC, ETH, and Solana, which incurred heavy losses and exposed risks amid weak market signals and ETF
+        outflows. For institutional investors, the selling signals a shift toward caution and capital preservation,
+        potentially stabilizing prices after profit-taking from coins acquired near $50,000 while derivatives markets
+        see rising perp exposure. This reset may create opportunities for selective accumulation, as some whales quietly
+        add BTC during dips near $71,000-$73,000 despite broader spot weakness.</p>
+      <a class="story-link"
+        href="https://ambcrypto.com/bitcoin-enters-a-reset-phase-whales-sell-as-btc-leverage-gets-flushed/"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">South Korea Prepares Crypto Market Probes Under 2026 Policy Plan</h2>
-      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2025-12/019b675c-4766-7851-be8e-2bdea0d08fc9.jpg" alt="South Korea Prepares Crypto Market Probes Under 2026 Policy Plan" onerror="this.style.display='none'">
+      <img class="story-img"
+        src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2025-12/019b675c-4766-7851-be8e-2bdea0d08fc9.jpg"
+        alt="South Korea Prepares Crypto Market Probes Under 2026 Policy Plan" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Regulation &bull; Score: 6/10</div>
-      <p class="story-summary">South Korea's Financial Supervisory Service (FSS) is preparing to conduct crypto market probes as part of its 2026 policy plan. The plan includes targeted probes, exchange oversight measures, and groundwork for the Digital Asset Basic Act.</p>
-      <a class="story-link" href="https://cointelegraph.com/news/south-korea-fss-2026-crypto-price-manipulation-probes" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">South Korea's Financial Supervisory Service (FSS) is preparing to conduct crypto market
+        probes as part of its 2026 policy plan. The plan includes targeted probes, exchange oversight measures, and
+        groundwork for the Digital Asset Basic Act.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/south-korea-fss-2026-crypto-price-manipulation-probes"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">Crypto, Banks Give Input to Fed ‘Skinny Master Account’ Idea</h2>
-      <img class="story-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop" alt="Crypto, Banks Give Input to Fed ‘Skinny Master Account’ Idea" onerror="this.style.display='none'">
+      <img class="story-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop"
+        alt="Crypto, Banks Give Input to Fed ‘Skinny Master Account’ Idea" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Regulation &bull; Score: 6/10</div>
-      <p class="story-summary">The Federal Reserve is considering input on its &quot;skinny master account&quot; proposal, with crypto firms and banks disagreeing on the level of access the crypto sector should have to the central bank.</p>
-      <a class="story-link" href="https://cointelegraph.com/news/crypto-banks-input-fed-skinny-master-account-proposal" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">The Federal Reserve is considering input on its &quot;skinny master account&quot;
+        proposal, with crypto firms and banks disagreeing on the level of access the crypto sector should have to the
+        central bank.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-banks-input-fed-skinny-master-account-proposal"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
-      <h2 class="story-title">Jack Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push: Bloomberg</h2>
-      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2021/07/20210723_jack_Dorsey.jpg" alt="Jack Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push: Bloomberg" onerror="this.style.display='none'">
+      <h2 class="story-title">Jack Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push:
+        Bloomberg</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2021/07/20210723_jack_Dorsey.jpg"
+        alt="Jack Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push: Bloomberg"
+        onerror="this.style.display='none'">
       <div class="story-meta">Zack Abrams &bull; Enterprise &bull; Score: 6/10</div>
-      <p class="story-summary">Block, led by Jack Dorsey, is reportedly cutting up to 10% of its workforce as part of an efficiency drive. This follows a previous layoff of 931 employees in March 2025.</p>
-      <a class="story-link" href="https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Block, led by Jack Dorsey, is reportedly cutting up to 10% of its workforce as part of an
+        efficiency drive. This follows a previous layoff of 931 employees in March 2025.</p>
+      <a class="story-link"
+        href="https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
-      <h2 class="story-title">Russian officials are warning Putin that a financial crisis could arrive this summer, report says, while his war on Ukraine becomes too big to fail </h2>
-      <img class="story-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2256946556-e1770580597359.jpg?resize=1200,600" alt="Russian officials are warning Putin that a financial crisis could arrive this summer, report says, while his war on Ukraine becomes too big to fail " onerror="this.style.display='none'">
+      <h2 class="story-title">Russian officials are warning Putin that a financial crisis could arrive this summer,
+        report says, while his war on Ukraine becomes too big to fail </h2>
+      <img class="story-img"
+        src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2256946556-e1770580597359.jpg?resize=1200,600"
+        alt="Russian officials are warning Putin that a financial crisis could arrive this summer, report says, while his war on Ukraine becomes too big to fail "
+        onerror="this.style.display='none'">
       <div class="story-meta">Jason Ma &bull; Other &bull; Score: 6/10</div>
-      <p class="story-summary">Russian officials are reportedly warning Putin about a potential financial crisis this summer due to the ongoing war in Ukraine. The article suggests the war has become too significant for Putin to back down from.</p>
-      <a class="story-link" href="https://fortune.com/2026/02/08/russian-economy-financial-crisis-warning-summer-putin-ukraine-war-too-big-to-fail/" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Russian officials are reportedly warning Putin about a potential financial crisis this
+        summer due to the ongoing war in Ukraine. The article suggests the war has become too significant for Putin to
+        back down from.</p>
+      <a class="story-link"
+        href="https://fortune.com/2026/02/08/russian-economy-financial-crisis-warning-summer-putin-ukraine-war-too-big-to-fail/"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
-      <h2 class="story-title">Crypto.com CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl debut</h2>
-      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2024/01/20240129_CryptoCom_News_1.jpg" alt="Crypto.com CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl debut" onerror="this.style.display='none'">
+      <h2 class="story-title">Crypto.com CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl
+        debut</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2024/01/20240129_CryptoCom_News_1.jpg"
+        alt="Crypto.com CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl debut"
+        onerror="this.style.display='none'">
       <div class="story-meta">Zack Abrams &bull; Other &bull; Score: 6/10</div>
-      <p class="story-summary">Crypto.com CEO Kris Marszalek purchased the domain AI.com for $70 million in cryptocurrency. The purchase is reported to be the largest domain name transaction in history, and the company plans a Super Bowl debut.</p>
-      <a class="story-link" href="https://www.theblock.co/post/388975/crypto-com-ceo-kris-marszalek-bought-ai-com-for-70-million-in-crypto-plans-super-bowl-debut" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Crypto.com CEO Kris Marszalek purchased the domain AI.com for $70 million in
+        cryptocurrency. The purchase is reported to be the largest domain name transaction in history, and the company
+        plans a Super Bowl debut.</p>
+      <a class="story-link"
+        href="https://www.theblock.co/post/388975/crypto-com-ceo-kris-marszalek-bought-ai-com-for-70-million-in-crypto-plans-super-bowl-debut"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
-      <h2 class="story-title">The Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified Opinions</h2>
-      <img class="story-img" src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop" alt="The Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified Opinions" onerror="this.style.display='none'">
+      <h2 class="story-title">The Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified
+        Opinions</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop"
+        alt="The Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified Opinions"
+        onerror="this.style.display='none'">
       <div class="story-meta">Spotify for Creators &bull; Stablecoins &bull; Score: 6/10</div>
-      <p class="story-summary">A discussion on how stablecoin issuers like Tether and Circle are becoming significant holders of US Treasuries and how this could finance AI infrastructure growth. The conversation explores the potential of on-chain capital markets to unlock trillions in AI CapEx and the future of DePIN.</p>
-      <a class="story-link" href="https://creators.spotify.com/pod/profile/steve-bichimer9/episodes/The-Electric-Dollar-How-Stablecoins-Will-Finance-AIs-Future-e3emcjr" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">A discussion on how stablecoin issuers like Tether and Circle are becoming significant
+        holders of US Treasuries and how this could finance AI infrastructure growth. The conversation explores the
+        potential of on-chain capital markets to unlock trillions in AI CapEx and the future of DePIN.</p>
+      <a class="story-link"
+        href="https://creators.spotify.com/pod/profile/steve-bichimer9/episodes/The-Electric-Dollar-How-Stablecoins-Will-Finance-AIs-Future-e3emcjr"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">Bitcoin Sharpe Ratio Hits Bear Market Lows At Negative 10</h2>
-      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Bitcoin Sharpe Ratio Hits Bear Market Lows At Negative 10" onerror="this.style.display='none'">
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop"
+        alt="Bitcoin Sharpe Ratio Hits Bear Market Lows At Negative 10" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Bitcoin &bull; Score: 5/10</div>
-      <p class="story-summary">Bitcoin's Sharpe ratio has fallen to its lowest level since March 2023, indicating risk-reward levels similar to previous bear market bottoms. This suggests increased risk relative to potential returns for Bitcoin investments.</p>
-      <a class="story-link" href="https://cointelegraph.com/news/bitcoin-sharpe-ratio-falls-bear-market-bottom" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Bitcoin's Sharpe ratio has fallen to its lowest level since March 2023, indicating
+        risk-reward levels similar to previous bear market bottoms. This suggests increased risk relative to potential
+        returns for Bitcoin investments.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/bitcoin-sharpe-ratio-falls-bear-market-bottom"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">ENS Abandons Its planned Namechain L2, Citing Drastically Lower Gas Costs</h2>
-      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c40b8-b049-7718-9c0e-5c3a40bdc3b7.jpg" alt="ENS Abandons Its planned Namechain L2, Citing Drastically Lower Gas Costs" onerror="this.style.display='none'">
+      <img class="story-img"
+        src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c40b8-b049-7718-9c0e-5c3a40bdc3b7.jpg"
+        alt="ENS Abandons Its planned Namechain L2, Citing Drastically Lower Gas Costs"
+        onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Ethereum &bull; Score: 5/10</div>
-      <p class="story-summary">ENS has decided to abandon its planned Namechain L2 solution. The decision was made due to the significant reduction in gas costs and the rapid scaling of the Ethereum mainnet.</p>
-      <a class="story-link" href="https://cointelegraph.com/news/ens-abandons-plan-namechain-will-stay-on-ethereum" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">ENS has decided to abandon its planned Namechain L2 solution. The decision was made due
+        to the significant reduction in gas costs and the rapid scaling of the Ethereum mainnet.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/ens-abandons-plan-namechain-will-stay-on-ethereum"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
-      <h2 class="story-title">Insights › News › Announcements › Wintermute provides feedback to the sec crypto task force on tokenized securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on tokenized securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance for tokenized securities markets to flourish.3 Sept 2025</h2>
-      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop" alt="Insights › News › Announcements › Wintermute provides feedback to the sec crypto task force on tokenized securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on tokenized securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance for tokenized securities markets to flourish.3 Sept 2025" onerror="this.style.display='none'">
+      <h2 class="story-title">Insights › News › Announcements › Wintermute provides feedback to the sec crypto task
+        force on tokenized securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on
+        tokenized securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance
+        for tokenized securities markets to flourish.3 Sept 2025</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop"
+        alt="Insights › News › Announcements › Wintermute provides feedback to the sec crypto task force on tokenized securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on tokenized securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance for tokenized securities markets to flourish.3 Sept 2025"
+        onerror="this.style.display='none'">
       <div class="story-meta">wintermute.com &bull; Tokenization &bull; Score: 5/10</div>
-      <p class="story-summary">Wintermute provided feedback to the SEC Crypto Task Force regarding tokenized securities, offering recommendations for market development. The feedback aims to provide practical guidance for the tokenized securities markets.</p>
-      <a class="story-link" href="https://www.wintermute.com/insights/news/announcements/wintermute-provides-feedback-to-the-sec-crypto-task-force-on-tokenized-securities" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Wintermute provided feedback to the SEC Crypto Task Force regarding tokenized securities,
+        offering recommendations for market development. The feedback aims to provide practical guidance for the
+        tokenized securities markets.</p>
+      <a class="story-link"
+        href="https://www.wintermute.com/insights/news/announcements/wintermute-provides-feedback-to-the-sec-crypto-task-force-on-tokenized-securities"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe</h2>
-      <img class="story-img" src="https://www.dlnews.com/resizer/v2/AW7RSYOWW5AIPK6SS5GMQEMKGY.jpg?smart=true&auth=ac3890edbea5644b33c5d904c2182576a5ab308067dcc88f52fca559d08ed6ea&width=1200&height=630" alt="Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe" onerror="this.style.display='none'">
+      <img class="story-img"
+        src="https://www.dlnews.com/resizer/v2/AW7RSYOWW5AIPK6SS5GMQEMKGY.jpg?smart=true&auth=ac3890edbea5644b33c5d904c2182576a5ab308067dcc88f52fca559d08ed6ea&width=1200&height=630"
+        alt="Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe"
+        onerror="this.style.display='none'">
       <div class="story-meta">Tim Alper &bull; Security &bull; Score: 6/10</div>
-      <p class="story-summary">Bithumb is writing off $9 million in Bitcoin losses after mistakenly handing out $40 billion in Bitcoin during a giveaway, leading to price drops. Finance regulators are reportedly launching a probe into Bithumb's offices, and the company will compensate affected traders.</p>
-      <a class="story-link" href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Bithumb is writing off $9 million in Bitcoin losses after mistakenly handing out $40
+        billion in Bitcoin during a giveaway, leading to price drops. Finance regulators are reportedly launching a
+        probe into Bithumb's offices, and the company will compensate affected traders.</p>
+      <a class="story-link"
+        href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="story">
       <h2 class="story-title">Jack Dorsey’s Block May Slash Up To 10% of Staff: Report</h2>
-      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c3d1d-3dae-757a-8541-857b6efb28be.jpg" alt="Jack Dorsey’s Block May Slash Up To 10% of Staff: Report" onerror="this.style.display='none'">
+      <img class="story-img"
+        src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c3d1d-3dae-757a-8541-857b6efb28be.jpg"
+        alt="Jack Dorsey’s Block May Slash Up To 10% of Staff: Report" onerror="this.style.display='none'">
       <div class="story-meta">News &bull; Enterprise &bull; Score: 6/10</div>
-      <p class="story-summary">Block, led by Jack Dorsey, is reportedly considering laying off up to 10% of its staff as part of a restructuring effort. The company is integrating Cash App with Square and expanding into Bitcoin mining and AI projects.</p>
-      <a class="story-link" href="https://cointelegraph.com/news/jack-dorsey-block-may-cut-10-percent-staff-restructuring" target="_blank">Read full article &rarr;</a>
+      <p class="story-summary">Block, led by Jack Dorsey, is reportedly considering laying off up to 10% of its staff as
+        part of a restructuring effort. The company is integrating Cash App with Square and expanding into Bitcoin
+        mining and AI projects.</p>
+      <a class="story-link"
+        href="https://cointelegraph.com/news/jack-dorsey-block-may-cut-10-percent-staff-restructuring"
+        target="_blank">Read full article &rarr;</a>
     </div>
     <div class="divider"></div>
     <h2 class="section-title">&#x1F440; More to Watch (4)</h2>
     <div class="watch-grid">
       <div class="watch-item">
-        <a href="https://www.theblock.co/post/388986/south-korea-tightens-crypto-oversight" target="_blank">South Korea to tighten crypto oversight targeting market manipulation: report</a>
+        <a href="https://www.theblock.co/post/388986/south-korea-tightens-crypto-oversight" target="_blank">South Korea
+          to tighten crypto oversight targeting market manipulation: report</a>
         <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Timmy Shen &bull; Regulation</div>
-        <div class="watch-summary">South Korea's Financial Supervisory Service plans to tighten crypto oversight and increase penalties for IT-related inci...</div>
+        <div class="watch-summary">South Korea's Financial Supervisory Service plans to tighten crypto oversight and
+          increase penalties for IT-related inci...</div>
       </div>
       <div class="watch-item">
-        <a href="https://cointelegraph.com/news/coinbase-backstreet-boys-karaoke-return-super-bowl-ad" target="_blank">Coinbase Returns to Super Bowl With Lo-Fi Karaoke Ad</a>
+        <a href="https://cointelegraph.com/news/coinbase-backstreet-boys-karaoke-return-super-bowl-ad"
+          target="_blank">Coinbase Returns to Super Bowl With Lo-Fi Karaoke Ad</a>
         <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> News &bull; Other</div>
-        <div class="watch-summary">Coinbase is returning to the Super Bowl with a new advertisement, following up on their viral QR code commercial from 20...</div>
+        <div class="watch-summary">Coinbase is returning to the Super Bowl with a new advertisement, following up on
+          their viral QR code commercial from 20...</div>
       </div>
       <div class="watch-item">
-        <a href="https://cointelegraph.com/news/btc-traders-wait-50k-bottom-five-things-bitcoin-this-week" target="_blank">Bitcoin Price Forecasts Say $50,000 Is on the Way</a>
+        <a href="https://cointelegraph.com/news/btc-traders-wait-50k-bottom-five-things-bitcoin-this-week"
+          target="_blank">Bitcoin Price Forecasts Say $50,000 Is on the Way</a>
         <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> News &bull; Bitcoin</div>
-        <div class="watch-summary">The article discusses Bitcoin price forecasts, suggesting a potential rise to $50,000. It mentions a possible short-term...</div>
+        <div class="watch-summary">The article discusses Bitcoin price forecasts, suggesting a potential rise to
+          $50,000. It mentions a possible short-term...</div>
       </div>
       <div class="watch-item">
-        <a href="https://www.dlnews.com/articles/markets/why-investors-are-turning-bullish-as-bitcoin-stalls-near-70k/" target="_blank">Why investors are turning bullish as Bitcoin price stalls near $70,000, analysts say</a>
+        <a href="https://www.dlnews.com/articles/markets/why-investors-are-turning-bullish-as-bitcoin-stalls-near-70k/"
+          target="_blank">Why investors are turning bullish as Bitcoin price stalls near $70,000, analysts say</a>
         <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Lance Datskoluo &bull; Bitcoin</div>
-        <div class="watch-summary">Bitcoin's price jumped 12% over the weekend, reclaiming the $70,000 level. Analysts suggest US economic growth and favor...</div>
+        <div class="watch-summary">Bitcoin's price jumped 12% over the weekend, reclaiming the $70,000 level. Analysts
+          suggest US economic growth and favor...</div>
       </div>
     </div>
     <div class="divider"></div>
     <div class="resources-section">
       <h2 class="section-title">&#x1F4DA; All Resources (63)</h2>
       <ul class="resources-list-full" style="list-style:none;padding:0;">
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/ethereum-hits-15-19m-users-but-where-does-leverage-stand-now/" target="_blank">Ethereum hits 15.19M users, but where does leverage stand now?</a> <span class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Ethereum</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/why-ethereum-is-rethinking-its-rollup-first-strategy-in-2026/" target="_blank">Why Ethereum is rethinking its ‘rollup-first’ strategy in 2026</a> <span class="other-source">(Ishika Kumari)</span><span class="resource-cat">Ethereum</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://cointelegraph.com/news/cryptocom-boss-launched-agentic-ai-tools-ai-com" target="_blank">Crypto.com Boss Rolls out Agentic AIs with ai.com Launch</a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://cointelegraph.com/news/bessent-suggests-warsh-nomination-hearings-alongside-powell-probe" target="_blank">US Treasury Secretary Pushes For Start On Fed Chair Confirmation Hearings</a> <span class="other-source">(News)</span><span class="resource-cat">Regulation</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://ambcrypto.com/bitcoins-road-to-recovery-odds-on-its-price-surging-past-83k-in-the-short-term-are/" target="_blank">Bitcoin’s road to recovery – Odds on price hitting $83K in the short-term are…</a> <span class="other-source">(Emilio Munoru)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://ambcrypto.com/aptos-apt-nears-1-support-as-12-7m-token-unlock-raises-inflation-fears/" target="_blank">Aptos [APT] nears $1-support as $12.7M token unlock raises inflation fears</a> <span class="other-source">(Olayiwola Dolapo)</span><span class="resource-cat">Layer2</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://ambcrypto.com/bitcoin-vs-gold-cathie-wood-thinks-this-is-why-institutions-are-betting-on-both/" target="_blank">Bitcoin vs Gold – Cathie Wood thinks THIS is why institutions are betting on both!</a> <span class="other-source">(Ishika Kumari)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://cointelegraph.com/news/federal-reserve-gradual-print-lyn-alden" target="_blank">Lyn Alden: Get Ready for the Federal Reserve's 'Gradual Print'</a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://sifted.eu/articles/massive-requirement-for-an-exit-environment-jpmorgan/" target="_blank">JPMorgan: The ‘surprising’ sector that could be ripe for M&amp;A in Europe</a> <span class="other-source">(News)</span><span class="resource-cat">Investment</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://ambcrypto.com/cardano-loses-top-10-spot-as-price-hits-3-year-low-what-should-traders-do-next/" target="_blank">Cardano loses top-10 spot as price hits 3-year low – What should traders do next?</a> <span class="other-source">(Lennox Gitonga)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://www.theblock.co/post/388978/the-funding-crypto-liquid-funds-respond-to-the-bitcoin-crash" target="_blank">The Funding: Crypto liquid funds respond to the bitcoin crash</a> <span class="other-source">(Yogita Khatri)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://cointelegraph.com/news/only-10k-bitcoin-quantum-risk-coinshares" target="_blank">Only 10K Bitcoin is Quantum-Vulnerable and Worth Attacking</a> <span class="other-source">(News)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/aaves-4-65b-stress-engine-from-bitcoin-liquidation-shock-to-protocol-yield/" target="_blank">Aave’s $4.65B stress engine – From Bitcoin liquidation shock to protocol yield!</a> <span class="other-source">(Muriuki Lazaro)</span><span class="resource-cat">DeFi</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/stock-market-today-dow-futures-50000-japan-election-us-bond-yields/" target="_blank">Dow futures rise after index tops 50,000 for first time while landslide election in Japan sends U.S. bond yields higher </a> <span class="other-source">(Jason Ma)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://ambcrypto.com/dogecoin-can-doge-reach-0-11-as-a-1-63m-liquidity-cluster-forms/" target="_blank">Can Dogecoin reach $0.11 as $1.63M DOGE liquidity cluster forms?</a> <span class="other-source">(Kelvin Murithi)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/gambling-stocks-draftkings-flutter-prediction-markets-kalshi-super-bowl-bets/" target="_blank">Gambling stocks sag as prediction markets steal Super Bowl bets </a> <span class="other-source">(Peyton Forte,Denitsa Tsekova,Bloomberg)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://cointelegraph.com/news/google-search-crypto-hover-yearly-low" target="_blank">Google Search Interest in 'Crypto' Near 1-Year Lows Amid Market Crash</a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/bitcoin-a-look-at-wall-streets-behaviour-after-btcs-fall-below-70k/" target="_blank">Bitcoin – A look at Wall Street’s behaviour after BTC’s fall below $70K</a> <span class="other-source">(Ishika Kumari)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://cointelegraph.com/news/bitcoin-bear-market-not-over-trader-btc-price-real-bottom-50k" target="_blank">Bitcoin Bear Market Comparison Sparks New $50,000 BTC Price Prediction</a> <span class="other-source">(News)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://www.dlnews.com/articles/markets/crypto-advocates-call-for-calm-after-bitcoins-volatile-week/" target="_blank">Crypto advocates call for calm after Bitcoin’s ‘volatile’ week ends in modest gains</a> <span class="other-source">(Tim Alper)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://ambcrypto.com/is-it-time-to-buy-ethereum-whales-add-280m-in-eth-but/" target="_blank">Is it time to buy Ethereum? Whales add $280M in ETH, but…</a> <span class="other-source">(Vivaan Acharya)</span><span class="resource-cat">Ethereum</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/russian-attacks-ukraine-energy-infrastructure-economic-threat-gdp-forecast/" target="_blank">Russian attacks on Ukraine's energy infrastructure are the biggest threat to its economy, which could shrink as much as 3% </a> <span class="other-source">(Kamila Hrabchuk,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/washington-post-publisher-ceo-will-lewis-resignation-layoffs-cfo-jeff-donofrio-bezos/" target="_blank">Washington Post publisher to step down after big layoffs as union calls his legacy 'attempted destruction of a great American journalism institution' </a> <span class="other-source">(David Bauder,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://www.theblock.co/post/388969/coinshares-says-only-10200-btc-face-real-quantum-risk-pushing-back-on-overblown-estimates" target="_blank">CoinShares says only 10,200 BTC face real quantum risk, pushing back on 'overblown' estimates</a> <span class="other-source">(Zack Abrams)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#22c55e">&#x25CF;</span> <a href="https://ambcrypto.com/xrp-whales-institutions-and-why-a-new-ath-could-be-next-for-the-altcoin/" target="_blank">XRP – Whales, institutions, and why a new ATH could be next for the altcoin</a> <span class="other-source">(Emilio Munoru)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/aster-traders-look-out-for-this-threat-despite-53-rally-in-3-days/" target="_blank">ASTER – Traders, look out for THIS threat despite 53% rally in 3 days</a> <span class="other-source">(Akashnath S)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://www.theblock.co/post/388984/tether-to-add-staff" target="_blank">Tether plans to add 150 staff over next 18 months as expansion accelerates: FT</a> <span class="other-source">(Timmy Shen)</span><span class="resource-cat">Stablecoins</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/09/airfish-st-engineering-singpore-batam-ground-effect-ekranoplan/" target="_blank">Singapore's ST Engineering debuts the AirFish: A 'ground effect' craft that flies a few meters above the sea at up to 116 miles per hour </a> <span class="other-source">(Angelica Ang)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/why-pippin-50-rally-isnt-over-yet-is-0-32-next/" target="_blank">Why PIPPIN’s 50% rally isn’t over yet </a> <span class="other-source">(Akashnath S)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/crypto-markets-weekly-winners-and-losers-m-myx-bnb-xmr-and-more/" target="_blank">Crypto market’s weekly winners and losers – M, MYX, BNB, XMR, and more!</a> <span class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/japanese-prime-minister-sanae-takaichi-landslide-win-ldp-supermajority-right-wing-agenda-fiscal-boost-military-spending/" target="_blank">Japanese prime minister's landslide win gives her party a lower-house supermajority and more room to enact a right-wing agenda </a> <span class="other-source">(Mari Yamaguchi,Foster Klug,The Associated Press)</span><span class="resource-cat">Regulation</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/cardanos-relief-rally-is-good-news-but-heres-why-it-might-not-last/" target="_blank">Cardano’s relief rally is good news, but here’s why it might not last!</a> <span class="other-source">(Akashnath S)</span><span class="resource-cat">Ethereum</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/nfl-legend-joe-montana-venture-capital-liquid-2-silicon-valley-investor/" target="_blank">NFL legend Joe Montana lived around top VC execs as a 49er, then leveraged those ties to launch his second career as an investor </a> <span class="other-source">(Jason Ma)</span><span class="resource-cat">Investment</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/gold-prices-scott-bessent-unruly-chinese-trading-margin-requirements/" target="_blank">Bessent sees 'unruly' Chinese trading behind gold price swings </a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/solana-why-etf-money-is-still-coming-despite-sols-price-action/" target="_blank">Solana – Why ETF money is still coming despite SOL’s price action</a> <span class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Investment</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://ambcrypto.com/wlfi-price-prediction-identifying-short-term-targets-as-sell-pressure-mounts/" target="_blank">WLFI price prediction – Identifying short-term targets as sell pressure mounts</a> <span class="other-source">(Akashnath S)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/something-big-changed-in-markets-25-years-ago-financial-crashes/" target="_blank">We studied 70 countries' economic data for the last 60 years and something big about market crashes changed 25 years ago </a> <span class="other-source">(Josh Ederington,Jenny Minier,The Conversation)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/meta-mark-zuckerberg-super-bowl-advertisement-meta-ai-glasses-smart-glasses-personal-superintelligence-capex/" target="_blank">Meta’s multimillion-dollar Super Bowl ad may not just be about its smart glasses—but about selling Wall Street on Zuckerberg’s AI future </a> <span class="other-source">(Marco Quiroz-Gutierrez)</span><span class="resource-cat">Enterprise</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/grocery-price-inflation-colorado-aldi-walmart-kroger-concentration/" target="_blank">Grocery prices have surged 25% in Colorado since the pandemic with Kroger and Walmart sharing half the market. Enter Aldi </a> <span class="other-source">(Jack Buffington,The Conversation)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/all-about-bitcoin-and-its-final-downside-test-before-price-recovery/" target="_blank">All about Bitcoin and its final downside test before price recovery</a> <span class="other-source">(Muriuki Lazaro)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/sirens-174-surge-after-hitting-a-new-ath-is-downside-next-for-the-memecoin/" target="_blank">SIREN’s 174% surge – After hitting a new ATH, is downside next for the memecoin?</a> <span class="other-source">(Gladys Makena)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://ambcrypto.com/bitcoin-heres-why-60k-remains-the-key-structural-level-for-traders/" target="_blank">Bitcoin – Here’s why $60K remains the ‘key structural level’ for traders</a> <span class="other-source">(Lennox Gitonga)</span><span class="resource-cat">Bitcoin</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/dr-oz-cms-measles-vaccine-shot-outbreaks-rfk-jr/" target="_blank">Dr. Oz begs Americans to get inoculated against measles as outbreaks spiral. 'Take the vaccine, please' </a> <span class="other-source">(Matt Brown,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/trump-winter-olympics-hunter-hess-real-loser-us-athletes-administration-policies-ice-jake-paul/" target="_blank">Trump calls U.S. Olympian a 'real Loser' as athletes speak out against administration policies, while Jake Paul tells critics to 'live somewhere else' </a> <span class="other-source">(Fernanda Figueroa,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/super-bowl-ads-trump-ice-killings-winter-storms-economy-consumer-confidence/" target="_blank">Super Bowl ads go for silliness, tears and nostalgia as Americans reel from 'collective trauma' of recent upheaval — 'Everybody is stressed out' </a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://sifted.eu/articles/us-tech-stocks-meta-moltbook-anthropic/" target="_blank">What the US tech smackdown means for Europe</a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/asia-healthcare-private-capital-investment-quadria-capital-abrar-mir/" target="_blank">Patient private capital is needed to help Asia plug its healthcare gaps </a> <span class="other-source">(Abrar Mir)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/bad-bunny-super-bowl-halftime-show-grammy-awards-taylor-swift/" target="_blank">How Bad Bunny went from Super Bowl supporting act to headliner with ticket sales to rival Taylor Swift </a> <span class="other-source">(Jake Angelo)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/bill-gates-house-for-sale-xanadu-2-seattle-washington-reversal-on-downsizing/" target="_blank">Bill Gates is shedding houses that are part of his $132 million Xanadu 2.0 compound—a reversal from his feelings about downsizing </a> <span class="other-source">(Sydney Lake)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/business-leaders-embrace-human-intentionality-unplug-go-analog-gen-z-mark-cuban-mary-barra-sam-altman/" target="_blank">In the AI era, Mark Cuban, Mary Barra, and even Sam Altman have one tip for Gen Z: unplug and go analog </a> <span class="other-source">(Preston Fore)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#ef4444">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/what-is-the-american-dream-is-it-still-possible-250th-birthday/" target="_blank">America marks its 250th birthday with a fading dream—the first time that younger generations will make less than their parents </a> <span class="other-source">(Mark Robert Rank,The Conversation)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/knix-founder-joanna-griffiths-sees-hynotherapist-rewire-brain-work-through-fear-of-failure/" target="_blank">The founder of $400 million company Knix sees a hypnotherapist to ‘rewire’ her brain and work through her fear of failure </a> <span class="other-source">(Emma Burleigh)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/how-do-americans-really-tip-connecticut-highest-in-america/" target="_blank">I'm the chief growth officer at a payments app and I know how America really tips. Connecticut, I'm looking at you </a> <span class="other-source">(Ricardo Cici)</span><span class="resource-cat">Payments</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/im-a-ceo-who-grew-a-boring-air-filter-business-into-a-260-million-company-and-ai-is-going-to-help-blue-collar-everyday-people-just-like-me/" target="_blank">I'm a CEO who grew a 'boring' air filter business into a $260 million company, and AI is going to help blue-collar, everyday people just like me </a> <span class="other-source">(David Heacock)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/ai-tools-animal-trafficking-23-billion-annual-trade/" target="_blank">One way AI won't ruin the world: tools to crack down on the $23 billion animal trafficking trade </a> <span class="other-source">(Eve Bohnett,The Conversation)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/superbowl-tom-brady-nfl-commentator-contract-fox-live-sports/" target="_blank">Tom Brady is making 15 times more as a Super Bowl commentator than he did playing in the big game thanks to $375 million contract  </a> <span class="other-source">(Eva Roytburg)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/super-bowl-made-for-tv-instant-replay-visual-ai/" target="_blank">The Super Bowl was made for TV and instant replay was made for visual AI. Here’s how it could be better and what it would look like </a> <span class="other-source">(Jason Corso)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/minnesota-immigration-agents-disguises-construction-workers-delivery-drivers-anti-ice-activists/" target="_blank">Minnesotans say immigration agents are impersonating construction workers, delivery drivers and anti-ICE activists </a> <span class="other-source">(Jake Offenhartz,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/fbi-investigation-jeffrey-epstein-files-sex-trafficking-ring-client-list/" target="_blank">FBI found little evidence Epstein ran a sex trafficking ring for powerful men and concluded a 'client list' doesn't exist </a> <span class="other-source">(News)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/trump-greenland-crisis-europe-apps-boycott-us-goods-american-imports/" target="_blank">Trump's Greenland crisis triggered a surge in apps designed to help shoppers boycott U.S. goods though few American imports are on store shelves </a> <span class="other-source">(James Brooks,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/housing-market-affordability-crisis-trump-plan-home-prices-baby-boomer-voters-midterm-elections-generational-war/" target="_blank">Trump's plan to send home prices higher will help him with baby boomer voters ahead of midterms but could spark a 'generational war' </a> <span class="other-source">(Josh Boak,The Associated Press)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/nba-star-metta-world-peace-says-kobe-bryants-5-a-m-gym-schedule-taught-him-a-hard-career-lesson-work-life-balance/" target="_blank">NBA star Metta World Peace says Kobe Bryant taught him that no matter how hard you work, someone else is working harder </a> <span class="other-source">(Orianna Rosa Royle)</span><span class="resource-cat">Other</span></li>
-        <li><span style="color:#94a3b8">&#x25CF;</span> <a href="https://fortune.com/2026/02/08/how-much-do-super-bowl-rings-cost-how-much-are-they-worth/" target="_blank">All the things you wanted to know about Super Bowl rings but were afraid to ask </a> <span class="other-source">(Chris Morris,Fortune Editors)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/ethereum-hits-15-19m-users-but-where-does-leverage-stand-now/"
+            target="_blank">Ethereum hits 15.19M users, but where does leverage stand now?</a> <span
+            class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Ethereum</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/why-ethereum-is-rethinking-its-rollup-first-strategy-in-2026/"
+            target="_blank">Why Ethereum is rethinking its ‘rollup-first’ strategy in 2026</a> <span
+            class="other-source">(Ishika Kumari)</span><span class="resource-cat">Ethereum</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/cryptocom-boss-launched-agentic-ai-tools-ai-com"
+            target="_blank">Crypto.com Boss Rolls out Agentic AIs with ai.com Launch</a> <span
+            class="other-source">(News)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/bessent-suggests-warsh-nomination-hearings-alongside-powell-probe"
+            target="_blank">US Treasury Secretary Pushes For Start On Fed Chair Confirmation Hearings</a> <span
+            class="other-source">(News)</span><span class="resource-cat">Regulation</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://ambcrypto.com/bitcoins-road-to-recovery-odds-on-its-price-surging-past-83k-in-the-short-term-are/"
+            target="_blank">Bitcoin’s road to recovery – Odds on price hitting $83K in the short-term are…</a> <span
+            class="other-source">(Emilio Munoru)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://ambcrypto.com/aptos-apt-nears-1-support-as-12-7m-token-unlock-raises-inflation-fears/"
+            target="_blank">Aptos [APT] nears $1-support as $12.7M token unlock raises inflation fears</a> <span
+            class="other-source">(Olayiwola Dolapo)</span><span class="resource-cat">Layer2</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://ambcrypto.com/bitcoin-vs-gold-cathie-wood-thinks-this-is-why-institutions-are-betting-on-both/"
+            target="_blank">Bitcoin vs Gold – Cathie Wood thinks THIS is why institutions are betting on both!</a> <span
+            class="other-source">(Ishika Kumari)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/federal-reserve-gradual-print-lyn-alden" target="_blank">Lyn Alden: Get
+            Ready for the Federal Reserve's 'Gradual Print'</a> <span class="other-source">(News)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://sifted.eu/articles/massive-requirement-for-an-exit-environment-jpmorgan/"
+            target="_blank">JPMorgan: The ‘surprising’ sector that could be ripe for M&amp;A in Europe</a> <span
+            class="other-source">(News)</span><span class="resource-cat">Investment</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://ambcrypto.com/cardano-loses-top-10-spot-as-price-hits-3-year-low-what-should-traders-do-next/"
+            target="_blank">Cardano loses top-10 spot as price hits 3-year low – What should traders do next?</a> <span
+            class="other-source">(Lennox Gitonga)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://www.theblock.co/post/388978/the-funding-crypto-liquid-funds-respond-to-the-bitcoin-crash"
+            target="_blank">The Funding: Crypto liquid funds respond to the bitcoin crash</a> <span
+            class="other-source">(Yogita Khatri)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/only-10k-bitcoin-quantum-risk-coinshares" target="_blank">Only 10K
+            Bitcoin is Quantum-Vulnerable and Worth Attacking</a> <span class="other-source">(News)</span><span
+            class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/aaves-4-65b-stress-engine-from-bitcoin-liquidation-shock-to-protocol-yield/"
+            target="_blank">Aave’s $4.65B stress engine – From Bitcoin liquidation shock to protocol yield!</a> <span
+            class="other-source">(Muriuki Lazaro)</span><span class="resource-cat">DeFi</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/stock-market-today-dow-futures-50000-japan-election-us-bond-yields/"
+            target="_blank">Dow futures rise after index tops 50,000 for first time while landslide election in Japan
+            sends U.S. bond yields higher </a> <span class="other-source">(Jason Ma)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://ambcrypto.com/dogecoin-can-doge-reach-0-11-as-a-1-63m-liquidity-cluster-forms/"
+            target="_blank">Can Dogecoin reach $0.11 as $1.63M DOGE liquidity cluster forms?</a> <span
+            class="other-source">(Kelvin Murithi)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/gambling-stocks-draftkings-flutter-prediction-markets-kalshi-super-bowl-bets/"
+            target="_blank">Gambling stocks sag as prediction markets steal Super Bowl bets </a> <span
+            class="other-source">(Peyton Forte,Denitsa Tsekova,Bloomberg)</span><span class="resource-cat">Other</span>
+        </li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/google-search-crypto-hover-yearly-low" target="_blank">Google Search
+            Interest in 'Crypto' Near 1-Year Lows Amid Market Crash</a> <span class="other-source">(News)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/bitcoin-a-look-at-wall-streets-behaviour-after-btcs-fall-below-70k/"
+            target="_blank">Bitcoin – A look at Wall Street’s behaviour after BTC’s fall below $70K</a> <span
+            class="other-source">(Ishika Kumari)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://cointelegraph.com/news/bitcoin-bear-market-not-over-trader-btc-price-real-bottom-50k"
+            target="_blank">Bitcoin Bear Market Comparison Sparks New $50,000 BTC Price Prediction</a> <span
+            class="other-source">(News)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://www.dlnews.com/articles/markets/crypto-advocates-call-for-calm-after-bitcoins-volatile-week/"
+            target="_blank">Crypto advocates call for calm after Bitcoin’s ‘volatile’ week ends in modest gains</a>
+          <span class="other-source">(Tim Alper)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://ambcrypto.com/is-it-time-to-buy-ethereum-whales-add-280m-in-eth-but/" target="_blank">Is it
+            time to buy Ethereum? Whales add $280M in ETH, but…</a> <span class="other-source">(Vivaan
+            Acharya)</span><span class="resource-cat">Ethereum</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/russian-attacks-ukraine-energy-infrastructure-economic-threat-gdp-forecast/"
+            target="_blank">Russian attacks on Ukraine's energy infrastructure are the biggest threat to its economy,
+            which could shrink as much as 3% </a> <span class="other-source">(Kamila Hrabchuk,The Associated
+            Press)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/washington-post-publisher-ceo-will-lewis-resignation-layoffs-cfo-jeff-donofrio-bezos/"
+            target="_blank">Washington Post publisher to step down after big layoffs as union calls his legacy
+            'attempted destruction of a great American journalism institution' </a> <span class="other-source">(David
+            Bauder,The Associated Press)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://www.theblock.co/post/388969/coinshares-says-only-10200-btc-face-real-quantum-risk-pushing-back-on-overblown-estimates"
+            target="_blank">CoinShares says only 10,200 BTC face real quantum risk, pushing back on 'overblown'
+            estimates</a> <span class="other-source">(Zack Abrams)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#22c55e">&#x25CF;</span> <a
+            href="https://ambcrypto.com/xrp-whales-institutions-and-why-a-new-ath-could-be-next-for-the-altcoin/"
+            target="_blank">XRP – Whales, institutions, and why a new ATH could be next for the altcoin</a> <span
+            class="other-source">(Emilio Munoru)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/aster-traders-look-out-for-this-threat-despite-53-rally-in-3-days/"
+            target="_blank">ASTER – Traders, look out for THIS threat despite 53% rally in 3 days</a> <span
+            class="other-source">(Akashnath S)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://www.theblock.co/post/388984/tether-to-add-staff" target="_blank">Tether plans to add 150 staff
+            over next 18 months as expansion accelerates: FT</a> <span class="other-source">(Timmy Shen)</span><span
+            class="resource-cat">Stablecoins</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/09/airfish-st-engineering-singpore-batam-ground-effect-ekranoplan/"
+            target="_blank">Singapore's ST Engineering debuts the AirFish: A 'ground effect' craft that flies a few
+            meters above the sea at up to 116 miles per hour </a> <span class="other-source">(Angelica Ang)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/why-pippin-50-rally-isnt-over-yet-is-0-32-next/" target="_blank">Why PIPPIN’s
+            50% rally isn’t over yet </a> <span class="other-source">(Akashnath S)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/crypto-markets-weekly-winners-and-losers-m-myx-bnb-xmr-and-more/"
+            target="_blank">Crypto market’s weekly winners and losers – M, MYX, BNB, XMR, and more!</a> <span
+            class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/japanese-prime-minister-sanae-takaichi-landslide-win-ldp-supermajority-right-wing-agenda-fiscal-boost-military-spending/"
+            target="_blank">Japanese prime minister's landslide win gives her party a lower-house supermajority and more
+            room to enact a right-wing agenda </a> <span class="other-source">(Mari Yamaguchi,Foster Klug,The Associated
+            Press)</span><span class="resource-cat">Regulation</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/cardanos-relief-rally-is-good-news-but-heres-why-it-might-not-last/"
+            target="_blank">Cardano’s relief rally is good news, but here’s why it might not last!</a> <span
+            class="other-source">(Akashnath S)</span><span class="resource-cat">Ethereum</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/nfl-legend-joe-montana-venture-capital-liquid-2-silicon-valley-investor/"
+            target="_blank">NFL legend Joe Montana lived around top VC execs as a 49er, then leveraged those ties to
+            launch his second career as an investor </a> <span class="other-source">(Jason Ma)</span><span
+            class="resource-cat">Investment</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/gold-prices-scott-bessent-unruly-chinese-trading-margin-requirements/"
+            target="_blank">Bessent sees 'unruly' Chinese trading behind gold price swings </a> <span
+            class="other-source">(News)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/solana-why-etf-money-is-still-coming-despite-sols-price-action/"
+            target="_blank">Solana – Why ETF money is still coming despite SOL’s price action</a> <span
+            class="other-source">(Samyukhtha L KM)</span><span class="resource-cat">Investment</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://ambcrypto.com/wlfi-price-prediction-identifying-short-term-targets-as-sell-pressure-mounts/"
+            target="_blank">WLFI price prediction – Identifying short-term targets as sell pressure mounts</a> <span
+            class="other-source">(Akashnath S)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/something-big-changed-in-markets-25-years-ago-financial-crashes/"
+            target="_blank">We studied 70 countries' economic data for the last 60 years and something big about market
+            crashes changed 25 years ago </a> <span class="other-source">(Josh Ederington,Jenny Minier,The
+            Conversation)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/meta-mark-zuckerberg-super-bowl-advertisement-meta-ai-glasses-smart-glasses-personal-superintelligence-capex/"
+            target="_blank">Meta’s multimillion-dollar Super Bowl ad may not just be about its smart glasses—but about
+            selling Wall Street on Zuckerberg’s AI future </a> <span class="other-source">(Marco
+            Quiroz-Gutierrez)</span><span class="resource-cat">Enterprise</span></li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/grocery-price-inflation-colorado-aldi-walmart-kroger-concentration/"
+            target="_blank">Grocery prices have surged 25% in Colorado since the pandemic with Kroger and Walmart
+            sharing half the market. Enter Aldi </a> <span class="other-source">(Jack Buffington,The
+            Conversation)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/all-about-bitcoin-and-its-final-downside-test-before-price-recovery/"
+            target="_blank">All about Bitcoin and its final downside test before price recovery</a> <span
+            class="other-source">(Muriuki Lazaro)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/sirens-174-surge-after-hitting-a-new-ath-is-downside-next-for-the-memecoin/"
+            target="_blank">SIREN’s 174% surge – After hitting a new ATH, is downside next for the memecoin?</a> <span
+            class="other-source">(Gladys Makena)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://ambcrypto.com/bitcoin-heres-why-60k-remains-the-key-structural-level-for-traders/"
+            target="_blank">Bitcoin – Here’s why $60K remains the ‘key structural level’ for traders</a> <span
+            class="other-source">(Lennox Gitonga)</span><span class="resource-cat">Bitcoin</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/dr-oz-cms-measles-vaccine-shot-outbreaks-rfk-jr/" target="_blank">Dr.
+            Oz begs Americans to get inoculated against measles as outbreaks spiral. 'Take the vaccine, please' </a>
+          <span class="other-source">(Matt Brown,The Associated Press)</span><span class="resource-cat">Other</span>
+        </li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/trump-winter-olympics-hunter-hess-real-loser-us-athletes-administration-policies-ice-jake-paul/"
+            target="_blank">Trump calls U.S. Olympian a 'real Loser' as athletes speak out against administration
+            policies, while Jake Paul tells critics to 'live somewhere else' </a> <span class="other-source">(Fernanda
+            Figueroa,The Associated Press)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/super-bowl-ads-trump-ice-killings-winter-storms-economy-consumer-confidence/"
+            target="_blank">Super Bowl ads go for silliness, tears and nostalgia as Americans reel from 'collective
+            trauma' of recent upheaval — 'Everybody is stressed out' </a> <span class="other-source">(News)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://sifted.eu/articles/us-tech-stocks-meta-moltbook-anthropic/" target="_blank">What the US tech
+            smackdown means for Europe</a> <span class="other-source">(News)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/asia-healthcare-private-capital-investment-quadria-capital-abrar-mir/"
+            target="_blank">Patient private capital is needed to help Asia plug its healthcare gaps </a> <span
+            class="other-source">(Abrar Mir)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/bad-bunny-super-bowl-halftime-show-grammy-awards-taylor-swift/"
+            target="_blank">How Bad Bunny went from Super Bowl supporting act to headliner with ticket sales to rival
+            Taylor Swift </a> <span class="other-source">(Jake Angelo)</span><span class="resource-cat">Other</span>
+        </li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/bill-gates-house-for-sale-xanadu-2-seattle-washington-reversal-on-downsizing/"
+            target="_blank">Bill Gates is shedding houses that are part of his $132 million Xanadu 2.0 compound—a
+            reversal from his feelings about downsizing </a> <span class="other-source">(Sydney Lake)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/business-leaders-embrace-human-intentionality-unplug-go-analog-gen-z-mark-cuban-mary-barra-sam-altman/"
+            target="_blank">In the AI era, Mark Cuban, Mary Barra, and even Sam Altman have one tip for Gen Z: unplug
+            and go analog </a> <span class="other-source">(Preston Fore)</span><span class="resource-cat">Other</span>
+        </li>
+        <li><span style="color:#ef4444">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/what-is-the-american-dream-is-it-still-possible-250th-birthday/"
+            target="_blank">America marks its 250th birthday with a fading dream—the first time that younger generations
+            will make less than their parents </a> <span class="other-source">(Mark Robert Rank,The
+            Conversation)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/knix-founder-joanna-griffiths-sees-hynotherapist-rewire-brain-work-through-fear-of-failure/"
+            target="_blank">The founder of $400 million company Knix sees a hypnotherapist to ‘rewire’ her brain and
+            work through her fear of failure </a> <span class="other-source">(Emma Burleigh)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/how-do-americans-really-tip-connecticut-highest-in-america/"
+            target="_blank">I'm the chief growth officer at a payments app and I know how America really tips.
+            Connecticut, I'm looking at you </a> <span class="other-source">(Ricardo Cici)</span><span
+            class="resource-cat">Payments</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/im-a-ceo-who-grew-a-boring-air-filter-business-into-a-260-million-company-and-ai-is-going-to-help-blue-collar-everyday-people-just-like-me/"
+            target="_blank">I'm a CEO who grew a 'boring' air filter business into a $260 million company, and AI is
+            going to help blue-collar, everyday people just like me </a> <span class="other-source">(David
+            Heacock)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/ai-tools-animal-trafficking-23-billion-annual-trade/"
+            target="_blank">One way AI won't ruin the world: tools to crack down on the $23 billion animal trafficking
+            trade </a> <span class="other-source">(Eve Bohnett,The Conversation)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/superbowl-tom-brady-nfl-commentator-contract-fox-live-sports/"
+            target="_blank">Tom Brady is making 15 times more as a Super Bowl commentator than he did playing in the big
+            game thanks to $375 million contract  </a> <span class="other-source">(Eva Roytburg)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/super-bowl-made-for-tv-instant-replay-visual-ai/" target="_blank">The
+            Super Bowl was made for TV and instant replay was made for visual AI. Here’s how it could be better and what
+            it would look like </a> <span class="other-source">(Jason Corso)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/minnesota-immigration-agents-disguises-construction-workers-delivery-drivers-anti-ice-activists/"
+            target="_blank">Minnesotans say immigration agents are impersonating construction workers, delivery drivers
+            and anti-ICE activists </a> <span class="other-source">(Jake Offenhartz,The Associated Press)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/fbi-investigation-jeffrey-epstein-files-sex-trafficking-ring-client-list/"
+            target="_blank">FBI found little evidence Epstein ran a sex trafficking ring for powerful men and concluded
+            a 'client list' doesn't exist </a> <span class="other-source">(News)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/trump-greenland-crisis-europe-apps-boycott-us-goods-american-imports/"
+            target="_blank">Trump's Greenland crisis triggered a surge in apps designed to help shoppers boycott U.S.
+            goods though few American imports are on store shelves </a> <span class="other-source">(James Brooks,The
+            Associated Press)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/housing-market-affordability-crisis-trump-plan-home-prices-baby-boomer-voters-midterm-elections-generational-war/"
+            target="_blank">Trump's plan to send home prices higher will help him with baby boomer voters ahead of
+            midterms but could spark a 'generational war' </a> <span class="other-source">(Josh Boak,The Associated
+            Press)</span><span class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/nba-star-metta-world-peace-says-kobe-bryants-5-a-m-gym-schedule-taught-him-a-hard-career-lesson-work-life-balance/"
+            target="_blank">NBA star Metta World Peace says Kobe Bryant taught him that no matter how hard you work,
+            someone else is working harder </a> <span class="other-source">(Orianna Rosa Royle)</span><span
+            class="resource-cat">Other</span></li>
+        <li><span style="color:#94a3b8">&#x25CF;</span> <a
+            href="https://fortune.com/2026/02/08/how-much-do-super-bowl-rings-cost-how-much-are-they-worth/"
+            target="_blank">All the things you wanted to know about Super Bowl rings but were afraid to ask </a> <span
+            class="other-source">(Chris Morris,Fortune Editors)</span><span class="resource-cat">Other</span></li>
       </ul>
     </div>
     <div class="divider"></div>
-    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends,
+    <div class="linkedin-box">
+      <h3>&#x1F4BC; LinkedIn Ready</h3>
+      <p class="linkedin-label">Copy and paste:</p>
+      <div class="linkedin-content">Dear Founders, Investors, and Friends,
 
-The crypto landscape is shifting beneath our feet, and the signals are unmistakable. Bitcoin is entering a reset phase as major whales reduce leverage and rebalance positions, with over $340 million in BTC flowing to exchanges. This deleveraging follows aggressive bets that unwound amid market pressure, exposing the risks of overleveraged strategies. Yet within this correction lies opportunity. Selective accumulation near $71,000-$73,000 is already happening quietly among sophisticated players who recognize that resets create entry points for disciplined investors.
+        The crypto landscape is shifting beneath our feet, and the signals are unmistakable. Bitcoin is entering a reset
+        phase as major whales reduce leverage and rebalance positions, with over $340 million in BTC flowing to
+        exchanges. This deleveraging follows aggressive bets that unwound amid market pressure, exposing the risks of
+        overleveraged strategies. Yet within this correction lies opportunity. Selective accumulation near
+        $71,000-$73,000 is already happening quietly among sophisticated players who recognize that resets create entry
+        points for disciplined investors.
 
-Simultaneously, regulatory frameworks are crystallizing globally. South Korea's Financial Supervisory Service is preparing comprehensive crypto market probes under its 2026 policy plan, while the Federal Reserve explores deeper integration through its &quot;skinny master account&quot; proposal. These developments signal a critical transition: from regulatory uncertainty to institutional clarity.
+        Simultaneously, regulatory frameworks are crystallizing globally. South Korea's Financial Supervisory Service is
+        preparing comprehensive crypto market probes under its 2026 policy plan, while the Federal Reserve explores
+        deeper integration through its &quot;skinny master account&quot; proposal. These developments signal a critical
+        transition: from regulatory uncertainty to institutional clarity.
 
-This is precisely the environment where Web3 founders thrive. At Blockwall, we've witnessed how regulatory certainty unlocks institutional capital. Europe's MiCA framework and the DLT Pilot Regime overhaul have already catalyzed remarkable growth, our portfolio company Spiko scaled from $130 million to over $600 million in AUM this year alone, becoming Europe's leading tokenized money market fund issuer.
+        This is precisely the environment where Web3 founders thrive. At Blockwall, we've witnessed how regulatory
+        certainty unlocks institutional capital. Europe's MiCA framework and the DLT Pilot Regime overhaul have already
+        catalyzed remarkable growth, our portfolio company Spiko scaled from $130 million to over $600 million in AUM
+        this year alone, becoming Europe's leading tokenized money market fund issuer.
 
-The founders building infrastructure, identity solutions, and tokenized finance today are constructing the digital economy of tomorrow. Market resets separate the visionary builders from the speculators. They create the conditions for genuine innovation to flourish.
+        The founders building infrastructure, identity solutions, and tokenized finance today are constructing the
+        digital economy of tomorrow. Market resets separate the visionary builders from the speculators. They create the
+        conditions for genuine innovation to flourish.
 
-We're actively backing the next generation of Web3 pioneers. If you're building solutions that solve real problems in crypto infrastructure, DeFi, or tokenized markets, we want to hear from you.
+        We're actively backing the next generation of Web3 pioneers. If you're building solutions that solve real
+        problems in crypto infrastructure, DeFi, or tokenized markets, we want to hear from you.
 
-What challenges are you solving for institutional adoption of Web3?
+        What challenges are you solving for institutional adoption of Web3?
 
-#Web3 #Crypto #Blockchain #CryptoVC</div></div>
-    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
-      <li><span class="source-num">[1]</span> <a href="https://ambcrypto.com/bitcoin-enters-a-reset-phase-whales-sell-as-btc-leverage-gets-flushed/">Bitcoin enters a reset phase: Whales sell as BTC leverage gets flushed</a> <span class="other-source">(Ishika Kumari)</span></li>
-      <li><span class="source-num">[2]</span> <a href="https://cointelegraph.com/news/south-korea-fss-2026-crypto-price-manipulation-probes">South Korea Prepares Crypto Market Probes Under 2026 Policy Plan</a> <span class="other-source">(News)</span></li>
-      <li><span class="source-num">[3]</span> <a href="https://cointelegraph.com/news/crypto-banks-input-fed-skinny-master-account-proposal">Crypto, Banks Give Input to Fed ‘Skinny Master Account’ Idea</a> <span class="other-source">(News)</span></li>
-      <li><span class="source-num">[4]</span> <a href="https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg">Jack Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push: Bloomberg</a> <span class="other-source">(Zack Abrams)</span></li>
-      <li><span class="source-num">[5]</span> <a href="https://fortune.com/2026/02/08/russian-economy-financial-crisis-warning-summer-putin-ukraine-war-too-big-to-fail/">Russian officials are warning Putin that a financial crisis could arrive this summer, report says, while his war on Ukraine becomes too big to fail </a> <span class="other-source">(Jason Ma)</span></li>
-      <li><span class="source-num">[6]</span> <a href="https://www.theblock.co/post/388975/crypto-com-ceo-kris-marszalek-bought-ai-com-for-70-million-in-crypto-plans-super-bowl-debut">Crypto.com CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl debut</a> <span class="other-source">(Zack Abrams)</span></li>
-      <li><span class="source-num">[7]</span> <a href="https://creators.spotify.com/pod/profile/steve-bichimer9/episodes/The-Electric-Dollar-How-Stablecoins-Will-Finance-AIs-Future-e3emcjr">The Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified Opinions</a> <span class="other-source">(Spotify for Creators)</span></li>
-      <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/news/bitcoin-sharpe-ratio-falls-bear-market-bottom">Bitcoin Sharpe Ratio Hits Bear Market Lows At Negative 10</a> <span class="other-source">(News)</span></li>
-      <li><span class="source-num">[9]</span> <a href="https://cointelegraph.com/news/ens-abandons-plan-namechain-will-stay-on-ethereum">ENS Abandons Its planned Namechain L2, Citing Drastically Lower Gas Costs</a> <span class="other-source">(News)</span></li>
-      <li><span class="source-num">[10]</span> <a href="https://www.wintermute.com/insights/news/announcements/wintermute-provides-feedback-to-the-sec-crypto-task-force-on-tokenized-securities">Insights › News › Announcements › Wintermute provides feedback to the sec crypto task force on tokenized securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on tokenized securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance for tokenized securities markets to flourish.3 Sept 2025</a> <span class="other-source">(wintermute.com)</span></li>
-      <li><span class="source-num">[11]</span> <a href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/">Bithumb to write off $9 million in Bitcoin losses after giveaway gaffe</a> <span class="other-source">(Tim Alper)</span></li>
-      <li><span class="source-num">[12]</span> <a href="https://cointelegraph.com/news/jack-dorsey-block-may-cut-10-percent-staff-restructuring">Jack Dorsey’s Block May Slash Up To 10% of Staff: Report</a> <span class="other-source">(News)</span></li>
-    </ul></div>
+        #Web3 #Crypto #Blockchain #CryptoVC</div>
+    </div>
+    <div>
+      <h3 class="section-title">&#x1F4DA; Highlight Sources</h3>
+      <ul class="sources-list">
+        <li><span class="source-num">[1]</span> <a
+            href="https://ambcrypto.com/bitcoin-enters-a-reset-phase-whales-sell-as-btc-leverage-gets-flushed/">Bitcoin
+            enters a reset phase: Whales sell as BTC leverage gets flushed</a> <span class="other-source">(Ishika
+            Kumari)</span></li>
+        <li><span class="source-num">[2]</span> <a
+            href="https://cointelegraph.com/news/south-korea-fss-2026-crypto-price-manipulation-probes">South Korea
+            Prepares Crypto Market Probes Under 2026 Policy Plan</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[3]</span> <a
+            href="https://cointelegraph.com/news/crypto-banks-input-fed-skinny-master-account-proposal">Crypto, Banks
+            Give Input to Fed ‘Skinny Master Account’ Idea</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[4]</span> <a
+            href="https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg">Jack
+            Dorsey's Block reportedly cutting up to 10% of workforce in latest efficiency push: Bloomberg</a> <span
+            class="other-source">(Zack Abrams)</span></li>
+        <li><span class="source-num">[5]</span> <a
+            href="https://fortune.com/2026/02/08/russian-economy-financial-crisis-warning-summer-putin-ukraine-war-too-big-to-fail/">Russian
+            officials are warning Putin that a financial crisis could arrive this summer, report says, while his war on
+            Ukraine becomes too big to fail </a> <span class="other-source">(Jason Ma)</span></li>
+        <li><span class="source-num">[6]</span> <a
+            href="https://www.theblock.co/post/388975/crypto-com-ceo-kris-marszalek-bought-ai-com-for-70-million-in-crypto-plans-super-bowl-debut">Crypto.com
+            CEO Kris Marszalek bought AI.com for $70 million in crypto, plans Super Bowl debut</a> <span
+            class="other-source">(Zack Abrams)</span></li>
+        <li><span class="source-num">[7]</span> <a
+            href="https://creators.spotify.com/pod/profile/steve-bichimer9/episodes/The-Electric-Dollar-How-Stablecoins-Will-Finance-AIs-Future-e3emcjr">The
+            Electric Dollar: How Stablecoins Will Finance AI's Future by Messari's Unqualified Opinions</a> <span
+            class="other-source">(Spotify for Creators)</span></li>
+        <li><span class="source-num">[8]</span> <a
+            href="https://cointelegraph.com/news/bitcoin-sharpe-ratio-falls-bear-market-bottom">Bitcoin Sharpe Ratio
+            Hits Bear Market Lows At Negative 10</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[9]</span> <a
+            href="https://cointelegraph.com/news/ens-abandons-plan-namechain-will-stay-on-ethereum">ENS Abandons Its
+            planned Namechain L2, Citing Drastically Lower Gas Costs</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[10]</span> <a
+            href="https://www.wintermute.com/insights/news/announcements/wintermute-provides-feedback-to-the-sec-crypto-task-force-on-tokenized-securities">Insights
+            › News › Announcements › Wintermute provides feedback to the sec crypto task force on tokenized
+            securitiesAnnouncements Wintermute provides feedback to the SEC Crypto Task Force on tokenized
+            securitiesWintermute provides feedback to the SEC Crypto Task Force, recommending practical guidance for
+            tokenized securities markets to flourish.3 Sept 2025</a> <span class="other-source">(wintermute.com)</span>
+        </li>
+        <li><span class="source-num">[11]</span> <a
+            href="https://www.dlnews.com/articles/markets/bithumb-to-write-off-125-million-in-bitcoin-losses-after-giveaway-gaffe/">Bithumb
+            to write off $9 million in Bitcoin losses after giveaway gaffe</a> <span class="other-source">(Tim
+            Alper)</span></li>
+        <li><span class="source-num">[12]</span> <a
+            href="https://cointelegraph.com/news/jack-dorsey-block-may-cut-10-percent-staff-restructuring">Jack Dorsey’s
+            Block May Slash Up To 10% of Staff: Report</a> <span class="other-source">(News)</span></li>
+      </ul>
+    </div>
     <div class="newsletter-cta">
       <h3>Help Us Improve</h3>
       <p>Your feedback shapes future editions</p>
@@ -353,4 +839,5 @@ What challenges are you solving for institutional adoption of Web3?
     document.getElementById('theme-icon').innerHTML = savedTheme === 'dark' ? '&#x1F319;' : '&#x2600;&#xFE0F;';
   </script>
 </body>
+
 </html>
