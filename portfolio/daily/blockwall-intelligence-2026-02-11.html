@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-11</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 11, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>13</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>5</b><span>Sector Digests</span></div>
+  <div class="stat"><b>6</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">EU digital euro advances amid stablecoin dominance concerns</div>
+  <ul>
+    <li>European Parliament backs digital euro to counter US stablecoins dominating crypto payments, directly impacting LATAM fintechs like Blu expanding no-fee credit cards for underbanked Mexicans.</li>
+    <li>Digital euro push signals tighter EU monetary sovereignty, pressuring dollar-pegged stablecoin usage in cross-border remittances and credit products.</li>
+    <li>Banks demand restrictive stablecoin yield parameters in White House talks, highlighting regulatory scrutiny on yield-bearing stablecoins used in payment rails.</li>
+    <li>Stripe's USDC agent payments on Base underscore stablecoin integration trends relevant to Mastercard-powered credit building.</li>
+  </ul>
+  <div class="wim">→ Regulatory shifts toward CBDCs and stablecoin controls could accelerate Blu's adoption of compliant rails for Mexican underbanked credit issuance.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/regulation/eu-lawmakers-back-digital-euro-to-counter-us-stablecoins/" target="_blank">📎 EU lawmakers back digital euro as bloc races to bolster monetary sovereignty — DL News</a>
+    <a href="https://www.theblock.co/post/389333/white-house-stablecoin-yield-impasse" target="_blank">📎 White House session ends in impasse as banks demand restrictive parameters on stablecoin rewards — The Block</a>
+    <a href="https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments" target="_blank">📎 Stripe adds x402 integration for USDC agent payments on Base — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Stablecoin regulations intensify with EU digital euro and US bank demands</div>
+  <ul>
+    <li>EU Parliament approves digital euro to challenge dollar stablecoins in payments, affecting cross-border remittance providers like Flyra targeting financial inclusion.</li>
+    <li>White House impasse on stablecoin yields sees banks push for restrictions, signaling hurdles for remittance platforms using stablecoins.</li>
+    <li>Stripe's USDC payments on Base highlight agentic stablecoin flows relevant to Flyra's credit and remittance products.</li>
+  </ul>
+  <div class="wim">→ Heightened CBDC and stablecoin scrutiny boosts Flyra's positioning in compliant cross-border financial inclusion corridors.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/eu-pushes-digital-euro-as-dollar-backed-stablecoins-dominate-crypto-payments/" target="_blank">📎 EU pushes digital euro as dollar-backed stablecoins dominate crypto payments — AMB Crypto</a>
+    <a href="https://www.theblock.co/post/389333/white-house-stablecoin-yield-impasse" target="_blank">📎 White House session ends in impasse as banks demand restrictive parameters on stablecoin rewards — The Block</a>
+    <a href="https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments" target="_blank">📎 Stripe adds x402 integration for USDC agent payments on Base — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Tokenized money funds enable crypto trading collateral on Binance</div>
+  <ul>
+    <li>Franklin Templeton partners Binance for tokenized money funds as off-exchange collateral, advancing Visa/Mastercard-compatible crypto card infrastructure.</li>
+    <li>Robinhood's Arbitrum L2 testnet for tokenized assets signals TradFi-DeFi bridges relevant to Kulipa's white-label debit cards.</li>
+    <li>RWA tokenized commodities surpass $6B led by gold, boosting demand for yield-bearing on-ramps in prepaid card APIs.</li>
+  </ul>
+  <div class="wim">→ Institutional tokenized collateral unlocks liquidity for Kulipa's API-powered crypto debit cards across global markets.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/franklin-templeton-binance-tokenized-mmf-collateral" target="_blank">📎 Franklin Templeton to Let Tokenized Money Funds Back Binance Trades — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389325/robinhood-launches-public-testnet-arbitrum" target="_blank">📎 Robinhood launches public testnet for blockchain built on Arbitrum — The Block</a>
+    <a href="https://cointelegraph.com/news/tokenized-commodities-like-gold-reach-6-billion" target="_blank">📎 Tokenized Commodities Blows Past $6B on Gold Adoption — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Spark launches institutional stablecoin lending amid RWA growth</div>
+  <ul>
+    <li>Spark's institutional lending suite channels DeFi stablecoins for billions in liquidity, aligning with Nilos' global FX and instant settlement in 120+ countries.</li>
+    <li>UK Bank of England pilots Chainlink for onchain settlement with central bank money, advancing payment infra standards.</li>
+    <li>EU digital euro backing pressures cross-border FX conversions reliant on stablecoins.</li>
+  </ul>
+  <div class="wim">→ Institutional DeFi lending and CBDC pilots enhance Nilos' multi-currency settlement rails for global payments.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/spark-new-lending-suite-onchain-stablecoins" target="_blank">📎 Spark Launches Institutional Lending Suite to Channel DeFi Stablecoins — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/bank-of-england-selects-chainlink-for-synchronisation-lab-to-test-onchain-settlement-with-central-bank-money" target="_blank">📎 UK Central Bank to Launch Onchain Settlement Infrastructure Pilot — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/regulation/eu-lawmakers-back-digital-euro-to-counter-us-stablecoins/" target="_blank">📎 EU lawmakers back digital euro — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Self-custodial wallets benefit from tokenized asset testnets</div>
+  <ul>
+    <li>Robinhood Chain testnet on Arbitrum supports tokenized RWAs with IBAN-like features, mirroring Rebind's self-custodial wallet and virtual debit cards.</li>
+    <li>Franklin Templeton-Binance tokenized funds as collateral boost on/off-ramp demand in Paris-regulated markets.</li>
+    <li>LayerZero's institutional blockchain launch accelerates compliant wallet interoperability.</li>
+  </ul>
+  <div class="wim">→ RWA tokenization on L2s drives adoption of Rebind's self-custodial IBAN and debit solutions for European users.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/robinhood-launches-testnet-for-arbitrum-based-l2-blockchain" target="_blank">📎 Robinhood Launches Testnet for Arbitrum-Based L2 Blockchain — Bankless</a>
+    <a href="https://www.theblock.co/post/389280/franklin-templeton-binance-program-institutions-tokenized-money-funds-trading-collateral" target="_blank">📎 Franklin Templeton, Binance roll out program — The Block</a>
+    <a href="https://cointelegraph.com/news/layerzero-launching-zero-blockchain-with-backing-from-citadel-ark" target="_blank">📎 LayerZero Labs Launching Blockchain Aimed at Institutions — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin regs and digital euro impact African diaspora remittances</div>
+  <ul>
+    <li>EU digital euro aims to counter US stablecoins in payments, affecting multi-currency instant delivery to African diaspora.</li>
+    <li>White House stablecoin yield restrictions signal global compliance needs for remittance platforms.</li>
+    <li>Stripe USDC on Base enables low-cost agent payments scalable to emerging markets.</li>
+  </ul>
+  <div class="wim">→ CBDC competition and stablecoin rules position Yousend for compliant, instant African remittance growth.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/regulation/eu-lawmakers-back-digital-euro-to-counter-us-stablecoins/" target="_blank">📎 EU lawmakers back digital euro — DL News</a>
+    <a href="https://www.theblock.co/post/389333/white-house-stablecoin-yield-impasse" target="_blank">📎 White House session ends in impasse — The Block</a>
+    <a href="https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments" target="_blank">📎 Stripe adds x402 integration — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Spark institutional lending channels stablecoins to DeFi vaults</div>
+  <ul>
+    <li>Spark Prime suite moves DeFi stablecoin liquidity to institutions, complementing Byzantine's restaking strategies and structured vaults.</li>
+    <li>Franklin Templeton tokenized funds on Binance provide yield collateral for institutional DeFi.</li>
+    <li>RWA.xyz highlights tokenized assets outperforming amid market sentiment, boosting restaking demand.</li>
+  </ul>
+  <div class="wim">→ Institutional stablecoin inflows supercharge Byzantine's yield-optimized restaking products for sophisticated users.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/spark-new-lending-suite-onchain-stablecoins" target="_blank">📎 Spark Launches Institutional Lending Suite — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/franklin-templeton-binance-tokenized-mmf-collateral" target="_blank">📎 Franklin Templeton to Let Tokenized Money Funds Back Binance Trades — Cointelegraph</a>
+    <a href="https://rwa.xyz/blog/a-letter-to-the-believers" target="_blank">📎 RWA.xyz Blog - A Letter to the Believers</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Tokenized T-bills gain traction via Franklin Templeton-Binance</div>
+  <ul>
+    <li>Franklin Templeton enables tokenized money funds as Binance collateral, directly advancing regulated T-bill platforms like Spiko with French bank custody.</li>
+    <li>Tokenized commodities hit $6B on gold, signaling RWA yield product momentum.</li>
+    <li>RWA.xyz data shows tokenized assets resilient despite crypto downturn.</li>
+  </ul>
+  <div class="wim">→ Mainstream tokenized yield adoption validates Spiko's daily interest T-bill model for European institutions.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389280/franklin-templeton-binance-program-institutions-tokenized-money-funds-trading-collateral" target="_blank">📎 Franklin Templeton, Binance roll out program — The Block</a>
+    <a href="https://cointelegraph.com/news/tokenized-commodities-like-gold-reach-6-billion" target="_blank">📎 Tokenized Commodities Blows Past $6B — Cointelegraph</a>
+    <a href="https://rwa.xyz/blog/a-letter-to-the-believers" target="_blank">📎 RWA.xyz Blog - A Letter to the Believers</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">RWA tokenization surges with $6B commodities and Spark lending</div>
+  <ul>
+    <li>Tokenized commodities exceed $6B led by gold adoption, fueling on-chain securitization and loan tranching.</li>
+    <li>Spark institutional suite enables stablecoin lending for TradFi-DeFi bridges like Tranched's pool tranching.</li>
+    <li>Robinhood Chain testnet targets tokenized RWAs, enhancing securitization infrastructure.</li>
+  </ul>
+  <div class="wim">→ Exploding RWA market scales Tranched's on-chain credit and securitization for institutional loan pools.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/tokenized-commodities-like-gold-reach-6-billion" target="_blank">📎 Tokenized Commodities Blows Past $6B — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/spark-new-lending-suite-onchain-stablecoins" target="_blank">📎 Spark Launches Institutional Lending Suite — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/robinhood-launches-ethereum-layer-2-testnet-for-tokenized-assets" target="_blank">📎 Robinhood Chain Testnet Goes Live — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">Robinhood Chain advances tokenized equity issuance</div>
+  <ul>
+    <li>Robinhood launches Arbitrum L2 testnet for tokenized stocks, aligning with Salto X's cap table management and equity SaaS.</li>
+    <li>LayerZero's institutional blockchain with Citadel/ARK backing supports tokenized securities workflows.</li>
+    <li>RWA tokenization resilience per RWA.xyz bolsters on-chain equity platforms.</li>
+  </ul>
+  <div class="wim">→ L2 tokenized asset chains accelerate Salto X's tokenized cap table and issuance tools for startups.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389325/robinhood-launches-public-testnet-arbitrum" target="_blank">📎 Robinhood launches public testnet for blockchain built on Arbitrum — The Block</a>
+    <a href="https://cointelegraph.com/news/layerzero-launching-zero-blockchain-with-backing-from-citadel-ark" target="_blank">📎 LayerZero Labs Launching Blockchain Aimed at Institutions — Cointelegraph</a>
+    <a href="https://rwa.xyz/blog/a-letter-to-the-believers" target="_blank">📎 RWA.xyz Blog - A Letter to the Believers</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">UK BoE Chainlink pilot tests onchain settlement</div>
+  <ul>
+    <li>Bank of England launches six-month pilot with Chainlink for atomic settlement using central bank money and tokenized assets.</li>
+    <li>LayerZero blockchain with Google Cloud/DTCC partnerships advances enterprise node infrastructure.</li>
+    <li>Robinhood Arbitrum testnet improves L2 stability for staking and node APIs.</li>
+  </ul>
+  <div class="wim">→ CBDC onchain pilots validate Validation Cloud's SOC 2 enterprise blockchain and staking services.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/bank-of-england-selects-chainlink-for-synchronisation-lab-to-test-onchain-settlement-with-central-bank-money" target="_blank">📎 UK Central Bank to Launch Onchain Settlement Infrastructure Pilot — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389295/citadel-and-ark-invest-back-layerzero-as-it-launches-blockchain-partners-with-google-cloud-and-dtcc" target="_blank">📎 Citadel and Ark Invest back LayerZero — The Block</a>
+    <a href="https://www.theblock.co/post/389325/robinhood-launches-public-testnet-arbitrum" target="_blank">📎 Robinhood launches public testnet — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">Messari report spotlights autonomous AI agents onchain</div>
+  <ul>
+    <li>Messari details ERC-8004 for AI agent identity/reputation in agentic workflows, core to Kirha's LLM data APIs.</li>
+    <li>AI agents integrate SaaS per Fortune, enhancing RAG and private data connections.</li>
+    <li>Stripe x402 USDC enables agent payments on Base, tying into context-as-a-service.</li>
+  </ul>
+  <div class="wim">→ Onchain AI agent standards propel Kirha's APIs for LLM-private data agentic applications.</div>
+  <div class="sr">
+    <a href="https://messari.io/report/when-machines-become-economic-actors" target="_blank">📎 When Machines Become Economic Actors — Messari</a>
+    <a href="https://fortune.com/2026/02/10/ai-agents-anthropic-openai-arent-killing-saas-salesforce-servicenow-microsoft-workday-cant-sleep-easy/" target="_blank">📎 AI agents aren't eating SaaS—they're using it — Fortune</a>
+    <a href="https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments" target="_blank">📎 Stripe adds x402 integration — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Stablecoin regs and exchange collateral programs advance African adoption</div>
+  <ul>
+    <li>Franklin Templeton-Binance tokenized collateral enables institutional trading, relevant for Nigeria SEC-licensed exchanges.</li>
+    <li>EU digital euro counters US stablecoins, impacting African USDT usage.</li>
+    <li>White House stablecoin yield talks signal global compliance for emerging exchanges.</li>
+  </ul>
+  <div class="wim">→ Tokenized collateral and regs strengthen Busha's licensed platform amid African crypto growth.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389280/franklin-templeton-binance-program-institutions-tokenized-money-funds-trading-collateral" target="_blank">📎 Franklin Templeton, Binance roll out program — The Block</a>
+    <a href="https://www.dlnews.com/articles/regulation/eu-lawmakers-back-digital-euro-to-counter-us-stablecoins/" target="_blank">📎 EU lawmakers back digital euro — DL News</a>
+    <a href="https://www.theblock.co/post/389333/white-house-stablecoin-yield-impasse" target="_blank">📎 White House session ends in impasse — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blink Labs, Den, Opfn, Staex, Spherity, River, Tlon, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>EU Parliament backs digital euro to challenge US stablecoins</strong> — Lawmakers approve CBDC for online/offline use, pressuring dollar stablecoins in cross-border payments and remittances.</div>
+  <div class="sig"><strong>Banks demand stablecoin yield restrictions in White House talks</strong> — Impasse highlights regulatory pushback on yield-bearing stablecoins, impacting payment rails and card issuing.</div>
+  <div class="sig"><strong>Stripe enables USDC agent payments via x402 on Base</strong> — Low-cost pay-per-request model accelerates stablecoin adoption in fintech APIs and remittances.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/regulation/eu-lawmakers-back-digital-euro-to-counter-us-stablecoins/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 EU lawmakers back digital euro — DL News</a>
+    <a href="https://www.theblock.co/post/389333/white-house-stablecoin-yield-impasse" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 White House stablecoin yield impasse — The Block</a>
+    <a href="https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Stripe x402 USDC on Base — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Franklin Templeton tokenized funds back Binance trades</strong> — Institutions use regulated money market funds as crypto collateral, bridging TradFi to DeFi yields.</div>
+  <div class="sig"><strong>Tokenized commodities surpass $6B on gold rush</strong> — 53% YTD growth underscores RWA momentum despite crypto selloff.</div>
+  <div class="sig"><strong>Spark launches stablecoin lending for institutions</strong> — Prime suite channels DeFi liquidity to TradFi, enabling tranching and restaking.</div>
+  <div class="sig"><strong>Robinhood Arbitrum L2 testnet targets tokenized stocks</strong> — Public testnet tests RWA stability ahead of mainnet for equity tokenization.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389280/franklin-templeton-binance-program-institutions-tokenized-money-funds-trading-collateral" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Franklin Templeton-Binance program — The Block</a>
+    <a href="https://cointelegraph.com/news/tokenized-commodities-like-gold-reach-6-billion" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Tokenized Commodities $6B — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/spark-new-lending-suite-onchain-stablecoins" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Spark Institutional Lending — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389325/robinhood-launches-public-testnet-arbitrum" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Robinhood testnet — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>UK BoE pilots Chainlink for CBDC-tokenized asset settlement</strong> — Six-month test enables atomic swaps with central bank money, advancing enterprise infra.</div>
+  <div class="sig"><strong>LayerZero launches institutional blockchain with Citadel/ARK</strong> — Zero chain partners Google Cloud/DTCC for TradFi tokenization and L2 stability.</div>
+  <div class="portf">Portfolio relevance: Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/bank-of-england-selects-chainlink-for-synchronisation-lab-to-test-onchain-settlement-with-central-bank-money" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 UK Central Bank Onchain Pilot — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389295/citadel-and-ark-invest-back-layerzero-as-it-launches-blockchain-partners-with-google-cloud-and-dtcc" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Citadel/ARK back LayerZero — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>Messari: ERC-8004 enables onchain AI agent identity</strong> — Autonomous agents as economic actors need reputation layers for DeFi and workflows.</div>
+  <div class="sig"><strong>AI agents integrate rather than replace SaaS platforms</strong> — Anthropic/OpenAI build on Salesforce/ServiceNow, boosting agentic data APIs.</div>
+  <div class="portf">Portfolio relevance: Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://messari.io/report/when-machines-become-economic-actors" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 When Machines Become Economic Actors — Messari</a>
+    <a href="https://fortune.com/2026/02/10/ai-agents-anthropic-openai-arent-killing-saas-salesforce-servicenow-microsoft-workday-cant-sleep-easy/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 AI agents aren't eating SaaS — Fortune</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Tokenized collateral programs expand institutional access</strong> — Franklin-Binance model lets regulated funds back crypto trades, aiding licensed exchanges.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389280/franklin-templeton-binance-program-institutions-tokenized-money-funds-trading-collateral" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Franklin Templeton-Binance tokenized MMF — The Block</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>OSL Group</strong></td><td class="amt">$200M</td><td>Equity financing</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>AetheriumX</strong></td><td class="amt">$8M</td><td>Strategic</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Bleap</strong></td><td class="amt">$6M</td><td>Seed</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Anchorage Digital</strong></td><td class="amt">$100M</td><td>Strategic</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown - DL News</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Identity/AI/Data</span></td><td>Spherity, Kirha</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown - DL News</a></td></tr>
+<tr><td><strong>Jupiter</strong></td><td class="amt">$35M</td><td>Undisclosed</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown - DL News</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.0 &bull; February 11, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
