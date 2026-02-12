@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/blockwall-cover.svg" alt="Blockwall Insights v2.1" width="100%"/>
+  <img src="https://dt-vc.github.io/blockwall-insightsv2.1/assets/images/blockwall-cover.svg" alt="Blockwall Insights v2.1" width="100%"/>
 </p>
 
 <p align="center">
