@@ -48,5 +48,5 @@ blockwall-insightsv2.1/
 ---
 
 <p align="center">
-  <sub>Built by <a href="https://blockwall.vc">Blockwall Capital</a> · Frankfurt, Germany · European Crypto Venture Capital</sub>
+  <sub>Built by <a href="https://blockwall.vc">Blockwall Management GmbH</a> · Frankfurt, Germany · European Crypto Venture Capital</sub>
 </p>
