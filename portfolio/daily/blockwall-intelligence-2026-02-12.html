@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-12</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 12, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>17</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>5</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">UK BNPL crackdown signals global regulatory pressure on credit products</div>
+  <ul>
+    <li>UK Financial Conduct Authority confirmed new rules for buy-now-pay-later fintechs, increasing oversight on credit extensions that could impact similar no-fee credit card models targeting underbanked users.</li>
+    <li>Mexican credit building products like Blu face parallel risks as LATAM regulators often mirror developed market standards for consumer protection.</li>
+    <li>Stablecoin regulations under GENIUS Act and Clarity Act delays emphasize reserve requirements and licensing, relevant for Mastercard-linked cards.</li>
+    <li>Banking regulators rescinding anti-crypto guidance opens custody opportunities for credit issuers partnering with banks.</li>
+  </ul>
+  <div class="wim">→ Regulatory harmonization across payments could require Blu to enhance compliance features, strengthening its competitive moat in underbanked credit.</div>
+  <div class="sr">
+    <a href="https://sifted.eu/articles/bnpl-rules/" target="_blank">📎 Buy now pay later fintechs face crackdown as UK rolls out new rules — Sifted</a>
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Deel-MoonPay stablecoin payroll expands cross-border payment rails</div>
+  <ul>
+    <li>Deel partners with MoonPay for stablecoin salary payouts in UK/EU, demonstrating viable remittance infrastructure for diaspora workers.</li>
+    <li>Cross-border credit products like Flyra benefit from growing stablecoin adoption in payroll, reducing FX friction in emerging markets.</li>
+    <li>White House stablecoin meetings signal US policy progress, potentially easing global remittance corridors.</li>
+    <li>GENIUS Act implementation extends comment periods, clarifying issuer rules for payment stablecoins critical to remittances.</li>
+  </ul>
+  <div class="wim">→ Stablecoin payroll precedents validate Flyra's model, accelerating financial inclusion via instant, low-cost cross-border credit.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/deel-partners-with-moonpay-to-roll-out-stablecoin-salary-payouts-in-europe" target="_blank">📎 Deel Partners with MoonPay to Launch Stablecoin Payroll in UK and EU — Cointelegraph</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 White House Hosts Crypto Meetings — Paul Hastings</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Zerohash adds Monad USDC support for stablecoin card infrastructure</div>
+  <ul>
+    <li>Zerohash integrates Monad blockchain for USDC payments, enhancing crypto-to-fiat rails for white-label debit cards.</li>
+    <li>Visa/Mastercard-compatible platforms like Kulipa gain from expanding stablecoin on-ramps amid regulatory easing.</li>
+    <li>GENIUS Act and FDIC extensions clarify stablecoin issuance, vital for API-powered prepaid products.</li>
+    <li>Banking regulators lift crypto custody restrictions, enabling more card issuing partnerships.</li>
+  </ul>
+  <div class="wim">→ Monad USDC integration exemplifies infra maturity, positioning Kulipa for scalable white-label crypto card growth.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389531/zerohash-monad-usdc-stablecoin-payments" target="_blank">📎 Zerohash adds Monad support to expand USDC stablecoin payments — The Block</a>
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">White House stablecoin talks advance global FX settlement standards</div>
+  <ul>
+    <li>White House Crypto Policy Council meetings push market structure legislation, benefiting 120+ country FX platforms.</li>
+    <li>Nilos instant settlement aligns with tokenized collateral like CME's blockchain initiatives.</li>
+    <li>GENIUS Act NPR comment extension provides clarity on stablecoin reserves for global payments.</li>
+    <li>SEC/CFTC Harmonization Initiative reduces jurisdictional friction for cross-border infra.</li>
+  </ul>
+  <div class="wim">→ Policy momentum on stablecoins directly enhances Nilos' multi-country FX conversion efficiency.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 White House Hosts Crypto Meetings — Paul Hastings</a>
+    <a href="https://www.theblock.co/post/389473/the-daily-white-house-stablecoin-meeting-ends-in-impasse-blackrock-taps-uniswap-for-direct-onchain-buidl-trading-and-more" target="_blank">📎 The Daily: White House stablecoin meeting — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Coinbase AI agent wallets highlight self-custodial demand</div>
+  <ul>
+    <li>Coinbase launches wallets for AI agents enabling autonomous onchain transactions, mirroring Rebind's self-custodial IBAN model.</li>
+    <li>Paris-based wallet with virtual debit benefits from EU regulatory thaw on crypto custody.</li>
+    <li>SAB 122 replaces SAB 121, easing bank custody and on/off-ramp integrations.</li>
+    <li>Clarity Act delays underscore need for compliant self-custody in DeFi-TradFi bridges.</li>
+  </ul>
+  <div class="wim">→ AI-driven wallet adoption validates Rebind's non-custodial debit card approach amid rising agentic workflows.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/coinbase-launches-crypto-wallets-built-ai-agents" target="_blank">📎 Coinbase Launches Crypto Wallets Purpose-Built For AI Agents — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389524/coinbase-rolls-out-ai-tool-to-give-any-agent-a-wallet" target="_blank">📎 Coinbase rolls out AI tool to 'give any agent a wallet' — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin payroll gains traction in Africa/EU corridors</div>
+  <ul>
+    <li>Deel-MoonPay enables stablecoin payouts for UK/EU workers, model applicable to African diaspora remittances.</li>
+    <li>Yousend multi-currency instant delivery aligns with growing USDT adoption in emerging markets.</li>
+    <li>Nigerian exchange licensing parallels boost compliant remittance platforms.</li>
+    <li>GENIUS Act progress clarifies stablecoin use for high-volume African transfers.</li>
+  </ul>
+  <div class="wim">→ EU stablecoin payroll sets precedent for Yousend to capture diaspora flows with lower costs.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/deel-partners-with-moonpay-to-roll-out-stablecoin-salary-payouts-in-europe" target="_blank">📎 Deel Partners with MoonPay to Launch Stablecoin Payroll — Cointelegraph</a>
+    <a href="https://messari.io/report/in-the-stables-clarity-act-hits-wall-over-yield-restrictions" target="_blank">📎 In The Stables: CLARITY Act Hits Wall — Messari</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">BlackRock BUIDL lists on Uniswap advancing institutional restaking</div>
+  <ul>
+    <li>BlackRock tokenizes $2.1B BUIDL Treasury fund on Uniswap, buying UNI for DeFi liquidity.</li>
+    <li>Byzantine structured vaults positioned for institutional restaking inflows post-SAB 122 custody easing.</li>
+    <li>SEC tokenized securities framework development favors restaking strategies.</li>
+    <li>Clarity Act regulatory premium benefits compliant institutional DeFi protocols.</li>
+  </ul>
+  <div class="wim">→ BlackRock's DeFi move signals trillion-dollar capital rotation into Byzantine's restaking vaults.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/blackrock-buidl-uniswap-institutional-defi-adoption" target="_blank">📎 BlackRock Brings $2.1B BUIDL Fund to Uniswap — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389473/the-daily-white-house-stablecoin-meeting-ends-in-impasse-blackrock-taps-uniswap-for-direct-onchain-buidl-trading-and-more" target="_blank">📎 The Daily: BlackRock taps Uniswap — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Tether eyes top-10 T-bill buyer status boosting yield platforms</div>
+  <ul>
+    <li>Tether projected as major T-bill purchaser via USAT, increasing demand for regulated yield products.</li>
+    <li>Spiko's French bank custody T-bill platform benefits from GENIUS Act stablecoin clarity.</li>
+    <li>UK HSBC tokenized bond pilot validates sovereign yield tokenization.</li>
+    <li>SEC innovation exemption could accelerate T-bill token launches.</li>
+  </ul>
+  <div class="wim">→ Tether's T-bill surge drives yields higher, enhancing Spiko's daily interest competitiveness.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389501/tether-purchaser-t-bills-usat-ceo-bo-hines" target="_blank">📎 Tether could become 'top 10 T-bill buyer' — The Block</a>
+    <a href="https://www.theblock.co/post/389557/uk-hsbc-tokenized-bond" target="_blank">📎 UK selects HSBC as platform provider for tokenized government bond pilot — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">Ondo Chainlink integration tokenizes US stocks on Ethereum</div>
+  <ul>
+    <li>Ondo Finance uses Chainlink feeds for SPYon/QQQon/TSLAon tokenized stocks, advancing on-chain securitization.</li>
+    <li>Tranched loan pool tranching bridges TradFi-DeFi, aligned with SEC tokenized securities focus.</li>
+    <li>$6B tokenized commodities boom underscores RWA growth potential.</li>
+    <li>CME tokenized collateral expands institutional tokenization infrastructure.</li>
+  </ul>
+  <div class="wim">→ Stock tokenization momentum positions Tranched as key player in compliant securitization markets.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ondo-integrates-chainlink-data-feeds-for-tokenized-stocks-on-ethereum-mainnet" target="_blank">📎 Ondo Integrates Chainlink Price Feeds for Tokenized US stocks — Cointelegraph</a>
+    <a href="https://ambcrypto.com/6b-tokenized-commodities-boom-is-digital-gold-the-new-haven/" target="_blank">📎 $6B tokenized commodities boom — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Zerohash Monad support enhances multi-chain MEV infra</div>
+  <ul>
+    <li>Zerohash adds Monad for USDC, boosting high-throughput chain order flow auctions.</li>
+    <li>Blink Labs MEV protection benefits from L1 expansions like Sonic Labs vertical integration.</li>
+    <li>Ethereum V-shaped recovery predictions support multi-chain infra demand.</li>
+    <li>SEC/CFTC harmonization aids cross-chain infrastructure clarity.</li>
+  </ul>
+  <div class="wim">→ Monad integration accelerates multi-chain activity, driving demand for Blink's MEV solutions.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389531/zerohash-monad-usdc-stablecoin-payments" target="_blank">📎 Zerohash adds Monad support — The Block</a>
+    <a href="https://www.theblock.co/post/389537/sonic-labs-wants-vertically-integrate-core-apps-drive-value-s-token-hints-acquisitions" target="_blank">📎 Sonic Labs wants to 'vertically integrate' — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Corporate treasury benefits from SAB 122 custody reforms</div>
+  <ul>
+    <li>SEC SAB 122 eases crypto custody accounting, enabling enterprise multi-sig wallets.</li>
+    <li>Den onchain accounting platform gains from bank engagement with crypto treasuries.</li>
+    <li>DOJ ceases targeting exchanges for user actions, reducing compliance burdens.</li>
+    <li>Clarity Act progress clarifies corporate onchain operations.</li>
+  </ul>
+  <div class="wim">→ Custody reforms unlock enterprise adoption, scaling Den's team wallet platform.</div>
+  <div class="sr">
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Opfn</h3>
+  <div class="hl">Coinbase AI wallets spur web3-native browser demand</div>
+  <ul>
+    <li>Coinbase AI agent wallets require decentralized browsing for autonomous execution.</li>
+    <li>Opfn web3 infrastructure positioned for agentic onchain interactions.</li>
+    <li>Ethereum ZK AI privacy proposals enhance browser security.</li>
+    <li>Regulatory thaw supports dApp browsing growth.</li>
+  </ul>
+  <div class="wim">→ AI agent proliferation necessitates Opfn's decentralized browser for seamless web3 access.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/coinbase-bets-on-autonomous-ai-as-agentic-wallets-go-live-details/" target="_blank">📎 Coinbase bets on autonomous AI as Agentic Wallets go live — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/ethereum-devs-propose-zero-knowledge-ai-api-privacy" target="_blank">📎 Ethereum Leaders Propose New System to Protect AI Privacy — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">SEC Crypto Task Force advances enterprise node APIs</div>
+  <ul>
+    <li>SEC launches Crypto Task Force for clear digital asset framework, aiding SOC 2 staking.</li>
+    <li>Validation Cloud enterprise blockchain benefits from terminated enforcement actions.</li>
+    <li>SAB 122 enables bank custody integration for node services.</li>
+    <li>GENIUS Act supports staking infrastructure compliance.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity accelerates enterprise blockchain adoption via Validation Cloud's APIs.</div>
+  <div class="sr">
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">EU digital identity aligns with tokenized asset compliance</div>
+  <ul>
+    <li>SEC tokenized securities framework requires verifiable credentials for ownership.</li>
+    <li>Spherity SSI automates compliance for eIDAS 2.0 digital wallets.</li>
+    <li>UK HSBC bond pilot demands KYC/AML via decentralized identity.</li>
+    <li>Clarity Act taxonomy reduces ambiguity for identity solutions.</li>
+  </ul>
+  <div class="wim">→ Tokenization boom elevates Spherity's role in compliant digital identity verification.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389557/uk-hsbc-tokenized-bond" target="_blank">📎 UK selects HSBC tokenized bond — The Block</a>
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">Ethereum ZK AI privacy boosts LLM data APIs</div>
+  <ul>
+    <li>Vitalik Buterin proposes ZK system for AI privacy on Ethereum, enhancing RAG workflows.</li>
+    <li>Kirha Context-as-a-Service connects LLMs to private data securely.</li>
+    <li>Coinbase AI wallets demand agentic data infrastructure.</li>
+    <li>Mistral AI Europe push highlights sovereign data needs.</li>
+  </ul>
+  <div class="wim">→ ZK AI advancements enable Kirha's secure data APIs for agentic enterprise workflows.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethereum-devs-propose-zero-knowledge-ai-api-privacy" target="_blank">📎 Ethereum Leaders Propose New System to Protect AI Privacy — Cointelegraph</a>
+    <a href="https://sifted.eu/articles/mistral-ai-sweden-data-centres-deepseek-donald-trump/" target="_blank">📎 How Mistral bounced back — Sifted</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tlon</h3>
+  <div class="hl">WhatsApp Russia block pushes P2P messaging alternatives</div>
+  <ul>
+    <li>WhatsApp accuses Russia of access restrictions, highlighting centralized comms risks.</li>
+    <li>Tlon Urbit user-owned data gains from decentralized communication demand.</li>
+    <li>X Money beta launch competes but underscores P2P payments integration.</li>
+    <li>Regulatory freedom aids sovereign data protocols.</li>
+  </ul>
+  <div class="wim">→ Centralized platform censorship accelerates migration to Tlon's decentralized messaging.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/whatsapp-accuses-russia-of-trying-to-block-it-to-push-state-backed-app" target="_blank">📎 WhatsApp Accuses Russia of Restricting Access — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/elon-musk-x-money-external-beta-live-next-1-2-months" target="_blank">📎 Elon Musk Announces X Money Limited Beta — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Nigeria SEC licensing benefits from global exchange thaw</div>
+  <ul>
+    <li>Paxful $4M fine underscores AML needs, but DOJ eases user-action targeting.</li>
+    <li>Busha compliant exchange gains from African USDT adoption parallels.</li>
+    <li>Thailand crypto derivatives approval signals emerging market momentum.</li>
+    <li>Clarity Act Clarity premium favors licensed platforms.</li>
+  </ul>
+  <div class="wim">→ US regulatory easing reduces compliance costs, strengthening Busha's African leadership.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/us-fines-paxful-4m-moving-funds-trafficking-fraud" target="_blank">📎 Paxful To Pay $4M — Cointelegraph</a>
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Salto X, Staex, River, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Deel-MoonPay stablecoin payroll launches in EU/UK</strong> — Validates instant cross-border payouts, reducing FX costs for remittance platforms amid GENIUS Act clarity.</div>
+  <div class="sig"><strong>Zerohash Monad USDC expands payment rails</strong> — High-throughput stablecoin support accelerates card issuing and on/off-ramps for global infra.</div>
+  <div class="sig"><strong>UK BNPL rules tighten credit oversight</strong> — Signals broader consumer protection push impacting no-fee cards and credit building products.</div>
+  <div class="sig"><strong>White House stablecoin meetings progress</strong> — Directs TradFi/crypto stakeholders toward market structure bill, easing 120+ country settlements.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/deel-partners-with-moonpay-to-roll-out-stablecoin-salary-payouts-in-europe" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Deel Partners with MoonPay — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389531/zerohash-monad-usdc-stablecoin-payments" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Zerohash adds Monad — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>BlackRock BUIDL lists on Uniswap</strong> — $2.1B tokenized Treasury fund enables direct DeFi trading, signaling institutional RWA adoption.</div>
+  <div class="sig"><strong>Ondo tokenizes US stocks via Chainlink</strong> — SPYon/QQQon/TSLAon on Ethereum advances securitization and yield-bearing assets.</div>
+  <div class="sig"><strong>Tether emerges as top T-bill buyer</strong> — USAT stablecoin drives Treasury demand, boosting regulated yield platforms.</div>
+  <div class="sig"><strong>UK HSBC pilots tokenized government bonds</strong> — Accelerates settlement times, validating sovereign RWA tokenization.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/blackrock-buidl-uniswap-institutional-defi-adoption" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BlackRock Brings BUIDL to Uniswap — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/ondo-integrates-chainlink-data-feeds-for-tokenized-stocks-on-ethereum-mainnet" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ondo Integrates Chainlink — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Coinbase AI agent wallets launch</strong> — Autonomous onchain execution demands multi-chain MEV and node infra.</div>
+  <div class="sig"><strong>SAB 122 eases crypto custody accounting</strong> — Enables banks to custody assets, scaling enterprise wallets and staking.</div>
+  <div class="sig"><strong>SEC terminates major crypto enforcements</strong> — Crypto Task Force prioritizes frameworks over litigation for infra providers.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Staex, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389524/coinbase-rolls-out-ai-tool-to-give-any-agent-a-wallet" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Coinbase rolls out AI tool — The Block</a>
+    <a href="https://www.conference-board.org/research/CED-Newsletters-Alerts/the-outlook-for-digital-assets-in-2026" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 The Outlook for Digital Assets in 2026 — Conference Board</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>Ethereum ZK AI privacy system proposed</strong> — Vitalik's initiative protects LLM data access, fueling agentic RAG APIs.</div>
+  <div class="sig"><strong>SEC tokenized framework eyes credentials</strong> — Demands verifiable identity for asset ownership records.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/ethereum-devs-propose-zero-knowledge-ai-api-privacy" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ethereum Leaders Propose ZK AI — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>WhatsApp faces Russia access blocks</strong> — Centralized risks drive P2P decentralized communication adoption.</div>
+  <div class="sig"><strong>X Money beta nears launch</strong> — Payments integration boosts user-owned social platforms.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/whatsapp-accuses-russia-of-trying-to-block-it-to-push-state-backed-app" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 WhatsApp Accuses Russia — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Paxful fined $4M for AML failures</strong> — Heightens compliance bar but DOJ eases user-targeted actions for licensed exchanges.</div>
+  <div class="sig"><strong>Thailand approves crypto derivatives</strong> — Emerging markets open institutional trading, paralleling African regulation.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389518/paxful-crypto-platform-fined-4-million-prosecutors-say-profited-moving-money-criminals" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Paxful fined $4 million — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>Crypto gaming trends in Norway 2026</strong> — Bitcoin casinos grow, signaling Web3 gaming market expansion.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://ambcrypto.com/bitcoin-casinos-and-crypto-gaming-in-norway-market-overview-and-trends-for-2026/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitcoin Casinos and Crypto Gaming in Norway — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series B</td><td><span class="tag">Payments/Exchange</span></td><td>Busha</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>BitGo</strong></td><td class="amt">$213M</td><td>IPO</td><td><span class="tag">Infrastructure/Custody</span></td><td>Validation Cloud</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>LMAX Group</strong></td><td class="amt">$150M</td><td>Strategic Investment</td><td><span class="tag">Payments/Exchange</span></td><td>Busha</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure/Compliance</span></td><td>Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>Anchorage</strong></td><td class="amt">Undisclosed</td><td>Growth</td><td><span class="tag">Infrastructure/Custody</span></td><td>Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 12, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
