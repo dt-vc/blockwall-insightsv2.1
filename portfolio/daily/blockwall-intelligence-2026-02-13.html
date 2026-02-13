@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-13</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 13, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>18</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>6</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">US GENIUS Act stablecoin rules advance with FDIC comment extension</div>
+  <ul>
+    <li>FDIC extended comment period for GENIUS Act rules on banks issuing payment stablecoins to May 18, signaling regulatory momentum for dollar-pegged digital assets critical to LATAM credit products.</li>
+    <li>Fiserv launched real-time US dollar settlement platform for digital asset firms, enabling continuous fiat-crypto conversions that directly supports no-fee credit card issuance for underbanked Mexicans.</li>
+    <li>CFTC updates stablecoin definition to include national trust banks as issuers, easing compliance for Mastercard-linked products amid MiCA-like US clarity push.</li>
+    <li>White House crypto meetings push market structure legislation including stablecoin yield discussions, potentially unlocking remittances and credit building in high-inflation LATAM corridors.</li>
+  </ul>
+  <div class="wim">→ Regulatory green lights for stablecoin issuance and fiat settlement accelerate Blu's credit card expansion by reducing FX and compliance friction for underbanked users.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings Crypto Policy Tracker</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv Launches US Dollar Settlement Platform</a>
+    <a href="https://www.hklaw.com/en/insights/media-entities/2026/02/legislating-cryptos-future" target="_blank">📎 Holland &amp; Knight Legislating Crypto's Future</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Stablecoin regs and fiat platforms boost cross-border remittances</div>
+  <ul>
+    <li>GENIUS Act implementation advances with FDIC extension, clarifying stablecoin issuance for remittance corridors targeting financial inclusion.</li>
+    <li>Fiserv's new USD settlement for digital assets enables instant fiat ramps, vital for Flyra's credit-enabled cross-border transfers.</li>
+    <li>CFTC stablecoin definition update supports trust bank issuers, aligning with global FX conversion needs in emerging markets.</li>
+    <li>White House pushes stablecoin-inclusive market structure bill, reducing barriers for instant settlement in remittance-heavy regions.</li>
+  </ul>
+  <div class="wim">→ Clearer US stablecoin rules lower compliance costs for Flyra's remittance-to-credit model, expanding reach in underbanked corridors.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings Crypto Policy Tracker</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv Platform</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Fiserv USD platform aids Visa/MC crypto card issuing</div>
+  <ul>
+    <li>Fiserv unveils real-time USD settlement for digital assets, streamlining on/off-ramps for white-label crypto debit cards.</li>
+    <li>GENIUS Act stablecoin rules progress, supporting collateral for Visa/Mastercard prepaid products via API.</li>
+    <li>CFTC advisory panel adds crypto execs, signaling pro-innovation rules for card-linked stablecoin programs.</li>
+    <li>Fed paper proposes crypto risk weights, easing capital requirements for uncleared derivatives in card infra.</li>
+  </ul>
+  <div class="wim">→ Fiat settlement and stablecoin clarity enable Kulipa to scale white-label cards with lower costs and faster issuance.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv</a>
+    <a href="https://cointelegraph.com/news/cftc-innovation-advisory-committee-includes-crypto-execs" target="_blank">📎 Cointelegraph CFTC Adds Crypto Execs</a>
+    <a href="https://www.federalreserve.gov/econres/feds/initial-margin-for-crypto-currencies-risks-in-uncleared-markets.htm" target="_blank">📎 Federal Reserve Crypto Margin Paper</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin settlement platforms enhance global FX infra</div>
+  <ul>
+    <li>Fiserv's USD platform for digital assets supports instant settlement across 120+ countries, core to Nilos' FX conversions.</li>
+    <li>GENIUS Act FDIC extension clarifies payment stablecoin issuance, aiding multi-currency global payments.</li>
+    <li>CFTC stablecoin revisions enable trust banks, boosting Nilos' instant settlement in regulated corridors.</li>
+    <li>White House market structure talks include stablecoin yields, relevant for high-volume FX processing.</li>
+  </ul>
+  <div class="wim">→ New fiat-crypto rails cut settlement times for Nilos' global payment infrastructure, improving margins on FX-heavy volumes.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings Tracker</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">CFTC panel and stablecoin rules support self-custodial IBAN cards</div>
+  <ul>
+    <li>CFTC adds crypto execs to innovation panel, promoting rules for wallet-linked debit cards and on/off-ramps.</li>
+    <li>Fiserv USD settlement platform facilitates virtual card issuance with self-custody compliance.</li>
+    <li>GENIUS Act advances stablecoin framework, enabling IBAN-stablecoin conversions for Paris-based ops.</li>
+    <li>Fed crypto risk model proposes distinct classifications, reducing barriers for uncleared wallet derivatives.</li>
+  </ul>
+  <div class="wim">→ Pro-innovation CFTC stance and fiat platforms validate Rebind's self-custodial wallet-to-card model under MiCA.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/cftc-innovation-advisory-committee-includes-crypto-execs" target="_blank">📎 Cointelegraph CFTC Panel</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv</a>
+    <a href="https://www.federalreserve.gov/econres/feds/initial-margin-for-crypto-currencies-risks-in-uncleared-markets.htm" target="_blank">📎 Fed Crypto Paper</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">GENIUS Act stablecoins target African diaspora remittances</div>
+  <ul>
+    <li>US GENIUS Act stablecoin rules clarify issuance, powering instant multi-currency delivery to Africa.</li>
+    <li>Fiserv platform enables USD settlements for diaspora senders, cutting costs on high-volume corridors.</li>
+    <li>CFTC pro-innovation push via advisory panel supports remittance-stablecoin integrations.</li>
+    <li>White House stablecoin yield discussions could lower fees for African instant transfers.</li>
+  </ul>
+  <div class="wim">→ Stablecoin regulatory progress directly enables Yousend's low-cost, instant remittances for African users.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings GENIUS Act</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Fed proposes crypto risk weights for institutional DeFi vaults</div>
+  <ul>
+    <li>Federal Reserve paper outlines distinct crypto risk class in SIMM for uncleared markets, aiding restaking strategies.</li>
+    <li>CFTC innovation panel with crypto execs signals clearer rules for structured DeFi products.</li>
+    <li>White House market structure bill advances, supporting institutional vaults amid ETH capitulation signals.</li>
+    <li>ETH ETF inflows and DEX volume uptick point to recovery, boosting restaking liquidity.</li>
+  </ul>
+  <div class="wim">→ Crypto-specific risk modeling lowers capital hurdles for Byzantine's institutional restaking vaults.</div>
+  <div class="sr">
+    <a href="https://www.federalreserve.gov/econres/feds/initial-margin-for-crypto-currencies-risks-in-uncleared-markets.htm" target="_blank">📎 Federal Reserve SIMM Crypto Paper</a>
+    <a href="https://cointelegraph.com/news/cftc-innovation-advisory-committee-includes-crypto-execs" target="_blank">📎 Cointelegraph CFTC Panel</a>
+    <a href="https://cointelegraph.com/news/ether-hidden-strength-why-institutional-demand-points-to-2-4k" target="_blank">📎 Cointelegraph ETH ETF Flows</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Stablecoin regs align with T-bill yield platforms</div>
+  <ul>
+    <li>GENIUS Act FDIC extension supports payment stablecoins as T-bill collateral under French bank custody.</li>
+    <li>CFTC stablecoin definition update enables regulated yield products with trust banks.</li>
+    <li>CME tokenized collateral plans signal institutional shift toward on-chain T-bills.</li>
+    <li>White House stablecoin yield talks address TradFi concerns, validating Spiko's model.</li>
+  </ul>
+  <div class="wim">→ Stablecoin clarity strengthens Spiko's regulated T-bill platform by enabling compliant daily interest payouts.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings Tracker</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings CME Tokenized Collateral</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">RWA tokenization advances with ETHZilla jet engines</div>
+  <ul>
+    <li>ETHZilla launches tokenized jet engine equity, exemplifying on-chain securitization of real assets.</li>
+    <li>Fed crypto risk paper proposes pegged/unpegged buckets, fitting loan pool tranching models.</li>
+    <li>CFTC panel promotes innovation in tokenized derivatives, bridging TradFi-DeFi.</li>
+    <li>Chainlink-Ondo integration boosts RWA oracle pricing for securitized pools.</li>
+  </ul>
+  <div class="wim">→ Tokenized RWA precedents and risk frameworks accelerate Tranched's on-chain loan securitization.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethzilla-tokenized-jet-engines-rwa-ethereum-liquidity-io" target="_blank">📎 Cointelegraph ETHZilla Tokenized Jets</a>
+    <a href="https://www.federalreserve.gov/econres/feds/initial-margin-for-crypto-currencies-risks-in-uncleared-markets.htm" target="_blank">📎 Fed Crypto SIMM</a>
+    <a href="https://ambcrypto.com/chainlink-teams-up-with-ondo-finance-to-tap-into-defis-utility-details/" target="_blank">📎 AMBCrypto Chainlink Ondo</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">Cap table SaaS benefits from tokenized equity trends</div>
+  <ul>
+    <li>ETHZilla's tokenized jet equity highlights demand for on-chain cap table management.</li>
+    <li>CME tokenized collateral initiatives require equity issuance tracking tools.</li>
+    <li>Europe's €24bn startup debt market grows, needing SaaS for tokenized secondaries.</li>
+    <li>CFTC innovation rules support equity tokenization platforms.</li>
+  </ul>
+  <div class="wim">→ RWA tokenization surge drives adoption of Salto X's cap table SaaS for compliant equity issuance.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethzilla-tokenized-jet-engines-rwa-ethereum-liquidity-io" target="_blank">📎 Cointelegraph ETHZilla</a>
+    <a href="https://sifted.eu/articles/whos-dominating-europes-24bn-startup-debt-market/" target="_blank">📎 Sifted Europe Startup Debt</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">CFTC withdraws event contracts limits, aiding MEV infra</div>
+  <ul>
+    <li>CFTC withdraws restrictive event contracts guidance, promoting derivatives innovation including order flow auctions.</li>
+    <li>Prediction markets under spotlight with SDNY focus, requiring MEV protection on multi-chain.</li>
+    <li>Fed SIMM crypto class supports uncleared derivatives risk management for MEV strategies.</li>
+    <li>White House market structure bill eyes blockchain oversight.</li>
+  </ul>
+  <div class="wim">→ Relaxed CFTC rules on derivatives boost Blink Labs' MEV protection across L2s and prediction markets.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings CFTC Withdrawal</a>
+    <a href="https://www.paulweiss.com/insights/client-memos/cftc-chairman-outlines-regulatory-agenda-for-prediction-markets-and-cryptocurrency-and-sdny-signals-focus-on-prediction-markets-fraud/" target="_blank">📎 Paul Weiss CFTC Agenda</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Corporate BTC treasury buys amid Binance SAFU shift</div>
+  <ul>
+    <li>Binance converts $1B SAFU to BTC, mirroring corporate treasury accumulation despite market fear.</li>
+    <li>Companies loading up on crypto as prices fall, validating onchain accounting for team wallets.</li>
+    <li>JPMorgan sees BTC support at $77k, positive on 2026 amid treasury adoption.</li>
+    <li>Russia eyes digital ruble but BRICS treasuries favor crypto alternatives.</li>
+  </ul>
+  <div class="wim">→ Treasury BTC accumulation trends reinforce Den's multi-sig platform for corporate onchain ops.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/binance-shifts-1b-safu-fund-into-bitcoin-is-btcs-bottom-forming/" target="_blank">📎 AMBCrypto Binance SAFU</a>
+    <a href="https://ambcrypto.com/fear-is-high-prices-are-falling-but-why-are-companies-loading-up-on-crypto/" target="_blank">📎 AMBCrypto Companies Loading Crypto</a>
+    <a href="https://www.theblock.co/post/389706/jpmorgan-bitcoin-support-77000-positive-crypto-2026" target="_blank">📎 The Block JPMorgan BTC</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise staking benefits from CFTC blockchain oversight</div>
+  <ul>
+    <li>CFTC Chair projects market structure bill soon, including blockchain node infra clarity.</li>
+    <li>White House crypto council advances DLT oversight for SOC 2 enterprise staking.</li>
+    <li>CME tokenized collateral on decentralized networks boosts node API demand.</li>
+    <li>Fed crypto risk class aids staking derivatives in uncleared markets.</li>
+  </ul>
+  <div class="wim">→ Regulatory push for blockchain infra supports Validation Cloud's enterprise node and staking services.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings White House</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings CME</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">eIDAS-like US crypto ID rules via CFTC/SEC hearings</div>
+  <ul>
+    <li>SEC hearing pushes accountability in crypto oversight, aligning with SSI compliance automation.</li>
+    <li>CFTC innovation panel includes AI/blockchain, relevant for verifiable credentials.</li>
+    <li>Prediction markets scrutiny requires KYC/SSI for German-regulated digital identity.</li>
+    <li>Crypto Task Force seeks input on custody and offerings, boosting VC standards.</li>
+  </ul>
+  <div class="wim">→ US regulatory hearings on crypto custody advance Spherity's SSI for EU-US compliance bridges.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings SEC Hearing</a>
+    <a href="https://www.sec.gov/featured-topics/crypto-task-force/crypto-task-force-written-input" target="_blank">📎 SEC Crypto Task Force</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">CFTC panel eyes AI-blockchain integration for data APIs</div>
+  <ul>
+    <li>CFTC IAC focuses on AI and blockchain breakthroughs, directly relevant to LLM data workflows.</li>
+    <li>Security concerns over autonomous AI agents highlight need for private data APIs.</li>
+    <li>White House meetings include TradFi-crypto on DLT+AI, aiding agentic RAG.</li>
+    <li>OpenClaw AI agent risks underscore Kirha's context service for secure workflows.</li>
+  </ul>
+  <div class="wim">→ Regulatory nod to AI-blockchain convergence validates Kirha's APIs connecting LLMs to private data.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389749/cftc-chair-selig-crypto-heavyweights-35-person-innovation-advisory-panel" target="_blank">📎 The Block CFTC Panel</a>
+    <a href="https://fortune.com/2026/02/12/openclaw-ai-agents-security-risks-beware/" target="_blank">📎 Fortune OpenClaw AI</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Prediction markets boom under relaxed CFTC rules</div>
+  <ul>
+    <li>CFTC withdraws event contracts limits, unleashing prediction markets and quest gamification.</li>
+    <li>SEC Chair flags prediction markets as priority amid legal focus.</li>
+    <li>SDNY signals fraud crackdown on prediction platforms, needing reward compliance tools.</li>
+    <li>DraftKings eyes predictions revenue, paralleling crypto quest-to-earn.</li>
+  </ul>
+  <div class="wim">→ Prediction market deregulation opens gamified community rewards for Zealy's crypto quests.</div>
+  <div class="sr">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings CFTC Withdrawal</a>
+    <a href="https://www.theblock.co/post/389714/sec-chair-atkins-calls-prediction-markets-a-huge-issue-amid-growing-legal-spotlight" target="_blank">📎 The Block SEC Atkins</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">US stablecoin regs aid African exchange adoption</div>
+  <ul>
+    <li>GENIUS Act stablecoin framework supports USDT-like assets on Nigerian SEC platforms.</li>
+    <li>Fiserv USD settlements enable fiat on/off-ramps for emerging exchanges.</li>
+    <li>CFTC pro-crypto panel boosts licensing clarity for African crypto hubs.</li>
+    <li>Coinbase loss amid slump underscores need for localized exchanges like Busha.</li>
+  </ul>
+  <div class="wim">→ Stablecoin and fiat rail progress accelerates Busha's licensed trading volumes in Nigeria.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank">📎 Cointelegraph Fiserv</a>
+    <a href="https://www.dlnews.com/articles/markets/coinbase-revenue-slid-but-the-company-pushes-for-tokenised-everything/" target="_blank">📎 DL News Coinbase Loss</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spectarium</h3>
+  <div class="hl">Prediction markets and DraftKings signal gaming revenue shift</div>
+  <ul>
+    <li>DraftKings forecasts $6.9B revenue on predictions investments, boosting blockchain gaming.</li>
+    <li>CFTC relaxes event contracts for prediction/gaming derivatives.</li>
+    <li>SEC prediction focus requires compliant Web3 gaming rewards.</li>
+    <li>Gaming studios eye mobile RPG amid regulatory tailwinds.</li>
+  </ul>
+  <div class="wim">→ Gaming-prediction convergence creates opportunities for Spectarium's cross-platform RPG with crypto elements.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389739/draftkings-forecasts-6-9-billion-revenue-guidance-on-expected-investment-in-draftkings-predictions" target="_blank">📎 The Block DraftKings</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank">📎 Paul Hastings CFTC</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Opfn, Staex, River, Tlon</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>GENIUS Act FDIC extends stablecoin comment period to May</strong> — Clarifies bank issuance rules, unlocking fiat-crypto ramps for cards and remittances across LATAM/Africa.</div>
+  <div class="sig"><strong>Fiserv launches real-time USD settlement for digital assets</strong> — Enables instant conversions vital for global payments, FX, and card issuing in 120+ countries.</div>
+  <div class="sig"><strong>CFTC updates payment stablecoin definition for trust banks</strong> — Eases no-action relief, supporting compliant on/off-ramps and multi-currency products.</div>
+  <div class="sig"><strong>White House convenes TradFi-crypto on stablecoin yields</strong> — Addresses deposit competition, advancing market structure bill for cross-border infra.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Paul Hastings Policy Tracker</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Cointelegraph Fiserv</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Fed proposes distinct crypto risk class in SIMM framework</strong> — Splits pegged/unpegged assets with calibrated weights, aiding DeFi vaults and RWA tranching.</div>
+  <div class="sig"><strong>ETHZilla pivots to tokenized jet engine equity on Ethereum</strong> — Expands RWA liquidity, signaling securitization growth beyond holding strategies.</div>
+  <div class="sig"><strong>CME plans tokenized collateral on decentralized networks</strong> — Institutional push for on-chain T-bills and equity issuance infrastructure.</div>
+  <div class="sig"><strong>Chainlink-Ondo integration for tokenized stock pricing</strong> — Oracle-grade data shifts RWAs toward DeFi utility and cap table tokenization.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.federalreserve.gov/econres/feds/initial-margin-for-crypto-currencies-risks-in-uncleared-markets.htm" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Federal Reserve SIMM Paper</a>
+    <a href="https://cointelegraph.com/news/ethzilla-tokenized-jet-engines-rwa-ethereum-liquidity-io" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Cointelegraph ETHZilla</a>
+    <a href="https://ambcrypto.com/chainlink-teams-up-with-ondo-finance-to-tap-into-defis-utility-details/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 AMBCrypto Chainlink</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>CFTC Chair eyes market structure bill for blockchain in months</strong> — Promotes oversight of DLT infra including MEV, nodes, and treasuries.</div>
+  <div class="sig"><strong>Binance shifts $1B SAFU to BTC amid corporate treasury buys</strong> — Fear market sees firms accumulate, boosting onchain wallet and node demand.</div>
+  <div class="sig"><strong>ETH ETF inflows signal network recovery to $2.4K</strong> — DEX volume surge supports staking, MEV, and enterprise cloud infra.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Paul Hastings CFTC Selig</a>
+    <a href="https://ambcrypto.com/binance-shifts-1b-safu-fund-into-bitcoin-is-btcs-bottom-forming/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 AMBCrypto Binance SAFU</a>
+    <a href="https://cointelegraph.com/news/ether-hidden-strength-why-institutional-demand-points-to-2-4k" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Cointelegraph ETH Flows</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>CFTC IAC targets AI-blockchain innovation</strong> — Panel shapes oversight for agentic workflows and data APIs.</div>
+  <div class="sig"><strong>SEC hearing reforms crypto custody and ETPs</strong> — Shifts from enforcement to accountability, aiding SSI compliance.</div>
+  <div class="sig"><strong>OpenClaw AI agents raise security flags</strong> — Autonomous tools demand private data connections for safe RAG.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389749/cftc-chair-selig-crypto-heavyweights-35-person-innovation-advisory-panel" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 The Block CFTC Panel</a>
+    <a href="https://fortune.com/2026/02/12/openclaw-ai-agents-security-risks-beware/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Fortune OpenClaw</a>
+    <a href="https://www.sec.gov/featured-topics/crypto-task-force/crypto-task-force-written-input" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 SEC Task Force</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>CFTC withdraws event contracts restrictions</strong> — Frees prediction markets, enhancing quest-to-earn and gamification.</div>
+  <div class="sig"><strong>SEC Chair prioritizes prediction markets regulation</strong> — Legal spotlight drives compliant community reward platforms.</div>
+  <div class="portf">Portfolio relevance: Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Paul Hastings Withdrawal</a>
+    <a href="https://www.theblock.co/post/389714/sec-chair-atkins-calls-prediction-markets-a-huge-issue-amid-growing-legal-spotlight" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 The Block SEC Atkins</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Stablecoin platforms lower on-ramps for emerging markets</strong> — Fiserv and GENIUS Act aid licensed exchanges vs. centralized slumps.</div>
+  <div class="sig"><strong>Coinbase Q4 loss highlights localized exchange resilience</strong> — Retail weakness boosts SEC-compliant African platforms.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/markets/coinbase-revenue-slid-but-the-company-pushes-for-tokenised-everything/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 DL News Coinbase</a>
+    <a href="https://cointelegraph.com/news/fiserv-settlement-digital-asset-companies" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Cointelegraph Fiserv</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>DraftKings $6.9B forecast on predictions investments</strong> — Gaming-prediction fusion creates Web3 reward opportunities.</div>
+  <div class="sig"><strong>CFTC eases derivatives for gaming event markets</strong> — Regulatory thaw supports blockchain RPG monetization.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389739/draftkings-forecasts-6-9-billion-revenue-guidance-on-expected-investment-in-draftkings-predictions" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 The Block DraftKings</a>
+    <a href="https://www.paulhastings.com/insights/crypto-policy-tracker/white-house-hosts-crypto-meetings-treasury-secretary-addresses-genius-act-implementation" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Paul Hastings CFTC</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>OSL Group</strong></td><td class="amt">$200M</td><td>Equity financing</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Bleap</strong></td><td class="amt">$6M</td><td>Seed</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>AetheriumX</strong></td><td class="amt">$8M</td><td>Strategic</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Revolut</strong></td><td class="amt">$3B</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Kraken</strong></td><td class="amt">$800M</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Ripple</strong></td><td class="amt">$500M</td><td>Late-stage</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 13, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
