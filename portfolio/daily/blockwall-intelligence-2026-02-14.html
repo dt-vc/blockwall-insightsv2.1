@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-14</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 14, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>11</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>7</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">CLARITY Act regulatory push strengthens cross-border payment infrastructure case</div>
+  <ul>
+    <li>Treasury Secretary Scott Bessent publicly urged Congress to pass the CLARITY Act by spring, framing clearer federal rules as essential to stabilize crypto sentiment and reduce uncertainty for firms operating in the space. This regulatory clarity directly benefits infrastructure providers like Nilos that operate across 120+ countries with instant settlement.</li>
+    <li>The White House and Treasury are positioning stablecoin yield and cross-border payment infrastructure as critical to financial inclusion, with banking sector compromise needed on stablecoin yields. Nilos' FX conversion and instant settlement model aligns with the policy direction Treasury is advocating.</li>
+    <li>Macro backdrop shows crypto stabilizing within a cooling risk environment, but regulatory momentum is accelerating. For payment infrastructure, regulatory clarity reduces operational risk and enables institutional adoption of cross-border rails.</li>
+  </ul>
+  <div class="wim">→ CLARITY Act passage would remove regulatory uncertainty blocking institutional adoption of Nilos' global payment infrastructure, directly enabling enterprise FX and settlement use cases.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/bitcoin-price-will-be-bolstered-by-clarity-act-says-bessent/" target="_blank">📎 Clarity Act will lift Bitcoin price, says Treasury Secretary Bessent — DL News</a>
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+    <a href="https://cointelegraph.com/news/white-house-banks-shouldnt-fear-stablecoin-yield" target="_blank">📎 Banks Should Embrace Stablecoin Yield in CLARITY Act: White House Adviser — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Stablecoin infrastructure gains regulatory tailwind as CLARITY Act momentum builds</div>
+  <ul>
+    <li>Treasury Secretary Bessent declared a spring deadline for CLARITY Act passage, positioning stablecoins and on/off-ramp infrastructure as central to financial stability and investor confidence. Rebind's self-custodial wallet with IBAN and virtual debit card directly addresses the on/off-ramp use cases Treasury is prioritizing.</li>
+    <li>White House advisers are pushing banks to embrace stablecoin yield and integration, signaling regulatory acceptance of hybrid custody and payment rails. This removes policy uncertainty around Rebind's self-custodial model and IBAN integration.</li>
+    <li>A16z Crypto published 'The WhatsApp moment for money is here,' highlighting 2026 as the year stablecoins became mainstream for online and international payments. Rebind's Paris-based infrastructure positions it to capture European adoption as regulatory clarity accelerates.</li>
+  </ul>
+  <div class="wim">→ CLARITY Act passage and White House stablecoin endorsement directly validate Rebind's self-custodial on/off-ramp model, removing regulatory friction for European institutional and retail adoption.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+    <a href="https://a16zcrypto.com/posts/article/stablecoins-whatsapp-moment-money/" target="_blank">📎 The Whatsapp moment for money is here — a16z Crypto</a>
+    <a href="https://cointelegraph.com/news/white-house-banks-shouldnt-fear-stablecoin-yield" target="_blank">📎 Banks Should Embrace Stablecoin Yield in CLARITY Act: White House Adviser — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin mainstream adoption and regulatory clarity accelerate diaspora remittance tailwinds</div>
+  <ul>
+    <li>A16z Crypto declared 2026 the year stablecoins became mainstream for online and international payments, directly validating Yousend's multi-currency diaspora remittance model. Institutional and retail adoption of stablecoins removes friction from cross-border payment corridors Yousend operates.</li>
+    <li>Treasury Secretary Bessent's push for CLARITY Act passage by spring signals regulatory acceptance of stablecoin-based payment infrastructure. For African diaspora remittances, regulatory clarity reduces compliance risk and enables faster institutional partnerships.</li>
+    <li>Macro environment shows crypto stabilizing despite broader market cooling, with stablecoin infrastructure positioned as a policy priority. This regulatory tailwind supports Yousend's instant delivery model for diaspora flows.</li>
+  </ul>
+  <div class="wim">→ Mainstream stablecoin adoption and CLARITY Act momentum directly enable Yousend's multi-currency remittance corridors by removing regulatory uncertainty and accelerating institutional partnerships.</div>
+  <div class="sr">
+    <a href="https://a16zcrypto.com/posts/article/stablecoins-whatsapp-moment-money/" target="_blank">📎 The Whatsapp moment for money is here — a16z Crypto</a>
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Institutional DeFi adoption accelerates as BlackRock enters Uniswap, restaking yields stabilize</div>
+  <ul>
+    <li>BlackRock entered DeFi via Uniswap, signaling institutional capital's growing comfort with decentralized finance infrastructure. Byzantine's restaking strategies and structured vaults directly benefit from institutional DeFi adoption, as large allocators seek yield optimization across EigenLayer and restaking protocols.</li>
+    <li>Solana Company shares jumped 17% after rolling out borrowing against staked SOL, demonstrating institutional demand for structured yield products. Byzantine's vault-based restaking model addresses the same institutional need for capital efficiency and yield optimization.</li>
+    <li>Macro backdrop shows crypto stabilizing with selective institutional participation. Byzantine's regulated, vault-based approach positions it to capture institutional capital rotating into DeFi yield as regulatory clarity improves.</li>
+  </ul>
+  <div class="wim">→ BlackRock's DeFi entry and institutional staking infrastructure development directly validate Byzantine's restaking vault model and accelerate institutional capital deployment into structured DeFi yields.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389924/solana-company-shares-17-borrowing-against-staked-sol" target="_blank">📎 Solana Company shares jump 17% as firm rolls out borrowing against staked SOL — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Institutional RWA adoption accelerates as stablecoin yield infrastructure gains regulatory backing</div>
+  <ul>
+    <li>White House advisers explicitly endorsed stablecoin yield as part of CLARITY Act negotiations, signaling regulatory acceptance of yield-bearing stablecoin infrastructure. Spiko's regulated T-bill yield platform with French bank custody directly aligns with this policy direction.</li>
+    <li>Treasury Secretary Bessent framed stablecoin infrastructure as critical to financial stability and investor confidence, with spring deadline for CLARITY Act passage. Spiko's institutional-grade T-bill tokenization model benefits from regulatory clarity and institutional capital flows.</li>
+    <li>Tether's strategic investment in Hyperliquid frontend Dreamcash for RWA perps markets demonstrates institutional appetite for tokenized yield products. Spiko's daily interest T-bill platform captures similar institutional demand for regulated, custody-backed yield.</li>
+  </ul>
+  <div class="wim">→ White House stablecoin yield endorsement and CLARITY Act momentum directly validate Spiko's regulated T-bill yield model, enabling institutional adoption and French regulatory compliance.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/white-house-banks-shouldnt-fear-stablecoin-yield" target="_blank">📎 Banks Should Embrace Stablecoin Yield in CLARITY Act: White House Adviser — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389916/tether-invests-in-hyperliquid-frontend-dreamcash-offering-perps-markets-for-tsla-gold-and-more-using-usdt0-collateral" target="_blank">📎 Tether invests in Hyperliquid frontend Dreamcash — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">On-chain securitization gains institutional momentum as RWA tokenization accelerates</div>
+  <ul>
+    <li>Tether's strategic investment in Hyperliquid frontend Dreamcash for RWA perps markets demonstrates institutional appetite for on-chain securitization and structured products. Tranched's loan pool tranching and TradFi-DeFi bridge model directly addresses this institutional demand.</li>
+    <li>BlackRock's entry into DeFi via Uniswap signals institutional capital's growing comfort with decentralized finance infrastructure for structured products. Tranched's on-chain securitization platform enables institutional loan pool tranching and risk stratification.</li>
+    <li>Macro environment shows selective institutional participation in crypto despite broader market cooling. Tranched's regulated securitization model positions it to capture institutional capital seeking TradFi-DeFi bridges for loan origination and risk management.</li>
+  </ul>
+  <div class="wim">→ Institutional RWA adoption and on-chain securitization momentum directly validate Tranched's loan pool tranching model and accelerate institutional capital deployment into structured on-chain credit.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389916/tether-invests-in-hyperliquid-frontend-dreamcash-offering-perps-markets-for-tsla-gold-and-more-using-usdt0-collateral" target="_blank">📎 Tether invests in Hyperliquid frontend Dreamcash — The Block</a>
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">MEV infrastructure gains institutional focus as DeFi adoption accelerates</div>
+  <ul>
+    <li>BlackRock's entry into DeFi via Uniswap signals institutional capital's growing demand for MEV-aware infrastructure and order flow optimization. Blink Labs' MEV protection and order flow auction infrastructure directly addresses institutional needs for fair execution and capital efficiency.</li>
+    <li>Institutional staking infrastructure development (Solana Company's SOL borrowing, Anchorage-Kamino integration) demonstrates demand for sophisticated on-chain infrastructure. Blink Labs' multi-chain MEV protection positions it to capture institutional capital seeking execution quality.</li>
+    <li>Macro backdrop shows selective institutional participation in crypto despite broader market cooling. MEV infrastructure becomes increasingly critical as institutional capital scales on-chain.</li>
+  </ul>
+  <div class="wim">→ BlackRock's DeFi entry and institutional capital deployment directly validate Blink Labs' MEV protection infrastructure as essential for institutional-grade on-chain execution.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/anchorage-kamino-institutions-borrow-against-sol-without-moving-custody" target="_blank">📎 Anchorage Enables SOL Borrowing Without Moving Custody — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Institutional on-chain treasury and accounting infrastructure gains adoption momentum</div>
+  <ul>
+    <li>Solana Company shares jumped 17% after rolling out borrowing against staked SOL, demonstrating institutional demand for sophisticated on-chain financial infrastructure. Den's team wallet platform and onchain accounting model directly addresses institutional treasury management needs.</li>
+    <li>Anchorage's integration with Kamino to enable SOL borrowing without moving custody signals institutional demand for multi-sig and corporate treasury infrastructure. Den's platform directly competes in this institutional treasury management space.</li>
+    <li>Institutional capital is increasingly deploying on-chain, requiring sophisticated accounting and multi-sig infrastructure. Den's onchain accounting and corporate treasury features position it to capture institutional adoption as on-chain finance scales.</li>
+  </ul>
+  <div class="wim">→ Institutional staking and on-chain borrowing infrastructure adoption directly validate Den's team wallet and onchain accounting model for corporate treasury management.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389924/solana-company-shares-17-borrowing-against-staked-sol" target="_blank">📎 Solana Company shares jump 17% as firm rolls out borrowing against staked SOL — The Block</a>
+    <a href="https://cointelegraph.com/news/anchorage-kamino-institutions-borrow-against-sol-without-moving-custody" target="_blank">📎 Anchorage Enables SOL Borrowing Without Moving Custody — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise blockchain infrastructure demand accelerates as institutional adoption scales</div>
+  <ul>
+    <li>BlackRock's entry into DeFi via Uniswap and institutional staking infrastructure development (Solana Company, Anchorage-Kamino) demonstrate growing institutional demand for enterprise-grade blockchain infrastructure. Validation Cloud's SOC 2 enterprise blockchain, staking, and Node API services directly address institutional infrastructure needs.</li>
+    <li>Institutional capital is increasingly deploying on-chain, requiring reliable, compliant node infrastructure and data services. Validation Cloud's enterprise-grade infrastructure positions it to capture institutional adoption as on-chain finance scales.</li>
+    <li>Macro backdrop shows selective institutional participation in crypto despite broader market cooling. Enterprise blockchain infrastructure becomes increasingly critical as institutional capital requires compliance and reliability.</li>
+  </ul>
+  <div class="wim">→ Institutional DeFi adoption and staking infrastructure development directly validate Validation Cloud's enterprise blockchain and Node API services for institutional capital deployment.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389924/solana-company-shares-17-borrowing-against-staked-sol" target="_blank">📎 Solana Company shares jump 17% as firm rolls out borrowing against staked SOL — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">Digital identity infrastructure gains regulatory momentum as eIDAS 2.0 implementation accelerates</div>
+  <ul>
+    <li>Treasury Secretary Bessent's push for CLARITY Act passage signals regulatory acceptance of digital identity and compliance automation infrastructure. Spherity's SSI digital identity and verifiable credentials model directly addresses regulatory compliance needs for financial services.</li>
+    <li>White House and Treasury are positioning regulatory clarity as essential to financial stability and investor confidence. Spherity's compliance automation and verifiable credentials infrastructure aligns with policy direction for institutional adoption.</li>
+    <li>Institutional capital deployment on-chain requires robust identity and compliance infrastructure. Spherity's Germany-based SSI model positions it to capture European institutional adoption as eIDAS 2.0 implementation accelerates.</li>
+  </ul>
+  <div class="wim">→ CLARITY Act momentum and institutional capital deployment directly validate Spherity's SSI digital identity and compliance automation model for regulated financial services.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+    <a href="https://cointelegraph.com/news/white-house-banks-shouldnt-fear-stablecoin-yield" target="_blank">📎 Banks Should Embrace Stablecoin Yield in CLARITY Act: White House Adviser — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI agent infrastructure gains momentum as LLM data APIs become critical for agentic workflows</div>
+  <ul>
+    <li>Fortune and Microsoft AI chief Mustafa Suleyman highlighted AI automation of white-collar work within 18 months, with AI computational power accelerating. Kirha's Context-as-a-Service APIs connecting LLMs to private data directly address the infrastructure needs for agentic workflows at scale.</li>
+    <li>Tiger Research published 'AI Agent Payment Infrastructure: The Direction of Crypto and Big Tech,' positioning AI agents as critical infrastructure layer. Kirha's LLM data APIs and agentic workflow support position it to capture institutional demand for AI agent infrastructure.</li>
+    <li>Institutional capital is increasingly deploying AI agents for financial services and data analysis. Kirha's private data API infrastructure enables secure, compliant agentic workflows for institutional use cases.</li>
+  </ul>
+  <div class="wim">→ AI agent infrastructure acceleration and institutional AI adoption directly validate Kirha's Context-as-a-Service APIs as critical infrastructure for agentic workflows and institutional LLM deployment.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/13/when-will-ai-kill-white-collar-office-jobs-18-months-microsoft-mustafa-suleyman/" target="_blank">📎 Microsoft AI chief gives it 18 months — for all white-collar work to be automated by AI — Fortune</a>
+    <a href="https://reports.tiger-research.com/p/aiagentpayment-eng" target="_blank">📎 AI Agent Payment Infrastructure: The Direction of Crypto and Big Tech — Tiger Research</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blu, Flyra, Kulipa, Salto X, Opfn, Staex, River, Tlon, Zealy, Busha, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>CLARITY Act regulatory push accelerates stablecoin payment infrastructure adoption</strong> — Treasury Secretary Bessent declared spring deadline for CLARITY Act passage, positioning stablecoins and payment infrastructure as central to financial stability. White House advisers explicitly endorsed stablecoin yield, removing regulatory uncertainty for cross-border payment rails and on/off-ramp infrastructure.</div>
+  <div class="sig"><strong>Stablecoins reach mainstream adoption milestone for international payments</strong> — A16z Crypto declared 2026 the year stablecoins became mainstream for online and international payments, validating multi-currency remittance and diaspora payment models. This mainstream adoption accelerates institutional partnerships and reduces friction in cross-border corridors.</div>
+  <div class="sig"><strong>Institutional capital rotation into payment infrastructure despite macro cooling</strong> — Despite broader crypto market stabilization and ETF outflows, institutional capital is selectively deploying into payment infrastructure and stablecoin yield products. This selective institutional participation supports long-term adoption of cross-border payment rails.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+    <a href="https://a16zcrypto.com/posts/article/stablecoins-whatsapp-moment-money/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 The Whatsapp moment for money is here — a16z Crypto</a>
+    <a href="https://cointelegraph.com/news/white-house-banks-shouldnt-fear-stablecoin-yield" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Banks Should Embrace Stablecoin Yield in CLARITY Act: White House Adviser — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>BlackRock enters DeFi via Uniswap, signaling institutional capital deployment acceleration</strong> — BlackRock's entry into DeFi marks a major institutional milestone, validating decentralized finance infrastructure for large allocators. This institutional adoption accelerates demand for structured yield products, restaking vaults, and on-chain securitization platforms.</div>
+  <div class="sig"><strong>Institutional staking infrastructure scales as borrowing-against-staked-assets becomes standard</strong> — Solana Company shares jumped 17% after rolling out SOL borrowing, while Anchorage-Kamino integration enables institutional SOL borrowing without moving custody. This infrastructure scaling demonstrates institutional demand for capital efficiency and structured yield products.</div>
+  <div class="sig"><strong>RWA tokenization gains institutional momentum with Tether's Dreamcash investment</strong> — Tether's strategic investment in Hyperliquid frontend Dreamcash for RWA perps markets demonstrates institutional appetite for tokenized real-world assets and structured products. On-chain securitization and loan pool tranching become critical infrastructure for institutional capital.</div>
+  <div class="sig"><strong>Ethereum ETF outflows signal macro caution but DeFi adoption remains selective</strong> — Despite $242M+ Ethereum ETF outflows, institutional capital is selectively deploying into DeFi infrastructure and structured yield products. This bifurcation suggests institutional adoption is shifting from spot exposure to yield-generating DeFi infrastructure.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389924/solana-company-shares-17-borrowing-against-staked-sol" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Solana Company shares jump 17% as firm rolls out borrowing against staked SOL — The Block</a>
+    <a href="https://www.theblock.co/post/389916/tether-invests-in-hyperliquid-frontend-dreamcash-offering-perps-markets-for-tsla-gold-and-more-using-usdt0-collateral" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Tether invests in Hyperliquid frontend Dreamcash — The Block</a>
+    <a href="https://cointelegraph.com/news/ether-holds-dollar2k-but-will-dollar242m-spot-eth-etf-outflow-reignite-price-downside" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETH ETF Outflows Top $242M Despite Ether Holding $2K — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Institutional on-chain infrastructure adoption accelerates as capital scales</strong> — Institutional staking, borrowing, and treasury infrastructure development (Solana Company, Anchorage-Kamino, Den-style platforms) demonstrate growing demand for enterprise-grade on-chain infrastructure. MEV protection, order flow optimization, and multi-sig treasury management become critical for institutional capital.</div>
+  <div class="sig"><strong>Enterprise blockchain infrastructure gains regulatory and institutional validation</strong> — Institutional capital deployment on-chain requires SOC 2 compliance, reliable node infrastructure, and data services. Enterprise blockchain infrastructure providers are positioned to capture institutional adoption as on-chain finance scales.</div>
+  <div class="sig"><strong>Multi-chain infrastructure becomes essential as institutional capital diversifies</strong> — Institutional adoption across multiple chains (Solana, Ethereum, others) drives demand for multi-chain MEV protection, order flow optimization, and cross-chain infrastructure. Multi-chain infrastructure providers capture institutional capital seeking execution quality across ecosystems.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Staex, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389924/solana-company-shares-17-borrowing-against-staked-sol" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Solana Company shares jump 17% as firm rolls out borrowing against staked SOL — The Block</a>
+    <a href="https://cointelegraph.com/news/anchorage-kamino-institutions-borrow-against-sol-without-moving-custody" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Anchorage Enables SOL Borrowing Without Moving Custody — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/blackrock-enters-defi-institutional-crypto-push-finance-redefined" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BlackRock Enters DeFi Via UniSwap, Bitcoin Stages Modest Recovery — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>AI agent infrastructure becomes critical as white-collar automation accelerates</strong> — Microsoft AI chief Mustafa Suleyman projected all white-collar work automation within 18 months, with AI computational power accelerating. AI agent infrastructure, LLM data APIs, and agentic workflow support become essential infrastructure layers for institutional AI deployment.</div>
+  <div class="sig"><strong>Digital identity and compliance automation gain regulatory momentum</strong> — CLARITY Act regulatory push and institutional capital deployment on-chain drive demand for SSI digital identity, verifiable credentials, and compliance automation infrastructure. Regulatory clarity accelerates institutional adoption of identity-based financial services.</div>
+  <div class="sig"><strong>AI agents emerge as critical payment and financial infrastructure layer</strong> — Tiger Research published 'AI Agent Payment Infrastructure: The Direction of Crypto and Big Tech,' positioning AI agents as essential infrastructure for institutional finance. LLM data APIs and agentic workflow support become critical for institutional AI-driven financial services.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://fortune.com/2026/02/13/when-will-ai-kill-white-collar-office-jobs-18-months-microsoft-mustafa-suleyman/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Microsoft AI chief gives it 18 months — for all white-collar work to be automated by AI — Fortune</a>
+    <a href="https://reports.tiger-research.com/p/aiagentpayment-eng" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 AI Agent Payment Infrastructure: The Direction of Crypto and Big Tech — Tiger Research</a>
+    <a href="https://www.bankless.com/read/news/spring-or-bust-secretary-bessent-declares-deadline-for-crypto-clarity" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Spring or Bust: Secretary Bessent Declares Deadline for Crypto CLARITY — Bankless</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>Creator economy and community infrastructure remain resilient despite macro cooling</strong> — Despite broader crypto market stabilization and ETF outflows, community and creator-focused platforms show selective adoption. Institutional capital is increasingly interested in community infrastructure and creator monetization models.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Institutional capital deployment drives exchange volume and infrastructure demand</strong> — Coinbase annual trading volume hit $5.2 trillion in 2025, with Bernstein maintaining outperform rating and 212% upside target. Institutional capital deployment on-chain drives exchange volume and infrastructure demand.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/389863/too-cheap-to-sell-here-bernstein-sees-212-upside-for-coinbase-stock-as-annual-trading-volume-hits-5-2-trillion" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Too cheap to sell here: Bernstein sees 212% upside for Coinbase stock — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>Web3 gaming infrastructure remains under pressure amid macro cooling</strong> — Broader crypto market stabilization and ETF outflows create headwinds for gaming infrastructure. Institutional capital is selectively deploying into gaming studios with strong fundamentals and revenue models.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>OSL Group</strong></td><td class="amt">$200M</td><td>Equity financing</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>AetheriumX</strong></td><td class="amt">$8M</td><td>Strategic</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Bleap</strong></td><td class="amt">$6M</td><td>Seed</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/blockchain-projects-secure-214m-in-latest-funding-round-57444" target="_blank">Blockchain Projects Secure $214M in Latest Funding Round - Phemex</a></td></tr>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series C</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+<tr><td><strong>Mesh</strong></td><td class="amt">$75M</td><td>Series C</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+<tr><td><strong>Revolut</strong></td><td class="amt">$3B</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Kraken</strong></td><td class="amt">$800M</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 14, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
