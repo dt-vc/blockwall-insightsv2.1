@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-15</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 15, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>15</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>6</b><span>Sector Digests</span></div>
+  <div class="stat"><b>7</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">X platform to launch in-app crypto trading in weeks</div>
+  <ul>
+    <li>X's upcoming Smart Cashtags feature will enable direct crypto trading from timelines, potentially onboarding 1B users to platforms like Kulipa's white-label Visa/Mastercard crypto cards.</li>
+    <li>This mainstream adoption catalyst aligns with Kulipa's API-powered debit card issuance for seamless crypto-to-fiat spending.</li>
+    <li>Regulatory momentum from CLARITY Act and ETF filings creates favorable environment for card programs.</li>
+    <li>Wintermute's U.S. leadership expansion signals maturing market making infrastructure supporting crypto payments.</li>
+  </ul>
+  <div class="wim">→ Accelerates user acquisition for Kulipa's crypto debit cards via social trading integration and institutional liquidity growth.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X to launch 'Smart Cashtags' — The Block</a>
+    <a href="https://www.dlnews.com/articles/people-culture/crypto-trading-finally-coming-to-x-twitter/" target="_blank">📎 Crypto trading headed to X — DL News</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute fortifies U.S. leadership — Wintermute</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 ‘We’ll get it done’: CLARITY Act — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">CLARITY Act advances as key regulatory unlock for payments</div>
+  <ul>
+    <li>White House endorsement of CLARITY Act promises clearer rules for stablecoins and digital assets, directly benefiting Nilos' global FX and instant settlement across 120+ countries.</li>
+    <li>X's crypto trading rollout will drive cross-border volume, where Nilos' infrastructure excels in multi-currency conversions.</li>
+    <li>Trump Media's ETF filings signal institutional inflows into crypto payments rails.</li>
+    <li>Benchmark's Coinbase analysis highlights diversified crypto business resilience amid market pressure.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity boosts Nilos' competitive edge in global payment infra amid rising on/off-ramp demand from social trading.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 ‘We’ll get it done’: White House CLARITY Act — AMBCrypto</a>
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://www.dlnews.com/articles/markets/trump-media-files-for-bitcoin-ethereum-and-cro-etfs/" target="_blank">📎 Trump Media files crypto ETFs — DL News</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark cuts Coinbase target — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Self-custodial wallets poised for X trading boom</div>
+  <ul>
+    <li>X's in-app crypto trading via Smart Cashtags will surge demand for secure on/off-ramps and IBAN-linked wallets like Rebind's Paris-based solution.</li>
+    <li>Institutional hires at Wintermute strengthen U.S. liquidity for European wallets navigating MiCA.</li>
+    <li>CLARITY Act progress reduces compliance hurdles for self-custodial debit card issuance.</li>
+    <li>ARK Invest's Coinbase buying reflects sustained exchange infrastructure supporting wallet integrations.</li>
+  </ul>
+  <div class="wim">→ X's 1B-user trading feature directly fuels Rebind's virtual card and on-ramp growth in compliant EU markets.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags launch — The Block</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute U.S. appointments — Wintermute</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act unlock — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/ark-invest-buys-coinbase-15m-after-selling" target="_blank">📎 ARK buys Coinbase shares — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Institutional DeFi gains from ETF filings and market resilience</div>
+  <ul>
+    <li>Trump Media's Bitcoin and Ether ETF applications highlight growing TradFi interest in on-chain strategies like Byzantine's restaking vaults.</li>
+    <li>Benchmark notes Coinbase's diversified durability, paralleling institutional DeFi's maturation amid volatility.</li>
+    <li>Wintermute's senior U.S. hires bolster liquidity for structured products and vaults.</li>
+    <li>Ethereum supply tightening supports yield-generating restaking protocols.</li>
+  </ul>
+  <div class="wim">→ ETF momentum and liquidity improvements position Byzantine's institutional vaults for increased AUM inflows.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/trump-media-files-crypto-etfs-bitcoin-ether-cronos-sec" target="_blank">📎 Trump Media crypto ETFs — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark on Coinbase — The Block</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute leadership — Wintermute</a>
+    <a href="https://ambcrypto.com/ethereum-supply-is-tightening-is-scarcity-being-underpriced/" target="_blank">📎 Ethereum supply tightening — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">T-bill yield platforms benefit from TradFi-crypto convergence</div>
+  <ul>
+    <li>Trump Media's filings for Bitcoin, Ether, and yield-focused ETFs underscore demand for regulated yield like Spiko's French bank-custodied T-bills.</li>
+    <li>CLARITY Act as regulatory unlock enables safer on-chain treasury products.</li>
+    <li>Benchmark's Coinbase resilience analysis extends to tokenized real-world assets.</li>
+    <li>Wintermute expansion supports institutional-grade yield infrastructure.</li>
+  </ul>
+  <div class="wim">→ Regulatory progress and ETF hype drive adoption of Spiko's daily-interest T-bill platform for corporate treasuries.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/trump-media-files-for-bitcoin-ethereum-and-cro-etfs/" target="_blank">📎 Trump Media ETFs — DL News</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark Coinbase — The Block</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute U.S. — Wintermute</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">On-chain securitization tailwinds from ETF and regulatory news</div>
+  <ul>
+    <li>Roundhill's election event contract ETFs and Trump Media filings signal tokenized asset maturation, aiding Tranched's loan pool tranching.</li>
+    <li>CLARITY Act promises framework for TradFi-DeFi bridges like securitization.</li>
+    <li>Ethereum scarcity and AAVE TVL surge highlight on-chain credit demand.</li>
+    <li>Wintermute's institutional hires enhance liquidity for structured products.</li>
+  </ul>
+  <div class="wim">→ Broad ETF approvals pave way for Tranched's compliant on-chain securitization to attract TradFi capital.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill ETFs — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/trump-media-files-crypto-etfs-bitcoin-ether-cronos-sec" target="_blank">📎 Trump Media ETFs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute — Wintermute</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">MEV infra positioned for X-driven trading volume surge</div>
+  <ul>
+    <li>X's Smart Cashtags crypto trading will explode order flow, where Blink Labs' MEV protection and auctions provide essential multi-chain safeguards.</li>
+    <li>Wintermute's U.S. expansion with Bridgewater talent strengthens institutional order flow infrastructure.</li>
+    <li>Benchmark's Coinbase durability underscores exchange reliance on MEV-optimized infra.</li>
+    <li>Ethereum supply dynamics favor high-performance L2 and MEV tools.</li>
+  </ul>
+  <div class="wim">→ Social trading boom amplifies Blink Labs' value in protecting and auctioning high-volume MEV opportunities.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute appointments — Wintermute</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark Coinbase — The Block</a>
+    <a href="https://ambcrypto.com/ethereum-supply-is-tightening-is-scarcity-being-underpriced/" target="_blank">📎 Ethereum supply — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Onchain treasury tools gain from regulatory clarity push</div>
+  <ul>
+    <li>CLARITY Act advancement supports multi-sig corporate wallets like Den's for onchain accounting amid ETF hype.</li>
+    <li>Wintermute's institutional U.S. hires signal treasury-grade liquidity for team wallets.</li>
+    <li>X trading feature drives corporate crypto exposure, necessitating Den's treasury management.</li>
+    <li>Benchmark highlights durable crypto business models including treasury infra.</li>
+  </ul>
+  <div class="wim">→ Clearer U.S. rules accelerate enterprise adoption of Den's onchain treasury and multi-sig solutions.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute — Wintermute</a>
+    <a href="https://www.dlnews.com/articles/people-culture/crypto-trading-finally-coming-to-x-twitter/" target="_blank">📎 X trading — DL News</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Opfn</h3>
+  <div class="hl">Decentralized browsers ready for X crypto trading integration</div>
+  <ul>
+    <li>X's timeline crypto trading via Smart Cashtags boosts web3-native browsing demand for Opfn's decentralized infrastructure.</li>
+    <li>Prediction market ETF filings like Roundhill's highlight need for compliant, decentralized front-ends.</li>
+    <li>Wintermute expansion aids seamless crypto access in browsers.</li>
+    <li>CLARITY Act reduces barriers for web3 browsing protocols.</li>
+  </ul>
+  <div class="wim">→ Mainstream X trading surges traffic to Opfn's decentralized browser for secure, native crypto interactions.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill ETFs — Cointelegraph</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute — Wintermute</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise staking benefits from ETH ETF and supply signals</div>
+  <ul>
+    <li>Ethereum supply tightening and ETF inflows support Validation Cloud's SOC 2 staking and Node API for institutions.</li>
+    <li>ARK Invest's Coinbase purchase reflects infrastructure bets amid ETH rebound.</li>
+    <li>Wintermute's hires enhance enterprise-grade blockchain ops.</li>
+    <li>CLARITY Act unlocks compliant staking services.</li>
+  </ul>
+  <div class="wim">→ ETH scarcity and regulatory tailwinds drive demand for Validation Cloud's enterprise node and staking solutions.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/ethereum-supply-is-tightening-is-scarcity-being-underpriced/" target="_blank">📎 Ethereum supply — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/ark-invest-buys-coinbase-15m-after-selling" target="_blank">📎 ARK Coinbase — Cointelegraph</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute — Wintermute</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI narrative comeback boosts LLM data API demand</div>
+  <ul>
+    <li>Bittensor's AI rally signals resurgence, aligning with Kirha's Context-as-a-Service for agentic workflows and private data RAG.</li>
+    <li>Anthropic CEO's capex caution underscores need for efficient data APIs like Kirha's.</li>
+    <li>Physical AI discussions highlight data infrastructure for IoT/agent integration.</li>
+    <li>Prediction markets' consumer hedging pivot creates AI-driven data opportunities.</li>
+  </ul>
+  <div class="wim">→ AI momentum directly fuels Kirha's APIs connecting LLMs to private data for scalable agent workflows.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/tao-targets-241-as-the-ai-narrative-attempts-a-comeback/" target="_blank">📎 Bittensor targets $241 — AMBCrypto</a>
+    <a href="https://fortune.com/2026/02/14/anthropic-ceo-dario-amodei-spending-capex-risk-ai-revenue-forecasts-bankruptcy/" target="_blank">📎 Anthropic CEO spending — Fortune</a>
+    <a href="https://fortune.com/2026/02/14/what-is-physical-ai-roman-empire-maintenance-blue-collar-trades/" target="_blank">📎 Physical AI crisis — Fortune</a>
+    <a href="https://cointelegraph.com/news/prediction-markets-hedging-buterin" target="_blank">📎 Buterin prediction markets — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>River</h3>
+  <div class="hl">X crypto trading enhances creator monetization platforms</div>
+  <ul>
+    <li>X's Smart Cashtags rollout integrates crypto rewards directly into social feeds, synergizing with River's IRL events and creator earnings.</li>
+    <li>Zealy-like quest platforms benefit from social trading virality for community events.</li>
+    <li>Prediction market ETFs drive event-based creator economies.</li>
+    <li>Mainstream adoption via X boosts offline social crypto experiences.</li>
+  </ul>
+  <div class="wim">→ In-timeline trading supercharges River's creator monetization through seamless crypto rewards at IRL meetups.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://www.dlnews.com/articles/people-culture/crypto-trading-finally-coming-to-x-twitter/" target="_blank">📎 X trading to X — DL News</a>
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill ETFs — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tlon</h3>
+  <div class="hl">P2P messaging gains from X's decentralized trading shift</div>
+  <ul>
+    <li>X's crypto trading feature pushes users toward user-owned data comms like Tlon's Urbit for secure P2P interactions.</li>
+    <li>Prediction markets and social trading amplify need for decentralized messaging.</li>
+    <li>CLARITY Act supports non-custodial social protocols.</li>
+    <li>Wintermute liquidity aids P2P crypto flows.</li>
+  </ul>
+  <div class="wim">→ X's everything-app evolution highlights Tlon's P2P messaging as superior for user-owned crypto communications.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill prediction ETFs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+    <a href="https://www.wintermute.com/insights/news/announcements/wintermute-fortifies-u-s-leadership-with-four-distinguished-senior-appointments" target="_blank">📎 Wintermute — Wintermute</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Quest platforms primed for X trading reward integration</div>
+  <ul>
+    <li>X's in-app crypto trading enables instant rewards for quests, perfectly suiting Zealy's gamification and crypto incentives.</li>
+    <li>Prediction market ETFs like Roundhill's create event-based quests with real payouts.</li>
+    <li>SocialFi momentum from X drives community tool adoption.</li>
+    <li>CLARITY Act clears path for reward-emitting platforms.</li>
+  </ul>
+  <div class="wim">→ Direct timeline trading turbocharges Zealy's quest-to-earn model with frictionless crypto rewards.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/389952/x-to-launch-smart-cashtags-for-in-timeline-crypto-and-stock-trading-within-a-couple-weeks" target="_blank">📎 X Smart Cashtags — The Block</a>
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill ETFs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">African exchanges benefit from X global trading access</div>
+  <ul>
+    <li>X's crypto trading for 1B users opens African markets to instant liquidity, complementing Busha's Nigeria SEC-licensed platform.</li>
+    <li>South Korea's securities firm acquiring exchange signals global M&amp;A trend for licensed venues.</li>
+    <li>CLARITY Act and ETF filings inspire emerging market regulation.</li>
+    <li>Benchmark Coinbase resilience bodes well for regional exchanges.</li>
+  </ul>
+  <div class="wim">→ Social trading gateway accelerates Busha's user growth and USDT volume in Nigeria's regulated market.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/people-culture/crypto-trading-finally-coming-to-x-twitter/" target="_blank">📎 X trading — DL News</a>
+    <a href="https://www.dlnews.com/articles/markets/south-koreas-biggest-securities-firm-snaps-up-crypto-exchange/" target="_blank">📎 South Korea acquires exchange — DL News</a>
+    <a href="https://ambcrypto.com/well-get-it-done-white-house-calls-clarity-act-a-regulatory-unlock/" target="_blank">📎 CLARITY Act — AMBCrypto</a>
+    <a href="https://www.theblock.co/post/389964/benchmark-cuts-coinbase-price-target-by-37-but-says-business-is-more-diversified-and-durable-than-ever" target="_blank">📎 Benchmark — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blu, Flyra, Yousend, Salto X, Staex, Spherity, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>X Smart Cashtags enable timeline crypto trading</strong> — 1B-user platform rollout drives on/off-ramp and card issuance demand for Kulipa, Nilos, Rebind amid stablecoin clarity.</div>
+  <div class="sig"><strong>CLARITY Act called regulatory unlock</strong> — White House push clarifies stablecoin rules, benefiting cross-border infra like Nilos and remittance plays.</div>
+  <div class="sig"><strong>Wintermute hires U.S. leadership from Bridgewater</strong> — Institutional market making strengthens payment liquidity for Visa/MC crypto programs.</div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Trump Media files BTC/ETH yield ETFs</strong> — TradFi inflows target on-chain yield and securitization, tailwinds for Spiko T-bills and Tranched pools.</div>
+  <div class="sig"><strong>Benchmark affirms Coinbase diversification</strong> — Resilient business models extend to institutional DeFi vaults and RWA tokenization.</div>
+  <div class="sig"><strong>Ethereum supply tightens via staking</strong> — Scarcity boosts restaking and tranching protocols amid ETF momentum.</div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>X trading surges MEV-protected order flow</strong> — Timeline trades amplify Blink Labs auctions and Validation Cloud staking demand.</div>
+  <div class="sig"><strong>Wintermute U.S. institutional hires</strong> — Bridgewater talent bolsters liquidity for wallets, nodes, MEV infra.</div>
+  <div class="sig"><strong>ARK buys $15M Coinbase post-selloff</strong> — Infra bets signal durability for enterprise blockchain and onchain treasury.</div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>Bittensor AI narrative rallies to $241 target</strong> — TAO surge revives LLM data APIs and agent workflows for Kirha.</div>
+  <div class="sig"><strong>Anthropic warns on AI capex risks</strong> — Efficiency focus highlights private data services like Kirha's RAG.</div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>X integrates crypto trading in timelines</strong> — Smart Cashtags boost quest rewards, IRL events, P2P messaging adoption.</div>
+  <div class="sig"><strong>Roundhill files prediction market ETFs</strong> — Event contracts enable gamified socialFi and creator economies.</div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>South Korea securities firm acquires crypto exchange</strong> — $92M Korbit deal signals M&amp;A wave for licensed African platforms like Busha.</div>
+  <div class="sig"><strong>X trading opens global liquidity</strong> — 1B users drive volume to regulated emerging market exchanges.</div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series B</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>BitGo</strong></td><td class="amt">$213M</td><td>IPO</td><td><span class="tag">Infrastructure</span></td><td>Validation Cloud</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>LMAX Group</strong></td><td class="amt">$150M</td><td>Strategic</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>Revolut</strong></td><td class="amt">$3B</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Kraken</strong></td><td class="amt">$800M</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Ripple</strong></td><td class="amt">$500M</td><td>Undisclosed</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Ripple</strong></td><td class="amt">$500M</td><td>Late-stage</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.morningstar.com/markets/despite-bitcoins-plunge-these-crypto-ipos-are-seen-deck-2026" target="_blank">Despite Bitcoin's Plunge, These Crypto IPOs Are Seen on Deck for ...</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 15, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
