@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-16</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 16, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>18</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>6</b><span>Sector Digests</span></div>
+  <div class="stat"><b>7</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">EU tech sovereignty push opens doors for local card issuers</div>
+  <ul>
+    <li>Sifted reports European tech sovereignty initiatives create fintech opportunities for startups offering independent payment solutions over legacy Visa/Mastercard dominance.</li>
+    <li>This directly benefits Blu's Mexican no-fee credit card model by highlighting regulatory tailwinds for regional players building underbanked credit products amid global payment shifts.</li>
+    <li>Younger fintechs positioned to capture market share from established networks, aligning with Blu's Mastercard-backed but locally focused credit building strategy.</li>
+    <li>Cross-border remittance pressures from broader crypto volatility underscore need for stable fiat rails like Blu's offerings.</li>
+  </ul>
+  <div class="wim">→ Regulatory momentum toward payment independence strengthens Blu's competitive edge in LATAM credit issuance against global incumbents.</div>
+  <div class="sr">
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank">📎 European tech sovereignty creates fintech opportunities — Sifted</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">CZ highlights onchain privacy gaps blocking crypto remittances</div>
+  <ul>
+    <li>Binance founder CZ states lack of onchain privacy is primary barrier holding back crypto payments adoption.</li>
+    <li>Flyra's cross-border remittance and credit products stand to gain from privacy advancements enabling seamless financial inclusion.</li>
+    <li>Russian daily crypto spend at $648M signals massive untapped remittance corridors Flyra targets in emerging markets.</li>
+    <li>Bitcoin rebound to $70K stabilizes FX corridors critical for Flyra's multi-currency instant delivery.</li>
+  </ul>
+  <div class="wim">→ Privacy fixes and high-volume crypto flows validate Flyra's remittance infrastructure for underbanked regions.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank">📎 CZ says lack of onchain privacy is holding back crypto payments — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/russians-spending-648-million-on-crypto-every-day/" target="_blank">📎 Russians spending $648 million on crypto every day — DL News</a>
+    <a href="https://bitcoinmagazine.com/markets/bitcoin-price-reclaims-70000-after-feb" target="_blank">📎 Bitcoin Price Reclaims $70,000 — Bitcoin Magazine</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">EU sovereignty drive challenges Visa/Mastercard dominance</div>
+  <ul>
+    <li>Sifted analysis positions startups as path to European payment independence from U.S. card networks.</li>
+    <li>Kulipa's white-label crypto debit/prepaid cards via Visa/Mastercard APIs gain from scrutiny on legacy players.</li>
+    <li>Institutional DeFi tokenization momentum supports crypto card utility Kulipa enables for clients.</li>
+    <li>Market rebound lifts on/off-ramp demand for API-powered card issuing.</li>
+  </ul>
+  <div class="wim">→ Regulatory shifts favor Kulipa's modular card infrastructure over concentrated networks.</div>
+  <div class="sr">
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank">📎 European tech sovereignty creates fintech opportunities — Sifted</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">CZ flags privacy as key crypto payment adoption blocker</div>
+  <ul>
+    <li>CZ emphasizes onchain privacy deficiencies stalling global crypto payments infrastructure.</li>
+    <li>Nilos' 120+ country FX conversion and instant settlement directly addresses these rails gaps.</li>
+    <li>Russian $648M daily crypto volume highlights demand for Nilos-style global payment layers.</li>
+    <li>Bitcoin stabilizing at $70K reduces volatility risks for Nilos' cross-border operations.</li>
+  </ul>
+  <div class="wim">→ Privacy and volume surges position Nilos as essential infra for maturing crypto payments.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank">📎 CZ says lack of onchain privacy is holding back crypto payments — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/russians-spending-648-million-on-crypto-every-day/" target="_blank">📎 Russians spending $648 million on crypto every day — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">EU payment sovereignty boosts self-custodial wallet rails</div>
+  <ul>
+    <li>Sifted highlights fintech startups enabling independence from Visa/Mastercard dominance.</li>
+    <li>Rebind's Paris-based self-custodial wallet with IBAN and virtual debit cards aligns perfectly.</li>
+    <li>CZ's privacy critique underscores Rebind's on/off-ramp advantages in regulated Europe.</li>
+    <li>Bitcoin rebound enhances stability for Rebind's embedded finance features.</li>
+  </ul>
+  <div class="wim">→ Sovereignty trends amplify Rebind's compliant, user-controlled payment stack in EU.</div>
+  <div class="sr">
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank">📎 European tech sovereignty creates fintech opportunities — Sifted</a>
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank">📎 CZ says lack of onchain privacy is holding back crypto payments — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Russian crypto boom signals African remittance tailwinds</div>
+  <ul>
+    <li>DL News reports Russians spending $648M daily on crypto, with pending regulations.</li>
+    <li>Yousend's African diaspora multi-currency remittances positioned for similar emerging market surges.</li>
+    <li>CZ privacy comments highlight barriers Yousend navigates via fiat-crypto hybrids.</li>
+    <li>Global BTC rebound stabilizes volatile corridors Yousend serves.</li>
+  </ul>
+  <div class="wim">→ High-volume crypto adoption in sanctioned regions mirrors Yousend's African opportunity.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/russians-spending-648-million-on-crypto-every-day/" target="_blank">📎 Russians spending $648 million on crypto every day — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Aave founder eyes $50T tokenized abundance assets by 2050</div>
+  <ul>
+    <li>Stani Kulechov predicts massive tokenization opportunity opening DeFi to new asset classes.</li>
+    <li>Byzantine's restaking vaults and institutional strategies primed for abundance asset inflows.</li>
+    <li>Grayscale Aave ETF filing signals broader institutional DeFi shift benefiting Byzantine.</li>
+    <li>Morpho-Apollo partnership demonstrates TradFi demand for onchain lending Byzantine enables.</li>
+  </ul>
+  <div class="wim">→ Tokenization megatrend directly fuels Byzantine's structured DeFi products for institutions.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/aave-founder-defi-tokenize-50t-abundance-assets" target="_blank">📎 Aave Founder Wants DeFi to Tokenize $50T Abundance Assets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/grayscale-files-convert-aave-trust-etf-launch-nyse-arca" target="_blank">📎 Grayscale Files With SEC to Convert Aave Trust Into ETF — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/apollo-deepens-blockchain-play-enters-crypto-lending-via-morpho-partnership" target="_blank">📎 Apollo Partners With Morpho To Support Lending Infrastructure — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Institutional DeFi momentum from Grayscale Aave ETF filing</div>
+  <ul>
+    <li>Grayscale seeks SEC approval for spot Aave ETF, sparking institutional narrative.</li>
+    <li>Spiko's regulated T-bill yield platform with French bank custody attracts similar TradFi interest.</li>
+    <li>Aave founder's $50T tokenization vision includes yield-bearing assets like Spiko's.</li>
+    <li>Morpho-Apollo deal highlights demand for compliant yield Spiko provides.</li>
+  </ul>
+  <div class="wim">→ ETF and TradFi partnerships validate Spiko's institutional-grade T-bill token model.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/grayscale-files-convert-aave-trust-etf-launch-nyse-arca" target="_blank">📎 Grayscale Files With SEC to Convert Aave Trust Into ETF — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/aave-founder-defi-tokenize-50t-abundance-assets" target="_blank">📎 Aave Founder Wants DeFi to Tokenize $50T Abundance Assets — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">Apollo-Morpho partnership advances onchain securitization</div>
+  <ul>
+    <li>Wall Street's Apollo partners with Morpho for crypto lending infrastructure access.</li>
+    <li>Tranched's loan pool tranching and TradFi-DeFi bridge perfectly positioned for such integrations.</li>
+    <li>Aave tokenization push and Grayscale ETF signal securitization demand Tranched meets.</li>
+    <li>Institutional shift creates structured credit opportunities for Tranched's platform.</li>
+  </ul>
+  <div class="wim">→ Major TradFi entry validates Tranched's onchain securitization as bridge technology.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/apollo-deepens-blockchain-play-enters-crypto-lending-via-morpho-partnership" target="_blank">📎 Apollo Partners With Morpho To Support Lending Infrastructure — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">Blockchain rails evolve for AI agent capital markets</div>
+  <ul>
+    <li>Galaxy research details crypto mechanisms supporting AI agent economy and capital formation.</li>
+    <li>Salto X's cap table management and equity issuance SaaS enables tokenized fundraising for AI projects.</li>
+    <li>Vitalik's finance vision and prediction market evolution align with Salto X's equity tools.</li>
+    <li>Institutional DeFi surge boosts demand for compliant cap table solutions.</li>
+  </ul>
+  <div class="wim">→ Agentic capital markets growth drives adoption of Salto X's tokenized equity infrastructure.</div>
+  <div class="sr">
+    <a href="https://www.galaxy.com/insights/research/agentic-capital-markets-ai-agents-crypto-ralph-wiggum-truth-terminal-gas-town" target="_blank">📎 Raising for Robots: Developing Agentic Capital Markets — Galaxy</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">CZ stresses onchain privacy critical for corporate treasury</div>
+  <ul>
+    <li>Binance CZ identifies privacy shortcomings blocking crypto payments and treasury adoption.</li>
+    <li>Den's team wallet platform with onchain accounting and multi-sig addresses enterprise privacy needs.</li>
+    <li>Russian $648M daily crypto spend demonstrates treasury demand Den serves.</li>
+    <li>Bitcoin stabilization reduces treasury volatility risks.</li>
+  </ul>
+  <div class="wim">→ Privacy focus elevates Den's secure corporate onchain treasury solution.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank">📎 CZ says lack of onchain privacy is holding back crypto payments — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Bitcoin quantum upgrade urgency impacts staking infrastructure</div>
+  <ul>
+    <li>DL News warns Bitcoin running out of time for post-quantum cryptography adoption.</li>
+    <li>Validation Cloud's SOC 2 enterprise staking and Node API must prepare nodes for quantum threats.</li>
+    <li>Nic Carter notes developer inaction could frustrate institutions relying on secure staking.</li>
+    <li>Ethereum whale movements highlight infrastructure resilience needs.</li>
+  </ul>
+  <div class="wim">→ Quantum risks demand Validation Cloud enhance enterprise-grade blockchain security features.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/web3/bitcoin-needs-to-upgrade-to-post-quantum-cryptography/" target="_blank">📎 Bitcoin needs a quantum upgrade. So why isn’t it happening? — DL News</a>
+    <a href="https://cointelegraph.com/news/bitcoin-quantum-computing-risk-institutions-developers" target="_blank">📎 Bitcoin Devs’ Inaction on Quantum Will Frustrate Institutions: VC — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">EU sovereignty initiatives advance digital identity frameworks</div>
+  <ul>
+    <li>Sifted's Europe tech sovereignty analysis includes implications for compliant identity solutions.</li>
+    <li>Spherity's SSI verifiable credentials and compliance automation positioned for eIDAS-aligned growth.</li>
+    <li>Regulatory push favors Germany's Spherity in building EU digital wallet infrastructure.</li>
+    <li>AI agent capital markets require robust identity layers Spherity provides.</li>
+  </ul>
+  <div class="wim">→ Sovereignty drive accelerates Spherity's role in EU-compliant digital identity standards.</div>
+  <div class="sr">
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank">📎 European tech sovereignty creates fintech opportunities — Sifted</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">Galaxy outlines blockchain for AI agent capital markets</div>
+  <ul>
+    <li>Galaxy research maps crypto rails evolving to support AI agent economy and workflows.</li>
+    <li>Kirha's Context-as-a-Service APIs connect LLMs to private data for agentic applications.</li>
+    <li>OpenAI hiring agent developer signals infrastructure demand Kirha meets via RAG APIs.</li>
+    <li>Bittensor AI narrative comeback validates Kirha's LLM data connectivity.</li>
+  </ul>
+  <div class="wim">→ Agentic AI growth directly powers Kirha's private data APIs for advanced workflows.</div>
+  <div class="sr">
+    <a href="https://www.galaxy.com/insights/research/agentic-capital-markets-ai-agents-crypto-ralph-wiggum-truth-terminal-gas-town" target="_blank">📎 Raising for Robots: Developing Agentic Capital Markets — Galaxy</a>
+    <a href="https://fortune.com/2026/02/15/openai-openclaw-ai-agent-developer-peter-steinberg-moltbot-clawdbot-moltbook/" target="_blank">📎 OpenAI hires OpenClaw AI agent developer Peter Steinberg — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>River</h3>
+  <div class="hl">X Smart Cashtags enable crypto trading integration</div>
+  <ul>
+    <li>AMBCrypto reports X launching crypto trading via Smart Cashtags in weeks.</li>
+    <li>River's IRL social events and creator monetization gains from social-crypto convergence.</li>
+    <li>Dogecoin 18% rally post-Cashtags reveal shows social token potential for River communities.</li>
+    <li>Prediction market ETFs signal broader social finance trends.</li>
+  </ul>
+  <div class="wim">→ Social trading features amplify River's creator event monetization in Web3 social.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/crypto-trading-is-coming-to-x-in-a-couple-weeks-all-about-smart-cashtags/" target="_blank">📎 Crypto trading is coming to X in ‘a couple weeks’ — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tlon</h3>
+  <div class="hl">X crypto trading launch accelerates decentralized social</div>
+  <ul>
+    <li>Smart Cashtags bring crypto trading to X, advancing everything-app vision.</li>
+    <li>Tlon's P2P messaging and user-owned data (Urbit) benefits from social-crypto mainstreaming.</li>
+    <li>Vitalik critiques prediction markets catering to dumb opinions, favoring decentralized comms.</li>
+    <li>SocialFi momentum from memecoin volumes supports Tlon's model.</li>
+  </ul>
+  <div class="wim">→ Social platform tokenization drives adoption of Tlon's sovereign communication layer.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/crypto-trading-is-coming-to-x-in-a-couple-weeks-all-about-smart-cashtags/" target="_blank">📎 Crypto trading is coming to X in ‘a couple weeks’ — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Roundhill files prediction market ETFs tied to events</div>
+  <ul>
+    <li>Cointelegraph reports Roundhill's US Election Event Contract ETFs as groundbreaking.</li>
+    <li>Zealy's quest-to-earn gamification aligns with prediction and social reward mechanics.</li>
+    <li>Vitalik pushes AI hedging over speculative markets, complementing Zealy's community tools.</li>
+    <li>X Cashtags trading boosts crypto reward distribution Zealy enables.</li>
+  </ul>
+  <div class="wim">→ Event contract ETFs expand gamified community engagement models Zealy powers.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank">📎 Roundhill’s US Election Event Contract ETFs ‘Potentially Groundbreaking’ — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">South Korea securities giant acquires crypto exchange</div>
+  <ul>
+    <li>DL News: Mirae Asset buys 92% of Korbit exchange for $92M amid stock market boom.</li>
+    <li>Busha's Nigeria SEC-licensed model benefits from global TradFi-exchange consolidation trend.</li>
+    <li>Russian $648M daily crypto spend and Dubai VASP licenses signal regulated exchange growth.</li>
+    <li>African USDT demand rises with BTC rebound.</li>
+  </ul>
+  <div class="wim">→ Institutional exchange M&amp;A validates Busha's licensed position in African crypto adoption.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/south-koreas-biggest-securities-firm-snaps-up-crypto-exchange/" target="_blank">📎 South Korea’s biggest securities firm snaps up crypto exchange — DL News</a>
+    <a href="https://www.theblock.co/post/389989/animoca-brands-secures-dubai-vasp-license-to-provide-broker-dealer-and-investment-services" target="_blank">📎 Animoca Brands secures Dubai VASP license — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blink Labs, Opfn, Staex, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>CZ identifies onchain privacy as main crypto payments blocker</strong> — Binance founder highlights privacy gaps stalling adoption, creating opportunity for hybrid fiat-crypto rails amid $648M Russian daily volumes.</div>
+  <div class="sig"><strong>EU sovereignty push targets Visa/Mastercard dominance</strong> — Sifted analysis positions startups to deliver payment independence, favoring card issuing and remittance innovators.</div>
+  <div class="sig"><strong>Bitcoin rebounds to $70K stabilizing cross-border flows</strong> — Price recovery reduces FX volatility critical for remittance corridors and instant settlement platforms.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CZ says lack of onchain privacy is holding back crypto payments — Cointelegraph</a>
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 European tech sovereignty creates fintech opportunities — Sifted</a>
+    <a href="https://bitcoinmagazine.com/markets/bitcoin-price-reclaims-70000-after-feb" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitcoin Price Reclaims $70,000 — Bitcoin Magazine</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Aave founder targets $50T abundance asset tokenization</strong> — Stani Kulechov sees massive DeFi expansion into new classes, fueling institutional vaults and tranching.</div>
+  <div class="sig"><strong>Grayscale files spot Aave ETF with SEC</strong> — Move signals maturing institutional access to DeFi primitives like lending and yield.</div>
+  <div class="sig"><strong>Apollo partners Morpho for onchain lending access</strong> — Wall Street giant deepens crypto exposure via lending infra, bridging TradFi-DeFi.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/aave-founder-defi-tokenize-50t-abundance-assets" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Aave Founder Wants DeFi to Tokenize $50T Abundance Assets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/grayscale-files-convert-aave-trust-etf-launch-nyse-arca" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Grayscale Files With SEC to Convert Aave Trust Into ETF — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/apollo-deepens-blockchain-play-enters-crypto-lending-via-morpho-partnership" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Apollo Partners With Morpho To Support Lending Infrastructure — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Bitcoin quantum upgrade delays risk institutional frustration</strong> — DL News and Nic Carter warn developer inaction threatens staking and node providers.</div>
+  <div class="sig"><strong>CZ privacy critique hits corporate onchain treasury adoption</strong> — Lack of privacy blocks payments, impacting multi-sig wallet platforms.</div>
+  <div class="portf">Portfolio relevance: Den, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/web3/bitcoin-needs-to-upgrade-to-post-quantum-cryptography/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitcoin needs a quantum upgrade — DL News</a>
+    <a href="https://cointelegraph.com/news/cz-privacy-holding-back-crypto-payments" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CZ says lack of onchain privacy — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>EU tech sovereignty accelerates digital identity infrastructure</strong> — Regulatory independence favors SSI and compliance automation providers.</div>
+  <div class="sig"><strong>Galaxy maps blockchain rails for AI agent capital markets</strong> — Crypto evolves to support agentic workflows and private data APIs.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://sifted.eu/articles/visa-mastercard-europe-sovereignty-trump/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 European tech sovereignty — Sifted</a>
+    <a href="https://www.galaxy.com/insights/research/agentic-capital-markets-ai-agents-crypto-ralph-wiggum-truth-terminal-gas-town" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Raising for Robots: Agentic Capital Markets — Galaxy</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>X launches Smart Cashtags for crypto trading</strong> — Elon Musk's everything-app vision integrates social with onchain trading.</div>
+  <div class="sig"><strong>Roundhill files event contract prediction market ETFs</strong> — US regulator filings enable social betting and quest mechanics.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://ambcrypto.com/crypto-trading-is-coming-to-x-in-a-couple-weeks-all-about-smart-cashtags/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto trading coming to X — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/roundhill-investments-event-contracts-prediction-markets-etf-united-states-election" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Roundhill’s Event Contract ETFs — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>South Korea's Mirae Asset acquires Korbit exchange</strong> — $92M deal by $418B AUM firm shows TradFi snapping up regulated platforms.</div>
+  <div class="sig"><strong>Dubai VASP license issued to Animoca Brands</strong> — Regulated broker-dealer services expand institutional crypto access.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/markets/south-koreas-biggest-securities-firm-snaps-up-crypto-exchange/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 South Korea securities firm snaps up crypto exchange — DL News</a>
+    <a href="https://www.theblock.co/post/389989/animoca-brands-secures-dubai-vasp-license-to-provide-broker-dealer-and-investment-services" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Animoca Brands secures Dubai VASP license — The Block</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Talos</strong></td><td class="amt">$150M</td><td>Series B extension</td><td><span class="tag">Infrastructure</span></td><td>Validation Cloud</td><td><a href="https://fintech.global/2026/02/06/february-fintech-funding-off-to-flying-start-with-over-1bn-raised/" target="_blank">February FinTech funding off to flying start with over $1bn raised</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure</span></td><td>Validation Cloud</td><td><a href="https://fintech.global/2026/02/06/february-fintech-funding-off-to-flying-start-with-over-1bn-raised/" target="_blank">February FinTech funding off to flying start with over $1bn raised</a></td></tr>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Undisclosed</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://beincrypto.com/where-are-crypto-vc-funds-investing-in-early-2026/" target="_blank">Where Are Crypto Venture Capital Funds Investing in Early 2026?</a></td></tr>
+<tr><td><strong>BitGo</strong></td><td class="amt">$212.8M</td><td>IPO</td><td><span class="tag">Infrastructure</span></td><td>Validation Cloud</td><td><a href="https://beincrypto.com/where-are-crypto-vc-funds-investing-in-early-2026/" target="_blank">Where Are Crypto Venture Capital Funds Investing in Early 2026?</a></td></tr>
+<tr><td><strong>BlackOpal</strong></td><td class="amt">$200M</td><td>Undisclosed</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://beincrypto.com/where-are-crypto-vc-funds-investing-in-early-2026/" target="_blank">Where Are Crypto Venture Capital Funds Investing in Early 2026?</a></td></tr>
+<tr><td><strong>Revolut</strong></td><td class="amt">$3B</td><td>Undisclosed</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+<tr><td><strong>Kraken</strong></td><td class="amt">$800M</td><td>Undisclosed</td><td><span class="tag">Exchange</span></td><td>Busha</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 16, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
