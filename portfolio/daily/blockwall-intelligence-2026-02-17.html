@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-17</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 17, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>11</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>6</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin adoption accelerates as everyday payment use surges globally</div>
+  <ul>
+    <li>Global study confirms stablecoin supply of $300 billion is increasingly deployed for everyday spending, cross-border work, and savings allocation among crypto-savvy consumers, validating core use case for payment infrastructure providers.</li>
+    <li>Stablecoin adoption momentum directly benefits Nilos' 120+ country payment infrastructure and instant settlement model, which addresses the exact cross-border friction points driving stablecoin demand.</li>
+    <li>As institutional and retail users migrate stablecoin holdings off exchanges into active use, demand for reliable on/off-ramp and FX conversion services intensifies—core Nilos capabilities.</li>
+  </ul>
+  <div class="wim">→ Nilos' global payment infrastructure is positioned to capture transaction volume as stablecoin adoption shifts from speculation to everyday utility.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390057/cryptos-300-billion-stablecoin-supply-is-increasingly-used-as-everyday-money-global-study-finds" target="_blank">📎 Crypto's $300 billion stablecoin supply is increasingly used as 'everyday money,' global study finds — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Stablecoin mainstream adoption validates self-custodial wallet + IBAN + debit card model</div>
+  <ul>
+    <li>Global research confirms $300 billion stablecoin supply is now used for everyday spending and cross-border work, validating the exact use case Rebind's self-custodial wallet + virtual debit card infrastructure targets.</li>
+    <li>As stablecoin adoption moves from exchange-based speculation to active spending, demand for non-custodial wallets with integrated IBAN and card rails increases—Rebind's core differentiation.</li>
+    <li>Rebind's Paris-based compliance posture aligns with growing institutional and regulatory acceptance of stablecoins in EU markets, positioning the platform for accelerating adoption.</li>
+  </ul>
+  <div class="wim">→ Rebind's integrated self-custodial wallet + IBAN + debit card stack directly captures the emerging stablecoin-as-money trend.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390057/cryptos-300-billion-stablecoin-supply-is-increasingly-used-as-everyday-money-global-study-finds" target="_blank">📎 Crypto's $300 billion stablecoin supply is increasingly used as 'everyday money,' global study finds — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin adoption surge validates diaspora remittance infrastructure model</div>
+  <ul>
+    <li>Global study confirms $300 billion stablecoin supply is increasingly used for cross-border work and remittances, directly validating Yousend's African diaspora remittance thesis.</li>
+    <li>Stablecoin adoption among crypto-savvy consumers in diaspora corridors reduces friction and cost for multi-currency remittance flows—Yousend's core value proposition.</li>
+    <li>As stablecoin use normalizes for everyday payments and cross-border transfers, African diaspora remittance volumes are likely to accelerate, benefiting Yousend's instant delivery model.</li>
+  </ul>
+  <div class="wim">→ Yousend's African diaspora remittance platform is positioned to capture accelerating stablecoin-based cross-border payment flows.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390057/cryptos-300-billion-stablecoin-supply-is-increasingly-used-as-everyday-money-global-study-finds" target="_blank">📎 Crypto's $300 billion stablecoin supply is increasingly used as 'everyday money,' global study finds — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Institutional DeFi momentum continues despite market downturn; restaking strategies remain attractive</div>
+  <ul>
+    <li>Crypto Fear &amp; Greed Index hit record lows, yet institutional capital continues flowing into DeFi platforms, signaling conviction among sophisticated investors in structured yield strategies.</li>
+    <li>Byzantine's restaking vault strategies and institutional DeFi positioning benefit from this bifurcation: retail capitulation creates entry points for institutions seeking yield in bear markets.</li>
+    <li>As on-chain data suggests Bitcoin may test $55,000–$60,000 support levels, institutional demand for non-correlated DeFi yield (restaking, structured vaults) intensifies as portfolio diversification hedge.</li>
+  </ul>
+  <div class="wim">→ Byzantine's institutional restaking strategies are attracting capital precisely when retail fear peaks, positioning the platform for outperformance.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390083/crypto-fear-greed-index-record-low-despite-ongoing-institutional-push-defi" target="_blank">📎 Crypto Fear &amp; Greed Index hits record low despite ongoing institutional push into DeFi — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Tokenized RWAs surge 13.5% as institutional demand for regulated yield accelerates</div>
+  <ul>
+    <li>Tokenized real-world assets grew 13.5% in 30 days despite broader crypto market losing $1 trillion, with Treasurys and Ethereum leading growth—validating institutional appetite for regulated yield products.</li>
+    <li>Spiko's regulated T-bill yield platform with French bank custody directly captures this RWA momentum, offering daily interest on tokenized government securities with institutional-grade compliance.</li>
+    <li>As macro uncertainty drives institutional rotation toward stable yield (T-bills, bonds), Spiko's positioning as a regulated, custody-backed T-bill token platform becomes increasingly attractive relative to volatile crypto assets.</li>
+  </ul>
+  <div class="wim">→ Spiko's regulated T-bill tokenization platform is capturing accelerating institutional demand for non-volatile, compliant yield products.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/tokenized-rwas-climb-despite-crypto-market-rout" target="_blank">📎 Tokenized RWAs Rise 13% as Crypto Market Loses $1T — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">On-chain securitization gains traction as RWA tokenization ecosystem expands 13.5%</div>
+  <ul>
+    <li>Tokenized RWA sector grew 13.5% in 30 days, led by Treasurys and Ethereum, demonstrating institutional demand for on-chain securitization and loan pool structures.</li>
+    <li>Tranched's on-chain securitization and loan pool tranching infrastructure directly enables the RWA tokenization trend, positioning the platform as core infrastructure for TradFi-DeFi bridge.</li>
+    <li>As institutional capital rotates into regulated yield products (T-bills, bonds), demand for sophisticated on-chain securitization and tranching mechanisms increases—Tranched's core competency.</li>
+  </ul>
+  <div class="wim">→ Tranched's on-chain securitization platform is positioned to capture accelerating institutional demand for structured RWA products.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/tokenized-rwas-climb-despite-crypto-market-rout" target="_blank">📎 Tokenized RWAs Rise 13% as Crypto Market Loses $1T — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Prediction market boom drives L2 transaction surge; MEV protection infrastructure gains relevance</div>
+  <ul>
+    <li>Polygon topped Ethereum in daily transaction fees over the weekend as prediction market activity surged, demonstrating explosive growth in order flow and MEV-sensitive transactions.</li>
+    <li>Blink Labs' MEV protection and order flow auction infrastructure becomes increasingly critical as prediction market volume concentrates on L2s, where MEV extraction and sandwich attacks pose material risks.</li>
+    <li>Multi-chain MEV dynamics intensify as prediction markets fragment across Polygon, Ethereum, and other L2s—Blink Labs' multi-chain MEV infrastructure is positioned to capture this fragmented order flow.</li>
+  </ul>
+  <div class="wim">→ Blink Labs' MEV protection infrastructure is gaining urgency as prediction market boom creates high-value order flow targets.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/polygon-flips-ethereum-in-daily-transaction-fees" target="_blank">📎 Polygon Tops Ethereum In Daily Transaction Fees Over The Weekend — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Institutional Bitcoin accumulation and on-chain accounting demand surge amid market volatility</div>
+  <ul>
+    <li>On-chain data shows very limited inflows into Bitcoin and slowing futures/options activity, yet whale accumulation continues—signaling institutional demand for sophisticated treasury and accounting infrastructure.</li>
+    <li>Den's team wallet platform and onchain accounting capabilities directly serve institutional treasuries managing large Bitcoin and crypto holdings, particularly as corporate demand for BTC strengthens.</li>
+    <li>As corporate treasuries (MicroStrategy, Metaplanet, etc.) accumulate Bitcoin and manage multi-sig wallets, demand for Den's corporate treasury and accounting SaaS intensifies.</li>
+  </ul>
+  <div class="wim">→ Den's team wallet and onchain accounting platform is positioned to capture institutional treasury management demand as corporate Bitcoin accumulation accelerates.</div>
+  <div class="sr">
+    <a href="https://www.xtb.com/int/market-analysis/news-and-research/crypto-news-will-bitcoin-drop-again-cryptocurrencies-try-to-stabilize-after-the-sell-off" target="_blank">📎 Will Bitcoin drop again? Cryptocurrencies try to stabilize after the sell-off — XTB</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise blockchain infrastructure demand grows as institutional DeFi adoption accelerates</div>
+  <ul>
+    <li>Institutional capital continues flowing into DeFi platforms despite record fear sentiment, signaling sustained demand for enterprise-grade blockchain infrastructure and staking services.</li>
+    <li>Validation Cloud's SOC 2 enterprise blockchain infrastructure, staking services, and Node API are positioned to capture institutional demand for compliant, audited infrastructure.</li>
+    <li>As prediction market boom drives L2 transaction surge and institutional DeFi adoption accelerates, demand for reliable, enterprise-grade node infrastructure and data services intensifies.</li>
+  </ul>
+  <div class="wim">→ Validation Cloud's enterprise blockchain infrastructure is positioned to capture accelerating institutional demand for compliant, audited services.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390083/crypto-fear-greed-index-record-low-despite-ongoing-institutional-push-defi" target="_blank">📎 Crypto Fear &amp; Greed Index hits record low despite ongoing institutional push into DeFi — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">Germany's central bank endorses stablecoin benefits; eIDAS 2.0 regulatory clarity accelerates adoption</div>
+  <ul>
+    <li>Deutsche Bundesbank President publicly touted stablecoin benefits for EU at American Chamber of Commerce event, signaling regulatory acceptance and institutional support for stablecoin infrastructure in Germany.</li>
+    <li>Spherity's SSI digital identity and verifiable credentials platform is positioned to capture regulatory demand for eIDAS 2.0 compliance and digital identity infrastructure in EU stablecoin and payment ecosystems.</li>
+    <li>Germany's central bank endorsement of stablecoins validates the regulatory framework that Spherity's compliance automation and verifiable credentials infrastructure supports.</li>
+  </ul>
+  <div class="wim">→ Spherity's SSI digital identity platform is positioned to capture accelerating EU regulatory demand for eIDAS 2.0 compliance in stablecoin and payment ecosystems.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/germany-central-bank-president-stablecoins" target="_blank">📎 Germany's Central Bank President Touts Stablecoin Benefits for EU — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI agents executing on-chain transactions; MCP protocol enables agentic workflow infrastructure</div>
+  <ul>
+    <li>deBridge launched MCP enabling AI agents to execute non-custodial cross-chain transactions, swaps, and multi-step trades—validating demand for AI agent infrastructure that connects LLMs to on-chain data and actions.</li>
+    <li>Kirha's Context-as-a-Service APIs connecting LLMs to private data and agentic workflows are positioned to capture this emerging AI agent infrastructure market as agents move from reasoning to execution.</li>
+    <li>MCP protocol adoption signals that AI agents require reliable data APIs and context layers—Kirha's core value proposition for enabling agents to access and act on private data.</li>
+  </ul>
+  <div class="wim">→ Kirha's LLM data APIs and agentic workflow infrastructure are positioned to capture accelerating demand for AI agents executing on-chain transactions.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390021/debridge-launches-mcp-enabling-ai-agents-to-execute-non-custodial-cross-chain-transactions" target="_blank">📎 deBridge launches MCP, enabling AI agents to execute non-custodial cross-chain transactions — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blu, Flyra, Kulipa, Salto X, Opfn, Staex, River, Tlon, Zealy, Busha, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Stablecoin adoption shifts from speculation to everyday spending and cross-border work</strong> — Global study confirms $300 billion stablecoin supply is increasingly deployed for everyday payments, cross-border work, and savings allocation among crypto-savvy consumers. This validates core use cases for payment infrastructure providers and remittance platforms.</div>
+  <div class="sig"><strong>Institutional demand for compliant stablecoin infrastructure accelerates amid regulatory clarity</strong> — Germany's central bank publicly endorsed stablecoin benefits for EU, signaling regulatory acceptance and institutional support. This regulatory clarity is accelerating adoption of compliant payment infrastructure in major markets.</div>
+  <div class="sig"><strong>Prediction market boom drives L2 transaction surge and payment infrastructure demand</strong> — Polygon topped Ethereum in daily transaction fees as prediction market activity surged, demonstrating explosive growth in order flow and transaction volume. This validates demand for scalable payment and settlement infrastructure.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390057/cryptos-300-billion-stablecoin-supply-is-increasingly-used-as-everyday-money-global-study-finds" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto's $300 billion stablecoin supply is increasingly used as 'everyday money,' global study finds — The Block</a>
+    <a href="https://cointelegraph.com/news/germany-central-bank-president-stablecoins" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Germany's Central Bank President Touts Stablecoin Benefits for EU — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/polygon-flips-ethereum-in-daily-transaction-fees" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Polygon Tops Ethereum In Daily Transaction Fees Over The Weekend — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Institutional capital flows into DeFi despite record fear sentiment; structured yield strategies gain traction</strong> — Crypto Fear &amp; Greed Index hit record lows, yet institutional capital continues flowing into DeFi platforms, signaling conviction among sophisticated investors in structured yield and restaking strategies.</div>
+  <div class="sig"><strong>Tokenized RWAs surge 13.5% in 30 days; Treasurys and Ethereum lead growth</strong> — Tokenized real-world assets grew 13.5% despite broader crypto market losing $1 trillion, with Treasurys and Ethereum leading. This validates institutional demand for regulated yield products and on-chain securitization.</div>
+  <div class="sig"><strong>Macro uncertainty drives institutional rotation toward stable yield and non-volatile assets</strong> — As Bitcoin and altcoins face downward pressure, institutional investors are rotating toward T-bill tokens, bonds, and regulated yield products. This trend benefits platforms offering compliant, custody-backed yield infrastructure.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390083/crypto-fear-greed-index-record-low-despite-ongoing-institutional-push-defi" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto Fear &amp; Greed Index hits record low despite ongoing institutional push into DeFi — The Block</a>
+    <a href="https://cointelegraph.com/news/tokenized-rwas-climb-despite-crypto-market-rout" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Tokenized RWAs Rise 13% as Crypto Market Loses $1T — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Prediction market boom drives L2 transaction surge; MEV protection infrastructure gains urgency</strong> — Polygon topped Ethereum in daily transaction fees as prediction market activity surged. This creates high-value order flow targets and increases demand for MEV protection and order flow auction infrastructure.</div>
+  <div class="sig"><strong>Institutional Bitcoin accumulation continues; corporate treasury and accounting infrastructure demand rises</strong> — On-chain data shows whale accumulation despite limited retail inflows, signaling institutional demand for sophisticated treasury management and accounting infrastructure as corporate Bitcoin holdings grow.</div>
+  <div class="sig"><strong>Enterprise blockchain infrastructure demand accelerates as institutional DeFi adoption grows</strong> — Institutional capital continues flowing into DeFi platforms, driving demand for enterprise-grade, SOC 2 compliant blockchain infrastructure, staking services, and reliable node infrastructure.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Staex, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/polygon-flips-ethereum-in-daily-transaction-fees" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Polygon Tops Ethereum In Daily Transaction Fees Over The Weekend — Cointelegraph</a>
+    <a href="https://www.xtb.com/int/market-analysis/news-and-research/crypto-news-will-bitcoin-drop-again-cryptocurrencies-try-to-stabilize-after-the-sell-off" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Will Bitcoin drop again? Cryptocurrencies try to stabilize after the sell-off — XTB</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>Germany's central bank endorses stablecoins; eIDAS 2.0 regulatory clarity accelerates digital identity adoption</strong> — Deutsche Bundesbank President publicly touted stablecoin benefits for EU, signaling regulatory acceptance. This validates demand for eIDAS 2.0 compliant digital identity and verifiable credentials infrastructure.</div>
+  <div class="sig"><strong>AI agents executing on-chain transactions; MCP protocol enables agentic workflow infrastructure</strong> — deBridge launched MCP enabling AI agents to execute non-custodial cross-chain transactions. This validates demand for AI agent infrastructure that connects LLMs to on-chain data and enables autonomous execution.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/germany-central-bank-president-stablecoins" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Germany's Central Bank President Touts Stablecoin Benefits for EU — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390021/debridge-launches-mcp-enabling-ai-agents-to-execute-non-custodial-cross-chain-transactions" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 deBridge launches MCP, enabling AI agents to execute non-custodial cross-chain transactions — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>Creator economy and community engagement platforms face macro headwinds amid market downturn</strong> — Crypto market sentiment has fallen into extreme fear territory, with weekly losses across major altcoins. This creates challenging conditions for community-driven and creator-focused platforms dependent on user engagement and token incentives.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://ambcrypto.com/extreme-fear-returns-as-crypto-majors-slide-despite-bitcoin-holding-above-67k/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Extreme fear returns as crypto majors slide despite Bitcoin holding above $67K — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Crypto market sentiment hits record fear levels; exchange volumes and user activity under pressure</strong> — Crypto Fear &amp; Greed Index hit record lows, with Bitcoin ETF outflows extending $6 billion selloff since November. This creates challenging conditions for exchange platforms dependent on trading volume and user activity.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390083/crypto-fear-greed-index-record-low-despite-ongoing-institutional-push-defi" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto Fear &amp; Greed Index hits record low despite ongoing institutional push into DeFi — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>Web3 gaming sector faces macro headwinds amid broader crypto market downturn</strong> — Crypto market sentiment has fallen into extreme fear territory, with $1 trillion in market value wiped out. This creates challenging conditions for gaming studios dependent on token incentives and user engagement.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://ambcrypto.com/extreme-fear-returns-as-crypto-majors-slide-despite-bitcoin-holding-above-67k/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Extreme fear returns as crypto majors slide despite Bitcoin holding above $67K — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series C</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+<tr><td><strong>Mesh</strong></td><td class="amt">$75M</td><td>Series C</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+<tr><td><strong>Anchorage Digital</strong></td><td class="amt">$100M</td><td>Strategic</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>Alpaca</strong></td><td class="amt">$150M</td><td>Series D</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+<tr><td><strong>Juspay</strong></td><td class="amt">$50M</td><td>Series D</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/" target="_blank">January Delivers Highest New Unicorn Count In More Than 3 Years</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 17, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
