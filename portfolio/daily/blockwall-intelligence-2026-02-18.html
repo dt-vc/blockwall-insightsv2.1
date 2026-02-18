@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-18</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 18, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>10</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>6</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Institutional DeFi gains traction as RWAs post 13.5% monthly gains amid market volatility</div>
+  <ul>
+    <li>Real-world asset tokenization platforms are attracting yield-focused institutional investors as $1 trillion exits the broader crypto market, signaling a flight to structured, yield-bearing products that Byzantine's restaking vaults directly serve.</li>
+    <li>Dragonfly's $650 million fourth fund explicitly targets tokenized real-world assets and payments infrastructure, validating the institutional appetite for Byzantine's structured DeFi strategies and restaking-as-a-service model.</li>
+    <li>BlackRock's launch of an Ethereum staking ETF with 18% revenue share demonstrates institutional willingness to participate in on-chain yield generation, creating competitive pressure and validation for Byzantine's institutional restaking positioning.</li>
+    <li>Market volatility and negative funding rates across major assets are driving institutional capital toward structured products with predictable yields rather than directional bets, favoring Byzantine's vault-based approach.</li>
+  </ul>
+  <div class="wim">→ Byzantine's institutional DeFi positioning is validated by macro trends showing yield-focused capital rotation and major TradFi players entering on-chain staking, directly expanding its addressable market.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/rwas-post-13-5-monthly-gains-as-1t-exits-the-crypto-market/" target="_blank">📎 RWAs post 13.5% monthly gains as $1T exits the crypto market — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/amid-crypto-vc-shakeout-dragonfly-closes-650m-fund-with-focus-on-real-world-assets" target="_blank">📎 Dragonfly Raises $650M Fund as Crypto VC Landscape Evolves — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390244/blackrock-begins-acquiring-eth-upcoming-ethereum-staking-etf" target="_blank">📎 BlackRock begins acquiring ETH for upcoming Ethereum staking ETF — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">T-bill tokenization gains institutional validation as RWA sector surges 13.5% monthly</div>
+  <ul>
+    <li>Real-world asset platforms including T-bill tokenization are experiencing 13.5% monthly gains as yield-focused institutional investors rotate capital away from volatile crypto assets, directly validating Spiko's regulated T-bill yield platform model.</li>
+    <li>Dragonfly's $650 million fund explicitly prioritizes tokenized real-world assets and payments, signaling major VC validation for the RWA thesis that underpins Spiko's daily interest T-bill offering.</li>
+    <li>Institutional capital flight from volatile assets into structured yield products creates tailwinds for Spiko's French bank custody model, which offers regulatory clarity and institutional-grade infrastructure.</li>
+    <li>BlackRock's Ethereum staking ETF launch demonstrates TradFi's appetite for on-chain yield products with institutional safeguards, a direct parallel to Spiko's regulated T-bill tokenization approach.</li>
+  </ul>
+  <div class="wim">→ Spiko's RWA tokenization thesis is gaining institutional momentum as $1 trillion rotates toward yield-bearing products, with major VCs and TradFi players validating the regulatory and structural approach Spiko pioneered.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/rwas-post-13-5-monthly-gains-as-1t-exits-the-crypto-market/" target="_blank">📎 RWAs post 13.5% monthly gains as $1T exits the crypto market — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/amid-crypto-vc-shakeout-dragonfly-closes-650m-fund-with-focus-on-real-world-assets" target="_blank">📎 Dragonfly Raises $650M Fund as Crypto VC Landscape Evolves — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">On-chain securitization gains institutional focus as RWA tokenization surges and TradFi enters DeFi</div>
+  <ul>
+    <li>Real-world asset tokenization platforms are posting 13.5% monthly gains as institutional capital rotates toward structured, yield-bearing products, directly validating Tranched's on-chain securitization and loan pool tranching model.</li>
+    <li>Dragonfly's $650 million fund explicitly targets tokenized real-world assets and the TradFi-DeFi bridge, providing major VC validation for Tranched's securitization infrastructure thesis.</li>
+    <li>BlackRock's Ethereum staking ETF and institutional participation in on-chain yield products demonstrate TradFi's growing comfort with on-chain structured products, expanding Tranched's addressable market for loan pool tranching.</li>
+    <li>Market volatility driving institutional capital toward predictable, tranched yield structures rather than directional bets creates favorable conditions for Tranched's loan securitization platform.</li>
+  </ul>
+  <div class="wim">→ Tranched's TradFi-DeFi bridge positioning is validated by institutional capital rotation toward RWA tokenization and major VC focus on on-chain securitization, directly expanding its market opportunity.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/rwas-post-13-5-monthly-gains-as-1t-exits-the-crypto-market/" target="_blank">📎 RWAs post 13.5% monthly gains as $1T exits the crypto market — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/amid-crypto-vc-shakeout-dragonfly-closes-650m-fund-with-focus-on-real-world-assets" target="_blank">📎 Dragonfly Raises $650M Fund as Crypto VC Landscape Evolves — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">MEV infrastructure gains relevance as Ethereum developers plan AI-assisted protocol development</div>
+  <ul>
+    <li>Ethereum developers are planning to use AI to boost blockchain development, including drafting proposals and moderating meetings, creating potential demand for Blink Labs' MEV protection and order flow auction infrastructure as protocol complexity increases.</li>
+    <li>Market volatility and negative funding rates are driving institutional focus toward infrastructure that protects order flow and reduces extractable value, validating Blink Labs' core MEV protection thesis.</li>
+    <li>Solana's emergence as a high-speed alternative with growing developer ecosystem creates competitive pressure for Ethereum infrastructure providers like Blink Labs to innovate on MEV solutions and multi-chain capabilities.</li>
+  </ul>
+  <div class="wim">→ Blink Labs' MEV infrastructure becomes more critical as Ethereum developers adopt AI-assisted development and institutional capital demands better order flow protection in volatile markets.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Corporate treasury management gains urgency as institutions accumulate crypto amid market volatility</div>
+  <ul>
+    <li>Strategy and Bitmine deployed approximately $260 million to expand BTC and ETH holdings during market weakness, demonstrating institutional demand for sophisticated treasury management tools that Den's onchain accounting platform serves.</li>
+    <li>Corporate treasuries are actively accumulating Bitcoin despite price weakness, creating demand for Den's team wallet platform and multi-sig corporate treasury infrastructure to manage large institutional holdings securely.</li>
+    <li>Institutional capital rotation toward structured products and RWAs is driving demand for transparent, auditable treasury management solutions that Den's onchain accounting capabilities provide.</li>
+    <li>Market volatility and whale activity creating exchange inflows signal institutional need for secure, multi-sig custody and accounting solutions that Den's platform delivers.</li>
+  </ul>
+  <div class="wim">→ Den's corporate treasury platform gains relevance as institutions like Strategy and Bitmine deploy hundreds of millions into crypto, requiring sophisticated onchain accounting and multi-sig management infrastructure.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/top-crypto-treasury-companies-strategy-and-bitmine-add-to-btc-eth-stacks" target="_blank">📎 Strategy and Bitmine Expand BTC, ETH Holdings Amid Market Slump — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise blockchain infrastructure demand rises as institutional staking and RWA tokenization accelerate</div>
+  <ul>
+    <li>BlackRock's launch of an Ethereum staking ETF and institutional participation in on-chain yield products drives demand for enterprise-grade blockchain infrastructure and staking services that Validation Cloud provides.</li>
+    <li>Institutional capital rotation toward RWA tokenization and structured yield products requires reliable, SOC 2-compliant node infrastructure and data services that Validation Cloud's enterprise offering delivers.</li>
+    <li>Ethereum developers planning AI-assisted protocol development and upgrades will require robust infrastructure providers like Validation Cloud to support increased network complexity and institutional participation.</li>
+    <li>Solana's emergence as a high-speed alternative with growing institutional adoption creates multi-chain infrastructure demand that Validation Cloud's cross-chain node API capabilities address.</li>
+  </ul>
+  <div class="wim">→ Validation Cloud's enterprise blockchain infrastructure becomes critical as institutional staking, RWA tokenization, and protocol development accelerate, expanding demand for SOC 2-compliant node services.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390244/blackrock-begins-acquiring-eth-upcoming-ethereum-staking-etf" target="_blank">📎 BlackRock begins acquiring ETH for upcoming Ethereum staking ETF — The Block</a>
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">Digital identity infrastructure gains regulatory momentum as EU digital wallet and eIDAS 2.0 implementation accelerates</div>
+  <ul>
+    <li>Ethereum developers are planning AI-assisted protocol development and governance, creating demand for verifiable credential infrastructure that Spherity's SSI digital identity platform provides for compliance automation.</li>
+    <li>Institutional participation in on-chain RWA tokenization and staking requires robust identity verification and compliance automation, validating Spherity's digital identity and verifiable credentials approach.</li>
+    <li>Market volatility and institutional capital rotation toward regulated products increase demand for compliance automation infrastructure that Spherity's SSI platform delivers.</li>
+  </ul>
+  <div class="wim">→ Spherity's digital identity platform gains relevance as institutional DeFi participation and RWA tokenization require robust compliance automation and verifiable credential infrastructure.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI agent infrastructure gains traction as OpenAI and Ethereum developers prioritize agentic workflows</div>
+  <ul>
+    <li>OpenAI's OpenClaw hire signals the AI race is shifting from smarter models to the systems and developers behind them, creating demand for Kirha's context-as-a-service APIs that connect LLMs to private data for agentic workflows.</li>
+    <li>Ethereum developers planning AI-assisted protocol development, including drafting proposals and moderating meetings, validates demand for Kirha's LLM data APIs and agentic workflow infrastructure.</li>
+    <li>Institutional participation in on-chain RWA tokenization and DeFi requires AI-powered data access and analysis, expanding Kirha's addressable market for context-as-a-service APIs.</li>
+    <li>Market complexity from institutional capital rotation toward structured products creates demand for AI agents that can analyze and execute complex on-chain strategies, validating Kirha's core thesis.</li>
+  </ul>
+  <div class="wim">→ Kirha's context-as-a-service APIs gain relevance as AI agent infrastructure becomes critical for both Ethereum protocol development and institutional DeFi participation.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/17/what-openais-openclaw-hire-says-about-the-future-of-ai-agents/" target="_blank">📎 What OpenAI's OpenClaw hire says about the future of AI agents — Fortune</a>
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Community gamification platforms gain relevance as prediction markets and regulatory clarity advance</div>
+  <ul>
+    <li>The CFTC's assertion of exclusive federal jurisdiction over prediction markets signals regulatory clarity that could accelerate adoption of prediction market platforms and community engagement tools like Zealy's quest-to-earn infrastructure.</li>
+    <li>Zora's launch of attention markets on Solana demonstrates growing institutional interest in prediction and engagement platforms, validating the broader market for community gamification and quest-based reward systems.</li>
+    <li>Institutional capital rotation toward structured products and RWAs creates demand for community engagement and gamification tools that drive user participation in tokenized platforms.</li>
+  </ul>
+  <div class="wim">→ Zealy's quest-to-earn platform gains relevance as prediction markets gain regulatory clarity and platforms like Zora demonstrate institutional interest in community engagement infrastructure.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390241/cftc-claims-exclusive-federal-authority-over-prediction-markets-in-new-brief-clashing-with-states" target="_blank">📎 CFTC claims exclusive federal authority over prediction markets in new brief, clashing with states — The Block</a>
+    <a href="https://www.theblock.co/post/390249/zora-launches-attention-markets-solana" target="_blank">📎 Zora launches 'attention markets' on Solana — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spectarium</h3>
+  <div class="hl">Web3 gaming gains institutional validation as Solana ecosystem expands and developer adoption accelerates</div>
+  <ul>
+    <li>Solana's emergence as a high-speed smart contract platform with growing developer ecosystem and technical improvements creates favorable conditions for gaming studios like Spectarium to build scalable, low-cost games.</li>
+    <li>Institutional capital rotation toward infrastructure and developer ecosystems validates the gaming sector's long-term potential, supporting Spectarium's Finland-based development team and cross-platform RPG ambitions.</li>
+    <li>Pump.fun's launch of Cashback Coins rewards feature on Solana demonstrates growing institutional interest in Solana-based gaming and engagement mechanics that Spectarium's action RPG can leverage.</li>
+  </ul>
+  <div class="wim">→ Spectarium's cross-platform action RPG gains relevance as Solana's developer ecosystem expands and institutional capital validates gaming infrastructure investments.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/pumpfun-launches-cashback-coins-rewards" target="_blank">📎 Pump.fun launches Cashback Coins Rewards Feature — Cointelegraph</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blu, Flyra, Kulipa, Nilos, Rebind, Yousend, Salto X, Opfn, Staex, River, Tlon, Busha</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Stripe-backed Bridge secures national trust banking license, validating stablecoin payment infrastructure</strong> — Bridge, Stripe's stablecoin subsidiary, received conditional OCC approval for a national bank charter, signaling regulatory validation for crypto-native payment infrastructure and stablecoin settlement rails that payment platforms depend on.</div>
+  <div class="sig"><strong>Kraken integrates OTC desk with ICE Chat, expanding institutional payment access</strong> — Kraken's integration with ICE Chat provides institutional traders direct access to crypto liquidity through institutional messaging platforms, demonstrating growing institutional adoption of crypto payment and settlement infrastructure.</div>
+  <div class="sig"><strong>Nexo returns to U.S. market after 3-year regulatory absence with new partnerships</strong> — Nexo's re-entry to the U.S. market signals regulatory environment improvements and institutional appetite for crypto lending and payment products, validating the broader fintech infrastructure thesis.</div>
+  <div class="sig"><strong>Japan's top securities firms prepare crypto exchange pivot by end of 2026</strong> — Nomura Holdings, Daiwa Securities, and SMBC Nikko Securities preparing crypto exchange launches signal major institutional adoption of crypto payment and trading infrastructure in Asia.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.bankless.com/read/news/stripe-backed-bridge-secures-u-s-national-trust-banking-license" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Stripe-Backed Bridge Secures U.S. National Trust Banking License — Bankless</a>
+    <a href="https://cointelegraph.com/news/kraken-integrates-with-ice-chat-to-expand-institutional-otc-access" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Kraken Integrates OTC Desk with ICE Chat for Institutions — Cointelegraph</a>
+    <a href="https://ambcrypto.com/nexo-returns-to-the-u-s-after-3-years-whats-different-this-time/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Nexo returns to the U.S. after 3 years – What's different this time? — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/markets/japans-top-securities-firms-prepare-crypto-exchange-pivot/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Japan's top securities firms prepare crypto exchange pivot — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>RWA tokenization surges 13.5% monthly as $1 trillion rotates from volatile crypto</strong> — Real-world asset platforms are experiencing significant monthly gains as institutional capital rotates toward yield-bearing, structured products, validating the RWA thesis and creating tailwinds for tokenization infrastructure.</div>
+  <div class="sig"><strong>Dragonfly closes $650M fund with explicit focus on RWA tokenization and TradFi-DeFi bridge</strong> — Major crypto VC firm Dragonfly's fourth fund prioritizes tokenized real-world assets and payments, signaling institutional validation for the RWA and institutional DeFi thesis.</div>
+  <div class="sig"><strong>BlackRock launches Ethereum staking ETF with 18% revenue share, validating institutional on-chain yield</strong> — BlackRock's ETF launch demonstrates TradFi's appetite for on-chain yield products with institutional safeguards, expanding the addressable market for DeFi infrastructure and staking services.</div>
+  <div class="sig"><strong>Institutional capital accumulation accelerates as Strategy and Bitmine deploy $260M in BTC and ETH</strong> — Major institutional treasuries are actively accumulating crypto during market weakness, signaling confidence in long-term value and demand for sophisticated DeFi and treasury management infrastructure.</div>
+  <div class="sig"><strong>Negative funding rates and market volatility drive institutional focus toward structured yield products</strong> — Market conditions are pushing institutional capital toward predictable, tranched yield structures rather than directional bets, favoring DeFi platforms offering structured products and risk management.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://ambcrypto.com/rwas-post-13-5-monthly-gains-as-1t-exits-the-crypto-market/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 RWAs post 13.5% monthly gains as $1T exits the crypto market — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/amid-crypto-vc-shakeout-dragonfly-closes-650m-fund-with-focus-on-real-world-assets" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Dragonfly Raises $650M Fund as Crypto VC Landscape Evolves — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390244/blackrock-begins-acquiring-eth-upcoming-ethereum-staking-etf" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BlackRock begins acquiring ETH for upcoming Ethereum staking ETF — The Block</a>
+    <a href="https://cointelegraph.com/news/top-crypto-treasury-companies-strategy-and-bitmine-add-to-btc-eth-stacks" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Strategy and Bitmine Expand BTC, ETH Holdings Amid Market Slump — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Ethereum developers plan AI-assisted protocol development, increasing infrastructure complexity demands</strong> — Ethereum's adoption of AI for proposal drafting, editing, and governance moderation signals increasing protocol complexity that requires robust infrastructure providers and data services.</div>
+  <div class="sig"><strong>Institutional staking participation accelerates with BlackRock ETF launch, validating node infrastructure demand</strong> — BlackRock's Ethereum staking ETF and institutional participation in on-chain yield products drive demand for enterprise-grade blockchain infrastructure and staking services.</div>
+  <div class="sig"><strong>Solana ecosystem expands with developer adoption and technical improvements, creating multi-chain infrastructure demand</strong> — Solana's emergence as a high-speed alternative with growing developer ecosystem creates competitive pressure and demand for multi-chain infrastructure providers.</div>
+  <div class="sig"><strong>Corporate treasury accumulation drives demand for sophisticated onchain accounting and multi-sig custody</strong> — Institutional treasuries deploying hundreds of millions into crypto require transparent, auditable treasury management and secure multi-sig custody infrastructure.</div>
+  <div class="sig"><strong>Market volatility and whale activity signal institutional need for secure custody and accounting solutions</strong> — Exchange inflows and whale activity demonstrate institutional demand for secure, institutional-grade custody and accounting infrastructure.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Staex, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+    <a href="https://www.theblock.co/post/390244/blackrock-begins-acquiring-eth-upcoming-ethereum-staking-etf" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BlackRock begins acquiring ETH for upcoming Ethereum staking ETF — The Block</a>
+    <a href="https://cointelegraph.com/news/top-crypto-treasury-companies-strategy-and-bitmine-add-to-btc-eth-stacks" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Strategy and Bitmine Expand BTC, ETH Holdings Amid Market Slump — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>AI agent infrastructure becomes critical as OpenAI shifts focus from models to agentic systems</strong> — OpenAI's OpenClaw hire signals the AI race is shifting from smarter models to the systems and developers behind them, creating demand for context-as-a-service APIs and agentic workflow infrastructure.</div>
+  <div class="sig"><strong>Ethereum protocol development adopts AI-assisted workflows, validating demand for AI infrastructure</strong> — Ethereum developers planning AI-assisted proposal drafting, editing, and governance moderation validates demand for AI infrastructure and data APIs supporting complex protocol development.</div>
+  <div class="sig"><strong>Institutional DeFi participation requires robust compliance automation and verifiable credential infrastructure</strong> — Institutional participation in on-chain RWA tokenization and staking requires identity verification and compliance automation infrastructure.</div>
+  <div class="sig"><strong>Market complexity from institutional capital rotation creates demand for AI-powered data analysis and execution</strong> — Institutional capital rotation toward structured products and RWAs creates demand for AI agents that can analyze and execute complex on-chain strategies.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://fortune.com/2026/02/17/what-openais-openclaw-hire-says-about-the-future-of-ai-agents/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 What OpenAI's OpenClaw hire says about the future of AI agents — Fortune</a>
+    <a href="https://www.dlnews.com/articles/defi/how-ethereum-plans-to-use-ai-to-boost-blockchain-development/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 How Ethereum devs will use AI to boost blockchain's development — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>CFTC asserts exclusive federal jurisdiction over prediction markets, signaling regulatory clarity</strong> — The CFTC's assertion of exclusive federal authority over prediction markets signals regulatory clarity that could accelerate adoption of prediction market platforms and community engagement infrastructure.</div>
+  <div class="sig"><strong>Zora launches attention markets on Solana, demonstrating institutional interest in prediction platforms</strong> — Zora's launch of attention markets on Solana demonstrates growing institutional interest in prediction and engagement platforms, validating the broader market for community gamification.</div>
+  <div class="sig"><strong>Pump.fun launches Cashback Coins rewards feature, expanding Solana-based engagement mechanics</strong> — Pump.fun's launch of Cashback Coins rewards feature demonstrates growing institutional interest in Solana-based gaming and engagement mechanics.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390241/cftc-claims-exclusive-federal-authority-over-prediction-markets-in-new-brief-clashing-with-states" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CFTC claims exclusive federal authority over prediction markets in new brief, clashing with states — The Block</a>
+    <a href="https://www.theblock.co/post/390249/zora-launches-attention-markets-solana" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Zora launches 'attention markets' on Solana — The Block</a>
+    <a href="https://cointelegraph.com/news/pumpfun-launches-cashback-coins-rewards" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Pump.fun launches Cashback Coins Rewards Feature — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Gemini undergoes C-suite restructuring with COO, CFO, and CLO departures amid market challenges</strong> — Gemini's executive departures raise investor concerns about operational stability and insolvency, reflecting broader exchange sector pressures from declining transaction volumes and crypto asset declines.</div>
+  <div class="sig"><strong>Japan's major securities firms prepare crypto exchange launches, signaling institutional adoption in Asia</strong> — Nomura Holdings, Daiwa Securities, and SMBC Nikko Securities preparing crypto exchange launches by end of 2026 signal major institutional adoption and regulatory clarity in Asia.</div>
+  <div class="sig"><strong>eToro posts Q4 profit despite 40% year-on-year revenue decline, showing resilience amid market volatility</strong> — eToro's profitable Q4 despite revenue decline demonstrates exchange sector resilience and shift toward higher-margin products as traders diversify beyond crypto.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.bankless.com/read/news/gemini-upends-c-suite-with-co-coo-and-clo-departures" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Gemini Upends C-Suite With COO, CFO, and CLO Departures — Bankless</a>
+    <a href="https://www.dlnews.com/articles/markets/japans-top-securities-firms-prepare-crypto-exchange-pivot/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Japan's top securities firms prepare crypto exchange pivot — DL News</a>
+    <a href="https://www.dlnews.com/articles/markets/etoro-still-posts-profit-as-bitcoin-price-slides/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 eToro crypto revenue surges to $13bn as traders switch to commodities — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>Solana ecosystem expands with developer adoption and technical improvements, creating gaming opportunities</strong> — Solana's emergence as a high-speed smart contract platform with growing developer ecosystem creates favorable conditions for gaming studios to build scalable, low-cost games.</div>
+  <div class="sig"><strong>Pump.fun launches Cashback Coins rewards feature, demonstrating Solana-based engagement mechanics</strong> — Pump.fun's launch of Cashback Coins rewards feature demonstrates growing institutional interest in Solana-based gaming and engagement mechanics.</div>
+  <div class="sig"><strong>Institutional capital rotation validates gaming infrastructure investments as sector gains long-term credibility</strong> — Institutional capital rotation toward infrastructure and developer ecosystems validates the gaming sector's long-term potential and supports gaming studio development.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/pumpfun-launches-cashback-coins-rewards" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Pump.fun launches Cashback Coins Rewards Feature — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series B</td><td><span class="tag">Payments/Remittances</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>BitGo</strong></td><td class="amt">Undisclosed</td><td>IPO</td><td><span class="tag">Infrastructure/Custody</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>LMAX Group</strong></td><td class="amt">$150M</td><td>Strategic</td><td><span class="tag">Payments/Exchange</span></td><td>Busha</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>Anchorage Digital</strong></td><td class="amt">$100M</td><td>Strategic</td><td><span class="tag">Infrastructure/Banking</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure/Intelligence</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>Dragonfly Capital</strong></td><td class="amt">$650M</td><td>Fund IV</td><td><span class="tag">Multi-sector VC</span></td><td>Byzantine, Spiko, Tranched, Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://fortune.com/2026/02/17/dragonfly-fourth-fund-crypto-venture-capital-blockchain-polymarket-ethena/" target="_blank">Exclusive: Crypto venture firm Dragonfly closes $650 million fourth fund</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 18, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
