@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-19</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 19, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>17</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>5</b><span>Sector Digests</span></div>
+  <div class="stat"><b>5</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">Fed signals potential rate hikes amid stablecoin regulatory momentum</div>
+  <ul>
+    <li>Federal Reserve minutes indicate possibility of interest rate hikes if inflation persists, creating headwinds for credit products targeting underbanked LATAM consumers.</li>
+    <li>Bridge stablecoin issuer wins OCC approval for national trust bank charter, signaling regulatory greenlight for USD-backed rails critical to no-fee credit card issuance.</li>
+    <li>Kraken's acquisition of tokenization platform Magna highlights consolidation in crypto infrastructure, potentially accelerating Mastercard partnerships for crypto cards.</li>
+    <li>US CLARITY Act advances toward April passage per Senator Moreno, promising clearer rules for stablecoin and payment rails in Mexico.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity on stablecoins and tightening rates pressure Blu's credit building model but validate compliant card issuing infrastructure.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/fed-sees-possibility-of-upward-adjustments-to-rates-if-inflation-remains-above-target-levels" target="_blank">📎 Fed Policymakers Raise Prospect of Interest Rate Hikes — Cointelegraph</a>
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 In The Stables: Bridge Wins OCC Approval — Messari</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act To 'Hopefully' Pass By April — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Cross-border remittance rails benefit from stablecoin OCC approvals</div>
+  <ul>
+    <li>Bridge's OCC approval for stablecoin operations sets precedent for instant settlement in emerging markets remittances.</li>
+    <li>Aptos proposes deflationary tokenomics that could lower costs for cross-border credit and remittance products.</li>
+    <li>US CLARITY Act progress offers regulatory certainty for FX conversion and stablecoin-based remittances.</li>
+    <li>Kraken-Magna deal underscores tokenization's role in efficient cross-border fund transfers.</li>
+  </ul>
+  <div class="wim">→ Stablecoin regulatory wins directly enable Flyra's low-cost remittance + credit model for financial inclusion.</div>
+  <div class="sr">
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 In The Stables: Bridge Wins OCC Approval — Messari</a>
+    <a href="https://cointelegraph.com/news/aptos-eyes-tokenomics-update-that-will-turn-apt-deflationary" target="_blank">📎 Aptos Foundation to Propose New Deflationary Tokenomics — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Ether.fi migrates crypto cards to OP Mainnet amid L2 infrastructure shifts</div>
+  <ul>
+    <li>Ether.fi shifts 70K+ non-custodial crypto cards and millions in TVL to Optimism Mainnet, validating white-label card infrastructure.</li>
+    <li>Base abandons OP Stack for unified architecture to accelerate L2 upgrades, impacting multi-chain card APIs.</li>
+    <li>Robinhood L2 testnet hits 4M transactions in first week, showing demand for fast settlement rails powering Visa/MC cards.</li>
+    <li>Kraken-Magna acquisition accelerates tokenization for programmable payments and card products.</li>
+  </ul>
+  <div class="wim">→ L2 migrations and card infrastructure deals confirm Kulipa's API-powered white-label model amid rising crypto debit adoption.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390420/ether-fi-shifts-non-custodial-crypto-card-product-op-mainnet-scroll" target="_blank">📎 Ether.fi shifts non-custodial crypto card product to OP Mainnet — The Block</a>
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank">📎 Base To Shift From Optimism Tech Stack — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390440/robinhood-l2-testnet-four-million" target="_blank">📎 Robinhood's Layer 2 testnet sees four million transactions — The Block</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin approvals boost global FX settlement infrastructure</div>
+  <ul>
+    <li>Bridge OCC approval enables compliant instant settlement across 120+ countries for Nilos' payment rails.</li>
+    <li>Base's unified stack shift and Robinhood L2 traction highlight demand for fast FX conversion layers.</li>
+    <li>CLARITY Act momentum provides regulatory tailwinds for multi-currency instant settlements.</li>
+    <li>Kraken tokenization acquisition supports programmable FX infrastructure.</li>
+  </ul>
+  <div class="wim">→ OCC stablecoin wins and L2 scaling directly enhance Nilos' global payment infrastructure capabilities.</div>
+  <div class="sr">
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 In The Stables: Bridge Wins OCC Approval — Messari</a>
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank">📎 Base To Shift From Optimism Tech Stack — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390440/robinhood-l2-testnet-four-million" target="_blank">📎 Robinhood L2 testnet — The Block</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">L2 migrations validate self-custodial wallet + IBAN infrastructure</div>
+  <ul>
+    <li>Ether.fi migrates 300K accounts to OP Mainnet, mirroring Rebind's self-custodial wallet + virtual card model.</li>
+    <li>Base shifts to unified stack for faster on/off-ramps, critical for Paris-based compliant wallets.</li>
+    <li>Robinhood L2 processes 4M txns, showing infrastructure readiness for embedded finance wallets.</li>
+    <li>Address poisoning scams highlight need for Rebind's secure self-custodial IBAN solutions.</li>
+  </ul>
+  <div class="wim">→ High-volume L2 wallet migrations affirm Rebind's self-custodial + debit card positioning in regulated Europe.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390420/ether-fi-shifts-non-custodial-crypto-card-product-op-mainnet-scroll" target="_blank">📎 Ether.fi shifts crypto card product — The Block</a>
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank">📎 Base architecture shift — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390440/robinhood-l2-testnet-four-million" target="_blank">📎 Robinhood L2 testnet — The Block</a>
+    <a href="https://cointelegraph.com/news/why-address-poisoning-works-without-stealing-private-keys" target="_blank">📎 Why Address Poisoning Works — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">African remittances positioned for stablecoin regulatory tailwinds</div>
+  <ul>
+    <li>Bridge OCC approval accelerates USD stablecoin rails for diaspora instant delivery.</li>
+    <li>CLARITY Act progress enables compliant multi-currency remittances to Africa.</li>
+    <li>Kraken-Magna deal supports tokenization for low-cost African corridors.</li>
+    <li>Base L2 scaling improvements benefit high-volume remittance flows.</li>
+  </ul>
+  <div class="wim">→ US stablecoin approvals directly lower costs and speed up Yousend's African diaspora remittance service.</div>
+  <div class="sr">
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 Bridge Wins OCC Approval — Messari</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank">📎 Base shift — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Institutional DeFi gains from ETH Foundation priorities and tokenomics shifts</div>
+  <ul>
+    <li>Ethereum Foundation outlines 2026 priorities including faster transactions and security upgrades vital for restaking vaults.</li>
+    <li>Aptos deflationary proposal reduces supply pressure on structured DeFi products.</li>
+    <li>OpenAI EVMbench benchmarks AI agents for smart contract security, relevant to institutional vaults.</li>
+    <li>Ether.fi L2 migration demonstrates scaling for high TVL DeFi strategies.</li>
+  </ul>
+  <div class="wim">→ ETH protocol upgrades and AI security tools strengthen Byzantine's institutional restaking infrastructure.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank">📎 Ethereum Foundation Outlines Main Priorities — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/aptos-eyes-tokenomics-update-that-will-turn-apt-deflationary" target="_blank">📎 Aptos Foundation to Propose New Deflationary Tokenomics — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/openai-benchmark-ai-agents-detect-smart-contract-flaws" target="_blank">📎 OpenAI Researches AI Agents Detecting Smart Contract Flaws — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390420/ether-fi-shifts-non-custodial-crypto-card-product-op-mainnet-scroll" target="_blank">📎 Ether.fi shifts to OP Mainnet — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">T-Bills drive BTC price action amid French custody demand</div>
+  <ul>
+    <li>T-Bills identified as primary BTC price driver over Fed policy, validating regulated T-bill yield platforms.</li>
+    <li>Ledn sells $188M bitcoin-backed bonds rated BBB-, showing institutional appetite for yield products.</li>
+    <li>Fed rate hike signals support higher T-bill yields for Spiko's daily interest model.</li>
+    <li>Kraken-Magna acquisition accelerates RWA tokenization infrastructure.</li>
+  </ul>
+  <div class="wim">→ T-Bill liquidity dominance reinforces Spiko's regulated yield platform with French bank custody.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/treasury-bills-primary-driver-bitcoin-price" target="_blank">📎 T-Bills Primary Force Behind BTC's Price Action — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390433/ledn-sells-188-million-worth-of-bitcoin-backed-bonds-bloomberg" target="_blank">📎 Ledn sells $188 million bitcoin-backed bonds — The Block</a>
+    <a href="https://cointelegraph.com/news/fed-sees-possibility-of-upward-adjustments-to-rates-if-inflation-remains-above-target-levels" target="_blank">📎 Fed Policymakers Raise Prospect — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">Kraken Magna acquisition accelerates on-chain securitization</div>
+  <ul>
+    <li>Kraken acquires tokenization platform Magna, directly supporting loan pool tranching and RWA bridges.</li>
+    <li>Aptos deflationary tokenomics enhance fixed yield tranching mechanics.</li>
+    <li>Bridge OCC approval validates compliant securitization infrastructure.</li>
+    <li>Coinbase adds tokens as loan collateral via Morpho, expanding on-chain credit markets.</li>
+  </ul>
+  <div class="wim">→ Tokenization M&amp;A and stablecoin approvals propel Tranched's TradFi-DeFi securitization bridge.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/kraken-acquisition-magna-tokenization" target="_blank">📎 Kraken Acquires Tokenization Platform Magna — Cointelegraph</a>
+    <a href="https://ambcrypto.com/aptos-unveils-deflationary-tokenomics-shift-as-apt-price-slides/" target="_blank">📎 Aptos unveils deflationary tokenomics — AMBCrypto</a>
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 Bridge Wins OCC Approval — Messari</a>
+    <a href="https://www.theblock.co/post/390403/coinbase-xrp-dogecoin-cardano-litecoin-loans-morpho" target="_blank">📎 Coinbase adds XRP, Dogecoin etc as collateral — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">Kraken Magna deal validates cap table tokenization SaaS</div>
+  <ul>
+    <li>Kraken's Magna acquisition for token management directly aligns with equity issuance and cap table platforms.</li>
+    <li>DerivaDEX launches Bermuda-licensed DAO derivatives, showing tokenized governance demand.</li>
+    <li>Bridge OCC approval enables compliant equity token issuance infrastructure.</li>
+    <li>CLARITY Act progress supports tokenized securities frameworks.</li>
+  </ul>
+  <div class="wim">→ Exchange tokenization acquisitions confirm demand for Salto X's on-chain cap table management.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank">📎 Kraken acquires Magna — DL News</a>
+    <a href="https://cointelegraph.com/news/derivadex-launches-bermuda-licensed-derivatives-exchange-under-dao-governance" target="_blank">📎 DerivaDEX Launches Bermuda-Licensed DAO Derivatives — Cointelegraph</a>
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank">📎 Bridge OCC — Messari</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Base, Robinhood L2 shifts highlight MEV protection demand</div>
+  <ul>
+    <li>Base transitions from OP Stack to unified architecture for faster upgrades, increasing need for multi-chain MEV safeguards.</li>
+    <li>Robinhood L2 testnet achieves 4M transactions in week one, amplifying order flow auction opportunities.</li>
+    <li>Ethereum Foundation 2026 priorities include security upgrades relevant to MEV infra.</li>
+    <li>Address poisoning exploits underscore wallet-level MEV and order protection needs.</li>
+  </ul>
+  <div class="wim">→ L2 scaling activity across Base and Robinhood drives demand for Blink Labs' MEV protection services.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank">📎 Base To Shift From Optimism Tech Stack — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390440/robinhood-l2-testnet-four-million" target="_blank">📎 Robinhood's Layer 2 testnet — The Block</a>
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank">📎 Ethereum Foundation Priorities — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/why-address-poisoning-works-without-stealing-private-keys" target="_blank">📎 Address Poisoning — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">ETH treasury failures highlight team wallet security needs</div>
+  <ul>
+    <li>ETHZilla crashes 97% as Thiel exits Ethereum treasury model, emphasizing multi-sig corporate treasury safeguards.</li>
+    <li>Nakamoto Bitcoin treasury falls 99% amid scam claims, validating onchain accounting platforms.</li>
+    <li>Address poisoning scams target wallets without key theft, critical for team treasury protection.</li>
+    <li>OpenAI EVM security tools underscore smart contract audit needs for corporate onchain ops.</li>
+  </ul>
+  <div class="wim">→ Treasury strategy failures amplify demand for Den's secure team wallet and multi-sig infrastructure.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/ethzilla-crashes-97-thiel-exits-the-ethereum-treasury-model/" target="_blank">📎 ETHZilla crashes 97% — AMBCrypto</a>
+    <a href="https://ambcrypto.com/noise-on-twitter-david-bailey-denies-scam-claims-after-bitcoin-treasury-nakamoto-falls-99/" target="_blank">📎 David Bailey denies scam claims — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/why-address-poisoning-works-without-stealing-private-keys" target="_blank">📎 Address Poisoning — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/defi/openai-releases-crypto-security-tool/" target="_blank">📎 OpenAI smart contract tool — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Staex</h3>
+  <div class="hl">Helium supply dynamics signal DePIN momentum</div>
+  <ul>
+    <li>Helium HNT eyes $1.71 breakout as supply tightens and holder revenues rise, validating DePIN connectivity models.</li>
+    <li>Riot Platforms shareholder pushes AI/HPC pivot, highlighting DePIN hardware pivot potential.</li>
+    <li>AI data centers face power constraints, creating opportunities for decentralized IoT networks.</li>
+    <li>Bitcoin miner AI shift could drive DePIN compute infrastructure demand.</li>
+  </ul>
+  <div class="wim">→ Helium's DePIN traction and miner pivots support Staex's decentralized IoT connectivity expansion.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/helium-can-hnt-break-1-71-next-as-supply-tightens/" target="_blank">📎 Helium: Can HNT break $1.71 — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/markets/bitcoin-miner-letter-from-shareholder-faster-ai-pivot/" target="_blank">📎 Bitcoin miner gets letter demanding AI pivot — DL News</a>
+    <a href="https://fortune.com/2026/02/19/ai-data-centers-in-space-elon-musk-power-problems/" target="_blank">📎 AI data centers in space — Fortune</a>
+    <a href="https://cointelegraph.com/news/riot-platform-ai-hpc-profit-stockholder" target="_blank">📎 Riot Platforms AI/HPC Push — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">ETH Foundation priorities boost enterprise staking infrastructure</div>
+  <ul>
+    <li>Ethereum Foundation targets quantum security and gas limit increases for 2026, driving node API demand.</li>
+    <li>Grayscale shifts to SUI staking rewards, highlighting institutional staking yields.</li>
+    <li>Riot AI pivot and Bitcoin miner infra shifts validate enterprise blockchain nodes.</li>
+    <li>OpenAI EVMbench advances secure smart contract validation for SOC 2 compliance.</li>
+  </ul>
+  <div class="wim">→ ETH upgrades and staking shifts increase demand for Validation Cloud's enterprise-grade node infrastructure.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank">📎 Ethereum Foundation Outlines Priorities — Cointelegraph</a>
+    <a href="https://ambcrypto.com/from-sell-offs-to-staking-rewards-inside-grayscales-strategic-sui-move/" target="_blank">📎 Grayscale's strategic SUI move — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/riot-platform-ai-hpc-profit-stockholder" target="_blank">📎 Riot Platforms — Cointelegraph</a>
+    <a href="https://www.bankless.com/read/news/openai-and-paradigm-introduce-evmbench-for-ai-agent-benchmarking" target="_blank">📎 OpenAI EVMbench — Bankless</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">US CLARITY Act advances digital identity compliance frameworks</div>
+  <ul>
+    <li>CLARITY Act nears April passage, providing regulatory clarity for SSI and verifiable credentials.</li>
+    <li>Trump crypto event brings TradFi execs and regulators together on compliance automation.</li>
+    <li>OpenAI-Paradigm EVM security tools support compliant smart contract identity layers.</li>
+    <li>DerivaDEX Bermuda DAO license models decentralized governance with KYC implications.</li>
+  </ul>
+  <div class="wim">→ US regulatory progress validates Spherity's EU/German compliance automation for digital identity.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-tradfi-execs-mingle-trump-crypto-event" target="_blank">📎 Crypto, TradFi Execs Mingle at Trump Event — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390408/openai-and-paradigm-partner-on-ai-agent-tool-for-smart-contract-security" target="_blank">📎 OpenAI and Paradigm partner — The Block</a>
+    <a href="https://cointelegraph.com/news/derivadex-launches-bermuda-licensed-derivatives-exchange-under-dao-governance" target="_blank">📎 DerivaDEX Launches — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">OpenAI-Paradigm launch EVMbench for LLM smart contract analysis</div>
+  <ul>
+    <li>OpenAI and Paradigm release EVMbench benchmarking AI agents on vulnerability detection and patching.</li>
+    <li>Tool evaluates LLMs connecting to private data for agentic smart contract workflows.</li>
+    <li>Moonwell $2.7M exploit blamed on Claude underscores need for Kirha's context APIs.</li>
+    <li>ETH Foundation security priorities align with AI-driven contract verification.</li>
+  </ul>
+  <div class="wim">→ AI agent benchmarks for EVM security directly power Kirha's LLM data connection services.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/defi/openai-releases-crypto-security-tool/" target="_blank">📎 OpenAI releases crypto security tool — DL News</a>
+    <a href="https://www.bankless.com/read/news/openai-and-paradigm-introduce-evmbench-for-ai-agent-benchmarking" target="_blank">📎 OpenAI and Paradigm Introduce EVMbench — Bankless</a>
+    <a href="https://www.theblock.co/post/390408/openai-and-paradigm-partner-on-ai-agent-tool-for-smart-contract-security" target="_blank">📎 OpenAI and Paradigm partner — The Block</a>
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank">📎 Ethereum Foundation Priorities — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Kraken acquisitions signal African exchange consolidation</div>
+  <ul>
+    <li>Kraken acquires Magna ahead of potential IPO, setting M&amp;A precedent for licensed African exchanges.</li>
+    <li>CLARITY Act and Trump events promise US regulatory clarity benefiting emerging market onramps.</li>
+    <li>Coinbase adds tokens for onchain loans, expanding collateral options for Nigerian users.</li>
+    <li>World Liberty Forum highlights crypto's early stage with stablecoin infra testing.</li>
+  </ul>
+  <div class="wim">→ Global exchange M&amp;A and US regulation progress strengthen Busha's Nigeria SEC-licensed positioning.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/kraken-acquisition-magna-tokenization" target="_blank">📎 Kraken Acquires Magna — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank">📎 US CLARITY Act — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390403/coinbase-xrp-dogecoin-cardano-litecoin-loans-morpho" target="_blank">📎 Coinbase adds collateral — The Block</a>
+    <a href="https://www.theblock.co/post/390382/world-liberty-forum-opens-18-wlfi-rally-eric-trump-crypto-industry-one-yard-line" target="_blank">📎 World Liberty Forum — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Opfn, River, Tlon, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Bridge stablecoin wins OCC national trust approval</strong> — Regulatory greenlight accelerates compliant USD rails for cards, remittances, and FX across LATAM/Africa.</div>
+  <div class="sig"><strong>Ether.fi migrates 70K crypto cards to Optimism</strong> — L2 shift validates non-custodial debit infrastructure powering white-label Visa/MC issuance.</div>
+  <div class="sig"><strong>Kraken acquires tokenization platform Magna</strong> — Exchange consolidation fast-tracks programmable payments for global settlement and on/off-ramps.</div>
+  <div class="sig"><strong>US CLARITY Act nears April passage</strong> — Stablecoin/payment regulatory clarity benefits cross-border and card issuing startups.</div>
+  <div class="sig"><strong>Fed minutes signal potential rate hikes</strong> — Higher rates pressure credit products but support yield-bearing payment rails.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://messari.io/report/in-the-stables-bridge-wins-occ-approval" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 In The Stables: Bridge Wins OCC — Messari</a>
+    <a href="https://www.theblock.co/post/390420/ether-fi-shifts-non-custodial-crypto-card-product-op-mainnet-scroll" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ether.fi OP Mainnet — The Block</a>
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Kraken Magna — DL News</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CLARITY Act — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/fed-sees-possibility-of-upward-adjustments-to-rates-if-inflation-remains-above-target-levels" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Fed Rate Hikes — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Kraken Magna acquisition targets RWA tokenization</strong> — Exchange buys token management platform to power on-chain securitization and equity issuance.</div>
+  <div class="sig"><strong>Aptos proposes deflationary tokenomics overhaul</strong> — Lower staking rewards and higher burns create supply dynamics favoring fixed yield products.</div>
+  <div class="sig"><strong>Ledn sells $188M BTC-backed bonds</strong> — Institutional debt issuance validates T-bill and RWA yield strategies amid rate hike signals.</div>
+  <div class="sig"><strong>Coinbase enables token-collateralized onchain loans</strong> — XRP/DOGE/ADA/LTC as USDC loan collateral expands DeFi credit access.</div>
+  <div class="sig"><strong>T-Bills identified as primary BTC price driver</strong> — Short-term US debt issuance dominates liquidity over Fed policy for yield platforms.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/kraken-acquisition-magna-tokenization" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Kraken Magna — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/aptos-eyes-tokenomics-update-that-will-turn-apt-deflationary" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Aptos tokenomics — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390433/ledn-sells-188-million-worth-of-bitcoin-backed-bonds-bloomberg" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ledn BTC bonds — The Block</a>
+    <a href="https://www.theblock.co/post/390403/coinbase-xrp-dogecoin-cardano-litecoin-loans-morpho" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Coinbase Morpho loans — The Block</a>
+    <a href="https://cointelegraph.com/news/treasury-bills-primary-driver-bitcoin-price" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 T-Bills BTC — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Base ditches OP Stack for unified L2 architecture</strong> — Coinbase brings development in-house to accelerate upgrades, impacting multi-chain infra.</div>
+  <div class="sig"><strong>Robinhood L2 testnet hits 4M transactions in week 1</strong> — High-volume L2 activity drives MEV protection and node infrastructure demand.</div>
+  <div class="sig"><strong>ETH Foundation sets 2026 quantum/security priorities</strong> — Gas limits and transaction speed upgrades benefit staking nodes and MEV layers.</div>
+  <div class="sig"><strong>ETHZilla/Nakamoto treasury crashes expose wallet risks</strong> — 97-99% drops highlight multi-sig treasury and MEV security infrastructure gaps.</div>
+  <div class="sig"><strong>Helium supply squeeze signals DePIN breakout</strong> — Tightening HNT supply and rising revenues validate IoT connectivity networks.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Staex, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/coinbase-base-transitions-architecture" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Base unified stack — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390440/robinhood-l2-testnet-four-million" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Robinhood L2 — The Block</a>
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETH Foundation — Cointelegraph</a>
+    <a href="https://ambcrypto.com/ethzilla-crashes-97-thiel-exits-the-ethereum-treasury-model/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETHZilla crash — AMBCrypto</a>
+    <a href="https://ambcrypto.com/helium-can-hnt-break-1-71-next-as-supply-tightens/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Helium HNT — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>OpenAI-Paradigm launch EVMbench AI security benchmark</strong> — Tests LLM agents on smart contract vuln detection/patching for agentic workflows.</div>
+  <div class="sig"><strong>Moonwell $2.7M exploit blamed on Claude AI</strong> — Real-world failures accelerate specialized LLM data APIs for blockchain security.</div>
+  <div class="sig"><strong>US CLARITY Act regulatory push</strong> — Crypto clarity supports compliant SSI and AI-driven identity verification.</div>
+  <div class="sig"><strong>ETH Foundation security upgrades prioritized</strong> — Quantum resistance aligns with AI contract analysis infrastructure.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.bankless.com/read/news/openai-and-paradigm-introduce-evmbench-for-ai-agent-benchmarking" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OpenAI EVMbench — Bankless</a>
+    <a href="https://www.dlnews.com/articles/defi/openai-releases-crypto-security-tool/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OpenAI crypto tool — DL News</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CLARITY Act — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/ethereum-foundation-quantum-gas-limit-priorities-protocol" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETH Priorities — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Kraken acquires Magna pre-IPO</strong> — Tokenization platform buy signals M&amp;A wave for licensed exchanges.</div>
+  <div class="sig"><strong>CLARITY Act and Trump events advance regulation</strong> — US policy momentum benefits SEC-licensed African crypto platforms.</div>
+  <div class="sig"><strong>Coinbase misunderstood per CEO amid stock dip</strong> — Wall Street disruption narrative supports emerging market exchange growth.</div>
+  <div class="sig"><strong>World Liberty Forum tests stablecoin fund admin</strong> — USD1 infra speeds settlement for global exchange liquidity.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/markets/kraken-acquires-token-management-platform-magna/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Kraken Magna — DL News</a>
+    <a href="https://cointelegraph.com/news/crypto-us-clarity-act-coinbase-brian-armstrong-bernie-moreno" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CLARITY Act — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/markets/coinbase-stock-is-down-because-company-is-misunderstood-says-brian-armstrong/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Coinbase misunderstood — DL News</a>
+    <a href="https://www.theblock.co/post/390382/world-liberty-forum-opens-18-wlfi-rally-eric-trump-crypto-industry-one-yard-line" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 World Liberty Forum — The Block</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Rain</strong></td><td class="amt">$250M</td><td>Series B</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://phemex.com/news/article/crypto-startups-secure-14-billion-in-january-2026-vc-funding-57199" target="_blank">Crypto Startups Secure $1.4 Billion in January 2026 VC Funding</a></td></tr>
+<tr><td><strong>Anchorage Digital</strong></td><td class="amt">$100M</td><td>Strategic</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>MYX</strong></td><td class="amt">Undisclosed</td><td>Strategic</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://ca.investing.com/news/cryptocurrency-news/exclusive-myx-completes-consensysled-funding-round-ahead-of-v2-launch-4463655" target="_blank">Exclusive: MYX completes Consensys-led funding round ahead of V2 launch</a></td></tr>
+<tr><td><strong>Ripple</strong></td><td class="amt">$500M</td><td>Late-stage</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.galaxy.com/insights/research/crypto-blockchain-venture-capital-q4-2025" target="_blank">Crypto &amp; Blockchain Venture Capital: Q4 2025 Report - Galaxy</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 19, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
