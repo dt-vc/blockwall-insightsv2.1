@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-20</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 20, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>18</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>4</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">White House stablecoin talks advance card issuing clarity</div>
+  <ul>
+    <li>Third White House meeting between crypto executives and banking lobbyists signals accelerating stablecoin regulation progress, directly relevant to Blu's no-fee Mastercard credit card operations in Mexico.</li>
+    <li>Ripple CEO confirmed participation, highlighting push for regulatory clarity that could ease cross-border FX and remittance integrations for LATAM fintechs like Blu.</li>
+    <li>ProShares launches Treasury ETF qualifying as stablecoin reserve under GENIUS Act, creating compliant yield options for card issuers handling crypto on-ramps.</li>
+    <li>Europe's digital euro roadmap targets 2029 rollout to counter stablecoins and card giants, pressuring Visa/Mastercard crypto programs Blu relies on.</li>
+  </ul>
+  <div class="wim">→ Regulatory tailwinds on stablecoins and tokenized assets lower compliance costs for Blu's underbanked credit building model.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390572/more-come-crypto-leaders-say-third-white-house-stablecoin-meeting" target="_blank">📎 ‘More to come,’ crypto leaders say after third White House stablecoin meeting — The Block</a>
+    <a href="https://cointelegraph.com/news/ripple-ceo-white-house-meeting-crypto-banking-clarity" target="_blank">📎 Ripple CEO Confirms White House Meeting — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/proshares-launches-treasury-etf-structured-to-qualify-for-stablecoin-reserves-under-genius-act" target="_blank">📎 ProShares Launches Treasury ETF for GENIUS Stablecoin Reserves — Cointelegraph</a>
+    <a href="https://ambcrypto.com/europes-digital-euro-roadmap-set-is-a-2029-rollout-now-likely/" target="_blank">📎 Europe sets digital euro roadmap — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Stablecoin regulation meetings boost cross-border remittance rails</div>
+  <ul>
+    <li>White House crypto-banking talks on stablecoins directly impact Flyra's cross-border remittance and credit products for financial inclusion.</li>
+    <li>Illicit stablecoin activity hits $141B in 2025 per TRM Labs, underscoring need for compliant rails Flyra can leverage in emerging markets.</li>
+    <li>A16z highlights stablecoins as first movers for B2B payments, aligning with Flyra's multi-currency instant delivery model.</li>
+    <li>Benefits of crypto payments for businesses emphasized, with stablecoins enabling low-cost remittances Flyra targets.</li>
+  </ul>
+  <div class="wim">→ Stablecoin clarity accelerates Flyra's expansion in high-remittance corridors by reducing FX conversion risks.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank">📎 Crypto, Banks Meet Again to Move Forward Crypto Bill — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/illicit-stablecoin-activity-hits-five-year-high-at-141b-trm-labs" target="_blank">📎 Illicit Stablecoin Activity Hit a Five-Year High — Cointelegraph</a>
+    <a href="https://a16zcrypto.com/posts/article/against-b2b-payments-stablecoins/" target="_blank">📎 Tourists in the bazaar: Why against will need B2B payments — a16zcrypto</a>
+    <a href="https://ambcrypto.com/benefits-of-accepting-crypto-payments-for-businesses-in-2026/" target="_blank">📎 Benefits of Accepting Crypto Payments for Businesses in 2026 — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Visa extends F1 sponsorship amid crypto card program scrutiny</div>
+  <ul>
+    <li>Visa renews Red Bull F1 sponsorship through 2030, signaling confidence in brand partnerships as crypto debit cards gain traction.</li>
+    <li>White House stablecoin meetings include banking lobbyists, paving way for Visa/Mastercard crypto integrations Kulipa's white-label cards depend on.</li>
+    <li>Tokenized xStocks hit $25B volume on Kraken, showing onchain demand for card-linked assets Kulipa can API-power.</li>
+    <li>GENIUS Act Treasury ETF launch supports stablecoin reserves, enabling yield-bearing cards like Kulipa's prepaid Visa products.</li>
+  </ul>
+  <div class="wim">→ Stablecoin and card network progress unlocks scalable issuance for Kulipa's API-driven crypto debit solutions.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/19/visa-extends-f1-deal-red-bull-cash-app-2030/" target="_blank">📎 Widely mocked Visa sponsorship of Red Bull renewed — Fortune</a>
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank">📎 Crypto, Banks Meet Again — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks Surpasses $25B — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/proshares-launches-treasury-etf-structured-to-qualify-for-stablecoin-reserves-under-genius-act" target="_blank">📎 ProShares Launches Treasury ETF — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin White House talks target global FX settlement</div>
+  <ul>
+    <li>Multiple White House meetings advance stablecoin bill, critical for Nilos' instant settlement across 120+ countries.</li>
+    <li>A16z crypto post emphasizes stablecoins for B2B payments and working capital, matching Nilos' global payment infra.</li>
+    <li>Benefits of crypto payments grow, with stablecoins enabling FX conversions Nilos specializes in.</li>
+    <li>Europe digital euro counters stablecoins, but reinforces need for compliant global rails like Nilos.</li>
+  </ul>
+  <div class="wim">→ Regulatory greenlight on stablecoins expands Nilos' addressable market for cross-border instant payouts.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390572/more-come-crypto-leaders-say-third-white-house-stablecoin-meeting" target="_blank">📎 ‘More to come,’ crypto leaders say — The Block</a>
+    <a href="https://a16zcrypto.com/posts/article/against-b2b-payments-stablecoins/" target="_blank">📎 Tourists in the bazaar — a16zcrypto</a>
+    <a href="https://ambcrypto.com/benefits-of-accepting-crypto-payments-for-businesses-in-2026/" target="_blank">📎 Benefits of Accepting Crypto Payments — AMBCrypto</a>
+    <a href="https://ambcrypto.com/europes-digital-euro-roadmap-set-is-a-2029-rollout-now-likely/" target="_blank">📎 Europe sets digital euro roadmap — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Tokenized equities surge supports self-custodial wallet ramps</div>
+  <ul>
+    <li>Kraken xStocks hits $25B tokenized stock volume, boosting on/off-ramp demand for Rebind's self-custodial wallet and virtual debit.</li>
+    <li>SEC's Peirce and Atkins outline innovation exemption for tokenized securities, easing Paris-based Rebind's IBAN integrations.</li>
+    <li>Superstate raises $82.5M for onchain equity issuance, aligning with Rebind's cap table and treasury tools.</li>
+    <li>White House stablecoin progress aids Rebind's crypto-fiat bridges.</li>
+  </ul>
+  <div class="wim">→ RWA tokenization momentum drives volume to Rebind's non-custodial on/off-ramps and card issuance.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks Surpasses $25B — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins outline path forward — The Block</a>
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank">📎 Crypto, Banks Meet Again — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin regs advance African diaspora remittance flows</div>
+  <ul>
+    <li>White House stablecoin meetings signal regulatory clarity for USDT-heavy African corridors Yousend targets.</li>
+    <li>Benefits of crypto payments for 2026 highlight instant multi-currency delivery Yousend provides to diaspora.</li>
+    <li>Illicit stablecoin scrutiny underscores compliant rails like Yousend's for African adoption.</li>
+    <li>A16z B2B stablecoin thesis supports Yousend's working capital extensions.</li>
+  </ul>
+  <div class="wim">→ Stablecoin tailwinds lower costs for Yousend's instant African remittances amid rising crypto adoption.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank">📎 Crypto, Banks Meet Again — Cointelegraph</a>
+    <a href="https://ambcrypto.com/benefits-of-accepting-crypto-payments-for-businesses-in-2026/" target="_blank">📎 Benefits of Accepting Crypto Payments — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/illicit-stablecoin-activity-hits-five-year-high-at-141b-trm-labs" target="_blank">📎 Illicit Stablecoin Activity — Cointelegraph</a>
+    <a href="https://a16zcrypto.com/posts/article/against-b2b-payments-stablecoins/" target="_blank">📎 Tourists in the bazaar — a16zcrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">SEC innovation exemption aids institutional restaking vaults</div>
+  <ul>
+    <li>SEC leaders detail tokenized securities exemption, enabling structured DeFi products like Byzantine's restaking strategies.</li>
+    <li>Ethereum derivatives reset with low exchange reserves signals capital efficiency plays for institutional vaults.</li>
+    <li>Superstate $82.5M raise for onchain equity underscores RWA-DeFi bridge Byzantine targets.</li>
+    <li>Optimism/Base OP Stack drift highlights multi-chain restaking opportunities.</li>
+  </ul>
+  <div class="wim">→ Tokenization exemptions lower barriers for Byzantine's institutional-grade DeFi vaults.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://ambcrypto.com/all-about-ethereums-derivatives-reset-as-exchange-reserves-hit-multi-year-lows/" target="_blank">📎 All about Ethereum’s derivatives reset — AMBCrypto</a>
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://www.dlnews.com/articles/defi/optimism-token-price-plunges-as-base-leaves-superchain/" target="_blank">📎 Optimism token price plunges — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">ProShares T-bill ETF qualifies for stablecoin reserves</div>
+  <ul>
+    <li>ProShares IQMM Treasury ETF structured for GENIUS Act stablecoin reserves, directly boosting Spiko's regulated T-bill yield platform.</li>
+    <li>SEC tokenized securities path supports French bank custody models like Spiko's daily interest products.</li>
+    <li>Superstate onchain equity raise signals RWA yield demand Spiko captures.</li>
+    <li>Kraken xStocks $25B volume shows tokenized yield appetite.</li>
+  </ul>
+  <div class="wim">→ Compliant T-bill tokenization expands Spiko's institutional yield offerings under bank custody.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/proshares-launches-treasury-etf-structured-to-qualify-for-stablecoin-reserves-under-genius-act" target="_blank">📎 ProShares Launches Treasury ETF — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">SEC exemption paves way for on-chain securitization</div>
+  <ul>
+    <li>SEC Peirce/Atkins innovation exemption for tokenized securities accelerates Tranched's loan pool tranching.</li>
+    <li>Superstate $82.5M for SEC-registered onchain equity issuance validates TradFi-DeFi bridges.</li>
+    <li>Newity $11M raise for onchain small business loans mirrors Tranched's credit securitization model.</li>
+    <li>Kraken tokenized stocks hit $25B, signaling RWA growth.</li>
+  </ul>
+  <div class="wim">→ Regulatory nods to tokenization unlock scalable securitization for Tranched's risk-tranched products.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://www.theblock.co/post/390561/fintech-firm-newity-raises-11-million-to-bring-small-business-loans-onchain" target="_blank">📎 Fintech firm Newity raises $11 million — The Block</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">Superstate $82.5M raise validates onchain cap tables</div>
+  <ul>
+    <li>Superstate Series B for SEC-registered onchain equity issuance directly competes with Salto X's cap table SaaS.</li>
+    <li>SEC innovation exemption enables tokenized equity, boosting Salto X's issuance tools.</li>
+    <li>Kraken xStocks $25B volume shows demand for onchain equity Salto X manages.</li>
+    <li>Sifted predicts tokenized assets in wealth management, aligning with Salto X.</li>
+  </ul>
+  <div class="wim">→ Onchain equity momentum drives adoption of Salto X's specialized cap table platform.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks — Cointelegraph</a>
+    <a href="https://sifted.eu/articles/wealth-management-in-ten-years/" target="_blank">📎 What wealth management will look like in 10 years — Sifted</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Optimism/Base split signals multi-chain MEV opportunities</div>
+  <ul>
+    <li>Base drifts from OP Stack, creating order flow auctions Blink Labs' MEV protection can capture across L2s.</li>
+    <li>Ethereum derivatives reset with low reserves highlights multi-chain infra needs.</li>
+    <li>CME 24/7 crypto trading from May boosts MEV-protected order flow.</li>
+    <li>Parsec analytics shutdown underscores specialized MEV tools' resilience.</li>
+  </ul>
+  <div class="wim">→ L2 fragmentation increases demand for Blink Labs' cross-chain MEV safeguards.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/defi/optimism-token-price-plunges-as-base-leaves-superchain/" target="_blank">📎 Optimism token price plunges — DL News</a>
+    <a href="https://ambcrypto.com/all-about-ethereums-derivatives-reset-as-exchange-reserves-hit-multi-year-lows/" target="_blank">📎 All about Ethereum’s derivatives reset — AMBCrypto</a>
+    <a href="https://www.bankless.com/read/news/cme-goes-24-7-around-the-clock-crypto-trading-starts-may-29" target="_blank">📎 CME Goes 24/7 — Bankless</a>
+    <a href="https://cointelegraph.com/news/parsec-defi-nft-analytics-platform-closes-market-volatility" target="_blank">📎 Parsec Shuts Down — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Onchain equity boom aids team wallet treasuries</div>
+  <ul>
+    <li>Superstate onchain equity raise and Kraken $25B xStocks drive corporate treasury demand for Den's multi-sig platform.</li>
+    <li>SEC tokenized exemption supports onchain accounting tools like Den.</li>
+    <li>Newity onchain loans signal shift to blockchain treasuries Den enables.</li>
+    <li>Parsec shutdown highlights niche onchain tools' staying power.</li>
+  </ul>
+  <div class="wim">→ RWA tokenization surge requires secure team wallets for Den's corporate clients.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank">📎 Kraken xStocks — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://www.theblock.co/post/390561/fintech-firm-newity-raises-11-million-to-bring-small-business-loans-onchain" target="_blank">📎 Fintech firm Newity — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Opfn</h3>
+  <div class="hl">AI agent costs limit web3 browser adoption</div>
+  <ul>
+    <li>Cointelegraph notes AI agents too expensive vs humans, slowing decentralized browser infra like Opfn.</li>
+    <li>OpenAI paper exposes AI smart contract risks, boosting need for web3-native browsing security.</li>
+    <li>OpenAI KYC provider data sharing raises privacy demands for Opfn's decentralized web.</li>
+    <li>AI power shortages delay edge compute for browsers.</li>
+  </ul>
+  <div class="wim">→ High AI costs create window for Opfn's lightweight web3 browsing infrastructure.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ai-agents-wont-steal-jobs-if-theyre-too-expensive-to-run" target="_blank">📎 AI Agents Won’t Take Jobs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/openais-latest-paper-exposes-the-risks-of-ai-in-smart-contracts/" target="_blank">📎 OpenAI’s latest paper — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/web3/openai-kyc-provider-persona-accused-of-sharing-users-crypto-addresses-with-fincen/" target="_blank">📎 OpenAI KYC provider accused — DL News</a>
+    <a href="https://fortune.com/2026/02/19/ai-is-running-out-of-power-space-wont-be-an-escape-hatch-for-decades/" target="_blank">📎 AI is running out of power — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Ethereum reset boosts enterprise staking yields</div>
+  <ul>
+    <li>Ethereum exchange reserves at multi-year lows signal staking demand for Validation Cloud's SOC 2 node APIs.</li>
+    <li>Optimism/Base split increases L2 staking opportunities via enterprise infra.</li>
+    <li>CME 24/7 trading heightens node reliability needs.</li>
+    <li>SEC ETHDenver talks on volatility underscore compliant staking.</li>
+  </ul>
+  <div class="wim">→ L2 growth and low reserves drive enterprise adoption of Validation Cloud's staking services.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/all-about-ethereums-derivatives-reset-as-exchange-reserves-hit-multi-year-lows/" target="_blank">📎 All about Ethereum’s derivatives reset — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/defi/optimism-token-price-plunges-as-base-leaves-superchain/" target="_blank">📎 Optimism down 22% — AMBCrypto</a>
+    <a href="https://www.bankless.com/read/news/cme-goes-24-7-around-the-clock-crypto-trading-starts-may-29" target="_blank">📎 CME Goes 24/7 — Bankless</a>
+    <a href="https://cointelegraph.com/news/sec-leadership-future-securities-ethdenver" target="_blank">📎 SEC Leadership Speaks — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">OpenAI KYC data sharing spotlights SSI compliance</div>
+  <ul>
+    <li>OpenAI KYC provider accused of sharing crypto addresses with FinCEN, boosting demand for Spherity's verifiable credentials.</li>
+    <li>SEC innovation exemption includes compliance automation for digital identity.</li>
+    <li>eIDAS-adjacent digital euro rollout reinforces EU SSI standards Spherity targets.</li>
+    <li>Persona scandal highlights self-sovereign identity advantages.</li>
+  </ul>
+  <div class="wim">→ KYC breaches accelerate shift to Spherity's German-compliant SSI for Web3.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/web3/openai-kyc-provider-persona-accused-of-sharing-users-crypto-addresses-with-fincen/" target="_blank">📎 OpenAI KYC provider accused — DL News</a>
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://ambcrypto.com/europes-digital-euro-roadmap-set-is-a-2029-rollout-now-likely/" target="_blank">📎 Europe sets digital euro roadmap — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI agent expense curbs data API growth</div>
+  <ul>
+    <li>AI agents too costly to replace humans, limiting but validating Kirha's Context-as-a-Service for agentic workflows.</li>
+    <li>OpenAI smart contract risks expose need for private data APIs like Kirha.</li>
+    <li>AI disruption mentions triple, signaling RAG/data marketplace demand.</li>
+    <li>OpenAI KYC issues highlight secure data connections Kirha provides.</li>
+  </ul>
+  <div class="wim">→ Cost constraints focus AI infra on efficient APIs like Kirha's LLM data integrations.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ai-agents-wont-steal-jobs-if-theyre-too-expensive-to-run" target="_blank">📎 AI Agents Won’t Take Jobs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/openais-latest-paper-exposes-the-risks-of-ai-in-smart-contracts/" target="_blank">📎 OpenAI’s latest paper — AMBCrypto</a>
+    <a href="https://ambcrypto.com/ai-disruption-mentions-triple-in-q4-bitcoin-to-hit-ath-if-this-happens/" target="_blank">📎 AI disruption mentions triple — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/web3/openai-kyc-provider-persona-accused-of-sharing-users-crypto-addresses-with-fincen/" target="_blank">📎 OpenAI KYC — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Polymarket acquires prediction API amid quest gamification</div>
+  <ul>
+    <li>Polymarket buys Dome prediction market API, expanding gamified community tools like Zealy's quest-to-earn.</li>
+    <li>Fed backs prediction markets as benchmarks, boosting crypto rewards platforms.</li>
+    <li>Optimism/Base revenue cut highlights DAO funding for community quests.</li>
+  </ul>
+  <div class="wim">→ Prediction market growth fuels Zealy's gamification for crypto airdrops and rewards.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390546/polymarket-buys-fresh-prediction-market-api-startup-dome-marking-second-official-acquisition" target="_blank">📎 Polymarket buys Dome — The Block</a>
+    <a href="https://ambcrypto.com/a-new-benchmark-for-tracking-expectations-fed-backs-prediction-markets/" target="_blank">📎 ‘A new benchmark for tracking expectations’ — AMBCrypto</a>
+    <a href="https://www.dlnews.com/articles/defi/optimism-token-price-plunges-as-base-leaves-superchain/" target="_blank">📎 Optimism token price plunges — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Stablecoin regs aid Nigerian SEC-licensed exchanges</div>
+  <ul>
+    <li>White House stablecoin progress supports African USDT adoption on licensed platforms like Busha.</li>
+    <li>Community banks lose $78M to Coinbase, signaling emerging market exchange inflows.</li>
+    <li>Benefits of crypto payments boost African adoption.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity attracts liquidity to Busha's compliant Nigerian trading.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank">📎 Crypto, Banks Meet Again — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/community-banks-see-net-deposit-outflows-to-coinbase-study" target="_blank">📎 Community Banks Saw $78M Net Outflows — Cointelegraph</a>
+    <a href="https://ambcrypto.com/benefits-of-accepting-crypto-payments-for-businesses-in-2026/" target="_blank">📎 Benefits of Accepting Crypto Payments — AMBCrypto</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Staex, River, Tlon, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Third White House stablecoin meeting signals fast-tracked regs</strong> — Crypto execs and banks align on bill, easing card issuing and FX for LATAM/Africa players amid GENIUS Act progress.</div>
+  <div class="sig"><strong>Kraken xStocks hits $25B tokenized volume</strong> — Onchain equities surge drives debit card and on-ramp demand across Visa/MC programs.</div>
+  <div class="sig"><strong>Europe digital euro roadmap eyes 2029 to counter stablecoins</strong> — CBDC push pressures private stablecoin rails but highlights compliant remittance needs.</div>
+  <div class="sig"><strong>ProShares T-bill ETF qualifies for stablecoin reserves</strong> — Yield-bearing assets enable new card products and treasury for payment infra.</div>
+  <div class="sig"><strong>A16z: Stablecoins lead B2B payments race</strong> — Vendor credit and working capital via stablecoins transform cross-border flows.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390572/more-come-crypto-leaders-say-third-white-house-stablecoin-meeting" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ‘More to come,’ crypto leaders — The Block</a>
+    <a href="https://cointelegraph.com/news/kraken-xstocks-25b-tokenized-equities-volume" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Kraken xStocks — Cointelegraph</a>
+    <a href="https://ambcrypto.com/europes-digital-euro-roadmap-set-is-a-2029-rollout-now-likely/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Europe sets digital euro — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/proshares-launches-treasury-etf-structured-to-qualify-for-stablecoin-reserves-under-genius-act" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ProShares Launches Treasury ETF — Cointelegraph</a>
+    <a href="https://a16zcrypto.com/posts/article/against-b2b-payments-stablecoins/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Tourists in the bazaar — a16zcrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>SEC unveils tokenized securities innovation exemption</strong> — Peirce/Atkins incremental path enables RWA vaults, tranching, and equity issuance.</div>
+  <div class="sig"><strong>Superstate $82.5M Series B for onchain equity</strong> — Bain Capital leads expansion from Treasuries to SEC-registered tokens.</div>
+  <div class="sig"><strong>Newity $11M for onchain small business loans</strong> — CMT Digital-backed fintech bridges TradFi credit to blockchain pools.</div>
+  <div class="sig"><strong>Ethereum 6th down month eyes $1.5K per Bitwise</strong> — Derivatives reset favors yield strategies amid L2 fragmentation.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390544/secs-peirce-atkins-incremental-path-tokenized-securities-agency-readies-innovation-exemption" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 SEC's Peirce and Atkins — The Block</a>
+    <a href="https://www.bankless.com/read/news/sec-crypto-exemption-2026" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Superstate Raises $82.5M — Bankless</a>
+    <a href="https://www.theblock.co/post/390561/fintech-firm-newity-raises-11-million-to-bring-small-business-loans-onchain" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Fintech firm Newity — The Block</a>
+    <a href="https://www.dlnews.com/articles/markets/eth-price-eyes-record-slide-as-bitwise-cites-1500/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ethereum price eyes historic slide — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Base ditches OP Stack, Optimism token drops 25%</strong> — L2 divergence boosts multi-chain MEV and node infra demand.</div>
+  <div class="sig"><strong>Parsec onchain analytics shuts down after $5.25M raised</strong> — Market volatility claims another generalist; specialists like MEV tools thrive.</div>
+  <div class="sig"><strong>CME launches 24/7 crypto futures trading May 29</strong> — Round-the-clock volume requires robust staking and order flow protection.</div>
+  <div class="sig"><strong>Ethereum reserves hit multi-year lows</strong> — Self-custody shift favors enterprise node APIs and wallet security.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/defi/optimism-token-price-plunges-as-base-leaves-superchain/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Optimism token price plunges — DL News</a>
+    <a href="https://www.theblock.co/post/390562/onchain-analytics-tool-parsec-winding-down-operations" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Onchain analytics tool Parsec winding down — The Block</a>
+    <a href="https://www.bankless.com/read/news/cme-goes-24-7-around-the-clock-crypto-trading-starts-may-29" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CME Goes 24/7 — Bankless</a>
+    <a href="https://ambcrypto.com/all-about-ethereums-derivatives-reset-as-exchange-reserves-hit-multi-year-lows/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 All about Ethereum’s derivatives reset — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>OpenAI KYC provider shares crypto data with FinCEN</strong> — Persona code exposes US gov ties, accelerating SSI and private data APIs.</div>
+  <div class="sig"><strong>AI agents too expensive to displace human labor</strong> — Cost barriers limit adoption, favoring targeted LLM data services.</div>
+  <div class="sig"><strong>OpenAI paper flags AI smart contract drain risks</strong> — Bug-finding weaknesses boost secure agentic workflows and RAG tools.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/web3/openai-kyc-provider-persona-accused-of-sharing-users-crypto-addresses-with-fincen/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OpenAI KYC provider — DL News</a>
+    <a href="https://cointelegraph.com/news/ai-agents-wont-steal-jobs-if-theyre-too-expensive-to-run" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 AI Agents Won’t Take Jobs — Cointelegraph</a>
+    <a href="https://ambcrypto.com/openais-latest-paper-exposes-the-risks-of-ai-in-smart-contracts/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OpenAI’s latest paper — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>Polymarket acquires Dome prediction API</strong> — Y Combinator startup bolsters unified market data for quest gamification.</div>
+  <div class="sig"><strong>Fed endorses prediction markets as expectation benchmarks</strong> — Regulatory nod fuels SocialFi rewards and community campaigns.</div>
+  <div class="portf">Portfolio relevance: Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390546/polymarket-buys-fresh-prediction-market-api-startup-dome-marking-second-official-acquisition" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Polymarket buys Dome — The Block</a>
+    <a href="https://ambcrypto.com/a-new-benchmark-for-tracking-expectations-fed-backs-prediction-markets/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ‘A new benchmark’ — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Community banks lose $78M net to Coinbase</strong> — Deposit outflows signal retail shift to crypto platforms in emerging markets.</div>
+  <div class="sig"><strong>White House stablecoin talks advance USDT clarity</strong> — Regulatory progress aids licensed African exchanges' liquidity.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/community-banks-see-net-deposit-outflows-to-coinbase-study" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Community Banks $78M Outflows — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-banks-meet-white-house-stablecoin-rewards" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto, Banks Meet — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Anchorage Digital</strong></td><td class="amt">$100M</td><td>Strategic</td><td><span class="tag">Infrastructure/Banking</span></td><td>Validation Cloud, Den</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure/Data</span></td><td>Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>Jupiter</strong></td><td class="amt">$35M</td><td>Strategic</td><td><span class="tag">DeFi/Exchange</span></td><td>Busha</td><td><a href="https://www.dlnews.com/articles/markets/crypto-firms-raise-258-million-usd-despite-bitcoin-price-crash/" target="_blank">Crypto firms raise $258m despite $2 trillion market drawdown</a></td></tr>
+<tr><td><strong>Dragonfly Capital</strong></td><td class="amt">$650M</td><td>Fund IV</td><td><span class="tag">Infrastructure/DeFi/RWA</span></td><td>Byzantine, Spiko, Tranched, Validation Cloud</td><td><a href="https://dropstab.com/news/nm65hr3q-crypto-vc-funding-surging-again-sounds-like-a-rally-until-you-trace-where-the-money-actually-lands" target="_blank">Crypto VC funding surging again sounds like a rally, until you trace where the money actually lands</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 20, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
