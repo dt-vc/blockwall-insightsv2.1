@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-22</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 22, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>5</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>4</b><span>Sector Digests</span></div>
+  <div class="stat"><b>0</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">BNP Paribas pilots Ethereum money market tokenization</div>
+  <ul>
+    <li>BNP Paribas Asset Management tokenized a money market fund on Ethereum, signaling institutional adoption of on-chain yield products with French bank custody.</li>
+    <li>This pilot directly validates Spiko's regulated T-bill yield model using French custody, as major banks test similar tokenized fixed-income structures.</li>
+    <li>Tokenization momentum strengthens Spiko's positioning for institutional inflows into compliant, daily-interest platforms amid RWA growth.</li>
+    <li>French regulatory alignment in the pilot mirrors Spiko's MiCA-ready infrastructure for European T-bill tokenization.</li>
+  </ul>
+  <div class="wim">→ Validates Spiko's core T-bill tokenization with French custody as blue-chip banks pioneer Ethereum-based money market funds, accelerating institutional DeFi adoption.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/ethereum-used-by-bnp-paribas-to-tokenise-money-fund/" target="_blank">📎 BNP Paribas uses Ethereum for money market tokenisation pilot — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">BNP Paribas advances money market tokenization on Ethereum</div>
+  <ul>
+    <li>BNP Paribas tokenized a money market fund on Ethereum, bridging TradFi liquidity pools to on-chain execution similar to Tranched's securitization model.</li>
+    <li>The pilot highlights demand for on-chain fixed-income tranching, where Tranched's loan pool structures can capitalize on institutional tokenization pilots.</li>
+    <li>French bank's Ethereum experiment underscores regulatory viability for Tranched's TradFi-DeFi bridge in European markets.</li>
+    <li>Tokenized money markets expand addressable market for Tranched's risk-tranched credit products.</li>
+  </ul>
+  <div class="wim">→ Demonstrates institutional readiness for on-chain securitization like Tranched's model, with BNP's pilot paving regulatory paths for loan tranching in Europe.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/ethereum-used-by-bnp-paribas-to-tokenise-money-fund/" target="_blank">📎 BNP Paribas uses Ethereum for money market tokenisation pilot — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Staex</h3>
+  <div class="hl">IoTeX bridge hit by $8.8M private key exploit</div>
+  <ul>
+    <li>IoTeX suffered a private key compromise draining up to $8.8M from bridge contracts, highlighting DePIN infrastructure vulnerabilities.</li>
+    <li>Staex's decentralized IoT connectivity model gains differentiation as centralized key management failures expose risks in device data networks.</li>
+    <li>Exploit underscores demand for Staex's peer-to-peer IoT architecture that avoids single points of failure in DePIN ecosystems.</li>
+    <li>Post-exploit scrutiny accelerates shift toward truly decentralized connectivity like Staex for secure device monetization.</li>
+  </ul>
+  <div class="wim">→ IoTeX breach elevates Staex's DePIN IoT positioning by exposing centralized infra risks, driving demand for resilient device networks.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390698/iotex-hit-by-private-key-exploit-draining-up-to-8-8-million-from-bridge-contracts" target="_blank">📎 IoTeX hit by private key exploit draining up to $8.8 million from bridge contracts — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">$95M VC funding targets AI agents and crypto startups</div>
+  <ul>
+    <li>VCs deployed $95M into crypto startups with focus on AI agents, where deal terms improved for investors amid market reset.</li>
+    <li>Kirha's Context-as-a-Service APIs for LLM-private data connections align directly with surging AI agent infrastructure funding.</li>
+    <li>Animoca Brands notes attractive terms signal maturation for agentic workflows, boosting Kirha's RAG and data API positioning.</li>
+    <li>AI-crypto convergence in funding wave positions Kirha for partnerships in LLM data marketplaces and MCP protocols.</li>
+  </ul>
+  <div class="wim">→ AI agent funding surge validates Kirha's LLM data APIs as VCs prioritize agentic infrastructure, improving Kirha's growth prospects in private data workflows.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank">📎 Deal terms ‘more attractive’ as crypto startups raise $95m led by prediction markets, AI agents — DL News</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Five exchanges aid Russia sanctions evasion post-Garantex</div>
+  <ul>
+    <li>Elliptic identifies five crypto exchanges processing $11B+ for Russia, filling Garantex void amid heightened sanctions scrutiny.</li>
+    <li>Busha's Nigerian SEC license strengthens compliance edge in Africa as global regulators target illicit flows through unregulated platforms.</li>
+    <li>Sanctions pressure accelerates demand for licensed exchanges like Busha, enabling USDT adoption without evasion risks.</li>
+    <li>African exchanges face spillover compliance demands, positioning Busha as safe harbor for institutional crypto.</li>
+  </ul>
+  <div class="wim">→ Sanctions evasion crackdown elevates Busha's licensed status, driving African adoption away from risky platforms toward compliant exchanges.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390709/five-crypto-exchanges-are-helping-russia-evade-sanctions-filling-garantexs-void-elliptic" target="_blank">📎 Five crypto exchanges are helping Russia evade sanctions, filling Garantex's void: Elliptic — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Blu, Flyra, Kulipa, Nilos, Rebind, Yousend, Byzantine, Salto X, Blink Labs, Den, Opfn, Validation Cloud, Spherity, River, Tlon, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>BNP Paribas pilots Ethereum money market tokenization</strong> — French bank tokenized fund on Ethereum, validating RWA yield platforms and French custody models for Spiko while advancing on-chain securitization for Tranched.</div>
+  <div class="sig"><strong>Spot Bitcoin ETFs see five-week outflows totaling $3.8B</strong> — Cumulative outflows hit $316M last week amid bear market, pressuring institutional DeFi liquidity but signaling potential capitulation for restaking vaults.</div>
+  <div class="sig"><strong>$95M VC flows into crypto startups including AI agents</strong> — Improved deal terms highlight investor confidence in tokenized assets and DeFi primitives despite macro headwinds.</div>
+  <div class="portf">Portfolio relevance: Spiko, Tranched</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/markets/ethereum-used-by-bnp-paribas-to-tokenise-money-fund/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 BNP Paribas uses Ethereum for money market tokenisation pilot — DL News</a>
+    <a href="https://www.theblock.co/post/390706/spot-bitcoin-etfs-notch-five-straight-weeks-of-outflows-for-first-time-since-march-2025" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Spot bitcoin ETFs notch five straight weeks of outflows — The Block</a>
+    <a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Deal terms ‘more attractive’ as crypto startups raise $95m — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>IoTeX bridge exploit drains up to $8.8M via private keys</strong> — DePIN bridge failure exposes centralized risks, boosting demand for resilient IoT connectivity like Staex while highlighting wallet/node security needs.</div>
+  <div class="sig"><strong>Bitcoin whale deposits surge in bear phase per CryptoQuant</strong> — Exchange whale ratio at 2015 highs signals distribution, impacting MEV protection and treasury platforms amid volatility.</div>
+  <div class="portf">Portfolio relevance: Staex</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390698/iotex-hit-by-private-key-exploit-draining-up-to-8-8-million-from-bridge-contracts" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 IoTeX hit by private key exploit — The Block</a>
+    <a href="https://www.theblock.co/post/390712/cryptoquant-bitcoin-whale-deposit-ongoing-bear-phase" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CryptoQuant says bitcoin whale deposit activity grows — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>$95M VC funding prioritizes AI agents in crypto</strong> — Investors target agentic workflows and data APIs, aligning with Kirha's LLM-private data services amid maturing terms.</div>
+  <div class="portf">Portfolio relevance: Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Deal terms ‘more attractive’ as crypto startups raise $95m led by prediction markets, AI agents — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Elliptic flags five exchanges enabling $11B Russia sanctions evasion</strong> — Post-Garantex gap filled by illicit platforms, heightening compliance demands for licensed African exchanges like Busha.</div>
+  <div class="sig"><strong>Crypto fear &amp; greed at extreme fear amid market retrace</strong> — Sentiment bottom signals potential rebound for regulated exchanges in emerging markets.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/390709/five-crypto-exchanges-are-helping-russia-evade-sanctions-filling-garantexs-void-elliptic" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Five crypto exchanges are helping Russia evade sanctions — The Block</a>
+    <a href="https://ambcrypto.com/crypto-fear-greed-index-hits-extreme-fear-is-a-market-bottom-forming/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto fear &amp; greed index hits ‘extreme fear’ — AMBCrypto</a>
+  </div>
+</div>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 22, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
