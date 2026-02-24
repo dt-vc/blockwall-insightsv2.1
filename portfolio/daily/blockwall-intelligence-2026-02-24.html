@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-24</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 24, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>18</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>5</b><span>Sector Digests</span></div>
+  <div class="stat"><b>8</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">Stablecoins positioned to transform cross-border payments</div>
+  <ul>
+    <li>Stablecoins could modernize cross-border business payments currently slowed by outdated processes like PDFs and emails, directly benefiting Mexican credit card issuers targeting underbanked users.</li>
+    <li>TRM Labs launched crypto-fiat monitoring for MiCA compliance, signaling regulatory clarity for card programs in LATAM.</li>
+    <li>Fed proposal removes reputation risk from banking supervision, easing partnerships for no-fee credit cards with banks.</li>
+    <li>Declining Binance stablecoin reserves highlight liquidity shifts favoring regional players like Blu in emerging markets.</li>
+  </ul>
+  <div class="wim">→ Advances stablecoin integration for Blu's credit building products, unlocking faster remittances and lower costs for underbanked Mexicans.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/23/stablecoins-xtransfer-ceo-bill-deng-cross-border/" target="_blank">📎 Stablecoins could finally bring cross-border payments into the digital age — Fortune</a>
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs, Finray Launch Crypto and Fiat Monitoring — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal" target="_blank">📎 Fed is Seeking Feedback on Proposal to Remove Reputation Risk — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/binance-stablecoin-reserves-have-sunk-19-since-november" target="_blank">📎 Falling Binance Stablecoin Reserves Signal Liquidity Crunch — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Stablecoin surge drives cross-border remittance efficiency</div>
+  <ul>
+    <li>XTransfer CEO highlights stablecoins modernizing remittances bogged down by legacy systems, ideal for Flyra's inclusion-focused products.</li>
+    <li>Record stablecoin payment use despite USDT outflows shows long-term growth in cross-border flows critical for African/LATAM corridors.</li>
+    <li>TRM-Finray MiCA monitoring supports compliant remittance platforms expanding FX conversions.</li>
+  </ul>
+  <div class="wim">→ Stablecoin adoption accelerates Flyra's credit and remittance services, capturing diaspora flows in high-growth regions.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/23/stablecoins-xtransfer-ceo-bill-deng-cross-border/" target="_blank">📎 Stablecoins could finally bring cross-border payments — Fortune</a>
+    <a href="https://ambcrypto.com/3b-leaves-usdt-and-yet-stablecoins-hit-record-payment-use-heres-why/" target="_blank">📎 $3B leaves USDT, and yet stablecoins hit record payment use — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs, Finray Launch Crypto and Fiat Monitoring — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">MiCA compliance tools boost white-label crypto cards</div>
+  <ul>
+    <li>TRM Labs' crypto-fiat monitoring ensures MiCA readiness for Visa/Mastercard-powered debit cards.</li>
+    <li>Fed eases reputation risk rules, facilitating bank partnerships for API-driven prepaid solutions.</li>
+    <li>Stablecoin payment records signal demand for seamless on/off-ramps in card issuing.</li>
+  </ul>
+  <div class="wim">→ Regulatory tailwinds enable Kulipa to scale white-label cards across Europe with compliant crypto integrations.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs, Finray Launch Crypto and Fiat Monitoring — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal" target="_blank">📎 Fed is Seeking Feedback on Proposal — Cointelegraph</a>
+    <a href="https://ambcrypto.com/3b-leaves-usdt-and-yet-stablecoins-hit-record-payment-use-heres-why/" target="_blank">📎 $3B leaves USDT, stablecoins hit record — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin records fuel global FX payment infra</div>
+  <ul>
+    <li>Stablecoins hit record payment volumes despite outflows, boosting demand for instant settlement in 120+ countries.</li>
+    <li>MiCA monitoring by TRM supports Nilos' FX conversions and cross-border rails.</li>
+    <li>Fed banking proposal reduces hurdles for global payment partnerships.</li>
+  </ul>
+  <div class="wim">→ Heightened stablecoin activity directly expands Nilos' instant settlement network for enterprise clients.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/3b-leaves-usdt-and-yet-stablecoins-hit-record-payment-use-heres-why/" target="_blank">📎 $3B leaves USDT, stablecoins hit record — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs, Finray Launch Crypto — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal" target="_blank">📎 Fed Seeking Feedback on Proposal — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">EU MiCA tools advance self-custodial IBAN cards</div>
+  <ul>
+    <li>TRM-Finray monitoring platform aids MiCA compliance for Paris-based wallet with virtual debit cards.</li>
+    <li>Ethereum Foundation doubles down on DeFi, supporting on/off-ramp integrations for self-custodial solutions.</li>
+    <li>Fed proposal eases bank access for IBAN-enabled wallets.</li>
+  </ul>
+  <div class="wim">→ Compliance advancements accelerate Rebind's rollout of compliant self-custodial payment rails in Europe.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs, Finray Launch Crypto — Cointelegraph</a>
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 Ethereum Foundation Just Doubled Down on DeFi — Bankless</a>
+    <a href="https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal" target="_blank">📎 Fed is Seeking Feedback — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoins eye African remittance dominance</div>
+  <ul>
+    <li>Stablecoin payment records amid outflows underscore growth for diaspora multi-currency services.</li>
+    <li>XTransfer notes stablecoins fixing cross-border inefficiencies, key for African instant delivery.</li>
+    <li>TRM MiCA tools extend to emerging market compliance.</li>
+  </ul>
+  <div class="wim">→ Rising stablecoin utility positions Yousend to capture more African remittance market share.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/3b-leaves-usdt-and-yet-stablecoins-hit-record-payment-use-heres-why/" target="_blank">📎 $3B leaves USDT, stablecoins record — AMBCrypto</a>
+    <a href="https://fortune.com/2026/02/23/stablecoins-xtransfer-ceo-bill-deng-cross-border/" target="_blank">📎 Stablecoins cross-border payments — Fortune</a>
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs monitoring — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Ethereum Foundation formalizes DeFi support</div>
+  <ul>
+    <li>EF creates DeFi team with specialists, signaling institutional push for restaking vaults.</li>
+    <li>SEC simplifies redemptions for onchain money market funds, aiding structured DeFi products.</li>
+    <li>$1.7B Solana RWAs highlight institutional treasury demand relevant to multi-chain strategies.</li>
+  </ul>
+  <div class="wim">→ EF commitment validates Byzantine's institutional restaking vaults amid DeFi institutionalization.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 Ethereum Foundation Doubled Down on DeFi — Bankless</a>
+    <a href="https://www.bankless.com/read/news/sec-simplifies-redemptions-for-onchain-money-market-funds" target="_blank">📎 SEC Simplifies Redemptions for Onchain Funds — Bankless</a>
+    <a href="https://ambcrypto.com/1-7b-in-rwas-mapping-solanas-treasury-led-institutional-breakout/" target="_blank">📎 $1.7B in RWAs on Solana — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">SEC eases onchain money market redemptions</div>
+  <ul>
+    <li>SEC guidance allows instant $1 redemptions for onchain funds, boosting T-bill yield platforms.</li>
+    <li>Ethereum Foundation DeFi push supports regulated yield with French bank custody.</li>
+    <li>EF hires DeFi specialists, advancing institutional-grade products.</li>
+  </ul>
+  <div class="wim">→ Regulatory simplification directly enhances Spiko's daily interest T-bill platform accessibility.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/sec-simplifies-redemptions-for-onchain-money-market-funds" target="_blank">📎 SEC Simplifies Redemptions — Bankless</a>
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 Ethereum Foundation DeFi — Bankless</a>
+    <a href="https://www.theblock.co/post/390888/ethereum-foundation-defipunk-forms-team-support-protocol-development" target="_blank">📎 Ethereum Foundation believes in Defipunk — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">SEC unlocks onchain money market liquidity</div>
+  <ul>
+    <li>New SEC rules enable instant redemptions, critical for loan pool tranching and securitization.</li>
+    <li>Solana RWAs hit $1.7B via treasury issuance, mirroring Tranched's TradFi-DeFi bridge model.</li>
+    <li>Ethereum Foundation's DeFi strategy formalization aids on-chain credit markets.</li>
+  </ul>
+  <div class="wim">→ Redemption ease accelerates Tranched's securitization of loan pools for institutional adoption.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/sec-simplifies-redemptions-for-onchain-money-market-funds" target="_blank">📎 SEC Simplifies Redemptions — Bankless</a>
+    <a href="https://ambcrypto.com/1-7b-in-rwas-mapping-solanas-treasury-led-institutional-breakout/" target="_blank">📎 $1.7B RWAs Solana — AMBCrypto</a>
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 EF Doubled Down on DeFi — Bankless</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">RWA tokenization hits $1.7B on Solana</div>
+  <ul>
+    <li>Solana treasury-led RWAs reach $1.7B, validating cap table and equity issuance platforms.</li>
+    <li>SEC onchain fund rules support tokenized equity SaaS growth.</li>
+    <li>Crypto VC Framework takes stake in tokenized mortgage issuer, signaling equity tokenization momentum.</li>
+  </ul>
+  <div class="wim">→ RWA surge positions Salto X to tokenize more cap tables amid institutional demand.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/1-7b-in-rwas-mapping-solanas-treasury-led-institutional-breakout/" target="_blank">📎 $1.7B in RWAs Solana — AMBCrypto</a>
+    <a href="https://www.bankless.com/read/news/sec-simplifies-redemptions-for-onchain-money-market-funds" target="_blank">📎 SEC Simplifies Redemptions — Bankless</a>
+    <a href="https://fortune.com/2026/02/23/better-com-framework-ventures-homecoin-tokenized-mortgages/" target="_blank">📎 Crypto VC Framework $45M in Better.com — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Ethereum Foundation boosts DeFi infra</div>
+  <ul>
+    <li>EF formalizes DeFi support with new team, enhancing multi-chain MEV protection.</li>
+    <li>Step Finance Solana hack underscores need for order flow auctions and MEV safeguards.</li>
+    <li>SUI L1 volume dominance highlights multi-chain infra opportunities.</li>
+  </ul>
+  <div class="wim">→ DeFi push amplifies Blink Labs' role in protecting MEV across Ethereum and L2s.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 EF Doubled Down on DeFi — Bankless</a>
+    <a href="https://www.theblock.co/post/390964/step-finance-shuts-down" target="_blank">📎 Step Finance shuts down — The Block</a>
+    <a href="https://ambcrypto.com/sui-dominates-2026-l1-volume-with-43b-what-it-means-for-price/" target="_blank">📎 SUI dominates L1 volume — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Corporate treasury faces liquidity scrutiny</div>
+  <ul>
+    <li>Binance stablecoin reserves drop signals treasury caution, boosting onchain accounting demand.</li>
+    <li>Step Finance $40M breach highlights multi-sig treasury platform needs.</li>
+    <li>Fed banking proposal aids corporate crypto treasury access.</li>
+  </ul>
+  <div class="wim">→ Treasury hacks elevate Den's onchain multi-sig for secure team wallets.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/binance-stablecoin-reserves-have-sunk-19-since-november" target="_blank">📎 Falling Binance Reserves — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/390964/step-finance-shuts-down" target="_blank">📎 Step Finance shuts down — The Block</a>
+    <a href="https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal" target="_blank">📎 Fed Proposal — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Opfn</h3>
+  <div class="hl">DeFi growth demands web3-native browsing</div>
+  <ul>
+    <li>Ethereum Foundation DeFi commitment drives need for decentralized browser infra.</li>
+    <li>OpenClaw bans crypto Discord mentions, pushing web3-native access tools.</li>
+    <li>EF DeFi team formation accelerates protocol integrations.</li>
+  </ul>
+  <div class="wim">→ Rising DeFi activity increases reliance on Opfn's decentralized browsing for seamless access.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 EF Doubled Down on DeFi — Bankless</a>
+    <a href="https://www.bankless.com/read/news/openclaw-declares-war-on-crypto-content" target="_blank">📎 OpenClaw Declares War on Crypto Content — Bankless</a>
+    <a href="https://www.theblock.co/post/390888/ethereum-foundation-defipunk-forms-team-support-protocol-development" target="_blank">📎 Ethereum Foundation Defipunk — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Staex</h3>
+  <div class="hl">DePIN benefits from infra upgrades</div>
+  <ul>
+    <li>Ethereum Foundation DeFi push supports device data monetization in DePIN.</li>
+    <li>SUI L1 volume lead shows L2/DePIN scaling needs.</li>
+    <li>Singtel-Nvidia data sovereignty lab relevant for IoT connectivity.</li>
+  </ul>
+  <div class="wim">→ Blockchain infra advances enable Staex's decentralized IoT network expansion.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 EF Doubled Down on DeFi — Bankless</a>
+    <a href="https://ambcrypto.com/sui-dominates-2026-l1-volume-with-43b-what-it-means-for-price/" target="_blank">📎 SUI dominates L1 — AMBCrypto</a>
+    <a href="https://fortune.com/2026/02/24/singtel-nvidia-ai-data-sovereignty/" target="_blank">📎 Singtel partners Nvidia — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Enterprise staking gains from EF DeFi focus</div>
+  <ul>
+    <li>Ethereum Foundation formalizes DeFi support, boosting enterprise node APIs.</li>
+    <li>SEC onchain fund rules enhance SOC 2 staking infrastructure.</li>
+    <li>SUI volume surge underscores multi-chain node demand.</li>
+  </ul>
+  <div class="wim">→ DeFi institutionalization drives Validation Cloud's enterprise blockchain and staking services.</div>
+  <div class="sr">
+    <a href="https://www.bankless.com/read/news/the-ethereum-foundation-just-doubled-down-on-defi" target="_blank">📎 EF Doubled Down on DeFi — Bankless</a>
+    <a href="https://www.bankless.com/read/news/sec-simplifies-redemptions-for-onchain-money-market-funds" target="_blank">📎 SEC Simplifies Redemptions — Bankless</a>
+    <a href="https://ambcrypto.com/sui-dominates-2026-l1-volume-with-43b-what-it-means-for-price/" target="_blank">📎 SUI L1 volume — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">Chainlink exec joins SEC crypto task force</div>
+  <ul>
+    <li>Taylor Lindman from Chainlink named SEC chief counsel for crypto, impacting SSI compliance.</li>
+    <li>Discord cuts ties with verification software over surveillance fears, highlighting privacy needs.</li>
+    <li>TRM MiCA monitoring aids verifiable credentials automation.</li>
+  </ul>
+  <div class="wim">→ SEC shifts influence Spherity's EU digital identity compliance tools.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/390889/chainlinks-taylor-lindman-joins-sec-as-chief-counsel-for-crypto-task-force" target="_blank">📎 Chainlink's Taylor Lindman joins SEC — The Block</a>
+    <a href="https://fortune.com/2026/02/24/discord-peter-thiel-backed-persona-identity-verification-breach/" target="_blank">📎 Discord cuts ties verification — Fortune</a>
+    <a href="https://cointelegraph.com/news/trm-labs-finray-crypto-fiat-monitoring-mica-compliance" target="_blank">📎 TRM Labs monitoring — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">AI agents face oversight challenges</div>
+  <ul>
+    <li>Citrini's AI doom report triggers tech selloff, stressing agentic workflow reliability.</li>
+    <li>OpenClaw AI agents called 'toddler-like' needing oversight, relevant for LLM data APIs.</li>
+    <li>Anthropic code-scanning AI tanks cybersecurity stocks, boosting private data RAG needs.</li>
+  </ul>
+  <div class="wim">→ AI reliability issues amplify Kirha's value in secure Context-as-a-Service for agents.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/citrini-fearful-ai-agent-report-scares-investors" target="_blank">📎 Citrini’s AI Doom Report — Cointelegraph</a>
+    <a href="https://fortune.com/2026/02/23/always-on-ai-agents-openclaw-claude-promise-work-while-sleeping-reality-problems-oversight-guardrails/" target="_blank">📎 AI agents messy reality — Fortune</a>
+    <a href="https://cointelegraph.com/news/cybersecurity-stocks-tank-following-launch-claude-code-security" target="_blank">📎 Cybersecurity Stocks Slump After Anthropic — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Stablecoins target African adoption</div>
+  <ul>
+    <li>Stablecoin payment records boost Nigeria-licensed exchanges.</li>
+    <li>Trump’s Board considers stablecoins for Gaza, signaling emerging market utility.</li>
+    <li>$3B USDT outflow yet record use favors local USDT platforms.</li>
+  </ul>
+  <div class="wim">→ Stablecoin momentum strengthens Busha's position in African crypto trading.</div>
+  <div class="sr">
+    <a href="https://ambcrypto.com/3b-leaves-usdt-and-yet-stablecoins-hit-record-payment-use-heres-why/" target="_blank">📎 $3B leaves USDT record use — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/donald-trump-stablecoins-gaza" target="_blank">📎 Trump’s ‘Board of Peace’ Stablecoin — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/binance-stablecoin-reserves-have-sunk-19-since-november" target="_blank">📎 Falling Binance Reserves — Cointelegraph</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> River, Tlon, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Stablecoins hit record payments despite outflows</strong> — $3B USDT exit clashes with usage highs, signaling maturation for cross-border infra.</div>
+  <div class="sig"><strong>TRM launches MiCA crypto-fiat monitoring</strong> — Blockchain intel tool aids compliant card issuing and remittances in EU/LATAM.</div>
+  <div class="sig"><strong>Fed drops reputation risk in banking</strong> — Eases Chokepoint 2.0, unlocking bank partnerships for crypto payments.</div>
+  <div class="sig"><strong>XTransfer: Stablecoins fix legacy payments</strong> — Digital tokens to replace PDFs/emails in business remittances.</div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>EF formalizes DeFi strategy with new team</strong> — First-ever DeFi specialists hired, targeting protocol development.</div>
+  <div class="sig"><strong>SEC enables instant onchain fund redemptions</strong> — WisdomTree gains $1 anytime liquidity for money market funds.</div>
+  <div class="sig"><strong>Solana RWAs reach $1.7B treasury-led</strong> — Institutional yield demand drives tokenization breakout.</div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>EF DeFi push elevates multi-chain needs</strong> — Protocol support accelerates MEV, nodes, DePIN infrastructure.</div>
+  <div class="sig"><strong>Step Finance $40M hack triggers shutdowns</strong> — Solana breach exposes treasury and order flow vulnerabilities.</div>
+  <div class="sig"><strong>SUI captures 2026 L1 volume lead</strong> — $43B dominance signals L2/chain infra competition.</div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>Chainlink counsel joins SEC crypto task force</strong> — Regulatory expertise shifts to crypto enforcement.</div>
+  <div class="sig"><strong>AI agent reports spark investor fears</strong> — Citrini warns of workforce displacement via agents.</div>
+  <div class="sig"><strong>Anthropic AI crashes cybersecurity stocks</strong> — Code-scanning tools challenge traditional vuln detection.</div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Stablecoin usage records aid African platforms</strong> — Outflows from majors create local exchange opportunities.</div>
+  <div class="sig"><strong>Trump team eyes stablecoins for aid</strong> — Emerging market pilots signal adoption tailwinds.</div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>Kresus Labs</strong></td><td class="amt">$13M</td><td>Undisclosed</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank">Deal terms 'more attractive' as crypto startups raise $95m</a></td></tr>
+<tr><td><strong>Based</strong></td><td class="amt">$11.5M</td><td>Undisclosed</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://alphanode.global/insights/morning-crypto-wrap-23-february-2026/" target="_blank">Morning Crypto Wrap — 23 February 2026</a></td></tr>
+<tr><td><strong>OneChain</strong></td><td class="amt">$67M</td><td>Series A</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Newity</strong></td><td class="amt">$11M</td><td>Strategic</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Rizon</strong></td><td class="amt">$2M</td><td>Pre-seed</td><td><span class="tag">Payments/Remittances/Cards</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Fireplace</strong></td><td class="amt">$1.5M</td><td>Pre-seed</td><td><span class="tag">DeFi/RWA/Tokenization</span></td><td>Byzantine, Spiko, Tranched</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Unicity Labs</strong></td><td class="amt">$3M</td><td>Seed</td><td><span class="tag">Identity/AI/Data</span></td><td>Spherity, Kirha</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>August</strong></td><td class="amt">$10M</td><td>Undisclosed</td><td><span class="tag">Infrastructure/Staking/MEV</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://fortune.com/2026/02/18/dragonfly-term-sheet-venture-capital-blockchain-crypto-polymarket-rain/" target="_blank">Inside Dragonfly Capital's $650 million fourth fund and its early bets</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 24, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
