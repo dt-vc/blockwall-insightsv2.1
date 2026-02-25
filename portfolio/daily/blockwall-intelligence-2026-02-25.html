@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-25</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 25, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>18</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>7</b><span>Sector Digests</span></div>
+  <div class="stat"><b>8</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">Stripe eyes PayPal acquisition amid payments consolidation</div>
+  <ul>
+    <li>Fintech giant Stripe is considering acquiring PayPal as its stock hits multi-year lows, signaling aggressive M&amp;A in payments processing.</li>
+    <li>This move highlights intensifying competition in digital payments, where low-fee models like Blu's Mexican credit card face pressure from scaled players.</li>
+    <li>Payoneer filing for US bank charter alongside crypto firms underscores payments infrastructure race relevant to Mastercard-powered card issuers.</li>
+    <li>Stablecoin pilots like TruStage's for credit unions could enable cheaper FX for LATAM underbanked credit products.</li>
+  </ul>
+  <div class="wim">→ Accelerates need for Blu to differentiate via no-fee credit building in Mexico amid global payments giants consolidating.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391123/fintech-giant-stripe-circles-possible-paypal-acquisition-bloomberg" target="_blank">📎 Fintech giant Stripe circles possible PayPal acquisition: Bloomberg — The Block</a>
+    <a href="https://cointelegraph.com/news/stripe-considers-acquiring-paypal-bloomberg" target="_blank">📎 Stripe Eyes PayPal Acquisition as Stock Hits Multi-Year Low — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/payoneer-latest-crypto-fintech-file-occ-bank-charter" target="_blank">📎 Payoneer Adds to Crypto, Fintech Firms Seeking Bank Charter — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank">📎 Fintech and insurance giant TruStage pilots stablecoin geared for credit unions — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Crypto firms rush for US bank charters as remittance rails evolve</div>
+  <ul>
+    <li>Payoneer and Crypto.com secure conditional bank charter approvals, enabling stablecoin-backed cross-border payments.</li>
+    <li>TruStage pilots dollar-pegged stablecoin for credit unions, targeting faster settlements in emerging markets.</li>
+    <li>Hong Kong to issue first stablecoin licenses next month, boosting Asia remittance corridors for financial inclusion.</li>
+    <li>Stablecoin market reports highlight Asia growth, relevant for Flyra's credit+remittance products.</li>
+  </ul>
+  <div class="wim">→ Bank charters and stablecoin pilots lower costs for Flyra's cross-border remittances and credit in underbanked regions.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank">📎 Crypto.com joins the club with bank charter approval — DL News</a>
+    <a href="https://cointelegraph.com/news/payoneer-latest-crypto-fintech-file-occ-bank-charter" target="_blank">📎 Payoneer Adds to Crypto, Fintech Firms Seeking Bank Charter — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank">📎 Fintech and insurance giant TruStage pilots stablecoin — The Block</a>
+    <a href="https://www.theblock.co/post/391172/hong-kong-first-stablecoin-license" target="_blank">📎 Hong Kong to issue first stablecoin issuer licenses next month — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Bank charters proliferate as crypto card issuers eye fiat rails</div>
+  <ul>
+    <li>Crypto.com gains national trust bank charter, joining trend for regulated crypto debit infrastructure.</li>
+    <li>Payoneer files for OCC charter post-stablecoin plans, enabling API-powered card issuing.</li>
+    <li>Bitcoin Depot mandates ID for all ATM transactions, raising KYC standards for crypto-to-fiat on/off-ramps.</li>
+    <li>Kraken launches 24/7 perps for stocks, signaling tokenized assets integration with payments.</li>
+  </ul>
+  <div class="wim">→ Regulatory approvals validate Kulipa's white-label Visa/Mastercard crypto cards model amid fiat-crypto convergence.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank">📎 Crypto.com joins the club with bank charter approval — DL News</a>
+    <a href="https://cointelegraph.com/news/payoneer-latest-crypto-fintech-file-occ-bank-charter" target="_blank">📎 Payoneer Adds to Crypto, Fintech Firms Seeking Bank Charter — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank">📎 Bitcoin Depot Introduces ID for All Transactions — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391089/kraken-rolls-out-round-the-clock-perps-gold-major-indexes-stocks-nvidia-apple-tesla" target="_blank">📎 Kraken rolls out round-the-clock perps — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">Stablecoin pilots and charters boost global FX settlement infra</div>
+  <ul>
+    <li>TruStage pilots stablecoin for credit unions, enabling instant FX conversions across 120+ countries.</li>
+    <li>Meta seeks stablecoin partners for 2026 relaunch, targeting global payment infrastructure.</li>
+    <li>Hong Kong stablecoin licenses incoming, expanding regulated FX corridors for emerging markets.</li>
+    <li>Payoneer bank charter filing supports multi-currency instant settlements.</li>
+  </ul>
+  <div class="wim">→ Stablecoin advancements directly enhance Nilos' global payment infra with cheaper, faster FX in 120+ countries.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank">📎 Fintech and insurance giant TruStage pilots stablecoin — The Block</a>
+    <a href="https://www.bankless.com/read/news/zuckerbergs-meta-seeking-partners-for-stablecoin-revival-coindesk" target="_blank">📎 Zuckerberg’s Meta Seeking Partners for Stablecoin Revival — Bankless</a>
+    <a href="https://www.theblock.co/post/391172/hong-kong-first-stablecoin-license" target="_blank">📎 Hong Kong to issue first stablecoin issuer licenses — The Block</a>
+    <a href="https://cointelegraph.com/news/payoneer-latest-crypto-fintech-file-occ-bank-charter" target="_blank">📎 Payoneer Adds to Crypto, Fintech Firms Seeking Bank Charter — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">Self-custodial wallets gain from AI agent and KYC trends</div>
+  <ul>
+    <li>MoonPay launches AI agent wallets for autonomous onchain transactions, boosting non-custodial demand.</li>
+    <li>Bitcoin Depot requires ID for all transactions, emphasizing compliant self-custody solutions.</li>
+    <li>Crypto.com bank charter enables regulated IBAN/debit integration for Paris-based wallets.</li>
+    <li>ZachXBT insider trading probe highlights wallet security needs for team/individual custody.</li>
+  </ul>
+  <div class="wim">→ AI agents and KYC mandates position Rebind's self-custodial wallet+IBAN+virtual cards for European growth.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank">📎 MoonPay Launches AI Agent Wallets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank">📎 Bitcoin Depot Introduces ID for All Transactions — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank">📎 Crypto.com joins the club with bank charter approval — DL News</a>
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell of 2026 [ZachXBT Investigation] — YouTube</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">African remittances benefit from stablecoin and charter momentum</div>
+  <ul>
+    <li>Hong Kong stablecoin licenses and Asia market reports signal remittance rail expansion to Africa.</li>
+    <li>TruStage stablecoin pilot for credit unions enables cheaper diaspora multi-currency transfers.</li>
+    <li>Payoneer OCC charter filing targets cross-border instant delivery in emerging markets.</li>
+    <li>USDT seizure in scams underscores need for compliant African remittance platforms.</li>
+  </ul>
+  <div class="wim">→ Stablecoin infrastructure lowers costs for Yousend's African diaspora instant multi-currency remittances.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391172/hong-kong-first-stablecoin-license" target="_blank">📎 Hong Kong to issue first stablecoin issuer licenses — The Block</a>
+    <a href="https://reports.tiger-research.com/p/2026-asia-stablecoin-market-overview-eng" target="_blank">📎 2026 Asia Stablecoin Market Overview — Tiger Research</a>
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank">📎 Fintech and insurance giant TruStage pilots stablecoin — The Block</a>
+    <a href="https://www.theblock.co/post/391160/prosecutors-seize-61-million-usdt-scam" target="_blank">📎 North Carolina prosecutors seize $61 million in USDT — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Bitwise acquires $2.2B staking firm amid institutional DeFi push</div>
+  <ul>
+    <li>Bitwise buys Chorus One, expanding institutional staking and restaking strategies.</li>
+    <li>ETH falls to $1.8K with bearish metrics, creating entry for structured vaults.</li>
+    <li>Europe enforces 'same risk, same rules' for crypto derivatives, impacting DeFi leverage.</li>
+    <li>BTC/ETH market weakness tests institutional DeFi resilience.</li>
+  </ul>
+  <div class="wim">→ Staking M&amp;A validates Byzantine's restaking vaults for institutions navigating volatility.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/bitwise-acquires-crypto-staking-provider-chorus-one" target="_blank">📎 Bitwise Acquires $2.2B Crypto Staking Firm Chorus One — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/eth-bounces-off-1-8k-as-multiple-ether-price-metrics-point-to-prolonged-weakness" target="_blank">📎 ETH Falls To $1.8K As Bearish Data Spooks Investors — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-derivatives-eu-regulations-esma" target="_blank">📎 Entities Offering Crypto Derivatives Likely Fall under Specific Rules: ESMA — Cointelegraph</a>
+    <a href="https://www.marketpulse.com/markets/bitcoin-63000-ethereum-bloodbath-crypto-overview/" target="_blank">📎 Bitcoin (BTC) and Ethereum (ETH) on their way to 2026 lows — MarketPulse</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Stablecoin weaknesses spotlight T-bill yield platforms</div>
+  <ul>
+    <li>DL News flags stablecoin reliance on US Treasury intermediaries, boosting regulated T-bill tokens.</li>
+    <li>TruStage pilots stablecoin backed by Treasuries for credit unions.</li>
+    <li>Hong Kong stablecoin licenses emphasize fiat-referenced reserves like Spiko's model.</li>
+    <li>Bitwise staking acquisition signals institutional yield demand.</li>
+  </ul>
+  <div class="wim">→ Treasury vulnerabilities enhance Spiko's regulated T-bill platform with French bank custody.</div>
+  <div class="sr">
+    <a href="https://www.dlnews.com/articles/defi/stablecoins-have-another-weakness/" target="_blank">📎 Stablecoins have another weakness — DL News</a>
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank">📎 Fintech and insurance giant TruStage pilots stablecoin — The Block</a>
+    <a href="https://www.theblock.co/post/391172/hong-kong-first-stablecoin-license" target="_blank">📎 Hong Kong to issue first stablecoin issuer licenses — The Block</a>
+    <a href="https://cointelegraph.com/news/bitwise-acquires-crypto-staking-provider-chorus-one" target="_blank">📎 Bitwise Acquires $2.2B Crypto Staking Firm — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">ESMA targets crypto derivatives under 'same risk' rules</div>
+  <ul>
+    <li>Europe doubles down on regulating crypto derivatives like traditional CFDs.</li>
+    <li>Blockchain Association pitches crypto tax plan treating stablecoins as cash.</li>
+    <li>On-chain securitization benefits from clearer EU derivative frameworks.</li>
+    <li>Market crash exposes need for tranching in loan pools.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity accelerates Tranched's on-chain securitization bridging TradFi-DeFi.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/crypto-derivatives-eu-regulations-esma" target="_blank">📎 Entities Offering Crypto Derivatives Likely Fall under Specific Rules: ESMA — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/blockchain-association-crypto-tax-plan-congress" target="_blank">📎 Blockchain Association Pitches Crypto Tax Plan to Congress — Cointelegraph</a>
+    <a href="https://ambcrypto.com/europe-doubles-down-on-same-risk-same-rules-approach-for-crypto-derivatives/" target="_blank">📎 Europe doubles down on ‘same risk, same rules’ approach — AMBCrypto</a>
+    <a href="https://ambcrypto.com/2t-lost-in-140-days-why-this-crypto-market-crash-looks-different/" target="_blank">📎 $2T lost in 140 days: Why this crypto market crash — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">ZachXBT probes insider trading at top crypto business</div>
+  <ul>
+    <li>ZachXBT announces Feb 26 investigation into employees abusing internal data for trades.</li>
+    <li>MEV protection critical amid on-chain sleuthing of profitable protocols.</li>
+    <li>Polymarket bets favor Meteora in ZachXBT takedown predictions.</li>
+    <li>Market turmoil tests multi-chain order flow auctions.</li>
+  </ul>
+  <div class="wim">→ Insider probes heighten need for Blink Labs' MEV protection in order flow auctions.</div>
+  <div class="sr">
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell of 2026 [ZachXBT Investigation] — YouTube</a>
+    <a href="https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading" target="_blank">📎 Polymarket Users Favor Meteora in Bets over ZachXBT — Cointelegraph</a>
+    <a href="https://ambcrypto.com/bitcoin-slips-toward-62k-as-polymarket-odds-fade-on-a-february-rebound/" target="_blank">📎 Bitcoin slips toward $62K as Polymarket odds fade — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">ZachXBT insider trading probe targets profitable crypto firms</div>
+  <ul>
+    <li>Investigation into multiple employees insider trading using internal data at top business.</li>
+    <li>Onchain accounting platforms essential for transparent team wallets amid scrutiny.</li>
+    <li>US sanctions Russian firm for crypto-funded theft, stressing multi-sig treasury security.</li>
+    <li>Binance Iran sanctions probe highlights compliance for corporate onchain ops.</li>
+  </ul>
+  <div class="wim">→ Regulatory heat on insiders boosts Den's onchain team wallet and multi-sig treasury tools.</div>
+  <div class="sr">
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell of 2026 [ZachXBT Investigation] — YouTube</a>
+    <a href="https://www.theblock.co/post/391124/sanctions-russian-operation-zero-following-crypto-funded-trade-secret-theft" target="_blank">📎 U.S. sanctions Russian firm Operation Zero — The Block</a>
+    <a href="https://www.theblock.co/post/391141/blumenthal-investigates-binance-reports-iran-linked-sanctions-evasion" target="_blank">📎 Sen. Blumenthal investigates Binance — The Block</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Opfn</h3>
+  <div class="hl">MoonPay AI agent wallets drive web3-native browsing demand</div>
+  <ul>
+    <li>MoonPay enables AI agents with non-custodial wallets for onchain transactions.</li>
+    <li>Decentralized browser infra critical for agentic web3 interactions.</li>
+    <li>Kraken tokenized stocks perps require seamless web3 browsing access.</li>
+    <li>ZachXBT probe underscores secure browser needs for onchain activity.</li>
+  </ul>
+  <div class="wim">→ AI agents accelerate Opfn's decentralized browser for web3-native experiences.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank">📎 MoonPay Launches AI Agent Wallets — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391089/kraken-rolls-out-round-the-clock-perps-gold-major-indexes-stocks-nvidia-apple-tesla" target="_blank">📎 Kraken rolls out round-the-clock perps — The Block</a>
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell of 2026 [ZachXBT] — YouTube</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Bitwise $2.2B staking acquisition amid ETH/BTC weakness</div>
+  <ul>
+    <li>Bitwise acquires Chorus One, consolidating enterprise staking infrastructure.</li>
+    <li>ETH at $1.8K lows boost Node API and staking yields for institutions.</li>
+    <li>SOC 2 compliant blockchain nodes critical during market capitulation.</li>
+    <li>BTC bear signals test enterprise-grade staking resilience.</li>
+  </ul>
+  <div class="wim">→ Staking M&amp;A validates Validation Cloud's SOC 2 enterprise staking and Node API.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/bitwise-acquires-crypto-staking-provider-chorus-one" target="_blank">📎 Bitwise Acquires $2.2B Crypto Staking Firm — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/eth-bounces-off-1-8k-as-multiple-ether-price-metrics-point-to-prolonged-weakness" target="_blank">📎 ETH Falls To $1.8K As Bearish Data — Cointelegraph</a>
+    <a href="https://www.marketpulse.com/markets/bitcoin-63000-ethereum-bloodbath-crypto-overview/" target="_blank">📎 Bitcoin (BTC) and Ethereum (ETH) on their way to 2026 lows — MarketPulse</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">Bitcoin Depot mandates ID verification for all crypto transactions</div>
+  <ul>
+    <li>New policy requires ID for every kiosk transaction, advancing compliance standards.</li>
+    <li>SSI verifiable credentials align with rising KYC in crypto access points.</li>
+    <li>ESMA crypto derivative rules demand robust identity for EU compliance.</li>
+    <li>ZachXBT probe emphasizes automated identity for preventing insider abuse.</li>
+  </ul>
+  <div class="wim">→ KYC mandates create tailwinds for Spherity's SSI digital identity and compliance automation in Germany.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank">📎 Bitcoin Depot Introduces ID for All Transactions — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-derivatives-eu-regulations-esma" target="_blank">📎 Entities Offering Crypto Derivatives Likely Fall under Specific Rules — Cointelegraph</a>
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell of 2026 [ZachXBT] — YouTube</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">MoonPay equips AI agents with onchain wallets</div>
+  <ul>
+    <li>Non-custodial tool lets AI hold funds and transact autonomously.</li>
+    <li>Context-as-a-Service APIs enable LLM connections to agent workflows.</li>
+    <li>AI proliferation in crypto (McDonald's CEO, teens using AI) drives data APIs.</li>
+    <li>Chatbot probability misalignments highlight need for precise private data feeds.</li>
+  </ul>
+  <div class="wim">→ AI agent wallets supercharge Kirha's APIs connecting LLMs to private data for agentic flows.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank">📎 MoonPay Launches AI Agent Wallets — Cointelegraph</a>
+    <a href="https://fortune.com/2026/02/25/how-ceos-use-ai-work-personal-life-mcdonalds-ceo-advice/" target="_blank">📎 McDonald’s CEO is a ‘supersubscriber’ of AI tools — Fortune</a>
+    <a href="https://fortune.com/2026/02/25/teens-use-ai-for-schoolwork-pew-research-study/" target="_blank">📎 More than half of teens are using AI for schoolwork — Fortune</a>
+    <a href="https://fortune.com/2026/02/25/what-do-chatbots-mean-likely-probable-contextual-learning-humans/" target="_blank">📎 We studied chatbots and language... huge problem — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tlon</h3>
+  <div class="hl">P2P messaging benefits from decentralized infra trends</div>
+  <ul>
+    <li>MoonPay AI agents require user-owned data communication layers.</li>
+    <li>Viral tap games on MegaETH highlight consumer onchain social needs.</li>
+    <li>ZachXBT probe into insider trading underscores decentralized comms security.</li>
+    <li>Kraken tokenized assets demand P2P user-controlled networks.</li>
+  </ul>
+  <div class="wim">→ AI and onchain consumer apps boost Tlon's Urbit P2P messaging with user-owned data.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank">📎 MoonPay Launches AI Agent Wallets — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391100/viral-tap-trading-money-games-on-megaeth-with-euphoria-and-bread" target="_blank">📎 Viral tap trading money games on MegaETH — The Block</a>
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank">📎 The Biggest Crypto Bombshell [ZachXBT] — YouTube</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Zealy</h3>
+  <div class="hl">Viral onchain games drive quest-to-earn engagement</div>
+  <ul>
+    <li>Tap trading games explode on MegaETH with Euphoria and Bread.</li>
+    <li>Polymarket ZachXBT bets create gamified prediction quests.</li>
+    <li>Consumer DeFi UX abstraction fits community reward platforms.</li>
+    <li>Market crash tests crypto reward retention mechanics.</li>
+  </ul>
+  <div class="wim">→ Viral games amplify Zealy's quest-to-earn for crypto community gamification.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391100/viral-tap-trading-money-games-on-megaeth-with-euphoria-and-bread" target="_blank">📎 Viral tap trading money games on MegaETH — The Block</a>
+    <a href="https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading" target="_blank">📎 Polymarket Users Favor Meteora in Bets over ZachXBT — Cointelegraph</a>
+    <a href="https://ambcrypto.com/2t-lost-in-140-days-why-this-crypto-market-crash-looks-different/" target="_blank">📎 $2T lost in 140 days crypto market crash — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">USDT scam seizures and exchange compliance pressures rise</div>
+  <ul>
+    <li>$61M USDT seized from pig butchering scams traced to laundering wallets.</li>
+    <li>Binance faces US Senate probe over Iran sanctions evasion.</li>
+    <li>Crypto.com bank charter sets regulated exchange benchmark for Africa.</li>
+    <li>Bitcoin Depot ID rules signal KYC standardization for emerging exchanges.</li>
+  </ul>
+  <div class="wim">→ Scam crackdowns reinforce Busha's Nigeria SEC-licensed status for African adoption.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391160/prosecutors-seize-61-million-usdt-scam" target="_blank">📎 North Carolina prosecutors seize $61 million in USDT — The Block</a>
+    <a href="https://www.theblock.co/post/391141/blumenthal-investigates-binance-reports-iran-linked-sanctions-evasion" target="_blank">📎 Sen. Blumenthal investigates Binance — The Block</a>
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank">📎 Crypto.com joins the club with bank charter — DL News</a>
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank">📎 Bitcoin Depot Introduces ID for All Transactions — Cointelegraph</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Salto X, Staex, River, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>Stripe circles PayPal acquisition as payments consolidate</strong> — M&amp;A wave pressures no-fee card and remittance players to scale or partner amid bank charter rush.</div>
+  <div class="sig"><strong>Crypto.com, Payoneer gain US bank charters</strong> — Regulated fiat rails enable cheaper stablecoin cross-border flows for LATAM/Africa.</div>
+  <div class="sig"><strong>TruStage pilots T-bill stablecoin for credit unions</strong> — Treasury-backed pilots lower FX costs for instant multi-currency settlements.</div>
+  <div class="sig"><strong>Bitcoin Depot mandates ID for all crypto ATMs</strong> — KYC escalation standardizes on/off-ramps for card issuers and wallets.</div>
+  <div class="sig"><strong>Hong Kong stablecoin licenses next month</strong> — Asia expansion opens new remittance corridors with regulated fiat-referenced pegs.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/stripe-considers-acquiring-paypal-bloomberg" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Stripe Eyes PayPal Acquisition — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto.com bank charter — DL News</a>
+    <a href="https://www.theblock.co/post/391106/fintech-and-insurance-giant-trustage-pilots-stablecoin-geared-for-credit-unions" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 TruStage stablecoin pilot — The Block</a>
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitcoin Depot ID requirement — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391172/hong-kong-first-stablecoin-license" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Hong Kong stablecoin licenses — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Bitwise acquires $2.2B staking provider Chorus One</strong> — Institutional consolidation boosts restaking and T-bill yield platforms.</div>
+  <div class="sig"><strong>ESMA applies 'same risk' rules to crypto derivatives</strong> — EU framework clarifies tranching and securitization compliance.</div>
+  <div class="sig"><strong>Stablecoins exposed to Treasury intermediary risks</strong> — Peg vulnerabilities favor regulated RWA tokenization alternatives.</div>
+  <div class="sig"><strong>ETH plunges to $1.8K amid prolonged weakness</strong> — Bear metrics test on-chain credit and structured product resilience.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/bitwise-acquires-crypto-staking-provider-chorus-one" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitwise Acquires Chorus One — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/crypto-derivatives-eu-regulations-esma" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ESMA crypto derivatives rules — Cointelegraph</a>
+    <a href="https://www.dlnews.com/articles/defi/stablecoins-have-another-weakness/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Stablecoins have another weakness — DL News</a>
+    <a href="https://cointelegraph.com/news/eth-bounces-off-1-8k-as-multiple-ether-price-metrics-point-to-prolonged-weakness" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETH Falls To $1.8K — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>ZachXBT to expose insider trading at profitable crypto firm</strong> — On-chain probes demand MEV protection, secure wallets, and node infra.</div>
+  <div class="sig"><strong>MoonPay launches AI agent wallets for onchain txns</strong> — Autonomous agents require decentralized browsers and data APIs.</div>
+  <div class="sig"><strong>Staking M&amp;A amid BTC/ETH bear market</strong> — Enterprise node providers gain from institutional yield consolidation.</div>
+  <div class="sig"><strong>US sanctions crypto-funded Russian theft ring</strong> — Treasury compliance stresses multi-sig and onchain accounting tools.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Opfn, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.youtube.com/watch?v=uM-Ah5XVl1g" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ZachXBT Investigation Bombshell — YouTube</a>
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 MoonPay AI Agent Wallets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/bitwise-acquires-crypto-staking-provider-chorus-one" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitwise staking acquisition — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391124/sanctions-russian-operation-zero-following-crypto-funded-trade-secret-theft" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 US sanctions Operation Zero — The Block</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>AI agent wallets proliferate with MoonPay launch</strong> — Agentic workflows need private data APIs and SSI compliance.</div>
+  <div class="sig"><strong>Bitcoin Depot enforces universal ID verification</strong> — KYC mandates drive verifiable credentials adoption in EU.</div>
+  <div class="sig"><strong>Chatbots misalign on probability terms with humans</strong> — Contextual data services essential for accurate LLM outputs.</div>
+  <div class="sig"><strong>Enterprise AI adoption surges (McDonald's, teens)</strong> — RAG infrastructure demand grows for agent-private data links.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 MoonPay AI Wallets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/bitcoin-depot-mandatory-id-verification-crypto-atms" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bitcoin Depot ID policy — Cointelegraph</a>
+    <a href="https://fortune.com/2026/02/25/what-do-chatbots-mean-likely-probable-contextual-learning-humans/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Chatbots 'likely' problem — Fortune</a>
+    <a href="https://fortune.com/2026/02/25/how-ceos-use-ai-work-personal-life-mcdonalds-ceo-advice/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 McDonald’s CEO AI tools — Fortune</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>SOCIAL &amp; COMMUNITY</h4>
+  <div class="sig"><strong>MegaETH hosts viral tap-to-earn trading games</strong> — Consumer onchain UX boosts quest platforms and P2P social.</div>
+  <div class="sig"><strong>Polymarket bets skew toward ZachXBT takedown targets</strong> — Prediction gamification fits community reward mechanics.</div>
+  <div class="sig"><strong>AI agents integrate onchain cash flows</strong> — Decentralized comms needed for user-owned agent interactions.</div>
+  <div class="portf">Portfolio relevance: River, Tlon, Zealy</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/391100/viral-tap-trading-money-games-on-megaeth-with-euphoria-and-bread" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Viral tap games on MegaETH — The Block</a>
+    <a href="https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Polymarket ZachXBT bets — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/moonpay-launches-agents-giving-ai-systems-wallets-and-onchain-cash-flow" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 MoonPay AI agents — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>$61M USDT seized in pig butchering scam laundering</strong> — Scam crackdowns favor licensed exchanges in emerging markets.</div>
+  <div class="sig"><strong>Binance probed for Iran sanctions evasion</strong> — Compliance scrutiny benefits SEC-regulated African platforms.</div>
+  <div class="sig"><strong>Crypto.com secures national bank charter</strong> — US approvals set global licensing benchmarks for adoption.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/391160/prosecutors-seize-61-million-usdt-scam" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 USDT scam seizure — The Block</a>
+    <a href="https://www.theblock.co/post/391141/blumenthal-investigates-binance-reports-iran-linked-sanctions-evasion" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Blumenthal Binance probe — The Block</a>
+    <a href="https://www.dlnews.com/articles/regulation/cryptocom-gets-national-bank-charter-approval/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto.com charter — DL News</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>GAMING</h4>
+  <div class="sig"><strong>Viral onchain tap games gain traction on MegaETH</strong> — Consumer DeFi gaming UX relevant for cross-platform RPGs.</div>
+  <div class="sig"><strong>Market crash tests blockchain gaming resilience</strong> — Bear conditions favor studios with mobile RPG focus.</div>
+  <div class="portf">Portfolio relevance: Spectarium</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/391100/viral-tap-trading-money-games-on-megaeth-with-euphoria-and-bread" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Viral tap games MegaETH — The Block</a>
+    <a href="https://ambcrypto.com/2t-lost-in-140-days-why-this-crypto-market-crash-looks-different/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 $2T crypto market crash — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>TRM Labs</strong></td><td class="amt">$70M</td><td>Series C</td><td><span class="tag">Infrastructure</span></td><td>Validation Cloud</td><td><a href="https://fortune.com/2026/02/04/trm-labs-blockchain-analytics-funding-round-series-c-unicorn-goldman/" target="_blank">Crypto crime-fighting startup TRM Labs notches $1 billion valuation with new $70 million funding round</a></td></tr>
+<tr><td><strong>Kresus Labs</strong></td><td class="amt">$13M</td><td>Undisclosed</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank">Deal terms 'more attractive' as crypto startups raise $95m</a></td></tr>
+<tr><td><strong>Kresus</strong></td><td class="amt">$13M</td><td>Undisclosed</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Newity</strong></td><td class="amt">$11M</td><td>Strategic</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Unicity Labs</strong></td><td class="amt">$3M</td><td>Seed</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Fireplace</strong></td><td class="amt">$1.5M</td><td>Pre-seed</td><td><span class="tag">Social</span></td><td>River, Tlon, Zealy, Spectarium</td><td><a href="https://incrypted.com/en/follow-the-money-188m-in-bitcoin-bonds-and-rising-interest-in-prediction-markets/" target="_blank">$188M in Bitcoin Bonds and Rising Interest in Prediction Markets</a></td></tr>
+<tr><td><strong>Novigs</strong></td><td class="amt">$75M</td><td>Undisclosed</td><td><span class="tag">Social</span></td><td>River, Tlon, Zealy, Spectarium</td><td><a href="https://www.binance.com/de/square/post/02-21-2026-crypto-startups-secure-95-million-in-funding-amid-market-downturn-293947134598898" target="_blank">Crypto Startups Secure $95 Million in Funding Amid Market Downturn</a></td></tr>
+<tr><td><strong>PlutonAI</strong></td><td class="amt">$2.7M</td><td>Undisclosed</td><td><span class="tag">Identity/AI/Data</span></td><td>Spherity, Kirha</td><td><a href="https://www.binance.com/de/square/post/02-21-2026-crypto-startups-secure-95-million-in-funding-amid-market-downturn-293947134598898" target="_blank">Crypto Startups Secure $95 Million in Funding Amid Market Downturn</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 25, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
