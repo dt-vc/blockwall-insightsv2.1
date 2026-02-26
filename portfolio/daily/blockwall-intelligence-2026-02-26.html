@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio Intelligence — 2026-02-26</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--sf:#1e293b;--sf2:#334155;--tx:#f1f5f9;--tx2:#94a3b8;--ac:#6366f1;--ac2:#a78bfa;--gn:#22c55e;--yl:#eab308}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,sans-serif;line-height:1.7;padding:40px 20px}
+.c{max-width:860px;margin:0 auto}
+.hd{text-align:center;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--sf2)}
+.hd .badge{display:inline-block;background:linear-gradient(135deg,var(--ac),#4f46e5);color:#fff;padding:5px 16px;border-radius:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.hd h1{font-size:1.8rem;font-weight:700;margin-bottom:6px}
+.hd .dt{color:var(--tx2);font-size:.95rem}
+.stats{display:flex;gap:28px;justify-content:center;margin:20px 0 36px;flex-wrap:wrap}
+.stat{text-align:center}.stat b{display:block;font-size:1.5rem;color:var(--ac2)}.stat span{font-size:.72rem;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+.sec-title{font-size:1.3rem;font-weight:700;margin:36px 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ac);display:flex;align-items:center;gap:10px}
+.sec-title .icon{font-size:1.4rem}
+
+/* Portfolio cards */
+.card{background:var(--sf);border-radius:12px;padding:24px 28px;margin-bottom:16px;border-left:4px solid var(--ac)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.card .hl{font-size:.88rem;color:var(--ac2);font-style:italic;margin-bottom:12px}
+.card ul{margin:0;padding:0 0 0 18px;list-style:disc}
+.card li{font-size:.88rem;line-height:1.7;color:#cbd5e1;margin-bottom:4px}
+.card .wim{font-size:.85rem;color:var(--yl);margin-top:10px;font-weight:500}
+.card .sr{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.card .sr a{display:block;color:var(--tx2);font-size:.75rem;text-decoration:none;margin-bottom:2px}
+.card .sr a:hover{color:var(--ac2)}
+.r{color:var(--ac2);text-decoration:none;font-weight:600;font-size:.82em}
+.r:hover{color:var(--ac);text-decoration:underline}
+
+/* Sector cards */
+.sec-card{background:var(--sf);border-radius:12px;padding:20px 24px;margin-bottom:14px;border-left:4px solid var(--ac2)}
+.sec-card h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sec-card .sig{font-size:.85rem;color:#cbd5e1;margin-bottom:6px}
+.sec-card .sig strong{color:var(--tx);font-weight:600}
+.sec-card .portf{font-size:.78rem;color:var(--tx2);margin-top:8px;font-style:italic}
+
+/* Funding table */
+.ftable{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:.82rem}
+.ftable th{text-align:left;padding:10px 12px;background:var(--sf);color:var(--tx2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.5px;border-bottom:2px solid var(--sf2)}
+.ftable td{padding:10px 12px;border-bottom:1px solid var(--sf2);color:#cbd5e1}
+.ftable tr:hover td{background:var(--sf)}
+.ftable .amt{color:var(--gn);font-weight:600}
+.ftable .tag{display:inline-block;background:var(--sf2);padding:2px 8px;border-radius:8px;font-size:.7rem;color:var(--ac2)}
+.ftable a{color:var(--ac2);text-decoration:none;font-size:.78rem}
+.ftable a:hover{text-decoration:underline}
+
+.skip{background:var(--sf);border-radius:10px;padding:16px 24px;margin-top:20px;color:var(--tx2);font-size:.82rem}
+.skip strong{color:var(--tx)}
+.ft{text-align:center;padding-top:28px;margin-top:36px;border-top:1px solid var(--sf2);color:var(--tx2);font-size:.78rem}
+.ft small{opacity:.7}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hd">
+  <div class="badge">Blockwall — Portfolio Intelligence</div>
+  <h1>Daily Briefing</h1>
+  <div class="dt">February 26, 2026</div>
+</div>
+<div class="stats">
+  <div class="stat"><b>16</b><span>Companies w/ News</span></div>
+  <div class="stat"><b>5</b><span>Sector Digests</span></div>
+  <div class="stat"><b>6</b><span>Funding Items</span></div>
+  <div class="stat"><b>48+</b><span>Curated Sources</span></div>
+</div>
+<div class="sec-title"><span class="icon">📊</span> Portfolio Company Intelligence</div>
+<div class="card">
+  <h3>Blu</h3>
+  <div class="hl">OCC GENIUS Act proposal bars yield on payment stablecoins</div>
+  <ul>
+    <li>OCC proposal implements GENIUS Act barring yield on payment stablecoins like those used in credit cards, directly impacting Mexican no-fee credit card models reliant on stablecoin rails.</li>
+    <li>Rules set stage for CLARITY Act, increasing compliance costs for LATAM fintechs issuing Mastercard cards to underbanked users.</li>
+    <li>MiCA-compliant stablecoin launches like CHFAU signal tighter EU regs spilling over to cross-border payment infra.</li>
+    <li>UK stablecoin sandbox tests with holding limits highlight global regulatory convergence affecting remittance corridors.</li>
+  </ul>
+  <div class="wim">→ Forces Blu to adapt credit building products away from yield-bearing stablecoins, raising operational costs in competitive LATAM market.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Stablecoin Proposal Targets Yield, Sets Stage for CLARITY Act — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391371/occ-genius-act-feedback" target="_blank">📎 OCC issues proposal to implement GENIUS Act — The Block</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 AllUnity Launches Swiss Franc Stablecoin CHFAU — Cointelegraph</a>
+    <a href="https://ambcrypto.com/uk-tests-stablecoins-in-regulatory-sandbox-while-proposing-limits-on-user-holdings/" target="_blank">📎 UK tests stablecoins in regulatory sandbox — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Flyra</h3>
+  <div class="hl">Global stablecoin regs tighten via OCC and MiCA enforcement</div>
+  <ul>
+    <li>OCC GENIUS Act targets yield on stablecoins critical for cross-border remittances and credit products in emerging markets.</li>
+    <li>MiCA-compliant CHFAU launch expands institutional stablecoin options but raises compliance bar for financial inclusion plays.</li>
+    <li>UK sandbox with holding limits signals regulatory scrutiny on remittance volumes, impacting African/LATAM corridors.</li>
+    <li>Circle earnings beat underscores strong stablecoin demand, boosting remittance infrastructure viability.</li>
+  </ul>
+  <div class="wim">→ Flyra's credit+remittance model faces higher compliance hurdles, potentially slowing expansion in underbanked regions.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Stablecoin Proposal — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 AllUnity CHFAU — Cointelegraph</a>
+    <a href="https://ambcrypto.com/uk-tests-stablecoins-in-regulatory-sandbox-while-proposing-limits-on-user-holdings/" target="_blank">📎 UK stablecoins sandbox — AMBCrypto</a>
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank">📎 Circle shares surge on earnings — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kulipa</h3>
+  <div class="hl">Stablecoin yield bans threaten crypto debit card economics</div>
+  <ul>
+    <li>OCC proposal via GENIUS Act prohibits yield on payment stablecoins, core to white-label Visa/Mastercard crypto cards.</li>
+    <li>MiCA CHFAU and UK sandbox tests indicate global push for non-yield stablecoins in card issuing.</li>
+    <li>Sygnum's crypto treasury service highlights institutional demand for compliant on-ramps relevant to API-powered cards.</li>
+    <li>Circle's strong stablecoin demand supports card loading but yield restrictions squeeze margins.</li>
+  </ul>
+  <div class="wim">→ Kulipa must pivot card products to non-yield stablecoins, eroding yield-based revenue in white-label model.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Proposal — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 AllUnity CHFAU — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank">📎 Sygnum Crypto Treasury — Cointelegraph</a>
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank">📎 Circle Earnings — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Nilos</h3>
+  <div class="hl">OCC and MiCA stablecoin rules impact global FX settlement</div>
+  <ul>
+    <li>GENIUS Act yield ban on payment stablecoins disrupts instant FX conversions across 120+ countries.</li>
+    <li>MiCA-compliant stablecoins like CHFAU set precedent for regulated rails in Nilos' payment infra.</li>
+    <li>UK sandbox holding limits could cap settlement volumes in key remittance corridors.</li>
+    <li>Ethereum roadmap upgrades promise faster blocks, aiding Nilos' instant settlement.</li>
+  </ul>
+  <div class="wim">→ Nilos faces redesign of stablecoin-based FX products to comply with no-yield rules, delaying global expansion.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391371/occ-genius-act-feedback" target="_blank">📎 OCC GENIUS Act — The Block</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 CHFAU MiCA — Cointelegraph</a>
+    <a href="https://ambcrypto.com/uk-tests-stablecoins-in-regulatory-sandbox-while-proposing-limits-on-user-holdings/" target="_blank">📎 UK Sandbox — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Rebind</h3>
+  <div class="hl">EU MiCA stablecoin expansion aids self-custodial wallet ramps</div>
+  <ul>
+    <li>MiCA-compliant CHFAU launch enables compliant on/off-ramps for Paris-based self-custodial wallets with IBAN/debit.</li>
+    <li>OCC yield ban pushes payment stablecoins toward regulation, benefiting Rebind's compliant virtual cards.</li>
+    <li>Ethereum 2-second blocks upgrade supports faster wallet settlements in EU markets.</li>
+    <li>Sygnum treasury service trend toward institutional crypto boosts demand for Rebind's infra.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity from MiCA accelerates Rebind's EU wallet+card adoption among self-custody users.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 CHFAU MiCA — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Proposal — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank">📎 Sygnum Treasury — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Yousend</h3>
+  <div class="hl">Stablecoin regs and Circle growth boost African remittances</div>
+  <ul>
+    <li>OCC/UK stablecoin rules tighten rails but Circle earnings show surging demand for diaspora remittances.</li>
+    <li>MiCA CHFAU expands compliant options for multi-currency instant delivery to Africa.</li>
+    <li>Global regulatory sandboxes signal safer corridors, aiding Yousend's underbanked focus.</li>
+    <li>Bitcoin/ETH rallies improve crypto remittance economics despite volatility.</li>
+  </ul>
+  <div class="wim">→ Compliant stablecoins enhance Yousend's reliability, capturing more African diaspora flows amid rising demand.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank">📎 Circle Earnings — Fortune</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 CHFAU — Cointelegraph</a>
+    <a href="https://ambcrypto.com/uk-tests-stablecoins-in-regulatory-sandbox-while-proposing-limits-on-user-holdings/" target="_blank">📎 UK Sandbox — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/bitcoin-tops-dollar68k-after-stock-market-rebound-strong-earnings-data-boost-risk-appetite" target="_blank">📎 BTC Rally — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Byzantine</h3>
+  <div class="hl">Aave hits $1T volume as DeFi lending surges</div>
+  <ul>
+    <li>Aave's record $1T lending volume validates institutional DeFi vaults and restaking strategies.</li>
+    <li>Ethereum roadmap to 2-second blocks boosts efficiency for Byzantine's structured products.</li>
+    <li>Morpho 11% surge signals on-chain credit demand relevant to restaking yields.</li>
+    <li>Etherfi Cash launch and ETHFI rally highlight restaking protocol momentum.</li>
+  </ul>
+  <div class="wim">→ DeFi volume milestone and ETH upgrades position Byzantine for institutional restaking inflows.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank">📎 Aave $1T Volume — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+    <a href="https://ambcrypto.com/morpho-surges-11-as-buyers-take-control-can-1-80-unlock-a-bigger-breakout/" target="_blank">📎 Morpho Surge — AMBCrypto</a>
+    <a href="https://ambcrypto.com/etherfi-cash-launch-sees-ethfi-explode-17-are-more-gains-coming/" target="_blank">📎 Etherfi Cash — AMBCrypto</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spiko</h3>
+  <div class="hl">Sygnum launches institutional crypto treasury mirroring T-bill yields</div>
+  <ul>
+    <li>Sygnum's professional treasury service with bank custody aligns with Spiko's regulated T-bill yield platform.</li>
+    <li>OCC stablecoin yield ban pushes institutions to compliant yield products like Spiko's daily interest model.</li>
+    <li>ETHZilla/Forum tokenization pivot underscores RWA demand for French custody solutions.</li>
+    <li>Aave $1T volume shows DeFi yield appetite spilling to regulated platforms.</li>
+  </ul>
+  <div class="wim">→ Treasury service trend accelerates demand for Spiko's SOC2-compliant T-bill tokens in Europe.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank">📎 Sygnum Treasury — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Proposal — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/ethzilla-shares-jump-rebrand-forum-tokenization-pivot" target="_blank">📎 ETHZilla Rebrand — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank">📎 Aave Volume — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Tranched</h3>
+  <div class="hl">ETHZilla rebrands to Forum in tokenization push</div>
+  <ul>
+    <li>ETHZilla's pivot to Forum emphasizes on-chain securitization and loan tranching for TradFi-DeFi bridge.</li>
+    <li>Aave $1T volume and Morpho surge validate structured credit pools like Tranched's model.</li>
+    <li>OCC stablecoin regs favor tokenized RWAs over yield-bearing coins.</li>
+    <li>Ethereum upgrades enable faster tranching settlements.</li>
+  </ul>
+  <div class="wim">→ Tokenization momentum positions Tranched as key player in securitized loan pools.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/ethzilla-shares-jump-rebrand-forum-tokenization-pivot" target="_blank">📎 ETHZilla Rebrand — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank">📎 Aave $1T — Cointelegraph</a>
+    <a href="https://ambcrypto.com/morpho-surges-11-as-buyers-take-control-can-1-80-unlock-a-bigger-breakout/" target="_blank">📎 Morpho — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Salto X</h3>
+  <div class="hl">ETHZilla Forum rebrand accelerates cap table tokenization</div>
+  <ul>
+    <li>ETHZilla's tokenization pivot mirrors Salto X's equity issuance SaaS for on-chain cap tables.</li>
+    <li>Aave governance and $1T volume highlight demand for tokenized financial primitives.</li>
+    <li>Institutional treasury services like Sygnum boost equity tokenization infrastructure.</li>
+    <li>Stablecoin regs push equity SaaS toward compliant RWA issuance.</li>
+  </ul>
+  <div class="wim">→ Rebrand validates Salto X's model for blockchain-based cap table management.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391330/ethzilla-stock-climbs-13-forum-rebrand-firm-pushes-tokenized-assets" target="_blank">📎 ETHZilla Forum — The Block</a>
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank">📎 Aave Volume — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank">📎 Sygnum — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Blink Labs</h3>
+  <div class="hl">Ethereum roadmap eyes 2-second blocks for MEV efficiency</div>
+  <ul>
+    <li>Vitalik's plan for 2-second blocks and 16-second finality optimizes multi-chain MEV protection.</li>
+    <li>ETH price hike above $2K signals L2 growth aiding Blink's order flow auctions.</li>
+    <li>Aave $1T volume on Ethereum underscores need for MEV infra.</li>
+    <li>Strawmap roadmap clarifies upgrade dependencies for Blink's multi-chain ops.</li>
+  </ul>
+  <div class="wim">→ Faster Ethereum blocks enhance Blink Labs' MEV protection across L2s.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+    <a href="https://ambcrypto.com/heres-what-fueled-ethereums-latest-price-hike-above-2000/" target="_blank">📎 ETH Price Hike — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank">📎 Aave Volume — Cointelegraph</a>
+    <a href="https://www.bankless.com/read/news/ethereum-foundation-unveils-new-strawmap-roadmap-for-ethereum-development" target="_blank">📎 Strawmap — Bankless</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Den</h3>
+  <div class="hl">Sygnum launches pro crypto treasury for corporate multisig</div>
+  <ul>
+    <li>Sygnum's treasury service with custody targets onchain accounting and team wallets like Den.</li>
+    <li>ETHZilla BTC sales for buybacks highlight corporate treasury shifts to on-chain tools.</li>
+    <li>GD Culture's BTC liquidation for shares underscores multisig treasury management needs.</li>
+    <li>Stablecoin regs favor compliant corporate on-ramps.</li>
+  </ul>
+  <div class="wim">→ Institutional treasury trend drives adoption of Den's multisig platform for teams.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank">📎 Sygnum Treasury — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391330/ethzilla-stock-climbs-13-forum-rebrand-firm-pushes-tokenized-assets" target="_blank">📎 ETHZilla — The Block</a>
+    <a href="https://cointelegraph.com/news/gd-culture-board-bitcoin-treasury-sales" target="_blank">📎 GD Culture BTC — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Stablecoin — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Validation Cloud</h3>
+  <div class="hl">Ethereum Strawmap roadmap boosts enterprise staking nodes</div>
+  <ul>
+    <li>New Ethereum roadmap with quantum safety and fast blocks enhances Validation Cloud's SOC2 node APIs.</li>
+    <li>ETH rally and Aave volume signal staking yield demand for enterprise infra.</li>
+    <li>Hut 8's AI pivot from mining highlights node infra pivot opportunities.</li>
+    <li>ETH Foundation Strawmap clarifies upgrades for Data+AI staking services.</li>
+  </ul>
+  <div class="wim">→ Roadmap upgrades solidify Validation Cloud's position in enterprise Ethereum staking.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank">📎 Ethereum Roadmap — Cointelegraph</a>
+    <a href="https://www.bankless.com/read/news/ethereum-foundation-unveils-new-strawmap-roadmap-for-ethereum-development" target="_blank">📎 Strawmap — Bankless</a>
+    <a href="https://ambcrypto.com/heres-what-fueled-ethereums-latest-price-hike-above-2000/" target="_blank">📎 ETH Rally — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/hut-8-swings-to-248m-loss-as-7b-ai-data-center-lease-anchors-pivot-from-bitcoin-mining" target="_blank">📎 Hut 8 — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Spherity</h3>
+  <div class="hl">UK crypto donation ban proposal heightens identity compliance</div>
+  <ul>
+    <li>UK push for crypto political donation ban underscores need for SSI verifiable credentials in compliance.</li>
+    <li>OCC/UK stablecoin regs demand robust digital identity for KYC in Germany-based SSI.</li>
+    <li>eIDAS-adjacent MiCA enforcement aids Spherity's EU digital wallet automation.</li>
+    <li>t54 Labs AI agent funding highlights identity for agentic compliance.</li>
+  </ul>
+  <div class="wim">→ Regulatory scrutiny accelerates Spherity's SSI for crypto compliance automation.</div>
+  <div class="sr">
+    <a href="https://cointelegraph.com/news/uk-temporary-ban-crypto-political-donations-matt-western" target="_blank">📎 UK Donation Ban — Cointelegraph</a>
+    <a href="https://www.theblock.co/post/391371/occ-genius-act-feedback" target="_blank">📎 OCC Proposal — The Block</a>
+    <a href="https://www.theblock.co/post/391273/ripple-franklin-templeton-ai-agent-trust-startup-t54-labs" target="_blank">📎 t54 Labs — The Block</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank">📎 CHFAU MiCA — Cointelegraph</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Kirha</h3>
+  <div class="hl">t54 Labs raises $5M for AI agent trust with Ripple backing</div>
+  <ul>
+    <li>Ripple/Franklin Templeton fund t54 Labs for AI agent trust, aligning with Kirha's LLM data APIs.</li>
+    <li>Crypto embraces AI agents for trading/risk per market analysis.</li>
+    <li>Anthropic/Pentagon clash highlights secure data needs for agentic workflows.</li>
+    <li>RAG/enrichment via private data APIs gains from AI infra funding.</li>
+  </ul>
+  <div class="wim">→ AI agent funding wave validates Kirha's Context-as-a-Service for LLM workflows.</div>
+  <div class="sr">
+    <a href="https://www.theblock.co/post/391273/ripple-franklin-templeton-ai-agent-trust-startup-t54-labs" target="_blank">📎 t54 Labs Seed — The Block</a>
+    <a href="https://dig.watch/updates/crypto-market-embraces-ai-growth-in-2026" target="_blank">📎 Crypto AI Growth — dig.watch</a>
+    <a href="https://fortune.com/2026/02/25/in-its-fight-with-the-pentagon-anthropic-confronts-one-of-the-biggest-crises-of-its-five-year-existence/" target="_blank">📎 Anthropic Pentagon — Fortune</a>
+  </div>
+</div>
+<div class="card">
+  <h3>Busha</h3>
+  <div class="hl">Stablecoin demand surges amid African adoption push</div>
+  <ul>
+    <li>Circle earnings beat shows stablecoin strength critical for Nigeria SEC-licensed exchanges.</li>
+    <li>OCC/MiCA regs clarify USDT rails for emerging market on-ramps.</li>
+    <li>Bhutan Solana tourism stake signals African crypto policy shifts.</li>
+    <li>Bitcoin rally aids exchange volumes in regulated African markets.</li>
+  </ul>
+  <div class="wim">→ Regulatory clarity and stablecoin growth boost Busha's licensed trading volumes.</div>
+  <div class="sr">
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank">📎 Circle Earnings — Fortune</a>
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank">📎 OCC Proposal — Cointelegraph</a>
+    <a href="https://ambcrypto.com/bhutan-opens-to-tourists-but-with-a-10k-stake-into-the-solana-network/" target="_blank">📎 Bhutan Solana — AMBCrypto</a>
+    <a href="https://www.theblock.co/post/391353/bitcoin-ethereum-solana-rally-analysts-flag-pause-dump-jane-street-lawsuit" target="_blank">📎 BTC Rally — The Block</a>
+  </div>
+</div>
+<div class="skip"><strong>No relevant news today:</strong> Opfn, Staex, River, Tlon, Zealy, Spectarium</div>
+<div class="sec-title"><span class="icon">🏷️</span> Sector Digest</div>
+<div class="sec-card">
+  <h4>PAYMENTS &amp; REMITTANCES</h4>
+  <div class="sig"><strong>OCC GENIUS Act bans stablecoin yields for payments</strong> — Targets core economics of crypto cards and remittances, forcing no-yield compliant rails across LATAM/Africa corridors.</div>
+  <div class="sig"><strong>MiCA CHFAU launch expands EU institutional stablecoins</strong> — Compliant fiat-pegged coins set global standard, aiding cross-border but raising KYC hurdles.</div>
+  <div class="sig"><strong>UK sandbox tests stablecoins with user holding caps</strong> — Live pilots signal volume limits impacting high-throughput remittance platforms.</div>
+  <div class="sig"><strong>Circle earnings confirm stablecoin demand boom</strong> — Surge supports on/off-ramps but yield bans squeeze card issuer margins.</div>
+  <div class="portf">Portfolio relevance: Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OCC Proposal — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/allunity-swiss-franc-stablecoin-chfau-mica" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 CHFAU — Cointelegraph</a>
+    <a href="https://ambcrypto.com/uk-tests-stablecoins-in-regulatory-sandbox-while-proposing-limits-on-user-holdings/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 UK Sandbox — AMBCrypto</a>
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Circle — Fortune</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>DeFi &amp; TOKENIZATION</h4>
+  <div class="sig"><strong>Aave hits $1T cumulative lending volume</strong> — Industry first signals institutional maturity for vaults, tranching, and restaking strategies.</div>
+  <div class="sig"><strong>ETHZilla rebrands to Forum for RWA tokenization</strong> — Treasury firm pivots to securitization, validating on-chain equity and credit pools.</div>
+  <div class="sig"><strong>Sygnum rolls out pro crypto treasury custody</strong> — Bank-backed service targets T-bill yields and corporate DeFi adoption.</div>
+  <div class="sig"><strong>Morpho and Etherfi rallies amid DeFi volume spike</strong> — On-chain credit protocols surge, boosting structured product demand.</div>
+  <div class="portf">Portfolio relevance: Byzantine, Spiko, Tranched, Salto X</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/aave-reaches-1-trillion-lending-volume" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Aave $1T — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/ethzilla-shares-jump-rebrand-forum-tokenization-pivot" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETHZilla — Cointelegraph</a>
+    <a href="https://cointelegraph.com/news/sygnum-launches-professional-crypto-treasury-management-services-embargo" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Sygnum — Cointelegraph</a>
+    <a href="https://ambcrypto.com/morpho-surges-11-as-buyers-take-control-can-1-80-unlock-a-bigger-breakout/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Morpho — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>INFRASTRUCTURE &amp; DATA</h4>
+  <div class="sig"><strong>Ethereum roadmap targets 2-second blocks, quantum resistance</strong> — Faster finality and multi-fork upgrades optimize MEV, staking, and node infra.</div>
+  <div class="sig"><strong>Strawmap clarifies Ethereum upgrade dependencies</strong> — Timeline aids enterprise builders planning L2 and data services.</div>
+  <div class="sig"><strong>ETH price breaks $2K on options expiry momentum</strong> — Rally supports staking yields and multi-chain order flow.</div>
+  <div class="sig"><strong>Hut 8 pivots mining to $7B AI data centers</strong> — Infra shift highlights node+AI convergence opportunities.</div>
+  <div class="portf">Portfolio relevance: Blink Labs, Den, Validation Cloud</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Ethereum Roadmap — Cointelegraph</a>
+    <a href="https://www.bankless.com/read/news/ethereum-foundation-unveils-new-strawmap-roadmap-for-ethereum-development" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Strawmap — Bankless</a>
+    <a href="https://ambcrypto.com/heres-what-fueled-ethereums-latest-price-hike-above-2000/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 ETH Hike — AMBCrypto</a>
+    <a href="https://cointelegraph.com/news/hut-8-swings-to-248m-loss-as-7b-ai-data-center-lease-anchors-pivot-from-bitcoin-mining" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Hut 8 — Cointelegraph</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>IDENTITY &amp; AI</h4>
+  <div class="sig"><strong>t54 Labs raises $5M for AI agent trust verification</strong> — Ripple/Franklin back identity layer for autonomous agents and data APIs.</div>
+  <div class="sig"><strong>UK proposes crypto donation ban amid compliance push</strong> — Heightens need for verifiable credentials in political/KYC flows.</div>
+  <div class="sig"><strong>Crypto market pivots to AI agent infrastructure</strong> — Blockchain+AI convergence drives RAG and private data services.</div>
+  <div class="portf">Portfolio relevance: Spherity, Kirha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://www.theblock.co/post/391273/ripple-franklin-templeton-ai-agent-trust-startup-t54-labs" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 t54 Labs — The Block</a>
+    <a href="https://cointelegraph.com/news/uk-temporary-ban-crypto-political-donations-matt-western" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 UK Ban — Cointelegraph</a>
+    <a href="https://dig.watch/updates/crypto-market-embraces-ai-growth-in-2026" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Crypto AI — dig.watch</a>
+  </div>
+</div>
+<div class="sec-card">
+  <h4>EXCHANGE</h4>
+  <div class="sig"><strong>Circle stablecoin surge aids emerging market exchanges</strong> — Earnings beat confirms USDC/USDT demand for African on-ramps.</div>
+  <div class="sig"><strong>OCC stablecoin regs clarify licensed exchange rails</strong> — Yield bans favor compliant trading pairs in Nigeria.</div>
+  <div class="sig"><strong>Bhutan mandates Solana stake for tourism</strong> — Policy innovation signals African regulatory creativity.</div>
+  <div class="portf">Portfolio relevance: Busha</div>
+  <div class="sr" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--sf2)">
+    <a href="https://fortune.com/2026/02/25/circle-shares-surge-after-surprise-earnings-beat-shows-strong-demand-for-stablecoins/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Circle — Fortune</a>
+    <a href="https://cointelegraph.com/news/occ-proposal-aims-to-end-stablecoin-yield-debate" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 OCC — Cointelegraph</a>
+    <a href="https://ambcrypto.com/bhutan-opens-to-tourists-but-with-a-10k-stake-into-the-solana-network/" target="_blank" style="color:var(--tx2);font-size:.72rem;text-decoration:none;display:block;margin-bottom:2px">📎 Bhutan — AMBCrypto</a>
+  </div>
+</div>
+<div class="sec-title"><span class="icon">💰</span> Funding Updates</div>
+<h4 style="color:var(--ac2);margin-bottom:12px;font-size:.9rem">Peer / Sector Funding</h4>
+<table class="ftable"><thead><tr><th>Company</th><th>Amount</th><th>Round</th><th>Type</th><th>Sector</th><th>Relevant To</th><th>Source</th></tr></thead><tbody>
+<tr><td><strong>TBD</strong></td><td class="amt">$3M</td><td>Seed</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.binance.com/en/square/post/02-25-2026-launch-tbd-secures-3-million-seed-funding-to-enhance-blockchain-prediction-market-295491741315826" target="_blank">TBD Secures $3 Million Seed Funding to Enhance Blockchain Prediction Market</a></td></tr>
+<tr><td><strong>BitRing</strong></td><td class="amt">Undisclosed</td><td>Undisclosed</td><td><span class="tag">Identity/AI/Data</span></td><td>Spherity, Kirha</td><td><a href="https://www.rootdata.com/news/557544" target="_blank">BitRing completes millions of dollars in financing and launches AI and blockchain-based health protocol BRT</a></td></tr>
+<tr><td><strong>STS Digital</strong></td><td class="amt">$30M</td><td>Strategic</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://fxnewsgroup.com/forex-news/cryptocurrency/swiss-crypto-liquidity-provider-sts-digital-gets-30m-investment-from-cmt-kraken/" target="_blank">Swiss crypto liquidity provider STS Digital gets $30M investment from CMT, Kraken</a></td></tr>
+<tr><td><strong>Basis</strong></td><td class="amt">$100M</td><td>Series B</td><td><span class="tag">Payments</span></td><td>Blu, Flyra, Kulipa, Nilos, Rebind, Yousend</td><td><a href="https://www.fintechfutures.com/venture-capital-funding/basis-raises-100m-series-b" target="_blank">Basis raises $100m Series B at $1.15bn valuation - FinTech Futures</a></td></tr>
+<tr><td><strong>Kresus Labs</strong></td><td class="amt">$13M</td><td>Undisclosed</td><td><span class="tag">Infrastructure</span></td><td>Blink Labs, Den, Opfn, Staex, Validation Cloud</td><td><a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank">Deal terms 'more attractive' as crypto startups raise $95m led by prediction markets, AI agents</a></td></tr>
+<tr><td><strong>PlutonAI</strong></td><td class="amt">$2.7M</td><td>Undisclosed</td><td><span class="tag">Identity/AI/Data</span></td><td>Spherity, Kirha</td><td><a href="https://www.dlnews.com/articles/markets/deal-terms-more-attractive-as-crypto-startups-raise-95m/" target="_blank">Deal terms 'more attractive' as crypto startups raise $95m led by prediction markets, AI agents</a></td></tr>
+</tbody></table>
+<div class="ft">Blockwall &bull; Portfolio Intelligence v5.2 &bull; February 26, 2026<br><small>Perplexity sonar-pro &bull; 48+ curated sources &bull; n8n automated</small></div>
+</div>
+</body></html>
