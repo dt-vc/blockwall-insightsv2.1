@@ -73,20 +73,24 @@
       </button>
     </div>
   </nav>
-  <div class="container">
-    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
-    <div class="header">
-      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
-      <div class="header-label">Blockwall Capital</div>
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Daily Archive
+    </a>
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital</div>
       <h1>Daily Insights</h1>
-      <div class="header-date">February 26, 2026</div>
+      <div class="newsletter-date">February 26, 2026</div>
     </div>
-    <div class="stats">
-      <div class="stat"><div class="stat-value">151</div><div class="stat-label">Sources</div></div>
-      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Highlights</div></div>
-      <div class="stat"><div class="stat-value">4</div><div class="stat-label">Watching</div></div>
-      <div class="stat"><div class="stat-value bullish">39</div><div class="stat-label">Bullish</div></div>
-      <div class="stat"><div class="stat-value bearish">32</div><div class="stat-label">Bearish</div></div>
+    <div class="newsletter-stats">
+      <div class="newsletter-stat"><div class="newsletter-stat-value">151</div><div class="newsletter-stat-label">Sources</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value">12</div><div class="newsletter-stat-label">Highlights</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value">4</div><div class="newsletter-stat-label">Watching</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bullish">39</div><div class="newsletter-stat-label">Bullish</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bearish">32</div><div class="newsletter-stat-label">Bearish</div></div>
     </div>
     <div class="exec-summary">
       <h2>&#x1F4CA; Today's Key Signals</h2>
@@ -99,7 +103,7 @@
         <li>Ethereum roadmap eyes 2-second blocks 16-second finality quantum resistance by 2029.</li>
       </ul>
     </div>
-    <div class="intro">Dear Founders, Investors, and Friends, Aave hits $1T in lending volume as DeFi matures. Nvidia surges on AI adoption while Circle's USDC grows to $75B, but Binance faces US probes over sanctions.</div>
+    <div class="newsletter-intro">Dear Founders, Investors, and Friends, Aave hits $1T in lending volume as DeFi matures. Nvidia surges on AI adoption while Circle's USDC grows to $75B, but Binance faces US probes over sanctions.</div>
     <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
     <div class="story">
       <h2 class="story-title">Aave Notches $1T in Lending Volume, an Industry First</h2>
@@ -1274,9 +1278,36 @@ At Blockwall, we back builders pioneering these intersections of DeFi, AI, and r
       <li><span class="source-num">[11]</span> <a href="https://cointelegraph.com/news/vitalik-details-roadmap-for-faster-quantum-resistant-ethereum">Ethereum Roadmap Targets 2-Second Blocks and Quantum Safety</a> <span class="other-source">(News)</span></li>
       <li><span class="source-num">[12]</span> <a href="https://fortune.com/2026/02/26/startup-callosum-cambridge-trained-neuroscientists-raises-10-million-venture-funding-orchestrate-ai-workloads-different-chips/">Exclusive: Startup aiming to break Nvidia’s strangehold on AI data center workloads raises $10.25 million</a> <span class="other-source">(Jeremy Kahn)</span></li>
     </ul></div>
-    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
-    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+<!-- Floating Feedback Button -->
+  <div class="feedback-float">
+    <a href="https://forms.gle/EG5rQ4H1SAhjuiqT6" target="_blank" class="feedback-btn" title="Share your feedback">
+      <span class="feedback-badge">Beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        <line x1="9" y1="9" x2="15" y2="9"></line>
+        <line x1="9" y1="13" x2="13" y2="13"></line>
+      </svg>
+      <span class="feedback-btn-text">Share Feedback</span>
+    </a>
   </div>
   <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
-  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.innerHTML = '&#x2600;&#xFE0F;';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.innerHTML = '&#x1F319;';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').innerHTML = savedTheme === 'dark' ? '&#x1F319;' : '&#x2600;&#xFE0F;';
+  </script>
 </body></html>
