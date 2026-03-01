@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - March 1, 2026</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    /* === MORE TO WATCH === */
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    /* === ALL RESOURCES - CATEGORY ACCORDION === */
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-cat-body::-webkit-scrollbar { width: 5px; }
+    .res-cat-body::-webkit-scrollbar-track { background: transparent; }
+    .res-cat-body::-webkit-scrollbar-thumb { background: rgba(139,124,246,0.3); border-radius: 3px; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-cat-header:hover { background: rgba(139,124,246,0.08); }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+    [data-theme="light"] .res-card:hover .res-card-title { color: #7c3aed; }
+    [data-theme="light"] .res-card:hover { background: rgba(139,124,246,0.05); }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="../monthly/index.html" class="nav-link">Monthly</a>
+        <a href="../portfolio/index.html" class="nav-link">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">&#x1F319;</span>
+      </button>
+    </div>
+  </nav>
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Daily Archive
+    </a>
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="newsletter-date">March 1, 2026</div>
+    </div>
+    <div class="newsletter-stats">
+      <div class="newsletter-stat"><div class="newsletter-stat-value">73</div><div class="newsletter-stat-label">Sources</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value">9</div><div class="newsletter-stat-label">Highlights</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value">4</div><div class="newsletter-stat-label">Watching</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bullish">9</div><div class="newsletter-stat-label">Bullish</div></div>
+      <div class="newsletter-stat"><div class="newsletter-stat-value bearish">30</div><div class="newsletter-stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Ethereum Hegota fork targets smart accounts within year boosting UX and privacy for developers.</li>
+        <li>US senators demand Binance AML probe heightening regulatory risks for centralized exchanges.</li>
+        <li>Polymarket insider trading suspicions erode DeFi prediction market trust amid Iran bets.</li>
+        <li>Bitcoin volatility liquidates $300M but $63K support signals short-term investor resilience.</li>
+        <li>Khamenei death after US-Israel strike introduces geopolitical volatility to crypto markets.</li>
+        <li>LayerZero ZRO bullish momentum eyes $2 but persistent risks warrant founder caution.</li>
+      </ul>
+    </div>
+    <div class="newsletter-intro">Dear Founders, Investors, and Friends, Ethereum's Hegota fork brings native smart accounts and flexible gas payments to mainstream users, while geopolitical tensions and regulatory scrutiny reshape market dynamics across Bitcoin treasuries and prediction markets. From account abstraction breakthroughs to AML compliance investigations and insider trading concerns, this week underscores both crypto's technical evolution and its growing intersection with traditional finance oversight.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (9)</h2>
+    <div class="story">
+      <h2 class="story-title">Vitalik: Ethereum Smart Accounts Coming in Hegota Fork</h2>
+      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-03/019ca711-8c03-7910-a948-20e3ff97c807.jpg" alt="Vitalik: Ethereum Smart Accounts Coming in Hegota Fork" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Ethereum &bull; Score: 7/10</div>
+      <p class="story-summary">Ethereum co-founder Vitalik Buterin announced that smart accounts, enabled by account abstraction via EIP-8141, will launch in the Hegota hard fork scheduled for the second half of 2026. This upgrade follows the Glamsterdam fork in early 2026 and introduces flexible gas payments, enhanced privacy, and features like FOCIL for censorship resistance, alongside potential Verkle Trees to cut node hardware needs and boost decentralization. For institutional investors, these improvements promise scalable infrastructure supporting high-volume Layer 2 transactions, reduced centralization risks, and broader network participation, aligning with Ethereum's semiannual upgrade cadence for steady growth.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/ethereum-smart-accounts-are-finally-coming-within-a-year-says-vitalik" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">11 US Senators Urge Probe Into Binance's AML Controls</h2>
+      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-02/019c88c5-d879-72c7-89d0-6dd085b56a8c.jpg" alt="11 US Senators Urge Probe Into Binance's AML Controls" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">Eleven US senators are urging the Treasury and Justice Department to investigate Binance's AML and sanctions compliance. The request cites alleged Iran-linked transfers and potential sanctions evasion.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/11-us-senators-request-binance-sanctions-probe" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Polymarket Traders Make $1M on US-Iran Strike Bets, Spark Insider Concerns</h2>
+      <img class="story-img" src="https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https:/s3.cointelegraph.com/uploads/2026-03/019ca832-1264-7e6b-9152-7906a155b641.jpg" alt="Polymarket Traders Make $1M on US-Iran Strike Bets, Spark Insider Concerns" onerror="this.style.display='none'">
+      <div class="story-meta">News &bull; DeFi &bull; Score: 6/10</div>
+      <p class="story-summary">Polymarket traders profited $1 million on US-Iran strike bets, raising concerns about potential insider trading within the prediction market platform. The well-timed bets have sparked scrutiny over the fairness and transparency of Polymarket's operations.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/polymarket-traders-1m-us-iran-strike-insider-trading-concerns" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin whipsaw liquidates nearly $300 mln in 24 hours </h2>
+      <img class="story-img" src="https://ambcrypto.com/wp-content/uploads/2026/03/Bitcoin-Featured-2.webp" alt="Bitcoin whipsaw liquidates nearly $300 mln in 24 hours " onerror="this.style.display='none'">
+      <div class="story-meta">Akashnath S &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin experienced volatility, leading to nearly $300 million in liquidations within 24 hours. The $63k support zone held, supporting a short-term bullish outlook.</p>
+      <a class="story-link" href="https://ambcrypto.com/bitcoin-whipsaw-liquidates-nearly-300-mln-in-24-hours-what-comes-next/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Iranian Supreme Leader Khamenei dies after major attack by Israel and the U.S., Iranian state media confirms</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1639762681057-408e52192e55?w=800&h=400&fit=crop" alt="Iranian Supreme Leader Khamenei dies after major attack by Israel and the U.S., Iranian state media confirms" onerror="this.style.display='none'">
+      <div class="story-meta">Fortune &bull; Other &bull; Score: 6/10</div>
+      <p class="story-summary">Iranian Supreme Leader Khamenei has reportedly died following an attack by Israel and the U.S., according to Iranian state media. This geopolitical event could have implications for various markets, including crypto.</p>
+      <a class="story-link" href="https://fortune.com/2026/02/28/iranian-supreme-leader-khamenei-dead-state-media-confirms-attack-israel-us/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Chaos in Bitcoin treasury land: Rebellions, mass sales and one big monopoly</h2>
+      <img class="story-img" src="https://www.dlnews.com/resizer/v2/XYUWWTVRCBAB3F5BVI3FSQC7O4.jpg?smart=true&auth=05d627e4de336c2a43f9a7fd84ed99f8aba41dbd3d9af3abfed8e393414070b7&width=1200&height=630" alt="Chaos in Bitcoin treasury land: Rebellions, mass sales and one big monopoly" onerror="this.style.display='none'">
+      <div class="story-meta">Pedro Solimano &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin treasuries are facing challenges as one treasury approved the sale of its 7,500 Bitcoin reserves, and another received criticism from shareholders. An analyst suggests the original idea of Bitcoin treasuries was unsound.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/chaos-bitcoin-treasury-land-revolts-mass-sales-monopoly/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Ray Dalio, Scott Bessent and House members from both sides of the aisle are rallying around a ‘3% solution’ to tame the out of control national debt</h2>
+      <img class="story-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/02/GettyImages-2243629590_27eafa.jpg?resize=1200,600" alt="Ray Dalio, Scott Bessent and House members from both sides of the aisle are rallying around a ‘3% solution’ to tame the out of control national debt" onerror="this.style.display='none'">
+      <div class="story-meta">Shawn Tully &bull; Other &bull; Score: 5/10</div>
+      <p class="story-summary">Ray Dalio, Scott Bessent, and members of Congress are advocating for a '3% solution' to reduce the national debt. This bipartisan effort aims to lower the gap between government revenues and expenditures to 3% of GDP.</p>
+      <a class="story-link" href="https://fortune.com/2026/03/01/ray-dalio-scott-bessent-national-debt-3-percent-gdp-solution/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Traders, LayerZero flipped bullish – ZRO eyes $2.00, but THESE risks remain</h2>
+      <img class="story-img" src="https://ambcrypto.com/wp-content/uploads/2026/03/Gladys-62.webp" alt="Traders, LayerZero flipped bullish – ZRO eyes $2.00, but THESE risks remain" onerror="this.style.display='none'">
+      <div class="story-meta">Gladys Makena &bull; Layer2 &bull; Score: 5/10</div>
+      <p class="story-summary">Traders have flipped bullish on LayerZero (ZRO), with potential for the token to reach $2.00. However, risks remain despite the rebuilt momentum and firm on-chain signals.</p>
+      <a class="story-link" href="https://ambcrypto.com/traders-layerzero-flipped-bullish-zro-eyes-2-00-but-these-risks-remain/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Fresh accounts netted $1 million on Polymarket hours before US airstrikes on Iran: Bubblemaps</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2024/06/polymarket-news-editorial.jpg" alt="Fresh accounts netted $1 million on Polymarket hours before US airstrikes on Iran: Bubblemaps" onerror="this.style.display='none'">
+      <div class="story-meta">Zack Abrams &bull; DeFi &bull; Score: 6/10</div>
+      <p class="story-summary">Traders on Polymarket profited $1 million betting on events related to US airstrikes on Iran. One trader lost $6.5 million after betting against the strikes.</p>
+      <a class="story-link" href="https://www.theblock.co/post/391650/fresh-accounts-netted-1-million-on-polymarket-hours-before-us-airstrikes-on-iran-bubblemaps" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (4)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://ambcrypto.com/bitcoin-whale-addresses-holding-100-btc-hit-ath-strategic-play-for-h2-rally/" target="_blank">Bitcoin whale addresses holding 100 BTC hit ATH – Strategic play for H2 rally?</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Ritika Gupta &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin whale addresses holding 100 BTC have reached an all-time high, suggesting strategic accumulation. Rising liquidi...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://ambcrypto.com/bitcoin-slides-below-key-level-after-brutal-february-sell-off-whats-next/" target="_blank">Bitcoin slides below key level after brutal February sell-off: What’s next?</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Muriuki Lazaro &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin experienced a sharp correction in February, leading to increased market stress and a drop below a key level. New...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/us-military-used-anthropic-ai-iran-strike-trump-ban" target="_blank">US Military Used Anthropic AI in Iran Strike Despite Trump Ban: Report</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> News &bull; Other</div>
+        <div class="watch-summary">The US military reportedly used Anthropic's Claude AI for battlefield analysis and targeting in an Iran strike, despite ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/bitcoin-ethereum-pumping-hard-after-iran-strikes-experts/" target="_blank">Bitcoin, Ethereum ‘pumping hard’ after Iran strikes, but states brace for financial fallout</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Tim Alper &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin and Ethereum experienced price increases following news of strikes and the death of Iran's supreme leader. Bitco...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (60)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">9</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/markets/bitcoin-price-drops-after-trump-announced-iran-strikes/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin, Ethereum drop after US and Israel strike Iran</span>
+                <span class="res-card-source">Mathew Di Salvo</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/bitcoin-recovers-to-68k-following-reported-death-of-iranian-supreme-leader" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Recovers to $68K After Iran Supreme Leader Killed</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/zcash-why-zec-could-drop-to-120-if-this-support-breaks/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Zcash: Why ZEC could drop to $120 if THIS support breaks</span>
+                <span class="res-card-source">Olayiwola Dolapo</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/buying-bitcoin-hold-for-at-least-three-years-to-avoid-losses-data-says" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Buying Bitcoin? Hold BTC for at Least Three Years to Avoid Losses</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/bitcoin-volatility-hits-2022-high-as-short-term-holders-yield-will-65k-hold/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin volatility hits 2022 high as short-term holders yield </span>
+                <span class="res-card-source">Muriuki Lazaro</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/bitcoin-why-analysts-warn-btc-could-drop-to-38k-in-current-cycle/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin: Why analysts warn BTC could drop to $38K in current cycle</span>
+                <span class="res-card-source">Akashnath S</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/bitcoin-bottom-fractal-calls-for-130percent-rally-but-is-the-model-valid-in-2026" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Bottom Signal Fires But This Time Investor Risk Appetite Is Absent</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://www.theblock.co/post/391667/developer-embeds-image-on-bitcoin-as-a-single-transaction-challenging-bip-110s-core-claims" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Developer embeds image on Bitcoin as a single transaction, challenging BIP-110's core claims</span>
+                <span class="res-card-source">Zack Abrams</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/analyzing-decreds-post-selloff-state-is-24-or-35-next-for-dcr/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Analyzing Decred’s post-selloff state – Is $24 or $35 next for DCR?</span>
+                <span class="res-card-source">Gladys Makena</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔄 DeFi <span class="res-cat-count">3</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://ambcrypto.com/hyperliquid-defies-altcoin-weakness-whats-driving-hypes-demand/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Hyperliquid defies altcoin weakness: What’s driving HYPE’s demand?</span>
+                <span class="res-card-source">Muriuki Lazaro</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/crypto-treasury-companies-consolidate-2026" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Consolidation Likely Coming to Crypto Treasury Market: Crypto exec</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/bitcoin-falls-with-ethereum-and-solana-as-mutuum-finance-lending-protocol-advances/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin falls with Ethereum and Solana as Mutuum Finance lending protocol advances</span>
+                <span class="res-card-source">AMBCrypto Team</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⟠ Ethereum <span class="res-cat-count">4</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://ambcrypto.com/ethereum-price-prediction-whats-next-as-eth-loses-1900-support/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Ethereum price prediction: What’s next as ETH loses $1,900 support?</span>
+                <span class="res-card-source">Emilio Munoru</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/ether-60percent-down-from-its-2025-high-but-tradfi-keeps-betting-on-eth-here-s-why" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Ethereum Isn’t Dead: Why TradFi Keeps Betting On An ETH Surge</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/ethereum-is-a-price-bottom-forming-as-37-1m-eth-gets-staked/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Ethereum: Is a price bottom forming as 37.1M ETH gets staked?</span>
+                <span class="res-card-source">Ritika Gupta</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/solana-sol-stalls-at-range-highs-as-market-panic-overrides-capital-inflows/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Solana [SOL] stalls at range highs as market panic overrides capital inflows</span>
+                <span class="res-card-source">Akashnath S</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚖️ Regulation <span class="res-cat-count">2</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.theblock.co/post/391662/judge-blocks-binance-from-pushing-class-action-suits-over-token-sales-into-arbitration" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Judge blocks Binance from pushing class action suits over token sales into arbitration</span>
+                <span class="res-card-source">Zack Abrams</span>
+              </span>
+            </a>
+            <a href="https://www.dlnews.com/articles/markets/morgan-stanley-applies-for-bank-licence-for-crypto-ambitions/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Morgan Stanley files for bank charter to custody crypto</span>
+                <span class="res-card-source">Mathew Di Salvo</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">📈 Investment <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://ambcrypto.com/while-bitcoin-etfs-bled-solana-and-xrp-won-the-week-heres-the-data/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">While Bitcoin ETFs bled, Solana and XRP won the week </span>
+                <span class="res-card-source">Ishika Kumari</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏛️ Tokenization <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/markets/tokenised-gold-is-surging-while-bitcoins-price-is-down-after-us-iran-strike/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Tokenised gold continues rally while Bitcoin slides on US attack against Iran</span>
+                <span class="res-card-source">Mathew Di Salvo</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚡ Layer2 <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://ambcrypto.com/polygon-drops-11-can-pols-0-90-demand-zone-stop-more-losses/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Polygon drops 11% – Can POL’s $0.90 demand zone stop more losses?</span>
+                <span class="res-card-source">Kelvin Murithi</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏢 Enterprise <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://fortune.com/2026/03/01/double-good-founder-popcorn-fundraising-tim-heitmann/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Here’s how to build something that lasts, from the founder of a $300 million bootstrapped company that’s been growing for 28 years straight</span>
+                <span class="res-card-source">Tim Heitmann</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">38</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://fortune.com/2026/02/28/airspace-closed-flights-canceled-mideast-us-israeli-attacks-iran/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Airspace closed and flights canceled across the Mideast amid U.S.-Israeli attacks on Iran</span>
+                <span class="res-card-source">Cara Rubinsky,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/us-airstrikes-target-iranian-leadership-retaliation-american-bases-mideast-israel/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">U.S. airstrikes target members of Iranian leadership while retaliation focuses on Israel and American bases in the region</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/openai-pentagon-deal-anthropic-designated-supply-chain-risk-unprecedented-action-damage-its-growth/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">OpenAI sweeps in to ink deal with Pentagon as Anthropic is designated a ‘supply chain risk’—an unprecedented action likely to crimp its growth</span>
+                <span class="res-card-source">Jeremy Kahn</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/iran-supreme-leader-khamenei-dead-israel-decapitation-us-airstrikes-military-targets/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Israel seeks Iran’s decapitation while U.S. hits military targets as report says Supreme Leader Khamenei was killed</span>
+                <span class="res-card-source">Jason Ma</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/fbi-us-terrorism-high-alert-iran-retaliation-kash-patel-dhs/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">FBI raises terrorism alert over fears of retaliation by Iran</span>
+                <span class="res-card-source">Myles Miller,Bloomberg</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/iran-missile-barrage-us-interceptor-stockpile-thaad-patriot/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Iran’s missile barrage tests whether U.S. has enough interceptors</span>
+                <span class="res-card-source">Gerry Doyle,Bloomberg</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/03/01/utility-bills-keep-rising-everyone-blame-ai-data-centers-included/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Your utility bills keep going up. Here’s everyone you can blame—AI data centers included</span>
+                <span class="res-card-source">Jordan Blum</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Pentagon chief blocks officers from Ivy League schools and other top universities, including partners on AI and space</span>
+                <span class="res-card-source">Jason Ma</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/iran-israel-american-attacks-talks-nationwide-protests-economy/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">American, Israeli strike on Iran came 2 days after latest talks, as theocracy struggled with nationwide protests</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/russia-reaction-iran-attack-trump-israel-world-leaders-reactions/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Russia accuses America of ‘pre-planned and unprovoked act of armed aggression’ against Iran</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/iran-strikes-us-israel-united-nations-security-council-emergency-meeting/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Israel, U.S. stiff-arm U.N. during emergency Security Council meeting</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/03/01/boomer-consumption-investing-labor-jobs-creation-recession/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Your grandparents are the reason the U.S. isn’t in a recession right now. That won’t last forever</span>
+                <span class="res-card-source">Eleanor Pringle</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/opec-plus-oil-production-hike-us-israel-iran-strikes/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">OPEC+ to weigh bigger hike after Iran strike, delegates say</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/heres-why-openais-110b-raise-is-a-major-headwind-for-crypto/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Here’s why OpenAI’s $110B raise is a major headwind for crypto</span>
+                <span class="res-card-source">Ritika Gupta</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/iran-death-ground-existential-threat-us-attacks-retaliation-terrorism-cyberattacks-strait-of-hormuz/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Iran is now on ‘death ground’ amid existential threat from U.S. attacks and could ‘go big’ in retaliation, former NATO commander warns</span>
+                <span class="res-card-source">Jason Ma</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/anthropic-ceo-responds-pentagon-order-restrict-military" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Anthropic CEO Slams Pentagon Decision As 'Unprecedented'</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/dubai-worst-nightmare-iran-strikes-gulf-neighbors-uae-qatar/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Dubai’s worst nightmare unfolds as Iran strikes Gulf neighbors</span>
+                <span class="res-card-source">Dana Khraiche,Fiona MacDonald,Bloomberg</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/assessing-spx6900s-55-crash-why-spx-bulls-need-0-27-to-hold/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Assessing SPX6900’s 55% crash – Why SPX bulls need $0.27 to hold</span>
+                <span class="res-card-source">Muriuki Lazaro</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/03/01/usaa-ceo-juan-andrade-gen-z-not-as-well-off-as-boomers-gen-x-take-ownership-success/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">USAA CEO says Gen Z ‘are not going to be as well off’ as boomers and Gen Xers—they need to take ownership of their success, he urges</span>
+                <span class="res-card-source">Emma Burleigh</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/examining-if-story-can-recover-after-ips-2-month-price-slump/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Examining if Story can recover after IP’s 2-month price slump</span>
+                <span class="res-card-source">Lennox Gitonga</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/heres-why-stellars-xlm-price-action-may-be-at-the-risk-of-a-28-drop/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Here’s why Stellar’s (XLM) price action may be at the risk of a 28% drop</span>
+                <span class="res-card-source">Chandan Gupta</span>
+              </span>
+            </a>
+            <a href="https://ambcrypto.com/virtual-falls-12-but-this-group-of-buyers-could-change-everything/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">VIRTUAL falls 12% – But THIS group of buyers could change everything</span>
+                <span class="res-card-source">Olayiwola Dolapo</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/thomas-massie-among-few-republicans-to-criticize-trump-over-war-powers-this-is-not-america-first/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Thomas Massie among few Republicans to criticize Trump over war powers: ‘This is not ‘America First”</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/why-trump-decided-to-strike-iran-protests-crackdown-thousands-dead/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">A month before Iran strikes, Trump told Iranian protesters help was on the way amid a government crackdown</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/trump-america-first-bomb-iran-middle-east-regime-change/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">How Trump went in 10 years from criticizing regime change in the Middle East to urging Iranians to ‘seize control of your destiny’</span>
+                <span class="res-card-source">Steven Sloan,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/nl/author/olivier-acuna" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Olivier Acuna </span>
+                <span class="res-card-source">coindesk</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/european-leaders-resumption-us-iran-talks-trump-israel-airstrikes/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">European leaders call for resumption of U.S.-Iran talks but say ‘Iranian people must be allowed to determine their future’</span>
+                <span class="res-card-source">Claudia Ciobanu,Sam McNeil,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/trump-urges-iranians-to-take-over-your-government-as-he-launches-major-combat-operations/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Trump urges Iranians to ‘take over your government’ as he launches ‘major combat operations’</span>
+                <span class="res-card-source">The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/this-will-be-probably-your-only-chance-for-generations-trump-tells-iranians-to-first-take-cover-then-rise-up/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">‘This will be probably your only chance for generations’: Trump tells Iranians to first take cover, then rise up</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/3-things-we-will-never-know-after-netflix-pulled-out-of-the-warner-bros-bidding-handing-it-to-paramount/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">3 things we will never know after Netflix pulled out of the Warner Bros. bidding, handing it to Paramount</span>
+                <span class="res-card-source">Nick Lichtenberg</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/warner-paramount-hollywood-big-5-studios-transition/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Warner/Paramount sets up Hollywood to shrink from Big 5 to Big 4, a decade after Disney took out number 6</span>
+                <span class="res-card-source">Lindsey Bahr,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/trump-says-cuba-has-no-money-and-maybe-well-have-a-friendly-takeover/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Trump says Cuba has ‘no money’ and ‘maybe we’ll have a friendly takeover’</span>
+                <span class="res-card-source">Will Weissert,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/berkshire-hathaway-shareholder-letter-greg-abel-not-warren-buffett/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Berkshire Hathaway shareholders just woke up to a letter by someone other than Warren Buffett</span>
+                <span class="res-card-source">Josh Funk,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/david-ellison-from-failed-actor-to-hollywood-mogul-paramount-warner-skydance/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">20 years ago, David Ellison’s flop as an actor stressed him out so much he went to the hospital. Now he’s set to own Paramount and Warner</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/anthropic-ceo-dario-amodei-patriotic-americans-trump-hegseth-mass-surveillance-autonomous-weapons/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Anthropic CEO Dario Amodei says ‘we are patriotic Americans’ committed to defending the U.S. but won’t budge on ‘red lines’</span>
+                <span class="res-card-source">Jason Ma</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/trump-death-supreme-leader-ayatollah-ali-khamenei-regime-overthrow/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Trump calls death of Ayatollah Ali Khamenei the ‘single greatest chance for the Iranian people to take back their Country’</span>
+                <span class="res-card-source">News</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/bill-clinton-on-his-jeffrey-epstein-relationship-i-saw-nothing-and-i-did-nothing-wrong/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bill Clinton on his Jeffrey Epstein relationship: ‘I saw nothing, and I did nothing wrong’</span>
+                <span class="res-card-source">Stephen Groves,The Associated Press</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/02/28/why-shouldnt-we-get-our-money-back-too-normal-people-are-starting-to-demand-trump-tariff-refunds/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">‘Why shouldn’t we get our money back too?’ Normal people are starting to demand Trump tariff refunds</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends,
+
+Ethereum's evolution continues to accelerate, with co-founder Vitalik Buterin announcing smart accounts via account abstraction in EIP-8141 for the Hegota hard fork in the second half of 2026. Building on the Glamsterdam fork earlier that year, this upgrade brings flexible gas payments, enhanced privacy through features like FOCIL for censorship resistance, and potential Verkle Trees to slash node hardware requirements and strengthen decentralization. For institutional players, it means scalable Layer 2 infrastructure for high-volume transactions, lower centralization risks, and wider network participation, fitting Ethereum's reliable semiannual upgrade rhythm.
+
+Meanwhile, regulatory scrutiny intensifies as 11 US Senators press the Treasury and Justice Department to probe Binance's AML controls and sanctions compliance, spotlighting alleged Iran-linked transfers and evasion risks. This underscores the critical need for robust compliance in crypto exchanges as global oversight tightens.
+
+Adding to the buzz, Polymarket traders netted $1 million on US-Iran strike bets with strikingly precise timing, fueling insider trading concerns and questions about prediction markets' fairness and transparency.
+
+At Blockwall, Europe's leading crypto VC, we navigate these dynamics to back founders building resilient Web3 infrastructure, from tokenized assets to decentralized identity. Our portfolio, including Spiko's regulated money market funds and Validation Cloud's enterprise-grade nodes, positions us to capitalize on Ethereum's upgrades while prioritizing compliant innovation.
+
+What Web3 trends are you watching most closely in 2026?
+
+#Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://cointelegraph.com/news/ethereum-smart-accounts-are-finally-coming-within-a-year-says-vitalik">Vitalik: Ethereum Smart Accounts Coming in Hegota Fork</a> <span class="other-source">(News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://cointelegraph.com/news/11-us-senators-request-binance-sanctions-probe">11 US Senators Urge Probe Into Binance's AML Controls</a> <span class="other-source">(News)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://cointelegraph.com/news/polymarket-traders-1m-us-iran-strike-insider-trading-concerns">Polymarket Traders Make $1M on US-Iran Strike Bets, Spark Insider Concerns</a> <span class="other-source">(News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://ambcrypto.com/bitcoin-whipsaw-liquidates-nearly-300-mln-in-24-hours-what-comes-next/">Bitcoin whipsaw liquidates nearly $300 mln in 24 hours </a> <span class="other-source">(Akashnath S)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://fortune.com/2026/02/28/iranian-supreme-leader-khamenei-dead-state-media-confirms-attack-israel-us/">Iranian Supreme Leader Khamenei dies after major attack by Israel and the U.S., Iranian state media confirms</a> <span class="other-source">(Fortune)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.dlnews.com/articles/markets/chaos-bitcoin-treasury-land-revolts-mass-sales-monopoly/">Chaos in Bitcoin treasury land: Rebellions, mass sales and one big monopoly</a> <span class="other-source">(Pedro Solimano)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://fortune.com/2026/03/01/ray-dalio-scott-bessent-national-debt-3-percent-gdp-solution/">Ray Dalio, Scott Bessent and House members from both sides of the aisle are rallying around a ‘3% solution’ to tame the out of control national debt</a> <span class="other-source">(Shawn Tully)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://ambcrypto.com/traders-layerzero-flipped-bullish-zro-eyes-2-00-but-these-risks-remain/">Traders, LayerZero flipped bullish – ZRO eyes $2.00, but THESE risks remain</a> <span class="other-source">(Gladys Makena)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.theblock.co/post/391650/fresh-accounts-netted-1-million-on-polymarket-hours-before-us-airstrikes-on-iran-bubblemaps">Fresh accounts netted $1 million on Polymarket hours before US airstrikes on Iran: Bubblemaps</a> <span class="other-source">(Zack Abrams)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+<!-- Floating Feedback Button -->
+  <div class="feedback-float">
+    <a href="https://forms.gle/EG5rQ4H1SAhjuiqT6" target="_blank" class="feedback-btn" title="Share your feedback">
+      <span class="feedback-badge">Beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        <line x1="9" y1="9" x2="15" y2="9"></line>
+        <line x1="9" y1="13" x2="13" y2="13"></line>
+      </svg>
+      <span class="feedback-btn-text">Share Feedback</span>
+    </a>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.innerHTML = '&#x2600;&#xFE0F;';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.innerHTML = '&#x1F319;';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').innerHTML = savedTheme === 'dark' ? '&#x1F319;' : '&#x2600;&#xFE0F;';
+  </script>
+</body></html>
