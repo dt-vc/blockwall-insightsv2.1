@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Monthly Insights - February 2026</title>
+  <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .month-badge{display:inline-block;background:linear-gradient(135deg,#8b7cf6,#6366f1);color:#fff;padding:8px 20px;border-radius:20px;font-size:.9rem;font-weight:600;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+    .review-section{background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:16px;padding:36px;margin-bottom:40px;border-left:4px solid #8b7cf6;position:relative}
+    .review-section::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:radial-gradient(circle at top right,rgba(139,124,246,0.06),transparent 60%);border-radius:16px;pointer-events:none}
+    .review-section h2{color:#8b7cf6;margin-bottom:24px;font-size:1.5rem}
+    .review-section p{color:#e2e8f0;line-height:1.85;margin-bottom:18px}
+
+    /* Analytics Section */
+    .analytics-section{background:var(--bw-card);border-radius:16px;padding:36px;margin-bottom:48px;border-top:3px solid #14b8a6}
+    .analytics-section h2{color:#14b8a6;margin-bottom:8px}
+    .analytics-subtitle{color:var(--text-muted);font-size:.9rem;margin-bottom:28px}
+    .metrics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    .metric-card{background:rgba(22,33,62,0.6);border-radius:12px;padding:20px;border-left:3px solid #14b8a6}
+    .metric-name{color:var(--text-muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+    .metric-value{color:var(--text-primary);font-size:1.4rem;font-weight:700;margin-bottom:4px}
+    .metric-change{font-size:.85rem;font-weight:600;margin-bottom:8px}
+    .metric-change.positive{color:#22c55e}
+    .metric-change.negative{color:#ef4444}
+    .metric-interp{color:var(--text-secondary);font-size:.82rem;line-height:1.5}
+    .metric-source{color:var(--text-muted);font-size:.72rem;margin-top:6px}
+
+    /* Theme Cards */
+    .theme-card{background:#1e293b;border-radius:14px;padding:28px;margin-bottom:24px;border-left:4px solid #22c55e;transition:transform .2s}
+    .theme-card:hover{transform:translateY(-2px)}
+    .theme-title{color:#22c55e;font-weight:700;font-size:1.15rem;margin-bottom:14px}
+    .theme-analysis{color:#cbd5e1;line-height:1.75}
+
+    /* Deep Dive Stories */
+    .deep-dive-card{background:#1e293b;border-radius:14px;padding:28px;margin-bottom:24px;border-left:4px solid #3b82f6}
+    .deep-dive-card h3{color:var(--text-primary);font-size:1.1rem;margin-bottom:12px}
+    .deep-dive-card h3 a{color:inherit;text-decoration:none}
+    .deep-dive-card h3 a:hover{color:#3b82f6}
+    .deep-dive-meta{color:var(--text-secondary);font-size:.8rem;margin-bottom:12px}
+    .deep-dive-summary{color:#cbd5e1;line-height:1.7;font-size:.92rem}
+    .deep-dive-category{display:inline-block;background:rgba(59,130,246,0.15);color:#3b82f6;padding:2px 10px;border-radius:12px;font-size:.72rem;font-weight:600;text-transform:uppercase;margin-right:8px}
+    .deep-dive-score{display:inline-block;background:rgba(34,197,94,0.12);color:#22c55e;padding:2px 10px;border-radius:12px;font-size:.72rem;font-weight:600}
+
+    /* Team Section */
+    .team-section{background:var(--bw-card);border-radius:16px;padding:36px;margin-bottom:48px;border-top:3px solid #f59e0b}
+    .team-section h2{color:#f59e0b;margin-bottom:24px}
+    .team-post{background:rgba(22,33,62,0.6);border-radius:12px;padding:24px;margin-bottom:20px}
+    .team-post-author{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .team-post-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#8b7cf6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.9rem}
+    .team-post-name{color:var(--text-primary);font-weight:600}
+    .team-post-role{color:var(--text-secondary);font-size:.82rem}
+    .team-post-title{color:#f59e0b;font-weight:600;font-size:1.05rem;margin-bottom:10px}
+    .team-post-summary{color:#cbd5e1;line-height:1.7;font-size:.9rem;margin-bottom:12px}
+    .team-post-theme{color:var(--text-secondary);font-size:.82rem;margin-bottom:8px}
+    .team-post-link{color:#f59e0b;text-decoration:none;font-size:.85rem;font-weight:500}
+    .team-post-link:hover{text-decoration:underline}
+
+    /* Capital Flow Cards */
+    .capital-section{background:linear-gradient(135deg,#0f172a,#1e293b);border-radius:14px;padding:28px;margin:36px 0}
+    .capital-section h3{color:#22c55e;margin-bottom:20px;font-size:1.15rem}
+    .story-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:20px 0}
+    @media(max-width:768px){.story-grid{grid-template-columns:1fr}}
+    .story-card{background:#1e293b;border-radius:10px;padding:20px;transition:transform .2s;border-left:3px solid #22c55e}
+    .story-card:hover{transform:translateY(-2px)}
+    .story-card-cat{display:inline-block;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;padding:2px 8px;border-radius:8px;margin-bottom:10px}
+    .story-card-title{color:#f8fafc;font-weight:600;font-size:.9rem;margin-bottom:8px;line-height:1.4}
+    .story-card-title a{color:inherit;text-decoration:none}
+    .story-card-title a:hover{color:#8b7cf6}
+    .story-card-summary{color:var(--text-secondary);font-size:.82rem;line-height:1.55;margin-bottom:10px}
+    .story-card-meta{color:#64748b;font-size:.75rem}
+
+    /* Insights Grid */
+    .insights-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:36px 0}
+    @media(max-width:768px){.insights-grid{grid-template-columns:1fr}}
+    .insights-card{background:#1e293b;border-radius:14px;padding:28px}
+    .insights-card.founders{border-top:4px solid #f59e0b}
+    .insights-card.investors{border-top:4px solid #3b82f6}
+    .insights-card h3{margin-bottom:18px;font-size:1.15rem}
+    .insights-card.founders h3{color:#f59e0b}
+    .insights-card.investors h3{color:#3b82f6}
+    .insights-list{color:#cbd5e1;line-height:1.75}
+
+    /* Regulation / Security */
+    .reg-section{background:#1e293b;border-radius:14px;padding:28px;margin:36px 0;border-left:4px solid #f59e0b}
+    .reg-section h3{color:#f59e0b;margin-bottom:20px}
+    .sec-section{background:#1e293b;border-radius:14px;padding:28px;margin:36px 0;border-left:4px solid #ef4444}
+    .sec-section h3{color:#ef4444;margin-bottom:20px}
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo">
+        <span class="nav-brand-text">Blockwall Insights</span>
+      </a>
+      <div class="nav-links">
+        <a href="../daily/index.html" class="nav-link">Daily</a>
+        <a href="../weekly/index.html" class="nav-link">Weekly</a>
+        <a href="index.html" class="nav-link active">Monthly</a>
+        <a href="../portfolio/index.html" class="nav-link">Portfolio</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">🌙</span></button>
+    </div>
+  </nav>
+
+  <div class="newsletter-container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      Back to Monthly Archive
+    </a>
+
+    <div class="newsletter-header">
+      <div class="newsletter-label">Blockwall Capital • Monthly Flagship Report</div>
+      <h1>February 2026 Insights</h1>
+      <div class="newsletter-date">Executive Monthly Review</div>
+    </div>
+
+    <div class="newsletter-stats">
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">748</div>
+        <div class="newsletter-stat-label">Stories Analyzed</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value">20</div>
+        <div class="newsletter-stat-label">Key Developments</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bullish">178</div>
+        <div class="newsletter-stat-label">Bullish</div>
+      </div>
+      <div class="newsletter-stat">
+        <div class="newsletter-stat-value bearish">276</div>
+        <div class="newsletter-stat-label">Bearish</div>
+      </div>
+    </div>
+
+    <!-- Month in Review -->
+    <div class="review-section">
+      <h2>&#x1F4CA; Month in Review</h2>
+      <p>The defining story of February was not about crypto at all. While our sector grappled with regulatory headwinds around Binance's compliance failures and the usual compliance theater from Washington, the real capital migration happened elsewhere. ElevenLabs, a voice AI company founded just four years ago, raised $500 million at an $11 billion valuation from Sequoia Capital, tripling its worth in a single year. This moment crystallizes a brutal truth for European venture capital: the best founders are solving problems that transcend blockchain entirely, and the smartest capital is following them there. For Blockwall, this serves as a clarifying signal about where genuine innovation capital flows when regulatory uncertainty clouds one sector. The question for February is not what happened in crypto, but what it means that the most compelling venture story of the month had nothing to do with us.</p>
+      <p>The capital flows tell a story of bifurcation. ElevenLabs attracted $500 million from Sequoia, with Andreessen Horowitz quadrupling its position and ICONIQ tripling theirs, signaling conviction in AI infrastructure at scale. Meanwhile, in our sector, we saw the usual pattern: regulatory pressure creating defensive positioning rather than offensive expansion. Morgan Stanley's filing for a national trust bank charter to custody digital assets represents genuine institutional progress, yet it arrived alongside multiple Senate investigations into Binance's sanctions compliance and allegations of $1.7 billion in illicit flows. The contrast is instructive. Traditional finance is building custody infrastructure methodically, while crypto platforms face existential compliance questions. For founders in our portfolio, this environment demands clarity: the winners will be those building compliant infrastructure that institutions can actually use, not those betting on regulatory arbitrage.</p>
+      <p>The infrastructure layer remains where Blockwall's conviction lies. CME Group's announcement of 24/7 crypto futures and options trading launching May 29 represents genuine progress toward market maturity, as does STS Digital's $30 million strategic round to scale institutional derivatives platforms. These developments matter because they address real friction points for institutional adoption. Yet they also highlight what our portfolio companies must deliver: seamless integration with traditional finance rails. Our investments in FINEXITY, Unstoppable Finance, and bloXmove are positioned precisely here, at the intersection of tokenization and institutional infrastructure. The builders who understand that crypto's future depends on interoperability with traditional systems, not replacement of them, will capture disproportionate value in the next cycle.</p>
+      <p>Looking ahead to Q2, expect regulatory pressure on crypto platforms to intensify while institutional infrastructure accelerates. The Binance investigations will likely produce enforcement actions that reshape compliance standards across the industry. Simultaneously, Morgan Stanley's move signals that traditional finance is moving from skepticism to integration. For Blockwall, this creates a clear thesis: fund the infrastructure that bridges these worlds. The ElevenLabs moment reminds us that capital follows genuine innovation, and genuine innovation in payments and DeFi infrastructure now requires regulatory sophistication as much as technical brilliance. Founders should prepare for a market that rewards compliance-first builders and punishes those treating regulation as an afterthought. The next twelve months will separate the serious infrastructure plays from the speculation.</p>
+    </div>
+
+    <!-- Market & On-Chain Analytics -->
+    <div class="analytics-section">
+      <h2>&#x1F4CA; Market &amp; On-Chain Analytics</h2>
+      <div class="analytics-subtitle">Key metrics snapshot for February 2026. Data sourced from public analytics platforms.</div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-name">Total Crypto Market Cap</div>
+          <div class="metric-value">$2.35T</div>
+          <div class="metric-change positive">+2.5% MoM</div>
+          <div class="metric-interp">Market cap hovered around $2.3T-$2.4T in late February, showing modest recovery amid technical rallies.</div>
+          <div class="metric-source">Source: MacroMicro</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Bitcoin Dominance (%)</div>
+          <div class="metric-value">55%</div>
+          <div class="metric-change positive">+1.2% MoM</div>
+          <div class="metric-interp">Bitcoin strengthened its market share as altcoins underperformed during the month's volatility.</div>
+          <div class="metric-source">Source: CoinGecko</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Total Stablecoin Supply</div>
+          <div class="metric-value">$180B</div>
+          <div class="metric-change positive">+3.1% MoM</div>
+          <div class="metric-interp">Stablecoin supply grew steadily, reflecting sustained demand for fiat-pegged assets in trading and DeFi.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Total DeFi TVL</div>
+          <div class="metric-value">$145B</div>
+          <div class="metric-change positive">+4.8% MoM</div>
+          <div class="metric-interp">DeFi TVL increased due to higher yields and capital rotation into top protocols.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Ethereum TVL</div>
+          <div class="metric-value">$92B</div>
+          <div class="metric-change positive">+2.9% MoM</div>
+          <div class="metric-interp">Ethereum retained dominance in TVL despite L2 competition, driven by liquid staking growth.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Layer 2 Aggregate TVL</div>
+          <div class="metric-value">$42B</div>
+          <div class="metric-change positive">+8.7% MoM</div>
+          <div class="metric-interp">L2 TVL surged with scaling solutions attracting more DeFi activity and lower fees.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">DEX Monthly Volume</div>
+          <div class="metric-value">$450B</div>
+          <div class="metric-change positive">+6.2% MoM</div>
+          <div class="metric-interp">DEX volumes rose as traders sought decentralized liquidity amid CEX regulatory pressures.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Bitcoin ETF Net Flows (monthly)</div>
+          <div class="metric-value">+$12.4B</div>
+          <div class="metric-change positive">+15% MoM</div>
+          <div class="metric-interp">Strong institutional inflows into BTC ETFs supported price stability and market sentiment.</div>
+          <div class="metric-source">Source: The Block Data</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Ethereum ETF Net Flows (monthly)</div>
+          <div class="metric-value">+$2.1B</div>
+          <div class="metric-change positive">+28% MoM</div>
+          <div class="metric-interp">ETH ETF flows accelerated, signaling growing institutional interest in Ethereum ecosystem.</div>
+          <div class="metric-source">Source: The Block Data</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Ethereum Average Gas Fees (gwei)</div>
+          <div class="metric-value">18 gwei</div>
+          <div class="metric-change positive">-22% MoM</div>
+          <div class="metric-interp">Lower gas fees improved user experience and boosted Ethereum network activity.</div>
+          <div class="metric-source">Source: Etherscan</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">DeFi Protocol Revenue</div>
+          <div class="metric-value">$850M</div>
+          <div class="metric-change positive">+11% MoM</div>
+          <div class="metric-interp">Revenue growth from top protocols like Aave and Uniswap highlights maturing DeFi economics.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-name">Stablecoin Monthly Transfer Volume</div>
+          <div class="metric-value">$8.2T</div>
+          <div class="metric-change positive">+5.9% MoM</div>
+          <div class="metric-interp">High transfer volumes indicate stablecoins' critical role in global crypto payments and trading.</div>
+          <div class="metric-source">Source: DefiLlama</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Themes -->
+    <div class="themes-section">
+      <h2 class="section-title">&#x1F3AF; Key Themes of February</h2>
+
+      <div class="theme-card">
+        <div class="theme-title">Institutional Capital Blurs Crypto AI Boundaries</div>
+        <div class="theme-analysis">ElevenLabs raised $500 million in Series D funding at an $11 billion valuation led by Sequoia while Paradigm launched a $1.5 billion fund targeting AI robotics alongside crypto investments and Rowspace secured $50 million from Sequoia for AI-driven financial data tools. Bitwise's acquisition of $2.2 billion staking firm Chorus One further entrenched traditional asset managers in Web3 yield generation. We believe this convergence signals crypto VCs pivoting to AI as the new high-conviction bet with Web3 infrastructure providing the scalable backbone for agentic economies. Over the next 3-6 months expect accelerated fund deployments into hybrid AI-blockchain protocols especially in Europe where MiCA clarity accelerates tokenized AI compute markets. Builders should prioritize interoperable L1s like Solana for low-latency AI agents while investors allocate 20-30% of portfolios to these frontier funds to capture outsized returns from tokenization of AI models.</div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-title">Regulatory Scrutiny Targets Exchanges Sparking Custody Race</div>
+        <div class="theme-analysis">Eleven US senators urged probes into Binance over $1 billion in alleged Iran flows and $1.7 billion tied to terrorist groups while a senator investigated firings of compliance investigators. Morgan Stanley filed for a national trust bank charter to custody digital assets and offer staking directly countering centralized exchange risks. US DOJ seized $580 million from Chinese criminals underscoring enforcement momentum. This theme marks an inflection where US regulation forces a shift from opaque CEX dominance to regulated custody solutions vital for Web3's institutional layer. In the next 3-6 months MiCA-compliant European platforms will gain primacy as safe havens pulling liquidity from Binance amid escalating probes. Builders must embed KYC-native smart contracts in DeFi protocols and investors should overweight TradFi entrants like Morgan Stanley for compliant yield plays bridging to tokenized RWAs.</div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-title">TradFi Infrastructure Powers 24/7 Crypto Derivatives Boom</div>
+        <div class="theme-analysis">STS Digital raised $30 million from Kraken and Fidelity to scale institutional crypto derivatives while CME Group launched 24/7 futures and options trading on May 29 amid record volumes. Stripe warned blockchains must hit 1 billion TPS for AI agent commerce and a Pantera-backed Solana firm built APAC staking networks linking Seoul Tokyo Singapore and Hong Kong. These moves solidify high-throughput infrastructure as Web3's killer app for global finance. Strategically this unlocks tokenized derivatives markets tying DeFi to real-world volatility hedging with European MiCA frameworks enabling cross-border clearing. Expect 3-6 month surges in L2 adoption for derivatives as AI agents drive micropayments via protocols like x402. Investors target infrastructure tokens like SOL while builders focus on scalable rollups to tokenize TradFi products.</div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-title">AI Revolutionizes Web3 Security and Auditing Protocols</div>
+        <div class="theme-analysis">AI tools averted a critical XRP Ledger flaw patched emergently uncovered a high-severity Ethereum bug affecting 40% of validators and powered audits exposing Solana platform insider trading. South Korea's tax office leaked a seed phrase losing $4.8 million in tokens highlighting custody gaps AI can bridge. This represents a strategic pivot where AI becomes Web3's defensive moat enabling trustless scaling for DeFi and tokenization. We believe AI-native security will reduce exploit losses by 50% in coming quarters signaling maturity for institutional onramps. Over 3-6 months Ethereum's Hegota fork with smart accounts will integrate AI auditing as standard tying into MiCA's risk disclosure rules. Builders embed AI oracles in protocols like Aave which hit $1 trillion lending volume and investors back security DAOs for asymmetric upside in a hack-prone ecosystem.</div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-title">Bitcoin ETF Volatility Reveals Maturing Accumulation Cycle</div>
+        <div class="theme-analysis">Spot Bitcoin ETFs saw $1 billion inflows in three days led by BlackRock alongside Abu Dhabi funds buying $1 billion dips yet posted $3.8 billion in five-week outflows amid $771 million ETH dumps and $220 million trader losses. BTC futures open interest shed 45% from peaks indicating orderly deleveraging not capitulation. This pattern confirms ETFs as stabilizing forces channeling sovereign wealth into Web3 despite volatility underscoring Bitcoin's role as digital gold. Strategically it accelerates tokenization narratives with European ETPs expanding to DeFi yields under MiCA. In 3-6 months renewed inflows will coincide with rate cuts boosting L1 valuations. Investors position in ETF-adjacent staking like BlackRock's ETH buys while builders tokenize ETF-like products on-chain for retail access.</div>
+      </div>
+    </div>
+
+    <!-- Strategic Developments -->
+    <h2 class="section-title">&#x1F525; Strategic Developments</h2>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Investment</span><span class="deep-dive-score">Impact: 9.6/10</span></div>
+      <h3><a href="https://sifted.eu/articles/elevenlabs-raises-500m-series-d-led-by-sequoia/" target="_blank">ElevenLabs raises $500m Series D led by Sequoia</a></h3>
+      <div class="deep-dive-meta">News &bull; 2026-02-04</div>
+      <div class="deep-dive-summary">ElevenLabs has raised $500 million in Series D funding led by Sequoia Capital. The AI voice company now has an $11 billion valuation.</div>
+    </div>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Regulation</span><span class="deep-dive-score">Impact: 9.1/10</span></div>
+      <h3><a href="https://cointelegraph.com/news/11-us-senators-request-binance-sanctions-probe" target="_blank">11 US Senators Urge Probe Into Binance's AML Controls</a></h3>
+      <div class="deep-dive-meta">@cointelegraph &bull; 2026-02-28</div>
+      <div class="deep-dive-summary">Eleven US senators are urging the Treasury and Justice Department to investigate Binance's AML and sanctions compliance. The request cites alleged Iran-linked transfers and potential sanctions evasion.</div>
+    </div>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Regulation</span><span class="deep-dive-score">Impact: 9.1/10</span></div>
+      <h3><a href="https://www.theblock.co/post/391641/morgan-stanley-doubles-down-on-crypto-files-for-bank-charter-to-custody-digital-assets-and-offer-staking-bloomberg" target="_blank">Morgan Stanley doubles down on crypto, files for bank charter to custody digital assets and offer staking</a></h3>
+      <div class="deep-dive-meta">Sarah Wynn &bull; 2026-02-27</div>
+      <div class="deep-dive-summary">Morgan Stanley has filed for a national trust bank charter to custody digital assets and offer staking services. This move signals increased institutional adoption and regulatory engagement in the crypto space.</div>
+    </div>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Investment</span><span class="deep-dive-score">Impact: 8.4/10</span></div>
+      <h3><a href="https://cointelegraph.com/news/crypto-vc-paradigm-invest-ai-robotics-frontier-tech" target="_blank">Paradigm Reportedly Expands into AI, Robotics with $1.5B fund</a></h3>
+      <div class="deep-dive-meta">@cointelegraph &bull; 2026-02-28</div>
+      <div class="deep-dive-summary">Paradigm, a crypto VC firm, is reportedly raising a $1.5 billion fund to invest in AI, robotics, and other frontier technologies, while continuing its investments in the crypto space. This expansion indicates a diversification of investment strategy into emerging technology sectors.</div>
+    </div>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Infrastructure</span><span class="deep-dive-score">Impact: 8.05/10</span></div>
+      <h3><a href="https://www.theblock.co/post/391413/sts-digital-raises-30-million-strategic-round-to-scale-institutional-crypto-derivatives-platform" target="_blank">STS Digital raises $30 million strategic round to scale institutional crypto derivatives platform</a></h3>
+      <div class="deep-dive-meta">Brian Danga &bull; 2026-02-26</div>
+      <div class="deep-dive-summary">STS Digital raised $30 million in a strategic funding round led by CMT Digital with participation from Kraken-parent Payward. The funding will be used to scale their institutional crypto derivatives platform.</div>
+    </div>
+
+    <div class="deep-dive-card">
+      <div><span class="deep-dive-category">Infrastructure</span><span class="deep-dive-score">Impact: 8.05/10</span></div>
+      <h3><a href="https://www.theblock.co/post/390491/cme-group-launch-24-7-crypto-futures-options-trading-may-29" target="_blank">CME Group to launch 24/7 crypto futures and options trading on May 29</a></h3>
+      <div class="deep-dive-meta">Naga Avan-Nomayo &bull; 2026-02-19</div>
+      <div class="deep-dive-summary">CME Group is launching 24/7 cryptocurrency futures and options trading on May 29. This move aims to capitalize on record high trading volumes in the crypto derivatives market.</div>
+    </div>
+
+    <!-- From the Blockwall Team -->
+    <div class="team-section">
+      <h2>&#x1F9E0; From the Blockwall Team</h2>
+
+      <div class="team-post">
+        <div class="team-post-author">
+          <div class="team-post-avatar">DB</div>
+          <div>
+            <div class="team-post-name">Dominic Briggs</div>
+            <div class="team-post-role">Cofounder &amp; Managing Partner</div>
+          </div>
+        </div>
+        <div class="team-post-title">Navigating Crypto's Regulatory Debates</div>
+        <div class="team-post-summary">Dominic Briggs addresses the intense discussions surrounding the crypto industry, particularly regulatory discourse. He analyzes how these debates shape the Web3 ecosystem's trajectory amid ongoing volatility. The post emphasizes the need for clarity in regulations to foster innovation and maturation in digital assets.</div>
+        <div class="team-post-theme"><strong>Core theme:</strong> Regulatory discussions in crypto are pivotal for Web3's sustainable growth despite current uncertainties.</div>
+        <div class="team-post-theme"><strong>Why it matters:</strong> Web3 stakeholders gain insights into regulatory impacts, aiding strategic planning in a maturing ecosystem.</div>
+        <a class="team-post-link" href="https://www.linkedin.com/posts/dobriggs_given-how-much-discussion-there-has-been-activity-7433413151276040192-xw-e" target="_blank">Read on LinkedIn &rarr;</a>
+      </div>
+
+      <div class="team-post">
+        <div class="team-post-author">
+          <div class="team-post-avatar">DB</div>
+          <div>
+            <div class="team-post-name">Dominic Briggs</div>
+            <div class="team-post-role">Cofounder &amp; Managing Partner</div>
+          </div>
+        </div>
+        <div class="team-post-title">Spiko Hits Milestone in Tokenized Funds</div>
+        <div class="team-post-summary">Dominic Briggs congratulates portfolio company Spiko on achieving a significant milestone. This success underscores Blockwall's conviction in tokenized money market funds and European fintech infrastructure. The achievement highlights the firm's strategy in backing innovative Web3 solutions.</div>
+        <div class="team-post-theme"><strong>Core theme:</strong> Portfolio success in Spiko validates Blockwall's thesis on tokenized assets and fintech.</div>
+        <div class="team-post-theme"><strong>Why it matters:</strong> Demonstrates real-world progress in tokenized finance, boosting confidence among Web3 investors and founders.</div>
+        <a class="team-post-link" href="https://www.linkedin.com/posts/dobriggs_congratulations-to-our-portfolio-company-activity-7431990069516967936--fZ3" target="_blank">Read on LinkedIn &rarr;</a>
+      </div>
+
+      <div class="team-post">
+        <div class="team-post-author">
+          <div class="team-post-avatar">DB</div>
+          <div>
+            <div class="team-post-name">Dominic Briggs</div>
+            <div class="team-post-role">Cofounder &amp; Managing Partner</div>
+          </div>
+        </div>
+        <div class="team-post-title">VC Conviction Amid Market Volatility</div>
+        <div class="team-post-summary">Dominic Briggs reflects on strategies for crypto VCs in the current volatile market environment. He stresses maintaining conviction in long-term Web3 infrastructure theses during downturns. The post advocates building through market cycles for sustained success.</div>
+        <div class="team-post-theme"><strong>Core theme:</strong> Strong conviction and disciplined building are essential for Web3 VCs in volatile markets.</div>
+        <div class="team-post-theme"><strong>Why it matters:</strong> Offers guidance to investors on resilience, reinforcing long-term value creation in Web3 infrastructure.</div>
+        <a class="team-post-link" href="https://www.linkedin.com/posts/dobriggs_in-the-current-market-environment-it-has-activity-7430568300742438912-56Ct" target="_blank">Read on LinkedIn &rarr;</a>
+      </div>
+
+      <div class="team-post">
+        <div class="team-post-author">
+          <div class="team-post-avatar">LL</div>
+          <div>
+            <div class="team-post-name">Leonard Lang</div>
+            <div class="team-post-role">Investment Team</div>
+          </div>
+        </div>
+        <div class="team-post-title">ETH Denver: Weak Markets Forge Strong Builders</div>
+        <div class="team-post-summary">Leonard Lang shares key takeaways from ETH Denver 2026, noting how weak markets filter for resilient, high-quality builders. Despite bearish sentiment, he expresses optimism about emerging projects driven by strong founder conviction. The post builds a bull case rooted in talent quality.</div>
+        <div class="team-post-theme"><strong>Core theme:</strong> Adverse markets reveal top-tier builders, signaling a Web3 bull market resurgence.</div>
+        <div class="team-post-theme"><strong>Why it matters:</strong> Highlights builder resilience, informing Web3 stakeholders on emerging opportunities post-downturn.</div>
+        <a class="team-post-link" href="https://www.linkedin.com/posts/leonard-lang-332aaa1b8_weak-market-good-people-bull-market-activity-7433117523203731456-T1Lq" target="_blank">Read on LinkedIn &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Capital Flows -->
+    <div class="capital-section">
+      <h3>&#x1F4B0; Capital Flows &amp; Investment Activity</h3>
+      <div class="story-grid">
+        <div class="story-card" style="border-left-color:#22c55e">
+          <span class="story-card-cat" style="background:#22c55e20;color:#22c55e">Investment</span>
+          <div class="story-card-title"><a href="https://sifted.eu/articles/elevenlabs-raises-500m-series-d-led-by-sequoia/" target="_blank">ElevenLabs raises $500m Series D led by Sequoia</a></div>
+          <div class="story-card-summary">ElevenLabs has raised $500 million in Series D funding led by Sequoia Capital. The AI voice company now has an $11 billion valuation.</div>
+          <div class="story-card-meta">News &bull; 2026-02-04</div>
+        </div>
+        <div class="story-card" style="border-left-color:#f59e0b">
+          <span class="story-card-cat" style="background:#f59e0b20;color:#f59e0b">Regulation</span>
+          <div class="story-card-title"><a href="https://fortune.com/2026/02/26/senator-richard-blumenthal-binance-iran-fired-investigators/" target="_blank">Senator opens inquiry into Binance over allegations it fired investigators who flagged that more than $1 billion flowed to Iranian entities</a></div>
+          <div class="story-card-summary">A senator has opened an inquiry into Binance following allegations that the company fired investigators who flagged that over $1 billion ...</div>
+          <div class="story-card-meta">Ben Weiss &bull; 2026-02-26</div>
+        </div>
+        <div class="story-card" style="border-left-color:#f59e0b">
+          <span class="story-card-cat" style="background:#f59e0b20;color:#f59e0b">Regulation</span>
+          <div class="story-card-title"><a href="https://fortune.com/2026/02/13/binance-investigators-fired-iran-sanctions-potential-violations/" target="_blank">Binance fires top investigators who claim to have uncovered evidence of Iranian sanctions violations</a></div>
+          <div class="story-card-summary">Binance reportedly fired investigators who uncovered evidence of Iranian sanctions violations. Internal findings suggest over $1 billion ...</div>
+          <div class="story-card-meta">Leo Schwartz, Ben Weiss &bull; 2026-02-13</div>
+        </div>
+        <div class="story-card" style="border-left-color:#f59e0b">
+          <span class="story-card-cat" style="background:#f59e0b20;color:#f59e0b">Regulation</span>
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/us-fines-paxful-4m-moving-funds-trafficking-fraud" target="_blank">Paxful To Pay $4M For Moving Funds Tied to Criminal Schemes</a></div>
+          <div class="story-card-summary">Paxful will pay a $4 million criminal penalty in the US for knowingly profiting from criminal schemes that used the crypto platform to mo...</div>
+          <div class="story-card-meta">@cointelegraph &bull; 2026-02-12</div>
+        </div>
+        <div class="story-card" style="border-left-color:#f59e0b">
+          <span class="story-card-cat" style="background:#f59e0b20;color:#f59e0b">Regulation</span>
+          <div class="story-card-title"><a href="https://www.scmp.com/news/world/europe/article/3341897/spain-arrests-chinese-hair-salon-owner-funding-hamas-crypto" target="_blank">Chinese hair salon owner arrested in Barcelona for funding Hamas via crypto</a></div>
+          <div class="story-card-summary">A Chinese hair salon owner was arrested in Barcelona for allegedly laundering US$715,000 via cryptocurrency to fund Hamas. The 38-year-ol...</div>
+          <div class="story-card-meta">South China Morning Post &bull; 2026-01-30</div>
+        </div>
+        <div class="story-card" style="border-left-color:#f59e0b">
+          <span class="story-card-cat" style="background:#f59e0b20;color:#f59e0b">Regulation</span>
+          <div class="story-card-title"><a href="https://www.propublica.org/article/todd-blanche-crypto-conflict-senator-letter" target="_blank">Six Senators Accuse Deputy Attorney General of "Glaring" Crypto Conflict, Cite ProPublica Investigation</a></div>
+          <div class="story-card-summary">Six senators have accused Deputy Attorney General Todd Blanche of a conflict of interest related to crypto assets. The accusation stems f...</div>
+          <div class="story-card-meta">Diego Sorbara &bull; 2026-01-29</div>
+        </div>
+        <div class="story-card" style="border-left-color:#22c55e">
+          <span class="story-card-cat" style="background:#22c55e20;color:#22c55e">Investment</span>
+          <div class="story-card-title"><a href="https://cointelegraph.com/news/crypto-vc-paradigm-invest-ai-robotics-frontier-tech" target="_blank">Paradigm Reportedly Expands into AI, Robotics with $1.5B fund</a></div>
+          <div class="story-card-summary">Paradigm, a crypto VC firm, is reportedly raising a $1.5 billion fund to invest in AI, robotics, and other frontier technologies, while c...</div>
+          <div class="story-card-meta">@cointelegraph &bull; 2026-02-28</div>
+        </div>
+        <div class="story-card" style="border-left-color:#22c55e">
+          <span class="story-card-cat" style="background:#22c55e20;color:#22c55e">Investment</span>
+          <div class="story-card-title"><a href="https://fortune.com/2026/02/26/sts-digital-fundraise-30-million-cmt-digital-kraken/" target="_blank">Exclusive: Crypto trading platform raises $30 million from CMT Digital and Kraken</a></div>
+          <div class="story-card-summary">STS Digital, a crypto trading platform aimed at institutions, has raised $30 million in a funding round led by CMT Digital and Kraken. Th...</div>
+          <div class="story-card-meta">Ben Weiss &bull; 2026-02-26</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Regulatory Developments -->
+    <div class="reg-section">
+      <h3>&#x2696;&#xFE0F; Regulatory Developments</h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/11-us-senators-request-binance-sanctions-probe" target="_blank">11 US Senators Urge Probe Into Binance's AML Controls</a> <span class="other-source">(@cointelegraph, 2026-02-28)</span></li>
+        <li><a href="https://www.theblock.co/post/391641/morgan-stanley-doubles-down-on-crypto-files-for-bank-charter-to-custody-digital-assets-and-offer-staking-bloomberg" target="_blank">Morgan Stanley doubles down on crypto, files for bank charter to custody digital assets and offer staking: Bloomberg</a> <span class="other-source">(Sarah Wynn, 2026-02-27)</span></li>
+        <li><a href="https://cointelegraph.com/news/us-justice-department-seized-crypto-china" target="_blank">US DOJ Seized $580M in Crypto from 'Chinese Transnational Criminals'</a> <span class="other-source">(@cointelegraph, 2026-02-27)</span></li>
+        <li><a href="https://fortune.com/2026/02/26/senator-richard-blumenthal-binance-iran-fired-investigators/" target="_blank">Senator opens inquiry into Binance over allegations it fired investigators who flagged that more than $1 billion flowed to Iranian entities</a> <span class="other-source">(Ben Weiss, 2026-02-26)</span></li>
+        <li><a href="https://www.dlnews.com/articles/regulation/us-senators-open-probe-into-binance-over-alleged-ties-to-terrorist-groups/" target="_blank">US Senator opens probe into Binance over $1.7bn in alleged ties to terrorist groups</a> <span class="other-source">(Liam Kelly, 2026-02-25)</span></li>
+        <li><a href="https://cointelegraph.com/news/us-senator-probes-binance-iran-russia-sanctions" target="_blank">US Senator Probes Binance Over Alleged Iran, Russia Sanctions Breaches</a> <span class="other-source">(@cointelegraph, 2026-02-25)</span></li>
+        <li><a href="https://www.theblock.co/post/390915/terraform-labs-sues-jane-street" target="_blank">Terraform Labs sues Jane Street for alleged insider trading prior to Terra-Luna collapse: WSJ</a> <span class="other-source">(Danny Park, 2026-02-24)</span></li>
+        <li><a href="https://www.dlnews.com/articles/markets/lawmakers-to-crack-down-on-crypto-after-bithumb-usd-40bn-bitcoin-blunderer/" target="_blank">Lawmakers set to crack down on crypto after Bithumb's $40bn Bitcoin blunder</a> <span class="other-source">(Tim Alper, 2026-02-23)</span></li>
+      </ul>
+    </div>
+
+    <!-- Security & Incidents -->
+    <div class="sec-section">
+      <h3>&#x1F6E1;&#xFE0F; Security &amp; Incidents</h3>
+      <ul class="other-list">
+        <li><a href="https://cointelegraph.com/news/us-senator-probes-binance-iran-russia-sanctions" target="_blank">US Senator Probes Binance Over Alleged Iran, Russia Sanctions Breaches</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><a href="https://www.theblock.co/post/389455/uk-fca-seeks-to-block-justin-sun-linked-htx-after-alleged-breaches-of-crypto-marketing-rules" target="_blank">UK FCA seeks to block Justin Sun-linked HTX after alleged breaches of crypto marketing rules</a> <span class="other-source">(Naga Avan-Nomayo)</span></li>
+        <li><a href="https://fortune.com/2026/02/05/cartels-turn-to-crypto-in-game-of-finance-whack-a-mole-with-doj/" target="_blank">Cartels turn to crypto in game of finance whack-a-mole with DOJ</a> <span class="other-source">(Alanna Durkin Richer, The Associated Press)</span></li>
+        <li><a href="https://www.theblock.co/post/391578/south-korea-tax-service-reveals-crypto-wallet-recovery-phrase-report" target="_blank">South Korea tax service reveals crypto wallet recovery phrase in press release, seized tokens moved in suspected breach: report</a> <span class="other-source">(James Hunt)</span></li>
+        <li><a href="https://cointelegraph.com/news/south-korea-tax-office-leaked-wallet-seed" target="_blank">South Korea Tax Office Leaks Seed Phrase in Press Release</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><a href="https://cointelegraph.com/news/ai-tool-and-security-engineer-catch-critical-xrp-ledger-bug-before-exploit" target="_blank">AI Tool Helps Avert Critical XRP Ledger Security Flaw</a> <span class="other-source">(@cointelegraph)</span></li>
+      </ul>
+    </div>
+
+    <!-- Insights Grid -->
+    <div class="insights-grid">
+      <div class="insights-card founders">
+        <h3>&#x1F680; For Founders</h3>
+        <div class="insights-list">1. Prioritize regulatory compliance infrastructure as Binance's $1.7 billion illicit flow allegations and 11 US Senate probes signal intensifying enforcement. Embed KYC-native smart contracts and partner with MiCA-compliant European platforms to position as institutional-grade. The custody race between Morgan Stanley and CEXs creates opportunity for compliant DeFi builders.<br><br>2. Explore AI-blockchain convergence following Paradigm's $1.5 billion fund and ElevenLabs' $500 million raise. Build interoperable protocols that serve AI agent commerce, targeting the Stripe-identified need for 1 billion TPS. European MiCA clarity gives EU-based teams a regulatory moat for tokenized AI compute markets.<br><br>3. Focus on institutional derivatives infrastructure as CME Group launches 24/7 trading and STS Digital scales with $30 million from Kraken and Fidelity. Build scalable rollups that tokenize TradFi products and integrate with existing clearing systems. The $450 billion monthly DEX volume signals growing demand for decentralized alternatives.<br><br>4. Integrate AI-native security tooling into protocols following the averted XRP Ledger flaw and Ethereum validator bug. South Korea's seed phrase leak demonstrates custody gaps that AI auditing can bridge. Position for Ethereum's Hegota fork by embedding smart account security features early.<br><br>5. Build for institutional onramps as Bitcoin ETF inflows of $12.4 billion and Ethereum ETF flows of $2.1 billion confirm sustained demand. Tokenize ETF-like products on-chain for retail access while ensuring compliance with emerging European ETP frameworks under MiCA.</div>
+      </div>
+      <div class="insights-card investors">
+        <h3>&#x1F4C8; For Investors</h3>
+        <div class="insights-list">1. Overweight regulated custody and staking plays as Morgan Stanley's bank charter filing signals TradFi's deepening crypto commitment. The bifurcation between compliant institutions and embattled exchanges like Binance creates a clear alpha opportunity in regulated infrastructure tokens and equity.<br><br>2. Allocate 20-30% of crypto portfolios to hybrid AI-blockchain frontier funds following Paradigm's $1.5 billion raise and Bitwise's $2.2 billion Chorus One acquisition. The convergence of AI and Web3 infrastructure represents the highest-conviction bet for outsized returns in tokenized AI compute markets.<br><br>3. Position in Bitcoin above key support levels as ETF inflows of $12.4 billion monthly and 45% open interest decline indicate orderly deleveraging, not capitulation. Abu Dhabi sovereign wealth funds buying $1 billion dips confirms institutional conviction. Renewed inflows likely coincide with rate cuts in Q2-Q3.<br><br>4. Target L2 infrastructure tokens as aggregate TVL surges 8.7% MoM to $42 billion and DEX volumes rise 6.2% to $450 billion. CME Group's 24/7 derivatives launch and STS Digital's institutional platform create catalysts for scaling solution adoption.<br><br>5. Monitor Binance probe outcomes as potential enforcement actions will reshape compliance standards industry-wide. Rotate exposure toward MiCA-compliant European platforms and TradFi entrants like Morgan Stanley for compliant yield plays bridging to tokenized real-world assets.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- LinkedIn Ready -->
+    <div class="linkedin-box">
+      <h3>&#x1F4BC; LinkedIn Ready</h3>
+      <p class="linkedin-label">Copy and paste:</p>
+      <div class="linkedin-content">Dear Founders, Investors, and Friends,
+
+Blockwall Capital's February 2026 Monthly Digest analyzed 748 stories and surfaced 20 key developments. This month's landscape reveals three converging themes: traditional finance's deepening crypto embrace, venture capital's bold pivot to AI and robotics, and institutional demand fueling derivatives innovation. From a European vantage, these shifts affirm builders who integrate blockchain with frontier tech. Confidence in execution drives outsized returns.
+
+Morgan Stanley's move exemplifies TradFi's acceleration into digital assets. The firm doubled down by filing for a bank charter to custody crypto and offer staking services. This positions them as a bridge for institutions seeking compliant exposure. Paired with regulatory scrutiny, like 11 US Senators urging a probe into Binance's AML controls, it signals maturing oversight. Builders must prioritize robust compliance to unlock capital flows.
+
+VC evolution underscores AI-blockchain convergence. Paradigm launched a $1.5 billion fund targeting AI and robotics, expanding beyond pure crypto plays. This mirrors broader trends where funds blend domains for compounded impact. Meanwhile, ElevenLabs' $500 million Series D, led by Sequoia at an $11 billion valuation, highlights voice AI's explosive growth. With a16z quadrupling and Iconiq tripling stakes, total funding hits $781 million. Their push into ElevenAgents, emotional models, and global expansion across London, Warsaw, and beyond resonates with European builders scaling hybrid tech stacks.
+
+Institutional infrastructure scales in parallel. STS Digital raised $30 million in a strategic round to expand its crypto derivatives platform. This caters to sophisticated players demanding liquidity and risk tools, vital for Web3's next phase.
+
+What we're watching: Cross-pollination between AI agents and blockchain primitives. Expect tokenized AI models and on-chain robotics protocols to emerge from Europe-first teams by Q2. Builders integrating these will lead.
+
+How will you position your stack at this AI-crypto nexus?
+
+#Web3 #Crypto #BlockchainVC #DigitalAssets #MonthlyReview</div>
+    </div>
+
+    <!-- Sources -->
+    <div>
+      <h3 class="section-title">&#x1F4DA; Sources</h3>
+      <ul class="sources-list">
+        <li><span class="source-num">[1]</span> <a href="https://sifted.eu/articles/elevenlabs-raises-500m-series-d-led-by-sequoia/">ElevenLabs raises $500m Series D led by Sequoia</a> <span class="other-source">(News)</span></li>
+        <li><span class="source-num">[2]</span> <a href="https://cointelegraph.com/news/11-us-senators-request-binance-sanctions-probe">11 US Senators Urge Probe Into Binance's AML Controls</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><span class="source-num">[3]</span> <a href="https://www.theblock.co/post/391641/morgan-stanley-doubles-down-on-crypto-files-for-bank-charter-to-custody-digital-assets-and-offer-staking-bloomberg">Morgan Stanley doubles down on crypto, files for bank charter to custody digital assets and offer staking: Bloomberg</a> <span class="other-source">(Sarah Wynn)</span></li>
+        <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/news/us-justice-department-seized-crypto-china">US DOJ Seized $580M in Crypto from 'Chinese Transnational Criminals'</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><span class="source-num">[5]</span> <a href="https://fortune.com/2026/02/26/senator-richard-blumenthal-binance-iran-fired-investigators/">Senator opens inquiry into Binance over allegations it fired investigators who flagged that more than $1 billion flowed to Iranian entities</a> <span class="other-source">(Ben Weiss)</span></li>
+        <li><span class="source-num">[6]</span> <a href="https://www.dlnews.com/articles/regulation/us-senators-open-probe-into-binance-over-alleged-ties-to-terrorist-groups/">US Senator opens probe into Binance over $1.7bn in alleged ties to terrorist groups</a> <span class="other-source">(Liam Kelly)</span></li>
+        <li><span class="source-num">[7]</span> <a href="https://cointelegraph.com/news/us-senator-probes-binance-iran-russia-sanctions">US Senator Probes Binance Over Alleged Iran, Russia Sanctions Breaches</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><span class="source-num">[8]</span> <a href="https://www.theblock.co/post/390915/terraform-labs-sues-jane-street">Terraform Labs sues Jane Street for alleged insider trading prior to Terra-Luna collapse: WSJ</a> <span class="other-source">(Danny Park)</span></li>
+        <li><span class="source-num">[9]</span> <a href="https://www.dlnews.com/articles/markets/lawmakers-to-crack-down-on-crypto-after-bithumb-usd-40bn-bitcoin-blunderer/">Lawmakers set to crack down on crypto after Bithumb's $40bn Bitcoin blunder</a> <span class="other-source">(Tim Alper)</span></li>
+        <li><span class="source-num">[10]</span> <a href="https://www.theblock.co/post/390709/five-crypto-exchanges-are-helping-russia-evade-sanctions-filling-garantexs-void-elliptic">Five crypto exchanges are helping Russia evade sanctions, filling Garantex's void: Elliptic</a> <span class="other-source">(Zack Abrams)</span></li>
+        <li><span class="source-num">[11]</span> <a href="https://fortune.com/2026/02/13/binance-investigators-fired-iran-sanctions-potential-violations/">Binance fires top investigators who claim to have uncovered evidence of Iranian sanctions violations</a> <span class="other-source">(Leo Schwartz, Ben Weiss)</span></li>
+        <li><span class="source-num">[12]</span> <a href="https://cointelegraph.com/news/us-fines-paxful-4m-moving-funds-trafficking-fraud">Paxful To Pay $4M For Moving Funds Tied to Criminal Schemes</a> <span class="other-source">(@cointelegraph)</span></li>
+        <li><span class="source-num">[13]</span> <a href="https://www.bankless.com/read/news/tornado-cash-developer-roman-semenov-added-to-fbis-most-wanted-list">Tornado Cash Developer Roman Semenov Added to FBI's 'Most Wanted' List</a> <span class="other-source">(Bankless)</span></li>
+        <li><span class="source-num">[14]</span> <a href="https://www.theblock.co/post/389455/uk-fca-seeks-to-block-justin-sun-linked-htx-after-alleged-breaches-of-crypto-marketing-rules">UK FCA seeks to block Justin Sun-linked HTX after alleged breaches of crypto marketing rules</a> <span class="other-source">(Naga Avan-Nomayo)</span></li>
+        <li><span class="source-num">[15]</span> <a href="https://cointelegraph.com/news/russia-crypto-loophole-eu-20th-sanctions-package">EU Targets Russian Crypto And Banks In Sweeping Sanctions</a> <span class="other-source">(@cointelegraph)</span></li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="newsletter-cta">
+      <h3>Help Us Improve</h3>
+      <p>Your feedback shapes future editions</p>
+      <a class="newsletter-cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="../assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
+      <span>Blockwall Capital</span>
+    </div>
+    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
+    <div class="footer-links">
+      <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
+      <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
+      <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '☀️';
+        localStorage.setItem('bw-theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '🌙';
+        localStorage.setItem('bw-theme', 'dark');
+      }
+    }
+    const savedTheme = localStorage.getItem('bw-theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  </script>
+
+  <!-- Floating Feedback Button -->
+  <div class="feedback-float">
+    <a href="https://forms.gle/EG5rQ4H1SAhjuiqT6" target="_blank" class="feedback-btn" title="Share your feedback">
+      <span class="feedback-badge">Beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        <line x1="9" y1="9" x2="15" y2="9"></line>
+        <line x1="9" y1="13" x2="13" y2="13"></line>
+      </svg>
+      <span class="feedback-btn-text">Share Feedback</span>
+    </a>
+  </div>
+
+</body>
+</html>
