@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 1, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 1, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">14</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">4</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">6</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">4</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>April's record 29 hacks cost $579 million, exposing code‑bug vulnerabilities and prompting heightened audit demand</li>
+        <li>Despite $193 M rsETH loss, DeFi United's $300 M reimbursement keeps Aave dominant and potentially undervalued</li>
+        <li>Pentagon's classified Bitcoin projects and live node signal growing U.S. strategic interest amid Russian, Chinese mining expansion</li>
+        <li>Paradigm urges OCC to narrow GENIUS stablecoin yield ban, proposing safe‑harbor and lighter reporting to preserve innovation</li>
+        <li>Iren's AI cloud shift and BitMine's ETH exposure illustrate divergent infrastructure bets as stablecoin balances plateau despite $300 B total</li>
+        <li>April VC funding fell to $659 M, lowest since 2024, signaling tighter capital supply for crypto startups</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, April saw a record 29 crypto hacks raising security alarms, while Aave’s rsETH exploit sparked a $300M rescue that underscores DeFi resilience, and the Pentagon’s classified Bitcoin projects signal growing geopolitical interest. Venture capital funding also slipped to a 2024 low.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (10)</h2>
+    <div class="story">
+      <h2 class="story-title">Crypto industry reels as April sees highest number of hacks ever</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772101861069.webp" alt="Crypto industry reels as April sees highest number of hacks ever" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 9/10</div>
+      <p class="story-summary">April saw a record 29 crypto hacks, the highest monthly total ever reported. The attacks generated a combined loss of $579 million, with the largest hits coming from the Drift exchange and Kelp DAO. Analysis of the incidents shows that most were traced to code bugs and single points of failure within decentralized finance protocols. The surge underscores heightened security risk for institutional capital deployed in DeFi and may prompt tighter due‑diligence and risk‑mitigation measures.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/crypto-industry-reels-after-highest-number-of-hacks-ever/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Is Aave too Big to Fail?</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/2bt0j8lu/production/1cc27171f5ca1c47a7cd5ffbcc32d8ee5116ea05-6400x3600.png" alt="Is Aave too Big to Fail?" onerror="this.style.display='none'">
+      <div class="story-meta">Messari &bull; DeFi &bull; Score: 8/10</div>
+      <p class="story-summary">The rsETH exploit resulted in a $193 M loss for Aave, prompting a coordinated response from the broader DeFi community. DeFi United contributed more than $300 M, allowing Aave to fully reimburse affected depositors. Although Aave’s total value locked fell 45 %, it still controls about half of the top‑six lending protocols and analysts consider it undervalued with upcoming catalysts not yet reflected in price.</p>
+      <a class="story-link" href="https://messari.io/report/is-aave-too-big-to-fail" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Hegseth recasts Bitcoin as national security asset amid Russia, China expansion</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777624161903-asset.webp" alt="Hegseth recasts Bitcoin as national security asset amid Russia, China expansion" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">U.S. Secretary of War Pete Hegseth informed Congress that the Pentagon is conducting classified Bitcoin initiatives, framing the digital asset as a component of national‑security strategy. A Navy admiral subsequently confirmed that the military maintains an operational Bitcoin node, indicating active involvement in the cryptocurrency’s infrastructure. The statements underscore heightened geopolitical competition, as Russian and Chinese mining expansions are prompting U.S. defense agencies to explore crypto capabilities for strategic resilience.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/hegseth-recasts-bitcoin-as-national-security-asset-amid-russia-china-expansion/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Paradigm Files Comment Letter on the OCC’s GENIUS Rulemaking</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/dgybcd83/production/5a21d38aa474be2daa619712731747da61f8cdbb-2400x1350.png?auto=format&q=75&w=1200&format=png" alt="Paradigm Files Comment Letter on the OCC’s GENIUS Rulemaking" onerror="this.style.display='none'">
+      <div class="story-meta">Paradigm &bull; Regulation &bull; Score: 5/10</div>
+      <p class="story-summary">Paradigm submitted a comment letter to the Office of the Comptroller of the Currency objecting to the agency’s proposed rule under the GENIUS Act, which the firm says expands the yield prohibition for payment stablecoins beyond the intended scope. In the letter Paradigm urges the OCC to adopt safe harbor provisions, reduce reporting burdens, and clarify rules for white labeling and cross chain transfers to preserve stablecoin innovation. Institutional investors are watching the outcome because regulatory certainty will shape the risk profile and deployment of stablecoin‑based payment solutions.</p>
+      <a class="story-link" href="https://www.paradigm.xyz/2026/05/paradigm-files-comment-letter-on-the-occ-s-genius-rulemaking" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto Market Split: AI Mining Pivot, ETH Bets, Stablecoin Pause</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-what-is-a-fully-diluted-valuation-fdv-in-crypto.jpg" alt="Crypto Market Split: AI Mining Pivot, ETH Bets, Stablecoin Pause" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Infrastructure &bull; Score: 5/10</div>
+      <p class="story-summary">Analysts note that IREN is transitioning from Bitcoin mining to an AI‑focused cloud business with a valuation of roughly $3.7 billion. At the same time BitMine is continuing to accumulate Ethereum even as its unrealized losses grow. Stablecoin holdings have risen above $300 billion but on‑chain transaction volume has stalled. Tokenized Treasury securities are seeing greater use as collateral on exchanges, reflecting a shift toward more regulated assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-biz-capital-has-no-consensus" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto VC Funding Plunges to $659M in April, Hits 2024 Lows</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-what-are-funding-rates-in-crypto-markets-1.jpg" alt="Crypto VC Funding Plunges to $659M in April, Hits 2024 Lows" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Investment &bull; Score: 5/10</div>
+      <p class="story-summary">Crypto venture‑capital funding fell to $659 million in April, marking the lowest monthly total recorded in 2024. The sharp decline follows a period of robust capital inflows into crypto startups. This trend signals a broader slowdown in investor appetite for the sector, which could affect pipeline activity and valuation expectations for institutional participants.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-vc-funding-plunges-to-659m-in-april-to-2024-lows" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin (BTC) takes another aim at $80,000 as stocks rise, oil drops on Iran optimism</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Bitcoin (BTC) takes another aim at $80,000 as stocks rise, oil drops on Iran optimism" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin rose about 3% in the past 24 hours, trading near $78,700 and testing the $80,000 resistance level. The price action coincided with gains in equity markets and a decline in oil prices as tensions between Iran and the United States eased. Institutional investors are watching for a decisive break above $80,000, which they view as a potential catalyst for fresh buying momentum.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/01/bitcoin-takes-another-aim-at-usd80-000-as-stocks-rise-oil-drops-on-iran-optimism" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">SBI to Make Bitbank a Subsidiary in Japan Crypto Consolidation Push</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/kucoin-and-acrs-2.jpg" alt="SBI to Make Bitbank a Subsidiary in Japan Crypto Consolidation Push" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Enterprise &bull; Score: 5/10</div>
+      <p class="story-summary">SBI Holdings is negotiating to acquire a stake in Bitbank, a Japanese cryptocurrency exchange, with the intention of making Bitbank a consolidated subsidiary. The transaction is part of SBI’s broader strategy to unify regulated trading platforms in Japan. The move aligns with upcoming regulatory changes that will bring crypto assets under the Financial Instruments and Exchange Act, increasing oversight of exchanges.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/sbi-seeks-to-make-bitbank-a-subsidiary-in-japan-crypto-consolidation-push" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Anthropic’s new Mythos AI will hit crypto. Bitcoin investors don’t care, says Coinbase</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777620707528-asset.webp" alt="Anthropic’s new Mythos AI will hit crypto. Bitcoin investors don’t care, says Coinbase" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 5/10</div>
+      <p class="story-summary">Anthropic has released Claude Mythos AI, a system capable of autonomously discovering and exploiting zero‑day vulnerabilities that could affect crypto protocols and exchanges. The capability raises significant security concerns for the cryptocurrency ecosystem. Coinbase’s research indicates that despite the emerging threat three‑quarters of institutional investors remain bullish on Bitcoin, which is trading near $77,000. Major exchanges are competing to obtain access to Mythos for defensive use.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/anthropic-mythos-ai-will-hit-crypto-bitcoin-investors-dont-care-says-coinbase/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Weekly Top Stories: Warsh this space</h2>
+      <img class="story-img" src="https://images.ctfassets.net/h62aj7eo1csj/4sf4rgjuvydLkfT5Y5hsaw/6f01c8b189393d1493586762dd550386/Top_Stories_O2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive" alt="Weekly Top Stories: Warsh this space" onerror="this.style.display='none'">
+      <div class="story-meta">Galaxy &bull; Regulation &bull; Score: 5/10</div>
+      <p class="story-summary">Kevin Warsh is expected to become the next Federal Reserve chair after a narrow Senate Banking Committee vote. He has indicated that the Fed would move away from its traditional forward‑guidance communication style. At the same time the overall crypto market capitalisation slipped modestly to $2.65 trillion. Bitcoin’s share of the market rose slightly, a development that could influence institutional allocation decisions.</p>
+      <a class="story-link" href="https://www.galaxy.com/insights/research/weekly-top-stories-05-01-26" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (4)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.newcomer.co/p/californias-billionaire-tax-heads" target="_blank">California's Billionaire Tax Heads for the Ballot. A Compromise Would Serve Everyone Well.</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Newcomer &bull; Regulation</div>
+        <div class="watch-summary">California is moving a billionaire wealth tax to the November ballot, prompting a backlash from Silicon Valley leaders i...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.paradigm.xyz/2026/05/pacts-protecting-your-bitcoin-from-a-quantum-sunset" target="_blank">PACTs: Protecting Your Bitcoin From a Quantum Sunset</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Paradigm &bull; Bitcoin</div>
+        <div class="watch-summary">The article outlines the threat that cryptographically relevant quantum computers pose to Bitcoin addresses with exposed...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/tether-backed-oobit-rolls-out-virtual-visa-cards-for-ai-agent-usdt-spending" target="_blank">Oobit Unveils Visa Agent Cards For AI Agent USDT Spending</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Payments</div>
+        <div class="watch-summary">Oobit announced the launch of Visa‑branded Agent Cards that let AI agents spend USDT directly on the Visa network. The p...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://a16zcrypto.com/posts/article/why-stablecoins-wont-age-well/" target="_blank">Why âstablecoinsâ wonât age well - a16z crypto</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> a16z &bull; Stablecoins</div>
+        <div class="watch-summary">The article argues that the term “stablecoin” is becoming obsolete because these assets have moved beyond merely providi...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, April has become a watershed month for the crypto ecosystem. The industry recorded 29 hacks, the highest monthly total ever reported, wiping out $579 million in value. The biggest blows hit the Drift exchange and Kelp DAO, and post‑mortem analysis points to code bugs and single points of failure in DeFi protocols. For institutional capital this surge is a stark reminder that security cannot be an afterthought and that tighter due‑diligence frameworks are now a prerequisite for any deployment. At the same time the Aave community demonstrated the power of collective resilience. The rsETH exploit cost the platform $193 million, yet DeFi United stepped in with more than $300 million, allowing Aave to fully reimburse its depositors. Although total value locked fell 45 percent, Aave still commands roughly half of the lending volume among the top six protocols. Analysts argue the market has not yet priced in the upside catalysts that could follow this episode. Finally, the strategic dimension of crypto is gaining prominence. U.S. Secretary of War Pete Hegseth told Congress that the Pentagon is running classified Bitcoin projects, framing the digital asset as a national‑security tool. A Navy admiral confirmed the existence of an operational Bitcoin node within the military. As Russia and China expand their mining capabilities, U.S. defense agencies are exploring crypto to bolster strategic resilience. These three narratives illustrate a sector that is simultaneously confronting risk, showing community strength, and entering the geopolitical arena. How are you positioning your ventures to thrive amid these rapid shifts? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/defi/crypto-industry-reels-after-highest-number-of-hacks-ever/">Crypto industry reels as April sees highest number of hacks ever</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://messari.io/report/is-aave-too-big-to-fail">Is Aave too Big to Fail?</a> <span class="other-source">(Messari)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/markets/hegseth-recasts-bitcoin-as-national-security-asset-amid-russia-china-expansion/">Hegseth recasts Bitcoin as national security asset amid Russia, China expansion</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.paradigm.xyz/2026/05/paradigm-files-comment-letter-on-the-occ-s-genius-rulemaking">Paradigm Files Comment Letter on the OCC’s GENIUS Rulemaking</a> <span class="other-source">(Paradigm)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/crypto-biz-capital-has-no-consensus">Crypto Market Split: AI Mining Pivot, ETH Bets, Stablecoin Pause</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/news/crypto-vc-funding-plunges-to-659m-in-april-to-2024-lows">Crypto VC Funding Plunges to $659M in April, Hits 2024 Lows</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/markets/2026/05/01/bitcoin-takes-another-aim-at-usd80-000-as-stocks-rise-oil-drops-on-iran-optimism">Bitcoin (BTC) takes another aim at $80,000 as stocks rise, oil drops on Iran optimism</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/news/sbi-seeks-to-make-bitbank-a-subsidiary-in-japan-crypto-consolidation-push">SBI to Make Bitbank a Subsidiary in Japan Crypto Consolidation Push</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.dlnews.com/articles/markets/anthropic-mythos-ai-will-hit-crypto-bitcoin-investors-dont-care-says-coinbase/">Anthropic’s new Mythos AI will hit crypto. Bitcoin investors don’t care, says Coinbase</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://www.galaxy.com/insights/research/weekly-top-stories-05-01-26">Weekly Top Stories: Warsh this space</a> <span class="other-source">(Galaxy)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

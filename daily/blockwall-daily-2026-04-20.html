@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 20, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 20, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">20</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">8</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">8</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">10</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Cross‑chain bridge vulnerabilities now a capital‑allocation risk and single‑verifier designs face scrutiny after $580 bn hacks</li>
+        <li>DeFi outflows of $15 bn this week pressure Aave, Morpho and Sky, likely accelerating protocol consolidation</li>
+        <li>Polymarket's $400 m raise at $15 bn valuation shows investor confidence in prediction‑market layer amid broader security worries</li>
+        <li>Tether's 8.2% stake in Antalpha deepens its role in Bitcoin mining finance and may affect lending pricing</li>
+        <li>Ripple's South Korean government‑bond tokenization pilot could fast‑track institutional XRP usage and showcase settlement‑time gains</li>
+        <li>Basis‑trade unwind and Strategy’s $2.7 bn BTC purchases provide fresh price support as Bitcoin hovers near $73.6k</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, this week’s headlines spotlight massive bridge hacks driving DeFi outflows, Polymarket’s $400 million raise, and Ripple’s tokenised bond pilot with Kyobo Life. We also note Tether’s new stake in Antalpha and the SEC’s first‑year regulatory push shaping the market.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
+    <div class="story">
+      <h2 class="story-title">Why cross-chain bridges are DeFi’s weakest link after $293m Kelp DAO hack</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198182.webp" alt="Why cross-chain bridges are DeFi’s weakest link after $293m Kelp DAO hack" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 9/10</div>
+      <p class="story-summary">An attacker used a forged cross‑chain message to drain $293 million of rsETH from Kelp DAO, exposing a single‑validator design flaw in LayerZero’s messaging system. This loss, together with a prior $286 million breach at Drift, pushes total DeFi hacks this month above $550 million. The combined incidents underscore cross‑chain bridges as a critical security vulnerability that institutional investors must evaluate when allocating capital to DeFi protocols.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/why-crypto-bridges-are-defis-weakest-link-after-293m-kelp-dao-hack/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Kelp DAO hits back at LayerZero for trying to shift the blame after a massive exploit</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop" alt="Kelp DAO hits back at LayerZero for trying to shift the blame after a massive exploit" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Security &bull; Score: 9/10</div>
+      <p class="story-summary">Kelp DAO attributes the $290 million rsETH bridge hack to LayerZero’s default single‑verifier architecture. LayerZero counters that Kelp DAO disregarded the security guidance it had provided. The conflict stems from a compromised LayerZero verifier that let attackers siphon 116,500 rsETH and has led LayerZero to suspend all single‑verifier bridges, raising concerns for institutional investors about cross‑chain bridge risk.</p>
+      <a class="story-link" href="https://www.coindesk.com/tech/2026/04/20/kelp-dao-claims-layerzero-s-default-settings-are-what-actually-caused-the-usd290-million-disaster" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Investors pull $15bn from DeFi as latest hack sparks security fears</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776696130469-asset.webp" alt="Investors pull $15bn from DeFi as latest hack sparks security fears" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; DeFi &bull; Score: 9/10</div>
+      <p class="story-summary">North Korean hackers stole roughly $600 million from DeFi applications, including $294 million from Kelp DAO. In response, investors withdrew more than $15 billion of total value locked from the sector. The outflows hit major lenders such as Aave, Morpho and Sky and underscore rising security concerns for institutional participants.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/investors-pull-money-from-defi-after-kelpdao-hack/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Polymarket Looks to Raise $400M at $15B valuation: Report</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-262777-polymarket-seeking-400-million-raise-report.jpg" alt="Polymarket Looks to Raise $400M at $15B valuation: Report" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; DeFi &bull; Score: 9/10</div>
+      <p class="story-summary">Polymarket, a decentralized prediction‑market platform, is reportedly pursuing a financing round of $400 million that would place its valuation at $15 billion. The size of the raise would rank it among the largest recent capital injections in the decentralized finance sector. Institutional investors may view the funding as a signal of growing confidence in market‑based data services and the broader adoption of DeFi infrastructure.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/polymarket-seeking-400-million-raise-report" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Tether Takes 8.2% Stake in Antalpha, Backs Bitcoin Mining Finance</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-263007-tether-takes-8-2-stake-in-antalpha-backing-bitcoin-mining-finance-platform.jpg" alt="Tether Takes 8.2% Stake in Antalpha, Backs Bitcoin Mining Finance" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Tether disclosed an 8.2% equity stake in Antalpha, a Bitcoin‑backed lending and mining‑equipment financing firm, through a Schedule 13D filing. The investment follows Antalpha’s recent IPO and coincides with a 7.2% rise in its share price, highlighting Tether’s expanding role in crypto‑related enterprise finance. For institutional investors, the stake signals a strategic alignment between a leading stablecoin issuer and a provider of financing solutions for Bitcoin mining, potentially influencing liquidity and capital allocation in the sector.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/tether-takes-8-2-stake-in-antalpha-backing-bitcoin-mining-finance-platform" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">How crypto exchange Grinex shuttering poses ‘serious damage’ to Russian shadow financial economy</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772101437309.webp" alt="How crypto exchange Grinex shuttering poses ‘serious damage’ to Russian shadow financial economy" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">Grinex, a crypto exchange that facilitated trading of Russia’s sanctioned stablecoin A7A5, has announced it will cease operations. The decision follows a cyber‑attack that resulted in the theft of more than 1 billion rubles, roughly $13 million. By closing, Grinex eliminates a primary channel that allowed conversion of rubles into foreign currency. The loss of this conduit is expected to deepen the pressure of Western sanctions on the Russian shadow financial system, raising compliance and liquidity concerns for investors with exposure to the region.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/grinex-shutting-poses-serious-damage-to-russian-economy/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Ripple building government bonds trading platform with $89bn South Korean insurance giant</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776672131336-asset.webp" alt="Ripple building government bonds trading platform with $89bn South Korean insurance giant" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Tokenization &bull; Score: 6/10</div>
+      <p class="story-summary">Ripple is partnering with South Korean insurer Kyobo Life Insurance, a $89bn insurance giant, to develop a blockchain‑based platform that tokenises government bonds for real‑time trading. The proof‑of‑concept pilot will be executed on Ripple’s institutional blockchain infrastructure. The platform is designed to reduce settlement times from days to seconds. The initiative follows a surge in XRP trading volume on South Korean exchanges, underscoring growing institutional interest in digital‑asset solutions.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/ripple-building-government-bonds-trading-platform-usd-89bn-korean-insurance-giant/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Paul Atkins Marks One Year as SEC Chair, Changing Crypto Regulation</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-263022-paul-atkins-one-year-sec-chair.jpg" alt="Paul Atkins Marks One Year as SEC Chair, Changing Crypto Regulation" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 5/10</div>
+      <p class="story-summary">Paul Atkins has completed his first year as chair of the U.S. Securities and Exchange Commission. In that time the SEC has stepped up its scrutiny of crypto markets and released new guidance aimed at clarifying the regulatory status of digital assets. Institutional investors view these actions as a signal that the agency is shaping a more defined compliance framework for the sector.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/paul-atkins-one-year-sec-chair" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Coinbase (COIN), Bybit said to be working together on tokenization, custody and distribution of U.S. stocks</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop" alt="Coinbase (COIN), Bybit said to be working together on tokenization, custody and distribution of U.S. stocks" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 5/10</div>
+      <p class="story-summary">Coinbase and Bybit are in discussions to create tokenized versions of U.S. equities, with the partnership concentrating on global custody and distribution infrastructure. The joint effort seeks to combine Bybit’s international network with Coinbase’s established presence in the U.S. market, potentially broadening access to regulated digital securities for institutional participants. Bybit also intends to launch a separate U.S. operation with a different partner, underscoring its strategy to expand across multiple entry points.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/04/20/coinbase-bybit-said-to-be-working-together-on-tokenization-custody-and-distribution-of-u-s-stocks" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Saylor Hints at New BTC Buy, Strategy Eyes Semi-Monthly Dividends</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-262802-strategy-semi-monthly-dividends-saylor-bitcoin-buy.jpg" alt="Saylor Hints at New BTC Buy, Strategy Eyes Semi-Monthly Dividends" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">MicroStrategy CEO Michael Saylor indicated that the company is considering an additional purchase of Bitcoin. He also said the firm is evaluating a semi‑monthly dividend program for its shareholders. The comments were made while Bitcoin was trading near $73,600. The potential actions underscore MicroStrategy’s status as a leading institutional Bitcoin holder and could influence investor expectations for corporate crypto strategies.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/strategy-semi-monthly-dividends-saylor-bitcoin-buy" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">'Basis traders' are done dragging down Bitcoin price, says investment adviser</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776417676421-asset.webp" alt="'Basis traders' are done dragging down Bitcoin price, says investment adviser" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Investment adviser Alex Blume of Two Prime says the long‑running Bitcoin basis trade is winding down, removing a key source of downward pressure on the cryptocurrency. The basis trade historically involved selling Bitcoin futures while holding spot Bitcoin, which has helped keep prices lower. Concurrently, treasury firm Strategy has accelerated its Bitcoin buying, acquiring roughly 24,800 BTC, valued at about $2.7 billion, in early April. The combination of reduced basis‑trade selling and increased institutional buying could provide fresh price support that is relevant for large‑scale investors.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/basis-traders-are-done-dragging-down-bitcoin-price-says-investment-adviser/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Post-Quantum Readiness on the XRP Ledger</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/ior4a5y3/production/2748fb22e42c4db8de9c76af61526c174e411593-2400x1800.jpg" alt="Post-Quantum Readiness on the XRP Ledger" onerror="this.style.display='none'">
+      <div class="story-meta">Ripple &bull; Infrastructure &bull; Score: 5/10</div>
+      <p class="story-summary">Ripple announced a multi‑phase roadmap to make the XRP Ledger quantum‑resistant, aiming for full readiness by 2028. The plan begins with immediate testing of quantum‑safe cryptography and then moves to a hybrid rollout that blends existing and new security mechanisms. A “Quantum‑Day” contingency is defined to enable a secure migration and the effort is being carried out in collaboration with Project Eleven, underscoring Ripple’s commitment to protecting institutional assets against future quantum threats.</p>
+      <a class="story-link" href="https://ripple.com/insights/post-quantum-readiness-on-the-xrp-ledger/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (8)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/argentine-police-arrest-chinese-usd-50m-crypto-scammer-with-fake-passport/" target="_blank">Argentine police arrest Chinese ‘$50m crypto scammer’ wanted for fraud in Nigeria</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Security</div>
+        <div class="watch-summary">Argentine police arrested a Chinese national, identified only as DZ, who is wanted by Nigeria for a $49.4 million crypto...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://reports.tiger-research.com/p/zachxbt-vs-rave-is-a-clean-market-eng" target="_blank">ZachXBT vs. RAVE: Is a Clean Market What Degens Want?</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Tiger Research &bull; Security</div>
+        <div class="watch-summary">On‑chain analyst ZachXBT exposed that three team wallets held 90% of the RAVE token supply, triggering a 4,500% price su...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://reports.tiger-research.com/p/zachxbt-vs-rave-is-a-clean-market-kor" target="_blank">ZachXBT의 RAVE 저격, 우리는 진정 깨끗한 시장을 원할까?</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Tiger Research &bull; Security</div>
+        <div class="watch-summary">On‑chain analyst ZachXBT exposed a price‑manipulation scheme in the RAVE token, where three team‑linked wallets held 90%...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/binance-and-bitget-under-fire-after-ravedao-crash/" target="_blank">Binance and Bitget to investigate Rave token market manipulation claims</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">The RaveDAO token, which surged 7,000% to become the 20th‑largest cryptocurrency, crashed 90% and lost about $5 billion ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/cloud-hosting-vercel-confirms-limited-hack-user-info" target="_blank">Vercel Confirms Limited Hack of Customer Information</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Security</div>
+        <div class="watch-summary">Vercel has confirmed that a limited security breach exposed some customer information. The company says the incident was...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-20/the-sec-can-t-find-victims" target="_blank">The SEC Can’t Find Victims</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Bloomberg &bull; Regulation</div>
+        <div class="watch-summary">Bloomberg’s opinion piece argues that the U.S. Securities and Exchange Commission has been unable to identify victims of...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.paradigm.xyz/2026/04/introducing-the-2026-paradigm-fellowship" target="_blank">Introducing the 2026 Paradigm Fellowship</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Paradigm &bull; Other</div>
+        <div class="watch-summary">Paradigm Operations LP announced the opening of applications for its 2026 Paradigm Fellowship, a four‑day intensive prog...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.newcomer.co/p/were-back-the-cerebral-valley-ai-34a" target="_blank">We're Back. The Cerebral Valley AI Summit Returns to London on June 24.</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Newcomer &bull; Other</div>
+        <div class="watch-summary">The Cerebral Valley AI Summit is returning to London on June 24, featuring a lineup of AI founders, investors, and execu...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The recent $293 million loss at Kelp DAO has put a spotlight on the fragility of cross‑chain bridges. An attacker forged a message through LayerZero’s messaging system and drained rsETH by exploiting a single‑validator design flaw. This breach, together with the earlier $286 million incident at Drift, pushes this month’s DeFi hacks past $550 million and raises a clear red flag for anyone allocating capital to DeFi protocols. Kelp DAO has publicly blamed LayerZero’s default architecture, arguing that the compromised verifier allowed the theft of 116,500 rsETH. LayerZero, in turn, says Kelp DAO ignored the security guidance it had issued and has responded by suspending all single‑verifier bridges. The dispute underscores how bridge risk can quickly become a systemic concern for institutional investors. The fallout is already visible in the market. North Korean actors stole roughly $600 million from DeFi platforms, including the Kelp DAO loss, prompting investors to pull more than $15 billion of total value locked. Major lenders such as Aave, Morpho and Sky felt the pressure, highlighting the urgency of robust security frameworks. At Blockwall we are watching these developments closely and are actively supporting teams that prioritize provable safety in cross‑chain technology. What steps do you think the ecosystem should take next to restore confidence in bridge security? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/defi/why-crypto-bridges-are-defis-weakest-link-after-293m-kelp-dao-hack/">Why cross-chain bridges are DeFi’s weakest link after $293m Kelp DAO hack</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/tech/2026/04/20/kelp-dao-claims-layerzero-s-default-settings-are-what-actually-caused-the-usd290-million-disaster">Kelp DAO hits back at LayerZero for trying to shift the blame after a massive exploit</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/defi/investors-pull-money-from-defi-after-kelpdao-hack/">Investors pull $15bn from DeFi as latest hack sparks security fears</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/news/polymarket-seeking-400-million-raise-report">Polymarket Looks to Raise $400M at $15B valuation: Report</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/tether-takes-8-2-stake-in-antalpha-backing-bitcoin-mining-finance-platform">Tether Takes 8.2% Stake in Antalpha, Backs Bitcoin Mining Finance</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.dlnews.com/articles/regulation/grinex-shutting-poses-serious-damage-to-russian-economy/">How crypto exchange Grinex shuttering poses ‘serious damage’ to Russian shadow financial economy</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.dlnews.com/articles/markets/ripple-building-government-bonds-trading-platform-usd-89bn-korean-insurance-giant/">Ripple building government bonds trading platform with $89bn South Korean insurance giant</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/news/paul-atkins-one-year-sec-chair">Paul Atkins Marks One Year as SEC Chair, Changing Crypto Regulation</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.coindesk.com/business/2026/04/20/coinbase-bybit-said-to-be-working-together-on-tokenization-custody-and-distribution-of-u-s-stocks">Coinbase (COIN), Bybit said to be working together on tokenization, custody and distribution of U.S. stocks</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://cointelegraph.com/news/strategy-semi-monthly-dividends-saylor-bitcoin-buy">Saylor Hints at New BTC Buy, Strategy Eyes Semi-Monthly Dividends</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[11]</span> <a href="https://www.dlnews.com/articles/markets/basis-traders-are-done-dragging-down-bitcoin-price-says-investment-adviser/">'Basis traders' are done dragging down Bitcoin price, says investment adviser</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[12]</span> <a href="https://ripple.com/insights/post-quantum-readiness-on-the-xrp-ledger/">Post-Quantum Readiness on the XRP Ledger</a> <span class="other-source">(Ripple)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

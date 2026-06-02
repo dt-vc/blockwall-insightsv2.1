@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 2, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 2, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">8</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">1</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">5</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">1</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>CLARITY Act compromise forces shift to &quot;buy‑and‑use&quot; stablecoin rewards, limiting deposit‑like yields</li>
+        <li>Finalized CLARITY rules give crypto firms regulatory certainty, likely accelerating stablecoin‑based interest product launches</li>
+        <li>April venture funding fell 75% yet $600 m raised, Kraken’s $200 m secondary signals institutional appetite</li>
+        <li>Bitcoin at $73.6k, but options price $84k probability under 10%, suggesting limited upside confidence</li>
+        <li>Riot’s Q1 revenue $167m, data‑center arm $33m, confirming mining profitability amid price rally</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, the Senate’s CLARITY Act compromise clarifies stablecoin yield rules, April delivered $600 million of crypto venture funding, and Bitcoin surged past $73k, highlighting regulatory clarity, capital resilience, and market strength. We’ll also track AI‑focused infrastructure projects reshaping Web3.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (8)</h2>
+    <div class="story">
+      <h2 class="story-title">Crypto industry backs CLARITY Act yield compromise, pushes Senate Banking for markup</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop" alt="Crypto industry backs CLARITY Act yield compromise, pushes Senate Banking for markup" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">U.S. Senators Thom Tillis and Angela Alsobrooks have issued a compromise amendment to the CLARITY Act that would prohibit stablecoin yield products that replicate traditional bank deposit interest while allowing rewards linked to legitimate usage activities. The proposal has been quickly endorsed by leading crypto trade groups such as Coinbase and Circle, which are urging the Senate Banking Committee to advance the legislation to a markup stage. Under the compromise, firms would need to redesign reward structures from a “buy‑and‑hold” approach to a “buy‑and‑use” model that ties earnings to actual token utilization. The Crypto Council for Innovation, however, cautioned that the language of the amendment may be overly broad and could create compliance uncertainty for the industry.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/02/crypto-industry-backs-clarity-act-yield-compromise-pushes-senate-banking-for-markup" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">CLARITY Act Stablecoin Yield Rules Finalized: ‘Go Time’ For Crypto Bill</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-what-is-the-genius-act-how-it-could-reshape-us-stablecoin-regulation.jpg" alt="CLARITY Act Stablecoin Yield Rules Finalized: ‘Go Time’ For Crypto Bill" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">The U.S. CLARITY Act has finalized its stablecoin yield rules, delivering clear regulatory guidance for crypto yield products. The legislation is presented as a green light for the industry, signaling that stablecoin‑based interest‑bearing services can now operate under defined compliance parameters. This certainty is expected to encourage institutional investors to allocate capital to compliant stablecoin yield offerings and may broaden adoption of such products across the financial system.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/go-time-after-clarity-act-stablecoin-yield-compromise-finalized" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto companies raised $600m in April despite despite market downturn, VCs say</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772053204788.webp" alt="Crypto companies raised $600m in April despite despite market downturn, VCs say" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Crypto startups secured just over $600 million in venture funding in April, representing a 75 percent decline from the prior month but still indicating continued investor interest despite a broader market downturn. The largest transaction was a $200 million secondary share sale by Kraken to Deutsche Börse, highlighting institutional appetite for established crypto exchanges. Neobanking platform Slash completed a $100 million Series C round, underscoring the relevance of crypto‑enabled financial services. Pharos raised $44 million to develop its Layer‑1 blockchain, reflecting ongoing capital allocation to infrastructure projects.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/deals/crypto-companies-raised-600m-in-april-despite-fake-innovation-vcs-say/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin Rally Accelerates, But BTC Options Doubt $84K Is Possible</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-can-stock-rally-with-bitcoin-vs-the-rest-of-stocks.jpg" alt="Bitcoin Rally Accelerates, But BTC Options Doubt $84K Is Possible" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin has rallied to approximately $73,600, extending its recent upward trajectory. The acceleration in price has drawn attention from institutional investors seeking exposure to the cryptocurrency market. Options market data, however, indicates that traders assign a low probability to Bitcoin reaching $84,000. This divergence suggests that while momentum remains strong, market participants remain cautious about further upside.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/bitcoin-rally-extends-yet-btc-options-price-only-25-chance-of-84k-in-may" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Riot Posts $167M in Q1 Revenue as Data Center Arm Pulls in $33M</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-what-is-wealthfront-and-how-it-works-1.jpg" alt="Riot Posts $167M in Q1 Revenue as Data Center Arm Pulls in $33M" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Riot Platforms, a publicly listed Bitcoin mining firm, posted $167 million in revenue for the first quarter. The revenue was driven by its core mining operations and the company's data‑center arm contributed $33 million. This contribution highlights ongoing expansion of its mining infrastructure, a factor institutional investors watch when assessing exposure to crypto‑related assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/riot-posts-167m-in-q1-revenue-as-data-center-arm-pulls-in-33m-in-first-quarter" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">SENT - Sentient - AMBCrypto</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop" alt="SENT - Sentient - AMBCrypto" onerror="this.style.display='none'">
+      <div class="story-meta">AMBCrypto &bull; Infrastructure &bull; Score: 4/10</div>
+      <p class="story-summary">Sentient is building an open‑source, community‑driven artificial general intelligence platform named the Sentient GRID, which aims to serve as a decentralized alternative to proprietary AI laboratories. The project’s native token, SENT, is currently trading near $0.015 and carries a market capitalization of approximately $108 million. SENT is available for trading on major cryptocurrency exchanges including Binance, Toobit, and Bybit, providing institutional investors with accessible liquidity and exposure to the emerging decentralized AI sector.</p>
+      <a class="story-link" href="https://ambcrypto.com/coins/sentient/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">TAG - TAGGER - AMBCrypto</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop" alt="TAG - TAGGER - AMBCrypto" onerror="this.style.display='none'">
+      <div class="story-meta">AMBCrypto &bull; Infrastructure &bull; Score: 4/10</div>
+      <p class="story-summary">Tagger (TAG) operates a decentralized full‑stack AI data platform that supports permissionless data collection, labeling, authentication, and trading. The platform’s token is currently priced around $0.0012 and carries a market capitalization of approximately $132.75 million. While the token experienced a modest decline in the last 24 hours, it has delivered strong growth over the year to date. This performance highlights the platform’s potential relevance for investors seeking exposure to AI‑driven data infrastructure within the blockchain ecosystem.</p>
+      <a class="story-link" href="https://ambcrypto.com/coins/tagger/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">A16z Backs CFTC in Fight Against State Prediction Market Bans</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/ethereum-classic-civil-war.jpg" alt="A16z Backs CFTC in Fight Against State Prediction Market Bans" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 5/10</div>
+      <p class="story-summary">Andreessen Horowitz, a leading venture capital firm, has publicly supported the U.S. Commodity Futures Trading Commission in its challenge to state-level prohibitions on prediction markets. The firm’s backing signals a preference for a single federal regulatory framework rather than a patchwork of state rules. Institutional investors should note that this alignment may reduce legal uncertainty for platforms that enable betting on future events, potentially opening the sector to broader capital allocation.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/a16z-sides-with-cftc-against-states-seeking-to-ban-prediction-markets" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (1)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/bitcoin-ethereum-down-gold-up/" target="_blank">Bitcoin slumps, missing ‘Santa rally’ while gold and stocks steal the show</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin fell to around $87,400 on Saturday, missing the expected “Santa rally” and lagging behind gold, silver and US eq...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, We are excited to see momentum building on both the regulatory front and the capital side of the crypto ecosystem. In Washington, Senators Thom Tillis and Angela Alsobrooks have introduced a compromise amendment to the CLARITY Act that blocks stablecoin yield products that simply mimic traditional bank deposits while opening the door for rewards tied to genuine token usage. Leading trade groups such as Coinbase and Circle have quickly backed the proposal and are urging the Senate Banking Committee to move it forward. The amendment pushes firms to shift from a buy‑and‑hold mindset to a buy‑and‑use model, a change that could align incentives with real network activity. While the Crypto Council for Innovation warns that the language may be broad, the overall direction is clear, regulators want usable, compliant yield. The CLARITY Act has now finalized its stablecoin yield rules, delivering the certainty that many have been waiting for. This green light is expected to attract institutional capital to compliant stablecoin interest products and broaden their role in the wider financial system. Even as markets soften, venture activity remains robust. In April crypto startups raised just over $600 million, highlighted by Kraken’s $200 million secondary sale to Deutsche Börse, Slash’s $100 million Series C, and Pharos’s $44 million raise for its Layer‑1 blockchain. The continued flow of capital shows confidence in the long‑term potential of crypto‑enabled finance. How do you see these regulatory and funding trends shaping the next wave of innovation? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/policy/2026/05/02/crypto-industry-backs-clarity-act-yield-compromise-pushes-senate-banking-for-markup">Crypto industry backs CLARITY Act yield compromise, pushes Senate Banking for markup</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://cointelegraph.com/news/go-time-after-clarity-act-stablecoin-yield-compromise-finalized">CLARITY Act Stablecoin Yield Rules Finalized: ‘Go Time’ For Crypto Bill</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/deals/crypto-companies-raised-600m-in-april-despite-fake-innovation-vcs-say/">Crypto companies raised $600m in April despite despite market downturn, VCs say</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/markets/bitcoin-rally-extends-yet-btc-options-price-only-25-chance-of-84k-in-may">Bitcoin Rally Accelerates, But BTC Options Doubt $84K Is Possible</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/riot-posts-167m-in-q1-revenue-as-data-center-arm-pulls-in-33m-in-first-quarter">Riot Posts $167M in Q1 Revenue as Data Center Arm Pulls in $33M</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://ambcrypto.com/coins/sentient/">SENT - Sentient - AMBCrypto</a> <span class="other-source">(AMBCrypto)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://ambcrypto.com/coins/tagger/">TAG - TAGGER - AMBCrypto</a> <span class="other-source">(AMBCrypto)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/news/a16z-sides-with-cftc-against-states-seeking-to-ban-prediction-markets">A16z Backs CFTC in Fight Against State Prediction Market Bans</a> <span class="other-source">(Cointelegraph)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

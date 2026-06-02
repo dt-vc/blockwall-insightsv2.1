@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 16, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 16, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">18</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">7</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">4</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">9</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Tether's $127.5m lifeline to Drift contingent on switching settlement to USDT, strengthening its position in Solana</li>
+        <li>Morgan Stanley Bitcoin ETF draws $100m in six days, prompting rival banks to launch crypto products</li>
+        <li>CFTC Chair Selig defends prediction market stance, bipartisan hearing signals potential tighter regulation for crypto derivatives</li>
+        <li>Jupiter's near-zero capital model generated $176m revenue 2025, highlighting profit potential for low‑funded Solana DeFi</li>
+        <li>Nomura survey shows 80% of institutions plan 2‑5% AUM crypto allocation, with DeFi and stablecoins top focus</li>
+        <li>Bitcoin hovering near $75k amid Trump Fed tension, market sensitivity to potential policy shift increases volatility risk</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, today Tether’s $128 million lifeline to Drift highlights stablecoin dynamics, while Morgan Stanley’s Bitcoin ETF pulls $100 million, underscoring institutional appetite. At the same time, Congress scrutinizes prediction markets and the Clarity Act, and Solana’s DoubleZero Edge promises ultra‑fast data for DeFi traders.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (10)</h2>
+    <div class="story">
+      <h2 class="story-title">Tether throws $128m lifeline to hacked Drift. But the USDT issuer wants something in return</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772086757689.webp" alt="Tether throws $128m lifeline to hacked Drift. But the USDT issuer wants something in return" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Stablecoins &bull; Score: 9/10</div>
+      <p class="story-summary">Tether is extending a $127.5 million lifeline to the Drift Protocol after it was compromised in a hack. The funding is contingent on Drift replacing USDC with USDT as its settlement token. The assistance follows a North‑Korean‑linked attack that removed about $286 million from the Solana‑based decentralized exchange, underscoring the role of stablecoin liquidity in post‑hack recovery.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/tether-steps-in-to-help-hacked-drift-protocol/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Morgan Stanley Bitcoin ETF rakes in $100m as Wall Street follows suit: ‘Excellent number’</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805093.webp" alt="Morgan Stanley Bitcoin ETF rakes in $100m as Wall Street follows suit: ‘Excellent number’" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Investment &bull; Score: 7/10</div>
+      <p class="story-summary">Morgan Stanley's newly launched Bitcoin exchange‑traded fund has attracted $100 million of assets in its first six days, marking the firm’s first in‑house Bitcoin product. The rapid inflow demonstrates strong institutional demand for regulated crypto exposure and has been described by the bank as an “excellent number.” The success is prompting other Wall Street firms such as Goldman Sachs and Charles Schwab to develop their own cryptocurrency offerings.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/morgan-stanley-bitcoin-etf-100million-excellent-number/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Prediction markets, crypto get bipartisan scrutiny at congressional hearing</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198317.webp" alt="Prediction markets, crypto get bipartisan scrutiny at congressional hearing" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">CFTC Chair Mike Selig appeared before a bipartisan congressional hearing to discuss the agency’s approach to prediction markets. Republican members pressed for guidance on bringing crypto platforms onto U.S. soil and for measures to prevent insider trading in digital assets. Democratic members used the forum to denounce unregulated prediction markets and to point out what they see as regulatory gaps that could expose investors to risk.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/prediction-markets-get-bipartisan-scrutiny-at-house-hearing/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Jupiter: A Gassed Up Giant</h2>
+      <img class="story-img" src="https://storage.googleapis.com/members-portal-bucket/uploads/2026/04/1fba42ec-jupiter-earnings-review-0-1024x768.png" alt="Jupiter: A Gassed Up Giant" onerror="this.style.display='none'">
+      <div class="story-meta">Delphi Digital &bull; DeFi &bull; Score: 7/10</div>
+      <p class="story-summary">Jupiter is a Solana‑based decentralized finance protocol that has not raised a traditional venture round and received only a single known external investment of $35 million from ParaFi Capital in February 2026. Operating with a near‑zero capital base, the platform generated approximately $176 million in revenue in 2025. It processed $1.16 trillion of trade volume across 42.9 million wallets, highlighting its scale and relevance for institutional participants seeking high‑throughput DeFi infrastructure on Solana.</p>
+      <a class="story-link" href="https://members.delphidigital.io/reports/jupiter-a-gassed-up-giant" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">The Clarity Act is a ‘threat to economic sovereignty.’ So why is Donald Trump so keen on it?</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772088263205.webp" alt="The Clarity Act is a ‘threat to economic sovereignty.’ So why is Donald Trump so keen on it?" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">The U.S. Senate is considering the Clarity Act, a bill that would expand federal oversight of stablecoins and the platforms that issue them. Proponents argue the measure would bring clarity to a rapidly growing digital‑asset market while critics contend it threatens economic sovereignty by shifting control of monetary functions away from traditional regulators. The legislation also raises concerns that allowing interest‑like rewards on stablecoins could erode the competitive advantage of conventional banks. Former President Donald Trump has expressed interest in the bill, viewing it as consistent with his broader agenda to reshape the United States’ financial landscape.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/opinion/the-clarity-act-is-a-threat-to-economic-sovereignty-so-why-is-donald-trump-so-keen-on-it/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Solana news (SOL): Wall Street tech is coming to crypto as DoubleZero rolls out high-speed data for blockchain</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop" alt="Solana news (SOL): Wall Street tech is coming to crypto as DoubleZero rolls out high-speed data for blockchain" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">DoubleZero has introduced DoubleZero Edge, a dedicated high‑speed data feed that streams raw Solana blockchain data to traders over a private fiber network. The feed claims millisecond‑level latency reductions, bringing Wall Street‑grade speed to crypto market data. By allowing Solana validators to sell this data to subscribers in USDC, the service creates a new revenue stream and could deepen institutional participation in the Solana ecosystem.</p>
+      <a class="story-link" href="https://www.coindesk.com/tech/2026/04/16/wall-street-trading-tech-is-coming-to-crypto-as-doublezero-rolls-out-high-speed-data-for-solana" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Nomura: Four out five institutional investors plan to pile into crypto with DeFi a top focus</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772054382677.webp" alt="Nomura: Four out five institutional investors plan to pile into crypto with DeFi a top focus" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Nomura’s Digital Asset Institutional Investor Survey finds that nearly four out of five institutional investors plan to increase crypto exposure next year. Respondents, who collectively manage more than $60 billion in assets, intend to allocate between 2 % and 5 % of their AUM to digital assets. DeFi protocols and stablecoins are cited as the primary areas of interest, reflecting a focus on yield‑generating strategies such as staking, lending and tokenised assets. The survey suggests that crypto is being viewed as a diversification tool by large investors.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/where-four-out-five-institutions-plan-to-invest-in-crypto-nomura-says/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">World Liberty Financial wants to unlock 62 billion tokens. Justin Sun isn’t happy</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1773833199416.webp" alt="World Liberty Financial wants to unlock 62 billion tokens. Justin Sun isn’t happy" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Tokenization &bull; Score: 5/10</div>
+      <p class="story-summary">World Liberty Financial has filed a governance proposal to release 62 billion WLFI tokens over a five‑year period. The proposal allocates the bulk of the tokens to insiders and includes a 10 percent burn of those insider holdings. The token release is scheduled to begin in 2028 and will follow a staggered schedule. Crypto billionaire Justin Sun publicly criticized the plan as an absurd governance scam, highlighting concerns that may affect investor confidence.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/justin-sun-is-unhappy-with-trump-crypto-project-token-unlock/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin price news: BTC slides after failing at key resistance levels</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Bitcoin price news: BTC slides after failing at key resistance levels" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin slipped below $74,000 after failing to break the $75,000‑$76,000 resistance zone. The price retreat triggered a modest decline in equities tied to crypto assets. At the same time, digital‑asset investment products recorded a $1.67 billion outflow, marking the largest weekly withdrawal for Bitcoin funds this year. The combined price pressure and fund outflows signal heightened short‑term risk for institutional portfolios exposed to Bitcoin and related securities.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/04/16/bitcoin-slides-back-below-usd74-000-as-breakout-to-higher-levels-fails-again" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Trump issues ultimatum to Fed chair as Bitcoin trembles at $75,000. ‘I’ll have to fire him’</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776326201355-asset.webp" alt="Trump issues ultimatum to Fed chair as Bitcoin trembles at $75,000. ‘I’ll have to fire him’" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">President Donald Trump publicly warned that he would fire Federal Reserve Chair Jerome Powell if Powell does not step down when his term ends in May. The statement has raised concerns about possible interference in monetary policy and could affect market expectations for interest rates. Bitcoin has risen to about $75,000, and analysts attribute part of the rally to uncertainty surrounding the Fed leadership transition. The prospect of a pro‑crypto nominee such as Kevin Warsh being appointed to the Fed adds further uncertainty for risk‑on assets.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/trump-issues-ultimatum-to-fed-chair-as-bitcoin-price-trembles-at-75-fire-him/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (7)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/mc-ryan-sp-arrested-in-suspected-money-laundering-ring-raids/" target="_blank">MC Ryan SP among influencers arrested in suspected $300m money-laundering ring raids</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">Brazilian federal police arrested music influencers MC Poze do Rodo and MC Ryan SP, accusing them of orchestrating a $30...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/bitcoin-needs-fed-to-counter-iran-and-ai-says-arthur-hayes/" target="_blank">AI and Iran are keeping Bitcoin price in ‘no-trade zone’ until Fed wakes up, says Arthur Hayes</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Arthur Hayes, co‑founder of BitMEX, says Bitcoin is stuck in a “no‑trade zone” because AI‑driven job losses and the war ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/people-culture/wrench-attackers-are-often-young-cannon-fodder-report-says/" target="_blank">Wrench attacks often carried out by ‘cannon fodder’ thugs recruited on social media: report</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Security</div>
+        <div class="watch-summary">A Franceinfo investigation reveals that wrench attacks – violent home invasions to steal crypto – are being orchestrated...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/paraguay-police-confiscate-crypto-from-teen-hacking-gang/" target="_blank">Paraguay police confiscate coins from $1m teen crypto hacking gang</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Security</div>
+        <div class="watch-summary">Paraguayan police arrested a group of ten teenagers, aged 18‑20, accused of stealing about $1.2 million and laundering t...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/podcasts/galaxy-brains/is-the-quantum-threat-to-bitcoin-real-with-alex-pruden" target="_blank">Is the Quantum Threat to Bitcoin Real? with Alex Pruden</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Bitcoin</div>
+        <div class="watch-summary">Alex Pruden, co‑founder and CEO of Project Eleven, discusses with Alex Thorn the potential risk quantum computers pose t...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/business/2026/04/16/crypto-fund-manager-probed-in-the-suspicious-death-of-his-fiance-s-death-in-zanzibar" target="_blank">Crypto fund manager questioned in his fiancée’s suspicious death during Zanzibar trip</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Other</div>
+        <div class="watch-summary">Tanzanian police are investigating the death of U.S. influencer Ashly Robinson in Zanzibar and have ordered her fiancé, ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-16/tax-alpha-needs-some-real-alpha" target="_blank">Tax Alpha Needs Some Real Alpha</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Regulation</div>
+        <div class="watch-summary">Bloomberg published an opinion piece titled “Tax Alpha Needs Some Real Alpha.” The article content is not provided beyon...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (1)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏛️ Tokenization <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/defi/prestocks-anthropic-token-lacks-liquidity-to-cash-out/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">A trader made $1.5m buying Anthropic ‘shares’ on Solana. Cashing out the win won’t be easy</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The past week reminded us how quickly the crypto ecosystem can pivot between challenge and opportunity. When the Drift Protocol suffered a North Korean linked hack that drained $286 million, Tether stepped forward with a $127.5 million lifeline. The condition that Drift replace USDC with USDT as its settlement token highlights how stablecoin liquidity can become a critical tool for post‑hack recovery and for building resilience in DeFi. At the same time, institutional appetite for regulated exposure is accelerating. Morgan Stanley’s newly launched Bitcoin ETF attracted $100 million in just six days, a figure the bank called an “excellent number.” The rapid inflow is prompting other Wall Street names to craft their own crypto products, signaling that capital is moving from curiosity to conviction. Meanwhile, regulators are sharpening their focus. CFTC Chair Mike Selig appeared before a bipartisan congressional hearing on prediction markets. Republicans asked how to bring crypto platforms onto U.S. soil and prevent insider trading, while Democrats warned of gaps that could leave investors unprotected. The dialogue underscores the need for clear rules that support innovation without sacrificing safety. For us at Blockwall, these signals reinforce why we back founders who can navigate liquidity, compliance and market dynamics. How do you see the balance between regulatory clarity and rapid product development shaping the next wave of crypto ventures? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/defi/tether-steps-in-to-help-hacked-drift-protocol/">Tether throws $128m lifeline to hacked Drift. But the USDT issuer wants something in return</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.dlnews.com/articles/markets/morgan-stanley-bitcoin-etf-100million-excellent-number/">Morgan Stanley Bitcoin ETF rakes in $100m as Wall Street follows suit: ‘Excellent number’</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/regulation/prediction-markets-get-bipartisan-scrutiny-at-house-hearing/">Prediction markets, crypto get bipartisan scrutiny at congressional hearing</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://members.delphidigital.io/reports/jupiter-a-gassed-up-giant">Jupiter: A Gassed Up Giant</a> <span class="other-source">(Delphi Digital)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.dlnews.com/articles/opinion/the-clarity-act-is-a-threat-to-economic-sovereignty-so-why-is-donald-trump-so-keen-on-it/">The Clarity Act is a ‘threat to economic sovereignty.’ So why is Donald Trump so keen on it?</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.coindesk.com/tech/2026/04/16/wall-street-trading-tech-is-coming-to-crypto-as-doublezero-rolls-out-high-speed-data-for-solana">Solana news (SOL): Wall Street tech is coming to crypto as DoubleZero rolls out high-speed data for blockchain</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.dlnews.com/articles/markets/where-four-out-five-institutions-plan-to-invest-in-crypto-nomura-says/">Nomura: Four out five institutional investors plan to pile into crypto with DeFi a top focus</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.dlnews.com/articles/regulation/justin-sun-is-unhappy-with-trump-crypto-project-token-unlock/">World Liberty Financial wants to unlock 62 billion tokens. Justin Sun isn’t happy</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.coindesk.com/markets/2026/04/16/bitcoin-slides-back-below-usd74-000-as-breakout-to-higher-levels-fails-again">Bitcoin price news: BTC slides after failing at key resistance levels</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://www.dlnews.com/articles/markets/trump-issues-ultimatum-to-fed-chair-as-bitcoin-price-trembles-at-75-fire-him/">Trump issues ultimatum to Fed chair as Bitcoin trembles at $75,000. ‘I’ll have to fire him’</a> <span class="other-source">(DL News)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

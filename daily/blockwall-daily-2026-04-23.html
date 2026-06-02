@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 23, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 23, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">27</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">9</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">11</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>US Indo‑Pacific Command operating live Bitcoin node signals strategic government interest, may legitimize BTC for institutional adoption</li>
+        <li>Crypto Clarity Act faces Senate deadline, failure could impose costly compliance burdens, dampening sector growth</li>
+        <li>Tether's $344 million USDT freeze demonstrates active AML cooperation, but may raise concerns about stablecoin liquidity</li>
+        <li>Bitcoin surpasses $79k with net taker volume $9.2 bn on Binance futures, indicating strong short‑term demand</li>
+        <li>Bitcoin ETFs attract $1.9 bn inflows, suggesting growing preference for regulated exposure over direct holdings</li>
+        <li>Ethereum technical indicators and staking milestone hint at rally toward $6k, yet relative underperformance risk persists</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, A U.S. military Bitcoin node underscores geopolitical stakes while the Crypto Clarity Act hangs in the Senate, and Tether’s $344 million freeze highlights stable‑coin compliance. Meanwhile Bitcoin ETFs attracted $1.9 billion and Ethereum’s technical surge points to fresh institutional appetite.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (9)</h2>
+    <div class="story">
+      <h2 class="story-title">U.S. military runs a Bitcoin (BTC) node, sees crypto as 'power projection' vs China</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="U.S. military runs a Bitcoin (BTC) node, sees crypto as 'power projection' vs China" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">The U.S. Indo‑Pacific Command has disclosed that it is operating a live Bitcoin node to monitor network activity and conduct security testing. The command describes Bitcoin as a strategic tool for American power projection against China. The node is used solely for testing and does not mine, representing a rare instance of direct U.S. military involvement in the Bitcoin network. This signals that federal agencies consider cryptocurrency infrastructure relevant to national security, a factor that could influence regulatory and market dynamics for institutional investors.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/04/23/us-military-runs-bitcoin-node-sees-crypto-as-power-projection-vs-china" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">‘Slow, expensive’ fate awaits if Clarity Act fails, warn experts as clock ticks on bill</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776938557095-asset.webp" alt="‘Slow, expensive’ fate awaits if Clarity Act fails, warn experts as clock ticks on bill" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">The Crypto Clarity Act, a legislative proposal intended to establish a clearer regulatory framework for digital assets, is under pressure to pass the Senate Banking Committee by early May. If it does not clear the committee, the bill is likely to be removed from the legislative calendar. Industry analysts assess the probability of passage at roughly 50 percent. A failure would create a slower, more costly operating environment for the crypto sector, which could affect institutional investors seeking compliance certainty.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/slow-expensive-fate-awaits-if-clarity-act-fails-say-legal-experts/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Tether helps US feds by freezing $344m in USDT tied to crime</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198667.webp" alt="Tether helps US feds by freezing $344m in USDT tied to crime" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Stablecoins &bull; Score: 6/10</div>
+      <p class="story-summary">Tether has frozen $344 million of its USDT stablecoin that was identified as tied to illicit activity. The company said the action demonstrates its ongoing cooperation with law‑enforcement agencies around the world. The freeze underscores the stablecoin’s ability to block malicious funds and contrasts with criticism that rival Circle has been slower to act in similar cases. Institutional investors may view the move as a signal of enhanced compliance controls and reduced regulatory risk for assets held on the Tether platform.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/tether-helps-us-feds-by-freezing-dollar344m-in-usdt-tied-to-crime/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto Advocacy Group Calls Action on Market Structure Bill ‘critical‘</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-g7-meeting-in-germany-will-cryptocurrencies-be-on-the-radar-of-global-regulators2.jpg" alt="Crypto Advocacy Group Calls Action on Market Structure Bill ‘critical‘" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">A crypto advocacy group has described the pending Market Structure Bill as a critical piece of legislation. The organization is urging policymakers to act promptly on the bill. It cautions that the bill could have far‑reaching effects on the broader crypto ecosystem. Institutional investors are advised to track the bill’s progress because its outcome may shape regulatory compliance and market infrastructure for digital assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-groups-market-structure-markup-critical" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Tether Freezes $344M in Dollar-Pegged USDt Stablecoins</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/judgement-crypto-frozen-freeze-coin-refrigerator-cold-tether.jpg" alt="Tether Freezes $344M in Dollar-Pegged USDt Stablecoins" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Stablecoins &bull; Score: 6/10</div>
+      <p class="story-summary">Tether has frozen USDt tokens worth $344 million, removing them from circulation. The action is being viewed as a compliance or regulatory response by the stablecoin issuer. By reducing the circulating supply, the freeze could impact investor confidence in the stability and liquidity of dollar‑pegged stablecoins.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/tether-freezes-344m-usdt-stablecoins" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin Buyers Show Renewed Conviction as BTC Tops $79K</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/bitcoin-conviction.jpg" alt="Bitcoin Buyers Show Renewed Conviction as BTC Tops $79K" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin broke the $79,000 level, indicating strong price momentum. On‑chain metrics reveal renewed buying pressure, highlighted by a cumulative net taker volume of $9.2 billion on Binance futures. At the same time, the amount of Bitcoin held on exchanges has fallen, a pattern that typically signals accumulation by long‑term investors. This combination of high futures activity and reduced exchange supply is being interpreted as a bullish signal for institutional portfolios.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/bitcoin-buyers-show-renewed-conviction-with-btc-price-push-above-79k" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin ETFs Surpass March Inflow Streak With $1.9B</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/019db96f-03a6-7218-9d64-a83070745c38.jpg" alt="Bitcoin ETFs Surpass March Inflow Streak With $1.9B" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin exchange‑traded funds recorded $1.9 billion of net inflows, ending the March inflow streak. The strong capital inflow underscores growing demand among institutional investors for regulated Bitcoin exposure. This momentum may shape portfolio allocation decisions as investors seek diversified crypto assets through ETF structures.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/bitcoin-etf-1-9-billiow-7-day-inflow-streak-btc-near-80k" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Ethereum Metrics Signal ETH Price Rally Toward $6K Next</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/super-ethereum-bitcoin-eth-6k.jpg" alt="Ethereum Metrics Signal ETH Price Rally Toward $6K Next" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Ethereum &bull; Score: 5/10</div>
+      <p class="story-summary">Ethereum has recovered roughly one‑third of its value from the sub‑$1,800 multi‑year lows, indicating a strong price bounce. The move is supported by an ascending trendline, a bullish MACD crossover and a recovering RSI, technical patterns that have preceded previous large rallies. Analysts point to a tightening supply dynamic and an expanding Coinbase premium as evidence of renewed institutional buying pressure. Together these factors suggest the cryptocurrency could advance toward the $6,000 level, a target that may be relevant for portfolio allocation decisions.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/these-3-ethereum-metrics-favor-eth-price-rally-to-6k" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Ethereum Risks 10% Dip Versus Bitcoin Despite ETH Staking Milestone</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-263592-ethereum-decline-10percent-versus-bitcoin-despite-record-eth-staking.jpg" alt="Ethereum Risks 10% Dip Versus Bitcoin Despite ETH Staking Milestone" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Ethereum &bull; Score: 5/10</div>
+      <p class="story-summary">Ethereum recently reached a significant staking milestone, indicating increased participation in its proof‑of‑stake consensus. Analysts caution that despite the security gains, the token may lag behind Bitcoin in the near term. They project a possible 10% price decline for ETH relative to BTC. This divergence could affect portfolio allocations for investors who compare performance between the two leading cryptocurrencies.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/ethereum-decline-10percent-versus-bitcoin-despite-record-eth-staking" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (12)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/global-crypto-adoption-q1-2026-trm-labs-turkey-resilience" target="_blank">Global Crypto Adoption Falls in Q1 as Macro Pressures Mount, Turkey Bucks Trend</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Other</div>
+        <div class="watch-summary">The latest data shows a decline in global cryptocurrency adoption during Q1 2026, driven by tightening macroeconomic con...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/ny-governor-signs-eo-on-prediction-markets-following-illinois" target="_blank">New York, Illinois Ban Officials From Prediction Markets</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">New York and Illinois have passed rules that bar state officials from participating in crypto‑based prediction markets. ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/markets/bitcoin-weekly-close-in-focus-after-btc-price-fails-to-revisit-80k" target="_blank">Bitcoin Bulls Fight For Bull Market Support Band Into Weekly Close</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin hovered near $73,600, with bulls attempting to hold a support band as the week closed. The modest price gain ref...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/markets/bitcoin-chases-monthly-high-above-dollar80k-as-nearly-all-btc-price-metrics-turn-bullish" target="_blank">Bitcoin Futures Data Show Traders Positioning For Rally Above $80K</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin reached a monthly high of $79,472 and the Bitcoin positioning index turned sharply bullish, suggesting new capit...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/23/pantera-wants-satsuma-to-dump-its-bitcoin-as-shares-crash-99" target="_blank">The DAT collapse: Pantera wants Satsuma (SATS) to dump its bitcoin as shares crash 99%</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Pantera Capital and other investors are pressuring London‑listed Satsuma Technology to sell its remaining ~646 BTC and r...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/defi/french-meteorological-agency-is-investigating-tampering-amid-big-polymarket-bets/" target="_blank">Polymarket bettors bag big win betting on the weather. Now the French meteorological agency is investigating 'tampering'</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">France’s weather agency Météo‑France has filed a complaint alleging tampering with temperature data at Charles de Gaulle...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/world-liberty-financial-slams-justin-sun-lawsuit/" target="_blank">World Liberty founders slam Justin Sun lawsuit alleging extortion, insolvency and of using ‘the Trump brand to profit through fraud’</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">Justin Sun has filed a lawsuit against World Liberty Financial, accusing the Trump‑linked project of extortion, insolven...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/four-crazy-details-in-justin-sun-world-liberty-lawsuit/" target="_blank">Here are the four craziest details in Justin Sun’s World Liberty lawsuit</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">Justin Sun filed a 52‑page lawsuit accusing World Liberty Financial and its co‑founder Chase Herro of fraud, theft and o...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/bitcoin-price-to-rally-but-options-hedging-persists/" target="_blank">Bitcoin bulls aim for $80,000 but trading data reveals they’re not ready to go all-in</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Around $8.6 billion of Bitcoin options are set to expire, with traders positioning for a move toward $80,000 but hedging...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/23/bitcoin-loses-grip-near-usd80-000-as-eth-sol-doge-fade-on-profit-taking" target="_blank">BTC, ETH, DOGE price news: Bitcoin fails to break $80,000, back under $78,000</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin briefly touched $79,388 but retreated to around $77,800, failing to sustain a break above $80,000. Meanwhile, ot...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/podcasts/galaxy-brains/building-bitcoin-while-battling-cancer-with-becca-rubenfeld" target="_blank">Building Bitcoin While Battling Cancer with Becca Rubenfeld</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Galaxy &bull; Bitcoin</div>
+        <div class="watch-summary">In a Galaxy Digital podcast, Anchorwatch co‑founder and COO Becca Rubenfeld talks about building hyper‑secure Bitcoin wa...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-23/traders-do-something-about-the-weather" target="_blank">Traders Do Something About the Weather</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">The Bloomberg article titled “Traders Do Something About the Weather” contains only site navigation and branding element...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (6)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">3</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/markets/bitcoin-to-100k-what-the-clarity-act-new-fed-leadership-mean-for-price/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin to $100,000? What the Clarity Act and new Fed leadership mean for price</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://www.dlnews.com/articles/markets/compelling-documentary-satoshi-nakamoto-reveal/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Did we finally find out who Satoshi Nakamoto is? This documentary says yes — and it is more compelling than you think</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/markets/powerful-move-looms-bitcoin-price-bollinger-bands-indicator" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Bollinger Bands Setting Up BTC Price for ‘Powerful Move’</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">📈 Investment <span class="res-cat-count">2</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/ftx-estate-misses-out-on-3b-cursor-stake-value-after-200k-sale-in-2023" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">FTX Estate Misses Out on $3B Cursor Stake Value after $200K Sale in 2023</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://www.dlnews.com/articles/markets/memecoins-post-20-percent-rally-but-no-comeback-yet-analysts-say/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Memecoins post 20% rally. But no comeback yet, analysts say</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔒 Security <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/regulation/man-paid-usd-541-crypto-to-spray-faeces-on-house-jailed-for-2-years/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Man who took $541 in crypto to spray faeces on house jailed for two years</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, We are witnessing a remarkable convergence of geopolitics, legislation and compliance that is reshaping the crypto landscape. The U.S. Indo‑Pacific Command has disclosed that it is operating a live Bitcoin node to monitor network activity and test security. The military frames Bitcoin as a strategic tool for power projection against China. This rare direct involvement of a federal agency signals that national security considerations are now part of the conversation around digital assets and could influence how regulators view institutional exposure. At the same time, the Crypto Clarity Act is racing through the Senate Banking Committee. Experts warn that if the bill stalls, the sector could face a slower and more expensive operating environment. A clear regulatory framework is essential for the kind of capital that European venture funds like ours allocate to promising founders. Finally, Tether’s recent decision to freeze $344 million of USDT linked to illicit activity demonstrates a growing willingness among stablecoin issuers to cooperate with law‑enforcement. The move provides a concrete example of how compliance can be built into the infrastructure, reducing risk for institutional investors. How do you see these developments influencing your strategy for building or investing in the next generation of Web3 companies? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/markets/2026/04/23/us-military-runs-bitcoin-node-sees-crypto-as-power-projection-vs-china">U.S. military runs a Bitcoin (BTC) node, sees crypto as 'power projection' vs China</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.dlnews.com/articles/regulation/slow-expensive-fate-awaits-if-clarity-act-fails-say-legal-experts/">‘Slow, expensive’ fate awaits if Clarity Act fails, warn experts as clock ticks on bill</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/regulation/tether-helps-us-feds-by-freezing-dollar344m-in-usdt-tied-to-crime/">Tether helps US feds by freezing $344m in USDT tied to crime</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/news/crypto-groups-market-structure-markup-critical">Crypto Advocacy Group Calls Action on Market Structure Bill ‘critical‘</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/tether-freezes-344m-usdt-stablecoins">Tether Freezes $344M in Dollar-Pegged USDt Stablecoins</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/markets/bitcoin-buyers-show-renewed-conviction-with-btc-price-push-above-79k">Bitcoin Buyers Show Renewed Conviction as BTC Tops $79K</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://cointelegraph.com/news/bitcoin-etf-1-9-billiow-7-day-inflow-streak-btc-near-80k">Bitcoin ETFs Surpass March Inflow Streak With $1.9B</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://cointelegraph.com/markets/these-3-ethereum-metrics-favor-eth-price-rally-to-6k">Ethereum Metrics Signal ETH Price Rally Toward $6K Next</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://cointelegraph.com/markets/ethereum-decline-10percent-versus-bitcoin-despite-record-eth-staking">Ethereum Risks 10% Dip Versus Bitcoin Despite ETH Staking Milestone</a> <span class="other-source">(Cointelegraph)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

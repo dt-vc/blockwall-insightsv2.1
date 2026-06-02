@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 29, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 29, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">18</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">8</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">10</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">6</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>AAVE-led $300M rescue stabilizes DeFi liquidity, supporting $2T tokenised RWA outlook by 2028</li>
+        <li>Meta's USDC payouts on Polygon and Solana via Stripe open stablecoin payroll market in emerging economies</li>
+        <li>Robinhood's 47% crypto revenue drop triggers 14% stock plunge, pressuring broader crypto‑public equities</li>
+        <li>Consensus Miami sees major banks sponsor, indicating accelerated institutional capital flow into tokenisation and stablecoins</li>
+        <li>Bitcoin slides from $79.5k ahead of FOMC, risk‑off sentiment may trigger further short‑term corrections</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, DeFi steadied after an AAVE‑led $300 million rescue, while Meta began USDC creator payouts on Polygon and Solana, and Wall Street giants took the stage at Consensus Miami. Bitcoin slipped ahead of the FOMC, and Paul Tudor Jones hailed it as the premier inflation hedge.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (8)</h2>
+    <div class="story">
+      <h2 class="story-title">DeFi absorbs $292 million shock as AAVE-led rescue steadies markets: Standard Chartered</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop" alt="DeFi absorbs $292 million shock as AAVE-led rescue steadies markets: Standard Chartered" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; DeFi &bull; Score: 9/10</div>
+      <p class="story-summary">A $292 million exploit on KelpDAO spread to AAVE and created a sharp liquidity crunch across DeFi. In response, AAVE coordinated a $300 million rescue that was supported by a coalition of DeFi firms. The injection stabilized deposits and yields and demonstrated the sector’s resilience. Standard Chartered said the episode underlines confidence in a projected $2 trillion tokenised real‑world asset market by 2028.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/04/29/defi-shaken-by-usd292-million-hack-but-showing-resilience-standard-chartered-says" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Meta (META) starts stablecoin payout to creators in Circle's USDC on Polygon, Solana via Stripe</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop" alt="Meta (META) starts stablecoin payout to creators in Circle's USDC on Polygon, Solana via Stripe" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Payments &bull; Score: 7/10</div>
+      <p class="story-summary">Meta has begun paying creators in Circle’s USDC stablecoin on the Polygon and Solana blockchains, with the transaction flow powered by Stripe. The initial rollout is limited to creators in Colombia and the Philippines and includes tax reporting from both Meta and Stripe. The feature underscores Meta’s renewed push into stablecoin‑based payments and could broaden crypto adoption in digital content monetization.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/04/29/tech-giant-meta-starts-paying-some-creators-in-stablecoin-with-stripe-s-support" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Judge dismisses SBF ‘facts,’ new trial request in scathing order</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805332.webp" alt="Judge dismisses SBF ‘facts,’ new trial request in scathing order" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">A federal judge rejected Sam Bankman‑Fried’s petition for a new trial, describing the purported new evidence as baseless. The ruling upholds the conviction that resulted from his 2023 fraud trial. The decision reduces the likelihood of a pardon or successful appeal, a development that institutional investors should monitor given the broader implications for crypto market stability and regulatory scrutiny.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/judge-dismisses-sbf-new-trial-request-in-scathing-order/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Robinhood (HOOD), Coinbase (COIN) plunge in crypto stock rout, outpacing bitcoin (BTC) decline</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop" alt="Robinhood (HOOD), Coinbase (COIN) plunge in crypto stock rout, outpacing bitcoin (BTC) decline" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Enterprise &bull; Score: 6/10</div>
+      <p class="story-summary">Robinhood’s shares fell roughly 14% after the company reported a 47% decline in crypto‑related revenue. The sharp drop pulled lower other publicly traded crypto‑focused firms including Coinbase, Bullish and Gemini. Market pressure was heightened by a rise in oil prices that followed President Trump’s rejection of an Iranian proposal. Investors are also watching the upcoming Federal Reserve policy decision for its potential impact on risk assets.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/04/29/robinhood-coinbase-lead-crypto-stock-rout-as-trump-rejects-iran-plan" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Wall Street is coming to Consensus Miami — and it’s not just to watch</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop" alt="Wall Street is coming to Consensus Miami — and it’s not just to watch" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Enterprise &bull; Score: 6/10</div>
+      <p class="story-summary">Wall Street firms including Morgan Stanley and JPMorgan are sponsoring and speaking at Consensus Miami, underscoring a growing alignment between traditional finance and digital assets. The event will bring together high‑profile policymakers and crypto industry leaders to discuss topics such as stablecoins, tokenization, and the emerging concept of agentic commerce. Institutional investors can view the conference as a signal that major financial institutions are actively engaging with the crypto ecosystem and shaping its regulatory and commercial frameworks.</p>
+      <a class="story-link" href="https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin Drops Range Highs As Traders Cut Risk Ahead Of FOMC</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/hi-what-is-ransomware-in-crypto-bitcoin.jpg" alt="Bitcoin Drops Range Highs As Traders Cut Risk Ahead Of FOMC" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin fell from its recent high of $79,500 as market participants reduced exposure ahead of the Federal Open Market Committee meeting. The pullback reflects a broader risk‑off sentiment among traders who anticipate potential volatility around monetary‑policy decisions. Historical patterns indicate that Bitcoin often experiences corrective moves after FOMC announcements. Recent liquidations have already reached billions of dollars, underscoring the scale of capital that can be affected by policy‑driven market shifts.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/bitcoin-stalls-under-76k-as-traders-risk-off-ahead-of-fomc" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">DeFi lender Sky hits $124m revenue record. Yet token holders aren’t impressed</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777478320869-asset.webp" alt="DeFi lender Sky hits $124m revenue record. Yet token holders aren’t impressed" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; DeFi &bull; Score: 5/10</div>
+      <p class="story-summary">Sky, a DeFi lender with $13 billion in total value locked, posted a record first‑quarter gross revenue of $124 million and net revenue of $61 million. The earnings surge was driven by strong institutional demand for its USDS stablecoin. Nevertheless, the Sky governance token fell about 2.4% after the results were released, reflecting market disappointment.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/defi-lender-sky-hits-protocol-revenue-record/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Billionaire trader Paul Tudor Jones made bank in gold. Now he calls Bitcoin the ‘best inflation hedge’</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777464384678-asset.webp" alt="Billionaire trader Paul Tudor Jones made bank in gold. Now he calls Bitcoin the ‘best inflation hedge’" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Paul Tudor Jones, a billionaire hedge‑fund manager who previously profited from gold, has publicly declared Bitcoin the best inflation hedge. He argues that Bitcoin’s fixed supply gives it an advantage over gold, whose supply can increase. His endorsement aligns him with other Wall Street leaders such as Larry Fink, though he also cautions investors about the cryptocurrency’s cyber‑risk exposure.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/people-culture/paul-tudor-jones-sees-bitcoin-as-best-inflation-hedge/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (10)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/robinhoods-prediction-market-drives-q1-revenue-as-crypto-takes-a-back-seat" target="_blank">Robinhood Dips 9% As Crypto Activity Falls Nearly 50% in Q1</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Enterprise</div>
+        <div class="watch-summary">Robinhood’s shares fell about 9% after the broker reported that crypto trading activity on its platform dropped nearly 5...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/robinhood-primed-for-rebound-after-shares-tank-in-q1-miss-bernstein-says/" target="_blank">Robinhood primed for rebound after shares tank 8% in Q1 miss, Bernstein says</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Enterprise</div>
+        <div class="watch-summary">Robinhood’s Q1 crypto revenue fell 47% YoY, causing an 8% share drop, but analysts at Bernstein reaffirm an outperform r...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/traders-bullish-on-bitcoin-price-ahead-of-powell-final-fomc/" target="_blank">Bitcoin traders flip bullish on price ahead of Powell’s final FOMC as Fed chair</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin is holding near $77,000 as traders regain risk appetite ahead of Fed Chair Jerome Powell's final press conferenc...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/markets/bitcoin-rally-falters-as-ai-industry-weakens-and-clarity-act-approval-odds-fall" target="_blank">Bitcoin Drops Under $76K As Investors Weigh Regulatory, AI Risk</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin slipped below the $76,000 level as investors grew uneasy about heightened regulatory scrutiny and emerging AI‑re...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/coindesk-news/2026/04/29/stellar-s-cmo-says-crypto-must-ditch-hype-and-get-rich-slow-to-win-mainstream-trust" target="_blank">Stellar’s CMO says crypto must ditch hype and “get rich slow” to win mainstream trust</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Payments</div>
+        <div class="watch-summary">Stellar’s chief marketing officer Jason Karsh argues that crypto must shift from hype to long‑term value creation, posit...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://a16zcrypto.com/posts/article/product-market-fit-3-patterns-working-in-crypto-today/" target="_blank">3 product-market fit patterns that are working in crypto right now - a16z crypto</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> a16z &bull; Enterprise</div>
+        <div class="watch-summary">a16z crypto outlines three go‑to‑market patterns that are helping crypto startups achieve product‑market fit, emphasizin...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/29/bitcoin-rises-to-usd77-000-ahead-of-fed-decision-as-trump-preps-for-lengthy-hormuz-block" target="_blank">Bitcoin rises to $77,000 ahead of Fed decision as Trump preps for lengthy Hormuz block</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin hovered just below $77,000, showing little movement despite rising oil prices and geopolitical tension over a po...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/regulation/senators-advance-warsh-nomination-after-doj-drops-probe/" target="_blank">Senators advance Warsh nomination after DOJ drops Fed chair probe</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Other</div>
+        <div class="watch-summary">U.S. Senators advanced Kevin Warsh's nomination to lead the Federal Reserve after a Republican senator dropped his oppos...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.newcomer.co/p/a-top-india-fund-shows-one-path-for" target="_blank">A Top India Fund Shows One Path for a Different Kind of VC</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Newcomer &bull; Investment</div>
+        <div class="watch-summary">Chiratae Ventures, a Bengaluru‑based VC firm, is focusing on returning cash to its limited partners in regular, small ch...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-29/short-swing-short-squeeze" target="_blank">Short-Swing Short Squeeze</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">The article is a generic Bloomberg navigation page titled “Short‑Swing Short Squeeze” that contains no substantive conte...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The past week reminded us why resilience and innovation remain the twin pillars of the crypto ecosystem. A massive $292 million exploit on KelpDAO rippled through DeFi, threatening liquidity across protocols. AAVE stepped up, rallying a coalition of firms to inject roughly $300 million, stabilising deposits and yields. This coordinated rescue not only steadied markets but also reinforced confidence in a projected $2 trillion tokenised real‑world asset market by 2028, a horizon we at Blockwall are eager to support. At the same time, Meta launched a new payment flow that pays creators in Circle’s USDC on Polygon and Solana, with Stripe handling the transaction processing and tax reporting. The pilot, focused on creators in Colombia and the Philippines, signals a major social platform embracing stablecoin payments and could accelerate crypto adoption in digital content monetisation. On the regulatory front, a federal judge dismissed Sam Bankman‑Fried’s request for a new trial, calling the alleged new evidence baseless and upholding his 2023 conviction. The ruling narrows the path to a pardon and highlights the growing scrutiny that institutional investors must navigate. These developments underscore the importance of robust risk management, strategic partnerships and clear regulatory frameworks as we build the next generation of web3 businesses. What emerging trends do you see shaping the future of crypto finance? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/business/2026/04/29/defi-shaken-by-usd292-million-hack-but-showing-resilience-standard-chartered-says">DeFi absorbs $292 million shock as AAVE-led rescue steadies markets: Standard Chartered</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/business/2026/04/29/tech-giant-meta-starts-paying-some-creators-in-stablecoin-with-stripe-s-support">Meta (META) starts stablecoin payout to creators in Circle's USDC on Polygon, Solana via Stripe</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/regulation/judge-dismisses-sbf-new-trial-request-in-scathing-order/">Judge dismisses SBF ‘facts,’ new trial request in scathing order</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/markets/2026/04/29/robinhood-coinbase-lead-crypto-stock-rout-as-trump-rejects-iran-plan">Robinhood (HOOD), Coinbase (COIN) plunge in crypto stock rout, outpacing bitcoin (BTC) decline</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch">Wall Street is coming to Consensus Miami — and it’s not just to watch</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/markets/bitcoin-stalls-under-76k-as-traders-risk-off-ahead-of-fomc">Bitcoin Drops Range Highs As Traders Cut Risk Ahead Of FOMC</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.dlnews.com/articles/defi/defi-lender-sky-hits-protocol-revenue-record/">DeFi lender Sky hits $124m revenue record. Yet token holders aren’t impressed</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.dlnews.com/articles/people-culture/paul-tudor-jones-sees-bitcoin-as-best-inflation-hedge/">Billionaire trader Paul Tudor Jones made bank in gold. Now he calls Bitcoin the ‘best inflation hedge’</a> <span class="other-source">(DL News)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

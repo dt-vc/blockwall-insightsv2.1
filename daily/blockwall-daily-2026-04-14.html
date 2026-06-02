@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 14, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 14, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">39</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">15</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">18</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">9</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Deutsche Börse's $200m stake in Kraken signals institutional appetite for integrated crypto custody and trading services in Europe</li>
+        <li>$285m Solana Drift exploit highlights vulnerability to state‑backed social engineering, quantum‑computing risk accelerates demand for post‑quantum cryptography</li>
+        <li>DOJ's OneCoin compensation plan may recover funds for large victims but small investors risk exclusion due to documentation gaps</li>
+        <li>Goldman Sachs Bitcoin Premium Income ETF targets yield‑seeking investors, but low‑risk positioning may limit upside amid competitive ETF landscape</li>
+        <li>XRP Ledger's integration of zero‑knowledge proofs addresses institutional privacy demand and adds a layer of quantum resistance</li>
+        <li>Russian central bank's mandatory KYC and custodial restrictions tighten domestic crypto market, potentially driving users to offshore platforms</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, Deutsche Börse’s $200 million Kraken stake signals deepening institutional interest, a DPRK‑linked Solana‑Drift hack underscores rising security threats, and JPMorgan warns stablecoins may become regulatory arbitrage. We also note Goldman’s low‑risk Bitcoin ETF filing as a cautious bridge to mainstream investors.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
+    <div class="story">
+      <h2 class="story-title">Deutsche Börse invests $200m in crypto exchange Kraken</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772102329451.webp" alt="Deutsche Börse invests $200m in crypto exchange Kraken" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Enterprise &bull; Score: 9/10</div>
+      <p class="story-summary">Deutsche Börse AG has invested $200 million for a 1.5 percent equity stake in Payward, the parent company of the cryptocurrency exchange Kraken. The investment deepens a partnership that links Deutsche Börse’s traditional finance infrastructure with Kraken’s trading, custody and tokenised‑asset services. Integration of these services onto Deutsche Börse platforms such as 360T and 360X signals a significant institutional move into the digital‑asset ecosystem.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/deals/deutsche-borse-takes-buys-200-million-in-kraken/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">DPRK Spies, Quantum Risk, and the 401(k) Play</h2>
+      <img class="story-img" src="https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive" alt="DPRK Spies, Quantum Risk, and the 401(k) Play" onerror="this.style.display='none'">
+      <div class="story-meta">Galaxy &bull; Security &bull; Score: 9/10</div>
+      <p class="story-summary">A $285 million exploit on Solana’s Drift Protocol has been linked to a sophisticated social‑engineering campaign believed to be carried out by actors in North Korea. The breach highlights the exposure of high‑value DeFi applications to nation‑state cyber threats. At the same time, experts warn that advances in quantum computing could eventually undermine the cryptographic foundations of blockchain networks. A pending Department of Labor proposal that would permit the use of 401(k) assets for crypto investments could open trillions of dollars of retirement capital to the sector.</p>
+      <a class="story-link" href="https://www.galaxy.com/insights/podcasts/galaxy-grid/dprk-spies-quantum-risk-and-the-401-k-play" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Deutsche Börse (DB1) buys 1.5% of crypto exchange Kraken for $200 million</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/8c2d1d6c9e47c3db1e4becaf1739fb8dce590d3b-3600x2400.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Deutsche Börse (DB1) buys 1.5% of crypto exchange Kraken for $200 million" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Enterprise &bull; Score: 8/10</div>
+      <p class="story-summary">Deutsche Börse has invested $200 million for a 1.5 percent stake in Payward Inc., the parent company of the crypto exchange Kraken. The investment values Kraken at roughly $13.3 billion. Pending regulatory approval, the transaction expands the existing partnership to provide institutional‑grade trading, custody and token‑asset services across Europe.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/04/14/deutsche-boerse-takes-1-5-stake-in-crypto-exchange-kraken-for-usd200-million" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Feds announce crypto scam OneCoin compensation plan. But small investors may suffer</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772100997680.webp" alt="Feds announce crypto scam OneCoin compensation plan. But small investors may suffer" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">The U.S. Department of Justice has launched a remission compensation process for victims of the OneCoin pyramid scheme, which defrauded participants of roughly $4 billion. The program is intended to provide a mechanism for eligible claimants to recover a portion of their losses. Legal counsel cautions that many small investors may be unable to produce the documentation required to substantiate their claims. Institutional investors should monitor the rollout of the plan as it highlights enforcement trends and potential exposure to similar crypto frauds.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/onecoin-fraud-victims-can-now-claim-back-money/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Goldman Sachs to offer low-risk, low-reward Bitcoin ETF</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776204681598-asset.webp" alt="Goldman Sachs to offer low-risk, low-reward Bitcoin ETF" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">Goldman Sachs has filed to launch a Bitcoin Premium Income ETF that will not hold Bitcoin directly but will invest in existing spot Bitcoin ETFs and related options. The fund is designed to deliver a low‑risk, low‑reward profile by selling call options on the underlying Bitcoin ETFs. This product adds to a growing competitive market for Bitcoin‑linked offerings among major banks, providing institutional investors with a more conservative exposure to cryptocurrency price movements.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/goldman-sachs-to-offer-low-risk-low-reward-bitcoin-etf/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Goldman Sachs Targets Income with New Bitcoin ETF Filing</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261512-goldman-sachs-files-for-bitcoin-income-etf-using-options-strategy.jpg" alt="Goldman Sachs Targets Income with New Bitcoin ETF Filing" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">Goldman Sachs has submitted a filing to the U.S. Securities and Exchange Commission for a Bitcoin Premium Income ETF. The proposed fund would generate yield by selling call options on Bitcoin‑linked exchange‑traded products. It is designed as an actively managed vehicle that seeks to provide income while limiting volatility. The filing signals a deeper entry of a major traditional finance institution into the Bitcoin market, which could broaden institutional access to crypto‑based income strategies.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/goldman-sachs-files-for-bitcoin-income-etf-using-options-strategy" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">XRP Ledger adds zero-knowledge proofs targeting institutional privacy gap</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/e0a4b96ebd375ab0f42d0d43ad1e18c91248ae1b-2560x1707.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="XRP Ledger adds zero-knowledge proofs targeting institutional privacy gap" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 7/10</div>
+      <p class="story-summary">The XRP Ledger has integrated the Boundless zero‑knowledge proving network, adding native ZK‑proof verification. This enables private transactions while remaining compliant with existing regulations. The upgrade is aimed at institutional users who require confidentiality for transaction size, counterparties and treasury positions. It may also enhance the ledger’s resilience against future quantum threats.</p>
+      <a class="story-link" href="https://www.coindesk.com/tech/2026/04/14/xrp-ledger-adds-zero-knowledge-proofs-targeting-institutional-privacy-gap" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">JPMorgan CFO warns stablecoins risk becoming ‘regulatory arbitrage’ play</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/e243de56d7a6ada40bc8a9216ff4500c40ad6920-5334x3556.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="JPMorgan CFO warns stablecoins risk becoming ‘regulatory arbitrage’ play" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Stablecoins &bull; Score: 7/10</div>
+      <p class="story-summary">JPMorgan CFO Jeremy Barnum warned that stablecoins could become a tool for regulatory arbitrage if they are not subject to the same oversight as bank deposits. The bank is urging U.S. regulators to issue clearer rules for digital assets to mitigate that risk. JPMorgan also points to its own blockchain initiatives, such as JPM Coin, as part of its broader digital‑asset strategy.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/04/14/jpmorgan-cfo-warns-stablecoins-risk-becoming-regulatory-arbitrage-play" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Paxos Labs Raises $12M to Launch Crypto Yield and Lending Platform</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261557-paxos-labs-raises-12m-to-launch-platform-for-turning-digital-assets-into-financi.jpg" alt="Paxos Labs Raises $12M to Launch Crypto Yield and Lending Platform" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; DeFi &bull; Score: 6/10</div>
+      <p class="story-summary">Paxos Labs disclosed a $12 million fundraising round aimed at creating a crypto yield and lending platform. The funding will be allocated to develop services that enable users to generate yields on crypto holdings and secure loans backed by those assets. By adding these DeFi capabilities, Paxos seeks to broaden its market presence and offer institutional investors new avenues for crypto asset utilization.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/paxos-labs-raises-12m-to-launch-platform-for-turning-digital-assets-into-financial-products" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">DAO Behind CoW Swap Urges Users to Stay off Platform after ‘Hijacking‘</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261537-cow-swap-dao-domain-hijacking.jpg" alt="DAO Behind CoW Swap Urges Users to Stay off Platform after ‘Hijacking‘" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Security &bull; Score: 6/10</div>
+      <p class="story-summary">The decentralized autonomous organization that governs the CoW Swap protocol has issued an advisory urging users to refrain from accessing the platform. The warning follows a reported hijacking that may have compromised the protocol’s smart‑contract logic. The DAO cautions that user funds could be exposed to loss while the incident is investigated. Institutional investors should monitor the situation closely as the outcome could affect liquidity and risk exposure across the broader DeFi ecosystem.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/cow-swap-dao-domain-hijacking" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Aave founder declares 'zero room for friction' as DAO orgs accuse his firm of grabbing power</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776180879611-asset.webp" alt="Aave founder declares 'zero room for friction' as DAO orgs accuse his firm of grabbing power" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; DeFi &bull; Score: 6/10</div>
+      <p class="story-summary">The Aave DAO approved a $25 million stablecoin and a 75,000 AAVE token allocation to Aave Labs, giving the lab full rights to revenue from Aave‑branded products for the DAO treasury. The founder of Aave emphasized a “zero room for friction” stance while three long‑standing DAO service providers, including the Aave Chan Initiative, announced they will exit the DAO. The departures underscore institutional concerns about growing centralisation of power and revenue flow within the Aave ecosystem.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/aave-dao-members-accuse-stani-kulechov-of-power-grab/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Russian central bank wants all crypto traders to undergo identity verification checks</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776161793098-asset.webp" alt="Russian central bank wants all crypto traders to undergo identity verification checks" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">The Russian central bank has ordered all domestic cryptocurrency exchanges to introduce know‑your‑customer procedures for users. It also requires Russian residents to report any crypto assets held abroad. In addition, the regulator will bar transfers from custodial wallets located in Russia to non‑custodial wallets outside the country. The measures are part of a broader crypto regulatory package that is slated to become operational in July and signal tighter oversight that could affect institutional investment strategies in the region.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/the-kremlin-wants-to-know-who-is-trading-crypto-in-russia/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (15)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/iran-war-bitcoin-1million-bitwise-forecast/" target="_blank">Iran wants Bitcoin for Hormuz ransom. That will send Bitcoin price to $1m, says Bitwise</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Iran announced it will collect a $1‑per‑barrel toll for ships transiting the Strait of Hormuz payable in Bitcoin, markin...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/14/strategy-s-strc-sees-record-breaking-trading-day-may-surpass-that-on-tuesday" target="_blank">STRC trading surge drives record volume and signals largest bitcoin purchase since launch</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Strategy's STRC preferred security recorded a record $1.16 billion trading day, indicating an estimated purchase of 7,80...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/blackrock-bags-almost-dollar1bn-in-bitcoin-etf-inflows-strongest-starts-to-the-year-ever-says-larry-fink/" target="_blank">BlackRock bags almost $1bn in Bitcoin ETF inflows. ‘Strongest starts to the year’ ever, says Larry Fink</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">BlackRock’s Bitcoin exchange‑traded funds pulled in $935 million of net inflows in Q1 2026 and $32 billion over the past...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/bitcoin-rises-to-dollar74000-as-traders-call-trumps-bluff-on-iran/" target="_blank">Bitcoin rises to $74,000 as traders call Trump’s bluff on Iran</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin surged to a four‑week high near $75,000 as traders bet that President Trump will not escalate tensions with Iran...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/crypto-exchange-prediction-markets-high-roller" target="_blank">Crypto.com gets into Prediction Markets through High Roller</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; DeFi</div>
+        <div class="watch-summary">Crypto.com announced a partnership with High Roller to launch prediction‑market products on its platform, marking the ex...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/why-robinhood-shares-are-seen-to-double/" target="_blank">Why Robinhood shares are seen to double</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Investment</div>
+        <div class="watch-summary">Bernstein analysts project Robinhood's share price could double to around $130 by the end of 2026, driven by rapid growt...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/south-korea-coinone-suspension-aml-fine" target="_blank">South Korea Orders Suspension, Fine for Crypto Exchange Coinone</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">South Korean regulators ordered the suspension of crypto exchange Coinone’s operations and imposed a fine. The enforceme...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/banks-criticize-white-house-report-favoring-stablecoin-yield-clarity-act" target="_blank">Banks Criticize White House Report Favoring Stablecoin Yield</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">U.S. banks, represented by the American Bankers Association, are pushing back against a White House report that favors s...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/bitcoin-75k-iran-deal-hopes-spark-rally" target="_blank">Crypto Surges Iran Deal Hope Hits Market</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">Reports of a possible deal that could allow cryptocurrency activity in Iran have sparked optimism across the market. Pri...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://reports.tiger-research.com/p/citrea-peter-thiels-one-move-on-bitcoin-kor" target="_blank">시트레아(Citrea), 피터 틸이 고른 비트코인 L2 한 수</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Tiger Research &bull; Layer2</div>
+        <div class="watch-summary">Citrea, a Bitcoin layer‑2 solution that combines ZK proofs with BitVM, has secured investment from Peter Thiel’s Founder...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/14/why-cantor-fitzgerald-thinks-robinhood-and-coinbase-are-the-best-ways-to-play-the-prediction-market-boom" target="_blank">Coinbase (COIN) and Robinhood (HOOD) best positioned in prediction market space, says Cantor</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Enterprise</div>
+        <div class="watch-summary">Cantor Fitzgerald’s new report argues that Robinhood and Coinbase are best positioned to capture the fast‑growing predic...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/podcasts/galaxy-grid/bitcoin-in-hormuz-anthropic-s-mythos-and-aave-risk-manager-walks" target="_blank">Bitcoin in Hormuz, Anthropic's Mythos, and Aave Risk Manager Walks</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; DeFi</div>
+        <div class="watch-summary">The episode discusses three topics: unverified rumors that Iran is demanding Bitcoin for tanker passage through the Stra...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://reports.tiger-research.com/p/citrea-peter-thiels-one-move-on-bitcoin-eng" target="_blank">Citrea: Peter Thiel’s One Move on Bitcoin L2</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Tiger Research &bull; Layer2</div>
+        <div class="watch-summary">Founders Fund, the venture firm co‑founded by Peter Thiel, has invested in Citrea, a Bitcoin Layer‑2 that uses zero‑know...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-14/banks-aren-t-worried-about-private-credit" target="_blank">Banks Aren’t Worried About Private Credit</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">Bloomberg reports that major banks remain unconcerned about the growth of private‑credit markets, suggesting they view t...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.newcomer.co/p/at-shield-ai-a-young-product-guru" target="_blank">At Shield AI, a Young Product Guru Fights for God &amp; Country</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Newcomer &bull; Other</div>
+        <div class="watch-summary">The article profiles Armor Harris, a senior vice president at defense‑tech startup Shield AI, discussing his personal mo...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (12)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/analysts-still-see-final-flush-to-50k-despite-current-market-hopium" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Bears See $50K Before Any Recovery</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚖️ Regulation <span class="res-cat-count">5</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/regulation/irs-turns-up-heat-on-crypto-ahead-of-april-15-tax-deadline-what-to-know/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">IRS turns up heat on crypto ahead of April 15 tax deadline. Here’s what you need to know before filing</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/former-cftc-chair-giancarlo-leaves-law-focus-on-crypto-advisory" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Former CFTC Chair to Focus on Crypto Advisory Work</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/uk-lib-dems-fca-probe-farage-stack-btc" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Lib Dems Urge FCA Probe into Farage Over Stack BTC Bitcoin Promotion</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://www.dlnews.com/articles/regulation/investigators-find-crypto-mining-farms-disguised-chicken-coops/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Investigators find scores of crypto mining farms disguised as chicken coops</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/doj-onecoin-compensation-victims-crypto-fraud" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">US Opens Compensation Claims for OneCoin Victims</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">📈 Investment <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/markets/xrp-consolidation-may-transform-into-explosive-rally-if-dollar1-40-is-topped-data" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">XRP Targets 2026 Highs After Binance Flows Flash Bull Market Signal</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">💵 Stablecoins <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/regulation/banks-bash-white-house-stablecoin-report-amid-clarity-act-row/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">White House economists say stablecoin yields are fine. Banks are having none of it</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔧 Infrastructure <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/foundry-digital-launched-zcash-mining-pool" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Foundry Digital Launches Zcash Mining Pool</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚡ Layer2 <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/defi/canton-network-ceo-addresses-criticism-from-crypto-ideologues/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Canton Network CEO hits back at ‘crypto ideologues’ who question his network’s blockchain credentials</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔒 Security <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/people-culture/crypto-wallet-firm-ledger-unveils-ai-roadmap/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Ledger now has a chief human agency officer to prove you’re not AI</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://www.dlnews.com/articles/markets/the-stars-attending-trump-memecoin-gala-lunch-on-april-25/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Who's joining Iron Mike at Trump’s crypto luncheon?</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, Europe’s crypto landscape is shifting at a remarkable pace. Deutsche Börse’s recent $200 million injection for a 1.5 percent stake in Payward, the parent of Kraken, underscores a growing confidence from traditional finance. By weaving Kraken’s trading, custody and tokenised‑asset services into platforms such as 360T and 360X, the partnership is creating a bridge that could accelerate institutional adoption across the continent. The deal values Kraken at roughly $13.3 billion and, pending regulatory sign‑off, will broaden the reach of institutional‑grade solutions throughout Europe. At the same time, the sector faces heightened security challenges. A sophisticated social‑engineering campaign linked to North Korean actors siphoned $285 million from Solana’s Drift Protocol, reminding us that high‑value DeFi applications are prime targets for nation‑state actors. Adding to the risk horizon, experts warn that advances in quantum computing could eventually erode the cryptographic foundations that protect blockchain networks. Regulatory evolution may also reshape capital flows. A pending Department of Labor proposal that would allow 401(k) assets to be allocated to crypto investments could unlock trillions of dollars of retirement capital, dramatically expanding the pool of long‑term investors. How do you see these institutional moves, security threats, and potential policy changes influencing the next wave of innovation in Web3? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/deals/deutsche-borse-takes-buys-200-million-in-kraken/">Deutsche Börse invests $200m in crypto exchange Kraken</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.galaxy.com/insights/podcasts/galaxy-grid/dprk-spies-quantum-risk-and-the-401-k-play">DPRK Spies, Quantum Risk, and the 401(k) Play</a> <span class="other-source">(Galaxy)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/business/2026/04/14/deutsche-boerse-takes-1-5-stake-in-crypto-exchange-kraken-for-usd200-million">Deutsche Börse (DB1) buys 1.5% of crypto exchange Kraken for $200 million</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.dlnews.com/articles/regulation/onecoin-fraud-victims-can-now-claim-back-money/">Feds announce crypto scam OneCoin compensation plan. But small investors may suffer</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.dlnews.com/articles/markets/goldman-sachs-to-offer-low-risk-low-reward-bitcoin-etf/">Goldman Sachs to offer low-risk, low-reward Bitcoin ETF</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/news/goldman-sachs-files-for-bitcoin-income-etf-using-options-strategy">Goldman Sachs Targets Income with New Bitcoin ETF Filing</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/tech/2026/04/14/xrp-ledger-adds-zero-knowledge-proofs-targeting-institutional-privacy-gap">XRP Ledger adds zero-knowledge proofs targeting institutional privacy gap</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.coindesk.com/business/2026/04/14/jpmorgan-cfo-warns-stablecoins-risk-becoming-regulatory-arbitrage-play">JPMorgan CFO warns stablecoins risk becoming ‘regulatory arbitrage’ play</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://cointelegraph.com/news/paxos-labs-raises-12m-to-launch-platform-for-turning-digital-assets-into-financial-products">Paxos Labs Raises $12M to Launch Crypto Yield and Lending Platform</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://cointelegraph.com/news/cow-swap-dao-domain-hijacking">DAO Behind CoW Swap Urges Users to Stay off Platform after ‘Hijacking‘</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[11]</span> <a href="https://www.dlnews.com/articles/defi/aave-dao-members-accuse-stani-kulechov-of-power-grab/">Aave founder declares 'zero room for friction' as DAO orgs accuse his firm of grabbing power</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[12]</span> <a href="https://www.dlnews.com/articles/regulation/the-kremlin-wants-to-know-who-is-trading-crypto-in-russia/">Russian central bank wants all crypto traders to undergo identity verification checks</a> <span class="other-source">(DL News)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

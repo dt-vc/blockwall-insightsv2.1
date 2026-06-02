@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 31, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 31, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">1</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">3</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">2</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Bitcoin large block sale indicates potential liquidity pressure, discount suggests investor exit, not hedge unwind</li>
+        <li>DeFi Q1 exploits and outflows highlight heightened risk, Aave faces significant capital withdrawals</li>
+        <li>Stellar chosen by DTCC for tokenized securities settlement, unlocking on‑chain Treasury and index issuance</li>
+        <li>Coinbase launches INR rails via IMPS, removing P2P friction and positioning for India’s $3bn market</li>
+        <li>House Financial Services Committee prioritizes tokenization, likely accelerating bipartisan legislation and regulatory clarity</li>
+        <li>Q1 VC funding halves to $4bn, with trading and lending startups still attracting majority capital</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, today we see a $1.26 bn BlackRock Bitcoin trust exit, a surge in DeFi exploit fallout prompting tighter risk controls, and the U.S. House turning its spotlight on tokenized securities. Meanwhile, Coinbase’s India launch and Stellar’s DTCC partnership underscore global expansion.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (9)</h2>
+    <div class="story">
+      <h2 class="story-title">Bitcoin News: A massive $1.26 billion sale of BlackRock’s IBIT was likely a rapid exit by a large investor, NYDIG says</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/7d8da4a19eaa50a97cdd695e2cd25d78327c5b9d-1920x1325.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Bitcoin News: A massive $1.26 billion sale of BlackRock’s IBIT was likely a rapid exit by a large investor, NYDIG says" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 9/10</div>
+      <p class="story-summary">A block sale of $1.26 billion of BlackRock’s iShares Bitcoin Trust (IBIT) shares was executed at a 2.3 percent discount. NYDIG interprets the transaction as a rapid exit by a large investor rather than a basis‑trade unwind. The analysis notes the seller prioritized speed and that there was no matching activity in CME Bitcoin futures, which reduces the likelihood of hedge‑fund speculation and signals potential market impact for institutional participants.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/31/a-massive-usd1-26-billion-sale-of-blackrock-s-ibit-was-likely-a-rapid-exit-by-a-large-investor" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">The State of Crypto Leverage â Q1 2026: DeFi Exploits, Price Declines, and Capital Flight</h2>
+      <img class="story-img" src="https://images.ctfassets.net/h62aj7eo1csj/1HIxipGlbJDrjW0i6eGGTg/c23e3df0a834e1da26d9e0956df71f42/General-Linear-3_Yellow-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive" alt="The State of Crypto Leverage â Q1 2026: DeFi Exploits, Price Declines, and Capital Flight" onerror="this.style.display='none'">
+      <div class="story-meta">Galaxy &bull; DeFi &bull; Score: 9/10</div>
+      <p class="story-summary">In the first quarter of 2026 major DeFi lending platforms experienced significant exploits, with Drift losing $285 million and LayerZero and KelpDAO together suffering a $290 million loss. The attacks prompted large outflows from Aave as investors withdrew liquidity. Centralized finance (CeFi) lenders, however, maintained loan book balances above previous levels despite steep declines in cryptocurrency prices. The combined events have heightened regulatory and investor scrutiny of leverage risk and are driving calls for more robust risk‑management frameworks.</p>
+      <a class="story-link" href="https://www.galaxy.com/insights/research/crypto-lending-leverage-q1-2026" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">How Stellar (XLM) became part of DTCC's plan to bring securities onchain</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/c483d1bbc6feaf8de534a3ff1a80e953f61c0893-2500x1890.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="How Stellar (XLM) became part of DTCC's plan to bring securities onchain" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 8/10</div>
+      <p class="story-summary">DTCC has chosen the Stellar public blockchain as the technical foundation for its forthcoming tokenized securities settlement platform. This decision builds on a partnership that began a decade ago with Securrency, now operating as DTCC Digital Assets. By embedding compliance mechanisms such as clawbacks and transfer restrictions directly into Stellar, the platform will meet regulatory requirements for on‑chain transactions. The solution is intended to support the issuance and settlement of traditional assets including U.S. Treasuries and index products, offering institutional investors a blockchain‑based settlement infrastructure.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/31/how-stellar-became-part-of-dtcc-s-tokenization-push-for-wall-street-securities-onchain" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Coinbase makes a major play for India’s booming $3 billion crypto market with local currency launch</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/51d936a75a196d53e2b331064e17b53e0b075f4c-728x423.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Coinbase makes a major play for India’s booming $3 billion crypto market with local currency launch" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Payments &bull; Score: 7/10</div>
+      <p class="story-summary">Coinbase is entering India’s rapidly expanding crypto market, which is estimated at $3 billion. The exchange will enable direct Indian‑rupee deposits and withdrawals through the Immediate Payment Service starting June 1, 2026, eliminating the need for peer‑to‑peer or third‑party channels. It will also launch spot and perpetual futures products backed by local liquidity. Registration with the Financial Intelligence Unit underscores Coinbase’s intention to maintain a long‑term regulated presence in the region.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/31/coinbase-makes-a-major-play-for-india-s-booming-usd3-billion-crypto-market-with-local-currency-launch" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">How the House Financial Services Committee is taking on tokenization: State of Crypto</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/eac9bf664ee92165f460fad8ca22eacdc2abd2d2-6000x3376.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="How the House Financial Services Committee is taking on tokenization: State of Crypto" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 6/10</div>
+      <p class="story-summary">The House Financial Services Committee, led by Chair French Hill, announced that tokenization will become its next major legislative focus. This shift follows the committee’s recent work on stablecoins and broader market‑structure reforms. The panel has already advanced bipartisan proposals such as the GENIUS Act and the Clarity Act, which aim to provide regulatory clarity for digital assets. Hill indicated that the Senate is expected to adopt many of the House’s provisions, suggesting a coordinated congressional effort that could shape the regulatory landscape for tokenized assets.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/31/how-the-house-financial-services-committee-is-taking-on-tokenization-state-of-crypto" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Dev helps rescue $2 million locked in 2016 ICO contract for nine years with whitehat exploit</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop" alt="Dev helps rescue $2 million locked in 2016 ICO contract for nine years with whitehat exploit" onerror="this.style.display='none'">
+      <div class="story-meta">The Block &bull; Security &bull; Score: 5/10</div>
+      <p class="story-summary">Security researcher Florent used a white‑hat exploit to free roughly 1,003 ETH, valued at about $2 million, that had been locked in the HongCoin ICO contract since 2016. The funds remained inaccessible for nine years because an overflow bug in the contract’s admin mint function prevented withdrawals. By identifying and safely triggering the overflow, Florent enabled the HongCoin multisig team to release the assets. Two investors have already reclaimed a portion of the recovered ETH, highlighting the potential for similar recoveries in legacy token sales.</p>
+      <a class="story-link" href="https://www.theblock.co/post/403126/dev-helps-rescue-2-million-locked-in-2016-ico-contract-for-nine-years-with-whitehat-exploit" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto and Blockchain Venture Capital â Q1 2026</h2>
+      <img class="story-img" src="https://images.ctfassets.net/h62aj7eo1csj/3ULsX4AOUjvTlx6PFDB8Fy/d5ff05be5a6a5a5ebe99627ea9e44704/Crypto___Blockchain_Venture_Capital_-_Q1_2026__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive" alt="Crypto and Blockchain Venture Capital â Q1 2026" onerror="this.style.display='none'">
+      <div class="story-meta">Galaxy &bull; Investment &bull; Score: 5/10</div>
+      <p class="story-summary">In Q1 2026 crypto venture capital funding fell to about $4 billion across 355 deals. This represents roughly half of the pace seen in the prior quarter and reflects a sharp decline in mega‑round investments. Capital was concentrated in trading, exchange, investing and lending startups. U.S. firms continued to command the largest share of the funding, underscoring the region’s dominant position in the sector.</p>
+      <a class="story-link" href="https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">HOME - HOME - AMBCrypto</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop" alt="HOME - HOME - AMBCrypto" onerror="this.style.display='none'">
+      <div class="story-meta">AMBCrypto &bull; DeFi &bull; Score: 3/10</div>
+      <p class="story-summary">HOME markets itself as an “Everything App” for decentralized finance, integrating cross‑chain swaps, yield farming and perpetual trading while enabling gas‑less, self‑custody transactions. The platform’s native token is currently priced near $0.046 and carries a market capitalization of approximately $178 million. Institutional investors may view the recent strong price gains as an indicator of growing user adoption and potential liquidity for DeFi strategies.</p>
+      <a class="story-link" href="https://ambcrypto.com/coins/home/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Attention Required! | Cloudflare</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop" alt="Attention Required! | Cloudflare" onerror="this.style.display='none'">
+      <div class="story-meta">The Block &bull; Security &bull; Score: 1/10</div>
+      <p class="story-summary">Cloudflare has placed a security block on the requested webpage, preventing access for visitors. The block page outlines typical triggers such as suspicious traffic patterns or potential abuse that can activate Cloudflare’s protective measures. It advises affected users to contact the site owner to resolve the issue, underscoring the need for uninterrupted site access for business operations.</p>
+      <a class="story-link" href="https://www.theblock.co/post/403124/sui-traces-three-mainnet-halts-to-upgrade-bugs-including-a-fix-it-knew-carried-halt-risk" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (1)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.theblock.co/post/403122/cardano-foundation-cancels-2026-summit-after-treasury-funding-vote-falls-just-short" target="_blank">Cardano Foundation cancels 2026 summit after treasury funding vote falls just short</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> The Block &bull; Other</div>
+        <div class="watch-summary">The Cardano Foundation announced the cancellation of its planned 2026 summit after a treasury funding vote failed to sec...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The crypto landscape is sending clear signals that institutional appetite is evolving. Yesterday a block sale of $1.26 billion of BlackRock’s iShares Bitcoin Trust shares hit the market at a 2.3 percent discount. NYDIG reads this as a rapid exit by a large holder rather than a hedge‑fund unwind, and the lack of matching activity in CME Bitcoin futures suggests a genuine shift in institutional positioning. At the same time, the first quarter of 2026 reminded us that leverage remains a double‑edged sword. DeFi platforms such as Drift, LayerZero and KelpDAO suffered combined losses of more than $570 million, prompting massive outflows from Aave. Yet CeFi lenders have kept loan books above prior levels despite steep price drops, highlighting the resilience of regulated credit channels and the growing demand for stronger risk‑management frameworks. Finally, the partnership between DTCC Digital Assets and Stellar marks a milestone for on‑chain securities. By embedding clawbacks and transfer restrictions directly into Stellar, DTCC aims to settle tokenized U.S. Treasuries and index products on a blockchain that meets regulatory standards. This move could unlock a new wave of institutional participation in crypto‑driven finance. At Blockwall we see these developments as both a challenge and an opportunity. How will you position your projects to benefit from the convergence of institutional capital, robust risk controls, and on‑chain settlement solutions? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/markets/2026/05/31/a-massive-usd1-26-billion-sale-of-blackrock-s-ibit-was-likely-a-rapid-exit-by-a-large-investor">Bitcoin News: A massive $1.26 billion sale of BlackRock’s IBIT was likely a rapid exit by a large investor, NYDIG says</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.galaxy.com/insights/research/crypto-lending-leverage-q1-2026">The State of Crypto Leverage â Q1 2026: DeFi Exploits, Price Declines, and Capital Flight</a> <span class="other-source">(Galaxy)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/business/2026/05/31/how-stellar-became-part-of-dtcc-s-tokenization-push-for-wall-street-securities-onchain">How Stellar (XLM) became part of DTCC's plan to bring securities onchain</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/markets/2026/05/31/coinbase-makes-a-major-play-for-india-s-booming-usd3-billion-crypto-market-with-local-currency-launch">Coinbase makes a major play for India’s booming $3 billion crypto market with local currency launch</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/policy/2026/05/31/how-the-house-financial-services-committee-is-taking-on-tokenization-state-of-crypto">How the House Financial Services Committee is taking on tokenization: State of Crypto</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.theblock.co/post/403126/dev-helps-rescue-2-million-locked-in-2016-ico-contract-for-nine-years-with-whitehat-exploit">Dev helps rescue $2 million locked in 2016 ICO contract for nine years with whitehat exploit</a> <span class="other-source">(The Block)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026">Crypto and Blockchain Venture Capital â Q1 2026</a> <span class="other-source">(Galaxy)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://ambcrypto.com/coins/home/">HOME - HOME - AMBCrypto</a> <span class="other-source">(AMBCrypto)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.theblock.co/post/403124/sui-traces-three-mainnet-halts-to-upgrade-bugs-including-a-fix-it-knew-carried-halt-risk">Attention Required! | Cloudflare</a> <span class="other-source">(The Block)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

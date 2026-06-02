@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 6, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 6, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">8</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">2</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">8</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">1</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Bullish acquisition of Equiniti gives tokenization infrastructure, could accelerate tokenized securities market</li>
+        <li>JPMorgan's shift to crypto mortgages signals mainstream banking acceptance, boosting demand for low‑cost mining firms</li>
+        <li>Turnkey's $12.5 m raise underscores investor appetite for verifiable cloud platforms serving stable‑coin and DeFi workloads</li>
+        <li>Morgan Stanley's spot crypto pilot at 0.5% fee pressures rivals and could drive retail BTC ETF inflows</li>
+        <li>BlackRock's BUIDL token reaching $2.63 b on‑chain cements its role as core reserve for DeFi dollar products</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, tokenization is accelerating with Bullish’s Equiniti deal and BlackRock’s BUIDL reserves while Bitcoin surged past $81k as MicroStrategy eyes a partial sale. Infrastructure also heats up as Turnkey raises fresh capital and AI agents launch autonomous firms.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (8)</h2>
+    <div class="story">
+      <h2 class="story-title">Bullish’s Equiniti deal could remake it into a tokenization powerhouse, analysts say</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop" alt="Bullish’s Equiniti deal could remake it into a tokenization powerhouse, analysts say" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 8/10</div>
+      <p class="story-summary">Bullish has announced a $4.2 billion acquisition of transfer‑agent Equiniti. The transaction gives Bullish direct access to issuer records and a regulated framework for securities issuance. Analysts say the combined capabilities will enable Bullish to build a tokenization infrastructure platform for equities. This positions the firm to compete in the emerging market for tokenized securities and could make it a leading provider of tokenization services for institutional investors.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/06/bullish-s-equiniti-deal-could-remake-it-into-a-tokenization-powerhouse-analysts-say" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Eric Trump takes shot at JPMorgan rethinking bitcoin after 'crapping' on asset</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Eric Trump takes shot at JPMorgan rethinking bitcoin after 'crapping' on asset" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Eric Trump, co‑founder of the mining firm American Bitcoin, criticized JPMorgan for changing its stance on bitcoin after previously dismissing the asset. He noted that the bank now offers mortgages that are backed by bitcoin, indicating a shift toward acceptance. JPMorgan CEO Jamie Dimon, who was once a vocal critic of the cryptocurrency, is now publicly supporting blockchain technology and tokenization. American Bitcoin claims it can mine bitcoin at roughly 50 cents on the dollar, positioning the company as the lowest‑cost producer and potentially influencing institutional demand.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/06/eric-trump-takes-shot-at-jpmorgan-rethinking-bitcoin-after-crapping-on-asset" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Turnkey raises $12.5 million in round backed by Circle Ventures and Sequoia Capital</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop" alt="Turnkey raises $12.5 million in round backed by Circle Ventures and Sequoia Capital" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">Turnkey announced a $12.5 million strategic funding round led by Circle Ventures, Sequoia Capital and other investors, taking its total capital raised to over $65 million. The proceeds will fund development and launch of Turnkey Verifiable Cloud, a secure verifiable computing platform designed for digital‑asset workloads. The investment highlights expanding institutional appetite for crypto infrastructure and stable‑coin‑related services.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/06/turnkey-raises-usd12-5-million-in-round-backed-by-circle-ventures-and-sequoia-capital" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Morgan Stanley</h2>
+      <img class="story-img" src="https://cdn.bankless.com/openGraph/morgan-stanley-s-e-trade-commences-crypto-trading-pilot-1778097129.png" alt="Morgan Stanley" onerror="this.style.display='none'">
+      <div class="story-meta">Bankless &bull; Enterprise &bull; Score: 6/10</div>
+      <p class="story-summary">Morgan Stanley has launched a pilot spot crypto trading service on its E*TRADE platform, extending direct digital‑asset access to its 8.6 million retail clients. The offering is priced at a 0.5 % transaction fee, positioning it below competitors such as Charles Schwab and providing a fee‑free alternative to BlackRock’s IBIT product. The initiative aligns with the firm’s recent rollout of a spot Bitcoin ETF, which has already attracted $211 million of inflows.</p>
+      <a class="story-link" href="https://www.bankless.com/read/news/morgan-stanleys-e-trade-commences-crypto-trading-pilot" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">블랙록(BlackRock)의 BUIDL, $2.63B의 온체인 기초 자산이 되다</h2>
+      <img class="story-img" src="https://substackcdn.com/image/fetch/$s_!Oz0j!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F196650315%2F771b4f81-3de2-49a4-8443-688f02ce5a58%2Ftranscoded-1778070239.png" alt="블랙록(BlackRock)의 BUIDL, $2.63B의 온체인 기초 자산이 되다" onerror="this.style.display='none'">
+      <div class="story-meta">Tiger Research &bull; Tokenization &bull; Score: 6/10</div>
+      <p class="story-summary">BlackRock's BUIDL token now controls $2.63 billion of on‑chain assets. The token has moved from being limited to institutional investors to serving as a core reserve asset across several decentralized finance protocols. Platforms such as Ethena, Ondo and Frax have integrated BUIDL because it provides a clear legal claim, regulatory compliance and on‑chain composability. This adoption enables tokenized institutional capital to be used in decentralized dollar‑denominated products, expanding the bridge between traditional finance and DeFi.</p>
+      <a class="story-link" href="https://reports.tiger-research.com/p/blackrock-buidl-263b-on-chain-reserve-kor" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">BlackRock BUIDL: $2.63B On-Chain Reserve Asset</h2>
+      <img class="story-img" src="https://substackcdn.com/image/fetch/$s_!kaC4!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb777231-a03e-44e8-8810-c731e5b783a1_1920x1080.png" alt="BlackRock BUIDL: $2.63B On-Chain Reserve Asset" onerror="this.style.display='none'">
+      <div class="story-meta">Tiger Research &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">BlackRock's BUIDL token now holds roughly $2.63 billion in on‑chain assets, making it a sizable reserve for the crypto ecosystem. Although initially created for qualified institutional investors, the token is being integrated by DeFi protocols including Ethena, Ondo, Frax and Spark as a core reserve asset. Its legal clarity, regulatory compliance and on‑chain composability provide a new distribution channel for tokenized assets, effectively turning an institutional product into infrastructure for decentralized dollar products.</p>
+      <a class="story-link" href="https://reports.tiger-research.com/p/blackrock-buidl-263b-on-chain-reserve-eng" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin tops $81,000 as Strategy mulls selling BTC to fund dividend obligations</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Bitcoin tops $81,000 as Strategy mulls selling BTC to fund dividend obligations" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin broke the $81,000 level, driven by a broad risk‑on rally. MicroStrategy indicated it may sell a portion of its 818,334‑bitcoin portfolio to meet its $1.5 billion annual dividend commitment. The potential liquidation caused MicroStrategy’s shares to fall 4 percent. This marks the first time the publicly traded firm has signaled a sale of its bitcoin holdings, highlighting the intersection of corporate finance and cryptocurrency exposure for institutional investors.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/06/bitcoin-tops-usd81-000-as-strategy-mulls-selling-its-btc-to-fund-dividend-obligations" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">The Protocol: AI Agents form their own firm</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop" alt="The Protocol: AI Agents form their own firm" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 5/10</div>
+      <p class="story-summary">ClawBank’s Manfred AI agent became the first autonomous entity to legally incorporate a company in the United States, obtaining an employer identification number, an FDIC‑insured bank account and a crypto wallet. This milestone demonstrates that AI‑driven financial agents can meet regulatory requirements for corporate formation and banking access, opening a new frontier for automated asset management. The development occurs alongside Solana’s upcoming Alpenglow upgrade and Ripple’s threat‑intel sharing initiative, underscoring broader shifts in the crypto ecosystem toward advanced technology integration.</p>
+      <a class="story-link" href="https://www.coindesk.com/tech/2026/05/06/the-protocol-ai-agents-form-their-own-firm" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (2)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/business/2026/05/06/ai-agents-will-become-more-relevant-than-humans-by-2035-says-charles-hoskinson" target="_blank">AI agents becoming more relevant than humans by 2035 has Big Tech 'terrified', says Hoskinson</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Enterprise</div>
+        <div class="watch-summary">Cardano founder Charles Hoskinson warned that AI agents will eclipse human users online by 2035, undermining ad‑driven m...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-05-06/chatgpt-can-t-pick-the-stocks" target="_blank">ChatGPT Can’t Pick the Stocks</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">Bloomberg’s opinion piece argues that ChatGPT is not effective at selecting stocks, highlighting limitations of AI in in...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, Bullish’s recent $4.2 billion acquisition of Equiniti marks a turning point for tokenized securities. By gaining direct access to issuer records and a regulated issuance framework, Bullish can build a full‑stack tokenization platform for equities. Analysts see this as a move that could place Bullish at the forefront of institutional tokenization services across Europe and beyond. At the same time, Eric Trump’s critique of JPMorgan’s shift on bitcoin highlights how quickly sentiment can change. The bank now offers mortgages backed by bitcoin and its CEO Jamie Dimon has moved from skeptic to public supporter of blockchain and tokenization. American Bitcoin’s claim of mining bitcoin at roughly fifty cents on the dollar adds a low‑cost supply dynamic that could fuel further institutional demand. In the infrastructure arena, Turnkey’s $12.5 million round led by Circle Ventures and Sequoia Capital underscores growing appetite for secure, verifiable cloud solutions. The new Turnkey Verifiable Cloud will power digital‑asset workloads and strengthen the stable‑coin ecosystem, a space where we see strong long‑term growth potential. These developments reinforce why Blockwall continues to back founders who are building the next layer of crypto finance. How do you see the convergence of tokenization, low‑cost mining, and verifiable cloud shaping the market in the next twelve months? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/markets/2026/05/06/bullish-s-equiniti-deal-could-remake-it-into-a-tokenization-powerhouse-analysts-say">Bullish’s Equiniti deal could remake it into a tokenization powerhouse, analysts say</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/policy/2026/05/06/eric-trump-takes-shot-at-jpmorgan-rethinking-bitcoin-after-crapping-on-asset">Eric Trump takes shot at JPMorgan rethinking bitcoin after 'crapping' on asset</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/business/2026/05/06/turnkey-raises-usd12-5-million-in-round-backed-by-circle-ventures-and-sequoia-capital">Turnkey raises $12.5 million in round backed by Circle Ventures and Sequoia Capital</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.bankless.com/read/news/morgan-stanleys-e-trade-commences-crypto-trading-pilot">Morgan Stanley</a> <span class="other-source">(Bankless)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://reports.tiger-research.com/p/blackrock-buidl-263b-on-chain-reserve-kor">블랙록(BlackRock)의 BUIDL, $2.63B의 온체인 기초 자산이 되다</a> <span class="other-source">(Tiger Research)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://reports.tiger-research.com/p/blackrock-buidl-263b-on-chain-reserve-eng">BlackRock BUIDL: $2.63B On-Chain Reserve Asset</a> <span class="other-source">(Tiger Research)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/markets/2026/05/06/bitcoin-tops-usd81-000-as-strategy-mulls-selling-its-btc-to-fund-dividend-obligations">Bitcoin tops $81,000 as Strategy mulls selling BTC to fund dividend obligations</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.coindesk.com/tech/2026/05/06/the-protocol-ai-agents-form-their-own-firm">The Protocol: AI Agents form their own firm</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

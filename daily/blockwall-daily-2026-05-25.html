@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 25, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 25, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">14</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">8</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">6</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">6</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">2</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Capital is rapidly shifting from Bitcoin and Ether ETFs into newer alt‑coin ETFs, notably HYPE, XRP, SOL</li>
+        <li>Nasdaq PHLX’s pending Bitcoin index options could lower hedging costs, attracting institutional and retail traders</li>
+        <li>NEAR’s cross‑chain Intents volume surpasses $19 bn, fueling a 15% token rally and upgrade anticipation</li>
+        <li>Ethereum Foundation plans to trim ETH holdings and token sales, emphasizing CROPS principles and governance decentralization</li>
+        <li>Regulatory pressure rises as Indonesia bans Polymarket, signaling broader Asian crackdown on crypto prediction markets</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, HYPE ETFs are siphoning billions from Bitcoin and Ether funds while Nasdaq readies cash‑settled Bitcoin options, and NEAR’s cross‑chain Intents drive a fresh 15% rally. Meanwhile, Hyperliquid expands into tokenized assets and Indonesia cracks down on prediction markets.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (8)</h2>
+    <div class="story">
+      <h2 class="story-title">HYPE funds attract millions as investors dump bitcoin and ether ETFs</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/8e8af44b57d72fd522a98e20bbffce3f34b6ee48-1920x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="HYPE funds attract millions as investors dump bitcoin and ether ETFs" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Investment &bull; Score: 7/10</div>
+      <p class="story-summary">Investors have withdrawn more than $1 billion from Bitcoin ETFs and $215 million from Ether funds, signaling a shift away from the flagship crypto products. The capital is being redeployed into newer alt‑coin offerings, including ETFs focused on HYPE, XRP and SOL. The HYPE token, launched by Bitwise and 21Shares, has drawn roughly $72 million of inflows and its price has risen 59% this month. Hyperliquid’s platform, which supports the HYPE token, is reporting higher fee revenue and has added a USDC integration, potentially enhancing liquidity for institutional participants.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/25/hype-funds-attract-millions-as-investors-dump-bitcoin-and-ether-etfs" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin options are coming to Nasdaq. Here's what it means for you</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/04f231dbc1b627628eb7b1afe3073540e1eb17e2-1690x751.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Bitcoin options are coming to Nasdaq. Here's what it means for you" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">The U.S. Securities and Exchange Commission has conditionally approved Nasdaq PHLX to list a new Bitcoin index option product under the ticker QBTC. The options will be cash‑settled and follow a European‑style exercise format, which means they settle in U.S. dollars rather than delivering the underlying cryptocurrency. Each contract represents one Bitcoin, a size chosen to make the product accessible to both institutional and retail market participants. By offering Bitcoin volatility hedging on the same exchange used for equities, the listing could integrate crypto exposure into traditional portfolio management workflows.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/25/bitcoin-options-are-coming-to-nadaq-here-s-what-it-means-for-you" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">NEAR price rally gains momentum as cross-chain product activity fuels further 15% jump</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/ac1bb8762b7799c9bae9ba0099d3d70637a23e04-4032x3024.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="NEAR price rally gains momentum as cross-chain product activity fuels further 15% jump" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">NEAR Protocol’s token surged 15% to $2.8, extending a month‑long rally that has nearly doubled its price. The rally is underpinned by strong activity on NEAR Intents, a cross‑chain system that has processed more than $19 billion in volume and generated $32 million in fees. Investors are also watching a forthcoming June upgrade that will introduce dynamic resharding to improve scalability and could further support price momentum.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/25/near-price-rally-gains-momentum-as-cross-chain-product-activity-fuels-further-15-jump" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Vitalik Buterin breaks silence about Ethereum Foundation amid community frustration</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/fc25947f1bdd54e21669cfeb4f95b3a58f436d2c-1500x919.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Vitalik Buterin breaks silence about Ethereum Foundation amid community frustration" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Ethereum &bull; Score: 6/10</div>
+      <p class="story-summary">Vitalik Buterin has publicly addressed community concerns by outlining a new strategic direction for the Ethereum Foundation. The Foundation will deliberately reduce its ETH holdings and scale back token sales while aligning its operations with the CROPS principles of censorship resistance, capture resistance, openness, privacy and security. Buterin also indicated that his personal role on the board will become less prominent as the board expands, positioning the Foundation as one of many nodes in a broader governance ecosystem, a shift that may affect token supply dynamics and governance risk for institutional investors.</p>
+      <a class="story-link" href="https://www.coindesk.com/web3/2026/05/25/buterin-says-ethereum-foundation-will-shrink-sell-less-eth-and-focus-on-crops" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Hyperliquid (HYPE) is emerging as a challenger to traditional exchanges and prediction markets, says FalconX</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/7abb923cd3f5036c351144b00a69fb04fe321e58-6000x4000.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Hyperliquid (HYPE) is emerging as a challenger to traditional exchanges and prediction markets, says FalconX" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">Hyperliquid is expanding its product suite beyond crypto perpetual futures to include pre‑IPO contracts, prediction markets and tokenized real‑world assets, positioning itself as a competitor to traditional exchanges such as CME and ICE. FalconX reports strong inflows into Hyperliquid’s new HIP‑3 and HIP‑4 markets, indicating growing institutional interest. The platform’s partnership with Coinbase and Circle to use USDC further supports its liquidity and could accelerate growth, making it a notable alternative for institutional traders seeking diversified crypto exposure.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/25/hyperliquid-is-emerging-as-a-challenger-to-traditional-exchanges-and-prediction-markets-says-falconx" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Indonesia blocks Polymarket, calling prediction market online gambling in disguise</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/9844127da67f21ba6f50fe327eadab4d6bebfa08-1920x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Indonesia blocks Polymarket, calling prediction market online gambling in disguise" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 5/10</div>
+      <p class="story-summary">Indonesia's Ministry of Communication and Digital Affairs has blocked access to Polymarket, a crypto‑based prediction market, labeling it illegal online gambling. The regulator's decision aligns with recent bans in India that target similar platforms. The move signals a broader Asian crackdown on prediction‑market services that allow wagering on real‑world events, a factor institutional investors should monitor for potential exposure risks.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/25/indonesia-blocks-polymarket-calling-prediction-market-online-gambling-in-disguise" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Prometheum says tokenized securities need Wall Street distribution to scale</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/254961a3adc7c5698b4ba47d0de96c8605400978-1920x1280.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Prometheum says tokenized securities need Wall Street distribution to scale" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 5/10</div>
+      <p class="story-summary">Prometheum has introduced an infrastructure that enables SEC‑registered broker‑dealers and registered investment advisers to provide tokenized securities within existing brokerage platforms. The company says that the primary barrier to widespread use of blockchain‑based securities is the lack of Wall Street distribution rather than the ability to issue the tokens. By linking tokenized assets to familiar brokerage accounts, the solution aims to give institutional investors a regulated, accessible pathway to trade digital securities at scale.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/25/prometheum-bets-wall-street-distribution-is-the-missing-link-for-tokenized-securities" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">What next as bitcoin (BTC) and Asian equities cheer oil price slide?</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/3df6f4ba6e8319031d4b0cfeff769be256ca23f1-2846x1076.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="What next as bitcoin (BTC) and Asian equities cheer oil price slide?" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin remained above $77,000, trading just above its 50‑day moving average after oil prices dropped more than 5% on reports of a possible reopening of the Strait of Hormuz. The decline in oil lifted Asian equity markets, creating a risk‑on environment that benefitted both commodities and digital assets. However, spot Bitcoin exchange‑traded fund investors withdrew more than $2 billion over the past two weeks, signaling caution among large‑scale participants. Analysts therefore view the current price stability as fragile and are monitoring whether the oil‑driven market optimism can sustain Bitcoin’s momentum.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/25/bitcoin-trades-above-usd77-000-as-oil-s-5-slide-pushes-asian-equities-higher" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (6)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://messari.io/newsletter/unqualified-opinions/unqualified-opinions-oil-perp-futures-coming-to-okx" target="_blank">Oil perp futures to launch on OKX, Binance battles back over Iran claims, Confidential payments launch on NEAR</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Messari News &bull; Infrastructure</div>
+        <div class="watch-summary">OKX announced the launch of regulated oil perpetual futures for non‑U.S. traders, while Binance pushed back against a Wa...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/05/25/bitcoin-crypto-prices-tick-up-as-us-iran-peace-deal-odds-climb" target="_blank">Bitcoin price today: Crypto ticks up as US-Iran peace deal odds climb</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin rose 1.6% to around $77,500 as prediction‑market odds for a U.S.–Iran peace deal climbed to 37% for the month. T...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/05/25/pce-jobless-claims-and-housing-data-test-fed-cut-hopes-crypto-week-ahead" target="_blank">PCE, jobless claims and housing data test Fed cut hopes: Crypto Week Ahead</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">The article outlines the macroeconomic calendar for the week of May 25‑June 1, highlighting U.S. inflation, jobless clai...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/european-sovereignty-is-not-corporate-welfare/" target="_blank">European sovereignty doesn't mean corporate welfare</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Sifted &bull; Regulation</div>
+        <div class="watch-summary">The article argues that Europe’s push for technological sovereignty should not turn into corporate welfare, warning that...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/the-most-active-legaltech-investors-in-europe/" target="_blank">The most active legaltech investors in Europe</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Sifted &bull; Investment</div>
+        <div class="watch-summary">The article, titled “The most active legaltech investors in Europe,” purports to discuss European legal‑tech investors b...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/ireland-irish-startups-to-watch-2026/" target="_blank">12 Irish startups to watch, according to VCs</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Sifted &bull; Other</div>
+        <div class="watch-summary">The article, titled “12 Irish startups to watch, according to VCs,” claims to highlight a selection of Irish tech startu...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, We are witnessing a clear reallocation of capital across the crypto ecosystem. More than $1 billion has left Bitcoin ETFs and $215 million has exited Ether funds, while newer alt‑coin vehicles are attracting fresh money. The HYPE token, launched by Bitwise and 21Shares, has already seen $72 million of inflows and a 59 percent price jump this month. Hyperliquid’s platform, the primary market for HYPE, reports higher fee revenue and a new USDC integration that should improve liquidity for institutional participants. At the same time, the U.S. regulator has given conditional approval for Nasdaq PHLX to list a Bitcoin index option under the ticker QBTC. The product will be cash‑settled in U.S. dollars and follows a European‑style exercise format. Each contract represents one Bitcoin, a size chosen to be accessible to both large funds and individual traders. By bringing Bitcoin volatility hedging to the same venue used for equities, the listing could embed crypto exposure directly into traditional portfolio management workflows. Finally, NEAR Protocol continues its impressive rally. The token rose 15 percent to $2.8, extending a month‑long surge that has almost doubled its price. The momentum is driven by NEAR Intents, a cross‑chain system that has processed over $19 billion in volume and generated $32 million in fees. A June upgrade that adds dynamic resharding promises even greater scalability and could fuel further price gains. What opportunities do you see emerging from these shifts for your next investment or product launch? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/markets/2026/05/25/hype-funds-attract-millions-as-investors-dump-bitcoin-and-ether-etfs">HYPE funds attract millions as investors dump bitcoin and ether ETFs</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/markets/2026/05/25/bitcoin-options-are-coming-to-nadaq-here-s-what-it-means-for-you">Bitcoin options are coming to Nasdaq. Here's what it means for you</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/markets/2026/05/25/near-price-rally-gains-momentum-as-cross-chain-product-activity-fuels-further-15-jump">NEAR price rally gains momentum as cross-chain product activity fuels further 15% jump</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/web3/2026/05/25/buterin-says-ethereum-foundation-will-shrink-sell-less-eth-and-focus-on-crops">Vitalik Buterin breaks silence about Ethereum Foundation amid community frustration</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/markets/2026/05/25/hyperliquid-is-emerging-as-a-challenger-to-traditional-exchanges-and-prediction-markets-says-falconx">Hyperliquid (HYPE) is emerging as a challenger to traditional exchanges and prediction markets, says FalconX</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.coindesk.com/policy/2026/05/25/indonesia-blocks-polymarket-calling-prediction-market-online-gambling-in-disguise">Indonesia blocks Polymarket, calling prediction market online gambling in disguise</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/business/2026/05/25/prometheum-bets-wall-street-distribution-is-the-missing-link-for-tokenized-securities">Prometheum says tokenized securities need Wall Street distribution to scale</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.coindesk.com/markets/2026/05/25/bitcoin-trades-above-usd77-000-as-oil-s-5-slide-pushes-asian-equities-higher">What next as bitcoin (BTC) and Asian equities cheer oil price slide?</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

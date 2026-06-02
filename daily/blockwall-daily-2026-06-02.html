@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - June 2, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">June 2, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">29</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">15</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">12</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">12</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Robinhood's $180M WonderFi acquisition adds 300k Canadian users, pushes funded customers &gt;1M, expands regulatory footprint</li>
+        <li>Mt. Gox moving 10,422 BTC (~$739M) to new wallet may increase sell pressure ahead of Oct 31 repayment deadline</li>
+        <li>Bitcoin sliding below $70k after Strategy's 32 BTC sale highlights lack of bullish catalysts and negative ETF inflows</li>
+        <li>Veda's BoringVault API integration with Privy democratizes non‑custodial yield infrastructure, opening new fintech revenue streams</li>
+        <li>MoneyGram's MGUSD on Stellar, backed by Stripe Bridge, positions it for rapid cross‑border digital‑dollar payments</li>
+        <li>CME's 24/7 futures launch sees $50M notional in first weekend, indicating institutional appetite for continuous crypto exposure</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, Robinhood’s $180 million WonderFi buy expands into Canada, Veda’s BoringVault API opens institutional DeFi tools to fintechs, and MoneyGram launches a Stellar‑backed stablecoin for digital‑dollar payments. At the same time, Mt. Gox’s huge BTC move and CME’s 24/7 futures keep market pressure high.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (9)</h2>
+    <div class="story">
+      <h2 class="story-title">Robinhood closes $180 million WonderFi acquisition, entering Canadian crypto market</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News_3-1200x675.jpg" alt="Robinhood closes $180 million WonderFi acquisition, entering Canadian crypto market" onerror="this.style.display='none'">
+      <div class="story-meta">The Block &bull; Enterprise &bull; Score: 9/10</div>
+      <p class="story-summary">Robinhood has completed a $180 million acquisition of WonderFi, a Toronto‑based crypto firm. The transaction gives Robinhood control of the Canadian regulated exchanges Bitbuy and Coinsquare. The addition of roughly 300,000 Canadian users lifts Robinhood’s funded customer base outside the United States to more than one million. This expansion broadens Robinhood’s international crypto footprint and positions the platform for growth in the Canadian market.</p>
+      <a class="story-link" href="https://www.theblock.co/post/403279/robinhood-closes-wonderfi-acquisition-canada" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Mt. Gox moves 10,422 bitcoin worth $739 million to a new wallet as deadline nears</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/2e2f4d0033938e24189ea3f19906bc804998644b-1440x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Mt. Gox moves 10,422 bitcoin worth $739 million to a new wallet as deadline nears" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">Mt. Gox transferred 10,422 bitcoin, valued at roughly $739 million, to a newly generated address. The transfer occurs ahead of the creditor repayment deadline of October 31 2026. This move follows previous administrative transfers made by the exchange’s trustee. Analysts note that moving such a large amount could increase selling pressure in a market where Bitcoin has recently slipped below $71,000.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/06/02/mt-gox-moves-10-422-bitcoin-worth-usd739-million-to-a-new-wallet-as-deadline-nears" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Veda brings the vault stack behind Kraken DeFi Earn to Privy</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2022/03/20220321_DAO-Generic-1200x675.jpg" alt="Veda brings the vault stack behind Kraken DeFi Earn to Privy" onerror="this.style.display='none'">
+      <div class="story-meta">The Block &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">Veda is making its non‑custodial BoringVault infrastructure available through a self‑serve API to the more than 2,000 developer teams that use Privy’s embedded wallet platform. The integration allows fintech startups to access the same vault stack that previously powered Kraken DeFi Earn and EtherFi. By turning a bespoke, institution‑only solution into a standardized product, Veda aims to broaden adoption of secure, composable DeFi earning tools across the broader crypto ecosystem.</p>
+      <a class="story-link" href="https://www.theblock.co/post/403277/veda-brings-the-vault-stack-behind-kraken-defi-earn-to-privys-2000-plus-developer-teams" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">What next for BTC prices as Bitcoin slides below $70,000 on Strategy's sale</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/bbcbfcc3c2b1d31c49856b8826ea03a38b150fce-1500x1001.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="What next for BTC prices as Bitcoin slides below $70,000 on Strategy's sale" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin fell below $70,000, registering a 3.8% decline over the past 24 hours. The move followed Strategy’s disclosure of its first publicized sale of 32 BTC for $2.5 million. Strategy indicated the proceeds will fund preferred‑stock distributions, a corporate financing activity that added selling pressure. The price drop occurs amid a market lacking bullish catalysts and experiencing negative ETF inflows, factors that institutional investors monitor closely.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/06/02/bitcoin-slide-to-usd70-000-as-stocks-pause-and-strategy-s-btc-sale-weighs-on-crypto" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">MoneyGram launches stablecoin on Stellar (XLM), joining rush toward digital dollar payments</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/779fa847dfa0e81ae3f5f0cb8cae4125d96accc2-594x446.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="MoneyGram launches stablecoin on Stellar (XLM), joining rush toward digital dollar payments" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Stablecoins &bull; Score: 6/10</div>
+      <p class="story-summary">MoneyGram has launched a U.S. dollar‑backed stablecoin called MGUSD on the Stellar (XLM) blockchain. The token is issued through Stripe’s Bridge, uses smart‑contract technology from M0 and is supported by Fireblocks wallet services. The rollout begins with U.S. customers and is intended to expand globally, giving MoneyGram a foothold in the rapidly expanding digital‑dollar cross‑border payments market.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/06/02/moneygram-launches-stablecoin-on-stellar-joining-rush-toward-digital-dollar-payments" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">CME</h2>
+      <img class="story-img" src="https://www.tbstat.com/wp/uploads/2021/10/20211018_CME-Group-1200x675.jpg" alt="CME" onerror="this.style.display='none'">
+      <div class="story-meta">The Block &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">CME Group has introduced a continuous 24/7 crypto futures and options market. In its opening weekend the platform recorded more than 7,200 contracts and approximately $50 million in notional value. The launch also includes a 24/7 bitcoin volatility futures contract. These products extend CME’s regulated derivatives offering and give institutional investors round‑the‑clock access to crypto exposure.</p>
+      <a class="story-link" href="https://www.theblock.co/post/403304/cme-groups-crypto-derivatives-50-million" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Stablecoin remittance app goes live in UK after $1m in transactions during silent beta</h2>
+      <img class="story-img" src="https://images.sifted.eu/wp-content/uploads/2026/05/27083409/YouSend-Co-Founder-Adeoye-22Oye22-Ojo-e1779867379523.png?w=3045&h=1020&q=75&fit=crop&auto=compress,format" alt="Stablecoin remittance app goes live in UK after $1m in transactions during silent beta" onerror="this.style.display='none'">
+      <div class="story-meta">Sifted &bull; Stablecoins &bull; Score: 6/10</div>
+      <p class="story-summary">Yousend has launched a stablecoin‑based remittance application in the United Kingdom and Canada. The platform claims settlement times of less than fifteen seconds, a speed demonstrated during a silent beta that processed over one million dollars in transactions. It operates under regulatory approvals from the Financial Conduct Authority, FINTRAC and the Central Bank of Nigeria. Institutional backing from prominent crypto investors underscores its potential relevance for cross‑border payment infrastructure.</p>
+      <a class="story-link" href="https://sifted.eu/articles/stablecoin-remittance-app-live-in-uk-brnd/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">The U.S. and Europe feared the Iran conflict would curtail the Gulf's appetite for global investments. The opposite is true</h2>
+      <img class="story-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-1210351802-e1780392126497.jpg?resize=1200,600" alt="The U.S. and Europe feared the Iran conflict would curtail the Gulf's appetite for global investments. The opposite is true" onerror="this.style.display='none'">
+      <div class="story-meta">Fortune &bull; Investment &bull; Score: 5/10</div>
+      <p class="story-summary">Despite U.S. and European concerns that the Iran conflict would dampen Gulf investment appetite, sovereign wealth funds in the Gulf have actually accelerated dealmaking. In the first half of 2024 they deployed roughly $26 bn across a broad set of transactions. Their capital is being spread into developed markets, China and other emerging economies while also being redirected toward domestic projects such as tourism, clean‑energy infrastructure and smart‑city initiatives. This pattern of continued outflow and diversification signals resilience that institutional investors should monitor for partnership and co‑investment opportunities.</p>
+      <a class="story-link" href="https://fortune.com/2026/06/02/us-europe-iran-curtail-gulf-appetite-global-investments/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Strategy (MSTR) sold bitcoin in late May, and told the market in June. Here's how Polymarket bettors are fighting over when it counts.</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/064e3cb566ec1a15c8087683e11d9bdb6d59b805-1920x1280.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Strategy (MSTR) sold bitcoin in late May, and told the market in June. Here's how Polymarket bettors are fighting over when it counts." onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; DeFi &bull; Score: 5/10</div>
+      <p class="story-summary">Strategy (MSTR) sold 32 BTC between May 26 and May 31, a transaction valued at about $79 million. The sale was disclosed in an 8‑K filing on June 1, prompting a Polymarket contract to ask whether the trade should be treated as a May 31 event or a June 1 disclosure. UMA token holders will vote on the contract resolution, a decision that could affect how similar corporate crypto sales are reported and priced in the market.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/06/02/strategy-sold-bitcoin-in-late-may-and-told-the-market-in-june-here-s-how-polymarket-bettors-are-fighting-over-when-it-counts" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (15)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/endurosat-fundraise-spacetech/" target="_blank">Spacetech EnduroSat eyes $200m Series C months after last round, sources say</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Sifted &bull; Other</div>
+        <div class="watch-summary">Bulgarian satellite startup EnduroSat is reportedly in talks to raise a $200 million Series C round, just six months aft...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/vinted-ventures-revolut-founders-tilt-funding-round/" target="_blank">Exclusive: Vinted Ventures backs Revolut mafia duo in $26m raise</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Sifted &bull; Other</div>
+        <div class="watch-summary">London‑based live commerce startup Tilt announced a $26 million funding round led by Vinted Ventures, with participation...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.theblock.co/post/403292/spot-bitcoin-etfs-extend-negative-streak-may" target="_blank">Spot bitcoin ETFs extend negative streak, following $2.4 billion monthly outflows in May</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> The Block &bull; Bitcoin</div>
+        <div class="watch-summary">U.S. spot bitcoin ETFs recorded a third consecutive week of outflows, with a cumulative $3.45 bn withdrawn over 11 days ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/06/02/bitcoin-s-biggest-etf-selloff-yet-hits-usd3-4-billion-as-ai-stocks-keep-climbing" target="_blank">Bitcoin's biggest ETF selloff yet hits $3.4 billion as AI stocks keep climbing</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">U.S. spot Bitcoin ETFs have experienced a record 11‑day streak of net outflows totaling roughly $3.45 billion, driving B...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.theblock.co/post/403296/mt-gox-moves-739-million-btc" target="_blank">Mt. Gox moves $739 million worth of bitcoin to two addresses: Arkham</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> The Block &bull; Bitcoin</div>
+        <div class="watch-summary">Mt. Gox transferred roughly 10,306 BTC ($739 M) from its cold wallets to two previously unmarked addresses, marking the ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/06/02/bitcoin-drops-toward-usd69-000-as-saylor-sale-spooks-investors-while-ai-tokens-buck-the-trend" target="_blank">BTC price hits April lows while AI tokens surge, exposing a split in the crypto market</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin slipped below $70,000 to $69,311, its lowest level since early April, after MicroStrategy sold $2.5 million wort...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.theblock.co/post/403311/vitalik-buterin-proposes-options-based-synthetic-assets-to-avoid-liquidations-and-reduce-reliance-on-real-time-oracles" target="_blank">Vitalik Buterin proposes options-based synthetic assets to avoid liquidations and reduce reliance on real-time oracles</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> The Block &bull; Stablecoins</div>
+        <div class="watch-summary">Ethereum co‑founder Vitalik Buterin outlined a new options‑based framework for synthetic assets and algorithmic stableco...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://fortune.com/2026/06/02/ai-bubble-history-railroad-crash-1873-pulitzer-liaquat-ahamed/" target="_blank">I won a Pulitzer for explaining the Great Depression. The AI spending boom terrifies me</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Fortune &bull; Infrastructure</div>
+        <div class="watch-summary">The author warns that the current AI infrastructure spending surge—projected at $800 billion to $1 trillion annually—mir...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.theblock.co/post/403286/bitcoin-slides-geopolitical-risks-strategy-btc-sale" target="_blank">Bitcoin slides toward $70,000 as Strategy</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> The Block &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin slipped to around $70,000 as geopolitical tension between the U.S. and Iran and a modest BTC sale by treasury fi...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/mobile-europe-superapp-race/" target="_blank">Why mobile is becoming the next front in Europe’s superapp race</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Sifted &bull; Payments</div>
+        <div class="watch-summary">European fintechs are accelerating efforts to build all‑in‑one superapps, inspired by Asian models such as WeChat and Al...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/06/02/xrp-falls-4-below-usd1-30-as-bitcoin-led-market-weakness-pulls-down-majors" target="_blank">XRP price analysis: Ripple-linked token falls 4% on bitcoin-led market weakness</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Investment</div>
+        <div class="watch-summary">XRP slipped below the key $1.30 support level, dropping about 4% to $1.27 amid heavy trading volume. While more than 25 ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://fortune.com/2026/06/02/disillusioned-workers-economy-of-betrayal-not-maga-republican-trump/" target="_blank">Meet America's 'Disillusioned' 32%: They're not who you think</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Fortune &bull; Other</div>
+        <div class="watch-summary">A May 2026 poll by the Roosevelt Institute finds that 32% of American voters are “disillusioned,” feeling the system fav...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://fortune.com/2026/06/02/fifa-dynamic-pricing-backfiring-soccer-fans-world-cup-ticket-costs/" target="_blank">FIFA’s foray into dynamic pricing may be backfiring by keeping actual fans out of the World Cup</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Fortune &bull; Regulation</div>
+        <div class="watch-summary">New York and New Jersey attorneys general have opened an investigation into FIFA's use of dynamic pricing for 2026 World...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/oped-tech-for-good-isnt-dead/" target="_blank">Tech for good isn't dead. Venture capital just forgot how to find it</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Sifted &bull; Investment</div>
+        <div class="watch-summary">The article notes that while overall venture capital funding surged in Q1 2026, investment in impact startups plummeted ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://fortune.com/2026/06/02/goldman-sachs-real-income-paycheck-recession-pace-tariffs-energy/" target="_blank">It's not a recession. But Goldman says your paycheck is acting like it</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Fortune &bull; Other</div>
+        <div class="watch-summary">Goldman Sachs warns that real personal income per U.S. worker fell 0.6% over the past year, a decline usually seen only ...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (5)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏢 Enterprise <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://fortune.com/2026/06/02/fortune-gulf-brief-middle-east-newsletter-melissa-hancock-oil-economy-dealmaking/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Welcome to the new voice of intelligence in the Middle East</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">4</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://fortune.com/2026/06/02/amazon-founder-jeff-bezos-25-year-old-stress-cure-hack-not-workload-inaction-career-advice/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Jeff Bezos' 25-year-old stress cure is to 'make the first phone call, or send the first email'</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/06/01/world-cup-soccer-how-nike-made-kit-6-years-design/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">6 years of jersey design, 4 years of prep, 4 weeks of games: Execs at U.S. Soccer and Nike know how much this World Cup means</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://fortune.com/2026/06/02/outdoor-boys-luke-nichols-career-advice-market-crash-importance-of-savings/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">He sent out 3,200 résumés and got zero job offers in the 2008 crash. Now Outdoor Boys’ Luke Nichols is telling grads how he survived</span>
+                <span class="res-card-source">Fortune</span>
+              </span>
+            </a>
+            <a href="https://sifted.eu/articles/jonny-clifford-profile/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Meet Jonny Clifford: ex-teacher, Entrepreneurs First partner and Matt's 'more fun' brother</span>
+                <span class="res-card-source">Sifted</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, Robinhood’s recent $180 million purchase of WonderFi marks a bold entry into the Canadian crypto scene. By taking control of regulated exchanges Bitbuy and Coinsquare, Robinhood adds roughly 300,000 Canadian users and pushes its funded customer base beyond one million outside the United States. This move underscores the growing importance of cross‑border liquidity and the appeal of regulated gateways for mainstream investors. At the same time, the legacy exchange Mt. Gox has transferred 10,422 Bitcoin, worth about $739 million, to a new wallet as the October 31 2026 creditor repayment deadline approaches. Analysts warn that such a large movement could add selling pressure at a time when Bitcoin has slipped below $71,000, reminding us that old balances still have the power to move markets. In the DeFi arena, Veda is opening its non‑custodial BoringVault stack to the 2,000 developer teams that use Privy’s embedded wallet platform. The self‑serve API gives fintech startups access to the same vault technology that once powered Kraken DeFi Earn and EtherFi, turning an institution‑only tool into a product that can be widely adopted across the ecosystem. From a European venture perspective, these stories illustrate both the scaling of regulated infrastructure and the lingering volatility that can affect capital allocation. As we watch these dynamics unfold, we ask: which emerging technology or partnership will most accelerate the maturation of Web3 in Europe? What do you think will be the next catalyst that shapes our market? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.theblock.co/post/403279/robinhood-closes-wonderfi-acquisition-canada">Robinhood closes $180 million WonderFi acquisition, entering Canadian crypto market</a> <span class="other-source">(The Block)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/markets/2026/06/02/mt-gox-moves-10-422-bitcoin-worth-usd739-million-to-a-new-wallet-as-deadline-nears">Mt. Gox moves 10,422 bitcoin worth $739 million to a new wallet as deadline nears</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.theblock.co/post/403277/veda-brings-the-vault-stack-behind-kraken-defi-earn-to-privys-2000-plus-developer-teams">Veda brings the vault stack behind Kraken DeFi Earn to Privy</a> <span class="other-source">(The Block)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/markets/2026/06/02/bitcoin-slide-to-usd70-000-as-stocks-pause-and-strategy-s-btc-sale-weighs-on-crypto">What next for BTC prices as Bitcoin slides below $70,000 on Strategy's sale</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/business/2026/06/02/moneygram-launches-stablecoin-on-stellar-joining-rush-toward-digital-dollar-payments">MoneyGram launches stablecoin on Stellar (XLM), joining rush toward digital dollar payments</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.theblock.co/post/403304/cme-groups-crypto-derivatives-50-million">CME</a> <span class="other-source">(The Block)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://sifted.eu/articles/stablecoin-remittance-app-live-in-uk-brnd/">Stablecoin remittance app goes live in UK after $1m in transactions during silent beta</a> <span class="other-source">(Sifted)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://fortune.com/2026/06/02/us-europe-iran-curtail-gulf-appetite-global-investments/">The U.S. and Europe feared the Iran conflict would curtail the Gulf's appetite for global investments. The opposite is true</a> <span class="other-source">(Fortune)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.coindesk.com/markets/2026/06/02/strategy-sold-bitcoin-in-late-may-and-told-the-market-in-june-here-s-how-polymarket-bettors-are-fighting-over-when-it-counts">Strategy (MSTR) sold bitcoin in late May, and told the market in June. Here's how Polymarket bettors are fighting over when it counts.</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 1, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 1, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">36</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">11</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">15</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">12</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Drift Protocol attack highlights Solana security risk, expect tighter audits and possible capital flight from Solana DeFi</li>
+        <li>Legal AI funding surge (Harvey $200M, Legora $550M) signals enterprise demand, founders must prioritize compliance and data security</li>
+        <li>Fed Governor Barr warns stablecoin systemic risk, expect forthcoming US legislation that could tighten issuance and reserve rules</li>
+        <li>Berkshire’s $17 billion T‑bill purchase may curb risk‑on appetite, adding short‑term pressure on Bitcoin valuations</li>
+        <li>CFTC Chair signals intent to regulate entire crypto market, firms should ready comprehensive reporting and compliance frameworks</li>
+        <li>U.S. spot Bitcoin ETFs record $1.32 billion March inflow, suggesting renewed institutional interest despite recent underperformance</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, Security alarms flare after Drift Protocol loses $285 m in a Solana attack, prompting deposit suspensions. Meanwhile, legal‑AI rivals Harvey and Legora secure $750 m in funding, while Fed officials push balanced stablecoin rules to curb systemic risk.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (11)</h2>
+    <div class="story">
+      <h2 class="story-title">Solana-based Drift Protocol confirms it’s under attack after $285m leaves DeFi platform</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805095.webp" alt="Solana-based Drift Protocol confirms it’s under attack after $285m leaves DeFi platform" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 9/10</div>
+      <p class="story-summary">Drift Protocol, a Solana‑based perpetual futures exchange, reported that it is currently under an active attack. The breach resulted in the disappearance of more than $285 million in USDC and other assets from the platform. In response, Drift suspended all deposits and withdrawals to contain further loss. The incident triggered a sharp decline in the value of its native DRIFT token, underscoring the operational and liquidity risks that institutional investors face when allocating capital to emerging DeFi protocols.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/drift-protocol-investigating-potential-270-million-hack/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Harvey &amp; Legora in a Land-Grab Race for Dominance of Legal AI</h2>
+      <img class="story-img" src="https://substackcdn.com/image/fetch/$s_!Amqr!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c5260f6-037a-4b76-9475-468b68d71947_1148x634.png" alt="Harvey &amp; Legora in a Land-Grab Race for Dominance of Legal AI" onerror="this.style.display='none'">
+      <div class="story-meta">Newcomer &bull; Enterprise &bull; Score: 9/10</div>
+      <p class="story-summary">Harvey and Legora are two legal‑AI startups engaged in a competitive push for market leadership. Harvey recently closed a $200 million financing round while Legora secured $550 million. Both companies are backed by leading Silicon Valley venture firms. Their platforms are built on foundation models from OpenAI, Anthropic and Google, positioning them to reshape legal services and attract institutional capital.</p>
+      <a class="story-link" href="https://www.newcomer.co/p/harvey-and-legora-in-a-land-grab" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Stablecoins endanger US economy, warns Fed governor. ‘Long and painful history of private money’</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772054859924.webp" alt="Stablecoins endanger US economy, warns Fed governor. ‘Long and painful history of private money’" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Stablecoins &bull; Score: 8/10</div>
+      <p class="story-summary">Federal Reserve Governor Michael Barr warned that the rapid expansion of stablecoins now exceeding $315 billion creates a systemic risk to the U.S. economy. He likened the potential fallout to the bank runs of the 19th century, emphasizing the historical vulnerability of private money. Barr noted that issuers may be tempted to pursue higher yields, a behavior that could erode confidence in stressed market conditions. Analysts anticipate that the stablecoin market could grow to between $2 trillion and $3 trillion in the coming years, underscoring the scale of the exposure for institutional investors.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/stablecoins-endanger-us-economy-warns-fed-governor/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Warren Buffett Bought $17B in US T-bills: What Does it Mean for Bitcoin?</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-258617-warren-buffett-bought-17b-in-us-t-bills-a-bad-omen-for-bitcoin-price.jpg" alt="Warren Buffett Bought $17B in US T-bills: What Does it Mean for Bitcoin?" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Berkshire Hathaway, the conglomerate led by Warren Buffett, has moved $17 billion into U.S. Treasury bills. Analysts interpret the allocation as a shift toward ultra‑safe assets that could reduce appetite for risk‑on investments such as Bitcoin among large investors. The purchase is therefore seen as a negative signal for Bitcoin’s price momentum, highlighting how major capital flows can influence the cryptocurrency market.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/warren-buffett-bought-17b-in-us-t-bills-a-bad-omen-for-bitcoin-price" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">CFTC Chair Says Agency is Ready to Oversee Entire Crypto Market</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-258602-cftc-chair-oversee-crypto-market-clarity-passes.jpg" alt="CFTC Chair Says Agency is Ready to Oversee Entire Crypto Market" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">CFTC Chair Rostin Behnam stated that the Commodity Futures Trading Commission is prepared to oversee the entire cryptocurrency market. This signals a potential expansion of the agency’s authority beyond its traditional focus on derivatives. The remarks imply that the CFTC will seek greater regulatory clarity and coordination with other U.S. regulators, a development that could influence market practices for institutional participants.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/cftc-chair-oversee-crypto-market-clarity-passes" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">U.S. BTC ETFs post first monthly inflows since October</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/2be74ee815dcdd639a49b7c66b4310c4c9b945c3-1809x562.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="U.S. BTC ETFs post first monthly inflows since October" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">U.S. spot Bitcoin exchange‑traded funds attracted $1.32 billion of net new capital in March. This represents the first positive monthly flow since October and ends a four‑month period of net outflows. Although the total assets in the ETFs have only partially recovered from a 7 percent decline, the new inflow indicates a resurgence of interest among investors. The development is being watched by institutional investors as a potential signal of renewed demand for Bitcoin exposure through regulated vehicles.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/04/01/bitcoin-etfs-post-first-inflows-since-october-as-price-stabilizes" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Fed’s Barr Calls for Balanced US Stablecoin Rules Under GENIUS Act</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-258502-fed-barr-calls-for-balanced-stablecoin-rules.jpg" alt="Fed’s Barr Calls for Balanced US Stablecoin Rules Under GENIUS Act" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">U.S. Treasury Assistant Secretary Michael Barr is urging Congress to enact balanced regulations for stablecoins under the GENIUS Act. The GENIUS Act is designed to establish a clear regulatory framework that protects consumers. At the same time the bill seeks to preserve innovation and competitiveness in the U.S. stablecoin market. Institutional investors are watching the proposal because consistent rules could reduce legal uncertainty and support broader adoption of digital assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/fed-barr-calls-for-balanced-stablecoin-rules" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto exchange Bithumb postpones IPO bid amid economic uncertainty</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1775047322115-asset.webp" alt="Crypto exchange Bithumb postpones IPO bid amid economic uncertainty" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Enterprise &bull; Score: 5/10</div>
+      <p class="story-summary">Bithumb, South Korea’s second‑largest cryptocurrency exchange, announced it will delay its planned Nasdaq initial public offering. The IPO, originally slated for 2026, has been pushed to a date after early 2028. The postponement follows recent compliance fines and operational setbacks that have heightened regulatory scrutiny. Management says the extra time will allow the firm to strengthen internal controls and target a higher valuation when market conditions improve.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/crypto-exchange-bithumb-postpones-ipo-bid-economic-uncertainty/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">S&amp;P Tokenizes Treasury Index On Canton Network</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-258387-sp-tokenizes-treasury-index-canton-network.jpg" alt="S&amp;P Tokenizes Treasury Index On Canton Network" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Tokenization &bull; Score: 6/10</div>
+      <p class="story-summary">S&amp;P Global has introduced a tokenized version of its Treasury Index on the Canton Network blockchain. The token represents the same fixed‑income benchmark that tracks U.S. Treasury securities but is issued as a digital asset on a permissioned distributed ledger. By moving the index onto Canton, S&amp;P aims to provide institutional investors with faster settlement, greater transparency and programmable access to a core market reference. The launch highlights the increasing overlap between traditional finance and crypto infrastructure as firms seek to modernize fixed‑income trading.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/sp-tokenizes-treasury-index-canton-network" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Meta 2026 Stablecoin Plan : Why It Partnering , Not Issuing</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop" alt="Meta 2026 Stablecoin Plan : Why It Partnering , Not Issuing" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Stablecoins &bull; Score: 5/10</div>
+      <p class="story-summary">Meta has released a roadmap indicating that its stablecoin activities will target the year 2026. Rather than creating a proprietary token, the company plans to collaborate with established stablecoin issuers. This partnership model allows Meta to use existing blockchain infrastructure and liquidity networks. By avoiding direct issuance, Meta seeks to reduce regulatory exposure while still participating in the digital payments market, a factor that may be relevant to institutional investors evaluating exposure to fintech and crypto assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/features/why-meta-chooses-partners-stablecoin-payments" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Naoris Launches Post-Quantum Blockchain as Quantum Risks Grow</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-258607-naoris-post-quantum-blockchain-quantum-security-risks-gain-attention.jpg" alt="Naoris Launches Post-Quantum Blockchain as Quantum Risks Grow" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Security &bull; Score: 5/10</div>
+      <p class="story-summary">Naoris has introduced a new blockchain that is built to operate securely even after the advent of quantum computers. The platform incorporates cryptographic algorithms and consensus protocols that are designed to be resistant to quantum‑based attacks. By protecting digital assets with these quantum‑secure techniques, the network aims to reduce exposure for investors who rely on blockchain technology. The launch positions Naoris as an early provider of quantum‑resistant infrastructure at a time when concerns about quantum threats are increasing.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/naoris-post-quantum-blockchain-quantum-security-risks-gain-attention" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (12)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/us-treasury-state-stablecoin-regulation" target="_blank">US Treasury Seeks Comment on State-Level Stablecoin Regulatory Criteria</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">The U.S. Treasury has issued a request for public comment on criteria that states should follow when regulating stableco...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/markets/hyperliquid-whale-makes-dollar80m-bet-on-market-crash-is-bitcoin-in-trouble" target="_blank">$80M Hyperliquid Whale Bet Predicts Bitcoin Crash and Oil Rally</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">A Hyperliquid whale built an $80 million leveraged position on the Hyperliquid DEX, shorting Bitcoin and the S&amp;P 500 whi...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/how-surprises-from-donald-trump-will-affect-the-price-of-bitcoin/" target="_blank">Bitcoin traders brace for White House surprises that may send prices lower</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin is hovering between $65,000 and $70,000 as analysts warn that unexpected statements from the White House could p...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/markets/bitcoin-stocks-soar-as-markets-respond-to-chance-of-us-and-israel-iran-war-ending" target="_blank">Bitcoin , Stocks Pile On Gains As US , Iran Consider Ending War</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">Bitcoin and global equity markets rallied after reports that the United States and Iran were discussing an end to their ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/nakamoto-sale-signal-dat-contagion" target="_blank">Bitcoin Treasury Sell-Off Could Signal Deeper Capitulation Coming: Analyst</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Bitcoin</div>
+        <div class="watch-summary">An analyst notes that recent Bitcoin treasury sell‑offs may indicate a deeper market capitulation. The commentary comes ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/what-the-us-jobs-report-means-for-bitcoin-price/" target="_blank">What Friday's high-profile US jobs report means for Bitcoin price</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Analysts say the upcoming U.S. March payroll report will have a bigger impact on Bitcoin’s price than crypto‑specific si...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/ethereum-etfs-to-bounce-back-in-2026/" target="_blank">Ethereum is trading 60% below its record price. Here’s why Ether ETFs could ‘outperform’ Bitcoin funds</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Ethereum</div>
+        <div class="watch-summary">Ethereum’s price is trading about 60% below its recent high and its ETFs have lagged far behind Bitcoin funds, managing ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/deals/franklin-templeton-launches-new-crypto-division-after-250-digital-deal/" target="_blank">Franklin Templeton debuts new crypto division following 250 Digital acquisition</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Enterprise</div>
+        <div class="watch-summary">Franklin Templeton has acquired crypto investment manager 250 Digital and is launching a new crypto division called Fran...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://ripple.com/insights/corporate-treasury-has-a-new-starting-point-for-digital-assets/" target="_blank">Corporate Treasury Has a New Starting Point for Digital Assets</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Ripple &bull; Enterprise</div>
+        <div class="watch-summary">Ripple introduced Ripple Treasury, an enterprise treasury management system that embeds native digital‑asset accounts an...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/01/bitcoin-s-crashes-are-shrinking-and-wall-street-is-starting-to-notice" target="_blank">Bitcoin’s crashes are shrinking, and Wall Street is starting to notice</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Analysts note that Bitcoin’s recent drawdowns are around 50%, half of previous cycles, indicating a maturing market with...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-01/openai-is-almost-public" target="_blank">OpenAI Is Almost Public</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">Bloomberg reports that OpenAI is close to launching an initial public offering, signaling the AI firm’s move toward beco...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/01/xrp-holds-usd1-34-as-supply-tightens-but-price-fails-to-break-higher" target="_blank">XRP price news: Ripple-linked token holds $1.34 as supply tightens</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Payments</div>
+        <div class="watch-summary">XRP is trading around $1.34 with a tightening on‑chain supply as 7.03 B tokens left exchanges, yet the price remains stu...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (13)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">5</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/markets/strategy-resume-buying-bitcoin-strc-will-btc-price-hit-80k" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Strategy Resumes Bitcoin Purchases via STRC Stock: Will BTC Price Hit $80K?</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://www.dlnews.com/articles/markets/what-would-happen-to-bitcoin-price-if-iran-war-ended/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">What ending the Iran war would mean for Bitcoin’s price</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/bitfarms-shares-rise-despite-285-million-net-loss-amid-ai-transition" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitfarms Shares Soar Despite Net Loss Amid AI Transition</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/markets/bitcoin-hits-68k-but-btc-futures-macro-data-show-traders-remain-bearish" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Strength Holds Into $68K But Pro Traders Remain Cautious</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/markets/crypto-fear-and-greed-index-stuck-on-extreme-fear-but-is-there-a-silver-lining" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin Holds $67K As Fear Index Stays In Extreme Zone</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔄 DeFi <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/defi/defi-true-believers-reminisce-in-cannes-with-defillama/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">DeFi’s true believers reminisce in Cannes as they hunt for crypto’s next big thing</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚖️ Regulation <span class="res-cat-count">3</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.dlnews.com/articles/regulation/key-crypto-court-dates-to-look-out-for-in-q2-2026/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Crypto in court. Key dates in cases against Roman Storm, Sam Bankman-Fried and others are coming up fast</span>
+                <span class="res-card-source">DL News</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/cftc-enforcement-chief-warns-insider-traders-on-prediction-markets-will-be-prosecuted" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">CFTC Warns Prediction Market Insider Traders</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/texas-dan-patrick-crypto-prediction-markets-senate" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Texas Lt. Gov. Lists Crypto, Prediction Markets in Charges to Senate</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔧 Infrastructure <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/chainalysis-blockchain-intelligence-agents" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Chainalysis to Add ‘Blockchain Intelligence‘ Agents to Platform</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏢 Enterprise <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/interactive-brokers-expands-crypto-trading-to-retail-investors-in-europe" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Interactive Brokers Brings Crypto Trading to European Retail Clients</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">2</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://cointelegraph.com/news/trump-signals-us-withdrawal-iran-weeks" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Trump Signals Possible US Withdrawal from Iran Within Weeks</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+            <a href="https://cointelegraph.com/news/caltech-researchers-theorize-quantum-computers-could-be-operational-before-2030" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Caltech Finds Quantum Computers Need Far Fewer Qubits</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The past weeks have reminded us why vigilance and diversification remain core to any crypto strategy. Drift Protocol, the Solana perpetual futures exchange, confirmed an active attack that erased more than $285 million in USDC and other assets. The platform halted deposits and withdrawals, and its DRIFT token slumped sharply. For institutional capital this signals the operational and liquidity risk that can surface when we allocate to emerging DeFi protocols. At the same time, the legal‑AI arena is heating up. Harvey closed a $200 million round while Legora secured $550 million, both backed by top Silicon Valley firms. Their products, built on foundation models from OpenAI, Anthropic and Google, aim to transform how legal services are delivered and are already drawing institutional interest. The race shows how AI and crypto can intersect to create new value chains. Finally, Federal Reserve Governor Michael Barr warned that stablecoins now exceeding $315 billion pose a systemic risk comparable to historic bank runs. He noted that issuers chasing higher yields could erode confidence in stressed markets. With analysts projecting the stablecoin market to reach $2 trillion to $3 trillion, the exposure for investors will only grow. How do you see these dynamics shaping the next wave of investment opportunities in Web3 and beyond? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/defi/drift-protocol-investigating-potential-270-million-hack/">Solana-based Drift Protocol confirms it’s under attack after $285m leaves DeFi platform</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.newcomer.co/p/harvey-and-legora-in-a-land-grab">Harvey &amp; Legora in a Land-Grab Race for Dominance of Legal AI</a> <span class="other-source">(Newcomer)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/markets/stablecoins-endanger-us-economy-warns-fed-governor/">Stablecoins endanger US economy, warns Fed governor. ‘Long and painful history of private money’</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://cointelegraph.com/markets/warren-buffett-bought-17b-in-us-t-bills-a-bad-omen-for-bitcoin-price">Warren Buffett Bought $17B in US T-bills: What Does it Mean for Bitcoin?</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/cftc-chair-oversee-crypto-market-clarity-passes">CFTC Chair Says Agency is Ready to Oversee Entire Crypto Market</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.coindesk.com/markets/2026/04/01/bitcoin-etfs-post-first-inflows-since-october-as-price-stabilizes">U.S. BTC ETFs post first monthly inflows since October</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://cointelegraph.com/news/fed-barr-calls-for-balanced-stablecoin-rules">Fed’s Barr Calls for Balanced US Stablecoin Rules Under GENIUS Act</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.dlnews.com/articles/markets/crypto-exchange-bithumb-postpones-ipo-bid-economic-uncertainty/">Crypto exchange Bithumb postpones IPO bid amid economic uncertainty</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://cointelegraph.com/news/sp-tokenizes-treasury-index-canton-network">S&amp;P Tokenizes Treasury Index On Canton Network</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://cointelegraph.com/features/why-meta-chooses-partners-stablecoin-payments">Meta 2026 Stablecoin Plan : Why It Partnering , Not Issuing</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[11]</span> <a href="https://cointelegraph.com/news/naoris-post-quantum-blockchain-quantum-security-risks-gain-attention">Naoris Launches Post-Quantum Blockchain as Quantum Risks Grow</a> <span class="other-source">(Cointelegraph)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

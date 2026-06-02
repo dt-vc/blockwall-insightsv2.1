@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - April 15, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">April 15, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">25</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">11</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">13</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">6</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>CoreWeave's $6B Jane Street contract validates demand for GPU cloud compute in crypto trading and AI workloads</li>
+        <li>Anthropic's Claude Mythos AI could auto‑discover zero‑day bugs, prompting exchanges to secure defensive access now</li>
+        <li>Apple removed a fake Ledger app after $10M theft, highlights need for tighter app‑store vetting for crypto wallets</li>
+        <li>Rakuten's XRP integration signals Japanese conglomerates accelerating consumer crypto adoption, potentially boosting XRP demand</li>
+        <li>Bitwise's Avalanche ETF with 70% staking adds yield‑focused crypto product, expanding institutional exposure to high‑growth layer‑1</li>
+        <li>Bitcoin stalls near $76K after profit‑taking, market shows consolidation, suggesting short‑term range bound before next catalyst</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, enterprise GPU cloud demand spikes as CoreWeave lands a $6 billion Jane Street contract. At the same time, AI‑driven security threats push exchanges toward Anthropic’s Claude model while regulators like Elizabeth Warren scrutinize X Money’s stablecoin plans.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
+    <div class="story">
+      <h2 class="story-title">CoreWeave Announces $6B Deal With Trading Firm Jane Street</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261897-coreweave-6b-deal-jane-street-ai-compute.jpg" alt="CoreWeave Announces $6B Deal With Trading Firm Jane Street" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Infrastructure &bull; Score: 9/10</div>
+      <p class="story-summary">CoreWeave secured a $6 billion contract with trading firm Jane Street to deliver GPU‑accelerated cloud compute services. The agreement provides Jane Street with high‑performance infrastructure to support its crypto‑related trading and AI workloads. The deal underscores growing enterprise demand for specialized cloud resources as digital‑asset markets and artificial‑intelligence applications expand.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/coreweave-6b-deal-jane-street-ai-compute" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">‘AI-based super attacker’ threat looms as top crypto exchanges scramble for access to powerful Claude model</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805092.webp" alt="‘AI-based super attacker’ threat looms as top crypto exchanges scramble for access to powerful Claude model" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 7/10</div>
+      <p class="story-summary">Anthropic has released a new AI model called Claude Mythos that can autonomously discover zero‑day vulnerabilities. The capability has triggered a defensive scramble by leading crypto exchanges, including Coinbase and Binance, to seek access to the model. Security experts warn that the model’s ability to uncover previously unknown flaws could expose the entire crypto infrastructure to financial losses measured in the hundreds of millions to billions of dollars. Institutional investors are therefore monitoring the situation closely as the threat could impact the risk profile of digital asset holdings.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/crypto-exchanges-seek-claude-mythos-access-amid-ai-threat/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Apple defends App Store record after fake Ledger app drains $10m in Bitcoin and Solana</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772088824686.webp" alt="Apple defends App Store record after fake Ledger app drains $10m in Bitcoin and Solana" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 6/10</div>
+      <p class="story-summary">A counterfeit Ledger wallet application was listed on the Apple App Store and was used to siphon almost $10 million in Bitcoin and Solana from more than 50 users. Apple responded by removing the fraudulent app and suspending the developer’s account. Investigations traced the stolen assets through the KuCoin exchange and a centralized mixing service. The incident highlights the importance of rigorous app vetting and monitoring for institutional investors exposed to crypto custody solutions.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/apple-cracks-down-on-illegal-apps-following-fake-ledger-wallet/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Elizabeth Warren slams Elon Musk over X Money’s rumored crypto feature</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772093145821.webp" alt="Elizabeth Warren slams Elon Musk over X Money’s rumored crypto feature" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">U.S. Senator Elizabeth Warren has written to Elon Musk expressing concerns about X’s planned payments service, X Money. She warns that the feature could create consumer protection, national security, and financial stability risks, particularly if it integrates stablecoins. The letter signals heightened regulatory scrutiny of X as the platform moves toward broader financial services. Institutional investors should monitor the evolving oversight environment because it may affect X’s ability to operate as a de facto financial institution.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/regulation/elizabeth-warren-hits-elon-musk-over-x-money-crypto-rumours/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitwise Launchdx Avalanche ETF with Staking Exposure</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261912-bitwise-launches-avalanche-etp-with-staking-feature.jpg" alt="Bitwise Launchdx Avalanche ETF with Staking Exposure" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Bitwise Asset Management has launched the BAVA spot Avalanche ETF on the NYSE, providing institutional investors direct exposure to the Avalanche blockchain. Approximately 70 % of the fund’s AVAX holdings are actively staked to generate yield, and the ETF trades at $25.50 per share with a 0.34 % sponsor fee that is waived for the first month on the first $500 M of assets. The product expands the growing suite of crypto‑focused exchange‑traded products, offering a regulated vehicle for yield‑enhanced exposure to a leading layer‑1 protocol.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/bitwise-launches-avalanche-etp-with-staking-feature" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitnomial Launches US-Regulated Injective Futures with ETF Implications</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261922-injective-futures-go-live-on-cftc-regulated-us-exchange-opening-etf-pathway.jpg" alt="Bitnomial Launches US-Regulated Injective Futures with ETF Implications" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Regulation &bull; Score: 6/10</div>
+      <p class="story-summary">Bitnomial has introduced a US‑regulated futures product on the Injective layer‑2 exchange. This is the first offering that complies with U.S. securities rules for futures on that platform. The launch is intended to serve as a stepping stone toward broader crypto‑ETF adoption and expands the range of regulated derivatives available to investors.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/injective-futures-go-live-on-cftc-regulated-us-exchange-opening-etf-pathway" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Rakuten makes XRP move as Japanese conglomerates target crypto markets</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776242483801-asset.webp" alt="Rakuten makes XRP move as Japanese conglomerates target crypto markets" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Payments &bull; Score: 6/10</div>
+      <p class="story-summary">Rakuten will allow its e‑pay users to convert loyalty points into XRP and other digital assets. The platform will also enable direct in‑store purchases using XRP. This initiative is part of a wider effort by Japanese conglomerates such as Mercari and Mitsubishi to embed cryptocurrency services into everyday consumer offerings. Institutional investors should note the growing convergence of traditional retail ecosystems with crypto, which could expand market liquidity and create new revenue opportunities.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/rakuten-opens-xrp-trading-as-japanese-tech-firms-break-into-crypto-markets/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">eToro shares jump on news of Zengo acquisition in crypto and prediction market move</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772053220896.webp" alt="eToro shares jump on news of Zengo acquisition in crypto and prediction market move" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Infrastructure &bull; Score: 6/10</div>
+      <p class="story-summary">eToro disclosed plans to acquire Zengo, a self‑custody crypto wallet, for a reported $70 million. The acquisition is intended to broaden eToro’s tokenisation capabilities and its entry into prediction‑market products. Following the announcement, eToro’s share price rose approximately 5 percent, lifting the company’s market valuation to about $3 billion.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/etoro-shares-surge-on-news-of-deal-to-buy-crypto-wallet-zengo/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Iran's Bitcoin toll 'virtually impossible' to collect, says policy institute</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772053945775.webp" alt="Iran's Bitcoin toll 'virtually impossible' to collect, says policy institute" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Payments &bull; Score: 5/10</div>
+      <p class="story-summary">Iran has announced plans to accept Bitcoin for toll payments through the Strait of Hormuz. Analysts say the current Bitcoin network and its Lightning layer lack the speed, cost efficiency, and liquidity needed for large‑scale toll settlements. The policy reflects Tehran’s broader strategy to adopt censorship‑resistant financial rails. However, stablecoins remain vulnerable to freezes by issuers such as Tether, highlighting ongoing regulatory risk for digital‑currency based infrastructure.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/iran-bitcoin-toll-impossible-to-collect-says-analyst/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto PAC Fellowship Discloses $11M from Cantor Fitzgerald and Anchorage</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261937-crypto-pac-fellowship-discloses-11m-from-cantor-fitzgerald-and-anchorage-digital.jpg" alt="Crypto PAC Fellowship Discloses $11M from Cantor Fitzgerald and Anchorage" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Investment &bull; Score: 5/10</div>
+      <p class="story-summary">The Crypto PAC Fellowship disclosed that it has received $11 million in funding. The capital comes from Cantor Fitzgerald, a financial services firm, and Anchorage, a crypto‑custody provider. The funding will be used to finance the fellowship’s advocacy work and development projects within the cryptocurrency sector. This investment signals growing institutional interest in supporting policy and industry initiatives that could shape the regulatory environment for digital assets.</p>
+      <a class="story-link" href="https://cointelegraph.com/news/crypto-pac-fellowship-discloses-11m-from-cantor-fitzgerald-and-anchorage-digital" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin Stalls at $76K As Profit-Taking Hit 63K BTC</h2>
+      <img class="story-img" src="https://s3-images.ctmedia.io/media/article-covers/article-covers-261927-bitcoin-traders-cash-out-63k-btc-profits-as-price-rallied-above-dollar76k.jpg" alt="Bitcoin Stalls at $76K As Profit-Taking Hit 63K BTC" onerror="this.style.display='none'">
+      <div class="story-meta">Cointelegraph &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin is currently trading around $76,000 after a recent rally. Traders have taken profits on roughly 63,000 BTC, accounting for a near‑1% daily gain. The price stability suggests short‑term consolidation rather than a new directional move, a pattern that institutional investors monitor for entry timing and risk management.</p>
+      <a class="story-link" href="https://cointelegraph.com/markets/bitcoin-traders-cash-out-63k-btc-profits-as-price-rallied-above-dollar76k" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">BTC price pulls back as $75,000 remains 'both the milestone and the ceiling:' Crypto Markets Today</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/6106984e93f12cb1e03c24714434e0462cb0ec2b-1500x1000.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="BTC price pulls back as $75,000 remains 'both the milestone and the ceiling:' Crypto Markets Today" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 5/10</div>
+      <p class="story-summary">Bitcoin is trading below the $75,000 resistance level, which analysts view as both a psychological milestone and a potential ceiling for price advances. The pullback in Bitcoin has dragged major altcoins such as Ethereum, XRP and Solana lower, reflecting correlated risk across leading crypto assets. Futures markets have recorded $424 million in liquidations, split evenly between long and short positions, underscoring heightened market uncertainty.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/04/15/bitcoin-pulls-back-as-usd75-000-remains-both-the-milestone-and-the-ceiling" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (11)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/people-culture/fed-nominee-kevin-warsh-invested-in-20-crypto-firms/" target="_blank">Trump's pick to lead the Fed is a crypto degen worth over $130m</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Regulation</div>
+        <div class="watch-summary">Former Fed Governor Kevin Warsh, a known crypto advocate, has been nominated by President Donald Trump to become the nex...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/north-korean-hackers-use-ai-enabled-social-engineering-latest-attack" target="_blank">North Korea Used AI to Hack Zerion in Second Crypto Attack</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Cointelegraph &bull; Security</div>
+        <div class="watch-summary">North Korean state‑backed hackers employed artificial‑intelligence tools to breach Zerion, a popular DeFi portfolio mana...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/jeremy-allaire-circle-wont-launch-won-pegged-stablecoin-plans-to-monetise-south-korean-crypto-boom-2/" target="_blank">Jeremy Allaire says Circle won’t launch won-pegged stablecoin, but plans to monetise South Korean crypto boom</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; Stablecoins</div>
+        <div class="watch-summary">Circle CEO Jeremy Allaire said the firm will not issue a won‑pegged stablecoin but is ready to obtain a license and open...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/etoro-acquires-zengo-self-custody-ceo-predicts-bitcoin-250k" target="_blank">eToro Acquires Zengo in Self-Custody Push, CEO Predicts $250K Bitcoin</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Enterprise</div>
+        <div class="watch-summary">eToro has acquired self‑custody wallet provider Zengo to strengthen its custodial services. The move signals eToro’s pus...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/eu-adviser-says-mica-2-is-likely-as-crypto-market-matures-pbw-2026" target="_blank">EU Adviser Says MiCA 2 Likely as Crypto Market Matures</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">An EU adviser indicated that a second iteration of the Markets in Crypto‑Assets (MiCA) framework is likely to be introdu...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/deals/switzerland-takes-crown-as-europe-crypto-capital-vcs-say/" target="_blank">Switzerland takes crown as Europe’s crypto capital, VC report says</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Investment</div>
+        <div class="watch-summary">A CV VC report shows that Swiss crypto firms captured 47% of all European blockchain venture funding in 2025, cementing ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/markets/three-catalysts-will-determine-bitcoin-price-rally-above-usd-75000/" target="_blank">Bitcoin 'panic has faded,' but rally past $75,000 hinges on three catalysts</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> DL News &bull; Bitcoin</div>
+        <div class="watch-summary">Industry insiders say Bitcoin’s next move above $75,000 will be driven by macro‑level inflation data, Fed policy expecta...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/04/15/winklevoss-capital-moves-usd43-million-in-bitcoin-to-custody-after-hitting-lowest-balance-since-2012" target="_blank">Winklevoss Capital moves $43 million in bitcoin to custody after lowest balance since 2012</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> CoinDesk &bull; Bitcoin</div>
+        <div class="watch-summary">Winklevoss Capital moved roughly 572 BTC ($42.8 M) from Gemini’s hot wallet into its own custody addresses, marking the ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://cointelegraph.com/news/kalshi-parents-monitoring-minors-prediction-markets" target="_blank">Kalshi to Create ‘Portal for Parents‘ on Prediction Markets: Report</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Cointelegraph &bull; Regulation</div>
+        <div class="watch-summary">Kalshi announced plans to create a &quot;Portal for Parents&quot; that will let minors participate in its regulated prediction‑mar...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://ripple.com/insights/ripple-custody-is-the-foundation-of-institutional-digital-asset-adoption/" target="_blank">Ripple Custody is the Foundation of Institutional Digital Asset Adoption</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Ripple &bull; Infrastructure</div>
+        <div class="watch-summary">Ripple announced enhancements to its Ripple Custody service, including the acquisition of Palisade, integrations with Ch...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-04-15/aibirds" target="_blank">AIbirds</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">The provided text is a generic Bloomberg website navigation page with links to various Bloomberg services and corporate ...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (2)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔒 Security <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/apple-removes-fake-ledger-app-stole-9-million-from-users" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Apple Removes Fake Ledger App That Stole $9.5M From Users</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏢 Enterprise <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://cointelegraph.com/news/kraken-boss-hints-ipo-plan-still-on" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Kraken Boss Hints IPO Plan Still On Despite Reports of Pause</span>
+                <span class="res-card-source">Cointelegraph</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, We are witnessing a convergence of infrastructure, security and regulatory challenges that shape the next wave of crypto innovation. CoreWeave’s recent $6 billion contract with Jane Street illustrates how high‑performance GPU cloud compute is becoming a strategic asset for firms that trade digital assets and run AI workloads. The partnership signals that enterprise demand for specialized cloud resources is accelerating, and it opens opportunities for startups that can optimize cost and latency for similar use cases. At the same time, the emergence of Anthropic’s Claude Mythos model raises a new class of threat. This AI system can autonomously discover zero‑day vulnerabilities, prompting exchanges such as Coinbase and Binance to scramble for access in order to harden their platforms. The potential financial impact of a successful attack could reach billions, making risk assessment a top priority for institutional investors. Finally, Apple’s recent removal of a counterfeit Ledger wallet app that drained almost $10 million in Bitcoin and Solana underscores the importance of rigorous app vetting. The incident, traced through a centralized mixing service and a major exchange, reminds us that custody solutions must be scrutinized at every layer. How can we as a community build resilient infrastructure, proactive security and trustworthy platforms to protect the billions flowing through our ecosystem? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://cointelegraph.com/news/coreweave-6b-deal-jane-street-ai-compute">CoreWeave Announces $6B Deal With Trading Firm Jane Street</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.dlnews.com/articles/markets/crypto-exchanges-seek-claude-mythos-access-amid-ai-threat/">‘AI-based super attacker’ threat looms as top crypto exchanges scramble for access to powerful Claude model</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.dlnews.com/articles/defi/apple-cracks-down-on-illegal-apps-following-fake-ledger-wallet/">Apple defends App Store record after fake Ledger app drains $10m in Bitcoin and Solana</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.dlnews.com/articles/regulation/elizabeth-warren-hits-elon-musk-over-x-money-crypto-rumours/">Elizabeth Warren slams Elon Musk over X Money’s rumored crypto feature</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://cointelegraph.com/news/bitwise-launches-avalanche-etp-with-staking-feature">Bitwise Launchdx Avalanche ETF with Staking Exposure</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://cointelegraph.com/news/injective-futures-go-live-on-cftc-regulated-us-exchange-opening-etf-pathway">Bitnomial Launches US-Regulated Injective Futures with ETF Implications</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.dlnews.com/articles/markets/rakuten-opens-xrp-trading-as-japanese-tech-firms-break-into-crypto-markets/">Rakuten makes XRP move as Japanese conglomerates target crypto markets</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.dlnews.com/articles/markets/etoro-shares-surge-on-news-of-deal-to-buy-crypto-wallet-zengo/">eToro shares jump on news of Zengo acquisition in crypto and prediction market move</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.dlnews.com/articles/markets/iran-bitcoin-toll-impossible-to-collect-says-analyst/">Iran's Bitcoin toll 'virtually impossible' to collect, says policy institute</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://cointelegraph.com/news/crypto-pac-fellowship-discloses-11m-from-cantor-fitzgerald-and-anchorage-digital">Crypto PAC Fellowship Discloses $11M from Cantor Fitzgerald and Anchorage</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[11]</span> <a href="https://cointelegraph.com/markets/bitcoin-traders-cash-out-63k-btc-profits-as-price-rallied-above-dollar76k">Bitcoin Stalls at $76K As Profit-Taking Hit 63K BTC</a> <span class="other-source">(Cointelegraph)</span></li>
+      <li><span class="source-num">[12]</span> <a href="https://www.coindesk.com/markets/2026/04/15/bitcoin-pulls-back-as-usd75-000-remains-both-the-milestone-and-the-ceiling">BTC price pulls back as $75,000 remains 'both the milestone and the ceiling:' Crypto Markets Today</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

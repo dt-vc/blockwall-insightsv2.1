@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 5, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 5, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">14</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">9</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">5</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">9</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">2</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Drift recovery tokens proposal indicates emerging on-chain insurance mechanisms but introduces governance risk, eight-year compensation horizon</li>
+        <li>Bitcoin's $81.5k surge driven by $500m spot ETF inflows, reinforcing tokenization as primary price catalyst</li>
+        <li>Wall Street banks moving tokenized assets to production suggests institutional adoption will augment, not replace, legacy settlement rails</li>
+        <li>MicroStrategy may liquidate BTC to fund $1.5bn dividend, creating short‑term sell pressure on Bitcoin</li>
+        <li>Hyperliquid's Bitcoin prediction market outperforms Polymarket and Kalshi, signaling institutional appetite for crypto‑based macro hedging</li>
+        <li>Coinbase's 14% workforce cut and AI shift reduces cost base, but $50‑60m charge may pressure near‑term earnings</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, A $295 million hack at Drift spurs a recovery‑token proposal while Bitcoin rallies past $81,500 on massive spot ETF inflows. Wall Street banks and the DTCC are moving tokenized assets into production, promising faster settlement and 24/7 market access.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (9)</h2>
+    <div class="story">
+      <h2 class="story-title">Drift to issue ‘recovery tokens’ in wake of $295m hack</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1776804564909-asset.webp" alt="Drift to issue ‘recovery tokens’ in wake of $295m hack" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Security &bull; Score: 7/10</div>
+      <p class="story-summary">Drift, a derivatives exchange built on Solana, suffered a hack that resulted in the loss of $295 million. In response, the platform’s team announced a recovery plan that will issue transferable “recovery tokens.” Each token is backed by a compensation pool that will be financed through future protocol revenue and stablecoins pledged by the community. The plan must be approved by token holders and the pool could require as much as eight years to fully reimburse affected users.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/drift-to-issue-recovery-tokens-in-wake-of-295m-hack/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Why is crypto up today: Bitcoin (BTC) tops $81,500 as tokenization push lifts BLSH, GLXY</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop" alt="Why is crypto up today: Bitcoin (BTC) tops $81,500 as tokenization push lifts BLSH, GLXY" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 7/10</div>
+      <p class="story-summary">Bitcoin surged past $81,500 as more than $500 million flowed into spot Bitcoin exchange‑traded funds, driving the day's market upside. The inflows helped spark a broader tokenization rally that lifted equities tied to the sector, including BLSH and GLXY. Bullish’s $4.2 billion acquisition of Equiniti and Galaxy Digital’s launch of a tokenized cash‑management fund with State Street further boosted related stocks. Coinbase’s partnership and equity investment in Centrifuge highlighted expanding institutional demand for on‑chain asset tokenization.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/05/bitcoin-extends-gains-to-usd81-500-as-tokenization-push-lifts-bullish-galaxy-centrifuge" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Tokenization won't disrupt banking rails but improve them, Wall Street executives say</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop" alt="Tokenization won't disrupt banking rails but improve them, Wall Street executives say" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 7/10</div>
+      <p class="story-summary">Wall Street banks and the DTCC are transitioning tokenized assets from pilot projects into production, handling real‑world volumes and integrating blockchain rails into existing market infrastructure. Executives say tokenization will augment, not replace, traditional banking systems, enabling 24/7 settlement and faster collateral management. The move signals that institutional investors can expect more efficient post‑trade processes while relying on familiar regulatory frameworks.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/05/tokenization-won-t-disrupt-banking-rails-but-improve-them-wall-street-executives-say" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Strategy weighs selling bitcoin to fund dividends amid Q1 net loss</h2>
+      <img class="story-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop" alt="Strategy weighs selling bitcoin to fund dividends amid Q1 net loss" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">MicroStrategy reported a first‑quarter net loss of $12.54 billion. To cover $1.5 billion in dividend commitments the company said it may sell a portion of its 818,334 bitcoin holdings. The suggestion caused the company's shares to fall more than 4 percent in after‑hours trading. The news also contributed to bitcoin slipping below $81,000, a level that matters to investors tracking corporate exposure to the cryptocurrency.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/05/michael-saylor-s-strategy-signals-potential-bitcoin-sale-to-fund-dividends-obligations" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Hyperliquid takes aim at Kalshi, Polymarket targeting $24bn prediction markets</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1773833184332.webp" alt="Hyperliquid takes aim at Kalshi, Polymarket targeting $24bn prediction markets" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; DeFi &bull; Score: 7/10</div>
+      <p class="story-summary">Hyperliquid has entered the prediction‑market sector by launching its first Bitcoin outcome market. In its debut the platform generated roughly three times the trading volume of established players Polymarket and Kalshi combined. Bernstein analysts interpret the surge as evidence that institutional investors are starting to employ binary contracts to hedge macro‑event risk. The move positions Hyperliquid as a new competitor targeting the roughly $24bn prediction‑market opportunity.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/hyperliquid-launches-prediction-markets-for-bitcoin/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Coinbase shares pop as CEO Brian Armstrong cuts 700 jobs and blames AI</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772112377161.webp" alt="Coinbase shares pop as CEO Brian Armstrong cuts 700 jobs and blames AI" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Enterprise &bull; Score: 6/10</div>
+      <p class="story-summary">Coinbase CEO Brian Armstrong announced a 14% reduction in the company’s workforce, eliminating roughly 700 positions and refocusing remaining staff on AI‑driven initiatives. The restructuring is expected to generate a one‑time charge of $50‑60 million. Investors responded positively, lifting Coinbase shares by about 4% on the news. The move signals a broader effort to contain costs and improve margins as the cryptocurrency exchange navigates a volatile market environment.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/coinbase-cuts-jobs-and-blames-artificial-intelligence/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Strategy shares soar 50% in a month as Bitcoin tops $80,000 ahead of Q1 earnings call</h2>
+      <img class="story-img" src="https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774459522999.webp" alt="Strategy shares soar 50% in a month as Bitcoin tops $80,000 ahead of Q1 earnings call" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">MicroStrategy’s shares jumped more than 50% over the past month as Bitcoin surpassed the $80,000 level, fueling renewed institutional attention. The price rally coincides with the company’s upcoming Q1 earnings call, where investors will scrutinize its Bitcoin‑focused balance sheet. In the same period, Bitcoin spot exchange‑traded funds attracted $827 million of inflows during the first two trading days of May. Simultaneously, short positions exceeding $200 million were liquidated, highlighting the market’s bullish momentum.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/markets/bitcoin-price-and-strategy-shares-soar-ahead-of-earnings/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">DeFi rides Pokémon trading card boom as onchain marketplaces bring in $11m</h2>
+      <img class="story-img" src="https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777995997883-asset.webp" alt="DeFi rides Pokémon trading card boom as onchain marketplaces bring in $11m" onerror="this.style.display='none'">
+      <div class="story-meta">DL News &bull; DeFi &bull; Score: 5/10</div>
+      <p class="story-summary">DeFi platforms that facilitate the purchase and sale of NFT versions of Pokémon, One Piece and other trading cards generated about $11 million in revenue in the most recent month, according to DefiLlama data. The revenue spike highlights a rapid expansion of on‑chain collectible markets. Physical card markets are experiencing supply constraints that are driving collectors toward digital alternatives. Institutional investors are monitoring the trend as speculative interest in blockchain‑based assets adds a new layer of liquidity and diversification potential.</p>
+      <a class="story-link" href="https://www.dlnews.com/articles/defi/defi-rides-pokemon-trading-card-boom/" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">넥서스(Nexus): FTX의 교훈, AI 에이전트 시대에 다시 쓰다.</h2>
+      <img class="story-img" src="https://substackcdn.com/image/fetch/$s_!xBTP!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F196546106%2F73db3eb4-7833-449c-8b0c-3cab59ca1fb8%2Ftranscoded-1777990793.png" alt="넥서스(Nexus): FTX의 교훈, AI 에이전트 시대에 다시 쓰다." onerror="this.style.display='none'">
+      <div class="story-meta">Tiger Research &bull; Infrastructure &bull; Score: 5/10</div>
+      <p class="story-summary">Nexus is building a layer one financial stack that relies on zero knowledge proofs to make reserves, settlement and trade matching mathematically verifiable. The protocol combines its own exchange with the USDX stablecoin on a single blockchain, creating a three part architecture. By making core financial processes provably sound, Nexus seeks to deliver transparent trustless finance for markets increasingly driven by AI agents. The design is positioned as a response to the FTX collapse, offering institutional investors a framework that reduces custodial risk and enhances regulatory confidence.</p>
+      <a class="story-link" href="https://reports.tiger-research.com/p/nexus-rewriting-the-ftx-lesson-for-kor" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (5)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/business/2026/05/05/coinbase-taps-centrifuge-as-preferred-tokenization-backbone-takes-equity-stake" target="_blank">Coinbase taps Centrifuge as preferred tokenization backbone, takes equity stake</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Tokenization</div>
+        <div class="watch-summary">Coinbase has named Centrifuge its preferred tokenization infrastructure and taken an equity stake in the firm. The partn...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.dlnews.com/articles/defi/uniswap-dao-votes-to-take-back-loaned-uni-tokens/" target="_blank">Uniswap DAO votes to take back $42m of governance tokens loaned to delegates</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> DL News &bull; DeFi</div>
+        <div class="watch-summary">The Uniswap DAO has voted on a proposal to reclaim roughly $42 million worth of UNI tokens that were loaned to the Unisw...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/podcasts/galaxy-grid/pump-fun-burns-370-million-hyperliquid-launches-prediction-markets-and-the-clarity-act-progresses" target="_blank">PumpFun Burns $370 Million, Hyperliquid Launches Prediction Markets, and the CLARITY Act Progresses</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Tokenization</div>
+        <div class="watch-summary">Bitcoin surged past $80,000 while Pump.fun announced a $370 million token burn and a shift to a 50% programmatic buy‑and...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://reports.tiger-research.com/p/nexus-rewriting-the-ftx-lesson-for-eng" target="_blank">Zero Lies: How Next FTX Will Be Solved</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Tiger Research &bull; Infrastructure</div>
+        <div class="watch-summary">The article proposes Nexus, a zero‑knowledge proof based layer that would make exchange reserves and liquidation logic m...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-05-05/investment-banking-without-a-license" target="_blank">Investment Banking Without a License</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">Bloomberg published an opinion piece titled “Investment Banking Without a License.” The content is limited to navigation...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, The past week has reminded us why resilience and innovation are at the heart of crypto. Drift, a Solana‑based derivatives exchange, disclosed a $295 million hack. In response the team is rolling out transferable recovery tokens backed by a compensation pool that will be funded by future protocol revenue and community pledged stablecoins. Token holders must approve the plan and the pool could take up to eight years to fully reimburse affected users, a stark reminder that robust risk frameworks are essential for any venture we back. At the same time the market is showing fresh vigor. Bitcoin surged past $81,500 as more than $500 million poured into spot Bitcoin ETFs. The tokenization wave lifted equities such as BLSH and GLXY, while Bullish’s $4.2 billion acquisition of Equiniti and Galaxy Digital’s tokenized cash‑management fund with State Street added further momentum. Coinbase’s partnership with Centrifuge underscores the growing institutional appetite for on‑chain assets. On the institutional side, Wall Street banks and the DTCC are moving tokenized assets from pilots to production. Executives stress that tokenization will augment, not replace, existing banking rails, delivering 24/7 settlement and faster collateral management while staying within familiar regulatory frameworks. For us at Blockwall, these signals point to a landscape where thoughtful capital can unlock new efficiencies across finance. How do you see tokenization reshaping the European market in the next twelve months? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.dlnews.com/articles/defi/drift-to-issue-recovery-tokens-in-wake-of-295m-hack/">Drift to issue ‘recovery tokens’ in wake of $295m hack</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/markets/2026/05/05/bitcoin-extends-gains-to-usd81-500-as-tokenization-push-lifts-bullish-galaxy-centrifuge">Why is crypto up today: Bitcoin (BTC) tops $81,500 as tokenization push lifts BLSH, GLXY</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/business/2026/05/05/tokenization-won-t-disrupt-banking-rails-but-improve-them-wall-street-executives-say">Tokenization won't disrupt banking rails but improve them, Wall Street executives say</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/business/2026/05/05/michael-saylor-s-strategy-signals-potential-bitcoin-sale-to-fund-dividends-obligations">Strategy weighs selling bitcoin to fund dividends amid Q1 net loss</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.dlnews.com/articles/markets/hyperliquid-launches-prediction-markets-for-bitcoin/">Hyperliquid takes aim at Kalshi, Polymarket targeting $24bn prediction markets</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.dlnews.com/articles/markets/coinbase-cuts-jobs-and-blames-artificial-intelligence/">Coinbase shares pop as CEO Brian Armstrong cuts 700 jobs and blames AI</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.dlnews.com/articles/markets/bitcoin-price-and-strategy-shares-soar-ahead-of-earnings/">Strategy shares soar 50% in a month as Bitcoin tops $80,000 ahead of Q1 earnings call</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.dlnews.com/articles/defi/defi-rides-pokemon-trading-card-boom/">DeFi rides Pokémon trading card boom as onchain marketplaces bring in $11m</a> <span class="other-source">(DL News)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://reports.tiger-research.com/p/nexus-rewriting-the-ftx-lesson-for-kor">넥서스(Nexus): FTX의 교훈, AI 에이전트 시대에 다시 쓰다.</a> <span class="other-source">(Tiger Research)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

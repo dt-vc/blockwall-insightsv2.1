@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 14, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 14, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">34</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">13</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">16</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">7</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>Wall Street tokenization surge accelerates, Bullish’s $4.2bn Equiniti deal signals institutional demand for on‑chain securities</li>
+        <li>CME’s Nasdaq Crypto Index futures launch, pending approval, offers institutions diversified crypto exposure via cash‑settled contracts</li>
+        <li>Clarity Act clears Senate committee, moving stablecoin regulatory certainty forward, market expects tighter compliance frameworks</li>
+        <li>Kraken migrates to Chainlink CCIP, reinforcing cross‑chain security after LayerZero exploit, enhancing asset custody confidence</li>
+        <li>BlackRock and Janus Henderson tokenized Treasury funds gain $1bn daily liquidity, shrinking settlement lag from days to minutes</li>
+        <li>Bitcoin spot ETF outflows hit $635m, price dips below 200‑day MA, indicating renewed macro pressure on crypto demand</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, today we see Wall Street racing to tokenize equities, the Senate advancing the Clarity Act for stablecoins, and CME launching crypto index futures to broaden institutional access. Meanwhile, AI‑chip IPOs and Kraken’s shift to Chainlink highlight the evolving enterprise and infrastructure landscape.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (12)</h2>
+    <div class="story">
+      <h2 class="story-title">Here is why Wall Street is racing to tokenize the entire stock market</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/ce76979de80d48f1c06e572ba9334b9ca76b09a4-4917x3278.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Here is why Wall Street is racing to tokenize the entire stock market" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 9/10</div>
+      <p class="story-summary">Wall Street firms are accelerating efforts to tokenize equities, highlighted by Bullish’s $4.2 billion acquisition of transfer agent Equiniti to enable on‑chain issuance and record‑keeping. Proponents say tokenized securities could provide 24/7 trading, near‑instant settlement, and richer ownership data. The push matters because it could reshape market infrastructure, but regulatory and market‑structure challenges remain.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/14/here-is-why-wall-street-is-racing-to-tokenize-the-entire-stock-market" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Cerebras shares skyrocket 100% after $5.5 billion IPO amid AI stock frenzy</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/9a8a3419303751b277814fad19efecc8e0855703-1920x1080.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Cerebras shares skyrocket 100% after $5.5 billion IPO amid AI stock frenzy" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Enterprise &bull; Score: 9/10</div>
+      <p class="story-summary">Cerebras Systems completed a $5.5 billion IPO, with its shares debuting at roughly double the offering price. The market valuation after the debut was about $40 billion, reflecting strong investor appetite for AI infrastructure. The rally coincided with a shift of capital away from crypto assets, as Bitcoin slipped below $70,000, underscoring the broader AI stock frenzy.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/14/cerebras-shares-skyrocket-100-after-usd5-5b-ipo-amid-ai-stock-frenzy" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">LIVEBLOG: Senate Banking Committee advances Clarity Act to full Senate floor</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/b20585dd6b8650ec8640cf4a4df92142af741434-3000x2001.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="LIVEBLOG: Senate Banking Committee advances Clarity Act to full Senate floor" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 8/10</div>
+      <p class="story-summary">The Senate Banking Committee voted to advance the bipartisan Clarity Act, which is designed to create durable regulatory rules for stablecoins, to the full Senate floor. Crypto industry leaders hailed the vote as a defining moment for U.S. digital‑asset leadership, while consumer finance groups expressed criticism of the proposal. Banking trade groups said further tweaks are needed, underscoring the ongoing debate over how stablecoin oversight will affect institutional investors and the broader financial system.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/14/live-senate-banking-committee-holds-key-hearing-to-advance-clarity-act" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">CME dives further into $85 trillion digital assets market with Nasdaq CME Crypto Index futures</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/3488397e93351ed3a88de739300c35ce1824573b-1420x916.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="CME dives further into $85 trillion digital assets market with Nasdaq CME Crypto Index futures" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 7/10</div>
+      <p class="story-summary">CME Group is expanding its presence in the estimated $85 trillion digital‑assets market by introducing Nasdaq CME Crypto Index futures. The contracts, which are cash‑settled and market‑cap‑weighted, are slated to begin trading on June 8 pending regulatory approval. They are offered in micro and standard contract sizes to provide institutional investors with direct exposure to a basket of leading cryptocurrencies.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/14/cme-dives-further-into-usd85-trillion-digital-assets-market-with-nasdaq-cme-crypto-index-futures" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Clarity Act clears U.S. Senate committee, on its way to a final test in Congress</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/5b68e0d3fa998d1f0c9223075e041e87c80937aa-5957x3971.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Clarity Act clears U.S. Senate committee, on its way to a final test in Congress" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">The U.S. Senate Banking Committee approved the Digital Asset Market Clarity Act by a 15‑9 vote, giving the crypto market‑structure bill bipartisan backing. The approval followed last‑minute amendments that secured Democratic support and will allow the measure to be merged with a similar proposal from the Agriculture Committee. The combined legislation now moves toward a full Senate and House vote, where it could establish clearer regulatory parameters that are important for institutional investors seeking certainty in digital‑asset markets.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/14/clarity-act-clears-u-s-senate-committee-on-its-way-to-a-final-test-in-congress" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">BlackRock, Janus Henderson tokenized funds get instant redemptions with new $1 billion facility</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/12aadf777b36dc32a0cd75e657cfee15fdcd5e22-1893x1065.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="BlackRock, Janus Henderson tokenized funds get instant redemptions with new $1 billion facility" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 7/10</div>
+      <p class="story-summary">Grove has launched the Basin liquidity network, which supplies up to $1 billion of daily stablecoin liquidity for instant redemptions of tokenized Treasury funds managed by BlackRock and Janus Henderson. By linking blockchain‑based fund trading with traditional settlement rails, the facility reduces settlement times from days to minutes. The partnership signals growing collaboration between major asset managers and crypto infrastructure firms to expand the tokenized U.S. Treasury market.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/14/blackrock-janus-henderson-tokenized-funds-get-instant-redemptions-with-new-usd1-billion-facility" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Kraken to replace LayerZero with Chainlink for kBTC, future wrapped assets</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/8c2d1d6c9e47c3db1e4becaf1739fb8dce590d3b-3600x2400.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Kraken to replace LayerZero with Chainlink for kBTC, future wrapped assets" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Infrastructure &bull; Score: 7/10</div>
+      <p class="story-summary">Kraken announced it will replace LayerZero with Chainlink’s Cross‑Chain Interoperability Protocol (CCIP) as the exclusive bridge for its kBTC and future wrapped assets. The move secures more than $3 billion in total value locked that was previously routed through the LayerZero bridge. The decision follows a $292 million exploit on a LayerZero bridge that prompted the migration. Kraken’s shift aligns with similar migrations by other platforms and signals increasing institutional confidence in Chainlink’s cross‑chain infrastructure.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/14/kraken-to-replace-layerzero-with-chainlink-to-bridge-assets-across-blockchains" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Kraken Owner Payward Trims Workforce Ahead of Potential IPO</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/60eaa4392d735a85d254d5ac89ec08baf0b7a62e-2048x1152.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Kraken Owner Payward Trims Workforce Ahead of Potential IPO" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Enterprise &bull; Score: 7/10</div>
+      <p class="story-summary">Payward, the parent company of the Kraken cryptocurrency exchange, announced a reduction of roughly 150 positions to streamline its operations. The workforce cut is part of a broader effort to prepare for a planned initial public offering while seeking new capital at a valuation of $20 billion. Payward has also pursued an acquisition strategy, recently buying Reap and Bitnomial and previously acquiring NinjaTrader. These moves are intended to strengthen the firm’s market position and improve its prospects for a public listing when market conditions become favorable.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/14/kraken-parent-payward-cuts-150-staff-streamlining-business-ahead-of-planned-ipo" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Stablecoin-powered neobank Fasset raises $51 million to expand across emerging markets</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/6b6252e5d3fce95cd69e44c214793ae862273fc4-3024x2016.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Stablecoin-powered neobank Fasset raises $51 million to expand across emerging markets" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Stablecoins &bull; Score: 7/10</div>
+      <p class="story-summary">Los Angeles‑based neobank Fasset raised $51 million in a Series B round backed by SBI Group, Investcorp and Arz Portföy. The capital will be used to expand into additional emerging‑market corridors, launch lending and trade‑finance products, and scale its proprietary Own Network stablecoin infrastructure. The move underscores growing institutional interest in stablecoin‑enabled banking platforms that can provide financial services to underbanked populations in developing economies.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/14/stablecoin-powered-neobank-fasset-raises-usd51-million-to-expand-across-emerging-markets" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Strive launches first daily dividend security in U.S. markets</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/2688a309ccf027625e4bf19277b7e78cfc32859f-2123x1084.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Strive launches first daily dividend security in U.S. markets" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Security &bull; Score: 6/10</div>
+      <p class="story-summary">Strive has launched Variable Rate Series A Perpetual Preferred Shares (SATA), the first U.S.-listed security to pay cash dividends each business day. The daily dividend structure lifts the effective annualized yield to roughly 13.88 percent. With all debt retired and a holding of more than 15,000 Bitcoin, the security offers institutional investors a crypto‑backed, high‑yield alternative to conventional money‑market products.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/14/strive-s-sata-to-become-first-u-s-listed-security-to-pay-daily-cash-dividends" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Cerebras IPO fuels AI stock frenzy as crypto loses investor attention</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/d6fdaab71df4ace1cbea421bd067e8b6a280a2f5-2946x1938.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Cerebras IPO fuels AI stock frenzy as crypto loses investor attention" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Investment &bull; Score: 6/10</div>
+      <p class="story-summary">Cerebras Systems priced its initial public offering at $185 per share, raising roughly $5.5 billion and giving the AI chipmaker a market value of about $40 billion. The large inflow of equity capital into AI related companies is creating a broader stock market frenzy around artificial intelligence technologies. At the same time Bitcoin has slipped below $70,000 and retail participation in the cryptocurrency has weakened, indicating a shift of investor attention toward AI assets.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/14/cerebras-openai-spacex-the-ipo-pipeline-that-could-drain-crypto" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">BTC ETFs lose $635 million in a single day. What next?</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/af5533562893e00a029eaace0996b96eacade301-1905x1072.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="BTC ETFs lose $635 million in a single day. What next?" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Bitcoin spot exchange‑traded funds recorded a net outflow of $635 million in a single day, the largest single‑day withdrawal since January. The outflow pushed five‑day cumulative withdrawals to $1.26 billion. The redemptions occurred as Bitcoin fell below its 200‑day moving average to roughly $79,400, a move linked to renewed U.S. inflation concerns. Analysts caution that ongoing macro pressure could suppress price momentum even after earlier periods of inflows, a risk that institutional investors monitor closely.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/14/bitcoin-investors-yanked-usd635-million-from-spot-etfs-in-a-day-here-s-what-it-means-for-price" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (13)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/05/14/bitcoin-hits-usd82-000-coinbase-leads-crypto-stock-gains-as-clarity-act-advances" target="_blank">Why is crypto up today: bitcoin (BTC) hits $82,000, Coinbase gains as Clarity Act advances</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">Bitcoin surged to $82,000 after the Senate Banking Committee advanced the Clarity Act, a key digital‑asset regulatory bi...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/policy/2026/05/14/bank-of-england-ready-to-water-down-overly-conservative-stablecoin-proposals-ft" target="_blank">Bank of England ready to water down 'overly conservative' stablecoin proposals: FT</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">The Bank of England said it will ease its initially proposed limits on stablecoin holdings after industry pushback, incl...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/daybook-us/2026/05/14/clarity-act-markup-leaves-bitcoin-unstirred" target="_blank">U.S. Clarity Act markup leaves BTC price unstirred: Crypto Daily</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">The U.S. Senate is set to markup the Clarity Act, a sweeping digital‑asset bill that would ban interest on stablecoin ba...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bankless.com/read/news/kraken-abandons-layerzero-bridge-switches-to-chainlink" target="_blank">Kraken Abandons LayerZero Bridge, Switches to Chainlink on Bankless</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Bankless &bull; Infrastructure</div>
+        <div class="watch-summary">Kraken announced it will retire LayerZero in favor of Chainlink's CCIP as the sole cross‑chain bridge for its wrapped Bi...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bankless.com/read/news/hyperliquid-shifts-stablecoin-strategy-back-toward-usdc" target="_blank">Hyperliquid Shifts Stablecoin Strategy Back Toward USDC on Bankless</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bankless &bull; Stablecoins</div>
+        <div class="watch-summary">Native Markets has sold itself to Coinbase and is sunsetting its USDH stablecoin on Hyperliquid, shifting the exchange’s...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/markets/2026/05/14/moody-s-awards-top-rating-to-fidelity-and-blackrock-s-tokenized-money-market-funds" target="_blank">Moody’s assigns Aaa-mf assessments to Fidelity and BlackRock tokenized money market funds</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Tokenization</div>
+        <div class="watch-summary">Moody’s awarded its top‑tier Aaa-mf assessment to tokenized money‑market funds issued by Fidelity International and Blac...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bankless.com/read/news/senate-banking-committee-advances-crypto-clarity-act" target="_blank">Senate Banking Committee Advances Crypto CLARITY Act on Bankless</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bankless &bull; Regulation</div>
+        <div class="watch-summary">The Senate Banking Committee voted 15-9 to advance its version of the Crypto CLARITY Act, a comprehensive bill aimed at ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://a16zcrypto.com/posts/article/tokenized-securities-broker-dealers-sec-response/" target="_blank">Modernizing markets for a tokenized future: Principles for tokenized securities and broker-dealers - a16z crypto</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> a16z &bull; Regulation</div>
+        <div class="watch-summary">a16z crypto submitted detailed responses to the SEC’s Crypto Task Force on how U.S. securities laws should evolve to acc...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bankless.com/podcast/the-200-billion-shadow-market-behind-anthropics-stock" target="_blank">The $200 Billion Shadow Market Behind Anthropic</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bankless &bull; Investment</div>
+        <div class="watch-summary">The episode discusses a $200 billion shadow secondary market for private‑company stock such as Anthropic, SpaceX, and Op...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://a16zcrypto.com/posts/article/arcade-tokens/" target="_blank">Arcade tokens: The most underappreciated token type</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> a16z &bull; Tokenization</div>
+        <div class="watch-summary">The article introduces &quot;arcade tokens&quot; – blockchain‑based internal currencies with relatively stable value that operate ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/podcasts/galaxy-brains/bitcoin-debates-spam-and-quantum-with-matt-corallo" target="_blank">Bitcoin Debates Spam &amp; Quantum with Matt Corallo</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Bitcoin</div>
+        <div class="watch-summary">In a Galaxy Digital podcast, Bitcoin developer Matt Corallo discusses ongoing debates about Bitcoin's development roadma...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://a16zcrypto.com/posts/podcast/foundation-era-tokens-policy-startup-structures/" target="_blank">After the foundation era: Tokens, policy, and startup structures - a16z crypto</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> a16z &bull; Regulation</div>
+        <div class="watch-summary">a16z crypto’s podcast examines how shifting U.S. policy is ending the crypto &quot;foundation era&quot; and introduces new legal s...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-05-14/ryan-cohen-wants-to-work-at-ebay" target="_blank">Ryan Cohen Wants to Work at eBay</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">Bloomberg reports that entrepreneur Ryan Cohen has expressed a desire to work at eBay. The piece provides no further det...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (9)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">5</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/markets/2026/05/14/bitcoin-stuck-below-usd80-000-as-leveraged-longs-unwind-altcoins-slide" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin slips below $80,000 as inflation concerns trigger crypto selloff</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/14/bitcoin-s-rally-past-usd80-000-came-without-us-spot-demand-on-chain-data-shows" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin analysis: BTC's recent rally past $80,000 lacked Coinbase premium</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/14/why-bitcoin-s-recent-climb-to-usd80-000-might-just-be-a-temporary-liquidity-squeeze" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Why bitcoin’s recent climb to $80,000 might just be a temporary liquidity squeeze</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/14/solana-drops-5-bitcoin-below-usd80-000-as-xi-warns-trump-on-taiwan-conflict" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Why is bitcoin price down? BTC at $79,000 as Xi warns Trump on Taiwan conflict</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/tech/2026/05/14/claude-helps-recover-usd395-000-in-bitcoin-trapped-on-a-computer-for-years" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Did Claude just 'crack' a bitcoin wallet? AI tool helps find 5 BTC stuck for years</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚖️ Regulation <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/policy/2026/05/14/u-s-senators-lament-failure-to-win-bipartisan-support-yet-on-crypto-clarity-act" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">U.S. senators lament failure to win bipartisan support, yet, on crypto Clarity Act</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🏛️ Tokenization <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/markets/2026/05/14/trump-token-down-5-as-namesake-handset-begins-shipping-next-week" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">TRUMP token down 5% as namesake handset begins shipping next week</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">2</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://www.coindesk.com/markets/2026/05/14/xrp-edges-higher-while-bitcoin-ether-and-dogecoin-slip-keeping-focus-on-usd1-49-breakout-zone" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">XRP edges higher while bitcoin, ether and dogecoin slip, keeping focus on $1.49 breakout zone</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/coindesk-indices/2026/05/14/coindesk-20-performance-update-bittensor-tao-rises-1-7-leading-index-higher" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">CoinDesk 20 performance update: Bittensor (TAO) rises 1.7%, leading index higher</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, Wall Street is moving at record speed to bring the entire stock market on‑chain. Bullish’s $4.2 billion purchase of transfer agent Equiniti is a clear signal that firms want tokenized equities that can trade 24/7, settle in minutes and carry richer ownership data. The promise of a modern market infrastructure is exciting, yet the path is still littered with regulatory and market‑structure questions that we must help solve. At the same time, the AI boom is reshaping capital flows. Cerebras Systems closed a $5.5 billion IPO with shares soaring 100 percent on debut, pushing its valuation to roughly $40 billion. The rally came as Bitcoin slipped below $70,000, highlighting a temporary shift of investor appetite from crypto assets to AI infrastructure. For us, the surge underscores the need to build bridges between AI and decentralized finance, creating tools that can serve both worlds. In Washington, the Senate Banking Committee voted to send the bipartisan Clarity Act to the full Senate floor. The proposal aims to lock in durable rules for stablecoins, a move praised by crypto leaders as a milestone for U.S. digital‑asset leadership. Consumer finance groups and banking trade associations are still pushing for tweaks, reminding us that stablecoin oversight will shape how institutional investors engage with the ecosystem. These three currents, tokenized securities, AI‑driven capital, and clearer stablecoin rules, are converging to redraw the financial map. As a European crypto VC, we see a fertile landscape for founders who can navigate this new terrain. What opportunities do you think will emerge for builders at the intersection of finance, AI and Web3? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/business/2026/05/14/here-is-why-wall-street-is-racing-to-tokenize-the-entire-stock-market">Here is why Wall Street is racing to tokenize the entire stock market</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/markets/2026/05/14/cerebras-shares-skyrocket-100-after-usd5-5b-ipo-amid-ai-stock-frenzy">Cerebras shares skyrocket 100% after $5.5 billion IPO amid AI stock frenzy</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/policy/2026/05/14/live-senate-banking-committee-holds-key-hearing-to-advance-clarity-act">LIVEBLOG: Senate Banking Committee advances Clarity Act to full Senate floor</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/markets/2026/05/14/cme-dives-further-into-usd85-trillion-digital-assets-market-with-nasdaq-cme-crypto-index-futures">CME dives further into $85 trillion digital assets market with Nasdaq CME Crypto Index futures</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/policy/2026/05/14/clarity-act-clears-u-s-senate-committee-on-its-way-to-a-final-test-in-congress">Clarity Act clears U.S. Senate committee, on its way to a final test in Congress</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.coindesk.com/business/2026/05/14/blackrock-janus-henderson-tokenized-funds-get-instant-redemptions-with-new-usd1-billion-facility">BlackRock, Janus Henderson tokenized funds get instant redemptions with new $1 billion facility</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/business/2026/05/14/kraken-to-replace-layerzero-with-chainlink-to-bridge-assets-across-blockchains">Kraken to replace LayerZero with Chainlink for kBTC, future wrapped assets</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.coindesk.com/business/2026/05/14/kraken-parent-payward-cuts-150-staff-streamlining-business-ahead-of-planned-ipo">Kraken Owner Payward Trims Workforce Ahead of Potential IPO</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.coindesk.com/business/2026/05/14/stablecoin-powered-neobank-fasset-raises-usd51-million-to-expand-across-emerging-markets">Stablecoin-powered neobank Fasset raises $51 million to expand across emerging markets</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://www.coindesk.com/markets/2026/05/14/strive-s-sata-to-become-first-u-s-listed-security-to-pay-daily-cash-dividends">Strive launches first daily dividend security in U.S. markets</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[11]</span> <a href="https://www.coindesk.com/markets/2026/05/14/cerebras-openai-spacex-the-ipo-pipeline-that-could-drain-crypto">Cerebras IPO fuels AI stock frenzy as crypto loses investor attention</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[12]</span> <a href="https://www.coindesk.com/markets/2026/05/14/bitcoin-investors-yanked-usd635-million-from-spot-etfs-in-a-day-here-s-what-it-means-for-price">BTC ETFs lose $635 million in a single day. What next?</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>

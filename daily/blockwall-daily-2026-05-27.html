@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockwall Daily Insights - May 27, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/newsletter.css">
+  <style>
+    .story-img { max-height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    .exec-summary { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .exec-summary h2 { color: #8b7cf6; margin-bottom: 16px; font-size: 1.25rem; }
+    .exec-summary ul { list-style: none; padding: 0; margin: 0; }
+    .exec-summary li { padding: 8px 0; padding-left: 24px; position: relative; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6; }
+    .exec-summary li:before { content: "\2192"; position: absolute; left: 0; color: #8b7cf6; font-weight: bold; }
+    .daily-badge { display: inline-block; background: #8b7cf6; color: white; padding: 4px 12px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 32px; }
+    @media (max-width: 640px) { .watch-grid { grid-template-columns: 1fr; } }
+    .watch-item { background: rgba(139,124,246,0.06); border: 1px solid rgba(139,124,246,0.15); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s; }
+    .watch-item:hover { border-color: rgba(139,124,246,0.4); }
+    .watch-item a { color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 0.88rem; line-height: 1.4; display: block; }
+    .watch-item a:hover { color: #8b7cf6; }
+    .watch-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; }
+    .watch-summary { font-size: 0.8rem; color: #cbd5e1; margin-top: 6px; line-height: 1.4; }
+    .resources-section { margin: 24px 0; }
+    .resources-accordion { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .res-category { border: 1px solid rgba(139,124,246,0.12); border-radius: 10px; overflow: hidden; background: rgba(15,15,30,0.4); }
+    .res-cat-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(139,124,246,0.06); border: none; cursor: pointer; color: #e2e8f0; font-size: 0.9rem; font-weight: 600; transition: background 0.2s; font-family: inherit; }
+    .res-cat-header:hover { background: rgba(139,124,246,0.12); }
+    .res-cat-title { display: flex; align-items: center; gap: 8px; }
+    .res-cat-count { display: inline-flex; align-items: center; justify-content: center; background: rgba(139,124,246,0.2); color: #a78bfa; font-size: 0.7rem; font-weight: 700; min-width: 22px; height: 22px; border-radius: 11px; padding: 0 6px; }
+    .res-cat-chevron { color: #64748b; font-size: 0.85rem; }
+    .res-cat-body { max-height: 320px; overflow-y: auto; padding: 4px 8px 8px; scrollbar-width: thin; scrollbar-color: rgba(139,124,246,0.3) transparent; }
+    .res-card { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .res-card:hover { background: rgba(139,124,246,0.08); }
+    .res-dot { flex-shrink: 0; font-size: 0.65rem; margin-top: 4px; }
+    .res-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .res-card-title { color: #e2e8f0; font-size: 0.85rem; font-weight: 500; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .res-card:hover .res-card-title { color: #a78bfa; }
+    .res-card-source { color: #64748b; font-size: 0.72rem; }
+    [data-theme="light"] .res-category { background: rgba(255,255,255,0.6); border-color: rgba(139,124,246,0.15); }
+    [data-theme="light"] .res-cat-header { background: rgba(139,124,246,0.04); color: #1e293b; }
+    [data-theme="light"] .res-card-title { color: #1e293b; }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><div class="nav-logo">BW</div><span>Blockwall Insights</span></a>
+    <div class="nav-links"><a href="index.html" class="nav-link active">Daily</a><a href="../weekly/index.html" class="nav-link">Weekly</a><a href="../monthly/index.html" class="nav-link">Monthly</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
+  </div></nav>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Daily Archive</a>
+    <div class="header">
+      <span class="daily-badge">&#x1F4C5; Daily Digest</span>
+      <div class="header-label">Blockwall Capital</div>
+      <h1>Daily Insights</h1>
+      <div class="header-date">May 27, 2026</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">49</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-value">10</div><div class="stat-label">Highlights</div></div>
+      <div class="stat"><div class="stat-value">15</div><div class="stat-label">Watching</div></div>
+      <div class="stat"><div class="stat-value bullish">23</div><div class="stat-label">Bullish</div></div>
+      <div class="stat"><div class="stat-value bearish">14</div><div class="stat-label">Bearish</div></div>
+    </div>
+    <div class="exec-summary">
+      <h2>&#x1F4CA; Today's Key Signals</h2>
+      <ul>
+        <li>UTB’s national charter gives crypto firms direct Fed access, unlocking $10bn monthly liquidity pipeline</li>
+        <li>Mastercard’s NY BitLicense positions it to monetize stablecoin settlement, creating new revenue streams for payment networks</li>
+        <li>Transparency Alliance’s token disclosure framework could satisfy institutional due‑diligence, accelerating institutional capital inflows</li>
+        <li>SoFiUSD, bank‑issued stablecoin on Ethereum and Solana, offers instant on‑ramp for 15 million retail users</li>
+        <li>DTCC’s Stellar integration targets tokenized securities by 2027, signaling mainstream adoption of blockchain settlement</li>
+        <li>Large dark‑pool sell of BlackRock’s Bitcoin ETF fuels BTC price dip, indicating heightened short‑term risk</li>
+      </ul>
+    </div>
+    <div class="intro">Dear Founders, Investors, and Friends, Banks like United Texas and SoFi are launching crypto‑focused stablecoins and AI‑driven payment platforms. Meanwhile Mastercard secured a New York BitLicense, exchanges pushed token‑disclosure standards, and tokenized securities moved onto Stellar and Solana.</div>
+    <h2 class="section-title">&#x1F525; Key Developments (10)</h2>
+    <div class="story">
+      <h2 class="story-title">Wall Street gets new crypto rival after Texas bank completes regulatory pivot</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/9155402d2f257d9dc12ed22bfcb199fedab6cf64-2752x1536.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Wall Street gets new crypto rival after Texas bank completes regulatory pivot" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">United Texas Bank has switched from a Texas state charter to a national charter after receiving OCC approval, positioning itself as a crypto‑focused bridge to the U.S. banking system. The bank now provides direct Federal Reserve access and processes about $10 billion each month for cryptocurrency firms, giving institutional participants a regulated on‑ramp. It is also rolling out an AI‑driven payments network called UTB Atomic and a compliance platform named UTB Prism Sentinel, which could broaden Wall Street’s options for crypto liquidity and risk management.</p>
+      <a class="story-link" href="https://www.coindesk.com/policy/2026/05/27/wall-street-gets-new-crypto-rival-after-texas-bank-completes-regulatory-pivot" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Mastercard secures New York BitLicense to support stablecoin and digital payment infrastructure</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/9484eac243cf130dc1e58b2604807e727083b53e-3315x2207.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Mastercard secures New York BitLicense to support stablecoin and digital payment infrastructure" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Payments &bull; Score: 7/10</div>
+      <p class="story-summary">Mastercard has obtained a New York BitLicense, allowing it to conduct digital‑asset activities and develop blockchain‑based payment and settlement infrastructure centered on stablecoins and tokenized deposits. The approval places Mastercard among a limited group of firms cleared by the New York Department of Financial Services. This development signals a deeper integration of traditional payment networks with regulated crypto rails.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/mastercard-secures-new-york-bitlicense-to-support-stablecoin-and-digital-payment-infrastructure" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Crypto’s biggest exchanges back push for token disclosure standards as industry courts institutional capital</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/6350871bc56a7634a819441002c9ab2762c2e06b-7360x4912.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Crypto’s biggest exchanges back push for token disclosure standards as industry courts institutional capital" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Regulation &bull; Score: 7/10</div>
+      <p class="story-summary">More than 40 crypto firms, among them Coinbase, Kraken and Binance.US, have launched the Transparency Alliance. The alliance will adopt Blockworks' Token Transparency Framework to set disclosure standards for token projects. The framework is modeled on stock‑market reporting practices. By providing institutional investors with clearer data on token economics and governance, the initiative seeks to make crypto assets more attractive to large capital providers.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/27/crypto-s-biggest-exchanges-back-push-for-token-disclosure-standards-as-industry-courts-institutional-capital" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">SoFi brings bank-issued stablecoin to 15 million users in crypto push</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/6729e1c305b50c141cc3d56e8ad78bb80d24b6e7-1500x968.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="SoFi brings bank-issued stablecoin to 15 million users in crypto push" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Stablecoins &bull; Score: 7/10</div>
+      <p class="story-summary">SoFi has launched SoFiUSD, a dollar‑backed stablecoin that is issued by its nationally chartered bank and runs on the Ethereum and Solana blockchains. The token is immediately accessible to SoFi’s roughly 15 million retail customers, making the firm the first U.S. bank to place a stablecoin on a public blockchain. The move expands SoFi’s crypto offering and positions it to serve traditional‑finance applications such as cross‑border payments.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/sofi-brings-bank-issued-stablecoin-to-15-million-users-in-crypto-push" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">DTCC taps Stellar (XLM) for tokenized securities network in latest Wall Street blockchain push</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/017c04b0a6f702fccd76ffd5aa923321e5b66146-2048x1152.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="DTCC taps Stellar (XLM) for tokenized securities network in latest Wall Street blockchain push" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 7/10</div>
+      <p class="story-summary">The Depository Trust &amp; Clearing Corporation, the United States’ primary clearing and settlement hub for equities and bonds, announced it will connect its tokenized securities platform to the Stellar public blockchain. The integration, slated for completion by early 2027, will support blockchain‑based issuance, settlement and lifecycle management of stocks, exchange‑traded funds and Treasury bonds. By leveraging Stellar’s distributed ledger and its native XLM token, DTCC aims to increase settlement efficiency and broaden access to digital securities for institutional participants. The partnership highlights the accelerating adoption of tokenized assets on Wall Street and triggered a short‑term price increase for Stellar’s XLM token.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Solana (SOL) news: DEX Orca launches new marketplace for tokenized real-world assets</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/e356d653a3a292e3c3fa3112178a7fe53ccfb692-1500x739.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Solana (SOL) news: DEX Orca launches new marketplace for tokenized real-world assets" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Tokenization &bull; Score: 7/10</div>
+      <p class="story-summary">Orca, a decentralized exchange built on Solana, has introduced a permissioned marketplace for tokenized real‑world assets. The platform initially offers trading of Streamex’s gold‑linked security GLDY to investors who meet on‑chain KYC and eligibility requirements. By embedding compliance checks directly into the blockchain, Orca aims to meet regulatory standards while preserving the speed and low cost of Solana’s network. This development positions Orca as a potential conduit for institutional capital seeking exposure to traditional assets through crypto infrastructure.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/solana-dex-orca-launches-new-marketplace-for-tokenized-real-world-assets" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin (BTC) price news: Whale dumps $1.29 billion of BlackRock's bitcoin ETF in a dark pool trade</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/b84cc03a0757fa4a135a5267f8d8f07b962c3105-1280x720.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Bitcoin (BTC) price news: Whale dumps $1.29 billion of BlackRock's bitcoin ETF in a dark pool trade" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 7/10</div>
+      <p class="story-summary">An unidentified large holder executed a dark‑pool transaction that sold $1.29 billion of BlackRock’s IBIT spot Bitcoin ETF. The trade contributed to a total net outflow of $334 million from U.S. spot Bitcoin ETFs on the same day. Cumulative redemptions have reached $2.26 billion over the past two weeks, pushing the price of Bitcoin below $77,000. The scale of the redemption underscores heightened downside pressure on spot Bitcoin products, a signal that institutional investors monitor for liquidity and market‑risk assessments.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/27/whale-alert-someone-dumped-usd1-29-billion-of-blackrock-s-bitcoin-etf-in-a-dark-pool-trade" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">BIS' Project Agora finds tokenization could make cross-border payments faster, safer</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/d4b8c2736826acf67a4e797cb4e4ebca1dcd5406-799x533.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="BIS' Project Agora finds tokenization could make cross-border payments faster, safer" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Payments &bull; Score: 6/10</div>
+      <p class="story-summary">The Bank for International Settlements is leading Project Agora, a collaborative effort that explores tokenising central bank reserves and commercial bank deposits. Early simulations indicate that such tokenisation could dramatically speed up and increase the security of cross‑border payments. The consortium of central banks and private firms will now move from simulation to real‑value testing of atomic settlement on blockchain infrastructure, a step that could reshape international payment networks for institutional investors.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/bis-project-finds-tokenization-could-make-cross-border-payments-faster-safer" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">VanEck's tokenized fund lands on Euler as DeFi courts Wall Street institutions</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/986e63e35ef2b083a791229fdee4da648e75fe85-1500x1000.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="VanEck's tokenized fund lands on Euler as DeFi courts Wall Street institutions" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; DeFi &bull; Score: 6/10</div>
+      <p class="story-summary">VanEck’s tokenized Treasury fund, issued by Securitize, is now available on the DeFi lending platform Euler. The listing enables tokenized U.S. Treasuries to serve as on‑chain collateral for borrowers. This move illustrates how DeFi protocols are beginning to incorporate regulated, real‑world assets. The development is significant as the tokenized Treasury market is expected to grow toward trillions of dollars, attracting institutional interest.</p>
+      <a class="story-link" href="https://www.coindesk.com/business/2026/05/27/vaneck-s-tokenized-fund-lands-on-euler-as-defi-courts-wall-street-institutions" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="story">
+      <h2 class="story-title">Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps</h2>
+      <img class="story-img" src="https://cdn.sanity.io/images/s3y3vcno/production/b5cd3bf36d1eac21a178cc65ec243a52a29b099a-1280x854.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg" alt="Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps" onerror="this.style.display='none'">
+      <div class="story-meta">CoinDesk &bull; Bitcoin &bull; Score: 6/10</div>
+      <p class="story-summary">Swissblock data indicates that U.S. spot Bitcoin ETFs have net‑accumulated only 4,500 BTC this year, reflecting a sharp slowdown in inflows. The data also shows a shift from net buying to net selling in May, pushing the Bitcoin Risk Index into a high‑risk zone. Bitcoin is currently trading near $75,800 and the broader cryptocurrency market is experiencing declines, a signal that institutional demand for BTC exposure is weakening.</p>
+      <a class="story-link" href="https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows" target="_blank">Read full article &rarr;</a>
+    </div>
+    <div class="divider"></div>
+    <h2 class="section-title">&#x1F440; More to Watch (15)</h2>
+    <div class="watch-grid">
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/news-analysis/2026/05/27/crypto-cash-backs-potential-new-allies-in-congress-as-industry-pac-presence-widens" target="_blank">The crypto industry’s massive political war chest is starting to lean Republican ahead of midterms</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">Crypto‑related political action committees are shifting toward a Republican focus ahead of the U.S. midterms, with the e...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/policy/2026/05/27/google-engineer-insider-traded-search-results-on-polymarket-feds-allege" target="_blank">Google engineer insider-traded search results on Polymarket, Feds allege</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">A Google security engineer, Michele Spagnuolo, was arrested for allegedly using non‑public search‑trend data to place $3...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/research/satoshi-bitcoin-salomon-brothers-patoshi-abandoned-property-new-york-noah-doe-lawsuit" target="_blank">âSalomon Brosâ Client Sues to Claim Legal Ownership of Satoshiâs Coins</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Regulation</div>
+        <div class="watch-summary">A lawsuit filed in New York Supreme Court by a pseudonymous plaintiff and two Wyoming LLCs seeks a declaratory judgment ...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/research/clarity-act-senate-banking-markup-may-2026-analysis" target="_blank">CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Regulation</div>
+        <div class="watch-summary">The Senate Banking Committee released a revised 309‑page amendment to the CLARITY Act, expanding on the earlier draft an...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/opinion/2026/05/27/a-bipartisan-bridge-to-the-future-why-the-senate-must-finish-the-job-on-digital-assets" target="_blank">A bipartisan bridge to the future: Why the Senate must finish the job on digital Assets</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">The U.S. Senate advanced the Digital Asset Market Clarity Act with a 15‑9 vote, signaling bipartisan momentum for a comp...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.coindesk.com/policy/2026/05/27/singapore-charges-former-hodlnaut-ceo-zhu-juntao-over-terra-collapse-claims" target="_blank">Singapore charges former Hodlnaut CEO Zhu Juntao over Terra collapse claims</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> CoinDesk &bull; Regulation</div>
+        <div class="watch-summary">Singapore authorities have charged former Hodlnaut CEO Zhu Juntao with six fraud offenses for allegedly misleading custo...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://messari.io/newsletter/unqualified-opinions/unqualified-opinions-how-many-apps-does-near-power" target="_blank">SharpLink joins Russell Indexes, South Korea arrests memecoin scammer, Is NEAR mispriced right now?</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Messari News &bull; Investment</div>
+        <div class="watch-summary">SharpLink Gaming, an Ethereum treasury firm backed by Joe Lubin, was added to the Russell 2000 and Russell 3000 indexes....</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.galaxy.com/insights/research/ethereum-strawmap-roadmap-l1-scaling-analysis" target="_blank">Mapping the Strawmap: Ethereumâs Big Course Correction</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Galaxy &bull; Ethereum</div>
+        <div class="watch-summary">Ethereum’s new Strawmap roadmap reorients the scaling strategy from a rollup‑centric model to base‑layer improvements, o...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/10-oxford-spinouts-ready-to-raise-series-a/" target="_blank">10 Oxford spinouts ready to raise Series A</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Sifted &bull; Investment</div>
+        <div class="watch-summary">Sifted reports that ten Oxford university spin‑out companies are preparing to launch Series A fundraising rounds, reflec...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bankless.com/podcast/nears-ai-money-thesis-intents-privacy-and-tokenomics" target="_blank">NEAR’s AI Money Thesis: Intents, Privacy, and Tokenomics</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Bankless &bull; Infrastructure</div>
+        <div class="watch-summary">The podcast discusses NEAR’s emerging role as an AI‑focused infrastructure layer, highlighting its Near Intense suite th...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/balderton-avp-early-blow-cognism/" target="_blank">Balderton, AVP suffer early blow in ‘unfair prejudice’ case</a>
+        <div class="watch-meta"><span style="color:#ef4444">&#x25CF;</span> Sifted &bull; Regulation</div>
+        <div class="watch-summary">Balderton Capital, AVP and other investors have lost a strike‑out hearing in an unfair prejudice case brought by the for...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/the-hidden-cost-of-unstructured-data-and-how-to-fix-it-brnd/" target="_blank">The hidden cost of unstructured data — and how to fix it</a>
+        <div class="watch-meta"><span style="color:#22c55e">&#x25CF;</span> Sifted &bull; Enterprise</div>
+        <div class="watch-summary">The article highlights how fragmented, unstructured data hampers AI adoption for SMBs and argues that a unified, governe...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://sifted.eu/articles/bek-ventures-investment-team-departures-earlybird/" target="_blank">Bek Ventures, formerly Earlybird Digital East, loses four investment team members in matter of months</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Sifted &bull; Investment</div>
+        <div class="watch-summary">Bek Ventures, previously Earlybird Digital East, has seen four members of its investment team leave within a few months....</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://www.bloomberg.com/opinion/newsletters/2026-05-27/robinhood-adds-some-agents" target="_blank">Robinhood Adds Some Agents</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Bloomberg &bull; Other</div>
+        <div class="watch-summary">The article titled “Robinhood Adds Some Agents” contains only generic Bloomberg website navigation and branding elements...</div>
+      </div>
+      <div class="watch-item">
+        <a href="https://blockworks.com/news/trump-strategic-crypto-reserve" target="_blank">Just a moment...</a>
+        <div class="watch-meta"><span style="color:#94a3b8">&#x25CF;</span> Blockworks &bull; Other</div>
+        <div class="watch-summary">The page displayed is a security verification notice from blockworks.com, indicating that the site is checking for bots....</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="resources-section">
+      <h2 class="section-title">&#x1F4DA; All Resources (24)</h2>
+      <div class="resources-accordion">
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">₿ Bitcoin <span class="res-cat-count">7</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/markets/2026/05/27/elon-musk-could-become-a-top-5-corporate-bitcoin-holder-if-tesla-and-spacex-merge" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Elon Musk could become a top 5 corporate bitcoin (BTC) holder if Tesla and SpaceX merge</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/bitcoin-clings-to-usd75-000-support-as-bear-market-signals-resurface" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin on the ropes at $75,000 as AI token rally fizzles: Crypto Markets Today</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/daybook-us/2026/05/27/traders-once-again-prefer-dollars-over-bitcoin-usdt-usdc-dominance-rises" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin traders once again prefer dollar stablecoins USDT, USDC over BTC: Crypto Daily</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/traders-watch-bitcoin-golden-cross-as-btc-slides-to-near-usd75-000-zec-dives-9" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Traders watch bitcoin 'golden cross' as BTC slides to near $75,000, ZEC dives 9%</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/bitcoin-vs-gold-btc-s-three-month-uptrend-has-snapped" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin's (BTC) run against gold is breaking. What next?</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/bitcoin-slips-to-13th-largest-asset-as-ai-semiconductor-booms-accelerate" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin (BTC) drops to 13th largest asset as capital flees to AI and precious metals</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/live-markets-bitcoin-remains-under-pressure-as-korea-s-sk-hynix-joins-micron-in-usd1-trillion-club" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Bitcoin price updates: BTC slips back near $74,000 as investors turn elsewhere for gains</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⟠ Ethereum <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/business/2026/05/27/bit-digital-bought-usd20-million-eth-for-first-time-since-october-before-15-plunge" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Ethereum news: Bit Digital (BTBT) bought ether first time since October before 15% decline</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">⚖️ Regulation <span class="res-cat-count">7</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/business/2026/05/27/major-crypto-exchanges-increase-transfer-scrutiny-with-htx-over-uk-sanctions" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Major crypto exchanges increase transfer scrutiny with HTX over UK sanctions</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/business/2026/05/27/banca-sella-gets-green-light-to-provide-crypto-services-to-customers-first-in-italy" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Banca Sella gets green light to provide crypto services to customers, first in Italy</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/crypto-exchange-htx-rejects-u-k-sanction-allegations-says-it-refused-ruble-stablecoin-listing" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Crypto exchange HTX rejects U.K. sanction allegations, says it refused A7A5 stablecoin listing</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/policy/2026/05/27/crypto-pacs-spend-usd9-million-in-texas-and-score-wins-in-both-parties" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Crypto PACs spend $9 million in Texas and score wins in both parties</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/coindesk-indices/2026/05/27/crypto-long-and-short-how-the-genius-act-repriced-bitcoin-s-monetary-premium" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">The GENIUS Act Repriced Bitcoin's Monetary Premium</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/coindesk-indices/2026/05/27/crypto-long-and-short-asia-s-regulated-crypto-future" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Crypto for Advisors: Asia’s regulated crypto future</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/policy/2026/05/27/u-s-cftc-files-request-to-erase-gemini-settlement-that-it-no-longer-considers-fair" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">U.S. CFTC files request to erase Gemini settlement that it no longer considers fair</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">📈 Investment <span class="res-cat-count">3</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/markets/2026/05/27/crypto-ipos-could-create-massive-usd1-trillion-market-amid-tokenization-wave-jefferies-says" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Crypto IPOs could create massive $1 trillion market amid tokenization wave, Jefferies says</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/markets/2026/05/27/robinhood-is-letting-ai-trade-for-you-so-you-don-t-have-to-keep-checking-the-markets" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Robinhood is letting AI trade for you so you don't have to keep checking the markets</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://www.coindesk.com/coindesk-indices/2026/05/27/coindesk-20-performance-update-internet-computer-icp-jumps-9-8" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">CoinDesk 20 performance update: Internet Computer (ICP) Jumps 9.8%</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">💵 Stablecoins <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/business/2026/05/27/block-kicks-off-cash-app-s-phased-stablecoin-roll-out-to-its-nearly-60-million-users" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Scoop: Block kicks off Cash App’s phased stablecoin roll out to its nearly 60 million users</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔧 Infrastructure <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/markets/2026/05/27/iren-shares-jumps-on-usd1-6-billion-dell-deal-to-expand-ai-cloud-business" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">IREN signs $1.6bn Dell agreement to expand AI cloud capacity</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="true">
+            <span class="res-cat-title">🔒 Security <span class="res-cat-count">1</span></span>
+            <span class="res-cat-chevron">▾</span>
+          </button>
+          <div class="res-cat-body" style="display:block">
+            <a href="https://www.coindesk.com/tech/2026/05/27/defi-isn-t-safe-anymore-because-ai-is-becoming-superhuman-at-hacking-onetime-openzeppelin-founder-says" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#ef4444">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">DeFi isn't safe anymore because AI is becoming 'superhuman' at hacking, onetime OpenZeppelin founder says</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="res-category">
+          <button class="res-cat-header" onclick="toggleCategory(this)" aria-expanded="false">
+            <span class="res-cat-title">📰 Other <span class="res-cat-count">3</span></span>
+            <span class="res-cat-chevron">▸</span>
+          </button>
+          <div class="res-cat-body" style="display:none">
+            <a href="https://www.coindesk.com/markets/2026/05/27/xrp-steadies-near-usd1-32-as-failed-breakout-keeps-focus-on-narrowing-trading-range" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#94a3b8">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">XRP price analysis: Ripple-linked token steadies near $1.32 after failed breakout</span>
+                <span class="res-card-source">CoinDesk</span>
+              </span>
+            </a>
+            <a href="https://sifted.eu/articles/ai-parenting/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Can AI make us better parents?</span>
+                <span class="res-card-source">Sifted</span>
+              </span>
+            </a>
+            <a href="https://sifted.eu/articles/oped-why-100-women-in-tech-list-is-needed/" target="_blank" class="res-card">
+              <span class="res-dot" style="color:#22c55e">&#x25CF;</span>
+              <span class="res-card-text">
+                <span class="res-card-title">Why women in tech need a spotlight more than ever</span>
+                <span class="res-card-source">Sifted</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="linkedin-box"><h3>&#x1F4BC; LinkedIn Ready</h3><p class="linkedin-label">Copy and paste:</p><div class="linkedin-content">Dear Founders, Investors, and Friends, We are witnessing a remarkable convergence of finance and technology that could reshape the crypto landscape. United Texas Bank has just completed a regulatory pivot from a state charter to a national charter after receiving OCC approval. The move positions the bank as a crypto‑focused bridge to the U.S. banking system, giving firms direct Federal Reserve access and processing roughly $10 billion each month for crypto participants. Its new AI‑driven payments network, UTB Atomic, and compliance platform, UTB Prism Sentinel, promise to expand liquidity options and improve risk management for Wall Street players. At the same time, Mastercard secured a New York BitLicense, joining a select group of firms cleared by the NYDFS. This license enables Mastercard to build stablecoin‑based payment and settlement infrastructure, weaving traditional payment networks into regulated crypto rails. The approval signals growing confidence from legacy finance in digital‑asset solutions. Finally, more than 40 exchanges and platforms, including Coinbase, Kraken and Binance.US, have launched the Transparency Alliance. By adopting Blockworks’ Token Transparency Framework, the alliance will bring stock‑market style reporting to token projects. Clearer data on token economics and governance is exactly what institutional capital needs to feel comfortable investing at scale. How do you see these developments influencing the next wave of crypto investment in Europe? #Web3 #Crypto #Blockchain #CryptoVC</div></div>
+    <div><h3 class="section-title">&#x1F4DA; Highlight Sources</h3><ul class="sources-list">
+      <li><span class="source-num">[1]</span> <a href="https://www.coindesk.com/policy/2026/05/27/wall-street-gets-new-crypto-rival-after-texas-bank-completes-regulatory-pivot">Wall Street gets new crypto rival after Texas bank completes regulatory pivot</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[2]</span> <a href="https://www.coindesk.com/business/2026/05/27/mastercard-secures-new-york-bitlicense-to-support-stablecoin-and-digital-payment-infrastructure">Mastercard secures New York BitLicense to support stablecoin and digital payment infrastructure</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[3]</span> <a href="https://www.coindesk.com/markets/2026/05/27/crypto-s-biggest-exchanges-back-push-for-token-disclosure-standards-as-industry-courts-institutional-capital">Crypto’s biggest exchanges back push for token disclosure standards as industry courts institutional capital</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[4]</span> <a href="https://www.coindesk.com/business/2026/05/27/sofi-brings-bank-issued-stablecoin-to-15-million-users-in-crypto-push">SoFi brings bank-issued stablecoin to 15 million users in crypto push</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[5]</span> <a href="https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push">DTCC taps Stellar (XLM) for tokenized securities network in latest Wall Street blockchain push</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[6]</span> <a href="https://www.coindesk.com/business/2026/05/27/solana-dex-orca-launches-new-marketplace-for-tokenized-real-world-assets">Solana (SOL) news: DEX Orca launches new marketplace for tokenized real-world assets</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[7]</span> <a href="https://www.coindesk.com/markets/2026/05/27/whale-alert-someone-dumped-usd1-29-billion-of-blackrock-s-bitcoin-etf-in-a-dark-pool-trade">Bitcoin (BTC) price news: Whale dumps $1.29 billion of BlackRock's bitcoin ETF in a dark pool trade</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[8]</span> <a href="https://www.coindesk.com/business/2026/05/27/bis-project-finds-tokenization-could-make-cross-border-payments-faster-safer">BIS' Project Agora finds tokenization could make cross-border payments faster, safer</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[9]</span> <a href="https://www.coindesk.com/business/2026/05/27/vaneck-s-tokenized-fund-lands-on-euler-as-defi-courts-wall-street-institutions">VanEck's tokenized fund lands on Euler as DeFi courts Wall Street institutions</a> <span class="other-source">(CoinDesk)</span></li>
+      <li><span class="source-num">[10]</span> <a href="https://www.coindesk.com/markets/2026/05/27/bitcoin-etf-accumulation-flattens-to-just-4-500-btc-year-to-date-as-may-flips-to-outflows">Bitcoin gauge tracking selling pressure moves into 'high-risk' zone as BTC ETF demand slumps</a> <span class="other-source">(CoinDesk)</span></li>
+    </ul></div>
+    <div class="cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div class="footer">Blockwall Capital &bull; Frankfurt, Germany</div>
+  </div>
+  <script>function toggleCategory(btn){const body=btn.nextElementSibling;const chevron=btn.querySelector('.res-cat-chevron');const isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);body.style.display=isOpen?'none':'block';chevron.textContent=isOpen?'▸':'▾';}</script>
+  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('theme','dark');}}const t=localStorage.getItem('theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
+</body></html>
