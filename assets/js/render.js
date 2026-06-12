@@ -468,6 +468,10 @@
             ' Insights - ' + edition.date_display;
         }
         renderEdition(edition, root);
+        /* announce for optional layers (e.g. the curation/save UI) */
+        document.dispatchEvent(new CustomEvent('bw:rendered', {
+          detail: { edition: edition, cadence: cadence }
+        }));
       })
       .catch(function (error) {
         renderError(root,

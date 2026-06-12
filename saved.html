@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blockwall Weekly Insights</title>
+  <title>Saved / Shortlist | Blockwall Insights</title>
   <link rel="icon" type="image/png" href="assets/images/blockwall-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,16 @@
 <body data-theme="dark">
   <nav class="nav"><div class="nav-inner">
     <a href="index.html" class="nav-brand"><img src="assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo"><span class="nav-brand-text">Blockwall Insights</span></a>
-    <div class="nav-links"><a href="daily/index.html" class="nav-link">Daily</a><a href="weekly/index.html" class="nav-link active">Weekly</a><a href="monthly/index.html" class="nav-link">Monthly</a><a href="portfolio/index.html" class="nav-link">Portfolio</a><a href="saved.html" class="nav-link">Saved</a></div>
+    <div class="nav-links"><a href="daily/index.html" class="nav-link">Daily</a><a href="weekly/index.html" class="nav-link">Weekly</a><a href="monthly/index.html" class="nav-link">Monthly</a><a href="portfolio/index.html" class="nav-link">Portfolio</a><a href="saved.html" class="nav-link active">Saved</a></div>
     <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
   </div></nav>
   <div class="newsletter-container">
-    <a href="weekly/index.html" class="back-link"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg> Back to Weekly Archive</a>
     <div class="newsletter-header">
       <div class="newsletter-label">Blockwall Capital</div>
-      <h1>Weekly Insights</h1>
-      <div class="newsletter-date" id="nl-date"></div>
+      <h1>Saved / Shortlist</h1>
+      <div class="newsletter-date">Items starred by the team — raw material for the month-end monthly</div>
     </div>
-    <div id="edition-root"><div class="loading-text">Loading edition&hellip;</div></div>
-    <div class="newsletter-cta"><h3>Help Us Improve</h3><p>Your feedback shapes future editions</p><a class="newsletter-cta-btn" href="https://forms.gle/XbMK8JwSeEq6RTby6" target="_blank">Share Feedback &rarr;</a></div>
+    <div id="saved-root"><div class="loading-text">Loading shortlist&hellip;</div></div>
     <footer class="footer">
     <div class="footer-brand">
       <img src="assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
@@ -38,16 +36,7 @@
       <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
     </div>
   </footer>
-  <div class="feedback-float">
-    <a href="https://forms.gle/EG5rQ4H1SAhjuiqT6" target="_blank" class="feedback-btn" title="Share your feedback">
-      <span class="feedback-badge">Beta</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="13" y2="13"></line></svg>
-      <span class="feedback-btn-text">Share Feedback</span>
-    </a>
-  </div>
   </div>
   <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('bw-theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('bw-theme','dark');}}const t=localStorage.getItem('bw-theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
-  <script src="assets/js/render.js"></script>
   <script src="assets/js/curate.js"></script>
-  <script>BWRender.load({ cadence: 'weekly', root: '#edition-root', dateEl: '#nl-date', archiveHref: 'weekly/index.html' });</script>
 </body></html>

@@ -14,7 +14,7 @@
 <body data-theme="dark">
   <nav class="nav"><div class="nav-inner">
     <a href="index.html" class="nav-brand"><img src="assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo"><span class="nav-brand-text">Blockwall Insights</span></a>
-    <div class="nav-links"><a href="daily/index.html" class="nav-link active">Daily</a><a href="weekly/index.html" class="nav-link">Weekly</a><a href="monthly/index.html" class="nav-link">Monthly</a><a href="portfolio/index.html" class="nav-link">Portfolio</a></div>
+    <div class="nav-links"><a href="daily/index.html" class="nav-link active">Daily</a><a href="weekly/index.html" class="nav-link">Weekly</a><a href="monthly/index.html" class="nav-link">Monthly</a><a href="portfolio/index.html" class="nav-link">Portfolio</a><a href="saved.html" class="nav-link">Saved</a></div>
     <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
   </div></nav>
   <div class="newsletter-container">
@@ -48,5 +48,6 @@
   </div>
   <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('bw-theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('bw-theme','dark');}}const t=localStorage.getItem('bw-theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
   <script src="assets/js/render.js"></script>
+  <script src="assets/js/curate.js"></script>
   <script>BWRender.load({ cadence: 'daily', root: '#edition-root', dateEl: '#nl-date', archiveHref: 'daily/index.html' });</script>
 </body></html>
