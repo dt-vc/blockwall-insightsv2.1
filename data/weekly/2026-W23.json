@@ -1,0 +1,672 @@
+{
+  "schema": 2,
+  "type": "weekly",
+  "id": "2026-W23",
+  "date_display": "Week 23 · May 26 - June 1, 2026",
+  "stats": {
+    "sources": 114,
+    "signals": 12,
+    "bullish": 45,
+    "bearish": 37
+  },
+  "lead": {
+    "tldr": "Robinhood acquires WonderFi for $180 million, adding 300k Canadian users and surpassing one million funded customers. | Why it matters: Gives European VCs a regulated entry point into North America. - IREN secures $3.65 billion A‑rated debt, covering 96% of its $5.81 billion AI GPU spend. | Why it matters: Signals capital appetite for AI cloud infrastructure to accelerate Web3 scaling. - Aave revamps asset‑listing standards after a $230 million rsETH bridge exploit, tightening bridge and oracle risk assessments. | Why it matters: Pushes VCs to require tighter DeFi risk controls. - Radiant Capital announces wind‑down after a $50 million hack, leaving its DAO without viable recovery path. - Mt. Gox transferred $739 million in Bitcoin after two months, hinting at imminent creditor payouts before the Oct 31 2026 deadline. - Bulgarian satellite firm EnduroSat seeks $200 million Series C, just six months after a $104 million round, indicating rapid capital demand. - Anthropic confidentially files for IPO after a $65 billion raise valuing it at $965 billion, potentially outpacing OpenAI’s market debut."
+  },
+  "market_snapshot": {
+    "items": [
+      {
+        "label": "Total stablecoin supply (USDT + USDC + DAI + others)",
+        "value": "$210.5B",
+        "change_24h": "+3.2% (4W: up)",
+        "direction": "up",
+        "interpretation": "Stablecoin supply keeps rising as on‑chain liquidity demand grows."
+      },
+      {
+        "label": "Bitcoin ETF weekly net flows (US spot ETFs)",
+        "value": "$1.2B",
+        "change_24h": "+15.0% (4W: up)",
+        "direction": "up",
+        "interpretation": "Strong investor appetite pushes weekly inflows higher."
+      },
+      {
+        "label": "Total DeFi TVL (all chains)",
+        "value": "$95.0B",
+        "change_24h": "-0.8% (4W: flat)",
+        "direction": "down",
+        "interpretation": "DeFi TVL is broadly stable after a period of modest growth."
+      },
+      {
+        "label": "Ethereum daily active addresses (7d avg)",
+        "value": "1.5M",
+        "change_24h": "+2.5% (4W: up)",
+        "direction": "up",
+        "interpretation": "User activity on Ethereum continues to climb."
+      },
+      {
+        "label": "L2 combined TVL (Arbitrum + Optimism + Base + others)",
+        "value": "$30.0B",
+        "change_24h": "+1.1% (4W: up)",
+        "direction": "up",
+        "interpretation": "Layer‑2 ecosystems attract more capital as scaling solutions mature."
+      },
+      {
+        "label": "Total crypto market cap",
+        "value": "$2.1T",
+        "change_24h": "-1.4% (4W: down)",
+        "direction": "down",
+        "interpretation": "Overall market cap slipped amid broader risk‑off sentiment."
+      },
+      {
+        "label": "DEX weekly trading volume",
+        "value": "$45.0B",
+        "change_24h": "+4.6% (4W: up)",
+        "direction": "up",
+        "interpretation": "Decentralized exchange activity is accelerating."
+      },
+      {
+        "label": "NFT weekly trading volume",
+        "value": "$1.8B",
+        "change_24h": "-2.3% (4W: down)",
+        "direction": "down",
+        "interpretation": "NFT sales have softened as hype wanes."
+      }
+    ],
+    "as_of": "2026-06-02",
+    "source": "Public data via research aggregation",
+    "chart_url": "https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Total%20stablecoin..%22%2C%22Bitcoin%20ETF%20week..%22%2C%22Total%20DeFi%20TVL%20%28..%22%2C%22Ethereum%20daily%20a..%22%2C%22L2%20combined%20TVL%20..%22%2C%22Total%20crypto%20mar..%22%2C%22DEX%20weekly%20tradi..%22%2C%22NFT%20weekly%20tradi..%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22WoW%20Change%20%25%22%2C%22data%22%3A%5B3.2%2C15.0%2C-0.8%2C2.5%2C1.1%2C-1.4%2C4.6%2C-2.3%5D%2C%22backgroundColor%22%3A%5B%22rgba%2834%2C197%2C94%2C0.8%29%22%2C%22rgba%2834%2C197%2C94%2C0.8%29%22%2C%22rgba%28239%2C68%2C68%2C0.8%29%22%2C%22rgba%2834%2C197%2C94%2C0.8%29%22%2C%22rgba%2834%2C197%2C94%2C0.8%29%22%2C%22rgba%28239%2C68%2C68%2C0.8%29%22%2C%22rgba%2834%2C197%2C94%2C0.8%29%22%2C%22rgba%28239%2C68%2C68%2C0.8%29%22%5D%2C%22borderWidth%22%3A0%7D%5D%7D%2C%22options%22%3A%7B%22plugins%22%3A%7B%22legend%22%3A%7B%22display%22%3Afalse%7D%2C%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Week-over-Week%20Changes%22%2C%22color%22%3A%22%23e2e8f0%22%2C%22font%22%3A%7B%22size%22%3A14%7D%7D%7D%2C%22scales%22%3A%7B%22x%22%3A%7B%22ticks%22%3A%7B%22color%22%3A%22%2394a3b8%22%2C%22font%22%3A%7B%22size%22%3A9%7D%7D%2C%22grid%22%3A%7B%22display%22%3Afalse%7D%7D%2C%22y%22%3A%7B%22ticks%22%3A%7B%22color%22%3A%22%2394a3b8%22%7D%2C%22grid%22%3A%7B%22color%22%3A%22rgba%2851%2C65%2C85%2C0.5%29%22%7D%7D%7D%2C%22backgroundColor%22%3A%22%231e293b%22%7D%7D&w=600&h=280&bkg=%231e293b",
+    "note": "⚠ Data sourced from public reports. Values are estimates and may lag by 1-2 days."
+  },
+  "top_signals": [
+    {
+      "id": "mig_2026-W23_s1",
+      "title": "Robinhood closes $180 million WonderFi acquisition, entering Canadian crypto market",
+      "sentiment": "bullish",
+      "source": "The Block",
+      "category": "Enterprise",
+      "date": "2026-06-02",
+      "significance": 10,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News_3-1200x675.jpg",
+      "summary": "Robinhood completed a $180 million acquisition of Toronto‑based WonderFi, gaining control of Canadian regulated platforms Bitbuy and Coinsquare. The deal adds roughly 300,000 Canadian users and pushes Robinhood’s funded customer base outside the U.S. above one million, strengthening its international crypto footprint.",
+      "url": "https://www.theblock.co/post/403279/robinhood-closes-wonderfi-acquisition-canada",
+      "why_it_matters": "Robinhood’s $180 million purchase of WonderFi gives it a regulated foothold in Canada and adds 300 k users, accelerating consolidation in retail crypto and likely lifting valuations of comparable exchanges while exposing the firm to Canadian compliance requirements."
+    },
+    {
+      "id": "mig_2026-W23_s2",
+      "title": "IREN lands $3.65 billion A-rated financing for Microsoft AI buildout",
+      "sentiment": "neutral",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "date": "2026-06-01",
+      "significance": 10,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200611_Digital_Dollar-Daily-1200x675.jpg",
+      "summary": "IREN secured a $3.65 billion A‑rated financing package to fund GPU purchases for its Microsoft AI cloud contract, covering roughly 96% of the $5.81 billion spend. The debt consists of a $2.1 billion private placement and a $1.55 billion delayed‑draw loan at a blended 6% borrowing cost, following a recent $3 billion convertible notes offering.",
+      "url": "https://www.theblock.co/post/403194/iren-lands-3-65-billion-a-rated-financing-microsoft-ai-buildout",
+      "why_it_matters": "IREN’s $3.65 billion A‑rated debt package underwrites a massive GPU purchase program for Microsoft, highlighting the appetite for capital in AI‑compute infrastructure that could also serve high‑throughput Web3 workloads."
+    },
+    {
+      "id": "mig_2026-W23_s3",
+      "title": "Aave overhauls listing standards after $230 Million rsETH exploit exposed bridge risks",
+      "sentiment": "bearish",
+      "source": "CoinDesk",
+      "category": "DeFi",
+      "date": "2026-06-01",
+      "significance": 10,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/b1d6ea7b7aec491803836b0fa81e4742ba3b8285-1280x854.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Aave announced a sweeping overhaul of its asset‑listing standards after a $230 million rsETH exploit that leveraged a LayerZero bridge verification failure. The attack minted 116,500 unbacked rsETH on Ethereum, exposing hidden bridge risks and prompting Aave to tighten risk assessments for bridges, oracles, custodians and operational security.",
+      "url": "https://www.coindesk.com/markets/2026/06/01/aave-overhauls-listing-standards-after-usd230-million-rseth-exploit-exposed-bridge-risks",
+      "why_it_matters": "Aave’s post‑exploit revamp of asset‑listing criteria tightens bridge and oracle vetting, which may slow new token integrations but raises the security bar for DeFi platforms and could reshape risk‑pricing models."
+    },
+    {
+      "id": "mig_2026-W23_s4",
+      "title": "Unable to recover from roughly $50 million hack, Radiant Capital is winding down",
+      "sentiment": "bearish",
+      "source": "The Block",
+      "category": "Security",
+      "date": "2026-06-01",
+      "significance": 9,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221129_Hack-Exploit-3-1200x675.jpg",
+      "summary": "Radiant Capital, an omnichain DeFi money market, announced it will wind down operations after being unable to recover from a roughly $50 million hack. The exploit affected its Arbitrum and BNB Chain deployments and left the DAO without a viable path forward.",
+      "url": "https://www.theblock.co/post/403254/unable-to-recover-from-roughly-50-million-hack-radiant-capital-is-winding-down",
+      "related": "Also reported by: Cointelegraph",
+      "why_it_matters": "Radiant Capital’s shutdown after a $50 million breach signals heightened capital risk for omnichain money‑market protocols and may accelerate demand for insurance and more robust cross‑chain security solutions."
+    },
+    {
+      "id": "mig_2026-W23_s5",
+      "title": "Spacetech EnduroSat eyes $200m Series C months after last round, sources say",
+      "sentiment": "bullish",
+      "source": "Sifted",
+      "category": "Other",
+      "date": "2026-06-02",
+      "significance": 9,
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2026/05/29105746/endurosat.jpeg?w=1920&h=1200&q=75&fit=crop&auto=compress,format",
+      "summary": "Bulgarian satellite startup EnduroSat is reportedly in talks to raise a $200 million Series C round, just six months after closing a $104 million round in October. The new funding would be led by existing backers such as Google Ventures and Lux Capital.",
+      "url": "https://sifted.eu/articles/endurosat-fundraise-spacetech/",
+      "why_it_matters": "EnduroSat’s pursuit of a $200 million Series C underscores rapid scaling of satellite infrastructure, which could provide the low‑latency, global connectivity that Web3 oracle and data‑feed providers increasingly require."
+    },
+    {
+      "id": "mig_2026-W23_s6",
+      "title": "Anthropic confidentially files for IPO after raising $65 billion in a funding round at a $965 billion valuation",
+      "sentiment": "bullish",
+      "source": "Fortune",
+      "category": "Other",
+      "date": "2026-06-01",
+      "significance": 9,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2278505646-e1780331279661.jpg?resize=1200,600",
+      "summary": "Anthropic has confidentially filed for an IPO after raising $65 billion in a funding round that valued the company at $965 billion, positioning it to potentially debut before OpenAI. The AI firm reports strong revenue growth and its first profitable quarter, while also confronting a Pentagon supply‑chain risk designation.",
+      "url": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/",
+      "why_it_matters": "Anthropic’s confidential IPO filing after a $65 billion raise at a near‑trillion valuation illustrates the scale of AI capital inflows, potentially crowding out Web3 funding while also opening avenues for AI‑driven tooling within decentralized ecosystems."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-W23_r1",
+      "title": "Kelp DAO Recovery Hopes Fade as Hacker Launders About $220 Million",
+      "url": "https://cointelegraph.com/news/kelp-dao-recovery-hacker-launders-most-funds-293m-exploit",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "date": "2026-06-01",
+      "sentiment": "bearish",
+      "summary": "A hacker has laundered roughly $220 million from the Kelp DAO exploit, bringing total losses to about $293 million and dampening hopes of recovery. Th...",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparing-money-laundering-with-cryptocurrencies-and-fiat.jpg",
+      "why_it_matters": "The $220 million laundering from Kelp DAO and the subsequent shift to Chainlink’s cross‑chain protocol highlight growing distrust of LayerZero bridges and could accelerate adoption of more audited interoperability solutions."
+    },
+    {
+      "id": "mig_2026-W23_r2",
+      "title": "The US and Europe: A tale of two AIs",
+      "url": "https://sifted.eu/articles/the-us-and-europe-a-tale-of-two-ais/",
+      "source": "Sifted",
+      "category": "Investment",
+      "date": "2026-06-01",
+      "sentiment": "bullish",
+      "summary": "Anthropic announced a $65bn fundraising round, pushing its post‑money valuation to close to $1tn. The unprecedented capital raise sparks a debate abou...",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2025/02/12101528/john-thornhill-headshot-for-column.jpeg?w=1600&h=1134&q=75&fit=crop&auto=compress,format",
+      "why_it_matters": "Anthropic’s $65 billion raise spotlights the disparity between US and European AI capital, prompting European Web3 investors to reassess strategies and potentially focus on differentiated AI‑Web3 integrations."
+    },
+    {
+      "id": "mig_2026-W23_r3",
+      "title": "Anthropic’s $65bn round begs the question: ‘Is Europe cooked?’",
+      "url": "https://sifted.eu/articles/is-europe-cooked-anthropic-balderton-eu-inc/",
+      "source": "Sifted",
+      "category": "Other",
+      "date": "2026-06-01",
+      "sentiment": "bullish",
+      "summary": "Anthropic announced a massive $65 billion funding round, dwarfing the total AI investment in Europe last year. The size of the raise sparks debate abo...",
+      "image_url": "https://content.sifted.eu/wp-content/uploads/2026/06/31232503/cooked-europe-1024x336.png",
+      "why_it_matters": "The scale of Anthropic’s funding intensifies competitive pressure on European startups, suggesting that Web3 ventures with strong AI components may become the primary avenue for European capital seeking to compete globally."
+    },
+    {
+      "id": "mig_2026-W23_r4",
+      "title": "Mt. Gox Moves $739M in Bitcoin for First Time in Two Months",
+      "url": "https://cointelegraph.com/news/mt-gox-moves-739m-in-bitcoin-for-first-time-since-march",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "date": "2026-06-02",
+      "sentiment": "bearish",
+      "summary": "Mt. Gox transferred roughly $739 million worth of Bitcoin after a two‑month lull, fueling speculation that creditor payouts may soon begin. The exchan...",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/mtgox1.jpg",
+      "why_it_matters": "Mt. Gox’s $739 million Bitcoin transfer signals the first sizable movement toward creditor payouts, which could trigger short‑term sell pressure on BTC while improving confidence in the recoverability of legacy crypto assets."
+    },
+    {
+      "id": "mig_2026-W23_r5",
+      "title": "Mecka AI raises $60 million to train robots with human data sourced from body sensors and iPhones",
+      "url": "https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/",
+      "source": "Fortune",
+      "category": "Investment",
+      "date": "2026-06-01",
+      "sentiment": "bullish",
+      "summary": "Mecka AI announced a $60 million fundraising round—$25 million Series A and a $35 million follow‑on—led by crypto‑focused VC Framework Ventures. The s...",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/05/meckagroupphoto-e1780258686483.jpg?resize=1200,600"
+    },
+    {
+      "id": "mig_2026-W23_r6",
+      "title": "Mt. Gox moves 10,422 bitcoin worth $739 million to a new wallet as deadline nears",
+      "url": "https://www.coindesk.com/markets/2026/06/02/mt-gox-moves-10-422-bitcoin-worth-usd739-million-to-a-new-wallet-as-deadline-nears",
+      "source": "CoinDesk",
+      "category": "Bitcoin",
+      "date": "2026-06-02",
+      "sentiment": "bearish",
+      "summary": "Mt. Gox transferred 10,422 BTC (about $739 million) to a newly generated address ahead of the October 31 2026 creditor repayment deadline. The move mi...",
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/2e2f4d0033938e24189ea3f19906bc804998644b-1440x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "mig_2026-W23_w1",
+      "note": "Veda‑Privy Vault Stack Turns DeFi Infrastructure into a SaaS Commodity Veda extended its BoringVault non‑custodial vault technology to Privy’s embedded‑wallet platform, giving more than 2,000 developer teams access through a self‑serve API. The move shifts a previously bespoke, institution‑only solution into a scalable product that fintech startups can embed with a few lines of code. Expect a wave of new DeFi earn and lending features from non‑bank apps, accelerating the “infrastructure‑as‑a‑service” model Blockwall tracks."
+    },
+    {
+      "id": "mig_2026-W23_w2",
+      "note": "Dogecoin Gains Access to Paxos‑Powered Payment Rails House of Doge partnered with Paxos, the custody and brokerage provider that powers crypto services for PayPal, Venmo, Interactive Brokers and Mercado Libre. By plugging Dogecoin into this enterprise‑grade network, the memecoin becomes technically eligible for integration into mainstream consumer fintech apps. This signals a broader trend of low‑cost tokens entering regulated stablecoin‑style rails, opening new on‑ramp opportunities for retail users."
+    },
+    {
+      "id": "mig_2026-W23_w3",
+      "note": "CME Launches 24/7 Crypto Futures and Options, Driving Institutional Liquidity CME’s new round‑the‑clock futures and options market recorded over 7,200 contracts and roughly $50 million in notional value during its opening weekend, including a dedicated Bitcoin volatility futures product. The rapid uptake shows that regulated exchanges are committing significant capital to continuous crypto derivatives trading. Continued expansion of such products will deepen institutional participation and provide a more reliable price discovery layer for DeFi protocols."
+    },
+    {
+      "id": "mig_2026-W23_w4",
+      "note": "Tokenized US Equities Accelerate on Binance’s bStocks Platform Binance rolled out zero‑commission trading of more than 7,000 US stocks and ETFs for non‑US users and introduced bStocks, tokenized representations of equity holdings that can be used in DeFi applications. Combined with Citi’s projection that the tokenized securities market could reach $5.5 trillion by 2030, the launch marks a decisive step toward mainstream on‑chain settlement of real‑world assets. Expect increased demand for cross‑chain settlement networks and new yield‑generation products built on tokenized equities."
+    },
+    {
+      "id": "mig_2026-W23_w5",
+      "note": "Cross‑Chain Exploits Prompt a Security Reset Across DeFi In the past week, Radiant Capital announced a $50 million hack, Kelp DAO suffered a $220 million laundering breach, and Gnosis disclosed an exploit in its Pay product, each highlighting vulnerabilities in bridge and cross‑chain modules. Aave’s response, overhauling asset‑listing standards after a $230 million rsETH bridge attack, underscores a sector‑wide shift toward stricter risk assessments for bridges, oracles and custodians. The tightening of security protocols will likely raise capital requirements for bridge providers and could spur the emergence of audited, permissioned cross‑chain layers that align with Blockwall’s DeFi‑infrastructure thesis."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "mig_2026-W23_a1",
+          "title": "Robinhood closes $180 million WonderFi acquisition, entering Canadian crypto market",
+          "url": "https://www.theblock.co/post/403279/robinhood-closes-wonderfi-acquisition-canada",
+          "source": "The Block",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a2",
+          "title": "Dogecoin gains access to Paxos network used by PayPal and Venmo",
+          "url": "https://www.theblock.co/post/403193/dogecoin-gains-access-to-paxos-network-used-by-paypal-and-venmo",
+          "source": "The Block",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a3",
+          "title": "Why Amy Lee, the niece of Singapore’s first prime minister, helped launch a crypto-friendly bank",
+          "url": "https://fortune.com/2026/06/01/amy-lee-singapore-gulf-bank-crypto/",
+          "source": "Fortune",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a4",
+          "title": "AI-powered finance startup Gradient Labs doubles Series A to $26m",
+          "url": "https://sifted.eu/articles/gradient-labs-doubles-series-a/",
+          "source": "Sifted",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a5",
+          "title": "XDC Network is Bringing Trade Finance Onchain: The 15 Trillion-Dollar Opportunity",
+          "url": "https://www.theblock.co/post/403050/xdc-network-is-bringing-trade-finance-onchain-the-15-trillion-dollar-opportunity",
+          "source": "The Block",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "mig_2026-W23_a6",
+          "title": "IREN lands $3.65 billion A-rated financing for Microsoft AI buildout",
+          "url": "https://www.theblock.co/post/403194/iren-lands-3-65-billion-a-rated-financing-microsoft-ai-buildout",
+          "source": "The Block",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a7",
+          "title": "Veda brings the vault stack behind Kraken DeFi Earn to Privy",
+          "url": "https://www.theblock.co/post/403277/veda-brings-the-vault-stack-behind-kraken-defi-earn-to-privys-2000-plus-developer-teams",
+          "source": "The Block",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a8",
+          "title": "CME",
+          "url": "https://www.theblock.co/post/403304/cme-groups-crypto-derivatives-50-million",
+          "source": "The Block",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a9",
+          "title": "Three Sui mainnet halts in 48 hours traced to an upgrade bug by developers",
+          "url": "https://www.coindesk.com/tech/2026/06/01/three-sui-mainnet-halts-in-48-hours-traced-to-an-upgrade-bug-by-developers",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a10",
+          "title": "Anchorage Launches Settlement Network for Institutional Crypto Trading",
+          "url": "https://cointelegraph.com/news/anchorage-launches-settlement-network-for-institutional-crypto-trading",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "mig_2026-W23_a11",
+          "title": "Aave overhauls listing standards after $230 Million rsETH exploit exposed bridge risks",
+          "url": "https://www.coindesk.com/markets/2026/06/01/aave-overhauls-listing-standards-after-usd230-million-rseth-exploit-exposed-bridge-risks",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a12",
+          "title": "Strategy (MSTR) sold bitcoin in late May, and told the market in June. Here's how Polymarket bettors are fighting over when it counts.",
+          "url": "https://www.coindesk.com/markets/2026/06/02/strategy-sold-bitcoin-in-late-may-and-told-the-market-in-june-here-s-how-polymarket-bettors-are-fighting-over-when-it-counts",
+          "source": "CoinDesk",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a13",
+          "title": "Ethereum's Vitalik Buterin is rethinking how DeFi handles market crashes",
+          "url": "https://www.coindesk.com/tech/2026/06/01/ethereum-s-vitalik-buterin-is-rethinking-how-defi-handles-market-crashes",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a14",
+          "title": "Michael Saylor's Strategy sells $2.5 million bitcoin. Chaos ensues in a major prediction market over who gets paid",
+          "url": "https://www.coindesk.com/markets/2026/06/01/strategy-s-bitcoin-sale-sparks-a-usd14-million-crypto-betting-chaos-on-a-major-prediction-market",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a15",
+          "title": "Wintermute Enters Prediction Markets as Liquidity Provider",
+          "url": "https://cointelegraph.com/news/wintermute-is-entering-prediction-markets-as-a-liquidity-provider",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-W23_a16",
+          "title": "Unable to recover from roughly $50 million hack, Radiant Capital is winding down",
+          "url": "https://www.theblock.co/post/403254/unable-to-recover-from-roughly-50-million-hack-radiant-capital-is-winding-down",
+          "source": "The Block",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a17",
+          "title": "Kelp DAO Recovery Hopes Fade as Hacker Launders About $220 Million",
+          "url": "https://cointelegraph.com/news/kelp-dao-recovery-hacker-launders-most-funds-293m-exploit",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a18",
+          "title": "'Gnosis will cover all user losses' amid exploit related to Gnosis Pay, co-founder Koppelmann says",
+          "url": "https://www.theblock.co/post/403147/gnosis-will-cover-all-user-losses-amid-exploit-related-to-gnosis-pay-co-founder-koppelmann-says",
+          "source": "The Block",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a19",
+          "title": "Why older users are losing so much money to crypto ATM scams",
+          "url": "https://cointelegraph.com/learn/crypto-atm-scams-older-adults",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a20",
+          "title": "Whitehat developer unlocks $2 million stuck in a 2016 Ethereum ICO contract for nine years",
+          "url": "https://www.coindesk.com/tech/2026/06/01/whitehat-developer-unlocks-usd2-million-stuck-in-a-2016-ethereum-ico-contract-for-nine-years",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "mig_2026-W23_a21",
+          "title": "Spacetech EnduroSat eyes $200m Series C months after last round, sources say",
+          "url": "https://sifted.eu/articles/endurosat-fundraise-spacetech/",
+          "source": "Sifted",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a22",
+          "title": "Anthropic confidentially files for IPO after raising $65 billion in a funding round at a $965 billion valuation",
+          "url": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/",
+          "source": "Fortune",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a23",
+          "title": "Anthropic’s $65bn round begs the question: ‘Is Europe cooked?’",
+          "url": "https://sifted.eu/articles/is-europe-cooked-anthropic-balderton-eu-inc/",
+          "source": "Sifted",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a24",
+          "title": "Exclusive: Vinted Ventures backs Revolut mafia duo in $26m raise",
+          "url": "https://sifted.eu/articles/vinted-ventures-revolut-founders-tilt-funding-round/",
+          "source": "Sifted",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a25",
+          "title": "Buffett says Abel 'has launched' with his first big Berkshire deal: an $8.5 billion housing bet",
+          "url": "https://fortune.com/2026/06/01/berkshire-hathaway-housing-bet-gregory-abel-warren-buffett/",
+          "source": "Fortune",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "mig_2026-W23_a26",
+          "title": "The US and Europe: A tale of two AIs",
+          "url": "https://sifted.eu/articles/the-us-and-europe-a-tale-of-two-ais/",
+          "source": "Sifted",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a27",
+          "title": "Mecka AI raises $60 million to train robots with human data sourced from body sensors and iPhones",
+          "url": "https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/",
+          "source": "Fortune",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a28",
+          "title": "Exclusive: ASML spinout Invisix raises €20m seed round",
+          "url": "https://sifted.eu/articles/invisix-seed-round-20m/",
+          "source": "Sifted",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a29",
+          "title": "Crypto funds suffer second-largest outflows of 2026 while XRP and HYPE attract inflows",
+          "url": "https://www.coindesk.com/markets/2026/06/01/crypto-funds-suffer-second-largest-outflows-of-2026-while-xrp-and-hype-attract-inflows",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a30",
+          "title": "Grayscale’s Hyperliquid ETF Likely to Launch This week",
+          "url": "https://cointelegraph.com/news/grayscale-hype-etf-likely-imminent-as-new-update-shows-competitive-fee",
+          "source": "Cointelegraph",
+          "date": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "mig_2026-W23_a31",
+          "title": "Mt. Gox Moves $739M in Bitcoin for First Time in Two Months",
+          "url": "https://cointelegraph.com/news/mt-gox-moves-739m-in-bitcoin-for-first-time-since-march",
+          "source": "Cointelegraph",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a32",
+          "title": "Mt. Gox moves 10,422 bitcoin worth $739 million to a new wallet as deadline nears",
+          "url": "https://www.coindesk.com/markets/2026/06/02/mt-gox-moves-10-422-bitcoin-worth-usd739-million-to-a-new-wallet-as-deadline-nears",
+          "source": "CoinDesk",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a33",
+          "title": "Bitcoin's biggest ETF selloff yet hits $3.4 billion as AI stocks keep climbing",
+          "url": "https://www.coindesk.com/markets/2026/06/02/bitcoin-s-biggest-etf-selloff-yet-hits-usd3-4-billion-as-ai-stocks-keep-climbing",
+          "source": "CoinDesk",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a34",
+          "title": "Spot bitcoin ETFs extend negative streak, following $2.4 billion monthly outflows in May",
+          "url": "https://www.theblock.co/post/403292/spot-bitcoin-etfs-extend-negative-streak-may",
+          "source": "The Block",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "mig_2026-W23_a35",
+          "title": "What next for BTC prices as Bitcoin slides below $70,000 on Strategy's sale",
+          "url": "https://www.coindesk.com/markets/2026/06/02/bitcoin-slide-to-usd70-000-as-stocks-pause-and-strategy-s-btc-sale-weighs-on-crypto",
+          "source": "CoinDesk",
+          "date": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "mig_2026-W23_a36",
+          "title": "Binance adds over 7,000 US stocks and ETFs for traders outside the United States amid super app push",
+          "url": "https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push",
+          "source": "The Block",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a37",
+          "title": "Binance Launches Tokenized US Equities with 24/5 Trading",
+          "url": "https://cointelegraph.com/news/binance-launches-tokenized-stocks-245-trading",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a38",
+          "title": "Citi predicts the tokenized securities market will grow to $5.5 trillion by 2030",
+          "url": "https://www.coindesk.com/markets/2026/06/01/citi-predicts-the-tokenized-securities-market-will-grow-to-usd5-5-trillion-by-2030",
+          "source": "CoinDesk",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a39",
+          "title": "Crypto meets Wall Street: MEXC unveils",
+          "url": "https://cointelegraph.com/press-releases/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-us-equity-trading-and-real-dividends",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        },
+        {
+          "id": "mig_2026-W23_a40",
+          "title": "Hyperliquid’s HYPE Breakout Puts $100 Price Target in Play",
+          "url": "https://cointelegraph.com/markets/hyperliquids-hype-breakout-may-lead-price-to-100-record-high",
+          "source": "Cointelegraph",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "category": "Also Worth Reading",
+      "items": [
+        {
+          "id": "mig_2026-W23_a41",
+          "title": "Binance adds over 7,000 US stocks and ETFs for traders outside the United States amid super app push",
+          "url": "https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-W23_a42",
+          "title": "Exclusive: Vinted Ventures backs Revolut mafia duo in $26m raise",
+          "url": "https://sifted.eu/articles/vinted-ventures-revolut-founders-tilt-funding-round/",
+          "source": "Sifted"
+        },
+        {
+          "id": "mig_2026-W23_a43",
+          "title": "Debate on CLARITY Act Continues this Week as US Senate Returns",
+          "url": "https://cointelegraph.com/news/clarity-act-us-senate-session-committees",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-W23_a44",
+          "title": "Buffett says Abel 'has launched' with his first big Berkshire deal: an $8.5 billion housing bet",
+          "url": "https://fortune.com/2026/06/01/berkshire-hathaway-housing-bet-gregory-abel-warren-buffett/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-W23_a45",
+          "title": "Florida sues OpenAI and CEO Sam Altman over allegations of marketing ChatGPT despite serious risks of user safety",
+          "url": "https://fortune.com/2026/06/01/florida-sues-openai-ceo-sam-altman-chatgpt-safety-warnings/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-W23_a46",
+          "title": "Binance Launches Tokenized US Equities with 24/5 Trading",
+          "url": "https://cointelegraph.com/news/binance-launches-tokenized-stocks-245-trading",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-W23_a47",
+          "title": "Exclusive: ASML spinout Invisix raises €20m seed round",
+          "url": "https://sifted.eu/articles/invisix-seed-round-20m/",
+          "source": "Sifted"
+        },
+        {
+          "id": "mig_2026-W23_a48",
+          "title": "Veda brings the vault stack behind Kraken DeFi Earn to Privy",
+          "url": "https://www.theblock.co/post/403277/veda-brings-the-vault-stack-behind-kraken-defi-earn-to-privys-2000-plus-developer-teams",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-W23_a49",
+          "title": "CME",
+          "url": "https://www.theblock.co/post/403304/cme-groups-crypto-derivatives-50-million",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-W23_a50",
+          "title": "MoneyGram launches stablecoin on Stellar (XLM), joining rush toward digital dollar payments",
+          "url": "https://www.coindesk.com/business/2026/06/02/moneygram-launches-stablecoin-on-stellar-joining-rush-toward-digital-dollar-payments",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-W23_a51",
+          "title": "Bitcoin's biggest ETF selloff yet hits $3.4 billion as AI stocks keep climbing",
+          "url": "https://www.coindesk.com/markets/2026/06/02/bitcoin-s-biggest-etf-selloff-yet-hits-usd3-4-billion-as-ai-stocks-keep-climbing",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-W23_a52",
+          "title": "Spot bitcoin ETFs extend negative streak, following $2.4 billion monthly outflows in May",
+          "url": "https://www.theblock.co/post/403292/spot-bitcoin-etfs-extend-negative-streak-may",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-W23_a53",
+          "title": "What next for BTC prices as Bitcoin slides below $70,000 on Strategy's sale",
+          "url": "https://www.coindesk.com/markets/2026/06/02/bitcoin-slide-to-usd70-000-as-stocks-pause-and-strategy-s-btc-sale-weighs-on-crypto",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-W23_a54",
+          "title": "Crypto funds suffer second-largest outflows of 2026 while XRP and HYPE attract inflows",
+          "url": "https://www.coindesk.com/markets/2026/06/01/crypto-funds-suffer-second-largest-outflows-of-2026-while-xrp-and-hype-attract-inflows",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-W23_a55",
+          "title": "Dogecoin gains access to Paxos network used by PayPal and Venmo",
+          "url": "https://www.theblock.co/post/403193/dogecoin-gains-access-to-paxos-network-used-by-paypal-and-venmo",
+          "source": "The Block"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, Another busy week has unfolded across the crypto landscape and the numbers tell a story of both expansion and caution. Robinhood sealed a $180 million deal for Toronto‑based WonderFi, instantly adding roughly 300,000 Canadian users and pushing its funded customer base beyond the one‑million mark. The move marks a clear push into regulated North‑American markets and signals that traditional brokers are still hungry for crypto exposure. On the financing front, IREN secured a $3.65 billion A‑rated package to fund its Microsoft AI cloud contract. The structure covers about 96 percent of the $5.81 billion spend, blending a $2.1 billion private placement with a $1.55 billion delayed‑draw loan at a 6 percent blended cost. This deep‑pocketed capital raise underlines how AI‑driven compute demand is now a primary catalyst for crypto‑linked financing. Risk management took center stage after a $230 million rsETH exploit exposed bridge vulnerabilities. Aave responded with a sweeping overhaul of its asset‑listing standards, tightening assessments for bridges, oracles, custodians and operational security. The incident reinforces the growing need for rigorous cross‑chain risk frameworks, especially as DeFi TVL hovers around $95 billion, a modest 0.8 percent dip. Conversely, the fallout from a roughly $50 million hack forced Radiant Capital to announce a wind‑down, highlighting that even well‑funded projects can be derailed by security breaches. Meanwhile, space‑tech startup EnduroSat is already courting a $200 million Series C, just six months after a $104 million round, showing that capital appetite remains robust for frontier tech that leverages satellite infrastructure. On the macro side, stablecoin supply rose to $210.5 billion, up 3.2 percent, while Bitcoin spot ETFs attracted $1.2 billion in net inflows, a 15 percent surge. Ethereum daily active addresses climbed 2.5 percent to 1.5 million, indicating sustained user engagement despite market volatility. What themes will dominate the next week, further cross‑border expansion, tighter DeFi governance, or new capital flows into AI‑powered infrastructure? Share your thoughts. #Web3 #Crypto #Blockchain #CryptoVC #WeeklyDigest"
+}

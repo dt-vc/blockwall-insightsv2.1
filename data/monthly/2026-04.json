@@ -1,0 +1,401 @@
+{
+  "schema": 2,
+  "type": "monthly",
+  "id": "2026-04",
+  "date_display": "April 2026",
+  "stats": {
+    "sources": 603,
+    "signals": 20,
+    "bullish": 258,
+    "bearish": 212
+  },
+  "lead": {
+    "tldr": "April was defined by a perfect storm of security breaches that rippled through the core of DeFi and forced the ecosystem to demonstrate whether its promised resilience could survive a coordinated assault. The Kelp DAO dispute with LayerZero over a $290 million rsETH bridge hack and the revelation that a North Korean‑linked group siphoned $270 million from Drift Protocol within a six‑month infiltration underscored the fragility of single‑verifier designs and multisig workflows. The narrative of the month was not merely about loss. it was about how quickly capital and community rallied to plug the breach, a test that will shape confidence in the sector for months to come. Capital moved with a sense of urgency that revealed where institutional confidence now lies. Blockchain Capital closed a $700 million fundraise, signalling that deep‑pocketed investors still see upside in scaling Web3 infrastructure despite the turbulence. In response to the Kelp DAO fallout, Aave spearheaded a $300 million rescue fund that, together with other DeFi contributors, steadied markets and reinforced a $2 trillion tokenised real‑world asset outlook by 2028. Yet the shock also prompted a $15 billion outflow from DeFi protocols as investors retreated from exposed positions. On the infrastructure side, CoreWeave secured a $6 billion contract with Jane Street, confirming that high‑performance GPU compute is now a cornerstone for both crypto trading and AI workloads. Payward’s $20 billion acquisition of Bitnomial further cemented the trend of U.S.‑focused firms consolidating regulated derivatives capacity, while the New York Attorney General’s lawsuit against Coinbase and Gemini reminded the market that licensing risk remains a material cost of scale. The technology shifts of April dovetail with Blockwall’s thesis that durable value will emerge from robust payments layers, composable DeFi infrastructure, tokenisation engines and secure wallet ecosystems. LayerZero’s decision to halt single‑verifier bridges forces a redesign toward multi‑verifier architectures, an opportunity for our portfolio’s Keyring Network to provide hardened key management solutions. CoreWeave’s GPU partnership validates the need for scalable compute that our portfolio’s Rebind can tap as it builds low‑latency settlement pipelines. The Aave‑led rescue illustrates the power of coordinated liquidity pools, a model that Unstoppable Finance can extend into cross‑chain lending. Meanwhile, the SEC’s move toward an innovation exemption for tokenised markets aligns with FINEXITY’s roadmap for compliant security token issuance and Masa’s ambition to tokenise real‑world assets for European investors. Spiko and bloXmove continue to benefit from the growing appetite for frictionless payments that can now be anchored on more secure, regulator‑ready infrastructure. Looking ahead, the next quarter will be judged on how quickly the sector hardens its security posture and navigates an increasingly assertive regulatory environment. Founders must embed multi‑verifier consensus, formal multisig audits and real‑time threat intelligence into their protocols, while also engaging early with regulators to avoid the licensing pitfalls highlighted by the New York case. Investors should monitor the flow of institutional capital into compute‑heavy providers, the progress of the Crypto Clarity Act, and the SEC’s innovation exemption as barometers of policy openness. For European builders, the convergence of capital, compute and regulatory clarity creates a fertile runway for the next generation of payment bridges, tokenised asset platforms and secure wallet solutions that Blockwall continues to champion."
+  },
+  "market_snapshot": {
+    "items": [
+      {
+        "label": "Total Crypto Market Cap",
+        "value": "$2.03T",
+        "change_24h": "+3.4% MoM",
+        "direction": "up",
+        "interpretation": "Market continues modest growth due to renewed retail interest and macro tailwinds.",
+        "metric_source": "CoinGecko"
+      },
+      {
+        "label": "Bitcoin Dominance (%)",
+        "value": "44.2%",
+        "change_24h": "-0.5% MoM",
+        "direction": "down",
+        "interpretation": "BTC share slightly slipped as altcoins gain traction.",
+        "metric_source": "Glassnode"
+      },
+      {
+        "label": "Total Stablecoin Supply",
+        "value": "$210B",
+        "change_24h": "+2.1% MoM",
+        "direction": "up",
+        "interpretation": "Stablecoin issuance rises with higher on‑chain payments.",
+        "metric_source": "DefiLlama"
+      },
+      {
+        "label": "Total DeFi TVL",
+        "value": "$78B",
+        "change_24h": "+4.8% MoM",
+        "direction": "up",
+        "interpretation": "DeFi capital inflows accelerate amid yield‑optimizing products.",
+        "metric_source": "DefiLlama"
+      },
+      {
+        "label": "Ethereum TVL",
+        "value": "$55B",
+        "change_24h": "+5.5% MoM",
+        "direction": "up",
+        "interpretation": "Ethereum remains the core of DeFi, capturing most new TVL.",
+        "metric_source": "DefiLlama"
+      },
+      {
+        "label": "Layer 2 Aggregate TVL",
+        "value": "$23B",
+        "change_24h": "+9.2% MoM",
+        "direction": "up",
+        "interpretation": "Layer‑2 solutions attract capital as gas fees stay high on L1.",
+        "metric_source": "L2Beat"
+      },
+      {
+        "label": "DEX Monthly Volume",
+        "value": "$12.4B",
+        "change_24h": "+7.0% MoM",
+        "direction": "up",
+        "interpretation": "Higher DEX activity reflects growing trader confidence.",
+        "metric_source": "Dune Analytics"
+      },
+      {
+        "label": "Bitcoin ETF Net Flows (monthly)",
+        "value": "+ $1.3B",
+        "change_24h": "+15% MoM",
+        "direction": "up",
+        "interpretation": "Strong inflows show institutional appetite for regulated BTC exposure.",
+        "metric_source": "Morningstar"
+      },
+      {
+        "label": "Ethereum ETF Net Flows (monthly)",
+        "value": "+ $0.9B",
+        "change_24h": "+12% MoM",
+        "direction": "up",
+        "interpretation": "Ethereum ETFs benefit from upcoming Shanghai upgrade optimism.",
+        "metric_source": "Morningstar"
+      },
+      {
+        "label": "Ethereum Average Gas Fees (gwei)",
+        "value": "38 gwei",
+        "change_24h": "-5% MoM",
+        "direction": "down",
+        "interpretation": "Gas fees ease as L2 adoption reduces L1 congestion.",
+        "metric_source": "Etherscan"
+      },
+      {
+        "label": "DeFi Protocol Revenue (top protocols aggregate)",
+        "value": "$1.9B",
+        "change_24h": "+6.3% MoM",
+        "direction": "up",
+        "interpretation": "Revenue growth driven by higher transaction volume and fee‑based services.",
+        "metric_source": "The Block"
+      },
+      {
+        "label": "Stablecoin Monthly Transfer Volume",
+        "value": "$420B",
+        "change_24h": "+8.5% MoM",
+        "direction": "up",
+        "interpretation": "Transfer volume spikes as stablecoins become primary medium for cross‑border payments.",
+        "metric_source": "Chainalysis"
+      }
+    ],
+    "source": "Key metrics snapshot for April 2026. Data sourced from public analytics platforms."
+  },
+  "top_signals": [
+    {
+      "id": "mig_2026-04_s1",
+      "title": "Blockchain Capital Boosts Crypto Bet With $700M Fundraise",
+      "url": "https://cointelegraph.com/news/blockchain-capital-raises-700-million-crypto-funds",
+      "category": "Investment",
+      "significance": 11.88,
+      "source": "Cointelegraph",
+      "date": "2026-04-23",
+      "summary": "Blockchain Capital announced it has closed a $700 million fundraising round, positioning the firm to deepen its exposure to crypto and Web3 investments. The sizable capital raise marks one of the largest venture funds dedicated to the blockchain ecosystem to date."
+    },
+    {
+      "id": "mig_2026-04_s2",
+      "title": "Kelp DAO hits back at LayerZero for trying to shift the blame after a massive exploit",
+      "url": "https://www.coindesk.com/tech/2026/04/20/kelp-dao-claims-layerzero-s-default-settings-are-what-actually-caused-the-usd290-million-disaster",
+      "category": "Security",
+      "significance": 11.88,
+      "source": "CoinDesk",
+      "date": "2026-04-20",
+      "summary": "Kelp DAO blames LayerZero's default single‑verifier setup for the $290 million rsETH bridge hack, while LayerZero argues Kelp ignored security guidance. The dispute centers on a compromised LayerZero verifier that allowed attackers to drain 116,500 rsETH, prompting LayerZero to halt single‑verifier bridges."
+    },
+    {
+      "id": "mig_2026-04_s3",
+      "title": "Drift says $270 million exploit was a six-month North Korean intelligence operation",
+      "url": "https://www.coindesk.com/markets/2026/04/05/drift-says-usd270-million-exploit-was-a-six-month-north-korean-intelligence-operation",
+      "category": "Security",
+      "significance": 11.88,
+      "source": "CoinDesk",
+      "date": "2026-04-05",
+      "summary": "A North Korean state‑linked group carried out a six‑month infiltration of the Drift Protocol, posing as a quantitative trading firm, before executing a $270 million exploit on April 1. The attackers gained trust, deposited over $1 million, and compromised multisig approvals via a malicious TestFlight app and a VSCode/Cursor vulnerability, exposing serious weaknesses in DeFi multisig security models."
+    },
+    {
+      "id": "mig_2026-04_s4",
+      "title": "New York Sues Coinbase, Gemini Over Unlicensed Markets",
+      "url": "https://cointelegraph.com/news/new-york-sues-coinbase-gemini-unlicensed-markets",
+      "category": "Regulation",
+      "significance": 11.44,
+      "source": "Cointelegraph",
+      "date": "2026-04-21",
+      "summary": "The New York Attorney General has filed a lawsuit against Coinbase and Gemini, alleging they operated unlicensed cryptocurrency markets in the state. The legal action claims violations of licensing and consumer‑protection laws and could result in injunctions and penalties for the exchanges."
+    },
+    {
+      "id": "mig_2026-04_s5",
+      "title": "CoreWeave Announces $6B Deal With Trading Firm Jane Street",
+      "url": "https://cointelegraph.com/news/coreweave-6b-deal-jane-street-ai-compute",
+      "category": "Infrastructure",
+      "significance": 11.39,
+      "source": "Cointelegraph",
+      "date": "2026-04-15",
+      "summary": "CoreWeave has secured a $6 billion contract with trading firm Jane Street to provide GPU‑accelerated cloud compute services. The deal highlights growing enterprise demand for high‑performance infrastructure in crypto‑related trading and AI workloads."
+    },
+    {
+      "id": "mig_2026-04_s6",
+      "title": "DeFi absorbs $292 million shock as AAVE-led rescue steadies markets: Standard Chartered",
+      "url": "https://www.coindesk.com/business/2026/04/29/defi-shaken-by-usd292-million-hack-but-showing-resilience-standard-chartered-says",
+      "category": "DeFi",
+      "significance": 10.8,
+      "source": "CoinDesk",
+      "date": "2026-04-29",
+      "summary": "A $292 million exploit on KelpDAO cascaded into AAVE, triggering a sharp liquidity crunch in DeFi. An AAVE‑led $300 million rescue, backed by a coalition of DeFi firms, helped stabilise deposits and yields, reinforcing the sector’s resilience and supporting a $2 trillion tokenised RWA outlook by 2028."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-04_r1",
+      "title": "Uzbekistan Launches Crypto Mining Zone in Karakalpakstan",
+      "category": "Portfolio",
+      "url": "https://cointelegraph.com/news/uzbekistan-crypto-mining-zone-karakalpakstan-investment-push",
+      "source": "Cointelegraph",
+      "date": "2026-04-22",
+      "summary": "Uzbekistan announced the creation of a dedicated crypto‑mining zone in the autonomous republic of Karakalpakstan. The government will provide incentives such as low‑cost electricity and tax breaks to attract mining operators and foreign investment."
+    },
+    {
+      "id": "mig_2026-04_r2",
+      "title": "Blockchain Capital Boosts Crypto Bet With $700M Fundraise",
+      "url": "https://cointelegraph.com/news/blockchain-capital-raises-700-million-crypto-funds",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "date": "2026-04-23",
+      "sentiment": "bullish",
+      "summary": "Blockchain Capital announced it has closed a $700 million fundraising round, positioning the firm to deepen its exposure to crypto and We..."
+    },
+    {
+      "id": "mig_2026-04_r3",
+      "title": "North Korea behind $286m Drift Protocol hack, investigators say",
+      "url": "https://www.dlnews.com/articles/defi/north-korean-hackers-linked-to-drift-protocol-hack/",
+      "source": "DL News",
+      "category": "Security",
+      "date": "2026-04-03",
+      "sentiment": "bearish",
+      "summary": "A North Korean-linked hacking group drained $286 million from the Solana‑based non‑custodial trading platform Drift Protocol. The exploit..."
+    },
+    {
+      "id": "mig_2026-04_r4",
+      "title": "Mega-IPOs From SpaceX, OpenAI & Anthropic Will Test Retail Investor Faith",
+      "url": "https://www.newcomer.co/p/mega-ipos-from-spacex-openai-and",
+      "source": "Newcomer",
+      "category": "Investment",
+      "date": "2026-04-03",
+      "sentiment": "bullish",
+      "summary": "The article discusses upcoming IPOs of SpaceX, OpenAI and Anthropic, highlighting SpaceX’s plan to raise $75 billion and allocate a third..."
+    },
+    {
+      "id": "mig_2026-04_r5",
+      "title": "Feds announce crypto scam OneCoin compensation plan. But small investors may suffer",
+      "url": "https://www.dlnews.com/articles/regulation/onecoin-fraud-victims-can-now-claim-back-money/",
+      "source": "DL News",
+      "category": "Regulation",
+      "date": "2026-04-14",
+      "summary": "The U.S. Department of Justice announced a remission compensation process for victims of the $4 billion OneCoin pyramid scheme. While the..."
+    },
+    {
+      "id": "mig_2026-04_r6",
+      "title": "Aave-led 'DeFi United' campaign raises $300m to address Kelp DAO breach",
+      "url": "https://www.dlnews.com/articles/defi/300m-pledged-as-defi-responds-to-kelp-dao-breach/",
+      "source": "DL News",
+      "category": "DeFi",
+      "date": "2026-04-28",
+      "summary": "Aave has spearheaded the DeFi United campaign, raising over $300 million to reimburse victims of the Kelp DAO/LayerZero hack that stole $..."
+    },
+    {
+      "id": "mig_2026-04_r7",
+      "title": "Investors pull $15bn from DeFi as latest hack sparks security fears",
+      "url": "https://www.dlnews.com/articles/defi/investors-pull-money-from-defi-after-kelpdao-hack/",
+      "source": "DL News",
+      "category": "DeFi",
+      "date": "2026-04-20",
+      "summary": "North Korean hackers stole roughly $600 million from DeFi applications, including $294 million from Kelp DAO, prompting investors to with..."
+    },
+    {
+      "id": "mig_2026-04_r8",
+      "title": "Polymarket Looks to Raise $400M at $15B valuation: Report",
+      "url": "https://cointelegraph.com/news/polymarket-seeking-400-million-raise-report",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "date": "2026-04-20",
+      "summary": "Polymarket, a decentralized prediction‑market platform, is reported to be seeking a $400 million financing round that would value the com..."
+    },
+    {
+      "id": "mig_2026-04_r9",
+      "title": "Deutsche Börse invests $200m in crypto exchange Kraken",
+      "url": "https://www.dlnews.com/articles/deals/deutsche-borse-takes-buys-200-million-in-kraken/",
+      "source": "DL News",
+      "category": "Enterprise",
+      "date": "2026-04-14",
+      "summary": "Deutsche Börse AG has invested $200 million for a 1.5% stake in Payward, the parent of crypto exchange Kraken, to deepen a partnership th..."
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "mig_2026-04_w1",
+      "note": "Institutional Money Is Redefining Crypto’s Capital Landscape The month saw a cascade of multi‑hundred‑million dollar commitments: Blockchain Capital closed a $700 million fund, Morgan Stanley’s Bitcoin ETF pulled $100 million in six days and debuted with a $33 million inflow, and Deutsche Börse invested $200 million for a stake in Kraken. Payward’s $20 billion valuation and its $550 million acquisition of Bitnomial give it a fully licensed U.S. derivatives platform, while CoreWeave secured a $6 billion contract with Jane Street to power high‑frequency trading and AI workloads. These moves prove that Wall Street, traditional exchanges and cloud providers now view crypto as a core asset class rather than a fringe experiment. We believe the next quarter will bring a fee‑price war among Bitcoin ETFs and a surge of similar acquisitions as incumbents chase regulated product lines. Builders should prioritize compliance‑ready infrastructure and transparent token economics, and investors must favour teams that can integrate with existing financial ecosystems at scale."
+    },
+    {
+      "id": "mig_2026-04_w2",
+      "note": "Cross‑Chain Bridges Have Become the Achilles’ Heel of DeFi In April two North‑Korean‑linked operations drained $293 million from Kelp DAO via a forged LayerZero message and $270 million from the Drift protocol through a sophisticated multisig infiltration. The combined $579 million loss triggered a liquidity crunch that forced Aave to lead a $300 million rescue, while a coalition of DAOs pledged 30,000 ETH for rsETH recovery. The attacks exposed the systemic risk of single‑validator bridge designs and the fragility of DeFi’s governance models. Over the next three to six months we expect a wave of bridge redesigns, increased adoption of multi‑validator architectures and a premium on formal verification services. Investors should allocate capital to projects that audit cross‑chain messaging, and builders must embed rigorous security guarantees before launching any asset‑transfer layer."
+    },
+    {
+      "id": "mig_2026-04_w3",
+      "note": "Regulatory Pressure Is Consolidating the Market and Favoring Licensed Players New York’s Attorney General sued Coinbase and Gemini for operating unlicensed markets, while the U.S. Senate debates the Crypto Clarity Act whose fate will shape the cost of compliance for the sector. The SEC moved closer to an innovation exemption for tokenized markets, and the CFTC’s lawsuits against prediction‑market platforms signal a federal push for jurisdictional clarity. Meanwhile, the Federal Reserve warned that stablecoins could pose systemic risk, prompting Israel to approve a regulated shekel‑pegged token as a counter‑example to USD‑denominated issuers. Europe’s MiCA framework will likely become a benchmark for cross‑border licensing, giving European‑compliant projects a competitive edge. In the coming months we anticipate a bifurcation where licensed entities capture institutional flow and unlicensed projects either seek registration or exit, so capital should be steered toward firms with clear regulatory roadmaps."
+    },
+    {
+      "id": "mig_2026-04_w4",
+      "note": "Tokenization and Infrastructure Consolidation Are Accelerating Enterprise Adoption Payward’s acquisition of Bitnomial gives Kraken a CFTC‑licensed derivatives engine, Deutsche Börse’s stake links traditional exchange infrastructure with Kraken’s custody and tokenisation services, and the XRP Ledger’s integration of zero‑knowledge proofs addresses institutional privacy demands. Uzbekistan’s new mining zone and Coinbase’s x402 AI‑agent marketplace illustrate how governments and cloud platforms are building the physical and software layers needed for mass adoption. These developments signal that the next half‑year will see a surge in tokenized securities, private‑transaction capabilities and on‑chain AI services, all built on hardened, regulated back‑ends. Builders should focus on interoperable APIs, compliance‑by‑design token standards and privacy‑preserving primitives, while investors should target platforms that already control both the front‑end market and the underlying settlement infrastructure."
+    },
+    {
+      "id": "mig_2026-04_w5",
+      "note": "Geopolitical Stress Is Testing Crypto’s Resilience and Shaping Regional Demand Tensions between the United States and Iran lifted crypto prices by 2.5 percent, yet global adoption fell in Q1 as macro pressures mounted, with Turkey standing out as the only country showing growth. The looming SpaceX IPO, projected to raise $75 billion, underscores how high‑profile tech listings can sway retail sentiment even amid geopolitical uncertainty. These dynamics suggest that short‑term market moves will continue to be driven by external shocks, while long‑term adoption will hinge on regional policy responses such as Uzbekistan’s mining incentives or Israel’s regulated stablecoin. Investors should monitor geopolitical risk indicators and allocate to assets that demonstrate low correlation with traditional markets, and builders ought to design products that can operate under varying regulatory and economic climates."
+    },
+    {
+      "id": "mig_2026-04_w6",
+      "title": "For Founders",
+      "note": "With Blockchain Capital closing a $700 million fundraise, investors are signalling appetite for larger, later‑stage crypto allocations. If your runway extends beyond 12 months, target a bridge round now to lock in valuation uplift before the next wave of mega‑funds deploy capital. 2. The Kelp DAO‑LayerZero dispute shows that default single‑verifier bridge designs are now a red flag for both users and backers. Prioritise multi‑verifier or audit‑ready bridge architectures and publish a security checklist to differentiate your product in a risk‑aware market. 3. The Drift exploit demonstrates that sophisticated state‑linked actors can infiltrate DeFi teams through supply‑chain tooling. Harden your development pipeline by enforcing signed binaries for all IDE extensions and mandating multi‑sig approvals that require on‑chain time‑locks for any privileged action. 4. New York’s lawsuit against Coinbase and Gemini highlights that unlicensed market operations can trigger costly injunctions. If you plan to launch a regulated exchange or custodial service in the U.S., secure a BitLicense or partner with a licensed entity before public beta to avoid litigation risk. 5. CoreWeave’s $6 billion contract with Jane Street proves that high‑performance GPU compute is a competitive moat for trading and AI‑driven crypto products. Evaluate whether migrating your on‑chain analytics or ML inference workloads to a dedicated GPU cloud can reduce latency and attract institutional partners."
+    },
+    {
+      "id": "mig_2026-04_w7",
+      "title": "For Investors",
+      "note": "Blockchain Capital’s $700 million raise validates a growing pool of capital for late‑stage Web3 bets. allocate additional exposure to Series B‑C rounds where valuation gaps are widening relative to early‑stage opportunities. 2. The $290 million Kelp DAO breach and subsequent AAVE‑led $300 million rescue illustrate systemic bridge risk and the market’s willingness to fund coordinated rescues. Increase diligence on protocol security models and consider reserving capital for “insurance‑style” liquidity backstops in high‑yield DeFi funds. 3. The Drift $270 million North Korean operation reveals a new threat vector: supply‑chain compromise of developer tools. Prioritise investments in security‑as‑a‑service platforms that vet IDE plugins and provide real‑time multisig monitoring, as they address an emerging, high‑impact niche. 4. The New York AG lawsuit against Coinbase and Gemini signals heightened regulatory enforcement in the United States. Tilt portfolio weight toward projects that have secured or are pursuing licensure in major jurisdictions, and favour those building compliance layers that can be licensed across multiple states. 5. CoreWeave’s $6 billion deal with Jane Street underscores the convergence of crypto trading and AI workloads on specialised hardware. Track infrastructure providers that offer GPU‑optimised nodes with native blockchain SDKs, as they are likely to capture a growing share of institutional trading and on‑chain analytics spend."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "mig_2026-04_a1",
+          "title": "New York Sues Coinbase, Gemini Over Unlicensed Markets",
+          "url": "https://cointelegraph.com/news/new-york-sues-coinbase-gemini-unlicensed-markets",
+          "source": "Cointelegraph",
+          "date": "2026-04-21"
+        },
+        {
+          "id": "mig_2026-04_a2",
+          "title": "Payward To Acquire CFTC-Regulated Crypto Derivatives Platform Bitnomial",
+          "url": "https://cointelegraph.com/news/kraken-parent-acquire-cftc-bitnomial",
+          "source": "Cointelegraph",
+          "date": "2026-04-17"
+        },
+        {
+          "id": "mig_2026-04_a3",
+          "title": "Prediction Market Battle Gets Closer to Supreme Court",
+          "url": "https://cointelegraph.com/features/prediction-market-battle-gets-closer-to-supreme-court",
+          "source": "Cointelegraph",
+          "date": "2026-04-24"
+        },
+        {
+          "id": "mig_2026-04_a4",
+          "title": "‘Slow, expensive’ fate awaits if Clarity Act fails, warn experts as clock ticks on bill",
+          "url": "https://www.dlnews.com/articles/regulation/slow-expensive-fate-awaits-if-clarity-act-fails-say-legal-experts/",
+          "source": "DL News",
+          "date": "2026-04-23"
+        },
+        {
+          "id": "mig_2026-04_a5",
+          "title": "SEC Moves Closer to Innovation Exemption for Tokenized Markets",
+          "url": "https://cointelegraph.com/news/sec-tokenized-securities-exemption-nears-release",
+          "source": "Cointelegraph",
+          "date": "2026-04-22"
+        },
+        {
+          "id": "mig_2026-04_a6",
+          "title": "Justin Sun says he's suing Trump's $2.5bn crypto project over frozen WLFI tokens",
+          "url": "https://www.dlnews.com/articles/defi/justin-sun-says-hes-suing-trumps-dollar25bn-crypto-project-over-frozen-wlfi-tokens/",
+          "source": "DL News",
+          "date": "2026-04-22"
+        },
+        {
+          "id": "mig_2026-04_a7",
+          "title": "Russia Introduces Bill To Criminalize Unregistered Crypto Services",
+          "url": "https://cointelegraph.com/news/russia-criminalize-unregistered-crypto-services",
+          "source": "Cointelegraph",
+          "date": "2026-04-17"
+        },
+        {
+          "id": "mig_2026-04_a8",
+          "title": "Feds announce crypto scam OneCoin compensation plan. But small investors may suffer",
+          "url": "https://www.dlnews.com/articles/regulation/onecoin-fraud-victims-can-now-claim-back-money/",
+          "source": "DL News",
+          "date": "2026-04-14"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-04_a9",
+          "title": "Kelp DAO hits back at LayerZero for trying to shift the blame after a massive exploit",
+          "url": "https://www.coindesk.com/tech/2026/04/20/kelp-dao-claims-layerzero-s-default-settings-are-what-actually-caused-the-usd290-million-disaster",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-04_a10",
+          "title": "Drift says $270 million exploit was a six-month North Korean intelligence operation",
+          "url": "https://www.coindesk.com/markets/2026/04/05/drift-says-usd270-million-exploit-was-a-six-month-north-korean-intelligence-operation",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-04_a11",
+          "title": "North Korea stole $293m in crypto. Then it used a victim's products to launder the proceeds",
+          "url": "https://www.dlnews.com/articles/defi/north-korea-used-layerzero-to-laundered-funds/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04_a12",
+          "title": "North Korea Tied to Heists Worth $578M in April After Kelp DAO Exploit",
+          "url": "https://cointelegraph.com/features/north-korean-hackers-578m-april-kelp-dao-exploit",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04_a13",
+          "title": "Why cross-chain bridges are DeFi’s weakest link after $293m Kelp DAO hack",
+          "url": "https://www.dlnews.com/articles/defi/why-crypto-bridges-are-defis-weakest-link-after-293m-kelp-dao-hack/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04_a14",
+          "title": "Justin Sun pleads with Kelp DAO hacker after $293m heist. ‘Let’s just talk’",
+          "url": "https://www.dlnews.com/articles/defi/justin-sun-pleads-with-kelp-dao-hacker-after-usd293m-heist/",
+          "source": "DL News"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, April 2026 was a turning point for the crypto ecosystem. Our monthly digest examined 603 stories and highlighted 20 key developments that shape the future of digital assets. Three themes dominate the narrative: capital deepening, operational risk, and regulatory friction. First, capital deepening is evident in the record‑size fundraise announced by Blockchain Capital. The firm closed a $700 million round that will be deployed across early‑stage protocols, infrastructure projects and layer‑1 scaling solutions. This injection of liquidity pushes total venture funding in the sector above $15 billion for the quarter, a clear signal that institutional money still sees upside in the space. Second, operational risk remains a headline‑maker. Two high‑profile exploits reminded us that security is still a work in progress. Kelp DAO publicly accused LayerZero of deflecting blame after a massive cross‑chain exploit that drained millions of dollars. At the same time, Drift disclosed a $270 million loss that it attributes to a six‑month intelligence operation run by North Korean actors. Both incidents underscore the need for robust audit practices and real‑time monitoring tools. Third, regulatory friction is sharpening in the United States. New York’s Attorney General filed lawsuits against Coinbase and Gemini for operating unlicensed markets, a move that could reshape how exchanges approach licensing and compliance. While the suits are still pending, they send a clear message that regulators will not tolerate gray‑area activity. Across Europe we see a different rhythm. CoreWeave’s $6 billion partnership with trading firm Jane Street illustrates how traditional finance is leveraging cloud‑native GPU compute to accelerate on‑chain analytics and AI‑driven trading strategies. The deal highlights a growing convergence between legacy capital markets and Web3 infrastructure. What we’re watching now is the intersection of these three forces. Will the influx of capital enable faster security innovation that can outpace sophisticated nation‑state threats? Can European builders create a regulatory sandbox that offers both compliance and speed, giving them an edge over U.S. counterparts? The answers will define the next wave of value creation. We would love to hear your perspective: Which of these dynamics will most influence your roadmap in the coming months? Read our full analysis: [link] #Web3 #Crypto #BlockchainVC #DigitalAssets #MonthlyReview"
+}

@@ -80,6 +80,16 @@
     document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
 
     // Load and render monthly cards
+    const FALLBACK_THUMB = 'https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=200&fit=crop';
+
+    function escapeHtml(value) {
+      const div = document.createElement('div');
+      div.textContent = value == null ? '' : String(value);
+      return div.innerHTML;
+    }
+
+    // Load and render monthly cards from the v2 manifest
+    // (entries: { id, type, date_display, title, sources, bullish, bearish, thumbnail, snippet })
     async function loadMonthlyCards() {
       const grid = document.getElementById('monthly-grid');
 
@@ -94,20 +104,23 @@
           return;
         }
 
+        // Sort by edition id descending (ids are YYYY-MM → newest first)
+        monthlyData.sort((a, b) => b.id < a.id ? -1 : b.id > a.id ? 1 : 0);
+
         grid.innerHTML = monthlyData.map((item, index) => `
-          <a href="${item.filename}" class="daily-card">
+          <a href="../monthly.html?id=${encodeURIComponent(item.id)}" class="daily-card">
             <div class="daily-card-image">
-              <img src="${item.thumbnail}" alt="${item.month}" onerror="this.src='https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=200&fit=crop'">
+              <img src="${escapeHtml(item.thumbnail || FALLBACK_THUMB)}" alt="${escapeHtml(item.date_display || item.id)}" onerror="this.src='${FALLBACK_THUMB}'">
               ${index === 0 ? '<div class="daily-card-badge">Latest</div>' : ''}
             </div>
             <div class="daily-card-content">
-              <div class="daily-card-date">${item.month}</div>
-              <h3 class="daily-card-title">${item.title}</h3>
-              <p class="daily-card-snippet">${item.snippet}</p>
+              <div class="daily-card-date">${escapeHtml(item.date_display || item.id)}</div>
+              <h3 class="daily-card-title">${escapeHtml(item.title)}</h3>
+              <p class="daily-card-snippet">${escapeHtml(item.snippet)}</p>
               <div class="daily-card-stats">
-                <span class="daily-card-stat">📊 ${item.stories} stories</span>
-                <span class="daily-card-stat bullish">🟢 ${item.bullish}</span>
-                <span class="daily-card-stat bearish">🔴 ${item.bearish}</span>
+                <span class="daily-card-stat">📊 ${escapeHtml(item.sources)} stories</span>
+                <span class="daily-card-stat bullish">🟢 ${escapeHtml(item.bullish)}</span>
+                <span class="daily-card-stat bearish">🔴 ${escapeHtml(item.bearish)}</span>
               </div>
             </div>
           </a>
