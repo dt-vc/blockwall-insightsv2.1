@@ -1,0 +1,27 @@
+name: Validate Editions
+
+# Runs on every push that touches edition data (the n8n publishers commit here),
+# on PRs that touch data, and on demand. Fails the run if any edition JSON or
+# manifest is malformed, off-schema, or references a missing edition.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/validate_editions.py'
+      - '.github/workflows/validate-editions.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate edition JSON + manifests
+        run: python scripts/validate_editions.py
