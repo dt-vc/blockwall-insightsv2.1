@@ -4,14 +4,16 @@
 Validates every edition JSON under data/{daily,weekly,monthly}/ and every
 manifest data/{daily,weekly,monthly}.json. Fails (exit 1) on: invalid JSON,
 wrong/missing schema, missing core fields, id/type/filename mismatch, malformed
-sections, duplicate manifest ids, or a manifest entry pointing to an edition
-file that doesn't exist (the class of bug that produced /daily/undefined 404s).
-Pure stdlib — no dependencies.
+sections, a savable item missing its id, duplicate manifest ids, or a manifest
+entry pointing to an edition file that doesn't exist (the class of bug that
+produced /daily/undefined 404s). Pure stdlib — no dependencies.
 """
 import json, os, sys, glob
 
 errors, warnings = [], []
 CADENCES = ["daily", "weekly", "monthly"]
+# sections whose items are starrable by the curation layer -> each item needs an id
+SAVABLE_FLAT = ("top_signals", "deals", "on_the_radar", "worth_a_read")
 def err(m): errors.append(m)
 def warn(m): warnings.append(m)
 
@@ -43,9 +45,9 @@ def validate_edition(path, cadence):
         err(f"{path}: id '{d['id']}' != filename '{fid}'")
     if d.get("lead") is not None and not isinstance(d["lead"], dict):
         err(f"{path}: 'lead' must be an object")
-    if not d.get("title") and not (isinstance(d.get("lead"), dict) and d["lead"].get("headline")):
-        warn(f"{path}: no title / lead.headline (card will have an empty title)")
-    for sec in ("top_signals", "deals", "on_the_radar", "worth_a_read", "what_to_watch", "all_resources"):
+
+    # flat savable sections: array of objects, each needs an id
+    for sec in SAVABLE_FLAT:
         v = d.get(sec)
         if v is None:
             continue
@@ -53,12 +55,39 @@ def validate_edition(path, cadence):
             err(f"{path}: section '{sec}' must be an array"); continue
         for i, item in enumerate(v):
             if not isinstance(item, dict):
-                err(f"{path}: {sec}[{i}] must be an object"); continue
-            if sec == "all_resources":
-                if not isinstance(item.get("items", []), list):
-                    err(f"{path}: {sec}[{i}].items must be an array")
+                err(f"{path}: {sec}[{i}] must be an object")
             elif not item.get("id"):
                 err(f"{path}: {sec}[{i}] missing 'id' (needed by the save layer)")
+
+    # what_to_watch: forward catalysts ({label,date,note}) — NOT savable, no id required
+    wtw = d.get("what_to_watch")
+    if wtw is not None:
+        if not isinstance(wtw, list):
+            err(f"{path}: 'what_to_watch' must be an array")
+        else:
+            for i, item in enumerate(wtw):
+                if not isinstance(item, dict):
+                    err(f"{path}: what_to_watch[{i}] must be an object")
+
+    # all_resources: grouped; nested items ARE savable, so each needs an id
+    ar = d.get("all_resources")
+    if ar is not None:
+        if not isinstance(ar, list):
+            err(f"{path}: 'all_resources' must be an array")
+        else:
+            for i, grp in enumerate(ar):
+                if not isinstance(grp, dict):
+                    err(f"{path}: all_resources[{i}] must be an object"); continue
+                items = grp.get("items")
+                if items is None:
+                    continue
+                if not isinstance(items, list):
+                    err(f"{path}: all_resources[{i}].items must be an array"); continue
+                for j, it in enumerate(items):
+                    if not isinstance(it, dict):
+                        err(f"{path}: all_resources[{i}].items[{j}] must be an object")
+                    elif not it.get("id"):
+                        err(f"{path}: all_resources[{i}].items[{j}] missing 'id'")
 
 def validate_manifest(path, cadence, edition_ids):
     m = load_json(path)
