@@ -1,0 +1,612 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-04-02",
+  "date_display": "April 2, 2026",
+  "stats": {
+    "sources": 66,
+    "signals": 12,
+    "watching": 15,
+    "bullish": 27,
+    "bearish": 22
+  },
+  "lead": {
+    "tldr": "Cardano's role in £250m tokenisation signals mainstream banks adopting public blockchains, boosting infrastructure demand • US “Clarity Act” agreement may ease stablecoin regulation, encouraging institutional entry and reducing compliance uncertainty • $2.3bn institutional Bitcoin ETF inflow amid geopolitical tension suggests risk‑off demand for digital gold persists • Fed’s hawkish stance and steady rates depress Bitcoin price, indicating short‑term downside risk for crypto assets • Hyperliquid’s S&P 500 perpetual tokenisation opens regulated‑like exposure for non‑US investors, expanding DeFi market breadth • Moonwell governance attack underscores need for robust “break‑glass” mechanisms, as security lapses can jeopardize $1bn+ protocols"
+  },
+  "intro": "Dear Founders, Investors, and Friends, today Cardano backs a £250 m tokenisation partnership, the US Clarity Act promises clearer stable‑coin regulation, and institutions have injected $2.3 bn into Bitcoin ETFs. Meanwhile Aave v4 moves closer to launch, highlighting fresh DeFi momentum.",
+  "top_signals": [
+    {
+      "id": "mig_2026-04-02_s1",
+      "title": "Cardano won’t get left behind as partner chain Midnight inks £250m tokenisation deal, founder says",
+      "source": "DL News",
+      "category": "Tokenization",
+      "significance": 8,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774683135886.webp",
+      "summary": "Midnight and UK challenger bank Monument have agreed to tokenise £250 million of customer deposits on a public blockchain. The arrangement is the first instance of a UK‑regulated bank issuing interest‑bearing tokens that are protected by the Financial Services Compensation Scheme. Cardano founder Charles Hoskinson confirmed that the Cardano network will provide a supporting layer for the tokenisation. The deal illustrates the increasing integration of traditional finance with blockchain technology and may signal new opportunities for institutional investors seeking regulated digital‑asset exposure.",
+      "url": "https://www.dlnews.com/articles/deals/why-cardano-will-benefit-from-midnight-tokenisation-deal/"
+    },
+    {
+      "id": "mig_2026-04-02_s2",
+      "title": "Finally some clarity? Senators, White House strike deal to end crypto-banking standoff",
+      "source": "DL News",
+      "category": "Regulation",
+      "significance": 7,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436218298.webp",
+      "summary": "U.S. senators and the White House have reached an agreement in principle on the Clarity Act, which is intended to end the stalemate over stablecoin reward programs. The legislation seeks to balance protection of financial innovation with safeguards against large‑scale deposit withdrawals. The development is being closely monitored by major market participants such as Coinbase and JPMorgan Chase as a potential signal of a more crypto‑friendly regulatory environment.",
+      "url": "https://www.dlnews.com/articles/regulation/clarity-act-moves-forward-senators-and-white-house-reach-agreement/"
+    },
+    {
+      "id": "mig_2026-04-02_s3",
+      "title": "Institutions are scooping up Bitcoin again as Iran war sparks $2.3bn ETF buying spree",
+      "source": "DL News",
+      "category": "Bitcoin",
+      "significance": 7,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774683134305.webp",
+      "summary": "Institutional investors have poured $2.3 bn into Bitcoin exchange‑traded funds in the past month, a surge linked to heightened geopolitical tension from the Iran war. The inflow marks a renewed appetite for mainstream crypto exposure among large‑scale capital allocators. Analysts project that institutional Bitcoin holdings could reach as much as $13 trn by 2030 if the current trajectory continues. This optimism comes despite the broader market having lost roughly half of its value since October, underscoring the risk‑return calculus that institutions are weighing.",
+      "url": "https://www.dlnews.com/articles/markets/why-institutions-pile-into-bitcoin-etfs-despite-price-slump/"
+    },
+    {
+      "id": "mig_2026-04-02_s4",
+      "title": "A crypto user accidentally swapped $50m for $37,000. Here’s where the money ended up",
+      "source": "DL News",
+      "category": "DeFi",
+      "significance": 7,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198632.webp",
+      "summary": "An unknown Ethereum trader mistakenly swapped $50 million of USDT for 327 Aave tokens valued at roughly $37 k by interacting with a small liquidity pool on Sushiswap. The erroneous trade created a severe price distortion that was quickly exploited by arbitrage bots and the block builder known as Titan. Those actors captured the resulting arbitrage opportunity and earned at least $35 million, highlighting the risks of low‑liquidity pools and the profit potential for sophisticated market participants.",
+      "url": "https://www.dlnews.com/articles/defi/who-profited-when-a-defi-trader-lost-fifty-million-on-aave-and-cow-swap/"
+    },
+    {
+      "id": "mig_2026-04-02_s5",
+      "title": "Robinhood shares jump 6% after $1.5bn buyback news",
+      "source": "DL News",
+      "category": "Investment",
+      "significance": 7,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774459609353.webp",
+      "summary": "Robinhood announced a $1.5 billion share‑buyback programme, which lifted its stock more than 6 % after a year of decline. The buyback comes on the back of a record $4.5 billion revenue in 2025 even though crypto‑trading volumes have slowed, signalling management’s confidence in the platform’s earnings power. At the same time, Ripple is reported to be repurchasing $750 million of its own shares, highlighting a broader trend of fintech firms using buybacks to return capital to shareholders.",
+      "url": "https://www.dlnews.com/articles/markets/robinhood-announces-stock-buyback-programme/"
+    },
+    {
+      "id": "mig_2026-04-02_s6",
+      "title": "Fed’s hawkishness is great for crypto startups as ‘best companies aren’t built during periods of loose monetary policy,’ VC says",
+      "source": "DL News",
+      "category": "Investment",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198390.webp",
+      "summary": "A venture capital partner argues that the Federal Reserve’s hawkish monetary policy creates a favorable environment for building crypto startups because the strongest companies are not founded during periods of easy money. Data shows that despite the Fed’s stance, crypto venture capital funding remained robust, with $155 million invested in the third week of March and the industry on track for almost $3 billion in capital this year. In this climate, MetaComp raised a $35 million pre‑Series A round that includes backing from Alibaba and Spark Venture. The funding will be used to develop a fiat‑stablecoin bridge designed to channel institutional wealth into digital assets.",
+      "url": "https://www.dlnews.com/articles/markets/feds-hawkish-outlook-will-prove-boon-for-crypto-startups/"
+    },
+    {
+      "id": "mig_2026-04-02_s7",
+      "title": "Why Washington won’t spoil crypto’s SEC victory",
+      "source": "DL News",
+      "category": "Regulation",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198828.webp",
+      "summary": "The SEC’s token taxonomy provides a framework for classifying digital assets, helping institutional investors assess regulatory status. The agency is also working with Congress on a “Clarity Act” that would define crypto market structure and reduce regulatory uncertainty. Coordination between the SEC and CFTC chairs signals a unified approach, and crypto advocates expect the legislation to align with the SEC’s guidance rather than impose additional restrictions.",
+      "url": "https://www.dlnews.com/articles/regulation/why-washington-wont-spoil-crypto-sec-victory/"
+    },
+    {
+      "id": "mig_2026-04-02_s8",
+      "title": "Aave v4 inches toward debut on Ethereum with near-unanimous vote",
+      "source": "DL News",
+      "category": "DeFi",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198307.webp",
+      "summary": "The Aave DAO has voted near‑unanimously to approve the first phase of the Aave v4 upgrade, moving the protocol closer to a launch on Ethereum. The v4 upgrade is designed to increase capital efficiency and will introduce a hub‑and‑spoke architecture that could streamline liquidity management across markets. Institutional investors are likely to view these changes as a way to achieve higher yields with lower capital overhead on the Ethereum network. However, the DAO has also reported emerging internal governance tensions that could influence the rollout schedule.",
+      "url": "https://www.dlnews.com/articles/defi/aave-v4-inches-toward-debut-on-ethereum/"
+    },
+    {
+      "id": "mig_2026-04-02_s9",
+      "title": "Fed zaps Bitcoin investors’ risk appetite. Here’s what to expect next for the price",
+      "source": "DL News",
+      "category": "Bitcoin",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436198833.webp",
+      "summary": "The Federal Reserve’s decision to keep interest rates steady and signal a hawkish stance reduced risk appetite, pushing Bitcoin down about 5% to roughly $70,000. Analysts point to the lack of expected rate cuts and heightened geopolitical tension as the drivers behind the move. The combination suggests Bitcoin is likely to remain in a selective, risk‑off environment, a condition institutional investors will need to monitor for portfolio exposure.",
+      "url": "https://www.dlnews.com/articles/markets/why-investors-are-cautious-as-bitcoin-tanks-to-70k/"
+    },
+    {
+      "id": "mig_2026-04-02_s10",
+      "title": "S&P 500 contract comes to Hyperliquid as tokenisation race heats up",
+      "source": "DL News",
+      "category": "Tokenization",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774436199194.webp",
+      "summary": "Hyperliquid is set to launch a perpetual contract that mirrors the performance of the S&P 500 index. The product will enable non‑US investors to trade the index around the clock with leverage on a decentralized exchange. This development signals increasing Wall Street interest in tokenising real‑world assets and expanding access to traditional equity exposure via blockchain. The launch coincides with growing momentum for Hyperliquid’s native token HYPE, which may benefit from the added liquidity and visibility.",
+      "url": "https://www.dlnews.com/articles/defi/s-and-p-500-to-come-to-hyperliquid/"
+    },
+    {
+      "id": "mig_2026-04-02_s11",
+      "title": "How an attacker spent just $1,808 to hold an entire crypto project hostage. ‘The proposal is clearly an attack’",
+      "source": "DL News",
+      "category": "Security",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805095.webp",
+      "summary": "An attacker invested only $1,808 and spent 11 minutes to submit a governance proposal on the Moonwell lending protocol. The proposal, if approved, would have given the attacker control of the protocol and enabled the draining of more than $1 million in user funds. Current voting shows 68 percent of participants opposing the proposal, indicating strong community resistance. Nevertheless, Moonwell may have to activate its “Break Glass Guardian” mechanism to safeguard assets against the potential attack.",
+      "url": "https://www.dlnews.com/articles/defi/attacker-spends-less-two-grand-to-hold-crypto-project-hostage/"
+    },
+    {
+      "id": "mig_2026-04-02_s12",
+      "title": "Google is accelerating its timeline for quantum reckoning. Here’s when Bitcoin, Ethereum need to be ready",
+      "source": "DL News",
+      "category": "Security",
+      "significance": 6,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1774521805091.webp",
+      "summary": "Google announced it will migrate its authentication and digital signature systems to post‑quantum cryptography by 2029. The Ethereum Foundation responded by publishing a four‑pronged roadmap that also targets the 2029 deadline. Researchers caution that the cryptographic algorithms currently securing Bitcoin and Ethereum may become vulnerable to quantum attacks, creating a significant risk for the broader crypto ecosystem.",
+      "url": "https://www.dlnews.com/articles/markets/google-new-date-quantum-reckoning-bitcoin-ethereum-dev-prepare/"
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-04-02_r1",
+      "title": "What is Strategy’s STRC and will it help Saylor overtake BlackRock’s $55bn Bitcoin stockpile?",
+      "sentiment": "bullish",
+      "url": "https://www.dlnews.com/articles/markets/strategy-strc-powers-michael-saylor-beat-blackrock-bitcoin/",
+      "source": "DL News",
+      "category": "Bitcoin",
+      "summary": "Strategy, Michael Saylor’s firm, now holds about 761,068 Bitcoin (~$57 bn), narrowing the gap with BlackRock’s IBIT fund..."
+    },
+    {
+      "id": "mig_2026-04-02_r2",
+      "title": "XRP hits $1bn in tokenised assets. But price is stalling despite Ripple’s big plays",
+      "sentiment": "neutral",
+      "url": "https://www.dlnews.com/articles/markets/xrp-hits-1bn-in-tokenised-assets-but-price-stall-ripple/",
+      "source": "DL News",
+      "category": "Tokenization",
+      "summary": "XRP has surpassed $1 billion in tokenised commodities, while the token trades 60% below its recent peak. Ripple is pursu..."
+    },
+    {
+      "id": "mig_2026-04-02_r3",
+      "title": "Onchain asset manager kpk declares ‘zero loss to depositors‘ after $23m Resolv exploit",
+      "sentiment": "neutral",
+      "url": "https://www.dlnews.com/articles/defi/kpk-declares-zero-loss-to-depositors-after-resolv-stablecoin-collapse/",
+      "source": "DL News",
+      "category": "DeFi",
+      "summary": "The on‑chain asset manager kpk reported that its emergency response system prevented any loss to depositors after a $23 ..."
+    },
+    {
+      "id": "mig_2026-04-02_r4",
+      "title": "Metaplanet Buys 5,075 BTC in Q1 to Become 3rd Largest Treasury",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/metaplanet-adds-5-075-btc-in-q1-bitcoin-options",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "summary": "Metaplanet bought 5,075 BTC during Q1 2026, valuing the purchase at roughly $370 million. The acquisition pushes Metapla..."
+    },
+    {
+      "id": "mig_2026-04-02_r5",
+      "title": "CFTC Sues 3 US States, Claims Sole Authority Over Prediction Markets",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/news/cftc-sues-3-states-prediction-market-regulation",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "The U.S. Commodity Futures Trading Commission (CFTC) has filed lawsuits against three states, asserting that it alone ha..."
+    },
+    {
+      "id": "mig_2026-04-02_r6",
+      "title": "Polymarket Introduces Equity and Commodity Markets Powered by Pyth",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/polymarket-expands-into-equities-and-commodities-with-pyth-price-feeds",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "summary": "Polymarket announced the launch of new equity and commodity prediction markets, using price data from the Pyth oracle ne..."
+    },
+    {
+      "id": "mig_2026-04-02_r7",
+      "title": "Teen kidnapped crypto influencer’s dad and doused him in petrol, police say",
+      "sentiment": "bearish",
+      "url": "https://www.dlnews.com/articles/people-culture/french-teen-helped-kidnap-crypto-influencers-father-police/",
+      "source": "DL News",
+      "category": "Security",
+      "summary": "Police in France arrested a group of suspects, including a 16‑year‑old, for kidnapping and dousing the father of a Dubai..."
+    },
+    {
+      "id": "mig_2026-04-02_r8",
+      "title": "Drift Says Nonce Attack Drove Exploit as Circle Faces USDC Scrutiny",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/news/drift-280-million-hack-questions-circle-response",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "summary": "Drift disclosed that a nonce‑replay attack was the vector behind a recent exploit that drained funds from the platform. ..."
+    },
+    {
+      "id": "mig_2026-04-02_r9",
+      "title": "Stablecoin Issuance Market: Four Business Models Reshaping the Market",
+      "sentiment": "bullish",
+      "url": "https://reports.tiger-research.com/p/stablecoin-issuance-market-four-business-eng",
+      "source": "Tiger Research",
+      "category": "Stablecoins",
+      "summary": "The report outlines four distinct business models reshaping the stablecoin issuance market, highlighting Tether's domina..."
+    },
+    {
+      "id": "mig_2026-04-02_r10",
+      "title": "Bitcoin price news: BTC climbs off of worst levels on Strait of Hormuz hopes",
+      "sentiment": "bullish",
+      "url": "https://www.coindesk.com/markets/2026/04/02/bitcoin-trims-big-loss-stocks-erase-2-decline-as-iran-signals-cooperation-on-key-shipping-route",
+      "source": "CoinDesk",
+      "category": "Bitcoin",
+      "summary": "Bitcoin recovered some of its recent losses after reports that Iran and Oman are cooperating on a protocol to keep the S..."
+    },
+    {
+      "id": "mig_2026-04-02_r11",
+      "title": "스테이블코인 발행 산업 심층 분석",
+      "sentiment": "bullish",
+      "url": "https://reports.tiger-research.com/p/stablecoin-issuance-market-four-business-kor",
+      "source": "Tiger Research",
+      "category": "Stablecoins",
+      "summary": "The report examines the stablecoin issuance market, highlighting its profitability and the dominance of USDT and USDC, w..."
+    },
+    {
+      "id": "mig_2026-04-02_r12",
+      "title": "Bitcoin Is Rising to the Challenge of Quantum Readiness",
+      "sentiment": "neutral",
+      "url": "https://www.galaxy.com/insights/research/bitcoin-quantum-computing-risk",
+      "source": "Galaxy",
+      "category": "Bitcoin",
+      "summary": "The article examines the potential threat that advances in quantum computing pose to Bitcoin wallets, focusing on the ex..."
+    },
+    {
+      "id": "mig_2026-04-02_r13",
+      "title": "SCOOP: Y Combinator Startups Land Checks, Gather Hype as Neo & Others Vie for Talent",
+      "sentiment": "bullish",
+      "url": "https://www.newcomer.co/p/scoop-y-combinator-startups-land",
+      "source": "Newcomer",
+      "category": "Enterprise",
+      "summary": "Y Combinator’s Winter 2026 demo day drew strong VC interest, with investors writing checks for a range of startups. The ..."
+    },
+    {
+      "id": "mig_2026-04-02_r14",
+      "title": "CEOs of LiveKit, Deepgram, Cartesia, Wispr Flow & More Join the Lineup for the First Cerebral Valley Voice Summit",
+      "sentiment": "bullish",
+      "url": "https://www.newcomer.co/p/all-talk-all-action",
+      "source": "Newcomer",
+      "category": "Investment",
+      "summary": "The first Cerebral Valley Voice Summit is set to bring together leading voice AI founders, VCs, and media figures, annou..."
+    },
+    {
+      "id": "mig_2026-04-02_r15",
+      "title": "Prediction Market Structured Notes",
+      "sentiment": "neutral",
+      "url": "https://www.bloomberg.com/opinion/newsletters/2026-04-02/prediction-market-structured-notes",
+      "source": "Bloomberg",
+      "category": "Other",
+      "summary": "The piece titled “Prediction Market Structured Notes” contains only Bloomberg website navigation and branding elements, ..."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a1",
+          "title": "BitMax denies Bitcoin sale as financial woes mount for South Korean digital asset treasury",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/markets/south-korean-digital-asset-treasury-bitmax-denies-bitcoin-sale-plans/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a2",
+          "title": "Why these three ‘narrative barriers’ pose clear risks to the Strategy Bitcoin scheme, says analyst",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/markets/three-narrative-barriers-to-michael-saylor-says-bloomberg-expert/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a3",
+          "title": "Bitcoin price holds steady as investors flee gold. Have safe-haven roles finally reversed?",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/bitcoin-gold-reverse-roles-safe-haven-assets-bloomberg-analyst-says/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a4",
+          "title": "Bitcoin or gold? Why both face price struggles as Iran war drags on",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/markets/why-bitcoin-and-gold-will-both-struggle-as-iran-war-drags-on/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a5",
+          "title": "Bitcoin price surges to $71,600 after Trump says US is having ‘good’ talks with Iran. What to expect next?",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/btc-price-jumps-on-the-back-of-trump-announcing-good-iran-talks/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a6",
+          "title": "What’s next for Bitcoin ETFs? Analyst weighs in",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/whats-next-for-bitcoin-etfs-analyst-weighs-in/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a7",
+          "title": "Euphoria over? Why Bitcoin is seen to take a ‘choppier path higher’ to $150,000 price",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/why-bitcoin-will-take-a-choppier-path-higher-from-71k/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a8",
+          "title": "Bitcoin Rally To $75K Still Possible Despite Huge Macro Challenges",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/rocky-us-economy-private-credit-stress-war-impact-bitcoin-s-odds-for-75k-rally",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a9",
+          "title": "Riot Platforms Wallet Moves $34M in Bitcoin as Listed Miners Continue Sales",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/onchain-data-flags-fresh-riot-500-btc-sale",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a10",
+          "title": "Bitcoin price on track to hit $150,000 by year end despite Iran war, Bernstein says",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/bitcoin-price-to-more-than-double-by-year-end-despite-iran-war-bernstein-says/",
+          "source": "DL News"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a11",
+          "title": "Why the $19bn October crypto wipeout was ‘one of the best things’ to happen to onchain options startups",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/defi/defi-crypto-options-pick-up-steam-as-derive-battles-deribit/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a12",
+          "title": "HYPE to $150? Hyperliquid token is seen to ride worsening Iran oil crisis to triple record price",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/markets/hyperliquid-rides-chaos-to-over-1bn-oil-volume/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a13",
+          "title": "Polymarket Revenue Jumps as New Fees Take Effect",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/polymarket-fees-revenue-surge-after-pricing-overhaul",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a14",
+          "title": "Ether Risks $1.7K Retest As Traders Fail To Overcome Key Resistance Zone",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/ether-at-risk-of-new-2026-lows-if-bulls-fail-to-turn-dollar2-4k-into-support",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a15",
+          "title": "South Korean central bank embarks on crypto expert hiring spree",
+          "sentiment": "bullish",
+          "url": "https://www.dlnews.com/articles/regulation/south-korean-central-bank-embarks-on-crypto-expert-hiring-spree/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a16",
+          "title": "Stablecoin-sceptic BIS exec set to become new South Korean central bank boss",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/regulation/stablecoin-sceptic-bis-exec-set-to-become-new-south-korean-central-bank-boss/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a17",
+          "title": "Prediction market bills are flooding Washington. Are they really necessary?",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/regulation/prediction-market-bills-are-flooding-washington-are-they-necessary/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a18",
+          "title": "SBF stumbles in error-ridden trial push as judge tells his mother to step aside",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/regulation/sbf-judge-raises-scrutiny-of-retrial-demand/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a19",
+          "title": "Crypto dev loses lawsuit seeking protection from DOJ",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/regulation/crypto-dev-loses-lawsuit-seeking-protection-from-doj/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a20",
+          "title": "Kalshi launches ‘whistleblower’ function to oust insider traders as lawmakers circle",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/regulation/kalshi-launches-whistleblower-function-to-oust-insider-traders/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a21",
+          "title": "Coinbase lashes out against UK gov’s crypto donations ban that comes as blow against Reform UK",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/regulation/coinbase-lashes-out-against-uk-govs-crypto-donations-ban-that-comes-as-blow-against-reform-uk/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a22",
+          "title": "Brazil passes anti-gang law allowing seized crypto to fund security forces",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/regulation/brazil-signs-antigang-law-to-use-seized-crypto/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a23",
+          "title": "X Mulls New Rules for First-Time Crypto Posts Amid Tortoise Scam",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/crypto-scam-fake-death-tortoise",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a24",
+          "title": "Crypto is popular among young Brits — and it’s not just Reform UK voters",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/people-culture/crypto-is-popular-among-young-brits-and-not-just-reform-uk-voters/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a25",
+          "title": "Coinbase Exec Says CLARITY Act Nearing Senate Markup, Floor Vote",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/coinbase-clo-clarity-act-senate-markup-floor-vote",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a26",
+          "title": "Crypto Scam Leader Extradited to China to Face Charges",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/crypto-scam-leader-extradited-to-china-fraud-money-laundering-charges",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a27",
+          "title": "Alabama Passes DUNA Act Granting DAOs Legal Status",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/alabama-enacts-duna-act-grant-daos-legal-status",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a28",
+          "title": "Former FTX Engineer Nishad Singh Fined $3.7M in CFTC Fraud Case",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/ftx-nishad-singh-cftc-fine-trading-ban",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-02_a29",
+          "title": "Bitcoin Policy Institute says Taiwan Should Reconsider Bitcoin Reserves",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/taiwan-bitcoin-reserve-geopolitical-hedge",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a30",
+          "title": "Why crypto startups struggle to get VC cash this cycle",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/deals/why-crypto-startups-struggle-to-get-vc-cash-this-cycle/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a31",
+          "title": "SpaceX Reportedly Files IPO at Potential $1.75T Valuation",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/elon-musks-spacex-files-confidential-ipo-with-sec",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a32",
+          "title": "Stablecoins Dominate Crypto Trading as Retail Activity Drops: CEX.io",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/stablecoin-supply-315b-q1-usdc-rises-usdt-declines",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a33",
+          "title": "Frane's Lise To Host Fully Onchain IPO With ST Group Listing",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/lise-host-tokenized-ipo-french-defense-supplier-st-group",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a34",
+          "title": "First BlackRock, now Bitmine. Will Tom Lee’s Ethereum staking play save share price?",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/markets/bitmine-and-tom-lee-make-ethereum-staking-play-as-share-price-dips/",
+          "source": "DL News"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a35",
+          "title": "Fenbushi Capital founder offers up lucrative bounty to track down his stolen Bitcoin",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/people-culture/fenbushi-capital-founder-bounty-to-track-down-stolen-bitcoin/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-02_a36",
+          "title": "Curve Finance row over $9.3m Resupply exploit ends in Singapore court",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/defi/curve-row-over-resupply-exploit-ends-in-singapore-court/",
+          "source": "DL News"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a37",
+          "title": "Crypto firms are slashing jobs — and they’re mostly citing the same reason",
+          "sentiment": "bearish",
+          "url": "https://www.dlnews.com/articles/people-culture/crypto-firms-are-slashing-jobs-and-they-blame-ai/",
+          "source": "DL News"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a38",
+          "title": "XRP Set to Continue Slump as ETF Demand Fades: Is $1 Back in Play?",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/xrp-price-down-30percent-2026-chart-1dollar-warning",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "mig_2026-04-02_a39",
+          "title": "Oil, Crypto Moves as Trump Addresses Nation on Iran War",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/trump-is-going-to-give-a-key-address-about-iran",
+          "source": "Cointelegraph"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, The past week has delivered three clear signals that the bridge between traditional finance and digital assets is not only intact but accelerating. First, Cardano’s founder Charles Hoskinson confirmed that the network will serve as the supporting layer for Midnight’s £250 million tokenisation deal with UK challenger bank Monument. This marks the first time a UK‑regulated bank will issue interest‑bearing tokens that are protected by the Financial Services Compensation Scheme, opening a regulated pathway for institutional capital to flow onto public blockchains. Across the Atlantic, U.S. senators and the White House have reached an agreement in principle on the Clarity Act. The legislation aims to resolve the stalemate around stablecoin reward programs by pairing innovation safeguards with protections against large‑scale deposit withdrawals. Market participants such as Coinbase and JPMorgan Chase are watching closely for the first concrete sign of a crypto‑friendly regulatory framework in Washington. Meanwhile, institutional appetite for Bitcoin has surged again. In the last month investors poured $2.3 billion into Bitcoin ETFs, a flow linked to heightened geopolitical tension from the Iran conflict. Analysts now project that institutional Bitcoin holdings could climb to $13 trillion by 2030 if the current trajectory holds, despite the broader market having lost roughly half its value since October. At Blockwall we see these developments as proof that capital‑rich players are ready to engage with well‑structured, compliant crypto solutions. How will you position your portfolio to capture the next wave of regulated digital‑asset growth? #Web3 #Crypto #Blockchain #CryptoVC"
+}

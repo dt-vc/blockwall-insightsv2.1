@@ -1,0 +1,963 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-06-01",
+  "date_display": "June 1, 2026",
+  "stats": {
+    "sources": 114,
+    "signals": 12,
+    "watching": 25,
+    "bullish": 40,
+    "bearish": 32
+  },
+  "lead": {
+    "tldr": "IREN’s $3.65bn A‑rated financing de‑ridges AI GPU spend, signaling deep capital appetite for cloud AI infrastructure • Kelp DAO’s $220m laundering underscores persistent bridge vulnerabilities, migration to Chainlink CCIP may set new security standard • Aave’s asset‑listing overhaul after rsETH exploit forces tighter bridge risk assessments, likely tightening capital efficiency for DeFi protocols • Radiant Capital’s wind‑down after $50m hack highlights fragility of omnichain money markets, prompting investors to demand stronger audit regimes • Binance’s tokenized US equities launch expands DeFi‑tradable assets, but regulatory scrutiny in US may limit cross‑border liquidity • US Senate’s CLARITY Act consolidation could reshape crypto deposit interest models, early vote risk adds policy uncertainty for yield platforms"
+  },
+  "intro": "Dear Founders, Investors, and Friends, today we see massive AI infrastructure financing, a wave of DeFi security setbacks, and heightened regulatory focus on crypto and AI. At the same time, record AI fundraises and targeted VC support signal continued capital appetite despite the turbulence.",
+  "top_signals": [
+    {
+      "id": "mig_2026-06-01_s1",
+      "title": "IREN lands $3.65 billion A-rated financing for Microsoft AI buildout",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "significance": 9,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200611_Digital_Dollar-Daily-1200x675.jpg",
+      "summary": "IREN has secured a $3.65 billion A-rated financing package to fund the purchase of graphics processing units needed for its contract to supply Microsoft’s AI cloud services. The financing, which includes a $2.1 billion private placement and a $1.55 billion delayed-draw loan, provides roughly 96 percent of the $5.81 billion total spend and carries a blended borrowing cost of 6 percent. The deal follows a recent $3 billion convertible notes offering and underscores IREN’s role in scaling hardware capacity for large-scale AI workloads, a point of interest for institutional investors monitoring exposure to AI infrastructure financing.",
+      "url": "https://www.theblock.co/post/403194/iren-lands-3-65-billion-a-rated-financing-microsoft-ai-buildout"
+    },
+    {
+      "id": "mig_2026-06-01_s2",
+      "title": "Kelp DAO Recovery Hopes Fade as Hacker Launders About $220 Million",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "significance": 9,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparing-money-laundering-with-cryptocurrencies-and-fiat.jpg",
+      "summary": "A hacker has laundered roughly $220 million from the Kelp DAO exploit, raising total losses to about $293 million. The scale of the theft has eroded expectations of a financial recovery for the decentralized autonomous organization. In response, Kelp DAO, Solv Protocol and Tydro have migrated from the compromised LayerZero bridge to Chainlink’s Cross‑Chain Interoperability Protocol to safeguard future cross‑chain transactions.",
+      "url": "https://cointelegraph.com/news/kelp-dao-recovery-hacker-launders-most-funds-293m-exploit"
+    },
+    {
+      "id": "mig_2026-06-01_s3",
+      "title": "Aave overhauls listing standards after $230 Million rsETH exploit exposed bridge risks",
+      "source": "CoinDesk",
+      "category": "DeFi",
+      "significance": 9,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/b1d6ea7b7aec491803836b0fa81e4742ba3b8285-1280x854.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Aave, a major decentralized finance lending platform, announced a sweeping overhaul of its asset‑listing standards after a $230 million rsETH exploit. The attack exploited a verification failure in the LayerZero bridge and minted 116,500 unbacked rsETH tokens on Ethereum, highlighting hidden bridge risks. In response, Aave will tighten risk assessments for bridges, oracles, custodians and operational security to protect institutional and retail users.",
+      "url": "https://www.coindesk.com/markets/2026/06/01/aave-overhauls-listing-standards-after-usd230-million-rseth-exploit-exposed-bridge-risks"
+    },
+    {
+      "id": "mig_2026-06-01_s4",
+      "title": "Unable to recover from roughly $50 million hack, Radiant Capital is winding down",
+      "source": "The Block",
+      "category": "Security",
+      "significance": 8,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221129_Hack-Exploit-3-1200x675.jpg",
+      "summary": "Radiant Capital is an omnichain DeFi money market protocol that operated on multiple blockchains. A recent exploit that affected its Arbitrum and BNB Chain deployments resulted in an estimated $50 million loss. The DAO announced that, lacking a viable path forward, it will wind down the platform, raising concerns for liquidity providers and institutional investors with exposure to the protocol.",
+      "url": "https://www.theblock.co/post/403254/unable-to-recover-from-roughly-50-million-hack-radiant-capital-is-winding-down"
+    },
+    {
+      "id": "mig_2026-06-01_s5",
+      "title": "The US and Europe: A tale of two AIs",
+      "source": "Sifted",
+      "category": "Investment",
+      "significance": 9,
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2025/02/12101528/john-thornhill-headshot-for-column.jpeg?w=1600&h=1134&q=75&fit=crop&auto=compress,format",
+      "summary": "Anthropic, a leading AI developer, disclosed a $65bn fundraising round that lifts its post‑money valuation to near $1tn. The size of the raise highlights the scale of capital flowing to US‑based AI firms compared with the more modest funding environment in Europe. Investors are watching the debate over how the influx of US AI capital could reshape the European tech landscape and influence cross‑border competitive dynamics.",
+      "url": "https://sifted.eu/articles/the-us-and-europe-a-tale-of-two-ais/"
+    },
+    {
+      "id": "mig_2026-06-01_s6",
+      "title": "Mecka AI raises $60 million to train robots with human data sourced from body sensors and iPhones",
+      "source": "Fortune",
+      "category": "Investment",
+      "significance": 8,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/05/meckagroupphoto-e1780258686483.jpg?resize=1200,600",
+      "summary": "Mecka AI has secured $60 million in new funding, comprising a $25 million Series A and a $35 million follow‑on round. The round was led by Framework Ventures, a venture‑capital firm that focuses on crypto‑related investments. The capital will be used to collect human motion data from body sensors and iPhones to train robots for physical‑world artificial‑intelligence applications, a capability that could be valuable for enterprises seeking advanced automation solutions.",
+      "url": "https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/"
+    },
+    {
+      "id": "mig_2026-06-01_s7",
+      "title": "Debate on CLARITY Act Continues this Week as US Senate Returns",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "significance": 7,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-senate-infrastructure-bill-doom-and-gloom-for-crypto-1.jpg",
+      "summary": "U.S. senators are preparing to merge multiple drafts of the CLARITY Act, a bill that would establish a new market‑structure framework for the cryptocurrency sector. The legislation is expected to be brought to a vote as early as August, pending final consolidation. Lawmakers are encountering resistance to the bill’s ethics provisions, which critics say could affect compliance costs for crypto firms. If enacted, the CLARITY Act would alter how crypto companies manage interest on user deposits and on stablecoin balances, and it arrives as the comment period for the related GENIUS Act is nearing its end.",
+      "url": "https://cointelegraph.com/news/clarity-act-us-senate-session-committees"
+    },
+    {
+      "id": "mig_2026-06-01_s8",
+      "title": "Florida sues OpenAI and CEO Sam Altman over allegations of marketing ChatGPT despite serious risks of user safety",
+      "source": "Fortune",
+      "category": "Regulation",
+      "significance": 7,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/06/AP26152632949279.jpg?resize=1200,600",
+      "summary": "Florida Attorney General James Uthmeier has filed the first state‑led lawsuit against OpenAI and its chief executive Sam Altman, alleging that the company marketed its ChatGPT product despite known safety concerns. The complaint claims OpenAI concealed warnings about the technology, collected data from minors and encouraged self‑harm, and it seeks accountability under Florida consumer‑protection statutes. The action introduces regulatory and litigation risk for investors in AI firms, highlighting potential exposure to consumer‑protection enforcement and reputational damage.",
+      "url": "https://fortune.com/2026/06/01/florida-sues-openai-ceo-sam-altman-chatgpt-safety-warnings/"
+    },
+    {
+      "id": "mig_2026-06-01_s9",
+      "title": "Binance adds over 7,000 US stocks and ETFs for traders outside the United States amid super app push",
+      "source": "The Block",
+      "category": "Tokenization",
+      "significance": 7,
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241127_Binance_News-1200x675.jpg",
+      "summary": "Binance has launched zero‑commission access to more than 7,000 U.S. stocks and ETFs for customers located outside the United States. The platform also permits fractional share purchases starting at $5, expanding the addressable market for smaller capital allocations. In parallel, Binance introduced bStocks, a tokenization service that creates BNB‑Chain tokens that represent equity positions and can be integrated with decentralized finance protocols, offering institutional investors a bridge between traditional equities and blockchain‑based liquidity.",
+      "url": "https://www.theblock.co/post/403155/binance-adds-us-stocks-etfs-traders-outside-united-states-super-app-push"
+    },
+    {
+      "id": "mig_2026-06-01_s10",
+      "title": "Why Amy Lee, the niece of Singapore’s first prime minister, helped launch a crypto-friendly bank",
+      "source": "Fortune",
+      "category": "Enterprise",
+      "significance": 6,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/05/SGB_Portraits_Batch-Amy-Lee-e1780042888304.jpg?resize=1200,600",
+      "summary": "Amy Lee, the niece of Singapore’s first prime minister, played a key role in launching Singapore Gulf Bank (SGB) and now chairs its advisory board. SGB is a Bahrain‑licensed digital bank that integrates fiat and cryptocurrency services. The bank is a joint venture between Whampoa Group and Bahrain’s sovereign wealth fund Mumtalakat and is positioned to serve the expanding Asia‑Middle East trade corridor. In 2025 SGB reported $4 billion in deposits and $12 billion in transaction volume, indicating strong demand for blended financial solutions among institutional clients.",
+      "url": "https://fortune.com/2026/06/01/amy-lee-singapore-gulf-bank-crypto/"
+    },
+    {
+      "id": "mig_2026-06-01_s11",
+      "title": "Binance Launches Tokenized US Equities with 24/5 Trading",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "significance": 7,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-ondo-finance-plans-to-bring-tokenized-us-stocks-to-solana.jpg",
+      "summary": "Binance has launched tokenized US equities that can be traded on a 24‑hour, five‑day schedule. The initial catalog comprises 7,000 stocks that are purchasable with USDC and other stablecoins. Binance intends to add tokenized stocks and ETFs under the bStocks label once it receives regulatory approval. The service also offers Fully Paid Securities Lending so participants can earn passive income, mirroring similar tokenized‑stock programs from Bitget, Kraken and Bitpanda.",
+      "url": "https://cointelegraph.com/news/binance-launches-tokenized-stocks-245-trading"
+    },
+    {
+      "id": "mig_2026-06-01_s12",
+      "title": "Anchorage Launches Settlement Network for Institutional Crypto Trading",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "significance": 6,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-dex-explained1.jpg",
+      "summary": "Anchorage Digital has introduced a blockchain‑based settlement network designed for institutional cryptocurrency trading. The network’s first integration is with the Spotex platform, allowing institutional participants to settle trades on a distributed ledger. This launch follows recent collaborations among the Depository Trust & Clearing Corporation, Digital Asset, Fireblocks and several banking firms. The development reflects a broader acceleration of infrastructure that supports tokenized assets for large‑scale investors.",
+      "url": "https://cointelegraph.com/news/anchorage-launches-settlement-network-for-institutional-crypto-trading"
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-06-01_r1",
+      "title": "Anthropic confidentially files for IPO after raising $65 billion in a funding round at a $965 billion valuation",
+      "sentiment": "bullish",
+      "url": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/",
+      "source": "Fortune",
+      "category": "Other",
+      "summary": "Anthropic has confidentially filed for an IPO after raising $65 billion in a funding round that valued the company at $9..."
+    },
+    {
+      "id": "mig_2026-06-01_r2",
+      "title": "Anthropic’s $65bn round begs the question: ‘Is Europe cooked?’",
+      "sentiment": "bullish",
+      "url": "https://sifted.eu/articles/is-europe-cooked-anthropic-balderton-eu-inc/",
+      "source": "Sifted",
+      "category": "Other",
+      "summary": "Anthropic announced a massive $65 billion funding round, dwarfing the total AI investment in Europe last year. The size ..."
+    },
+    {
+      "id": "mig_2026-06-01_r3",
+      "title": "Buffett says Abel 'has launched' with his first big Berkshire deal: an $8.5 billion housing bet",
+      "sentiment": "neutral",
+      "url": "https://fortune.com/2026/06/01/berkshire-hathaway-housing-bet-gregory-abel-warren-buffett/",
+      "source": "Fortune",
+      "category": "Other",
+      "summary": "Berkshire Hathaway, now led by CEO Greg Abel, is buying homebuilder Taylor Morrison for $8.5 billion in cash, marking th..."
+    },
+    {
+      "id": "mig_2026-06-01_r4",
+      "title": "Binance adds U.S. stocks in 'super app' push, plans to launch tokenized shares",
+      "sentiment": "bullish",
+      "url": "https://fortune.com/2026/06/01/binance-adds-u-s-stocks-in-super-app-push-plans-to-launch-tokenized-shares/",
+      "source": "Fortune",
+      "category": "Tokenization",
+      "summary": "Binance announced that users can now trade more than 7,000 U.S. stocks and ETFs and will soon be able to convert those h..."
+    },
+    {
+      "id": "mig_2026-06-01_r5",
+      "title": "Crypto funds suffer second-largest outflows of 2026 while XRP and HYPE attract inflows",
+      "sentiment": "bearish",
+      "url": "https://www.coindesk.com/markets/2026/06/01/crypto-funds-suffer-second-largest-outflows-of-2026-while-xrp-and-hype-attract-inflows",
+      "source": "CoinDesk",
+      "category": "Investment",
+      "summary": "Crypto investment products recorded a $1.67 billion net outflow last week, the second‑largest weekly withdrawal of 2026,..."
+    },
+    {
+      "id": "mig_2026-06-01_r6",
+      "title": "Exclusive: ASML spinout Invisix raises €20m seed round",
+      "sentiment": "bullish",
+      "url": "https://sifted.eu/articles/invisix-seed-round-20m/",
+      "source": "Sifted",
+      "category": "Investment",
+      "summary": "Invisix, a spinout of Dutch semiconductor equipment maker ASML, announced a €20 million seed financing round. The capita..."
+    },
+    {
+      "id": "mig_2026-06-01_r7",
+      "title": "Why older users are losing so much money to crypto ATM scams",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/learn/crypto-atm-scams-older-adults",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "summary": "Older adults are being targeted by sophisticated crypto ATM scams that begin with phone or email fraud and end with irre..."
+    },
+    {
+      "id": "mig_2026-06-01_r8",
+      "title": "The Iran conflict has disrupted oil supply. Gulf states are now looking to multi-billion-dollar investments in renewables",
+      "sentiment": "bullish",
+      "url": "https://fortune.com/2026/06/01/iran-conflict-disrupted-oil-supply-gulf-states-multi-billion-dollar-investments-renewables/",
+      "source": "Fortune",
+      "category": "Investment",
+      "summary": "The Iran‑U.S./Israel conflict has sharply cut oil supplies, prompting Gulf states to accelerate multi‑billion‑dollar inv..."
+    },
+    {
+      "id": "mig_2026-06-01_r9",
+      "title": "Bitcoin weakens near $72K as ETF outflows, stalled whale buying and macro uncertainty weigh on prices: analysts",
+      "sentiment": "bearish",
+      "url": "https://www.theblock.co/post/403179/bitcoin-weakens-near-72k-as-etf-outflows-stalled-whale-buying-and-macro-uncertainty-weigh-on-prices-analysts",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "summary": "Bitcoin slipped to around $72,000 as institutional outflows from U.S. spot Bitcoin ETFs hit $1.42 billion, marking the t..."
+    },
+    {
+      "id": "mig_2026-06-01_r10",
+      "title": "Japan's ruling party supports crypto ETF trading, yen-based stablecoins",
+      "sentiment": "bullish",
+      "url": "https://www.coindesk.com/policy/2026/06/01/japan-s-ruling-party-supports-crypto-etf-trading-yen-based-stablecoins",
+      "source": "CoinDesk",
+      "category": "Regulation",
+      "summary": "Japan's ruling Liberal Democratic Party has urged the finance ministry to create a legal framework for cryptocurrency ex..."
+    },
+    {
+      "id": "mig_2026-06-01_r11",
+      "title": "Dogecoin gains access to Paxos network used by PayPal and Venmo",
+      "sentiment": "bullish",
+      "url": "https://www.theblock.co/post/403193/dogecoin-gains-access-to-paxos-network-used-by-paypal-and-venmo",
+      "source": "The Block",
+      "category": "Enterprise",
+      "summary": "House of Doge has partnered with Paxos to integrate Dogecoin into Paxos' enterprise-grade brokerage and custody platform..."
+    },
+    {
+      "id": "mig_2026-06-01_r12",
+      "title": "'Gnosis will cover all user losses' amid exploit related to Gnosis Pay, co-founder Koppelmann says",
+      "sentiment": "bearish",
+      "url": "https://www.theblock.co/post/403147/gnosis-will-cover-all-user-losses-amid-exploit-related-to-gnosis-pay-co-founder-koppelmann-says",
+      "source": "The Block",
+      "category": "Security",
+      "summary": "Gnosis confirmed an active exploit affecting its Gnosis Pay product that leverages a vulnerability in the Zodiac delay m..."
+    },
+    {
+      "id": "mig_2026-06-01_r13",
+      "title": "ECB Says Stablecoin Risks Strengthen Digital Euro Case",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/news/ecb-stablecoins-public-money-digital-euro",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "The European Central Bank warned that the growing use of dollar‑pegged stablecoins could undermine bank lending and comp..."
+    },
+    {
+      "id": "mig_2026-06-01_r14",
+      "title": "Major Crypto Exchange Coinbase Enables Rupee Bank Rails in India",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/coinbase-rolls-out-rupee-bank-rails-in-india-after-watchdog-approval",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "summary": "Coinbase has launched IMPS‑based rupee bank rails, allowing Indian users to deposit and withdraw fiat directly to the ex..."
+    },
+    {
+      "id": "mig_2026-06-01_r15",
+      "title": "Crypto meets Wall Street: MEXC unveils",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/press-releases/crypto-meets-wall-street-mexc-unveils-realstocks-with-0-fee-us-equity-trading-and-real-dividends",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "summary": "MEXC has introduced U.S. stock spot trading on its platform, partnering with FINRA‑licensed broker‑dealer Atomic Vaults...."
+    },
+    {
+      "id": "mig_2026-06-01_r16",
+      "title": "Three Sui mainnet halts in 48 hours traced to an upgrade bug by developers",
+      "sentiment": "bearish",
+      "url": "https://www.coindesk.com/tech/2026/06/01/three-sui-mainnet-halts-in-48-hours-traced-to-an-upgrade-bug-by-developers",
+      "source": "CoinDesk",
+      "category": "Infrastructure",
+      "summary": "The Sui mainnet experienced three separate halts over two days after a bug in the v1.72 upgrade's address‑balance featur..."
+    },
+    {
+      "id": "mig_2026-06-01_r17",
+      "title": "Citi predicts the tokenized securities market will grow to $5.5 trillion by 2030",
+      "sentiment": "bullish",
+      "url": "https://www.coindesk.com/markets/2026/06/01/citi-predicts-the-tokenized-securities-market-will-grow-to-usd5-5-trillion-by-2030",
+      "source": "CoinDesk",
+      "category": "Tokenization",
+      "summary": "Citi’s new report projects the tokenized securities market to expand from $17 billion today to $5.5 trillion by 2030, wi..."
+    },
+    {
+      "id": "mig_2026-06-01_r18",
+      "title": "Coinbase launches Indian rupee rails with perps access in expansion push",
+      "sentiment": "bullish",
+      "url": "https://www.theblock.co/post/403135/coinbase-launches-indian-rupee-rails",
+      "source": "The Block",
+      "category": "Payments",
+      "summary": "Coinbase announced the launch of Indian rupee (INR) fiat rails, allowing users to deposit, withdraw, and trade perpetual..."
+    },
+    {
+      "id": "mig_2026-06-01_r19",
+      "title": "AI-powered finance startup Gradient Labs doubles Series A to $26m",
+      "sentiment": "bullish",
+      "url": "https://sifted.eu/articles/gradient-labs-doubles-series-a/",
+      "source": "Sifted",
+      "category": "Enterprise",
+      "summary": "London‑based Gradient Labs has doubled its Series A round to $26 million, attracting new investors Octopus Ventures and ..."
+    },
+    {
+      "id": "mig_2026-06-01_r20",
+      "title": "SoftBank helps drive record €93bn of foreign investments for ‘Choose France’",
+      "sentiment": "bullish",
+      "url": "https://sifted.eu/articles/softbank-choose-france-record-93bn/",
+      "source": "Sifted",
+      "category": "Investment",
+      "summary": "The Choose France summit recorded a record €93 bn of foreign commitments, driven largely by AI infrastructure projects. ..."
+    },
+    {
+      "id": "mig_2026-06-01_r21",
+      "title": "Solana Q1 2026 Update: Defending Market Share in the Doldrums",
+      "sentiment": "neutral",
+      "url": "https://www.galaxy.com/insights/research/solana-q1-2026-dex-rwa-stablecoins-market-share",
+      "source": "Galaxy",
+      "category": "Infrastructure",
+      "summary": "Solana’s Q1 2026 report shows a dip in overall activity but the chain retained its DEX volume lead and extended its upti..."
+    },
+    {
+      "id": "mig_2026-06-01_r22",
+      "title": "Crypto",
+      "sentiment": "bullish",
+      "url": "https://www.galaxy.com/insights/research/social-trading-fomo",
+      "source": "Galaxy",
+      "category": "DeFi",
+      "summary": "The article highlights the rise of social wallets such as fomo, which combine discovery, execution, and identity for cry..."
+    },
+    {
+      "id": "mig_2026-06-01_r23",
+      "title": "A Different Kind of Alt Season and Ethereum’s Leadership Shift",
+      "sentiment": "neutral",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/a-different-kind-of-alt-season-and-ethereum-s-leadership-shift",
+      "source": "Galaxy",
+      "category": "Ethereum",
+      "summary": "Galaxy's weekly Grid episode notes Bitcoin slipping below $80k and accelerating ETF outflows, while a handful of altcoin..."
+    },
+    {
+      "id": "mig_2026-06-01_r24",
+      "title": "CRCLON - Circle Internet Group (Ondo Tokenized Stock) - AMBCrypto",
+      "sentiment": "neutral",
+      "url": "https://ambcrypto.com/coins/circle-internet-group-ondo-tokenized-stock/",
+      "source": "AMBCrypto",
+      "category": "Tokenization",
+      "summary": "CRCLON is the Ondo‑tokenized representation of Circle Internet Group, giving holders exposure to the company's equity an..."
+    },
+    {
+      "id": "mig_2026-06-01_r25",
+      "title": "GNO - Gnosis - AMBCrypto",
+      "sentiment": "neutral",
+      "url": "https://ambcrypto.com/coins/gnosis/",
+      "source": "AMBCrypto",
+      "category": "DeFi",
+      "summary": "Gnosis (GNO) token is trading around $110.45, down roughly 4% over the past 24 hours, with a market cap of $294 million ..."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a1",
+          "title": "NYDIG Suggests $1.3B IBIT Trader Wanted Quick Exit",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/nydig-ibit-whale-exit-directional-bitcoin-trade",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a2",
+          "title": "BTC, ETH price news: Bitcoin, ether, solana slide as AI trade continues to rip higher",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/bitcoin-extends-slide-as-spot-etf-outflows-hit-a-record-while-wall-street-rips-on-ai",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a3",
+          "title": "Bitcoin Volatility Drops 56% As Analysts Watch For 20% Price Move",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/bitcoin-volatility-down-56-as-btc-analysts-eye-10-20-move",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a4",
+          "title": "Bitcoin Derivatives Show Bulls Making Moves Despite $70K Sell-off",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/bitcoin-bulls-eye-fresh-positions-after-btc-price-drops-under-71k",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a5",
+          "title": "Saylor's Strategy (MSTR) sold bitcoin (BTC). These crypto treasuries are still buying",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/business/2026/06/01/saylor-s-strategy-sold-bitcoin-for-the-first-time-since-2022-these-firms-are-still-buying",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a6",
+          "title": "Strategy’s Bitcoin Sale Reshapes Debate Around BTC Treasury Companies",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/strategy-bitcoin-sale-btc-treasury-company-valuation",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a7",
+          "title": "Low bitcoin-software correlation suggests a major move may be approaching",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/software-stocks-break-from-bitcoin-as-igv-stages-powerful-recovery",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a8",
+          "title": "BTC, ETH prices drop even as futures show growing taste for risk. XLM, HYPE gain: Crypto Markets Today",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/bitcoin-ether-start-june-in-the-red-while-futures-show-taste-for-risk-xlm-hype-gain",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a9",
+          "title": "Bitcoin price news: Michael Saylor's BTC sales sends price lower, tongues wagging",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/live-markets-bitcoin-retreats-under-usd72-000-as-strategy-unloads-btc-for-first-time-in-four-years",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a10",
+          "title": "SpaceX’s $1.4 billion Bitcoin hoard is a strategic reserve for its cash",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/spacexs-1-4-billion-bitcoin-hoard-is-a-strategic-reserve-for-its-cash-and-an-accounting-headache/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a11",
+          "title": "Bitcoin Stays Steered by Iran Nerves as BTC Price Drops Under $73,000",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/trump-says-iran-will-work-out-well-five-things-to-know-in-bitcoin-this-week",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a12",
+          "title": "Michael Saylor backs STRC after strategy sells bitcoin to fund preferred dividends",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/michael-saylor-breaks-silence-after-strategy-sells-usd2-5-million-in-bitcoin",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a13",
+          "title": "Strategy bitcoin sale timing throws wrench into $20 million Polymarket pool",
+          "sentiment": "neutral",
+          "url": "https://www.theblock.co/post/403213/strategy-bitcoin-sale-timing-throws-wrench-20-million-polymarket-pool",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a14",
+          "title": "Michael Saylor",
+          "sentiment": "neutral",
+          "url": "https://www.theblock.co/post/403160/michael-saylors-strategy-sells-bitcoin",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a15",
+          "title": "MSTR News: Michael Saylor's Strategy sold 32 BTC for $2.5 million in late May",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/strategy-sold-32-btc-for-usd2-5-million-in-late-may-filing-shows",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a16",
+          "title": "Strategy news: Strategy’s bitcoin sale triggers fierce debate over Michael Saylor’s true commitment",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/analysts-agree-strategy-s-bitcoin-sale-was-immaterial-differ-on-future-signals",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a17",
+          "title": "Strategy's $2.5 million BTC sale and lessons from the first time MSTR sold in December 2022",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/strategy-s-second-bitcoin-sale-revives-memories-of-2022",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a18",
+          "title": "Ethereum's Vitalik Buterin is rethinking how DeFi handles market crashes",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/tech/2026/06/01/ethereum-s-vitalik-buterin-is-rethinking-how-defi-handles-market-crashes",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a19",
+          "title": "Michael Saylor's Strategy sells $2.5 million bitcoin. Chaos ensues in a major prediction market over who gets paid",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/strategy-s-bitcoin-sale-sparks-a-usd14-million-crypto-betting-chaos-on-a-major-prediction-market",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a20",
+          "title": "Wintermute Enters Prediction Markets as Liquidity Provider",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/wintermute-is-entering-prediction-markets-as-a-liquidity-provider",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a21",
+          "title": "Ethereum OG Dumps $136M ETH: Will it Push Ether’s Price Lower?",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/are-ethereum-ogs-jumping-ship-heres-what-the-data-says",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a22",
+          "title": "Ethereum news: Bitmine (BMNR) slows purchase pace, buying $53 million in ETH",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/business/2026/06/01/bitmine-slows-ether-purchase-pace-buying-usd53-million-worth-last-week",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a23",
+          "title": "Bitmine acquires 26,497 ETH as it targets a slower approach to 5% of Ethereum",
+          "sentiment": "bullish",
+          "url": "https://www.theblock.co/post/403203/bitmine-acquires-26497-eth-as-it-targets-a-slower-approach-to-5-of-ethereums-total-supply",
+          "source": "The Block"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a24",
+          "title": "Jamie Dimon slams Coinbase CEO as 'full of sh*t' and warns banks won't accept crypto bill",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/jamie-dimon-slams-coinbase-ceo-brian-armstrong-stable-deposits/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a25",
+          "title": "U.S. Congress returns as GENIUS comments periods close, jobs report: Crypto Week Ahead",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/u-s-congress-returns-as-genius-comments-periods-close-jobs-report-crypto-week-ahead",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a26",
+          "title": "Digital euro is key to counter stablecoin risks, says ECB",
+          "sentiment": "neutral",
+          "url": "https://www.theblock.co/post/403142/digital-euro-stablecoin-risks-ecb",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a27",
+          "title": "After issuing more than $20 billion in tariff refunds, the Trump administration is now pursuing legal action to bring the process to a standstill",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/trump-administration-plan-appeal-illegal-ieepa-tariff-universal-refunds/",
+          "source": "Fortune"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a28",
+          "title": "Grayscale sets 0.29% fee for its Hyperliquid ETF, undercutting Bitwise and 21Shares",
+          "sentiment": "bullish",
+          "url": "https://www.theblock.co/post/403234/grayscale-sets-0-29-fee-hyperliquid-etf-undercutting-bitwise-21shares",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a29",
+          "title": "Crypto Funds Extend Sell-Off With $1.67B Weekly Outflows",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/crypto-etps-bleed-1-67-billion-altcoin-participation-collapse",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a30",
+          "title": "CoinDesk 20 performance update: Stellar (XLM) surges 14.1% over weekend",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/06/01/coindesk-20-performance-update-stellar-xlm-surges-14-1-over-weekend",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a31",
+          "title": "Hyperliquid’s HYPE Breakout Puts $100 Price Target in Play",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/hyperliquids-hype-breakout-may-lead-price-to-100-record-high",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a32",
+          "title": "Paxos Adds Dogecoin to Brokerage and Custody Platform",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/paxos-doge-support-dogecoin-broader-institutional-adoption",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a33",
+          "title": "TON revives Gram token brand as Telegram CEO Durov says network is",
+          "sentiment": "bullish",
+          "url": "https://www.theblock.co/post/403231/ton-revives-gram-token-brand-telegram-ceo-durov-network-returning-roots",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a34",
+          "title": "Sui Addresses Three Network Outages With Major Upgrade",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/sui-major-upgrade-fixes-outage-bugs-restores-network",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a35",
+          "title": "Erin Brockovich, the activist who defeated a utility giant and inspired a Julia Roberts film, is pushing data centers to be more transparent",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/erin-brockovich-data-centers-transparency-utility-bills-rural-america/",
+          "source": "Fortune"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a36",
+          "title": "How to save the internet",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/internet-according-to-sam-altman-seeing-orb/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a37",
+          "title": "Financial fraud in an era of blockchain and AI",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/crypto/2026/06/01/financial-fraud-blockchain-ai-reagan-national-economic-forum/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a38",
+          "title": "Grey rhinos, black swans, and the kidnapping of Nancy Guthrie: What Corporate America still gets wrong about risk",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/grey-rhinos-black-swans-nancy-guthrie-kidnapping-cyber-risk/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a39",
+          "title": "Crypto Exploit Losses Fall 90% in May to $68 Million",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/crypto-exploit-losses-fall-by-90-in-may-to-68m-certik",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a40",
+          "title": "Gnosis Pay Exploit: Founder Vows to Make Users Whole",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/gnosis-hit-by-fresh-exploit-team-vows-to-fully-cover-user-losses",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a41",
+          "title": "Whitehat developer unlocks $2 million stuck in a 2016 Ethereum ICO contract for nine years",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/tech/2026/06/01/whitehat-developer-unlocks-usd2-million-stuck-in-a-2016-ethereum-ico-contract-for-nine-years",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a42",
+          "title": "White Hat Helps Recover $2 Million from 2016 ICO Project",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/whitehat-helps-recover-2m-from-2016-ico-smart-contract",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a43",
+          "title": "A SpaceX-Tesla union would be valued at $3.4 trillion",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/spacex-tesla-merger-3-4-trillion-profits/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a44",
+          "title": "XDC Network is Bringing Trade Finance Onchain: The 15 Trillion-Dollar Opportunity",
+          "sentiment": "bullish",
+          "url": "https://www.theblock.co/post/403050/xdc-network-is-bringing-trade-finance-onchain-the-15-trillion-dollar-opportunity",
+          "source": "The Block"
+        },
+        {
+          "id": "mig_2026-06-01_a45",
+          "title": "Digital asset firm Keyrock plans to acquire BlockFills out of bankruptcy",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/business/2026/06/01/crypto-investment-firm-keyrock-is-acquiring-bankrupt-lender-blockfills",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a46",
+          "title": "The automation illusion: Why AI is making COOs' jobs harder, not easier",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/automation-illusion-nike-sysco-box-coos-say-adoption-hard/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a47",
+          "title": "Okta's President and COO says companies are in denial about the hardest part of the AI revolution: redesigning work itself",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/oktas-coo-kelleher-companies-in-denial-about-redesigning-work-ai-agents/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a48",
+          "title": "How Kelly Ortberg is rebuilding Boeing from the inside out",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/kelly-ortberg-boeing-innovation-aircraft/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a49",
+          "title": "The women controlling the purse strings of the AI boom",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/women-in-ai-cfos-openai-nvidia-meta-sarah-friar/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a50",
+          "title": "Harvard Law: Anthropic is about to sell a safety mission that Wall Street can veto",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/openais-guardian-ben-jerrys-ice-cream-anthropic/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a51",
+          "title": "Strategy keeps STRC payout unchanged amid push to maintain $100 share price",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/strategy-holds-strc-dividend-at-11-5-for-fourth-straight-month",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a52",
+          "title": "Cognizant CEO is swimming against the tide on AI: he's hiring over 20,000 graduates this year and says AI tokenmaxxing is a 'vanity metric'",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/cognizant-ceo-ravi-kumar-s-hiring-entry-level-tokenmaxxing-vanity-metric/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a53",
+          "title": "What happens when humans get stuck in the AI hiring doom loop",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/robots-screening-robots-inside-the-ai-arms-race-reshaping-hiring/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a54",
+          "title": "Billionaires already couldn't talk to their grandchildren. Now they're on opposite sides of the AI divide",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/family-offices-ai-adoption-privacy-conflict/",
+          "source": "Fortune"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a55",
+          "title": "XRP price news: Ripple-linked token hits 15-week low",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/06/01/xrp-drops-to-usd1-32-as-sellers-overpower-exchange-outflows",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "mig_2026-06-01_a56",
+          "title": "A SpaceX-Tesla union would mark the largest merger of all time. But does the math work?",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/spacex-tesla-union-merger-does-math-work/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a57",
+          "title": "Gen Z is losing the most in the AI economy",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/how-many-jobs-is-ai-destroying-goldman-sachs-11000-per-month-gen-z-economy/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a58",
+          "title": "ADA governance vote kills Cardano Summit 2026, approves smaller TOKEN2049 plan",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/06/01/cardano-governance-vote-kills-summit-approves-smaller-token2049-plan",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-06-01_a59",
+          "title": "The Strait of Hormuz is splitting into U.S. and Iranian lanes as ship traffic picks up even while fighting intensifies",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/strait-of-hormuz-us-iranian-lanes-ship-traffic-airstrikes-missile-attacks-drones/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a60",
+          "title": "Exclusive: Economists have been teaching an unproven proof for 50 years. AI just solved it",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/axiom-math-econlib-antitrust-economic-theory-verified/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a61",
+          "title": "The 'godfather of AI' says we're not just creating new beings",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/godfather-of-ai-geoffrey-hinton-beings-smarter-than-us/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a62",
+          "title": "Cardano Foundation Cancels Conference After Failed DAO Vote",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/news/cardano-foundation-cancels-annual-conference-after-failed-funding-vote",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-06-01_a63",
+          "title": "Fortune Tech: Apple smart glasses, Nvidia goes full PC, SoftBank’s France pledge",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/apple-smart-glasses-2027/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a64",
+          "title": "Property prices are down in Dubai. Is it a war-induced blip, or something more serious?",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/property-prices-down-dubai/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a65",
+          "title": "Anthropic confidentially files its S-1 first",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/anthropic-s1-confidential/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a66",
+          "title": "A 'quiet' wildfire year just became the most expensive one ever",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/quiet-wildfire-year-record-financial-costs/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a67",
+          "title": "CEOs are losing confidence in the economy and expect conditions to worsen in the next six months, survey finds",
+          "sentiment": "bearish",
+          "url": "https://fortune.com/2026/06/01/ceos-losing-confidence-economy-getting-worse-q2-survey/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a68",
+          "title": "Apollo chief economist says there's ‘zero evidence’ AI is killing jobs",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/apollo-chief-economist-torsten-slok-zero-evidence-ai-killing-jobs-says-its-creating-them/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a69",
+          "title": "As loyal Boomers win and job-switching Gen Zers lose, the labor market of 2026 reveals a decade of bad career advice",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/boomers-win-gen-z-loses-job-switching-labor-market-2026/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a70",
+          "title": "‘Nobody’s safe’: Cognizant projected 90% of jobs would be disrupted by 2032",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/cognizant-predictions-future-of-work-job-distruption-six-years-early-ai-proof-jobs-not-immune/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a71",
+          "title": "From GE CEO to Substack: Jeff Immelt reflects on a new chapter and why now is the time to get candid",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/jeff-immelt-substack-newsletter-ge-ceo/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a72",
+          "title": "New Fed study shows remote work, not AI, is driving higher unemployment in younger workers",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/new-fed-study-remote-work-ai-driving-higher-unemployment/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a73",
+          "title": "The elderly and injured are using robots as home care support to help them get around their home",
+          "sentiment": "neutral",
+          "url": "https://fortune.com/2026/06/01/at-home-health-care-support-robots/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a74",
+          "title": "Ann Patchett opened a bookstore everyone said would fail. Now it's a blueprint",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/ann-patchett-parnassus-books-indie-bookstore-growth/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a75",
+          "title": "AI will turn all of your hotel experiences into luxury ones",
+          "sentiment": "bullish",
+          "url": "https://fortune.com/2026/06/01/ai-fears-hotels-hospitality-increased-guest-interactions/",
+          "source": "Fortune"
+        },
+        {
+          "id": "mig_2026-06-01_a76",
+          "title": "The SpaceX Squeeze",
+          "sentiment": "neutral",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-06-01/the-spacex-squeeze",
+          "source": "Bloomberg"
+        },
+        {
+          "id": "mig_2026-06-01_a77",
+          "title": "Frontier computing mapped: 70+ companies racing to power the AI era",
+          "sentiment": "neutral",
+          "url": "https://sifted.eu/articles/advanced-computing-mapped-70-companies-racing-to-make-europe-a-tech-powerhouse/",
+          "source": "Sifted"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, The past month has reminded us how quickly the landscape can shift from massive capital deployment to urgent risk mitigation. IREN just announced a $3.65 billion A‑rated financing package that will fund the GPUs needed for its contract with Microsoft’s AI cloud services. The deal covers roughly 96 percent of a $5.81 billion spend and comes with a blended borrowing cost of 6 percent, underscoring the appetite of institutional capital for AI infrastructure at scale. At the same time, the Kelp DAO community faced a stark reality check when a hacker laundered about $220 million from the recent exploit, pushing total losses toward $293 million. In response, Kelp DAO, Solv Protocol and Tydro have moved their cross‑chain operations from the compromised LayerZero bridge to Chainlink’s Cross‑Chain Interoperability Protocol, a move we see as a prudent step toward rebuilding trust. Aave’s recent decision to overhaul its asset‑listing standards after a $230 million rsETH exploit further highlights the hidden risks in bridge technology. By tightening risk assessments for bridges, oracles, custodians and operational security, Aave aims to protect both institutional and retail participants from similar attacks. These events raise a fundamental question for all of us building in Web3: how can we balance the lure of rapid growth with the need for robust security and transparent risk frameworks? What steps are you taking to future‑proof your projects? #Web3 #Crypto #Blockchain #CryptoVC"
+}

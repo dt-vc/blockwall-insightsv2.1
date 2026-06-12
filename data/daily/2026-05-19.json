@@ -1,0 +1,514 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-05-19",
+  "date_display": "May 19, 2026",
+  "stats": {
+    "sources": 55,
+    "signals": 10,
+    "watching": 15,
+    "bullish": 24,
+    "bearish": 21
+  },
+  "lead": {
+    "tldr": "Echo Protocol exploit highlights admin‑key vulnerability, prompting immediate multi‑sig upgrades and tighter mint controls • SEC’s instant‑raise rule could accelerate crypto IPO funding, yet heightened compliance scrutiny may offset speed gains • Aave V3 liquidity stress after rsETH exploit underscores need for diversified collateral and real‑time risk monitoring • NUVA’s $19B tokenized credit pipeline offers regulated yield, attracting institutional capital to DeFi ecosystems • Reserve composition doubts could trigger broader stablecoin de‑pegging, urging investors to diversify beyond USDT and USDC • Nasdaq data integration enables on‑chain equity perpetuals and private‑company contracts, expanding crypto‑traditional asset bridge"
+  },
+  "intro": "Dear Founders, Investors, and Friends, A $76 million eBTC minting exploit on Echo Protocol highlights persistent DeFi security risks. Meanwhile, the SEC’s IPO rule overhaul could speed capital for crypto firms, and Anthony Moro’s NUVA tokenization platform bridges traditional finance.",
+  "top_signals": [
+    {
+      "id": "mig_2026-05-19_s1",
+      "title": "Echo Protocol suffers $76 million exploit in eBTC minting attack on Monad",
+      "source": "CoinDesk",
+      "category": "Security",
+      "significance": 9,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/6e0794b53fab4b04d9e3fdbc0f3d1a70cdf36125-1920x1283.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Echo Protocol, a Bitcoin‑focused DeFi platform on the Monad blockchain, suffered a major security breach. An attacker who obtained a compromised admin key minted roughly 1,000 eBTC tokens valued at about $76‑$77 million. The exploit also involved borrowing $3.45 million in WBTC and laundering the proceeds through Tornado Cash. After regaining control, the protocol burned the remaining illicit tokens to mitigate further loss.",
+      "url": "https://www.coindesk.com/business/2026/05/19/echo-protocol-suffers-usd76-million-exploit-in-ebtc-minting-attack-on-monad"
+    },
+    {
+      "id": "mig_2026-05-19_s2",
+      "title": "The SEC wants to let newly public companies raise cash instantly in its biggest rule change in decades",
+      "source": "CoinDesk",
+      "category": "Regulation",
+      "significance": 8,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/a0b9c77ef2096d8c4905fefac8edbe280eb49ff3-1920x1080.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "The U.S. Securities and Exchange Commission has proposed its most extensive overhaul of IPO and public‑company rules in more than two decades. The proposal would let companies that have just gone public use shelf registrations right away instead of waiting for a minimum public float. It also eliminates the previous $75 million float threshold that limited immediate capital‑raising. By reducing compliance burdens, the changes are expected to give mid‑size crypto firms faster and cheaper access to public‑market financing, a development that could be significant for institutional investors seeking new sources of liquidity.",
+      "url": "https://www.coindesk.com/markets/2026/05/19/the-sec-wants-to-let-newly-public-companies-raise-cash-instantly-in-its-biggest-rule-change-in-decades"
+    },
+    {
+      "id": "mig_2026-05-19_s3",
+      "title": "Block by Block: How the rsETH Exploit Rattled Aave Lending Markets",
+      "source": "Galaxy",
+      "category": "Security",
+      "significance": 8,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5EONEOpQWB5CjGUGf09gu8/6d1cbec12271b5d41c94a860855da9e8/Ethereum-5_Gray-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "summary": "The rsETH exploit in mid‑April caused the largest shock to Aave V3 lending markets. The attack froze both stablecoin and WETH liquidity pools and drove utilization rates close to 100 percent. Within the first six hours, $1.8 billion of stablecoins withdrew from the platform, with USDT and RLUSD accounting for the largest outflows. The event highlights systemic risk for institutional exposure to DeFi lending protocols that rely on cross‑asset collateral.",
+      "url": "https://www.galaxy.com/insights/research/aave-markets-rseth-exploit-impact-analysis"
+    },
+    {
+      "id": "mig_2026-05-19_s4",
+      "title": "Former BNY exec Anthony Moro bets tokenization will remake Wall Street",
+      "source": "CoinDesk",
+      "category": "Tokenization",
+      "significance": 7,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/69f4d7cd1724d0cf6cd4a00d7c91f6fe70aef75b-2518x1249.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Former BNY Mellon executive Anthony Moro has created NUVA, a marketplace built on Ethereum that is designed to be chain agnostic. NUVA aggregates about $19 billion of tokenized home‑equity lines of credit and Treasury securities and makes them available on decentralized finance protocols. By partnering with Figure Technologies and Animoca Brands the platform issues a yield‑bearing stablecoin that is structured as a registered security, aiming to use regulated tokenized assets to connect traditional finance with the crypto ecosystem.",
+      "url": "https://www.coindesk.com/news-analysis/2026/05/19/former-bny-exec-launches-nuva-bets-tokenization-will-remake-wall-street"
+    },
+    {
+      "id": "mig_2026-05-19_s5",
+      "title": "Despite Trump’s pledge, a CBDC is being explored behind closed doors, says former CTFC chair",
+      "source": "CoinDesk",
+      "category": "Regulation",
+      "significance": 7,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/7cc3c33163c86540a1afc40d438f5e89f53c40bf-2470x1454.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Former CFTC chairman Timothy Massad says the United States is quietly exploring a central bank digital currency despite President Trump’s public opposition. He points to U.S. involvement in the Bank for International Settlements’ Project Agora as evidence of ongoing work. Massad argues that a government‑backed digital dollar is likely to emerge as global tokenisation accelerates, a development that could reshape payments and settlement for institutional investors.",
+      "url": "https://www.coindesk.com/business/2026/05/19/despite-trump-s-pledge-a-cbdc-is-being-explored-behind-closed-doors-says-former-ctfc-chair"
+    },
+    {
+      "id": "mig_2026-05-19_s6",
+      "title": "Even a mountain of T-bills won't save Tether and Circle from a sudden liquidity crisis, expert says",
+      "source": "CoinDesk",
+      "category": "Stablecoins",
+      "significance": 6,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/16ea230c8db2f27e671778d6eb9b8992fe14652b-4000x3000.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Union Investment’s head of digital assets, Christoph Hock, said that USDT and USDC do not qualify as true stablecoins because a portion of their reserves is held in gold and bitcoin, assets he described as speculative. He pointed to recent de‑pegging episodes, noting that USDC fell 13% from its dollar peg, as a sign of systemic liquidity risk for institutional investors. Hock added that even large holdings of Treasury bills would not be sufficient to prevent a sudden liquidity shortfall at Tether and Circle and that European regulators are tightening oversight of private stablecoins.",
+      "url": "https://www.coindesk.com/business/2026/05/19/even-a-mountain-of-t-bills-won-t-save-tether-and-circle-from-a-sudden-liquidity-crisis-expert-says"
+    },
+    {
+      "id": "mig_2026-05-19_s7",
+      "title": "A DeFi exchange just became the first to offer equity perpetuals powered by Nasdaq data",
+      "source": "CoinDesk",
+      "category": "DeFi",
+      "significance": 7,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/ba8820e0e61691790471ce24f7cc705991f5deed-1280x853.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Ostium, a decentralized finance exchange operating on the Arbitrum layer‑2 network, announced a partnership with Nasdaq. The collaboration enables Ostium to launch equity perpetual contracts that are powered by official Nasdaq market data, making it the first on‑chain platform to offer U.S. stock perpetuals with institutional‑grade data. This development expands the range of tradable assets for crypto traders and provides institutional investors a bridge between decentralized finance and traditional equity markets.",
+      "url": "https://www.coindesk.com/markets/2026/05/19/a-defi-exchange-becomes-the-first-to-offer-equity-perpetuals-powered-by-nasdaq-data"
+    },
+    {
+      "id": "mig_2026-05-19_s8",
+      "title": "Zerohash pursues new funding at more than $1.5 billion valuation after Mastercard drops investment plans",
+      "source": "CoinDesk",
+      "category": "Infrastructure",
+      "significance": 6,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/360c09b82bc568aae7203b8a7e75e27cece95d7e-1500x822.png?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Zerohash, a crypto infrastructure provider, is seeking a new funding round at a valuation above $1.5 billion. The effort follows Mastercard’s decision to abandon its planned investment, a move that came after Zerohash’s acquisition of BVNK. The company continues to win business from major financial institutions, highlighting its strategic importance in the digital‑asset ecosystem.",
+      "url": "https://www.coindesk.com/business/2026/05/19/zerohash-pursues-new-funding-at-more-than-usd1-5-billion-valuation-after-mastercard-drops-investment-plans"
+    },
+    {
+      "id": "mig_2026-05-19_s9",
+      "title": "Polymarket unlocks $5 trillion private market for retail traders, previously reserved for elites",
+      "source": "CoinDesk",
+      "category": "DeFi",
+      "significance": 6,
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/4b23def5a837f35f5e5bec93812a8c29c4987ea2-5184x3456.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg",
+      "summary": "Polymarket has introduced crypto‑based prediction markets that allow retail participants to place bets on the achievement of milestones by privately held companies. The platform’s contracts are settled using data supplied by Nasdaq Private Market, which provides an independent source for outcome verification. By tokenising these events, Polymarket opens access to a private‑company market estimated at $5 trillion that was previously limited to elite investors. The resulting price‑discovery signals could give institutional investors early insight into startup performance and valuation trends.",
+      "url": "https://www.coindesk.com/markets/2026/05/19/polymarket-unlocks-usd5-trillion-private-market-for-retail-traders-previously-reserved-for-elites"
+    },
+    {
+      "id": "mig_2026-05-19_s10",
+      "title": "Polymarket Partners with Nasdaq to Resolve Pre-IPO Prediction Contracts on Bankless",
+      "source": "Bankless",
+      "category": "Infrastructure",
+      "significance": 6,
+      "image_url": "https://cdn.bankless.com/openGraph/polymarket-partners-with-nasdaq-to-resolve-pre-ipo-prediction-contracts-1779208697.png",
+      "summary": "Polymarket announced a partnership with Nasdaq Private Market to source official data for settling its private‑company prediction contracts. Nasdaq’s market data will serve as the definitive resolution mechanism for pre‑IPO events traded on Polymarket’s platform. This on‑chain settlement framework allows participants to hedge or speculate on unicorn‑scale valuations before companies go public. Institutional investors can view the collaboration as a step toward greater transparency and liquidity in the emerging market for private‑company price discovery.",
+      "url": "https://www.bankless.com/read/news/polymarket-partners-with-nasdaq-to-resolve-pre-ipo-prediction-contracts"
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-05-19_r1",
+      "title": "Senator Elizabeth Warren accuses U.S. regulator of approving unqualified crypto banks",
+      "sentiment": "bearish",
+      "url": "https://www.coindesk.com/policy/2026/05/19/senator-elizabeth-warren-accuses-u-s-regulator-of-approving-unqualified-crypto-banks",
+      "source": "CoinDesk",
+      "category": "Regulation",
+      "summary": "Senator Elizabeth Warren sent a letter to the OCC demanding an explanation for the trust charters granted to nine crypto..."
+    },
+    {
+      "id": "mig_2026-05-19_r2",
+      "title": "Galaxy Wins New York BitLicense for Institutional Crypto Services",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/galaxy-secures-new-york-bitlicense-institutional-crypto-services",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "Galaxy Digital secured a BitLicense and Money Transmission License from the New York State Department of Financial Servi..."
+    },
+    {
+      "id": "mig_2026-05-19_r3",
+      "title": "Senator Warren Questions OCC Head on Approval of ‘Ineligible’ Crypto Trust Charters",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/news/elizabeth-warren-seeks-occ-communications-crypto-trust-charters-eyeing-trump-links",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "Senator Elizabeth Warren pressed the OCC head to reveal all crypto trust charter applications approved since December 20..."
+    },
+    {
+      "id": "mig_2026-05-19_r4",
+      "title": "BoE Says Tokenization Could Lower Costs as UK Advances Stablecoin Rules",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/boe-breeden-sees-value-supporting-tokenized-uk-markets",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "Bank of England Deputy Governor Sarah Breeden highlighted tokenization as a way to lower costs, speed settlement and boo..."
+    },
+    {
+      "id": "mig_2026-05-19_r5",
+      "title": "Trump orders government, Fed to review crypto firms' access to payment rails",
+      "sentiment": "bullish",
+      "url": "https://www.coindesk.com/policy/2026/05/19/trump-orders-government-fed-to-review-crypto-firms-access-to-payment-rails",
+      "source": "CoinDesk",
+      "category": "Regulation",
+      "summary": "President Donald Trump signed an executive order directing U.S. regulators to review how crypto firms can access traditi..."
+    },
+    {
+      "id": "mig_2026-05-19_r6",
+      "title": "Nine Wallets Earned $2.4M With 98% Win Rate on Polymarket Military Bets: Bubblemaps",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/news/bubblemaps-polymarket-cluster-win-military-bets",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "Nine wallets reportedly earned $2.4 million with a 98% win rate on Polymarket’s military‑related prediction contracts, p..."
+    },
+    {
+      "id": "mig_2026-05-19_r7",
+      "title": "XRP and Solana funds attract inflows as bitcoin outflows hit nearly $1 billion",
+      "sentiment": "bearish",
+      "url": "https://www.coindesk.com/markets/2026/05/19/xrp-and-solana-attract-fresh-inflows-as-bitcoin-fund-outflows-hit-nearly-usd1-billion",
+      "source": "CoinDesk",
+      "category": "Investment",
+      "summary": "CoinShares reported that Bitcoin funds lost nearly $1 billion last week while XRP and Solana listed products attracted $..."
+    },
+    {
+      "id": "mig_2026-05-19_r8",
+      "title": "Washington Delivers Clarity as Hyperliquid Pushes Into IPO",
+      "sentiment": "bullish",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/washington-delivers-clarity-as-hyperliquid-pushes-into-ipo",
+      "source": "Galaxy",
+      "category": "Regulation",
+      "summary": "The Senate Banking Committee moved the bipartisan Clarity Act forward, offering clearer regulatory guidance for digital ..."
+    },
+    {
+      "id": "mig_2026-05-19_r9",
+      "title": "The U.S. can’t lose the bitcoin race to China",
+      "sentiment": "bullish",
+      "url": "https://www.coindesk.com/opinion/2026/05/19/the-u-s-can-t-lose-the-bitcoin-race-to-china",
+      "source": "CoinDesk",
+      "category": "Bitcoin",
+      "summary": "The article warns that the United States must maintain leadership in Bitcoin to counter China’s parallel push with the d..."
+    },
+    {
+      "id": "mig_2026-05-19_r10",
+      "title": "Wintermute launches Armitage, bringing its DeFi and trading expertise to vault curation",
+      "sentiment": "bullish",
+      "url": "https://www.wintermute.com/insights/news/wintermute-launches-armitage-bringing-its-defi-and-trading-expertise-to-vault-curation/",
+      "source": "Wintermute",
+      "category": "DeFi",
+      "summary": "Wintermute announced Armitage, a new DeFi vault curation service that will initially launch two USDC‑denominated vaults ..."
+    },
+    {
+      "id": "mig_2026-05-19_r11",
+      "title": "MIAMI TAPES: Johann Kerbrat (Robinhood)",
+      "sentiment": "bullish",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/miami-tapes-johann-kerbrat-robinhood",
+      "source": "Galaxy",
+      "category": "Tokenization",
+      "summary": "Robinhood’s Crypto General Manager Johann Kerbrat discussed the platform’s rising crypto activity and outlined plans to ..."
+    },
+    {
+      "id": "mig_2026-05-19_r12",
+      "title": "Wintermute Launches",
+      "sentiment": "neutral",
+      "url": "https://www.bankless.com/read/news/wintermute-launches-armitage-usdc-vault-solution-on-morpho",
+      "source": "Bankless",
+      "category": "DeFi",
+      "summary": "Wintermute has launched Armitage, a DeFi‑focused vault curation service that initially offers two USDC‑denominated vault..."
+    },
+    {
+      "id": "mig_2026-05-19_r13",
+      "title": "$147T vs $7B, 온체인 리스크 큐레이터 시장 분석",
+      "sentiment": "neutral",
+      "url": "https://reports.tiger-research.com/p/onchain-risk-curators-147t-vs-7b-kor",
+      "source": "Tiger Research",
+      "category": "DeFi",
+      "summary": "The article outlines the emergence of on‑chain risk curators who now manage $7 B of DeFi lending assets, with the top th..."
+    },
+    {
+      "id": "mig_2026-05-19_r14",
+      "title": "Onchain Risk Curators: $147T vs $7B Market Gap",
+      "sentiment": "bullish",
+      "url": "https://reports.tiger-research.com/p/onchain-risk-curators-147t-vs-7b-eng",
+      "source": "Tiger Research",
+      "category": "DeFi",
+      "summary": "The article argues that DeFi lending authority is shifting from protocol governance to specialized on‑chain risk curator..."
+    },
+    {
+      "id": "mig_2026-05-19_r15",
+      "title": "Prediction Markets Are the New Public Markets",
+      "sentiment": "bullish",
+      "url": "https://www.bloomberg.com/opinion/newsletters/2026-05-19/prediction-markets-are-the-new-public-markets",
+      "source": "Bloomberg",
+      "category": "DeFi",
+      "summary": "The Bloomberg opinion piece suggests that decentralized prediction markets could evolve into mainstream public market me..."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a1",
+          "title": "3 Factors May Send Bitcoin Price Back To $80K",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/bitcoin-lost-its-hold-on-80k-but-three-events-may-send-it-back-sooner-than-markets-expect",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a2",
+          "title": "Bitcoin at",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-stays-under-77k-as-us-bond-yields-near-20-year-highs",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a3",
+          "title": "Live markets: Bitcoin hangs near $77,000 as interest rates continue to surge",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/tech/2026/05/19/live-markets-bitcoin-hangs-near-usd77-000-as-interest-rates-continue-to-surge",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a4",
+          "title": "Bitcoin price analysis: BTC likely bottomed at $60K amid milder bear market, K33 Research says",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/this-bitcoin-bear-market-is-different-with-uniquely-pessimistic-traders-limiting-downside-k33-says",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a5",
+          "title": "Bitcoin has shed $5,000 within days. What next?",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/bitcoin-has-shed-usd5-000-within-days-the-data-says-this-selloff-could-worsen",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a6",
+          "title": "Bitcoin Traders Target $68K As Key Support Zone: Here",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/bitcoin-traders-may-look-for-deeper-pullback-zones",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a7",
+          "title": "Binance Retail Investor Bitcoin Inflows Drop By 73%, What",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/bitcoin-retail-demand-on-binance-drops-73-as-futures-selling-tops-2b",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a8",
+          "title": "Ether (ETH) price dips, altcoins struggle as crypto traders await a bitcoin (BTC) move",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/bitcoin-treads-water-near-pivotal-monthly-close-while-speculative-tokens-retreat",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a9",
+          "title": "Bitcoin (BTC) price may bottom in October if historical reward-halving cycle holds: Crypto Daily",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/daybook-us/2026/05/19/bitcoin-may-bottom-in-october-if-historical-reward-halving-cycle-holds",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a10",
+          "title": "Bitcoin Traders Monitor $74K Support As Sell Pressure Increases",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/bitcoin-analyst-flags-74k-as-btcs-biggest-support-battle",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a11",
+          "title": "CoinDesk 20 performance update: Bitcoin Cash (BCH) price rises 2.1%",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/05/19/coindesk-20-performance-update-bitcoin-cash-bch-rises-2-1",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a12",
+          "title": "Ether Taker Volume Drops As Binance Selling Pressures $2K Support",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/ether-taker-volume-flips-negative-after-two-months-is-drop-below-2k-next",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a13",
+          "title": "Ethereum (ETH) news: Foundation departures spark renewed debate over transparency and leadership",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/tech/2026/05/19/what-s-happening-at-the-ef-ethereum-community-looking-for-answers-after-high-profile-departures",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a14",
+          "title": "JPMorgan says ether and altcoins won't catch up to bitcoin without a major network boom",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/jpmorgan-says-ether-and-altcoins-won-t-catch-up-to-bitcoin-without-a-major-network-boom",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a15",
+          "title": "Ethereum Foundation Sees 2 More High-Profile Departures",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-sees-2-more-high-profile-departures-amid-wave-of-resignations",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a16",
+          "title": "Georgia Primary to Test Crypto PAC’s Support for Democratic Candidate",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/georgia-primary-jasmine-clark-crypto-pacs-support",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a17",
+          "title": "Odds against Interest Rate Cuts High as New US Fed Chair to be Sworn in",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/interest-rates-fed-chair-kevin-warsh-sworn-in",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a18",
+          "title": "Bitwise is bullish on HYPE",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/hyperliquid-s-hype-one-of-crypto-s-most-undervalued-assets-says-bitwise",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a19",
+          "title": "Crypto IPO boom stalls as AI frenzy reshapes tech markets",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/news-analysis/2026/05/19/crypto-ipo-boom-stalls-as-ai-frenzy-reshapes-tech-markets",
+          "source": "CoinDesk"
+        },
+        {
+          "id": "mig_2026-05-19_a20",
+          "title": "21Shares says Hyperliquid ETF demand shows appetite for 24/7 trading",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/news-analysis/2026/05/19/21shares-says-hyperliquid-etf-demand-shows-appetite-for-24-7-trading",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a21",
+          "title": "Bitget Wallet Expands Tokenized Equities Offering with xStocks",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/bitget-wallet-adds-xstocks-tokenized-equities-products-for-90-million-users",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a22",
+          "title": "Kraken Parent Payward Reports $507M Q1 Revenue Amid Tokenization Push",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/payward-expands-tokenization-and-derivatives-push-as-q1-revenue-tops-500m",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a23",
+          "title": "Raoul Pal says AI and crypto are reshaping the global economy faster than most think",
+          "sentiment": "bullish",
+          "url": "https://www.coindesk.com/news-analysis/2026/05/19/raoul-pal-says-ai-and-crypto-are-reshaping-the-global-economy-faster-than-most-people-realize",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a24",
+          "title": "Press Release",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/press-releases/a-viral-hedgehog-vitalik-buterin-and-a-bow-the-graphdex-launch-that-crypto-wont-forget",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a25",
+          "title": "Tor Project Launches Web3 Campaign for Internet Freedom",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/privacy-coalition-turns-to-crypto-to-fund-anti-censorship-infrastructure",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a26",
+          "title": "Soluna Q1 Revenue Rises 58% as Data Center Hosting Surpasses Crypto Mining",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/soluna-q1-revenue-rises-58-data-center-hosting-surpasses-crypto-mining",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a27",
+          "title": "BSC’s quantum defense works. The trade-off is 40% slower transaction throughput.",
+          "sentiment": "neutral",
+          "url": "https://www.coindesk.com/markets/2026/05/19/bsc-s-quantum-defense-works-the-trade-off-is-40-slower-transaction-throughput",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a28",
+          "title": "WLFI treasury company AI Financial warns that it may not survive the year in SEC filing",
+          "sentiment": "bearish",
+          "url": "https://www.coindesk.com/markets/2026/05/19/world-liberty-financial-wlfi-treasury-company-ai-financial-warns-in-sec-filing-that-it-may-not-survive-the-year",
+          "source": "CoinDesk"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "mig_2026-05-19_a29",
+          "title": "10% of Americans Used Crypto in 2025, Up From Last Year",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/news/10-percent-of-americans-invested-or-used-crypto-in-2025-federal-reserve",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-05-19_a30",
+          "title": "XRP Risks 50% Dip to $0.65 Despite Persistent ETF Inflows",
+          "sentiment": "bearish",
+          "url": "https://cointelegraph.com/markets/xrp-price-risks-50-drop-despite-9-day-etf-inflow-streak",
+          "source": "Cointelegraph"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, The past month has reminded us how quickly the crypto landscape can shift. In early April Echo Protocol, a Bitcoin‑focused DeFi platform on the Monad chain, suffered a $76 million exploit when an attacker used a compromised admin key to mint roughly 1,000 eBTC tokens. The breach also involved borrowing $3.45 million in WBTC and laundering the proceeds through Tornado Cash before the protocol regained control and burned the remaining illicit tokens. At the same time regulators are moving. The U.S. Securities and Exchange Commission has proposed its most sweeping overhaul of IPO and public‑company rules in more than two decades. The new framework would let newly public companies raise cash instantly through shelf registrations, removing the old $75 million float requirement. For mid‑size crypto firms this could mean faster, cheaper access to public‑market financing and a new source of liquidity for institutional investors. Finally the rsETH exploit in mid‑April sent a shockwave through Aave V3 lending markets. The attack froze both stablecoin and WETH pools and drove utilization rates near 100 percent. Within six hours $1.8 billion of stablecoins left the platform, with USDT and RLUSD leading the outflows. The event underscores the systemic risk that remains when DeFi lending relies on cross‑asset collateral. Given these developments, how should investors balance the promise of rapid capital access with the need for stronger security safeguards? #Web3 #Crypto #Blockchain #CryptoVC"
+}

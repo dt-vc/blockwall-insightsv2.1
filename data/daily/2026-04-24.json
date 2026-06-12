@@ -1,0 +1,310 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-04-24",
+  "date_display": "April 24, 2026",
+  "stats": {
+    "sources": 30,
+    "signals": 8,
+    "watching": 16,
+    "bullish": 8,
+    "bearish": 12
+  },
+  "lead": {
+    "tldr": "The Kelp DAO exploit reveals systemic risk in cross‑chain bridges, prompting heightened due diligence on bridge protocols • DeFi United's fundraising shortfall signals limited appetite for collective bailouts, suggesting tighter capital buffers for protocols • Paul Sztorc's eCash hard fork proposal could fragment Bitcoin consensus and faces backlash over Satoshi coin reallocation • Michael Saylor's $2.5bn BTC accumulation underscores continued institutional confidence, yet regulatory scrutiny in Japan and US intensifies • South Africa's draft capital‑flow rules may force wallet disclosures, raising compliance costs for cross‑border crypto firms"
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's headlines cover a LayerZero bridge hack used by North Korean actors, the formation of DeFi United to address $13 B of lost TVL, and a Bitcoin hard fork proposal to reallocate Satoshi’s coins. We’ll keep you posted on the fallout and opportunities.",
+  "top_signals": [
+    {
+      "id": "mig_2026-04-24_s1",
+      "title": "North Korea stole $293m in crypto. Then it used a victim's products to launder the proceeds",
+      "source": "DL News",
+      "category": "Security",
+      "significance": 9,
+      "image_url": "https://dl-production-assets.s3.eu-central-1.amazonaws.com/images/1777022559033-asset.webp",
+      "summary": "North Korean state‑backed hackers stole $293 million from the Kelp DAO by exploiting a vulnerability in the LayerZero cross‑chain messaging protocol. They then used the same LayerZero infrastructure to launder a portion of the stolen funds. The theft is part of a broader wave of on‑chain thefts that total $579 million in less than 20 days. It represents the first documented instance of a blockchain bridge serving both as the attack vector and a laundering channel, highlighting heightened risk for institutions that rely on cross‑chain interoperability.",
+      "url": "https://www.dlnews.com/articles/defi/north-korea-used-layerzero-to-laundered-funds/"
+    },
+    {
+      "id": "mig_2026-04-24_s2",
+      "title": "Weekly Top Stories: Kelp Needs Help After $290m Exploit",
+      "source": "Galaxy",
+      "category": "DeFi",
+      "significance": 9,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/D95QapTgxArGF9tU0Ymyq/bf10bf15879850eca1de5f4e70d62ac1/Top_Stories_G2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "summary": "A $290 million exploit of KelpDAO’s LayerZero bridge drained rsETH from an Ethereum escrow, representing the largest DeFi hack recorded in 2026. The attacker transferred the stolen ETH off‑chain and swapped it for Bitcoin through THORChain, which precipitated a cascade of liquidity freezes across related protocols. The breach caused Aave’s total value locked to fall by roughly 45 percent and highlights heightened systemic risk in DeFi lending and collateral markets.",
+      "url": "https://www.galaxy.com/insights/research/weekly-top-stories-04-24-26"
+    },
+    {
+      "id": "mig_2026-04-24_s3",
+      "title": "Bitcoin developer wants to hard fork the network — and give away Satoshi coins",
+      "source": "DL News",
+      "category": "Bitcoin",
+      "significance": 8,
+      "image_url": "https://dl-migration-assets.s3.eu-central-1.amazonaws.com/images/1772086298742.webp",
+      "summary": "Long‑time Bitcoin developer Paul Sztorc has announced a hard fork of the Bitcoin network that he calls eCash. The eCash fork is designed to add drivechains, a layer‑2 scaling solution, to the Bitcoin protocol. The proposal also includes a plan to reallocate up to half of the coins originally mined by Satoshi Nakamoto to fund ongoing development. Institutional investors are watching the initiative closely because it could affect network consensus and the distribution of a significant portion of Bitcoin’s early supply.",
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-developer-hard-fork-reassign-satoshi-nakamoto-coins/"
+    },
+    {
+      "id": "mig_2026-04-24_s4",
+      "title": "DeFi United: United We Stand, Divided We Fall",
+      "source": "Tiger Research",
+      "category": "DeFi",
+      "significance": 9,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!zpgv!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F240a1325-ebeb-4867-9627-ebbc02f8af9d_2560x1440.png",
+      "summary": "A single‑node vulnerability in KelpDAO’s LayerZero bridge allowed $292 M of rsETH to be minted without collateral. The unbacked tokens were deposited on Aave where they were used to borrow $190 M, precipitating a $13 B total value‑locked collapse across DeFi protocols. In response, a self‑organized rescue coalition named DeFi United launched a fundraising effort targeting up to $100 M to compensate affected participants. As of the latest update the coalition has raised less than half of its goal, underscoring the need for coordinated capital support to stabilize the market.",
+      "url": "https://reports.tiger-research.com/p/defi-united-eng"
+    },
+    {
+      "id": "mig_2026-04-24_s5",
+      "title": "DeFi United, 뭉치면 살고 흩어지면 죽는다",
+      "source": "Tiger Research",
+      "category": "Security",
+      "significance": 9,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!8OIT!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4a6f4fb-7a52-465f-ba1d-f179a0ef76f3_2560x1440.png",
+      "summary": "A single-node vulnerability in KelpDAO’s LayerZero bridge enabled the minting of 116,500 rsETH, valued at roughly $292 million, without any collateral. The illicit rsETH was used to obtain a $190 million loan from Aave, creating bad debt that triggered a $13 billion total value locked (TVL) contraction across DeFi in just 48 hours. The rapid systemic shock highlighted the fragility of inter‑protocol bridges and the need for coordinated risk mitigation. In response, market participants formed “DeFi United” to pool emergency capital and stabilize the ecosystem.",
+      "url": "https://reports.tiger-research.com/p/defi-united-kor"
+    },
+    {
+      "id": "mig_2026-04-24_s6",
+      "title": "Crypto Biz: Same Players, Bigger Bets as Crypto Rebounds",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "significance": 8,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bitcoin-for-business-the-tax-guide1.jpg",
+      "summary": "Strategy, under the direction of Michael Saylor, purchased 34,164 bitcoin for $2.54 billion, pushing its total holdings above 815,000 bitcoin. BitMine Immersion Technologies increased its ether exposure by acquiring 101,627 ether. Both firms are making larger bets as the cryptocurrency market rebounds. Their actions come while regulators in Japan and the United States are examining on‑chain bond structures and broader market‑structure legislation, a backdrop that institutional investors are monitoring closely.",
+      "url": "https://cointelegraph.com/news/crypto-biz-same-players-bigger-bets-crypto-rebound"
+    },
+    {
+      "id": "mig_2026-04-24_s7",
+      "title": "Prediction Market Battle Gets Closer to Supreme Court",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "significance": 7,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-status-of-digital-currencies-in-the-eyes-of-the-lawmakers34234234-1.jpg",
+      "summary": "U.S. state gambling regulators have intensified legal challenges against prediction‑market platforms. In response, the Commodity Futures Trading Commission has filed lawsuits in three states, moving the regulatory clash nearer to the Supreme Court. The core issue is whether platforms such as Kalshi, Robinhood and Coinbase may lawfully offer contracts tied to sports events. The outcome will determine the balance of federal versus state authority over emerging prediction‑market products, a matter of significance for institutional investors evaluating compliance risk.",
+      "url": "https://cointelegraph.com/features/prediction-market-battle-gets-closer-to-supreme-court"
+    },
+    {
+      "id": "mig_2026-04-24_s8",
+      "title": "South Africa",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "significance": 6,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/booknew.jpg",
+      "summary": "South Africa’s Treasury has issued a draft Capital Flow Management Regulation for 2026 that targets cryptocurrency activities. The draft would obligate South African residents to declare any crypto assets they hold when departing the country and would grant enforcement officers the authority to inspect digital wallets and seed phrases. It also restricts cross‑border crypto transactions to only those conducted through authorised service providers. Industry participants, including MoneyBadger founder Carel van Wyk, have criticised the proposal as overly restrictive for the crypto sector.",
+      "url": "https://cointelegraph.com/news/south-africas-treasury-proposes-draft-bill-for-stricter-crypto-oversight"
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "mig_2026-04-24_r1",
+      "title": "Stakes Keep Getting Higher for the SpaceX IPO",
+      "sentiment": "bearish",
+      "url": "https://www.newcomer.co/p/stakes-keep-getting-higher-for-the",
+      "source": "Newcomer",
+      "category": "Other",
+      "summary": "SpaceX is targeting a June IPO that could raise about $75 billion, seeking a valuation of $1.5‑2 trillion despite weak f..."
+    },
+    {
+      "id": "mig_2026-04-24_r2",
+      "title": "Quantum attack breaks crypto key 512x larger than last record. Is Bitcoin ready?",
+      "sentiment": "bearish",
+      "url": "https://www.dlnews.com/articles/markets/quantum-computing-attack-jumps-512x-bitcoin/",
+      "source": "DL News",
+      "category": "Security",
+      "summary": "Researcher Giancarlo Lelli achieved the largest known quantum attack on elliptic‑curve cryptography, a 512‑fold improvem..."
+    },
+    {
+      "id": "mig_2026-04-24_r3",
+      "title": "How GoDark targets $100m in daily trading through its new crypto dark pool",
+      "sentiment": "bullish",
+      "url": "https://www.dlnews.com/articles/defi/godark-to-offer-crypto-dark-pools/",
+      "source": "DL News",
+      "category": "DeFi",
+      "summary": "GoDark is set to launch a decentralized exchange for on‑chain perpetual contracts that incorporates dark‑pool functional..."
+    },
+    {
+      "id": "mig_2026-04-24_r4",
+      "title": "Bitcoin-holder Metaplanet raises $50 million in zero-interest bonds to buy more BTC",
+      "sentiment": "neutral",
+      "url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-holder-metaplanet-raises-usd50-million-in-zero-interest-bonds-to-buy-more-btc",
+      "source": "CoinDesk",
+      "category": "Bitcoin",
+      "summary": "Metaplanet issued 8 billion yen (≈$50 M) of zero‑interest bonds, fully subscribed by Cayman‑based EVO Fund, to fund furt..."
+    },
+    {
+      "id": "mig_2026-04-24_r5",
+      "title": "The rsETH Exploit: Timeline and What It Reveals About Crypto's Future",
+      "sentiment": "bearish",
+      "url": "https://messari.io/report/the-rseth-exploit",
+      "source": "Messari",
+      "category": "Security",
+      "summary": "The rsETH exploit exposed how risk can cascade through the increasingly interconnected Ethereum ecosystem, especially ac..."
+    },
+    {
+      "id": "mig_2026-04-24_r6",
+      "title": "DOJ charges US soldier with using classified information to win $400,000 in Polymarket Maduro capture bet",
+      "sentiment": "neutral",
+      "url": "https://www.dlnews.com/articles/regulation/doj-charges-soldier-with-polymarket-betting-on-classified-information-of-maduro-capture/",
+      "source": "DL News",
+      "category": "Regulation",
+      "summary": "The U.S. Department of Justice charged Army Special Forces master sergeant Gannon Ken Van Dyke with using classified inf..."
+    },
+    {
+      "id": "mig_2026-04-24_r7",
+      "title": "Bitcoin primed for $80,000? Three reasons traders expect a rally 'within days'",
+      "sentiment": "bullish",
+      "url": "https://www.dlnews.com/articles/markets/is-bitcoin-primed-for-80k-within-days-cf-benchmark-says-yes/",
+      "source": "DL News",
+      "category": "Bitcoin",
+      "summary": "Analysts predict Bitcoin could surge to $80,000 within days, citing strong institutional demand via spot ETFs and large ..."
+    },
+    {
+      "id": "mig_2026-04-24_r8",
+      "title": "Crypto PAC Fellowship Halts Support of Texas AG for Senate: Report",
+      "sentiment": "neutral",
+      "url": "https://cointelegraph.com/news/crypto-pac-fellowship-ads-texas-senate-race",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "summary": "The Fellowship crypto‑backed PAC disclosed a $1.75 million advertising spend for Texas Attorney General Ken Paxton that ..."
+    },
+    {
+      "id": "mig_2026-04-24_r9",
+      "title": "Nakamoto Announces Bitcoin Derivatives Program to Hedge Against BTC Downside",
+      "sentiment": "neutral",
+      "url": "https://cointelegraph.com/news/nakamoto-announces-bitcoin-derivatives-program-to-hedge-against-btc-downside-volatility",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "summary": "Nakamoto has announced a new Bitcoin derivatives program designed to let users hedge against downside price movements of..."
+    },
+    {
+      "id": "mig_2026-04-24_r10",
+      "title": "Paradigm Backs Kalshi in Latest State Overreach",
+      "sentiment": "bullish",
+      "url": "https://www.paradigm.xyz/2026/04/paradigm-backs-kalshi-in-latest-state-overreach",
+      "source": "Paradigm",
+      "category": "Regulation",
+      "summary": "Paradigm filed an amicus brief with the Massachusetts Supreme Judicial Court supporting Kalshi’s challenge to a state in..."
+    },
+    {
+      "id": "mig_2026-04-24_r11",
+      "title": "Altcoins May See Upside After Bitcoin Reclaims $86K: Analyst",
+      "sentiment": "bullish",
+      "url": "https://cointelegraph.com/news/bitcoin-price-uptrend-altcoin-run-crypto-analyst-forecast",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "summary": "Bitcoin has retaken the $86,000 level, prompting an analyst to forecast upside potential for a range of altcoins. The pr..."
+    },
+    {
+      "id": "mig_2026-04-24_r12",
+      "title": "More Stablecoins, More Markets, More Flexibility: How Global Payments Infrastructure is Evolving",
+      "sentiment": "bullish",
+      "url": "https://ripple.com/insights/more-stablecoins-more-markets-more-flexibility-how-global-payments-infrastructure-is-evolving/",
+      "source": "Ripple",
+      "category": "Payments",
+      "summary": "The article notes that global stablecoin transaction volume hit $33 trillion in 2025, outpacing credit‑card volumes, and..."
+    },
+    {
+      "id": "mig_2026-04-24_r13",
+      "title": "Bitcoin and Risk Assets Halt Their Surge With BTC Support at Risk",
+      "sentiment": "bearish",
+      "url": "https://cointelegraph.com/markets/bitcoin-stays-stalled-at-78k-as-oil-threatens-new-risk-asset-squeeze",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "summary": "Bitcoin remained flat around $78,000, failing to break back above $80,000 as market participants await clarity on the US..."
+    },
+    {
+      "id": "mig_2026-04-24_r14",
+      "title": "BTC price, U.S. dollar move in near-perfect opposition. It hasn't been this extreme in almost 4 years.",
+      "sentiment": "bearish",
+      "url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "source": "CoinDesk",
+      "category": "Bitcoin",
+      "summary": "Bitcoin’s 30‑day correlation with the U.S. Dollar Index deepened to –0.90, the most negative level since September 2022,..."
+    },
+    {
+      "id": "mig_2026-04-24_r15",
+      "title": "APE - ApeCoin - AMBCrypto",
+      "sentiment": "neutral",
+      "url": "https://ambcrypto.com/coins/apecoin/",
+      "source": "AMBCrypto",
+      "category": "Ethereum",
+      "summary": "ApeCoin (APE) is trading at $0.138 with an 8.18% gain over the past 24 hours, bringing its market cap to roughly $138 mi..."
+    },
+    {
+      "id": "mig_2026-04-24_r16",
+      "title": "BSB - Block Street - AMBCrypto",
+      "sentiment": "bearish",
+      "url": "https://ambcrypto.com/coins/block-street/",
+      "source": "AMBCrypto",
+      "category": "Other",
+      "summary": "Block Street (BSB) token is trading at $0.27485, down about 20% in the last 24 hours and 60% over the past week, with a ..."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "mig_2026-04-24_a1",
+          "title": "Strategy Stock Beats Bitcoin After Rising 25% in a Month: Is the bottom in?",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/markets/strategy-stock-beats-bitcoin-after-rising-25-in-a-month-is-btc-bottom-in",
+          "source": "Cointelegraph"
+        },
+        {
+          "id": "mig_2026-04-24_a2",
+          "title": "Bitcoin Prices Above $80K Needed To Confirm Trend Change",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/critical-bitcoin-trend-change-in-works-but-analysts-say-daily-close-above-80k-required",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "mig_2026-04-24_a3",
+          "title": "Jane Street asks to Dismiss Terraform Lawsuit",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/jane-street-seeks-dismissal-of-terraforms-insider-trading-suit",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "mig_2026-04-24_a4",
+          "title": "Solana Price Rallied 100% the Last Time This Happened",
+          "sentiment": "bullish",
+          "url": "https://cointelegraph.com/markets/solana-confirms-a-bullish-signal-which-last-sparked-100-sol-price-gains",
+          "source": "Cointelegraph"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "mig_2026-04-24_a5",
+          "title": "Jane Street dismisses insider trading allegations over role in $40bn Terra collapse as 'self-defeating'",
+          "sentiment": "neutral",
+          "url": "https://www.dlnews.com/articles/regulation/jane-street-files-to-dismiss-insider-trading-allegations/",
+          "source": "DL News"
+        },
+        {
+          "id": "mig_2026-04-24_a6",
+          "title": "US Soldier Charged for Betting on US Capture of Maduro",
+          "sentiment": "neutral",
+          "url": "https://cointelegraph.com/news/us-soldier-charged-for-400k-bet-over-maduros-presidency-on-polymarket",
+          "source": "Cointelegraph"
+        }
+      ]
+    }
+  ],
+  "linkedin_post": "Dear Founders, Investors, and Friends, The past week has reminded us why vigilance and innovation must go hand in hand in Web3. State‑backed hackers from North Korea breached the Kelp DAO by exploiting a vulnerability in the LayerZero cross‑chain messaging protocol, walking away with $293 million. What is striking is that the same bridge was later used to launder a portion of the stolen assets, marking the first time a blockchain bridge has served both as an attack vector and a laundering channel. This event alone underscores the heightened risk for any institution that relies on cross‑chain interoperability. The fallout was felt across DeFi. The $290 million exploit drained rsETH from an Ethereum escrow, forced the attacker to swap the proceeds through THORChain and triggered a cascade of liquidity freezes. Aave’s total value locked dropped by roughly 45 percent, highlighting systemic fragility in lending and collateral markets. At the same time, the Bitcoin community is watching a bold proposal from developer Paul Sztorc. He is planning a hard fork called eCash that would add drivechains to the protocol and reallocate up to half of the original Satoshi coins to fund ongoing development. Institutional investors are weighing the potential impact on network consensus and on the distribution of Bitcoin’s early supply. How should investors and builders balance the need for rapid innovation with the imperative to protect against these emerging threats? #Web3 #Crypto #Blockchain #CryptoVC"
+}
