@@ -1,0 +1,695 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-06-13",
+  "date_display": "June 13, 2026",
+  "generated_at": "2026-06-13T05:00:17.443Z",
+  "engine": "ollama/gemma4:31b-cloud",
+  "lead": {
+    "headline": "Institutional Tokenization Accelerates on Solana",
+    "tldr": "A surge in tokenized RWA deployments—from AAA CLOs to equity markets—indicates a strategic shift toward Solana as the primary rails for institutional liquidity."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-06-13T05:00:17.443Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,484",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,664",
+        "change_24h": "-0.7%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.26T",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$71.7B",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 11,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 35,
+    "bearish": 9,
+    "neutral": 9
+  },
+  "top_signals": [
+    {
+      "id": "art_262991",
+      "title": "Ethena Labs to allocate $250 million to Securitize's Tokenized AAA CLO Fund as it deploys on Solana",
+      "url": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+      "source": "Daniel Kuhn",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ethena Labs is allocating $250 million to Securitize's Tokenized AAA CLO Fund. This move coincides with the fund's deployment on the Solana blockchain to provide on-chain access to institutional-grade structured credit.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The allocation of $250M into tokenized CLOs signals a maturing appetite for institutional-grade structured credit on-chain."
+    },
+    {
+      "id": "art_261010",
+      "title": "SpaceX tokenized IPO campaign draws $557M on Binance ahead of debut1h",
+      "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+      "source": "cointelegraph.com",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "A tokenized IPO campaign for SpaceX has successfully raised $557 million on the Binance platform. This represents a significant intersection of traditional equity markets and blockchain-based asset distribution.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The $557M raised for SpaceX demonstrates that tokenized IPOs can achieve massive scale and distribution efficiency via centralized exchanges."
+    },
+    {
+      "id": "art_273765",
+      "title": "Sam Bankman loses his appeal: The Federal Court confirms his conviction for fraud",
+      "url": "https://www.cointribune.com/en/sam-bankman-loses-his-appeal-the-federal-court-confirms-his-conviction-for-fraud/",
+      "source": "Fenelon LAMSASIRI",
+      "source_domain": "cointribune.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The federal court of appeals has unanimously upheld the fraud conviction of Sam Bankman-Fried. The ruling leaves the former FTX CEO with no further legal avenues for appeal, suggesting a pardon is his only remaining option.",
+      "significance": 7,
+      "primary_source": "https://www.cointribune.com/en/sam-bankman-loses-his-appeal-the-federal-court-confirms-his-conviction-for-fraud/",
+      "themes": [
+        "regulation",
+        "legal"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The exhaustion of SBF's legal appeals closes a significant chapter of systemic risk and legal precedent for the industry."
+    },
+    {
+      "id": "art_268181",
+      "title": "The ECB accelerates on the digital euro with a banking test in Italy",
+      "url": "https://www.cointribune.com/en/the-ecb-accelerates-on-the-digital-euro-with-a-banking-test-in-italy/",
+      "source": "Lydie Musekwa",
+      "source_domain": "cointribune.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "The European Central Bank is accelerating the development of the digital euro through a technical test involving nine Italian banks. This phase serves as a precursor to a broader pilot program scheduled for 2027.",
+      "significance": 7,
+      "primary_source": "https://www.cointribune.com/en/the-ecb-accelerates-on-the-digital-euro-with-a-banking-test-in-italy/",
+      "themes": [
+        "stablecoins",
+        "cbdc"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The ECB's acceleration of the digital euro suggests a narrowing window for private stablecoins to establish dominance in the Eurozone."
+    },
+    {
+      "id": "art_264105",
+      "title": "Exodus, Ondo launch tokenized markets with 200-plus stocks and ETFs on Solana",
+      "url": "https://www.theblock.co/post/404622/exodus-launches-tokenized-markets-200-plus-stocks-etfs-on-solana",
+      "source": "Brian Danga",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Exodus and Ondo have partnered to enable the trading of over 200 tokenized stocks and ETFs on the Solana blockchain. This integration expands access to traditional financial assets within a decentralized ecosystem.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/404622/exodus-launches-tokenized-markets-200-plus-stocks-etfs-on-solana",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The launch of 200+ tokenized stocks and ETFs on Solana further cements the network's position as the hub for retail-accessible TradFi assets."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_261010",
+      "company": "SpaceX",
+      "amount": "$557M",
+      "round": "Tokenized IPO",
+      "investors": [],
+      "category": "Tokenization",
+      "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+      "summary": "A tokenized IPO campaign for SpaceX has successfully raised $557 million on the Binance platform. This represents a significant intersection of traditional equity markets and blockchain-based asset distribution."
+    },
+    {
+      "id": "art_282549",
+      "company": "Messari",
+      "amount": "",
+      "round": "M&A",
+      "investors": [
+        "Blockworks"
+      ],
+      "category": "Infrastructure",
+      "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_c6ee5f03-bcde-4c41-8545-3197494be0e9",
+      "summary": "Blockworks has acquired Messari, merging two of the largest crypto data platforms. The goal of the acquisition is to develop AI-driven workflows specifically for onchain markets."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_265471",
+      "title": "Polish president vetoes crypto bill for third time ahead of MiCA deadline2h, Polish president vetoes crypto bill for third time ahead of MiCA deadlinePolish President Karol Nawrocki vetoed a bill to implement MiCA for the third time, just weeks before the end of the EU crypto framework's transitional period.",
+      "url": "https://cointelegraph.com/news/polish-president-vetoes-crypto-bill-third-time-mica-deadline",
+      "source": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Polish president has vetoed a crypto bill intended to implement the EU's MiCA framework for the third time. This occurs just weeks before the end of the transitional period for the EU-wide regulatory framework."
+    },
+    {
+      "id": "art_261634",
+      "title": "U.S. Bitcoin Strategic Reserve: What It Will Actually Mean for the Market",
+      "url": "https://reports.tiger-research.com/p/us-bitcoin-strategic-reserve-what-eng",
+      "source": "Ekko an,Ryan Yoon",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "The article analyzes the potential implications of the United States establishing a strategic Bitcoin reserve. It explores how such a move would impact market dynamics and the broader adoption of digital assets as sovereign reserves."
+    },
+    {
+      "id": "art_259645",
+      "title": "South Korea finance ministry says tokenized stocks are securities, not crypto assets, opening door to taxes: report",
+      "url": "https://www.theblock.co/post/404580/south-korea-finance-ministry-says-tokenized-stocks-are-securities-not-crypto-assets-opening-door-to-taxes-report",
+      "source": "Brian Danga",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "South Korea's finance ministry has clarified that tokenized stocks are classified as securities rather than crypto assets. This regulatory distinction paves the way for the potential taxation of these assets starting as early as the second half of 2026."
+    },
+    {
+      "id": "art_254794",
+      "title": "Iran's $12 billion in unfrozen assets may be paid for via the Trump-backed stablecoin USD1.",
+      "url": "https://www.panewslab.com/en/articles/019ebb22-59d5-7279-8fc4-be1e3013911f",
+      "source": "PA一线",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Reports suggest that $12 billion in unfrozen Iranian assets may be settled using USD1, the stablecoin associated with World Liberty Financial. The transaction is expected to be approved via a democratic voting process on the project's forum."
+    },
+    {
+      "id": "art_252090",
+      "title": "International sting shuts down $390M crypto money-laundering ring2h",
+      "url": "https://cointelegraph.com/news/international-sting-shuts-down-390m-crypto-money-laundering-ring",
+      "source": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "An international law enforcement operation has successfully dismantled a cryptocurrency money-laundering network that processed approximately $390 million. The sting operation targeted illicit financial flows and resulted in the shutdown of the ring's infrastructure."
+    },
+    {
+      "id": "art_249221",
+      "title": "An international joint operation dismantled a cryptocurrency money laundering ring involved in transactions totaling $390 million.",
+      "url": "https://www.panewslab.com/en/articles/019eba84-03bf-74bb-9ec9-c9c6e80ce4c0",
+      "source": "PA一线",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "An international law enforcement operation across 11 countries dismantled the AudiA6 money laundering ring and the Dark2Web marketplace. The group processed approximately $390 million in illicit funds using a mixing-as-a-service model."
+    },
+    {
+      "id": "art_248104",
+      "title": "BlackRock Prepares the Launch of BITA, its Bitcoin Income ETF",
+      "url": "https://www.cointribune.com/en/blackrock-prepares-the-launch-of-bita-its-bitcoin-income-etf/",
+      "source": "Ariela RASOANJANAHARY",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "BlackRock is preparing to launch BITA, a new Bitcoin income ETF. The fund will utilize a covered options strategy to generate yield for investors."
+    },
+    {
+      "id": "art_245401",
+      "title": "Coinbase launches tool letting AI agents make payments and trade cryptoCoinbase for Agents will let users of the crypto exchange manage their holdings “without the constant manual oversight” and can autonomously perform a range of tasks.",
+      "url": "https://cointelegraph.com/news/coinbase-launches-tool-letting-ai-agents-make-payments-and-trade-crypto",
+      "source": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Coinbase has introduced a new tool designed for AI agents, enabling them to autonomously trade cryptocurrency and execute payments. This integration aims to reduce manual oversight for users managing their digital asset holdings."
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_278254",
+      "title": "Hester Peirce Bids Farewell to the SEC After Nearly 30 Years",
+      "url": "https://thedefiant.io/news/people/hester-peirce-farewell-remarks-sec-project-crypto",
+      "source": "The Defiant Team",
+      "note": "Essential reading to understand the regulatory vacuum and potential shift in SEC posture following the departure of a key crypto-sympathetic commissioner."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_261634",
+          "title": "U.S. Bitcoin Strategic Reserve: What It Will Actually Mean for the Market",
+          "url": "https://reports.tiger-research.com/p/us-bitcoin-strategic-reserve-what-eng",
+          "source": "Ekko an,Ryan Yoon",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_289410",
+          "title": "Standard Chartered Bank analyst: The crypto market has hit the bottom of the cycle, and Bitcoin is expected to return to $100,000 by the end of the year.",
+          "url": "https://www.panewslab.com/en/articles/019ebe5e-762c-75ea-bfde-0eeb3110e623",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_278250",
+          "title": "Metaplanet to Launch Bitcoin Yield Products in Japan After $13 Million Siiibo Securities Deal",
+          "url": "https://news.bitcoin.com/metaplanet-to-launch-bitcoin-yield-products-in-japan-after-13-million-siiibo-securities-deal/",
+          "source": "Emmanuel Musa",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_261635",
+          "title": "비트코인 전략 준비금, 언제 비트코인에 영향을 줄 수 있는가?",
+          "url": "https://reports.tiger-research.com/p/us-bitcoin-strategic-reserve-what-kor",
+          "source": "Ekko an,Ryan Yoon",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_256300",
+          "title": "Bitwise's Dragosch sees up to 20% further downside for bitcoin, puts 'max pain' scenario at $48,000",
+          "url": "https://www.theblock.co/post/404561/bitwise-dragosch-bitcoin-max-pain-48k",
+          "source": "Brian Danga",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_236958",
+          "title": "JPMorgan Chase: \"Fiat currency devaluation hedging\" continues to recede, with Bitcoin being particularly affected.",
+          "url": "https://www.panewslab.com/en/articles/019eb921-c935-751f-9829-711ed1cce802",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_292762",
+          "title": "Galaxy Digital: Bitcoin's cyclical lows may be higher than previous ones, with a potential bottom of $62,000 to $53,600.",
+          "url": "https://www.panewslab.com/en/articles/019ebec6-bf1a-73e9-beb5-2869fea98e46",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_238073",
+          "title": "Ethena partners with Coinbase to launch its first yield vault product.",
+          "url": "https://www.panewslab.com/en/articles/019eb93a-e7ab-765b-86f3-bd8c5c32086c",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_236956",
+          "title": "Report: US users secretly wagered up to $34 billion through offshore prediction platforms",
+          "url": "https://www.panewslab.com/en/articles/019eb923-98e2-749e-af63-9179d4e5d964",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_243170",
+          "title": "LG Electronics, Arbitrum Launch Blockchain Ad Network",
+          "url": "https://cointelegraph.com/news/lg-arbitrum-launch-blockchain-based-bid-for-679b-ad-market",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_251450",
+          "title": "EIP-8182 proposes introducing Ethereum-native privacy transfers in the Hegotá hard fork.",
+          "url": "https://www.panewslab.com/en/articles/019ebac2-9ea3-70aa-8e3e-04a08eb30597",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_282549",
+          "title": "🟪 NEWS: Blockworks acquires Messari ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_c6ee5f03-bcde-4c41-8545-3197494be0e9",
+          "source": "Blockworks",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_245401",
+          "title": "Coinbase launches tool letting AI agents make payments and trade cryptoCoinbase for Agents will let users of the crypto exchange manage their holdings “without the constant manual oversight” and can autonomously perform a range of tasks.",
+          "url": "https://cointelegraph.com/news/coinbase-launches-tool-letting-ai-agents-make-payments-and-trade-crypto",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_259254",
+          "title": "Sharon AI and NVIDIA reach a six-year strategic computing power cooperation.",
+          "url": "https://www.panewslab.com/en/articles/019ebb92-1792-76a7-bd65-a5f56edc4637",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_258140",
+          "title": "HyperLiquid upgrades AQAv2 mechanism: USDC balances between contract addresses and treasury addresses are automatically balanced at a 1:9 ratio.",
+          "url": "https://www.panewslab.com/en/articles/019ebb72-dfa6-70e9-a887-01bfece4e204",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_258139",
+          "title": "Tron Chain's daily transaction volume exceeded 14.3 million, setting a new historical record.",
+          "url": "https://www.panewslab.com/en/articles/019ebb74-71cf-761b-97c2-ae9c29306a7d",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_248104",
+          "title": "BlackRock Prepares the Launch of BITA, its Bitcoin Income ETF",
+          "url": "https://www.cointribune.com/en/blackrock-prepares-the-launch-of-bita-its-bitcoin-income-etf/",
+          "source": "Ariela RASOANJANAHARY",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_278246",
+          "title": "Strategy's Michael Saylor commits to raising capital with STRC above par",
+          "url": "https://cryptobriefing.com/strategy-saylor-strc-above-par-commitment/",
+          "source": "Editorial Team",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_242055",
+          "title": "Avalanche Treasury Lists on Nasdaq, Shares Fall 16%",
+          "url": "https://cointelegraph.com/news/avalanche-treasury-starts-trading-on-nasdaq-but-shares-fall-16-on-debut",
+          "source": "@cointelegraph",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_289404",
+          "title": "The US XRP spot ETF saw a net inflow of $2.0443 million in a single day.",
+          "url": "https://www.panewslab.com/en/articles/019ebe74-69c5-716c-955f-0834240d9f98",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_278247",
+          "title": "2026 FIFA World Cup kicks off in Toronto with crypto partnerships front and center",
+          "url": "https://cryptobriefing.com/world-cup-2026-crypto-partnerships/",
+          "source": "Editorial Team",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_242533",
+          "title": "芝商所计划提供7*24全天候WTI原油和黄金合约",
+          "url": "https://www.panewslab.com/en/articles/019eb9b5-a114-73e4-9aa0-f09a27f86b25",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_241416",
+          "title": "Deribit: Approximately $2.51 billion worth of Bitcoin and Ethereum options will expire today.",
+          "url": "https://www.panewslab.com/en/articles/019eb992-b284-771c-9f82-e2f548509722",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_278239",
+          "title": "XRP Whales Pull 465M From Binance as Price Tests Key Support ",
+          "url": "https://blockonomi.com/xrp-whales-pull-465m-from-binance-as-price-tests-key-support/",
+          "source": "Brenda Mary",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_253680",
+          "title": "The X platform will allow users to trade SPCX through brokers such as Coinbase and Robinhood.",
+          "url": "https://www.panewslab.com/en/articles/019ebafa-eab8-724e-b970-7d6c4f95ad96",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_273765",
+          "title": "Sam Bankman loses his appeal: The Federal Court confirms his conviction for fraud",
+          "url": "https://www.cointribune.com/en/sam-bankman-loses-his-appeal-the-federal-court-confirms-his-conviction-for-fraud/",
+          "source": "Fenelon LAMSASIRI",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_265471",
+          "title": "Polish president vetoes crypto bill for third time ahead of MiCA deadline2h, Polish president vetoes crypto bill for third time ahead of MiCA deadlinePolish President Karol Nawrocki vetoed a bill to implement MiCA for the third time, just weeks before the end of the EU crypto framework's transitional period.",
+          "url": "https://cointelegraph.com/news/polish-president-vetoes-crypto-bill-third-time-mica-deadline",
+          "source": "cointelegraph.com",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_259645",
+          "title": "South Korea finance ministry says tokenized stocks are securities, not crypto assets, opening door to taxes: report",
+          "url": "https://www.theblock.co/post/404580/south-korea-finance-ministry-says-tokenized-stocks-are-securities-not-crypto-assets-opening-door-to-taxes-report",
+          "source": "Brian Danga",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_252090",
+          "title": "International sting shuts down $390M crypto money-laundering ring2h",
+          "url": "https://cointelegraph.com/news/international-sting-shuts-down-390m-crypto-money-laundering-ring",
+          "source": "cointelegraph.com",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_290525",
+          "title": "Brazil's House of Representatives approved a new bill authorizing the freezing of cryptocurrency balances held by suspects, raising the maximum prison sentence to 10 years.",
+          "url": "https://www.panewslab.com/en/articles/019ebe80-f912-7238-82ad-1e6f4be4d517",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_278254",
+          "title": "Hester Peirce Bids Farewell to the SEC After Nearly 30 Years",
+          "url": "https://thedefiant.io/news/people/hester-peirce-farewell-remarks-sec-project-crypto",
+          "source": "The Defiant Team",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_270802",
+          "title": "Early Airbnb, DoorDash backer Y Combinator says Clarity Act could bring crypto to 'every' portfolio company",
+          "url": "https://www.theblock.co/post/404643/early-airbnb-doordash-backer-y-combinator-expects-crypto-to-be-used-by-every-one-of-its-portfolio-companies",
+          "source": "RT Watson",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_269296",
+          "title": "Zimbabwe requires crypto businesses to register and be subject to regulation, with an annual fee of $500.",
+          "url": "https://www.panewslab.com/en/articles/019ebc87-fcd2-72ca-865f-f8a2568f6dac",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_257024",
+          "title": "Predictive Markets: Gary Gensler Supports States Against the CFTC",
+          "url": "https://www.cointribune.com/en/predictive-markets-gary-gensler-supports-states-against-the-cftc/",
+          "source": "Eddy Senga",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_278244",
+          "title": "CFTC sues New Mexico over federal jurisdiction infringement",
+          "url": "https://cryptobriefing.com/cftc-sues-new-mexico-prediction-markets/",
+          "source": "Editorial Team",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_258141",
+          "title": "Bitget completes PSAV registration in Argentina, deepening its compliance strategy in Latin America.",
+          "url": "https://www.panewslab.com/en/articles/019ebb6c-a3fd-74b9-a3c8-f497b83e847e",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_249221",
+          "title": "An international joint operation dismantled a cryptocurrency money laundering ring involved in transactions totaling $390 million.",
+          "url": "https://www.panewslab.com/en/articles/019eba84-03bf-74bb-9ec9-c9c6e80ce4c0",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_252564",
+          "title": "ZachXBT: The address frozen by Tether containing 72 million USDT is linked to the address that received 120 million USDT yesterday.",
+          "url": "https://www.panewslab.com/en/articles/019ebae1-34c8-700e-bb02-85eb6c6bdabf",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_240302",
+          "title": "Coinbase urges blockchain developers to begin quantum-resistant migration preparations immediately.",
+          "url": "https://www.panewslab.com/en/articles/019eb979-3e14-71df-8552-ed330328136d",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_268181",
+          "title": "The ECB accelerates on the digital euro with a banking test in Italy",
+          "url": "https://www.cointribune.com/en/the-ecb-accelerates-on-the-digital-euro-with-a-banking-test-in-italy/",
+          "source": "Lydie Musekwa",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_254794",
+          "title": "Iran's $12 billion in unfrozen assets may be paid for via the Trump-backed stablecoin USD1.",
+          "url": "https://www.panewslab.com/en/articles/019ebb22-59d5-7279-8fc4-be1e3013911f",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_243645",
+          "title": "Coinbase CEO: The platform processes nearly $1 trillion in stablecoin flows annually.",
+          "url": "https://www.panewslab.com/en/articles/019eb9e7-14fc-7290-8e28-124e137db93b",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_238072",
+          "title": "Fidelity's stablecoin FIDD has chosen Uniswap as its liquidity infrastructure.",
+          "url": "https://www.panewslab.com/en/articles/019eb93f-8c50-704b-9921-b0a79df1493f",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_246990",
+          "title": "Circle has issued a total of 1 billion USDC on Solana in the past 24 hours.",
+          "url": "https://www.panewslab.com/en/articles/019eba5a-0d31-743a-8be0-e686a28bde0c",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_246084",
+          "title": "Is Tether the Coppernose of our time?",
+          "url": "https://www.ft.com/content/bcdeac73-5855-4d8b-b512-5ba65a2e01ad",
+          "source": "Stephen Cecchetti,Kim Schoenholtz",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_262991",
+          "title": "Ethena Labs to allocate $250 million to Securitize's Tokenized AAA CLO Fund as it deploys on Solana",
+          "url": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+          "source": "Daniel Kuhn",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_261010",
+          "title": "SpaceX tokenized IPO campaign draws $557M on Binance ahead of debut1h",
+          "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_264105",
+          "title": "Exodus, Ondo launch tokenized markets with 200-plus stocks and ETFs on Solana",
+          "url": "https://www.theblock.co/post/404622/exodus-launches-tokenized-markets-200-plus-stocks-etfs-on-solana",
+          "source": "Brian Danga",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_244035",
+          "title": "SEC's proposal to scrap key NMS rules a major unlock for tokenized US stocks: analysts",
+          "url": "https://www.theblock.co/post/404515/sec-proposal-major-unlock-tokenized-stocks",
+          "source": "Danny Park",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_243644",
+          "title": "Binance Instant Exchange has launched tokenized security bStocks.",
+          "url": "https://www.panewslab.com/en/articles/019eb9ed-3d2b-755f-b54a-4a950f08e1ea",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_293880",
+          "title": "MSX listed SpaceX's US stock token $SPCX.M, with the price reaching a high of $176.52 on the first day. Pre-IPO subscriptions have been fully distributed.",
+          "url": "https://www.panewslab.com/en/articles/019ebef2-5130-76b7-b438-388a99078fe4",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_272171",
+          "title": "Crypto Biz: SpaceX fuels tokenization’s next boom2h",
+          "url": "https://cointelegraph.com/news/tokenized-rwas-kraken-spacex-ipo-prediction-markets-sbf-trump-pardon",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_269297",
+          "title": "Gate completes SpaceX IPO share distribution and launches exclusive benefits for subscribers.",
+          "url": "https://www.panewslab.com/en/articles/019ebc7a-2c62-77c8-bf52-8592c2836063",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The narrative of 'Tokenization' is shifting from theoretical pilots to massive capital deployments. In the last 24 hours, we've seen $557M flow into a tokenized SpaceX IPO and $250M allocated to tokenized AAA CLOs. \n\nCrucially, Solana is emerging as the preferred execution layer for these institutional-grade assets, hosting everything from structured credit to a library of 200+ tokenized stocks and ETFs. We are moving past the 'proof of concept' phase into a period of genuine liquidity migration from legacy rails to on-chain environments.\n\nWhile the ECB accelerates its digital euro and legal battles like SBF's reach their conclusion, the underlying trend is clear: the plumbing of global finance is being rewritten in real-time. The question is no longer if TradFi will move on-chain, but which networks will capture the lion's share of the institutional AUM.\n\nIs Solana's current momentum sustainable, or will the arrival of CBDCs and regulated L1s disrupt this trend?\n\n#RWA #Tokenization #Solana #InstitutionalFinance"
+}
