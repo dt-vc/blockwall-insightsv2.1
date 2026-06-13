@@ -126,7 +126,10 @@
       map[item.id] = {
         title: extra.title || item.title || '',
         url: item.url || null,
-        primary_source: item.primary_source || null,
+        // primary_source = the clean publication name (e.g. "The Block").
+        // It lives in the item's `source` field; the item's own `primary_source`
+        // field is an origin URL (top_signals only) and is intentionally not used here.
+        primary_source: item.source || null,
         category: item.category || extra.category || null,
         theme: theme
       };
@@ -286,6 +289,7 @@
     if (row.analyst) meta.push(row.analyst);
     if (row.cadence && row.edition_id) meta.push(row.cadence + ' ' + row.edition_id);
     if (row.category) meta.push(row.category);
+    if (row.primary_source) meta.push(row.primary_source);  // publication name
     if (row.saved_at) meta.push(String(row.saved_at).slice(0, 10));
 
     var links = [];
@@ -294,12 +298,6 @@
         class: 'saved-item-link',
         href: row.cadence + '.html?id=' + encodeURIComponent(row.edition_id)
       }, 'Open edition →'));
-    }
-    if (safeUrl(row.primary_source)) {
-      links.push(h('a', {
-        class: 'saved-item-link', href: row.primary_source,
-        target: '_blank', rel: 'noopener'
-      }, 'Primary source →'));
     }
 
     var removeBtn = null;
