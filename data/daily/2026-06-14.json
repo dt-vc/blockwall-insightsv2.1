@@ -1,0 +1,647 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-06-14",
+  "date_display": "June 14, 2026",
+  "generated_at": "2026-06-14T05:00:17.478Z",
+  "engine": "ollama/gemma4:31b-cloud",
+  "lead": {
+    "headline": "Morpho's $175M Raise Signals a Pivot Toward Institutional Onchain Credit",
+    "tldr": "The market is shifting focus from simple liquidity pooling to sophisticated onchain credit infrastructure capable of supporting tokenized real-world assets."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is the intelligence brief on the latest shifts in credit markets, regulatory friction, and infrastructure evolution in Web3.",
+  "market_snapshot": {
+    "as_of": "2026-06-14T05:00:17.478Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,355",
+        "change_24h": "+1.4%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,678",
+        "change_24h": "+0.9%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.28T",
+        "change_24h": "+1.1%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$72.6B",
+        "change_24h": "+1.1%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 21,
+    "bearish": 17,
+    "neutral": 11
+  },
+  "top_signals": [
+    {
+      "id": "art_311309",
+      "title": "Morpho’s $175M DeFi Round Tests Onchain Credit’s Future",
+      "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+      "source": "@cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Morpho has raised $175 million in a funding round aimed at expanding onchain credit markets. The investment highlights growing investor interest in infrastructure supporting stablecoins and tokenized assets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+      "themes": [
+        "defi",
+        "onchain-credit"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The scale of this round confirms that institutional appetite is moving toward credit primitives that can scale beyond over-collateralized lending."
+    },
+    {
+      "id": "art_337540",
+      "title": "A coalition including Kalshi and Polymarket has sued the state of Kentucky, alleging that its 14.25% transaction tax is unconstitutional and discriminatory.",
+      "url": "https://www.panewslab.com/en/articles/019ec38d-5383-7115-86f4-b23d5b43b697",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "A coalition of prediction market operators, including Kalshi and Polymarket, has sued the state of Kentucky to block a 14.25% transaction tax. The lawsuit claims the tax is unconstitutional, discriminatory, and conflicts with federal law.",
+      "significance": 6,
+      "primary_source": "https://www.panewslab.com/en/articles/019ec38d-5383-7115-86f4-b23d5b43b697",
+      "themes": [
+        "regulation",
+        "taxation"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Prediction markets are entering a high-stakes legal battle over tax jurisdiction that could set a precedent for how digital assets are taxed at the state level."
+    },
+    {
+      "id": "art_325611",
+      "title": "Coinbase quantum report flags exchange cold wallets among millions of bitcoin exposed by address reuse",
+      "url": "https://www.theblock.co/post/404685/coinbase-quantum-report-flags-exchange-cold-wallets-among-millions-of-bitcoin-exposed-by-address-reuse",
+      "source": "theblock.co",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A Coinbase report warns that millions of Bitcoin, including those in the exchange's own cold wallets, are vulnerable to future quantum computing attacks due to address reuse. The report highlights the systemic risk posed by public keys being exposed through repeated use of the same address.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/post/404685/coinbase-quantum-report-flags-exchange-cold-wallets-among-millions-of-bitcoin-exposed-by-address-reuse",
+      "themes": [
+        "security",
+        "quantum-resistance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The Coinbase report underscores a critical, often ignored systemic vulnerability: address reuse creates a long-term quantum risk for the industry's largest holders."
+    },
+    {
+      "id": "art_312905",
+      "title": "Ripple releases XRPL AI toolkit: targeting AI-powered agent payments, challenging the USDC-dominated micropayment market.",
+      "url": "https://www.panewslab.com/en/articles/019ec0cc-771c-713a-aa3a-017b34e1541a",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Ripple has launched the XRPL AI Starter Kit to enable AI agents to perform on-chain payments and wallet operations. The initiative aims to challenge USDC's dominance in the micropayment market using XRP and the RLUSD stablecoin.",
+      "significance": 6,
+      "primary_source": "https://www.panewslab.com/en/articles/019ec0cc-771c-713a-aa3a-017b34e1541a",
+      "themes": [
+        "infrastructure",
+        "ai-agents"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Ripple is positioning the XRPL as the primary rails for the 'Agentic Economy,' attempting to disrupt USDC's grip on AI-driven micropayments."
+    },
+    {
+      "id": "art_310667",
+      "title": "香港持牌虚拟资产交易平台EX.IO获批分销传统投资产品及独立托管服务",
+      "url": "https://www.panewslab.com/en/articles/019ec080-a4e1-703f-a8f8-c3fd2bdef5e0",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Hong Kong-licensed virtual asset trading platform EX.IO has received approval from the SFC to distribute traditional investment products and provide independent custody services. This includes the distribution of both tokenized and non-tokenized securities.",
+      "significance": 6,
+      "primary_source": "https://www.panewslab.com/en/articles/019ec080-a4e1-703f-a8f8-c3fd2bdef5e0",
+      "themes": [
+        "regulation",
+        "licensing"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Hong Kong's SFC is actively blurring the line between TradFi and DeFi by allowing licensed platforms to bridge tokenized and traditional securities."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_311309",
+      "company": "Morpho",
+      "amount": "$175M",
+      "round": "",
+      "investors": [],
+      "category": "DeFi",
+      "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+      "summary": "Morpho has raised $175 million in a funding round aimed at expanding onchain credit markets. The investment highlights growing investor interest in infrastructure supporting stablecoins and tokenized assets."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_307309",
+      "title": "Coinbase: The x402 protocol will soon support direct payments of USDC balances for Coinbase for Agents users.",
+      "url": "https://www.panewslab.com/en/articles/019ec037-b68c-7086-b3d9-684039db1488",
+      "source": "PA一线",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Coinbase is expanding its developer platform to support AI Agents, allowing them to manage assets and execute transactions. The upcoming integration of the x402 protocol will enable these agents to make direct payments using users' USDC balances."
+    },
+    {
+      "id": "art_293880",
+      "title": "MSX listed SpaceX's US stock token $SPCX.M, with the price reaching a high of $176.52 on the first day. Pre-IPO subscriptions have been fully distributed.",
+      "url": "https://www.panewslab.com/en/articles/019ebef2-5130-76b7-b438-388a99078fe4",
+      "source": "PA一线",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "MSX has launched spot trading for $SPCX.M, a tokenized version of SpaceX US stock. The token saw a significant price increase of approximately 40% from its Pre-IPO subscription price on the first day of trading."
+    },
+    {
+      "id": "art_289410",
+      "title": "Standard Chartered Bank analyst: The crypto market has hit the bottom of the cycle, and Bitcoin is expected to return to $100,000 by the end of the year.",
+      "url": "https://www.panewslab.com/en/articles/019ebe5e-762c-75ea-bfde-0eeb3110e623",
+      "source": "PA一线",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "A Standard Chartered Bank analyst suggests that the cryptocurrency market has reached its cycle bottom. The analyst predicts Bitcoin will reach $100,000 by the end of the year, citing a better macroeconomic environment and a reduction in ETF selling pressure."
+    },
+    {
+      "id": "art_320011",
+      "title": "Spot bitcoin ETFs snap five-day outflow streak with $85.8 million Friday inflow as ether funds keep sliding",
+      "url": "https://www.theblock.co/post/404682/spot-bitcoin-etfs-snap-five-day-outflow-streak-with-85-8-million-friday-inflow-as-ether-funds-keep-sliding",
+      "source": "Zack Abrams",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Spot Bitcoin ETFs saw a reversal in trend with $85.8 million in inflows on Friday, ending a five-day streak of outflows. BlackRock's IBIT and Fidelity's FBTC were the primary drivers of this positive movement, while Ether funds continued to experience declines."
+    },
+    {
+      "id": "art_319620",
+      "title": "CryptoQuant analyst: BTC exchange inflows surge to 114,000 BTC, stablecoin outflows weaken buying pressure, causing structural pressure on the market.",
+      "url": "https://www.panewslab.com/en/articles/019ec18b-2122-751c-8d5b-23f17606aac8",
+      "source": "PA一线",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "CryptoQuant analyst Axel Adler reports a surge in Bitcoin exchange inflows and a decrease in stablecoin liquidity. This shift from accumulation to allocation is creating structural selling pressure, contributing to BTC's recent price decline."
+    },
+    {
+      "id": "art_319141",
+      "title": "Anthropic's Mythos AI finds no more 'serious' bugs in Zcash: Wilcox1h",
+      "url": "https://cointelegraph.com/news/anthropic-mythos-audit-no-serious-bugs-zcash",
+      "source": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "Anthropic's Mythos AI has completed an analysis of Zcash and found no further serious bugs. This result provides a security validation for the privacy-focused blockchain protocol."
+    },
+    {
+      "id": "art_316901",
+      "title": "Bitcoin sales are necessary for Strategy's digital credit business, Saylor saysStrategy's recent Bitcoin sale appeared to clash with Saylor's \"never sell\" mantra, but he says the move reflects how the company's digital credit business works.",
+      "url": "https://cointelegraph.com/news/saylor-strategys-bitcoin-sale-defend-digital-credit-products",
+      "source": "cointelegraph.com",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Michael Saylor clarifies that MicroStrategy's recent Bitcoin sales are a functional requirement for its digital credit business rather than a shift in long-term strategy. He maintains the company's overall commitment to accumulating Bitcoin while utilizing sales to support specific operational credit mechanisms."
+    },
+    {
+      "id": "art_290046",
+      "title": "Major crypto exchanges cancel SpaceX IPO allocations",
+      "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds",
+      "source": "@cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bearish",
+      "summary": "Major cryptocurrency exchanges ByBit and Binance have canceled their tokenized SpaceX IPO campaigns. The exchanges are issuing refunds to users, citing allocation shortfalls caused by xStocks."
+    }
+  ],
+  "worth_a_read": [],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_289410",
+          "title": "Standard Chartered Bank analyst: The crypto market has hit the bottom of the cycle, and Bitcoin is expected to return to $100,000 by the end of the year.",
+          "url": "https://www.panewslab.com/en/articles/019ebe5e-762c-75ea-bfde-0eeb3110e623",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_320011",
+          "title": "Spot bitcoin ETFs snap five-day outflow streak with $85.8 million Friday inflow as ether funds keep sliding",
+          "url": "https://www.theblock.co/post/404682/spot-bitcoin-etfs-snap-five-day-outflow-streak-with-85-8-million-friday-inflow-as-ether-funds-keep-sliding",
+          "source": "Zack Abrams",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_319620",
+          "title": "CryptoQuant analyst: BTC exchange inflows surge to 114,000 BTC, stablecoin outflows weaken buying pressure, causing structural pressure on the market.",
+          "url": "https://www.panewslab.com/en/articles/019ec18b-2122-751c-8d5b-23f17606aac8",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_316901",
+          "title": "Bitcoin sales are necessary for Strategy's digital credit business, Saylor saysStrategy's recent Bitcoin sale appeared to clash with Saylor's \"never sell\" mantra, but he says the move reflects how the company's digital credit business works.",
+          "url": "https://cointelegraph.com/news/saylor-strategys-bitcoin-sale-defend-digital-credit-products",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_320740",
+          "title": "In the past 24 hours, a total of $124 million in positions were liquidated across the entire network, mainly long positions.",
+          "url": "https://www.panewslab.com/en/articles/019ec197-a9e9-728d-b6c7-143917460722",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_292762",
+          "title": "Galaxy Digital: Bitcoin's cyclical lows may be higher than previous ones, with a potential bottom of $62,000 to $53,600.",
+          "url": "https://www.panewslab.com/en/articles/019ebec6-bf1a-73e9-beb5-2869fea98e46",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_311784",
+          "title": "Bitdeer maintained zero Bitcoin holdings, selling 194.4 BTC this week.",
+          "url": "https://www.panewslab.com/en/articles/019ec0b8-78b9-70bc-bb0f-8b2268b522c8",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_306189",
+          "title": "SpaceX has risen to 9th place in global asset value, while Bitcoin is currently ranked 17th.",
+          "url": "https://www.panewslab.com/en/articles/019ec023-0329-721c-be14-63a69248b144",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_314022",
+          "title": "BTC突破64000美元，日内涨幅 0.64%",
+          "url": "https://www.panewslab.com/en/articles/019ec0f8-ee5b-72fb-ab10-b7a37b139909",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_311309",
+          "title": "Morpho’s $175M DeFi Round Tests Onchain Credit’s Future",
+          "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_299475",
+          "title": "Gate DEX BountyDrop is now live! Ai Auction airdrop event is now available.",
+          "url": "https://www.panewslab.com/en/articles/019ebf6d-99a9-760b-a8b5-a449114151ac",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_336422",
+          "title": "Etherealize co-founder: Ethereum is in a transitional phase; the infrastructure is basically complete, but its adoption has not yet been fully reflected in ETH.",
+          "url": "https://www.panewslab.com/en/articles/019ec376-6bac-7228-99c0-a527343f2efc",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_343140",
+          "title": "A new address is shorting 23,000 ETH with 20x leverage, with a holding value of $39.03 million.",
+          "url": "https://www.panewslab.com/en/articles/019ec40f-59a2-765f-a142-9522d39bfa16",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_303951",
+          "title": "An address sold 3,000 ETH, worth approximately $4.98 million, 10 hours ago.",
+          "url": "https://www.panewslab.com/en/articles/019ebfd8-32ed-7589-8da6-637588575b4a",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_290523",
+          "title": "A certain whale traded ETH in eight rounds of long and short positions over two and a half days, making a profit of $3.67 million, a return of 122%.",
+          "url": "https://www.panewslab.com/en/articles/019ebea3-2adf-76df-b019-556e8f5b6cc3",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_312905",
+          "title": "Ripple releases XRPL AI toolkit: targeting AI-powered agent payments, challenging the USDC-dominated micropayment market.",
+          "url": "https://www.panewslab.com/en/articles/019ec0cc-771c-713a-aa3a-017b34e1541a",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_305070",
+          "title": "The winners of the 0G Labs Asia Pacific Hackathon have been announced, with 293 projects participating.",
+          "url": "https://www.panewslab.com/en/articles/019ec000-db93-7072-8c3e-ca1e6239b970",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_290524",
+          "title": "The Arc testnet will activate the v0.7.2 upgrade on June 18th.",
+          "url": "https://www.panewslab.com/en/articles/019ebe8e-de66-733a-8227-e060355132ec",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_307312",
+          "title": "ETF crypto: Slowdown in outflows after a difficult week",
+          "url": "https://www.cointribune.com/en/etf-crypto-slowdown-in-outflows-after-a-difficult-week/",
+          "source": "Mikaia ANDRIAMAHAZOARIMANANA",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_289404",
+          "title": "The US XRP spot ETF saw a net inflow of $2.0443 million in a single day.",
+          "url": "https://www.panewslab.com/en/articles/019ebe74-69c5-716c-955f-0834240d9f98",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_342020",
+          "title": "Garrett Jin's long positions in BTC and ZEC have resulted in a paper loss of $15.43 million.",
+          "url": "https://www.panewslab.com/en/articles/019ec401-c1f0-77bd-a96f-7be0b59532d1",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_317366",
+          "title": "Crypto Fundraisings on Week 07 ",
+          "url": "https://crypto-fundraising.info/blog/dates-07-13-jun-2026/",
+          "source": "@Crypto_Dealflow",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "NFT_Gaming",
+      "items": [
+        {
+          "id": "art_293881",
+          "title": "Pudgy Penguins announces discontinuation of Web3 game Pudgy Party.",
+          "url": "https://www.panewslab.com/en/articles/019ebee8-a381-76a9-9e72-fcebeb15d58b",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_338660",
+          "title": "The \"SIREN controller\" sold off over 200 million tokens within 14 hours, reducing his holdings to 468 million tokens.",
+          "url": "https://www.panewslab.com/en/articles/019ec3a6-3202-778b-973b-43dc5d9a95fd",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_330091",
+          "title": "Venice and Morpheus tokens climb as US ban on Anthropic's Fable 5 fuels 'permissionless AI' pitch",
+          "url": "https://www.theblock.co/post/404690/venice-and-morpheus-tokens-climb-as-us-ban-on-anthropics-fable-5-fuels-permissionless-ai-pitch",
+          "source": "Zack Abrams",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_328580",
+          "title": "SLICE Helps Pi Network Gather Data Before Future Ecosystem Upgrades",
+          "url": "https://www.cointribune.com/en/slice-helps-pi-network-gather-data-before-future-ecosystem-upgrades/",
+          "source": "Luc Jose Adjinacou",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_326340",
+          "title": "Crypto : Dogecoin Surges Amid Growing Buzz Around SpaceX’s IPO",
+          "url": "https://www.cointribune.com/en/crypto-dogecoin-surges-amid-growing-buzz-around-spacexs-ipo/",
+          "source": "Lydie Musekwa",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_321860",
+          "title": "Crypto Markets Show Early Signs Of Stabilization After Heavy Selloff",
+          "url": "https://www.cointribune.com/en/crypto-markets-show-early-signs-of-stabilization-after-heavy-selloff/",
+          "source": "Luc Jose Adjinacou",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_315142",
+          "title": "Bitget Makes Professional U.S. Stock Market Data Free for All Users",
+          "url": "https://www.cointribune.com/en/bitget-makes-professional-u-s-stock-market-data-free-for-all-users/",
+          "source": "Evans SELEMANI",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_307310",
+          "title": "a16z, a joint venture, published a satirical response to US AI regulation: a \"double standard\" within an extremely polarized narrative.",
+          "url": "https://www.panewslab.com/en/articles/019ec035-ab79-73ba-954d-267e34bf142c",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_300594",
+          "title": "TRUMP Coin: The Cryptocurrency Linked to Donald Trump Surges Before His Birthday",
+          "url": "https://www.cointribune.com/en/trump-coin-the-cryptocurrency-linked-to-donald-trump-surges-before-his-birthday/",
+          "source": "Ghiles Ait Abdallah",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_300597",
+          "title": "A SIREN whale cashed out over 7.5 million USDT and currently holds $91.86 million worth of tokens, but the sell-off continues.",
+          "url": "https://www.panewslab.com/en/articles/019ebf83-2eca-745b-95d5-64b240f389c6",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_292761",
+          "title": "A whale (a large investor) leveraged 5x to go long on SPCX while simultaneously holding a short position in Bitcoin, resulting in a floating profit of over $1.18 million.",
+          "url": "https://www.panewslab.com/en/articles/019ebed0-81db-723f-b758-3c2333094789",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_289408",
+          "title": "A HYPE genesis whale deposited approximately 576,000 tokens into Coinbase, and may have sold them for a profit exceeding $44.34 million.",
+          "url": "https://www.panewslab.com/en/articles/019ebe68-79ef-748b-9f9b-6a84ab50d9b6",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_291642",
+          "title": "A certain whale once spent $1.81 million to buy ASTEROID, and has now lost 84% to $1.53 million.",
+          "url": "https://www.panewslab.com/en/articles/019ebeb1-5e9e-727e-800b-739a74d238ca",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_331964",
+          "title": "ETHDYDX 0.6%",
+          "url": "https://www.coingecko.com/en/coins/dydx-ethdydx",
+          "source": "coingecko.com",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_331944",
+          "title": "Nico Price: NICO/USD Live Price Chart, Market Cap ",
+          "url": "https://www.coingecko.com/en/coins/nico-2",
+          "source": "@coingecko",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_307309",
+          "title": "Coinbase: The x402 protocol will soon support direct payments of USDC balances for Coinbase for Agents users.",
+          "url": "https://www.panewslab.com/en/articles/019ec037-b68c-7086-b3d9-684039db1488",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_337540",
+          "title": "A coalition including Kalshi and Polymarket has sued the state of Kentucky, alleging that its 14.25% transaction tax is unconstitutional and discriminatory.",
+          "url": "https://www.panewslab.com/en/articles/019ec38d-5383-7115-86f4-b23d5b43b697",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_310667",
+          "title": "香港持牌虚拟资产交易平台EX.IO获批分销传统投资产品及独立托管服务",
+          "url": "https://www.panewslab.com/en/articles/019ec080-a4e1-703f-a8f8-c3fd2bdef5e0",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_290525",
+          "title": "Brazil's House of Representatives approved a new bill authorizing the freezing of cryptocurrency balances held by suspects, raising the maximum prison sentence to 10 years.",
+          "url": "https://www.panewslab.com/en/articles/019ebe80-f912-7238-82ad-1e6f4be4d517",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_340900",
+          "title": "Eleanor Terrett: Hopes for the Clarity Act to pass before July 4th are slim.",
+          "url": "https://www.panewslab.com/en/articles/019ec3d9-8500-705c-8acb-f21351f3a109",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_289409",
+          "title": "The U.S. CFTC has sued New Mexico officials in an attempt to block the state from enacting a gambling law.",
+          "url": "https://www.panewslab.com/en/articles/019ebe64-6d31-706c-8ba9-a20f26ae772c",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_325611",
+          "title": "Coinbase quantum report flags exchange cold wallets among millions of bitcoin exposed by address reuse",
+          "url": "https://www.theblock.co/post/404685/coinbase-quantum-report-flags-exchange-cold-wallets-among-millions-of-bitcoin-exposed-by-address-reuse",
+          "source": "theblock.co",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_319141",
+          "title": "Anthropic's Mythos AI finds no more 'serious' bugs in Zcash: Wilcox1h",
+          "url": "https://cointelegraph.com/news/anthropic-mythos-audit-no-serious-bugs-zcash",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_339780",
+          "title": "The circulating supply of USDC has decreased by approximately 700 million coins in the past 7 days.",
+          "url": "https://www.panewslab.com/en/articles/019ec3c5-e388-71d9-b3b1-2e29427e635b",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_293880",
+          "title": "MSX listed SpaceX's US stock token $SPCX.M, with the price reaching a high of $176.52 on the first day. Pre-IPO subscriptions have been fully distributed.",
+          "url": "https://www.panewslab.com/en/articles/019ebef2-5130-76b7-b438-388a99078fe4",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_290046",
+          "title": "Major crypto exchanges cancel SpaceX IPO allocations",
+          "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds",
+          "source": "@cointelegraph",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_298356",
+          "title": "Due to the 180-day lock-up period, SpaceX equity tokens on the PreStocks platform are trading at a 26.6% discount.",
+          "url": "https://www.panewslab.com/en/articles/019ebf5b-38db-70ed-b033-3a2738c6001e",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Onchain credit is evolving. Morpho’s $175M raise isn't just about a bigger treasury; it's a bet on the infrastructure required to move tokenized assets and stablecoins into sophisticated credit markets. \n\nWhile the 'DeFi 1.0' era was defined by over-collateralization, the next phase is about capital efficiency and institutional-grade credit primitives. Simultaneously, we see Ripple attacking the AI agent payment niche and Hong Kong further integrating tokenized securities into licensed frameworks. The trend is clear: the gap between legacy finance and onchain rails is closing, but systemic risks—like the quantum vulnerability of reused addresses—remain a looming shadow.\n\nAs we move toward an agent-driven economy, will the winner be the one with the best liquidity or the one with the most compliant rails?\n\n#Web3 #VentureCapital #DeFi #OnchainCredit"
+}
