@@ -1,0 +1,1628 @@
+{
+  "schema": 2,
+  "type": "weekly",
+  "id": "2026-W25",
+  "date_display": "Week 25 · June 9 - June 15, 2026",
+  "generated_at": "2026-06-15T05:00:01.723Z",
+  "engine": "ollama/gemma4:31b-cloud",
+  "lead": {
+    "headline": "Institutional Capital Pivots to On-Chain Credit and Tokenized Equities",
+    "tldr": "Massive funding rounds for Morpho and Digital Asset, alongside the SpaceX tokenized IPO, signal a decisive shift from speculative DeFi toward institutional-grade financial infrastructure."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the past week and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-06-15T05:00:01.723Z",
+    "source": "CoinGecko, DefiLlama (week)",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$65,624",
+        "change_24h": "+4.0%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,717",
+        "change_24h": "+2.0%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.32T",
+        "change_24h": null,
+        "direction": "flat"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$73.5B",
+        "change_24h": "+2.1%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 13,
+    "signals": 10,
+    "watching": 12,
+    "bullish": 102,
+    "bearish": 40,
+    "neutral": 17
+  },
+  "top_signals": [
+    {
+      "id": "art_209774",
+      "title": "Digital Asset Raises $355M in a16z-Led Round at $2B Valuation",
+      "url": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails",
+      "source": "@cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Digital Asset has raised $355 million in a funding round led by a16z crypto, bringing its valuation to $2 billion. The capital will support the expansion of the Canton Network as banks continue to pilot tokenization initiatives.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails",
+      "themes": [
+        "investment",
+        "tokenization"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The $2B valuation for Digital Asset confirms that tier-1 VCs view bank-led tokenization networks as the primary bridge for institutional liquidity."
+    },
+    {
+      "id": "art_181384",
+      "title": "AI identifies critical bug in Zcash that could have enabled unlimited counterfeit minting",
+      "url": "https://cryptobriefing.com/ai-identifies-zcash-bug-defi-impact/",
+      "source": "Editorial Team",
+      "source_domain": "cryptobriefing.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "An AI-assisted audit identified a critical vulnerability in Zcash's Orchard protocol that could have allowed unlimited counterfeit minting of ZEC. The discovery led to emergency forks and a significant price crash of 38-50%.",
+      "significance": 9,
+      "primary_source": "https://cryptobriefing.com/ai-identifies-zcash-bug-defi-impact/",
+      "themes": [
+        "security",
+        "audit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The Zcash vulnerability highlights a critical systemic risk where AI-driven exploits can outpace manual auditing, necessitating AI-native security layers."
+    },
+    {
+      "id": "art_178702",
+      "title": "Tether Expands AI push with Lead Role in NEURA Robotics Raise",
+      "url": "https://cointelegraph.com/news/tether-backs-neura-robotics-in-up-to-14b-round-for-autonomous-payments",
+      "source": "@cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Tether is leading a massive funding round of up to $1.4 billion for NEURA Robotics. The initiative aims to integrate AI technology and cryptocurrency wallets into autonomous robotic systems.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/tether-backs-neura-robotics-in-up-to-14b-round-for-autonomous-payments",
+      "themes": [
+        "investment",
+        "ai-robotics"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Tether's pivot into robotics suggests a strategic move to embed crypto payments into the physical AI economy, diversifying away from pure stablecoin issuance."
+    },
+    {
+      "id": "art_110421",
+      "title": "The head of Aave responds to criticism after a historic liquidity crisis",
+      "url": "https://www.cointribune.com/en/the-head-of-aave-responds-to-criticism-after-a-historic-liquidity-crisis/",
+      "source": "Fenelon LAMSASIRI",
+      "source_domain": "cointribune.com",
+      "category": "DeFi",
+      "sentiment": "bearish",
+      "summary": "Aave experienced a historic liquidity crisis in April 2026 following an exploit on KelpDAO, resulting in $8.45 billion in outflows over 48 hours. The protocol was saved from collapse via a manual bailout of $300 million.",
+      "significance": 9,
+      "primary_source": "https://www.cointribune.com/en/the-head-of-aave-responds-to-criticism-after-a-historic-liquidity-crisis/",
+      "themes": [
+        "defi",
+        "security"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Aave's liquidity crisis underscores the fragility of interconnected DeFi primitives and the continued necessity of manual intervention in 'decentralized' systems."
+    },
+    {
+      "id": "art_105997",
+      "title": "Crypto financial infrastructure company Morpho has raised $175 million in funding, led by a16z Crypto and Paradigm.",
+      "url": "https://www.panewslab.com/en/articles/019eac33-0836-72d2-8104-7cb02da6e863",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "DeFi lending protocol Morpho has raised $175 million in a funding round led by a16z crypto, Paradigm, and Ribbit Capital. The investment values the company at approximately $2 billion and supports its infrastructure for institutional on-chain lending markets.",
+      "significance": 9,
+      "primary_source": "https://www.panewslab.com/en/articles/019eac33-0836-72d2-8104-7cb02da6e863",
+      "themes": [
+        "defi",
+        "lending"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Morpho's raise validates the thesis that the next evolution of DeFi is the transition from over-collateralized pools to sophisticated on-chain credit markets."
+    },
+    {
+      "id": "art_391382",
+      "title": "The EU's MiCA transition period will end on July 1, and approximately 75% of crypto companies will face elimination.",
+      "url": "https://www.panewslab.com/en/articles/019ec902-27d5-731f-8da2-2f906fe77d7c",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The EU's MiCA transition period ends on July 1, potentially eliminating approximately 75% of crypto companies operating without licenses. Unlicensed firms will face criminal penalties, including imprisonment and fines, forcing a market consolidation toward licensed institutions.",
+      "significance": 8,
+      "primary_source": "https://www.panewslab.com/en/articles/019ec902-27d5-731f-8da2-2f906fe77d7c",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The MiCA deadline will trigger a violent consolidation phase in Europe, favoring well-capitalized firms capable of meeting rigorous compliance standards."
+    },
+    {
+      "id": "art_349860",
+      "title": "美国SEC批准T. Rowe Price主动管理型加密ETF上市，最多可纳入15种加密资产",
+      "url": "https://www.panewslab.com/en/articles/019ec501-00d8-762f-aa85-4f11f81c5733",
+      "source": "PA一线",
+      "source_domain": "panewslab.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The US SEC has approved T. Rowe Price's application to list an actively managed crypto ETF on the NYSE Arca. The fund aims for long-term capital growth by holding a diversified basket of up to 15 different crypto assets.",
+      "significance": 8,
+      "primary_source": "https://www.panewslab.com/en/articles/019ec501-00d8-762f-aa85-4f11f81c5733",
+      "themes": [
+        "regulation",
+        "etf"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "SEC approval of an actively managed multi-asset ETF opens the door for diversified institutional exposure beyond BTC and ETH."
+    },
+    {
+      "id": "art_311309",
+      "title": "Morpho’s $175M DeFi Round Tests Onchain Credit’s Future",
+      "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+      "source": "@cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Morpho has raised $175 million in a funding round aimed at expanding onchain credit markets. The investment highlights growing investor interest in infrastructure supporting stablecoins and tokenized assets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+      "themes": [
+        "defi",
+        "onchain-credit"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The focus on on-chain credit infrastructure is a prerequisite for the mass migration of traditional corporate debt to the blockchain."
+    },
+    {
+      "id": "art_262991",
+      "title": "Ethena Labs to allocate $250 million to Securitize's Tokenized AAA CLO Fund as it deploys on Solana",
+      "url": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+      "source": "Daniel Kuhn",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ethena Labs is allocating $250 million to Securitize's Tokenized AAA CLO Fund. This move coincides with the fund's deployment on the Solana blockchain to provide on-chain access to institutional-grade structured credit.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "Ethena's allocation to AAA CLOs demonstrates a trend of stablecoin issuers seeking low-risk, institutional-grade yield to sustain their models."
+    },
+    {
+      "id": "art_261010",
+      "title": "SpaceX tokenized IPO campaign draws $557M on Binance ahead of debut1h",
+      "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+      "source": "cointelegraph.com",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "A tokenized IPO campaign for SpaceX has successfully raised $557 million on the Binance platform. This represents a significant intersection of traditional equity markets and blockchain-based asset distribution.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "The SpaceX tokenized IPO is a landmark event proving that blockchain can optimize the distribution and liquidity of high-demand private equity."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_209774",
+      "company": "Digital Asset",
+      "amount": "$355M",
+      "round": "",
+      "investors": [
+        "a16z crypto"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails",
+      "summary": "Digital Asset has raised $355 million in a funding round led by a16z crypto, bringing its valuation to $2 billion. The capital will support the expansion of the Canton Network as banks continue to pilot tokenization initiatives."
+    },
+    {
+      "id": "art_178702",
+      "company": "NEURA Robotics",
+      "amount": "$1.4B",
+      "round": "",
+      "investors": [
+        "Tether"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/tether-backs-neura-robotics-in-up-to-14b-round-for-autonomous-payments",
+      "summary": "Tether is leading a massive funding round of up to $1.4 billion for NEURA Robotics. The initiative aims to integrate AI technology and cryptocurrency wallets into autonomous robotic systems."
+    },
+    {
+      "id": "art_105997",
+      "company": "Morpho",
+      "amount": "$175M",
+      "round": "",
+      "investors": [
+        "a16z crypto",
+        "Paradigm",
+        "Ribbit Capital"
+      ],
+      "category": "DeFi",
+      "url": "https://www.panewslab.com/en/articles/019eac33-0836-72d2-8104-7cb02da6e863",
+      "summary": "DeFi lending protocol Morpho has raised $175 million in a funding round led by a16z crypto, Paradigm, and Ribbit Capital. The investment values the company at approximately $2 billion and supports its infrastructure for institutional on-chain lending markets."
+    },
+    {
+      "id": "art_200643",
+      "company": "Kiavi",
+      "amount": "$717M",
+      "round": "M&A",
+      "investors": [
+        "Figure"
+      ],
+      "category": "Tokenization",
+      "url": "https://www.theblock.co/post/404373/figure-kiavi-acquisition",
+      "summary": "Figure is acquiring Kiavi for $717 million to expand its real-world asset (RWA) tokenization network. The move aims to migrate Kiavi's assets on-chain to reduce operational costs and enhance margins."
+    },
+    {
+      "id": "art_161419",
+      "company": "TensorWave",
+      "amount": "$350M",
+      "round": "Series B",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://www.panewslab.com/en/articles/019eb1ad-e33c-73e5-8310-4c30a579b484",
+      "summary": "AI infrastructure startup TensorWave has raised $350 million in a Series B funding round. The investment values the company at $1.55 billion and will be used to expand its AMD-powered global AI infrastructure."
+    },
+    {
+      "id": "art_282549",
+      "company": "Messari",
+      "amount": "",
+      "round": "M&A",
+      "investors": [
+        "Blockworks"
+      ],
+      "category": "Infrastructure",
+      "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_c6ee5f03-bcde-4c41-8545-3197494be0e9",
+      "summary": "Blockworks has acquired Messari, merging two of the largest crypto data platforms. The goal of the acquisition is to develop AI-driven workflows specifically for onchain markets."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_219147",
+      "title": "Avalanche Treasury Company (AVAT) officially listed on Nasdaq.",
+      "url": "https://www.panewslab.com/en/articles/019eb76e-c6ce-71ea-b55a-11df29bf1df5",
+      "source": "PA一线",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Avalanche Treasury Company (AVAT) has officially listed on the Nasdaq exchange following a merger with a SPAC. The company, led by Bart Smith, focuses on the Avalanche ecosystem and entered the public market via a $675 million deal."
+    },
+    {
+      "id": "art_211995",
+      "title": "Japan crypto bill advances with ETF, tax reform path: Report2h, Japan crypto bill advances with ETF, tax reform path: ReportJapan’s Lower House reportedly passed a bill that would bring crypto under the country’s financial instruments framework, potentially opening the door to ETFs and lower tax treatment.",
+      "url": "https://cointelegraph.com/news/japan-crypto-bill-etf-tax-reform-path",
+      "source": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Japan's Lower House has passed a bill to integrate cryptocurrency into the national financial instruments framework. This legislative move is expected to pave the way for the approval of crypto ETFs and more favorable tax treatments for investors."
+    },
+    {
+      "id": "art_205803",
+      "title": "The CME launches a futures contract on Bitcoin, ether, solana and XRP",
+      "url": "https://www.cointribune.com/en/the-cme-launches-a-futures-contract-on-bitcoin-ether-solana-and-xrp/",
+      "source": "Fenelon LAMSASIRI",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "CME Group has launched new futures contracts based on the Nasdaq CME Crypto index. These contracts cover eight major cryptocurrencies, including Bitcoin, Ether, Solana, and XRP."
+    },
+    {
+      "id": "art_200255",
+      "title": "The Japanese House of Representatives passed a bill to regulate cryptocurrencies under the same framework as stocks and reduce the tax rate to 20%.",
+      "url": "https://www.panewslab.com/en/articles/019eb585-5030-736c-b323-17f066bc6ba2",
+      "source": "PA一线",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Japanese House of Representatives passed a bill to reclassify cryptocurrencies as financial instruments, aligning their regulation with stocks and bonds. This move significantly reduces the maximum tax rate on crypto gains from 55% to 20% and paves the way for the launch of crypto ETFs."
+    },
+    {
+      "id": "art_191373",
+      "title": "Coinbase approved to offer global crypto perpetual contracts in the United States",
+      "url": "https://www.panewslab.com/en/articles/019eb4a2-3804-711a-9a44-14562d6fc958",
+      "source": "PA一线",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Coinbase has received approval to offer crypto perpetual contracts to users within the United States. CEO Brian Armstrong noted that this move addresses a long-standing regulatory gap that previously drove U.S. traders to offshore platforms via VPNs."
+    },
+    {
+      "id": "art_166966",
+      "title": "Mastercard launches AP4M payment infrastructure, enabling AI agents to use stablecoins for small-amount settlements.",
+      "url": "https://www.panewslab.com/en/articles/019eb22d-4833-7008-89f4-89f9688cefd2",
+      "source": "PA一线",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Mastercard has launched Agent Pay for Machines (AP4M), a payment infrastructure designed to enable AI agents to conduct high-frequency, low-value transactions. The system supports stablecoin settlements and integrates with a wide array of major blockchain networks and financial institutions."
+    },
+    {
+      "id": "art_163638",
+      "title": "Benchmark: Securitize's NYSE IPO imminent, target price $16",
+      "url": "https://www.panewslab.com/en/articles/019eb1d6-7309-77cc-b144-a86dbf9110df",
+      "source": "PA一线",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize is preparing for an imminent NYSE listing under the ticker SECZ following a merger with Cantor Equity Partners II. Benchmark has maintained a 'Buy' rating on the company with a target price of $16, citing strong revenue forecasts and a robust global compliance framework."
+    },
+    {
+      "id": "art_135912",
+      "title": "Japan's three major banks plan to jointly issue a stablecoin by March 2027.",
+      "url": "https://www.panewslab.com/en/articles/019eaf36-5891-74bc-9f50-5f45b4ce9859",
+      "source": "PA一线",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Japan's three largest banking groups are collaborating to issue a joint stablecoin by March 2027. The project is supported by the Financial Services Agency to modernize the national payment system using blockchain technology."
+    },
+    {
+      "id": "art_107100",
+      "title": "Japan's three major banks plan to jointly issue a stablecoin in fiscal year 2026.",
+      "url": "https://www.panewslab.com/en/articles/019eac57-392d-70bb-afaf-cac5bb0f7de2",
+      "source": "PA一线",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Japan's three largest banks are planning to jointly issue a fiat-pegged stablecoin by the end of fiscal year 2026. The banks are establishing a consultative organization to determine commercial applications and have been conducting pilot tests with regulatory support."
+    },
+    {
+      "id": "art_94935",
+      "title": "HSBC: In addition to Hong Kong dollar stablecoins, it is also considering offering stablecoins denominated in non-Hong Kong dollar currencies.",
+      "url": "https://www.panewslab.com/en/articles/019eab19-69f1-73eb-b6cf-18092f13376d",
+      "source": "PA一线",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "HSBC plans to launch a Hong Kong dollar stablecoin in the second half of the year and is considering expanding into non-HKD denominated stablecoins. The initiative aims to integrate stablecoins into HSBC's app to facilitate tokenized asset investments and optimize cross-border transfers."
+    },
+    {
+      "id": "art_83157",
+      "title": "Wallets linked to Humanity Protocol drained for over $32 million, token plunges 89%: onchain analyst",
+      "url": "https://www.theblock.co/post/404053/humanity-protocol-exploit",
+      "source": "Danny Park",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Wallets associated with Humanity Protocol were drained of over $32 million, leading to a massive 89% crash in the project's token price. On-chain analysis reveals that a significant portion of the stolen funds has already been swapped for Ethereum."
+    },
+    {
+      "id": "art_55225",
+      "title": "BlackRock’s new tokenized fund puts Ethereum’s institutional thesis to the test ",
+      "url": "https://tokenterminal.com/resources/newsletter/blackrock-s-new-tokenized-fund-puts-ethereum-s-institutional-thesis-to-the-test",
+      "source": "tokenterminal",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "BlackRock has launched a new tokenized fund, utilizing the Ethereum blockchain to facilitate institutional asset management. This move serves as a critical test for the institutional thesis regarding Ethereum's utility as a settlement layer for real-world assets."
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_278254",
+      "title": "Hester Peirce Bids Farewell to the SEC After Nearly 30 Years",
+      "url": "https://thedefiant.io/news/people/hester-peirce-farewell-remarks-sec-project-crypto",
+      "source": "The Defiant Team",
+      "note": "Essential for understanding the shifting regulatory climate at the SEC following the departure of a key internal skeptic."
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_261634",
+          "title": "U.S. Bitcoin Strategic Reserve: What It Will Actually Mean for the Market",
+          "url": "https://reports.tiger-research.com/p/us-bitcoin-strategic-reserve-what-eng",
+          "source": "Ekko an,Ryan Yoon",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_140349",
+          "title": "Bitcoin mining company Keel Infrastructure completes issuance of $458 million in convertible senior notes.",
+          "url": "https://www.panewslab.com/en/articles/019eaf9f-15cd-77ad-9e12-65107bf595b1",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_96043",
+          "title": "Strategy Now Holds 845,256 Bitcoin After New $101 Million Purchase",
+          "url": "https://www.cointribune.com/en/strategy-now-holds-845256-bitcoin-after-new-101-million-purchase/",
+          "source": "Luc Jose Adjinacou",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_58139",
+          "title": "Bitcoin ETFs See $1.7B Weekly Outflows",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-outflows-ether-altcoin-funds",
+          "source": "@cointelegraph",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_54604",
+          "title": "Spot bitcoin ETFs log $1.7 billion in weekly outflows, largest since February 2025",
+          "url": "https://www.theblock.co/post/403936/bitcoin-etfs-weekly-outflows-largest-since-2025",
+          "source": "Danny Park",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_55335",
+          "title": "Bitcoin spot ETFs saw net outflows of $1.72 billion last week, the second-highest on record.",
+          "url": "https://www.panewslab.com/en/articles/019ea607-5fac-7508-a2a0-a281d12ff0f6",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_347621",
+          "title": "Bitcoin : 25% of Mag8 Companies Now Hold BTC According to Saylor",
+          "url": "https://www.cointribune.com/en/bitcoin-25-of-mag8-companies-now-hold-btc-according-to-saylor/",
+          "source": "Ghiles Ait Abdallah",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_289410",
+          "title": "Standard Chartered Bank analyst: The crypto market has hit the bottom of the cycle, and Bitcoin is expected to return to $100,000 by the end of the year.",
+          "url": "https://www.panewslab.com/en/articles/019ebe5e-762c-75ea-bfde-0eeb3110e623",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_278250",
+          "title": "Metaplanet to Launch Bitcoin Yield Products in Japan After $13 Million Siiibo Securities Deal",
+          "url": "https://news.bitcoin.com/metaplanet-to-launch-bitcoin-yield-products-in-japan-after-13-million-siiibo-securities-deal/",
+          "source": "Emmanuel Musa",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_261635",
+          "title": "비트코인 전략 준비금, 언제 비트코인에 영향을 줄 수 있는가?",
+          "url": "https://reports.tiger-research.com/p/us-bitcoin-strategic-reserve-what-kor",
+          "source": "Ekko an,Ryan Yoon",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_226923",
+          "title": "Capital Rotation Toward AI Weighs On Bitcoin ETF Flows",
+          "url": "https://www.cointribune.com/en/capital-rotation-toward-ai-weighs-on-bitcoin-etf-flows/",
+          "source": "Luc Jose Adjinacou",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_193124",
+          "title": "US Inflation Hits 3-Year High, Pressuring Bitcoin and Gold",
+          "url": "https://cointelegraph.com/news/pressure-on-bitcoin-and-gold-increases-as-us-inflation-tops-4",
+          "source": "@cointelegraph",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_181393",
+          "title": "US launches new wave of strikes on Iran as crypto markets brace for impact",
+          "url": "https://cryptobriefing.com/us-strikes-iran-crypto-market-impact-6/",
+          "source": "Editorial Team",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_165856",
+          "title": "Fold sold $45 million worth of Bitcoin to repay collateralized loans, sending its stock price soaring 160%.",
+          "url": "https://www.panewslab.com/en/articles/019eb210-b72b-72ea-bc31-45db79538d21",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_159591",
+          "title": "'In the shadow of geopolitics and AI': Bitcoin hovers near cycle lows as ETF outflows and rate fears deepen worst stretch of 2026",
+          "url": "https://www.theblock.co/post/404237/in-the-shadow-of-geopolitics-and-ai-bitcoin-hovers-near-cycle-lows-as-etf-outflows-and-rate-fears-deepen-worst-stretch-of-2026",
+          "source": "Naga Avan-Nomayo",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_148112",
+          "title": "Analysts: $12 billion flowed out of the Bitcoin network in the past month, with loss-making transactions dominating the market.",
+          "url": "https://www.panewslab.com/en/articles/019eb05a-ade1-77ae-a5d6-160692238a7f",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_148115",
+          "title": "The net asset value of US spot Bitcoin ETFs has fallen back to the level seen in early November 2024 when Trump wins the election.",
+          "url": "https://www.panewslab.com/en/articles/019eb050-d772-7739-b648-e58e2432a9b7",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_145894",
+          "title": "Bitcoin: Flows Drop as AI Attracts Investors",
+          "url": "https://www.cointribune.com/en/bitcoin-flows-drop-as-ai-attracts-investors/",
+          "source": "Ariela RASOANJANAHARY",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_155411",
+          "title": "Botanix Shuts Down as Bitcoin Defi Demand Falls Short",
+          "url": "https://cointelegraph.com/news/botanix-says-it-didnt-work-as-bitcoin-scaling-platform-shuts-down-sets-withdrawal-deadline",
+          "source": "@cointelegraph",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_110421",
+          "title": "The head of Aave responds to criticism after a historic liquidity crisis",
+          "url": "https://www.cointribune.com/en/the-head-of-aave-responds-to-criticism-after-a-historic-liquidity-crisis/",
+          "source": "Fenelon LAMSASIRI",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_105997",
+          "title": "Crypto financial infrastructure company Morpho has raised $175 million in funding, led by a16z Crypto and Paradigm.",
+          "url": "https://www.panewslab.com/en/articles/019eac33-0836-72d2-8104-7cb02da6e863",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_311309",
+          "title": "Morpho’s $175M DeFi Round Tests Onchain Credit’s Future",
+          "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_388025",
+          "title": "Aerodrome will introduce a \"predictive allocation\" mechanism, shifting liquidity allocation towards predicting future demand.",
+          "url": "https://www.panewslab.com/en/articles/019ec89b-1c54-73ce-bf04-ca6bdbb795d2",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_236956",
+          "title": "Report: US users secretly wagered up to $34 billion through offshore prediction platforms",
+          "url": "https://www.panewslab.com/en/articles/019eb923-98e2-749e-af63-9179d4e5d964",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_160700",
+          "title": "Curve launches Llamalend v2 first on Optimism supported by 250,000 OP token grant",
+          "url": "https://www.theblock.co/post/404144/curve-launches-llamalend-v2-first-optimism-supported-250000-op-token-grant",
+          "source": "Daniel Kuhn",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_163170",
+          "title": "Onchain Gambling Defies Crypto Pullback With $14B Quarter: TRM Labs",
+          "url": "https://cointelegraph.com/news/onchain-gambling-market-pullback-trm-labs",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_243170",
+          "title": "LG Electronics, Arbitrum Launch Blockchain Ad Network",
+          "url": "https://cointelegraph.com/news/lg-arbitrum-launch-blockchain-based-bid-for-679b-ad-market",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_202473",
+          "title": "Spanish bank Cecabank launches cryptocurrency custody service",
+          "url": "https://www.panewslab.com/en/articles/019eb5bf-0d70-705a-8b63-e6066b262759",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_202474",
+          "title": "Ethereum Aims for a 100% Zero-Knowledge Architecture Within the Next Five Years",
+          "url": "https://www.cointribune.com/en/ethereum-aims-for-a-100-zero-knowledge-architecture-within-the-next-five-years/",
+          "source": "Ghiles Ait Abdallah",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_165137",
+          "title": "Ethereum could become a fully zero-knowledge proof-based protocol in 3 to 5 years, Joe Lubin says",
+          "url": "https://www.theblock.co/post/404185/ethereum-fully-zero-knowledge-proof-based-protocol-3-to-5-years-joe-lubin",
+          "source": "theblock.co",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_251450",
+          "title": "EIP-8182 proposes introducing Ethereum-native privacy transfers in the Hegotá hard fork.",
+          "url": "https://www.panewslab.com/en/articles/019ebac2-9ea3-70aa-8e3e-04a08eb30597",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_161419",
+          "title": "AI infrastructure startup TensorWave raises $350 million in Series B funding.",
+          "url": "https://www.panewslab.com/en/articles/019eb1ad-e33c-73e5-8310-4c30a579b484",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_282549",
+          "title": "🟪 NEWS: Blockworks acquires Messari ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_c6ee5f03-bcde-4c41-8545-3197494be0e9",
+          "source": "Blockworks",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_245401",
+          "title": "Coinbase launches tool letting AI agents make payments and trade cryptoCoinbase for Agents will let users of the crypto exchange manage their holdings “without the constant manual oversight” and can autonomously perform a range of tasks.",
+          "url": "https://cointelegraph.com/news/coinbase-launches-tool-letting-ai-agents-make-payments-and-trade-crypto",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_143677",
+          "title": "Crypto: MetaMask Opens DeFi to Autonomous AI Agents",
+          "url": "https://www.cointribune.com/en/crypto-metamask-opens-defi-to-autonomous-ai-agents/",
+          "source": "Ariela RASOANJANAHARY",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_55256",
+          "title": "AggLayer: Polygon's Vision for the Internet of Value | Interview with Sandeep Nailwal & Marc Boiron",
+          "url": "https://tokenterminal.com/resources/interview/polygon-agglayer",
+          "source": "tokenterminal.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_362821",
+          "title": "Ethereum Can Quantum-Proof Accounts for $0.07: Ethereum Researcher",
+          "url": "https://cointelegraph.com/news/ethereum-quantum-proof-accounts-7-cents-researcher",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_312905",
+          "title": "Ripple releases XRPL AI toolkit: targeting AI-powered agent payments, challenging the USDC-dominated micropayment market.",
+          "url": "https://www.panewslab.com/en/articles/019ec0cc-771c-713a-aa3a-017b34e1541a",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_259254",
+          "title": "Sharon AI and NVIDIA reach a six-year strategic computing power cooperation.",
+          "url": "https://www.panewslab.com/en/articles/019ebb92-1792-76a7-bd65-a5f56edc4637",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_258140",
+          "title": "HyperLiquid upgrades AQAv2 mechanism: USDC balances between contract addresses and treasury addresses are automatically balanced at a 1:9 ratio.",
+          "url": "https://www.panewslab.com/en/articles/019ebb72-dfa6-70e9-a887-01bfece4e204",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_210244",
+          "title": "Stellar基金会宣布于2027年底前将XLM账户迁移至抗量子签名",
+          "url": "https://www.panewslab.com/en/articles/019eb693-c246-7555-baff-7597bbe77478",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_184717",
+          "title": "Solana infrastructure company Helius acquires Light Protocol to expand on-chain privacy.",
+          "url": "https://www.panewslab.com/en/articles/019eb3fd-3a9d-763d-8de9-959aecd7f19b",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_160951",
+          "title": "Pyth Launches 24/7 Pricing Indices for Stocks and Commodities",
+          "url": "https://cointelegraph.com/news/pyth-24-7-pricing-indices-tokenized-stocks-commodities",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_109701",
+          "title": "Arcium Hits 1 Million Computations as ZINC, powered by Arcium, Breaks Solana's Top 3 by Revenue",
+          "url": "https://www.theblock.co/post/404128/arcium-hits-1-million-computations-as-zinc-powered-by-arcium-breaks-solanas-top-3-by-revenue",
+          "source": "Sponsored",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_109317",
+          "title": "OKX Wallet becomes a co-author of the ERC-8183 standard, participating in defining the on-chain business rules for AI Agents.",
+          "url": "https://www.panewslab.com/en/articles/019eac8d-9ed4-73bf-b309-c9a3eabbeea0",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_209774",
+          "title": "Digital Asset Raises $355M in a16z-Led Round at $2B Valuation",
+          "url": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_178702",
+          "title": "Tether Expands AI push with Lead Role in NEURA Robotics Raise",
+          "url": "https://cointelegraph.com/news/tether-backs-neura-robotics-in-up-to-14b-round-for-autonomous-payments",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_219147",
+          "title": "Avalanche Treasury Company (AVAT) officially listed on Nasdaq.",
+          "url": "https://www.panewslab.com/en/articles/019eb76e-c6ce-71ea-b55a-11df29bf1df5",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_205803",
+          "title": "The CME launches a futures contract on Bitcoin, ether, solana and XRP",
+          "url": "https://www.cointribune.com/en/the-cme-launches-a-futures-contract-on-bitcoin-ether-solana-and-xrp/",
+          "source": "Fenelon LAMSASIRI",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_248104",
+          "title": "BlackRock Prepares the Launch of BITA, its Bitcoin Income ETF",
+          "url": "https://www.cointribune.com/en/blackrock-prepares-the-launch-of-bita-its-bitcoin-income-etf/",
+          "source": "Ariela RASOANJANAHARY",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_57888",
+          "title": "Bitmine adds 127,000 ether, bringing treasury to 5.54 million ETH as Tom Lee calls crypto selloff 'superficial'",
+          "url": "https://www.theblock.co/post/403981/bitmine-adds-127000-ether-bringing-treasury-to-5-54-million-eth-as-tom-lee-calls-crypto-selloff-superficial",
+          "source": "Naga Avan-Nomayo",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_57503",
+          "title": "BitMine added 127,000 ETH in a single week, bringing its holdings to over 5.54 million ETH, representing 4.59% of the total Ethereum supply.",
+          "url": "https://www.panewslab.com/en/articles/019ea73b-0580-70b1-ae85-d568bc69b01b",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_55260",
+          "title": "TON: Pantera's Largest Investment Ever ",
+          "url": "https://tokenterminal.com/resources/interview/pantera-ton-investment",
+          "source": "tokenterminal.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_367781",
+          "title": "纳斯达克上市公司Tron Inc披露TRX持仓量突破7亿枚",
+          "url": "https://www.panewslab.com/en/articles/019ec6a0-103e-75ba-a530-b271017ffe6d",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_165387",
+          "title": "Tenev says Robinhood won underwriter approval as crypto markets front-run mega IPOs1h",
+          "url": "https://cointelegraph.com/news/robinhood-secures-underwriter-status-crypto-front-mega-ipo",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_135915",
+          "title": "The Bitcoin L2 network Botanix will be gradually shut down, and users need to withdraw their assets before July 9th.",
+          "url": "https://www.panewslab.com/en/articles/019eaf2b-fe1e-76b9-9ab6-7751b7553310",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_138131",
+          "title": "昨夜今晨重要资讯（6月9日-6月10日）",
+          "url": "https://www.panewslab.com/en/articles/019eaf42-1e6d-74c1-9c8c-1eb69a8cf647",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_181395",
+          "title": "Iranian forces target US ships near Strait of Hormuz with missiles and drones, sparking crypto volatility and a Bitcoin insurance scheme",
+          "url": "https://cryptobriefing.com/iran-us-hormuz-strikes-bitcoin-insurance/",
+          "source": "Editorial Team",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_181396",
+          "title": "Iran reports missile strikes on US-linked targets in Iraq, rattling crypto markets",
+          "url": "https://cryptobriefing.com/iran-missile-strikes-iraq-crypto-markets/",
+          "source": "Editorial Team",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_166966",
+          "title": "Mastercard launches AP4M payment infrastructure, enabling AI agents to use stablecoins for small-amount settlements.",
+          "url": "https://www.panewslab.com/en/articles/019eb22d-4833-7008-89f4-89f9688cefd2",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_359940",
+          "title": "Kraken becomes the official cryptocurrency exchange for the 2026 FIFA World Cup.",
+          "url": "https://www.panewslab.com/en/articles/019ec5e3-c284-73b3-abff-5defee3ae7aa",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_206195",
+          "title": "Visa says stablecoins are 'reshaping the back end' of commerce as it expands AI, tokenization efforts",
+          "url": "https://www.theblock.co/post/404376/visa-stablecoins-reshaping-back-end-of-commerce",
+          "source": "Brian Danga",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_198033",
+          "title": "Crypto: Mastercard Opens the Era of Autonomous AI Payments",
+          "url": "https://www.cointribune.com/en/crypto-mastercard-opens-the-era-of-autonomous-ai-payments/",
+          "source": "Ariela RASOANJANAHARY",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_166245",
+          "title": "Mastercard unveils Agent Pay for Machines to support autonomous AI transactions, including stablecoins",
+          "url": "https://www.theblock.co/post/404288/mastercard-agent-pay-machines-support-autonomous-ai-transactions-stablecoins",
+          "source": "Daniel Kuhn",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_159264",
+          "title": "Exclusive: Mastercard launches protocol to let AI agents pay each other, send micropayments",
+          "url": "https://fortune.com/2026/06/10/mastercard-ai-payments-protocol-launch-agentic-finance/",
+          "source": "Ben Weiss",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_57500",
+          "title": "Revolut plans to proceed with the sale of its secondary stake at a valuation of $115 billion.",
+          "url": "https://www.panewslab.com/en/articles/019ea757-2fd4-7098-a441-06dbe88aa946",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_253680",
+          "title": "The X platform will allow users to trade SPCX through brokers such as Coinbase and Robinhood.",
+          "url": "https://www.panewslab.com/en/articles/019ebafa-eab8-724e-b970-7d6c4f95ad96",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_216451",
+          "title": "MassPay Taps Coinbase to Expand Stablecoin Payouts",
+          "url": "https://cointelegraph.com/news/masspay-coinbase-partner-stablecoin-cross-border-payments",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_201365",
+          "title": "Binance Futures will launch 6 USDT-margined TradFi perpetual contracts today.",
+          "url": "https://www.panewslab.com/en/articles/019eb598-96f7-748f-addc-aed138b76a02",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_122607",
+          "title": "OKX Launches X-Perps on the \"Magnificent 7\" Stocks - Gold, Silver and Oil for European Traders",
+          "url": "https://www.cointribune.com/en/okx-launches-x-perps-on-the-magnificent-7-stocks-gold-silver-and-oil-for-european-traders/",
+          "source": "Theia Patin",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_391382",
+          "title": "The EU's MiCA transition period will end on July 1, and approximately 75% of crypto companies will face elimination.",
+          "url": "https://www.panewslab.com/en/articles/019ec902-27d5-731f-8da2-2f906fe77d7c",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_349860",
+          "title": "美国SEC批准T. Rowe Price主动管理型加密ETF上市，最多可纳入15种加密资产",
+          "url": "https://www.panewslab.com/en/articles/019ec501-00d8-762f-aa85-4f11f81c5733",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_211995",
+          "title": "Japan crypto bill advances with ETF, tax reform path: Report2h, Japan crypto bill advances with ETF, tax reform path: ReportJapan’s Lower House reportedly passed a bill that would bring crypto under the country’s financial instruments framework, potentially opening the door to ETFs and lower tax treatment.",
+          "url": "https://cointelegraph.com/news/japan-crypto-bill-etf-tax-reform-path",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_200255",
+          "title": "The Japanese House of Representatives passed a bill to regulate cryptocurrencies under the same framework as stocks and reduce the tax rate to 20%.",
+          "url": "https://www.panewslab.com/en/articles/019eb585-5030-736c-b323-17f066bc6ba2",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_191373",
+          "title": "Coinbase approved to offer global crypto perpetual contracts in the United States",
+          "url": "https://www.panewslab.com/en/articles/019eb4a2-3804-711a-9a44-14562d6fc958",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_344262",
+          "title": "美国CFTC批准将永续式数字商品期货合约转换为真正的永续期货合约",
+          "url": "https://www.panewslab.com/en/articles/019ec43e-47bf-7238-9a59-f2803c2d6332",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_273765",
+          "title": "Sam Bankman loses his appeal: The Federal Court confirms his conviction for fraud",
+          "url": "https://www.cointribune.com/en/sam-bankman-loses-his-appeal-the-federal-court-confirms-his-conviction-for-fraud/",
+          "source": "Fenelon LAMSASIRI",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_265471",
+          "title": "Polish president vetoes crypto bill for third time ahead of MiCA deadline2h, Polish president vetoes crypto bill for third time ahead of MiCA deadlinePolish President Karol Nawrocki vetoed a bill to implement MiCA for the third time, just weeks before the end of the EU crypto framework's transitional period.",
+          "url": "https://cointelegraph.com/news/polish-president-vetoes-crypto-bill-third-time-mica-deadline",
+          "source": "cointelegraph.com",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_259645",
+          "title": "South Korea finance ministry says tokenized stocks are securities, not crypto assets, opening door to taxes: report",
+          "url": "https://www.theblock.co/post/404580/south-korea-finance-ministry-says-tokenized-stocks-are-securities-not-crypto-assets-opening-door-to-taxes-report",
+          "source": "Brian Danga",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_252090",
+          "title": "International sting shuts down $390M crypto money-laundering ring2h",
+          "url": "https://cointelegraph.com/news/international-sting-shuts-down-390m-crypto-money-laundering-ring",
+          "source": "cointelegraph.com",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_213969",
+          "title": "DOJ charges two in $389 million AudiA6 crypto laundering case",
+          "url": "https://www.theblock.co/post/404433/doj-charges-two-389-million-audia6-crypto-laundering-case",
+          "source": "Brian Danga",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_211994",
+          "title": "Hungary to reverse crypto trading crackdown after EU scrutiny",
+          "url": "https://cointelegraph.com/news/hungary-decriminalize-crypto-trading-prison-terms",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_206193",
+          "title": "Japan's parliament advances bill to classify cryptocurrencies as financial instruments",
+          "url": "https://www.theblock.co/post/404402/japans-advances-bill-classify-crypto-financial-instruments",
+          "source": "Timmy Shen",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_206915",
+          "title": "The Hungarian government will lift criminal penalties for cryptocurrency transactions and rescind regulations tightened during the tenure of its former prime minister.",
+          "url": "https://www.panewslab.com/en/articles/019eb636-dc5e-719b-8022-72d359bd14c1",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_161809",
+          "title": "CFTC unveils sweeping rule proposal for fast-growing prediction markets",
+          "url": "https://www.theblock.co/post/404258/cftc-unveils-sweeping-rule-proposal-fast-growing-prediction-markets",
+          "source": "Sarah Wynn",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_178703",
+          "title": "CFTC Proposes Prediction Market Rules Favoring Sports Contracts",
+          "url": "https://cointelegraph.com/news/cftc-prediction-market-rules-sports-election-contracts",
+          "source": "@cointelegraph",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_154296",
+          "title": "EU proposes ban on 11 crypto platforms in Russia sanctions push1h, EU proposes ban on 11 crypto platforms in Russia sanctions pushThe proposed measures would ban transactions on 11 crypto platforms and expand sanctions targeting networks accused of helping Russia evade restrictions.",
+          "url": "https://cointelegraph.com/news/eu-russia-sanctions-11-crypto-platforms",
+          "source": "cointelegraph.com",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_149225",
+          "title": "The New York State Department of Financial Services has released proposed rules for stablecoins, aligning them with the federal GENIUS Act.",
+          "url": "https://www.panewslab.com/en/articles/019eb068-2988-709f-bbe3-05cd0ccf4a56",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_147392",
+          "title": "EU proposes expanded sanctions on Russia-linked crypto platforms",
+          "url": "https://www.theblock.co/post/404207/eu-proposes-russia-crypto-sanction",
+          "source": "Danny Park",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_135916",
+          "title": "Russia's Ministry of Finance plans to restrict non-custodial crypto wallets, excluding retail investors.",
+          "url": "https://www.panewslab.com/en/articles/019eaf1c-0834-738b-8e23-8d09c65ae60a",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_111528",
+          "title": "Republicans on the House Tax Committee unveil six draft crypto tax bills.",
+          "url": "https://www.panewslab.com/en/articles/019eacd9-3509-744e-b521-49c9ed7f4931",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_96040",
+          "title": "The US FDIC plans to clarify that stablecoin holders will not be covered by deposit insurance.",
+          "url": "https://www.panewslab.com/en/articles/019eab46-086c-721a-81a6-dd078ffb3cfd",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_95573",
+          "title": "Over 200 crypto firms push Senate to pass CLARITY Act",
+          "url": "https://cointelegraph.com/news/over-200-crypto-firms-push-senate-to-pass-clarity-act",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_88938",
+          "title": "UK Proposes Limited Retail Fund Exposure to Crypto",
+          "url": "https://cointelegraph.com/news/uk-fca-floats-allowing-10-crypto-allocations-for-retail-funds",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_57506",
+          "title": "The UK is considering allowing mutual funds to allocate up to 10% of their assets to cryptocurrency ETNs.",
+          "url": "https://www.panewslab.com/en/articles/019ea724-b9e7-764b-ae10-e08f28301c06",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_56796",
+          "title": "UK FCA proposes allowing authorized funds to allocate up to 10% to crypto ETNs",
+          "url": "https://www.theblock.co/post/403957/uk-fca-proposes-allowing-authorized-funds-to-allocate-up-to-10-to-crypto-etns",
+          "source": "Naga Avan-Nomayo",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_57046",
+          "title": "Chinese court treats Bitcoin as property in 107 BTC memory theft case3h",
+          "url": "https://cointelegraph.com/news/man-who-memorized-wallet-mnemonic-jailed-in-china-for-107-btc-theft",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_391383",
+          "title": "The Philippines is tightening cryptocurrency regulations, prohibiting privacy coins from being listed on licensed exchanges.",
+          "url": "https://www.panewslab.com/en/articles/019ec8fc-b285-7069-8f37-0975b4e6f88a",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_310667",
+          "title": "香港持牌虚拟资产交易平台EX.IO获批分销传统投资产品及独立托管服务",
+          "url": "https://www.panewslab.com/en/articles/019ec080-a4e1-703f-a8f8-c3fd2bdef5e0",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_278254",
+          "title": "Hester Peirce Bids Farewell to the SEC After Nearly 30 Years",
+          "url": "https://thedefiant.io/news/people/hester-peirce-farewell-remarks-sec-project-crypto",
+          "source": "The Defiant Team",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_269296",
+          "title": "Zimbabwe requires crypto businesses to register and be subject to regulation, with an annual fee of $500.",
+          "url": "https://www.panewslab.com/en/articles/019ebc87-fcd2-72ca-865f-f8a2568f6dac",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_257024",
+          "title": "Predictive Markets: Gary Gensler Supports States Against the CFTC",
+          "url": "https://www.cointribune.com/en/predictive-markets-gary-gensler-supports-states-against-the-cftc/",
+          "source": "Eddy Senga",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_232031",
+          "title": "US lawmakers seek coordinated federal response to crypto theft and scams",
+          "url": "https://cointelegraph.com/news/doj-crypto-theft-task-force-proposed-by-bipartisan-lawmakers",
+          "source": "cointelegraph.com",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_196923",
+          "title": "The Central Bank of the Philippines stated that neither Binance nor its local partner BlockShoals possesses a VASP license.",
+          "url": "https://www.panewslab.com/en/articles/019eb520-a693-7512-813d-26beebb7e576",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_181392",
+          "title": "Coinbase urges Congress to scrap taxes on stablecoin spending",
+          "url": "https://crypto.news/coinbase-urges-congress-to-scrap-taxes-on-stablecoin-spending/",
+          "source": "@Lawrence_CN_TWT",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_170931",
+          "title": "Anchorage backs Treasury’s GENIUS AML rules, seeks secondary-market sanctions clarity2h, Anchorage backs Treasury’s GENIUS AML rules, seeks secondary-market sanctions clarity",
+          "url": "https://cointelegraph.com/news/anchorage-backs-treasurys-genius-aml-rules-seeks-secondary-market-sanctions-clarity",
+          "source": "cointelegraph.com",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_162528",
+          "title": "The US CFTC has released a draft of new rules for prediction markets, proposing to restrict contracts related to events such as war and terrorism.",
+          "url": "https://www.panewslab.com/en/articles/019eb1cf-94c3-709d-91a6-eaa36697752a",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_134803",
+          "title": "Russia's State Duma passed the first reading of the cryptocurrency tax reform bill.",
+          "url": "https://www.panewslab.com/en/articles/019eaf18-2f02-7719-ae22-43cf7c35cc2a",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_119673",
+          "title": "Hyperliquid advocate and Paradigm urge US to revise proposed anti-money laundering rule",
+          "url": "https://www.theblock.co/post/404159/hyperliquid-advocate-paradigm-urge-us-revise-proposed-anti-money-laundering-rule",
+          "source": "RT Watson",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_117457",
+          "title": "Warren calls weakened CFTC a 'recipe for disaster' as Congress advances crypto legislation",
+          "url": "https://www.theblock.co/post/404147/warren-weakened-cftc-recipe-disaster-congress-advances-crypto-legislation",
+          "source": "Kyle Baird",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_115241",
+          "title": "'Third leg of the stool:' House lawmakers set to debate crypto tax bills as questions still loom",
+          "url": "https://www.theblock.co/post/404146/third-leg-stool-house-lawmakers-to-debate-crypto-tax-bills-questions-still-loom",
+          "source": "Sarah Wynn",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_181384",
+          "title": "AI identifies critical bug in Zcash that could have enabled unlimited counterfeit minting",
+          "url": "https://cryptobriefing.com/ai-identifies-zcash-bug-defi-impact/",
+          "source": "Editorial Team",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_83157",
+          "title": "Wallets linked to Humanity Protocol drained for over $32 million, token plunges 89%: onchain analyst",
+          "url": "https://www.theblock.co/post/404053/humanity-protocol-exploit",
+          "source": "Danny Park",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_346500",
+          "title": "Humanity released its security incident investigation report: the mainnet bridge was unaffected, and the attack tools and methods were characteristic of North Korean hackers.",
+          "url": "https://www.panewslab.com/en/articles/019ec48b-4b2e-74ed-b95f-a91f0bb038f0",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_249221",
+          "title": "An international joint operation dismantled a cryptocurrency money laundering ring involved in transactions totaling $390 million.",
+          "url": "https://www.panewslab.com/en/articles/019eba84-03bf-74bb-9ec9-c9c6e80ce4c0",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_134804",
+          "title": "Humanity is developing a recovery plan for affected users and offering a 1 million USDT reward for information leading to their recovery.",
+          "url": "https://www.panewslab.com/en/articles/019eaf14-4414-70b6-9821-bc38f7ad7983",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_101570",
+          "title": "The suspected \"private key leak\" incident involving H tokens has continued for over 13 hours without any sign of abating.",
+          "url": "https://www.panewslab.com/en/articles/019eabbf-67f4-74f8-be8f-34a87fb1b409",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_127688",
+          "title": "Unverified DeFi contracts linked to $36.7M in losses: ChainalysisChainalysis identified a growing attack pattern targeting unverified DeFi contracts, with hackers stealing $36.7 million across four exploits since January.",
+          "url": "https://cointelegraph.com/news/ai-powered-attackers-stole-367m-from-unverified-defi-contracts-chainalysis",
+          "source": "cointelegraph.com",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_83875",
+          "title": "H tokens fell 89.2% in 24 hours due to the attack.",
+          "url": "https://www.panewslab.com/en/articles/019ea9e8-3d34-718e-a576-ba3e8dc2d24b",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_54605",
+          "title": "ZEC rebounds 42% as ZODL founder details two-step emergency upgrade",
+          "url": "https://www.theblock.co/post/403929/zec-rebounds-zodl-founder-details-response",
+          "source": "Timmy Shen",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_391381",
+          "title": "After the SIREN controller dumped the tokens, they bought back the remaining tokens at a low price, resulting in a 96% price drop due to the turnover of 680 million tokens.",
+          "url": "https://www.panewslab.com/en/articles/019ec90a-36d7-73c8-9795-3f5bb5a95710",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_325611",
+          "title": "Coinbase quantum report flags exchange cold wallets among millions of bitcoin exposed by address reuse",
+          "url": "https://www.theblock.co/post/404685/coinbase-quantum-report-flags-exchange-cold-wallets-among-millions-of-bitcoin-exposed-by-address-reuse",
+          "source": "theblock.co",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_252564",
+          "title": "ZachXBT: The address frozen by Tether containing 72 million USDT is linked to the address that received 120 million USDT yesterday.",
+          "url": "https://www.panewslab.com/en/articles/019ebae1-34c8-700e-bb02-85eb6c6bdabf",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_240302",
+          "title": "Coinbase urges blockchain developers to begin quantum-resistant migration preparations immediately.",
+          "url": "https://www.panewslab.com/en/articles/019eb979-3e14-71df-8552-ed330328136d",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_209773",
+          "title": "AI models led to a ‘vulnerability apocalypse’ in crypto security: Immunefi CEO",
+          "url": "https://cointelegraph.com/news/frontier-ai-models-vulnerability-apocalypse-crypto-security-immunefi-ceo",
+          "source": "cointelegraph.com",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_150330",
+          "title": "Syscoin: The SYS tokens previously compromised have been returned to the redemption address.",
+          "url": "https://www.panewslab.com/en/articles/019eb08a-5ab8-705f-b8ba-377980fbee40",
+          "source": "PA一线",
+          "sentiment": "neutral"
+        },
+        {
+          "id": "art_143676",
+          "title": "The crypto community is concerned that the security mechanisms of Anthropic's Claude Fable 5 could be exploited by hackers.",
+          "url": "https://www.panewslab.com/en/articles/019eafee-4040-754b-b427-a8fcc0527c25",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        },
+        {
+          "id": "art_109314",
+          "title": "Humanity \"hackers\" issued 1 billion new H tokens and continued to sell them, causing the token price to drop to approximately $0.0003.",
+          "url": "https://www.panewslab.com/en/articles/019eac98-3f26-7468-942d-b9c1c0bae852",
+          "source": "PA一线",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_135912",
+          "title": "Japan's three major banks plan to jointly issue a stablecoin by March 2027.",
+          "url": "https://www.panewslab.com/en/articles/019eaf36-5891-74bc-9f50-5f45b4ce9859",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_107100",
+          "title": "Japan's three major banks plan to jointly issue a stablecoin in fiscal year 2026.",
+          "url": "https://www.panewslab.com/en/articles/019eac57-392d-70bb-afaf-cac5bb0f7de2",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_94935",
+          "title": "HSBC: In addition to Hong Kong dollar stablecoins, it is also considering offering stablecoins denominated in non-Hong Kong dollar currencies.",
+          "url": "https://www.panewslab.com/en/articles/019eab19-69f1-73eb-b6cf-18092f13376d",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_268181",
+          "title": "The ECB accelerates on the digital euro with a banking test in Italy",
+          "url": "https://www.cointribune.com/en/the-ecb-accelerates-on-the-digital-euro-with-a-banking-test-in-italy/",
+          "source": "Lydie Musekwa",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_254794",
+          "title": "Iran's $12 billion in unfrozen assets may be paid for via the Trump-backed stablecoin USD1.",
+          "url": "https://www.panewslab.com/en/articles/019ebb22-59d5-7279-8fc4-be1e3013911f",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_238072",
+          "title": "Fidelity's stablecoin FIDD has chosen Uniswap as its liquidity infrastructure.",
+          "url": "https://www.panewslab.com/en/articles/019eb93f-8c50-704b-9921-b0a79df1493f",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_246990",
+          "title": "Circle has issued a total of 1 billion USDC on Solana in the past 24 hours.",
+          "url": "https://www.panewslab.com/en/articles/019eba5a-0d31-743a-8be0-e686a28bde0c",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_246084",
+          "title": "Is Tether the Coppernose of our time?",
+          "url": "https://www.ft.com/content/bcdeac73-5855-4d8b-b512-5ba65a2e01ad",
+          "source": "Stephen Cecchetti,Kim Schoenholtz",
+          "sentiment": "bearish"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_262991",
+          "title": "Ethena Labs to allocate $250 million to Securitize's Tokenized AAA CLO Fund as it deploys on Solana",
+          "url": "https://www.theblock.co/post/404602/ethena-labs-to-allocate-250-million-to-securitizes-tokenized-aaa-clo-fund-as-it-deploys-on-solana",
+          "source": "Daniel Kuhn",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_261010",
+          "title": "SpaceX tokenized IPO campaign draws $557M on Binance ahead of debut1h",
+          "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_200643",
+          "title": "Figure to acquire Kiavi for $717 million to expand RWA tokenization network",
+          "url": "https://www.theblock.co/post/404373/figure-kiavi-acquisition",
+          "source": "Timmy Shen",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_163638",
+          "title": "Benchmark: Securitize's NYSE IPO imminent, target price $16",
+          "url": "https://www.panewslab.com/en/articles/019eb1d6-7309-77cc-b144-a86dbf9110df",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_55225",
+          "title": "BlackRock’s new tokenized fund puts Ethereum’s institutional thesis to the test ",
+          "url": "https://tokenterminal.com/resources/newsletter/blackrock-s-new-tokenized-fund-puts-ethereum-s-institutional-thesis-to-the-test",
+          "source": "tokenterminal",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_264105",
+          "title": "Exodus, Ondo launch tokenized markets with 200-plus stocks and ETFs on Solana",
+          "url": "https://www.theblock.co/post/404622/exodus-launches-tokenized-markets-200-plus-stocks-etfs-on-solana",
+          "source": "Brian Danga",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_244035",
+          "title": "SEC's proposal to scrap key NMS rules a major unlock for tokenized US stocks: analysts",
+          "url": "https://www.theblock.co/post/404515/sec-proposal-major-unlock-tokenized-stocks",
+          "source": "Danny Park",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_243644",
+          "title": "Binance Instant Exchange has launched tokenized security bStocks.",
+          "url": "https://www.panewslab.com/en/articles/019eb9ed-3d2b-755f-b54a-4a950f08e1ea",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_232020",
+          "title": "Citi launches blockchain marketplace for private companies shares: ReportThe US banking giant's blockchain marketplace will offer tokenized depositary receipts of private company shares amid Wall Street's broad embrace of tokenized assets.",
+          "url": "https://cointelegraph.com/news/citi-launches-blockchain-marketplace-private-company-shares",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_215805",
+          "title": "Binance will launch five bStocks trading pairs, including Circle, Nvidia, and Tesla, in the early morning of June 12th.",
+          "url": "https://www.panewslab.com/en/articles/019eb722-c494-7784-bcaa-a6f5abab2d48",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_210633",
+          "title": "Citigroup to offer tokenized shares of private companies for wealthy and institutional clients: WSJ",
+          "url": "https://www.theblock.co/post/404422/citigroup-to-offer-tokenized-shares-of-private-companies-for-wealthy-and-institutional-clients-wsj",
+          "source": "Naga Avan-Nomayo",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_160950",
+          "title": "Equipment finance platform Trad.Fi to bring $650M in private credit onchain2h, Equipment finance platform Trad.Fi to bring $650M in private credit onchainTrad.Fi plans to bring up to $650 million in equipment-finance credit onchain, targeting a trillion-dollar US market still dominated by paperwork.",
+          "url": "https://cointelegraph.com/news/equipment-finance-tradfi-650m-private-credit-onchain",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_149223",
+          "title": "Kookmin Bank of Korea issues $100 million in blockchain digital bonds",
+          "url": "https://www.panewslab.com/en/articles/019eb070-f4bf-72c9-b8e1-1502a47b02e7",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_84981",
+          "title": "Analysis: Crypto industry growth is no longer tied to Bitcoin price; institutions are focusing on long-term utility and infrastructure.",
+          "url": "https://www.panewslab.com/en/articles/019eaa00-6088-74fd-8e0c-64c4087c008d",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_74588",
+          "title": "Active tokenized RWAs surge almost 600% despite crypto pullback: Binance1h",
+          "url": "https://cointelegraph.com/news/tokenized-rwas-stocks-gold-real-estate-institutional-adoption-binance",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_74599",
+          "title": "Bybit to offer tokenized SpaceX IPO access through xStocks",
+          "url": "https://cointelegraph.com/news/bybit-launches-tokenized-ipo-access-through-xstocks-with-spacex-debut",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_368904",
+          "title": "“代币化宝可梦卡”交易激增：5月Solana等链上销售额达2.3亿美元",
+          "url": "https://www.panewslab.com/en/articles/019ec6bb-759d-7082-9ac1-d04b8bbaf96d",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_293880",
+          "title": "MSX listed SpaceX's US stock token $SPCX.M, with the price reaching a high of $176.52 on the first day. Pre-IPO subscriptions have been fully distributed.",
+          "url": "https://www.panewslab.com/en/articles/019ebef2-5130-76b7-b438-388a99078fe4",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_272171",
+          "title": "Crypto Biz: SpaceX fuels tokenization’s next boom2h",
+          "url": "https://cointelegraph.com/news/tokenized-rwas-kraken-spacex-ipo-prediction-markets-sbf-trump-pardon",
+          "source": "cointelegraph.com",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_203585",
+          "title": "DBS Bank Singapore will offer tokenized gold trading to retail clients.",
+          "url": "https://www.panewslab.com/en/articles/019eb5c0-5990-754f-a48f-208d23ee6e20",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_230916",
+          "title": "Archax Unveils Real-Time Cash Flows for Tokenized Securities on Hedera",
+          "url": "https://cointelegraph.com/news/archax-launches-real-time-yield-payments-for-tokenized-securities-on-hedera",
+          "source": "@cointelegraph",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_184719",
+          "title": "Bitwise CIO: Financial advisors' interest in stablecoins and tokenization has surpassed that of Bitcoin.",
+          "url": "https://www.panewslab.com/en/articles/019eb3fa-cb29-7747-8cf6-41107029111b",
+          "source": "PA一线",
+          "sentiment": "bullish"
+        },
+        {
+          "id": "art_121499",
+          "title": "Major Financial Firms Expand Their Tokenization Strategies",
+          "url": "https://www.cointribune.com/en/major-financial-firms-expand-their-tokenization-strategies/",
+          "source": "Luc Jose Adjinacou",
+          "sentiment": "bullish"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Institutional Web3 is no longer a theory—it is being funded in the billions. This week, we saw a massive capital influx into on-chain credit (Morpho) and bank-led tokenization (Digital Asset), alongside a landmark $557M tokenized IPO for SpaceX. The signal is clear: the market is moving away from speculative DeFi primitives toward the 'plumbing' of global finance. However, this transition isn't without friction. The looming MiCA deadline in the EU and critical AI-driven vulnerabilities in legacy protocols like Zcash remind us that compliance and security are the only real moats in this industry. We are entering a phase of violent consolidation where only the licensed and the secure will survive. The question for founders is no longer 'can we build it,' but 'can we institutionalize it?'\n\nIs the industry ready for the consolidation MiCA will trigger, or will it stifle innovation in Europe? #Web3 #Tokenization #VentureCapital #MiCA"
+}
