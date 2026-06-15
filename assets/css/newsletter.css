@@ -619,7 +619,7 @@
   padding: 6px 10px;
 }
 
-.curate-analyst:focus { outline: none; border-color: var(--nl-purple); }
+.curate-analyst:focus { border-color: var(--nl-purple); }
 
 .curate-saved-link {
   margin-left: auto;
@@ -680,7 +680,7 @@
   padding: 6px 10px;
 }
 
-.curate-note:focus, .curate-theme:focus { outline: none; border-color: var(--nl-purple); }
+.curate-note:focus, .curate-theme:focus { border-color: var(--nl-purple); }
 
 .curate-save, .curate-cancel {
   border: none;
@@ -756,3 +756,37 @@ a.saved-item-title:hover { color: var(--nl-purple-light); }
 .saved-item-links { display: flex; gap: 14px; margin-top: 8px; }
 
 .saved-item-link { font-size: 12px; font-weight: 500; color: var(--nl-purple-light); }
+
+/* --- Audit batch 1: a11y focus, light-theme contrast, tape placeholder, sync status --- */
+
+/* Visible keyboard focus across the whole site (was previously absent; curate
+   inputs even removed the outline). Mouse clicks don't trigger :focus-visible. */
+:focus-visible {
+  outline: 2px solid var(--bw-accent-bright, #3b6ef5);
+  outline-offset: 2px;
+}
+
+/* Light theme: #a78bfa purple text failed WCAG AA (~2.3:1). Darker purples that
+   clear AA on the light card/background; scoped to light theme only so dark is
+   unchanged. */
+[data-theme="light"] {
+  --nl-purple: #6d28d9;
+  --nl-purple-light: #5b21b6;
+}
+[data-theme="light"] .watch-meta { color: var(--text-muted); }
+
+/* Tape change cell for non-numeric placeholders (e.g. "N/A"): neutral, no arrow,
+   no green/red — so unavailable data can't read as a positive move. */
+.tape-change.flat { color: var(--text-muted); font-weight: 500; }
+
+/* Curation sync status (shown when the shortlist webhook can't be reached, so a
+   transient failure doesn't silently look like "nothing saved"). */
+.curate-status { font-size: 12px; color: var(--bw-red); display: inline-flex; align-items: center; gap: 8px; }
+.curate-status:empty { display: none; }
+.curate-status button {
+  font: inherit; font-size: 12px; font-weight: 600;
+  color: var(--nl-purple-light); background: transparent;
+  border: 1px solid var(--bw-border); border-radius: 6px;
+  padding: 2px 10px; cursor: pointer;
+}
+.curate-status button:hover { border-color: var(--nl-purple); }

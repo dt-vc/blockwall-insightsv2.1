@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Local-only test harnesses (never deploy; can write to the live webhook)
+_test_*.html
+
+# Local-only renderer acceptance fixture (fictional content; intentionally
+# excluded from the published manifest)
+data/daily/2026-06-09.json

@@ -101,8 +101,23 @@
       h('span', { class: 'curate-bar-label' }, '★ Shortlist'),
       h('span', { class: 'curate-bar-hint' }, 'Analyst'),
       input,
+      h('span', { class: 'curate-status', role: 'status', 'aria-live': 'polite' }),
       opts.showSavedLink ? h('a', { class: 'curate-saved-link', href: 'saved.html' }, 'View Saved →') : null
     );
+  }
+
+  /* Non-blocking status in the bar. message=null clears it. */
+  function setStatus(bar, message, onRetry) {
+    var el = bar.querySelector('.curate-status');
+    if (!el) return;
+    el.textContent = '';
+    if (!message) return;
+    el.appendChild(document.createTextNode('⚠ ' + message + ' '));
+    if (onRetry) {
+      var btn = h('button', { type: 'button' }, 'Retry');
+      btn.addEventListener('click', onRetry);
+      el.appendChild(btn);
+    }
   }
 
   function requireAnalyst(bar) {
@@ -123,7 +138,7 @@
       if (!item || !item.id) return;
       var theme = (item.themes && item.themes[0]) ||
         ((extra.category || item.category || '')).toLowerCase();
-      map[item.id] = {
+      var incoming = {
         title: extra.title || item.title || '',
         url: item.url || null,
         // primary_source = the clean publication name (e.g. "The Block").
@@ -133,6 +148,18 @@
         category: item.category || extra.category || null,
         theme: theme
       };
+      var existing = map[item.id];
+      if (!existing) { map[item.id] = incoming; return; }
+      // Same id appears in more than one section (real production editions reuse
+      // an article id across top_signals/deals/all_resources). Sections are added
+      // richest-first, so MERGE keeping each existing non-empty field rather than
+      // letting a later, sparser section (e.g. all_resources) blank out a
+      // descriptive title/category captured earlier. One logical save per id.
+      existing.title = existing.title || incoming.title;
+      existing.url = existing.url || incoming.url;
+      existing.primary_source = existing.primary_source || incoming.primary_source;
+      existing.category = existing.category || incoming.category;
+      existing.theme = existing.theme || incoming.theme;
     }
     (edition.top_signals || []).forEach(function (s) { add(s, {}); });
     (edition.deals || []).forEach(function (d) {
@@ -176,8 +203,11 @@
           }
         });
         Object.keys(items).forEach(function (id) { markSaved(id, !!savedSet[id]); });
+        setStatus(bar, null);
       }).catch(function (err) {
         if (global.console) console.error('bw-curate: could not load saved state', err);
+        // Surface it: a failed hydrate must NOT silently look like "nothing saved".
+        setStatus(bar, "Couldn't sync your shortlist — stars may be out of date.", refreshSavedState);
       });
     }
 
@@ -221,11 +251,13 @@
         }).then(function () {
           savedSet[itemId] = true;
           markSaved(itemId, true);
+          setStatus(bar, null);
           closePanels();
         }).catch(function (err) {
           saveBtn.disabled = false;
           saveBtn.textContent = 'Retry';
           if (global.console) console.error('bw-curate: save failed', err);
+          setStatus(bar, "Save didn't reach the server — not saved. Try again.");
         });
       }
 
@@ -254,9 +286,11 @@
           star.disabled = false;
           delete savedSet[itemId];
           markSaved(itemId, false);
+          setStatus(bar, null);
         }).catch(function (err) {
           star.disabled = false;
           if (global.console) console.error('bw-curate: unsave failed', err);
+          setStatus(bar, "Couldn't remove that item — still saved. Try again.");
         });
       } else {
         openPanel(host, itemId);

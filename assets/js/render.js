@@ -176,14 +176,22 @@
   function renderTape(snapshot) {
     if (!snapshot || !nonEmpty(snapshot.items)) return null;
     var items = snapshot.items.map(function (item) {
-      var hasChange = item.change_24h !== null && item.change_24h !== undefined && item.change_24h !== '';
-      var changeStr = hasChange ? String(item.change_24h) : '';
-      var direction = item.direction || (/^[-−]/.test(changeStr) ? 'down' : 'up');
+      var raw = (item.change_24h === null || item.change_24h === undefined) ? '' : String(item.change_24h);
+      // Strip a stray leading sentiment bullet the upstream sometimes prepends ("● N/A").
+      var changeStr = raw.replace(/^[\s•·●●]+/, '').trim();
+      // Only treat it as a real delta (arrow + up/down color) when it STARTS with a
+      // number/sign — so placeholders like "N/A" or "N/A (4W: up)" render as neutral
+      // text instead of a misleading green up-tick.
+      var numeric = /^[+\-−]?[\d.,]/.test(changeStr);
+      var direction = (numeric && (item.direction === 'up' || item.direction === 'down'))
+        ? item.direction
+        : (/^[-−]/.test(changeStr) ? 'down' : 'up');
+      var changeClass = numeric ? (direction === 'down' ? 'down' : 'up') : 'flat';
       return h('div', { class: 'tape-item' },
         h('div', { class: 'tape-label' }, item.label),
         h('div', { class: 'tape-value' }, item.value),
-        hasChange ? h('div', { class: 'tape-change ' + (direction === 'down' ? 'down' : 'up') },
-          (direction === 'down' ? '▾ ' : '▴ ') + changeStr
+        changeStr ? h('div', { class: 'tape-change ' + changeClass },
+          (numeric ? (direction === 'down' ? '▾ ' : '▴ ') : '') + changeStr
         ) : null
       );
     });
