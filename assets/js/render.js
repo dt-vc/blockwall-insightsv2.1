@@ -445,6 +445,18 @@
     ));
   }
 
+  /* Graceful state when an edition declares a newer format than this site supports,
+     instead of a generic load error. */
+  function renderUpdateNeeded(root, version, archiveHref) {
+    root.innerHTML = '';
+    append(root, h('div', { class: 'nl-error' },
+      h('h3', null, 'This edition needs an updated site'),
+      h('p', null, 'It was published in a newer format (schema v' + version +
+        ') than this page understands. Try refreshing; if it persists, the site needs an update.'),
+      h('a', { href: archiveHref, class: 'story-link' }, 'Browse the archive →')
+    ));
+  }
+
   /* ---------- Entry point ---------- */
 
   function load(options) {
@@ -467,8 +479,17 @@
         return response.json();
       })
       .then(function (edition) {
-        if (edition.schema !== SCHEMA_VERSION) {
-          throw new Error('Unsupported schema version: ' + edition.schema);
+        // Version handshake. Editions carry `schema` (integer) today; the pipeline
+        // may later add/rename to `schema_version`. Honor whichever is present:
+        // schema_version ?? schema. A newer-than-supported version degrades to a
+        // clear "update needed" message instead of the generic load error.
+        var declared = (edition.schema_version != null) ? edition.schema_version : edition.schema;
+        if (typeof declared === 'number' && declared > SCHEMA_VERSION) {
+          renderUpdateNeeded(root, declared, archiveHref);
+          return;
+        }
+        if (declared !== SCHEMA_VERSION) {
+          throw new Error('Unsupported schema version: ' + declared);
         }
         if (edition.date_display) {
           if (dateEl) dateEl.textContent = edition.date_display;
