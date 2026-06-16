@@ -134,12 +134,27 @@
 
   function indexEdition(edition) {
     var map = {};
+    // Strip a leading junk prefix from a saved title: an emoji/label lead
+    // ("🟪 NEWS:") or a malformed "LABEL :" with a space before the colon
+    // ("Crypto :"). Leaves ordinary headlines untouched — including ones that
+    // start with "$", a quote, or a real "Word:" topic (e.g. "Bitcoin:", "TON:")
+    // — then trims surrounding whitespace.
+    function cleanTitle(t) {
+      return String(t || '')
+        .replace(/^(?:[\p{Extended_Pictographic}️‍]+\s*)(?:[A-Za-z][A-Za-z ]{0,14}:\s*)?/u, '')
+        .replace(/^[A-Za-z][A-Za-z]{0,14}\s+:\s*/u, '')
+        .trim();
+    }
     function add(item, extra) {
       if (!item || !item.id) return;
       var theme = (item.themes && item.themes[0]) ||
         ((extra.category || item.category || '')).toLowerCase();
       var incoming = {
-        title: extra.title || item.title || '',
+        // Title selection (resolved in the loop below): carry the article HEADLINE
+        // here and the composed deal label separately, so a real headline is always
+        // preferred over "company · amount · round" regardless of section order.
+        title: item.title || '',
+        dealLabel: extra.dealLabel || '',
         url: item.url || null,
         // primary_source = the clean publication name (e.g. "The Block").
         // It lives in the item's `source` field; the item's own `primary_source`
@@ -156,6 +171,7 @@
       // letting a later, sparser section (e.g. all_resources) blank out a
       // descriptive title/category captured earlier. One logical save per id.
       existing.title = existing.title || incoming.title;
+      existing.dealLabel = existing.dealLabel || incoming.dealLabel;
       existing.url = existing.url || incoming.url;
       existing.primary_source = existing.primary_source || incoming.primary_source;
       existing.category = existing.category || incoming.category;
@@ -163,12 +179,20 @@
     }
     (edition.top_signals || []).forEach(function (s) { add(s, {}); });
     (edition.deals || []).forEach(function (d) {
-      add(d, { title: [d.company, d.amount, d.round].filter(Boolean).join(' · ') });
+      add(d, { dealLabel: [d.company, d.amount, d.round].filter(Boolean).join(' · ') });
     });
     (edition.on_the_radar || []).forEach(function (r) { add(r, {}); });
     (edition.worth_a_read || []).forEach(function (w) { add(w, {}); });
     (edition.all_resources || []).forEach(function (group) {
       (group.items || []).forEach(function (i) { add(i, { category: group.category }); });
+    });
+    // Resolve the saved title: cleaned article headline preferred; the composed
+    // deal label is the ONLY fallback, so a deal-only item is never blank. Then
+    // drop the scratch field so the entry shape is unchanged.
+    Object.keys(map).forEach(function (id) {
+      var e = map[id];
+      e.title = cleanTitle(e.title) || cleanTitle(e.dealLabel) || e.dealLabel || '';
+      delete e.dealLabel;
     });
     return map;
   }
