@@ -13,12 +13,14 @@
   var WEBHOOK_BASE = "https://blockwall.app.n8n.cloud";
   var CURATE_URL = WEBHOOK_BASE + "/webhook/bw-curate";
   var CURATED_URL = WEBHOOK_BASE + "/webhook/bw-curated";
+  var SNAPSHOT_URL = "data/curated.json";   // nightly snapshot; RELATIVE (subpath GitHub Pages host)
   var AKEY = "bw-analyst";
 
   var rows = null;        // null = not loaded yet; [] = loaded-empty
   var loadP = null;       // in-flight GET
   var curEd = null;       // current edition id (edition pages)
   var curCad = null;      // current cadence (daily/weekly/monthly)
+  var snapshot = false;   // true when rows came from the static SNAPSHOT_URL fallback
   var subs = [];
 
   function notify() { subs.forEach(function (f) { try { f(rows || []); } catch (e) {} }); }
@@ -27,14 +29,24 @@
   function eq(a, b) { return String(a) === String(b); }
   function inferCadence(id) { id = id || ""; if (/-W\d/i.test(id)) return "weekly"; if (/^\d{4}-\d{2}-\d{2}/.test(id)) return "daily"; if (/^\d{4}-\d{2}$/.test(id)) return "monthly"; return "daily"; }
 
+  /* Strip a leading emoji/label prefix from a saved title (e.g. "🟪 NEWS:" or the
+     malformed "LABEL :" space-before-colon variant); never blank -> fall back to raw. */
+  function cleanTitle(t) {
+    var raw = String(t || "");
+    var c = raw
+      .replace(/^(?:[\p{Extended_Pictographic}️‍]+\s*)(?:[A-Za-z][A-Za-z ]{0,14}:\s*)?/u, "")
+      .replace(/^[A-Za-z][A-Za-z]{0,14}\s+:\s*/u, "")
+      .trim();
+    return c || raw.trim();
+  }
+  function parseRows(body) { if (!body) return []; var a; try { a = JSON.parse(body); } catch (e) { return []; } return Array.isArray(a) ? a : []; }
+  function getLive() { return fetch(CURATED_URL).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); }).then(parseRows); }
+  function getSnapshot() { return fetch(SNAPSHOT_URL).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); }).then(parseRows); }
+  /* Live GET first (webhook returns EMPTY body, not [], when empty); on failure fall
+     back to the static nightly snapshot (read-only). Rejects only if BOTH fail. */
   function doGet() {
-    return fetch(CURATED_URL).then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      return r.text();
-    }).then(function (body) {
-      if (!body) return [];                 // webhook returns EMPTY body (not []) when empty
-      var a; try { a = JSON.parse(body); } catch (e) { return []; }
-      return Array.isArray(a) ? a : [];
+    return getLive().then(function (a) { snapshot = false; return a; }, function () {
+      return getSnapshot().then(function (a) { snapshot = true; return a; });
     });
   }
   function ensureLoaded() {
@@ -68,6 +80,7 @@
     refresh: refresh,
     ensureLoaded: ensureLoaded,
     all: function () { return rows || []; },
+    isSnapshot: function () { return snapshot; },
     /* analyst */
     getAnalyst: getAnalyst,
     setAnalyst: setAnalyst,
@@ -83,7 +96,7 @@
       var edId = item.edition_id || curEd || null;
       var row = {
         edition_id: edId, item_id: item.id, cadence: curCad || inferCadence(edId),
-        title: item.title || "", url: item.url || null, primary_source: item.source || null,
+        title: cleanTitle(item.title), url: item.url || null, primary_source: item.source || null,
         category: item.category || null,
         theme: (item.theme || "").trim().toLowerCase() || (item.category || "").toLowerCase() || "untagged",
         note: (item.note || "").trim(), analyst: analyst, saved_at: new Date().toISOString()

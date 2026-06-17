@@ -34,7 +34,8 @@
 
   var groupMode = "theme";
   function savedItem(row) {
-    var url = safeUrl(row.url), page = editionPage(row), mine = Store && (row.analyst || "") === Store.getAnalyst();
+    var snap = !!(Store && Store.isSnapshot && Store.isSnapshot());
+    var url = safeUrl(row.url), page = editionPage(row), mine = !snap && Store && (row.analyst || "") === Store.getAnalyst();
     var title = url ? h("a", { class: "saved-item__title", href: url, target: "_blank", rel: "noopener" }, row.title || "Saved item") : h("span", { class: "saved-item__title" }, row.title || "Saved item");
     var bits = [];
     if (row.analyst) bits.push(h("b", { class: "saved-item__by" }, row.analyst));
@@ -55,6 +56,7 @@
 
   function render() {
     var app = document.getElementById("app-body"); if (!app) return; app.innerHTML = "";
+    if (Store && Store.isSnapshot && Store.isSnapshot()) app.appendChild(h("div", { class: "saved-snapshot-note", role: "status" }, h("span", { class: "saved-snapshot-dot", "aria-hidden": "true" }), "Showing the last synced snapshot — live curation is unavailable, so saving is paused."));
     var items = Store ? Store.all() : [];
     if (!items.length) { app.appendChild(h("div", { class: "saved-empty" }, h("p", null, "Nothing saved yet. Star any signal, radar item or resource — add a note and theme — to build the team shortlist."), h("a", { class: "chip", href: "archive.html" }, "Browse the archive →"))); return; }
     var groups = {}, order = [];

@@ -253,3 +253,7 @@
 .dir-d .li-copy.is-copied { border-color:var(--up); color:var(--up); }
 .dir-d .li-copy svg { width:15px; height:15px; }
 
+/* Saved view: "last synced snapshot" (offline/read-only) indicator */
+.dir-d .saved-snapshot-note { display:flex; align-items:center; gap:9px; margin:0 0 var(--space-5); padding:11px 15px; border:1px solid var(--border-strong); border-radius:var(--radius-md); background:var(--surface-elevated); color:var(--text-secondary); font-size:.8125rem; line-height:1.45; }
+.dir-d .saved-snapshot-dot { width:8px; height:8px; border-radius:50%; background:var(--flat); flex-shrink:0; box-shadow:0 0 0 3px var(--flat-bg); }
+
