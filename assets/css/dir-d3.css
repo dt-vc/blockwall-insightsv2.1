@@ -1,0 +1,101 @@
+/* ============================================================================
+   Direction D — final pass: live tape, Signal Index gauge, starred 3-col rows,
+   pulse-dot wordmark, dateline, archive, saved view. Loads AFTER dir-d2.css.
+   ============================================================================ */
+
+/* ---------- pulse-dot wordmark (signature) ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .dir-d .wordmark .dot { animation:bw-pulse 3.4s ease-in-out infinite; }
+  .dir-d .masthead.is-stuck .wordmark .dot { animation-duration:2s; }
+}
+@keyframes bw-pulse { 0%,100%{ opacity:1; box-shadow:0 0 0 0 var(--accent-subtle); } 50%{ opacity:.55; box-shadow:0 0 9px 2px var(--accent-subtle); } }
+.dir-d .dateline { color:var(--text-muted); }
+
+/* ---------- live tape band (signature) ---------- */
+.dir-d .livetape { overflow:hidden; border-bottom:1px solid var(--hairline); background:rgba(11,13,16,.55); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); }
+.dir-d .livetape-track { display:flex; width:max-content; animation:lt-scroll 38s linear infinite; will-change:transform; }
+.dir-d .livetape:hover .livetape-track,.dir-d .livetape:focus-within .livetape-track { animation-play-state:paused; }
+@keyframes lt-scroll { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+@media (prefers-reduced-motion:reduce){ .dir-d .livetape-track { animation:none; } .dir-d .livetape { overflow-x:auto; } }
+.dir-d .lt-cell { display:inline-flex; align-items:center; gap:9px; padding:7px 22px; font-size:.75rem; white-space:nowrap; border-right:1px solid var(--hairline); }
+.dir-d .lt-dot { width:5px; height:5px; border-radius:1px; background:var(--accent); flex-shrink:0; }
+.dir-d .lt-label { color:var(--text-muted); font-weight:600; letter-spacing:.07em; text-transform:uppercase; }
+.dir-d .lt-price { color:var(--text-primary); font-weight:600; }
+.dir-d .lt-delta.up { color:var(--up); } .dir-d .lt-delta.down { color:var(--down); } .dir-d .lt-delta.flat { color:var(--flat); }
+
+/* ---------- Signal Index gauge (signature) ---------- */
+.dir-d .statsblk-row { display:flex; gap:var(--space-7); align-items:center; flex-wrap:wrap; }
+.dir-d .sigx { display:flex; gap:18px; align-items:center; }
+.dir-d .sigx-gauge { position:relative; width:156px; flex-shrink:0; }
+.dir-d .sigx-svg { width:156px; height:96px; display:block; }
+.dir-d .sigx-fill { transition:stroke-dashoffset 1.1s var(--ease-entrance); }
+.dir-d .sigx-read { position:absolute; left:0; right:0; bottom:2px; text-align:center; }
+.dir-d .sigx-num { font-family:"Satoshi"; font-weight:700; font-size:2rem; letter-spacing:-0.02em; display:block; line-height:1; }
+.dir-d .sigx-label { font-size:.625rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); font-weight:600; }
+.dir-d .sigx-meta { max-width:32ch; }
+.dir-d .sigx-meta .eyebrow { color:var(--accent-link); display:block; margin-bottom:5px; }
+.dir-d .sigx-meta p { margin:0; }
+.dir-d .statsblk .stats { flex:1; min-width:300px; }
+@media (max-width:760px){ .dir-d .statsblk-row { gap:var(--space-5); } }
+
+/* ---------- starred 3-col rows (rail + resources) ---------- */
+.dir-d .rail-row { grid-template-columns:52px 1fr auto; position:relative; align-items:start; gap:12px; }
+.dir-d .rail-row__body { min-width:0; display:block; }
+.dir-d .res-asrow { grid-template-columns:56px 1fr auto; position:relative; align-items:start; }
+.dir-d .res-asrow__txt { min-width:0; display:block; }
+.dir-d .rail-row__title::after,.dir-d .res-asrow__title::after { content:""; position:absolute; inset:0; z-index:1; }
+.dir-d .rail-row .star,.dir-d .res-asrow .star { position:relative; z-index:2; align-self:center; flex-shrink:0; }
+.dir-d .rail-row__title,.dir-d .res-asrow__title { display:block; }
+
+/* ---------- archive ---------- */
+.dir-d .archive-toolbar { position:sticky; top:0; z-index:30; background:rgba(11,13,16,.72); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border-bottom:1px solid var(--hairline); display:flex; gap:14px; align-items:center; padding:12px 0; flex-wrap:wrap; }
+.dir-d .archive-toolbar .spacer { flex:1; }
+.dir-d .archive-search { background:var(--surface-elevated); border:1px solid var(--glass-border); border-radius:var(--radius-pill); color:var(--text-primary); padding:8px 16px; font:inherit; font-size:.875rem; width:230px; }
+.dir-d .archive-list { padding-top:var(--space-4); }
+.dir-d .arc-row { display:grid; grid-template-columns:64px 1fr auto; gap:16px; padding:16px 0; border-bottom:1px solid var(--hairline); align-items:start; position:relative; transition:background var(--t-micro); }
+.dir-d .arc-row:hover { background:var(--row-hover); }
+.dir-d .arc-row:hover::before { content:""; position:absolute; left:-12px; top:0; bottom:0; width:2px; background:var(--accent); }
+.dir-d .arc-row__thumb { width:64px; height:64px; border-radius:8px; overflow:hidden; border:1px solid var(--glass-border); position:relative; background:linear-gradient(135deg,#1b2433,#0b0d10); display:flex; align-items:center; justify-content:center; }
+.dir-d .arc-row__thumb img { width:100%; height:100%; object-fit:cover; filter:grayscale(.35); }
+.dir-d .arc-row__thumb .res-asrow__mono,.dir-d .arc-row__thumb .mono { font-family:"Satoshi"; font-weight:700; color:var(--accent-link); opacity:.55; font-size:1.2rem; }
+.dir-d .arc-row__body { min-width:0; }
+.dir-d .arc-row__tags { display:flex; gap:8px; margin-bottom:6px; }
+.dir-d .arc-row__title { font-family:"Satoshi"; font-weight:500; font-size:1.1875rem; letter-spacing:-0.01em; color:var(--text-primary); position:relative; display:inline; }
+.dir-d .arc-row__title::after { content:""; position:absolute; inset:0; }
+.dir-d .arc-row:hover .arc-row__title { color:var(--accent-link); }
+.dir-d .arc-row__summary { color:var(--text-secondary); margin-top:6px; max-width:var(--measure-prose); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; font-size:.9375rem; }
+.dir-d .arc-row__meta { margin-top:8px; color:var(--text-muted); }
+.dir-d .arc-row__aside { text-align:right; white-space:nowrap; display:flex; flex-direction:column; gap:6px; align-items:flex-end; font-size:.8125rem; color:var(--text-muted); }
+.dir-d .arc-row__aside .sent { padding:2px 7px; }
+.dir-d .archive-more { margin:var(--space-7) auto 0; display:block; padding:10px 22px; cursor:pointer; }
+.dir-d .archive-count { color:var(--text-muted); font-size:.8125rem; }
+@media (max-width:640px){ .dir-d .arc-row { grid-template-columns:48px 1fr; } .dir-d .arc-row__aside { display:none; } .dir-d .archive-search { width:150px; } }
+
+/* ---------- saved view ---------- */
+.dir-d .saved-item { display:grid; grid-template-columns:1fr auto; gap:16px; padding:15px 0; border-bottom:1px solid var(--hairline); align-items:start; }
+.dir-d .saved-item__title { font-family:"Satoshi"; font-weight:500; font-size:1.0625rem; color:var(--text-primary); line-height:1.3; }
+.dir-d a.saved-item__title:hover { color:var(--accent-link); }
+.dir-d .saved-item__meta { margin-top:7px; color:var(--text-muted); display:flex; gap:10px; flex-wrap:wrap; align-items:center; font-size:.75rem; }
+.dir-d .saved-item__meta .chip { padding:2px 8px; font-size:.5625rem; }
+.dir-d .saved-item__aside { display:flex; gap:12px; align-items:center; }
+.dir-d .saved-item__open { color:var(--accent-link); font-size:.8125rem; font-weight:600; white-space:nowrap; }
+.dir-d .saved-item__remove { width:30px; height:30px; border-radius:7px; color:var(--text-muted); border:1px solid var(--glass-border); display:grid; place-items:center; font-size:.9rem; }
+.dir-d .saved-item__remove:hover { color:var(--down); border-color:var(--down); }
+.dir-d .saved-empty { text-align:center; padding:var(--space-10) 0; color:var(--text-muted); }
+.dir-d .saved-empty p { font-size:1.0625rem; margin:0 0 16px; }
+.dir-d .saved-group { margin-bottom:var(--space-7); }
+
+/* ---------- F5 — Signal-Index methodology popover ---------- */
+.dir-d .sigx-meta { position:relative; }
+.dir-d .sigx-meta .sigx-eyebrow { display:inline-flex; align-items:center; }
+.dir-d .sigx-info { width:18px; height:18px; padding:0; margin-left:6px; display:inline-grid; place-items:center; vertical-align:middle; color:var(--text-muted); border:0; background:none; border-radius:50%; cursor:pointer; }
+.dir-d .sigx-info:hover, .dir-d .sigx-info[aria-expanded="true"] { color:var(--accent); }
+.dir-d .sigx-info svg { width:14px; height:14px; }
+.dir-d .sigx-method { position:absolute; z-index:30; top:calc(100% + 8px); left:0; width:min(280px,calc(100vw - 32px)); padding:14px 16px; background:var(--surface-elevated); border:1px solid var(--border-strong); border-radius:var(--radius-md); box-shadow:var(--shadow-md); font-size:.8125rem; line-height:1.5; color:var(--text-secondary); }
+.dir-d .sigx-method[hidden] { display:none; }
+.dir-d .sigx-method p { margin:0 0 6px; }
+.dir-d .sigx-method__f { font-variant-numeric:tabular-nums; color:var(--text-primary); }
+.dir-d .sigx-method__bands { list-style:none; margin:8px 0; padding:0; display:grid; gap:3px; font-variant-numeric:tabular-nums; }
+.dir-d .sigx-method__bands b { color:var(--text-primary); font-weight:600; }
+.dir-d .sigx-method__note { margin:6px 0 0; color:var(--text-muted); font-size:.75rem; }

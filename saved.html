@@ -1,42 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saved / Shortlist | Blockwall Insights</title>
-  <link rel="icon" type="image/png" href="assets/images/blockwall-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/newsletter.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blockwall — Saved</title>
+<meta name="description" content="The Blockwall team shortlist — signals starred across daily, weekly, and monthly editions.">
+<link rel="icon" type="image/png" href="assets/images/blockwall-logo.png">
+<script>(function(){try{var u=new URLSearchParams(location.search).get('theme');var s=localStorage.getItem('bw-theme');var t=(u==='light'||u==='dark')?u:(s==='light'?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/dir-d.css">
+<link rel="stylesheet" href="assets/css/dir-d2.css">
+<link rel="stylesheet" href="assets/css/dir-d3.css">
+<link rel="stylesheet" href="assets/css/dir-d4.css">
 </head>
-<body data-theme="dark">
-  <nav class="nav"><div class="nav-inner">
-    <a href="index.html" class="nav-brand"><img src="assets/images/blockwall-logo.png" alt="Blockwall" class="nav-logo"><span class="nav-brand-text">Blockwall Insights</span></a>
-    <div class="nav-links"><a href="daily/index.html" class="nav-link">Daily</a><a href="weekly/index.html" class="nav-link">Weekly</a><a href="monthly/index.html" class="nav-link">Monthly</a><a href="portfolio/index.html" class="nav-link">Portfolio</a><a href="saved.html" class="nav-link active">Saved</a></div>
-    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-icon">&#x1F319;</span></button>
-  </div></nav>
-  <div class="newsletter-container">
-    <div class="newsletter-header">
-      <div class="newsletter-label">Blockwall Capital</div>
-      <h1>Saved / Shortlist</h1>
-      <div class="newsletter-date">Items starred by the team — raw material for the month-end monthly</div>
-    </div>
-    <div id="saved-root"><div class="loading-text">Loading shortlist&hellip;</div></div>
-    <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/images/blockwall-logo.png" alt="Blockwall" class="footer-logo">
-      <span>Blockwall Capital</span>
-    </div>
-    <p class="footer-text">European Crypto Venture Capital • Frankfurt, Germany</p>
-    <div class="footer-links">
-      <a href="https://blockwall.vc" target="_blank" class="footer-link">Website</a>
-      <a href="https://linkedin.com/company/blockwall" target="_blank" class="footer-link">LinkedIn</a>
-      <a href="https://x.com/blockwall_vc" target="_blank" class="footer-link">Twitter</a>
-    </div>
-  </footer>
-  </div>
-  <script>function toggleTheme(){const b=document.body,i=document.getElementById('theme-icon');if(b.getAttribute('data-theme')==='dark'){b.setAttribute('data-theme','light');i.innerHTML='&#x2600;&#xFE0F;';localStorage.setItem('bw-theme','light');}else{b.setAttribute('data-theme','dark');i.innerHTML='&#x1F319;';localStorage.setItem('bw-theme','dark');}}const t=localStorage.getItem('bw-theme')||'dark';document.body.setAttribute('data-theme',t);document.getElementById('theme-icon').innerHTML=t==='dark'?'&#x1F319;':'&#x2600;&#xFE0F;';</script>
-  <script src="assets/js/curate.js"></script>
-</body></html>
+<body>
+<a class="skip-link" href="#app-body">Skip to content</a>
+<div id="app"></div>
+<script src="assets/js/save-store.js"></script>
+<script src="assets/js/brand.js"></script>
+<script src="assets/js/render-saved.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
