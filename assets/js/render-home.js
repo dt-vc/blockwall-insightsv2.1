@@ -17,7 +17,9 @@
   function fmtDate(id) { var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(id || ""); return m ? m[2] + "." + m[3] + "." + m[1].slice(2) : (id || ""); }
   var ICON = { moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>' };
 
-  function fallbackCover(source) { return h("div", { class: "fallback-cover" }, h("span", null, initial(source))); }
+  function monogram(s) { s = String(s || "").trim(); if (!s) return "BW"; var p = s.split(/[\s._\/-]+/).filter(Boolean); if (p.length >= 2) return (p[0].charAt(0) + p[1].charAt(0)).toUpperCase(); return (s.replace(/[^A-Za-z0-9]/g, "").slice(0, 2) || "BW").toUpperCase(); }
+  /* Self-contained branded fallback tile (no external image/logo/favicon service). */
+  function fallbackCover(source, label) { var el = h("div", { class: "fallback-cover" }, h("span", { class: "fallback-cover__mono" }, monogram(source))); if (label) el.appendChild(h("span", { class: "fallback-cover__lbl" }, String(label))); return el; }
   function imageBlock(src, sizeCls, source) {
     var cls = "img-glass" + (sizeCls ? " " + sizeCls : "");
     if (!src) return h("div", { class: cls }, fallbackCover(source));
@@ -84,8 +86,8 @@
 
   function feature(daily, no) {
     var L = daily.lead || {}, featSrc = pickImg(daily.top_signals && daily.top_signals[0]);
-    var media = featSrc ? h("img", { src: featSrc, alt: "" }) : h("div", { class: "fallback-cover" }, h("span", null, "B"));
-    if (featSrc) media.addEventListener("error", function () { var a = media.parentNode; if (a) { media.remove(); a.appendChild(h("div", { class: "fallback-cover" }, h("span", null, "B"))); } });
+    var media = featSrc ? h("img", { src: featSrc, alt: "" }) : fallbackCover("Blockwall", "Latest daily");
+    if (featSrc) media.addEventListener("error", function () { var a = media.parentNode; if (a) { media.remove(); a.appendChild(fallbackCover("Blockwall", "Latest daily")); } });
     var cats = {}, tags = []; (daily.top_signals || []).forEach(function (s) { if (s.category && !cats[s.category] && tags.length < 3) { cats[s.category] = 1; tags.push(s.category); } });
     return h("section", { class: "blk reveal", id: "featured" }, h("div", { class: "wrap home-feature" },
       h("a", { href: "daily.html", class: "home-feature__media img-glass", "aria-label": "Read the latest daily" }, media),

@@ -17,7 +17,11 @@
   function add(el, c) { if (c == null || c === false) return; if (Array.isArray(c)) { c.forEach(function (x) { add(el, x); }); return; } el.appendChild(c.nodeType ? c : document.createTextNode(String(c))); }
   function safeUrl(u) { return (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null; }
   function initial(s) { return (String(s || "?").trim()[0] || "?").toUpperCase(); }
-  function imgFor(item, assets) { if (!item) return null; var u = safeUrl(item.image_url); if (u) return { img: u, real: true, link: item.url }; return (assets.images && item.id && assets.images[item.id]) || null; }
+  function monogram(s) { s = String(s || "").trim(); if (!s) return "BW"; var p = s.split(/[\s._\/-]+/).filter(Boolean); if (p.length >= 2) return (p[0].charAt(0) + p[1].charAt(0)).toUpperCase(); return (s.replace(/[^A-Za-z0-9]/g, "").slice(0, 2) || "BW").toUpperCase(); }
+  /* Self-contained branded fallback tile (no external image/logo/favicon service). */
+  function brandTile(source, label) { var el = h("div", { class: "fallback-cover" }, h("span", { class: "fallback-cover__mono" }, monogram(source))); if (label) el.appendChild(h("span", { class: "fallback-cover__lbl" }, String(label))); return el; }
+  /* imgFor: real og:image (item.image_url) only — the pipeline now fills it; no dead assets.images. Null => branded tile. */
+  function imgFor(item) { if (!item) return null; var u = safeUrl(item.image_url); return u ? { img: u, real: true, link: item.url } : null; }
   var ICON = {
     star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3.5l2.6 5.55 6.02.78-4.45 4.16 1.16 5.96L12 17.9l-5.33 2.71 1.16-5.96L3.38 9.83l6.02-.78L12 3.5z"/></svg>',
     starF: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.55 6.02.78-4.45 4.16 1.16 5.96L12 17.9l-5.33 2.71 1.16-5.96L3.38 9.83l6.02-.78L12 3.5z"/></svg>',
@@ -157,8 +161,8 @@
     var cls = "img-glass" + (sizeCls ? " " + sizeCls : "");
     var inner;
     if (rec && rec.img) { inner = h("img", { src: rec.img, alt: "", loading: "lazy", decoding: "async" });
-      inner.addEventListener("error", function () { var p = inner.parentNode; if (p) { inner.remove(); p.appendChild(h("div", { class: "fallback-cover" }, h("span", null, initial(source)))); } }); }
-    else inner = h("div", { class: "fallback-cover" }, h("span", null, initial(source)));
+      inner.addEventListener("error", function () { var p = inner.parentNode; if (p) { inner.remove(); p.appendChild(brandTile(source, source)); } }); }
+    else inner = brandTile(source, source);
     var url = rec && safeUrl(rec.link);
     if (rec && rec.img && asAnchor && url) return h("a", { class: cls, href: url, target: "_blank", rel: "noopener", "aria-hidden": "true", tabindex: "-1" }, inner);
     return h("div", { class: cls }, inner);
@@ -300,7 +304,7 @@
     var thumbImg = h("img", { src: rec && rec.img, alt: "", loading: "lazy", decoding: "async" });
     var thumb = (rec && rec.img)
       ? (url ? h("a", { class: "rail-row__thumb img-glass", href: url, target: "_blank", rel: "noopener", "aria-hidden": "true", tabindex: "-1" }, thumbImg) : h("span", { class: "rail-row__thumb img-glass" }, thumbImg))
-      : h("span", { class: "rail-row__thumb" }, h("span", { class: "rail-row__mono" }, initial(item.source || title)));
+      : h("span", { class: "rail-row__thumb" }, h("span", { class: "rail-row__mono" }, monogram(item.source || title)));
     var titleEl = url ? h("a", { class: "rail-row__title uline", href: url, target: "_blank", rel: "noopener" }, title) : h("span", { class: "rail-row__title" }, title);
     var star = item.id ? saveStar({ id: item.id, title: title, url: url, source: item.source, edition_id: edId, type: kicker === "Worth a Read" ? "worth" : "radar", category: item.category }) : null;
     return h("li", { role: "listitem" }, h("div", { class: "rail-row", "data-item-id": item.id || "" }, thumb,
@@ -334,7 +338,7 @@
     var url = safeUrl(it.url), rec = imgFor(it, assets);
     var thumb = (rec && rec.img)
       ? (url ? h("a", { class: "res-asrow__thumb img-glass", href: url, target: "_blank", rel: "noopener", "aria-hidden": "true", tabindex: "-1" }, h("img", { src: rec.img, alt: "", loading: "lazy", decoding: "async" })) : h("span", { class: "res-asrow__thumb img-glass" }, h("img", { src: rec.img, alt: "", loading: "lazy", decoding: "async" })))
-      : h("span", { class: "res-asrow__thumb" }, h("span", { class: "res-asrow__mono" }, initial(it.source || it.title)));
+      : h("span", { class: "res-asrow__thumb" }, h("span", { class: "res-asrow__mono" }, monogram(it.source || it.title)));
     var titleEl = url ? h("a", { class: "res-asrow__title uline", href: url, target: "_blank", rel: "noopener" }, it.title) : h("span", { class: "res-asrow__title" }, it.title);
     var star = it.id ? saveStar({ id: it.id, title: it.title, url: url, source: it.source, edition_id: edId, type: "resource", category: cat }) : null;
     return h("li", { role: "listitem" }, h("div", { class: "res-asrow", "data-item-id": it.id || "" }, thumb,
