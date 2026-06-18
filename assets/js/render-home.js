@@ -70,7 +70,9 @@
       var dir = numeric ? (it.direction || (/^-/.test(raw) ? "down" : "up")) : "flat", g = dir === "up" ? "▲" : dir === "down" ? "▼" : "–";
       return h("span", { class: "lt-cell" }, h("span", { class: "lt-dot" }), h("span", { class: "lt-label" }, it.label), h("span", { class: "lt-price num" }, it.value == null ? "—" : it.value), h("span", { class: "lt-delta " + dir + " num" }, g + " " + (numeric ? raw : "N/A")));
     }
-    return h("section", { class: "livetape", "aria-label": "Live market tape" }, h("div", { class: "livetape-track" }, ms.items.map(cell), ms.items.map(cell)));
+    // one base set; wire() clones it to overflow the viewport so the CSS -50% marquee
+    // always lands on a set boundary (seamless) and fills the full width.
+    return h("section", { class: "livetape", "aria-label": "Live market tape" }, h("div", { class: "livetape-track", "data-marquee": "ticker" }, ms.items.map(cell)));
   }
 
   function tape(ed) {
@@ -129,9 +131,14 @@
       return h("a", { class: "ss-card", href: url || "#", target: url ? "_blank" : null, rel: "noopener" },
         h("div", { class: "ss-card__img" }, im ? h("img", { src: im, alt: "", loading: "lazy" }) : h("div", { style: "width:100%;height:100%;background:linear-gradient(135deg,#1b2433,#0b0d10)" })),
         h("div", { class: "ss-card__body" }, h("div", { class: "ss-card__title" }, p.title), h("div", { class: "ss-card__meta" }, (p.author ? p.author + " · " : "") + "Substack"))); }
-    var cards = posts.map(card), clones = posts.map(card); clones.forEach(function (c) { c.setAttribute("aria-hidden", "true"); c.setAttribute("tabindex", "-1"); });
+    function chev(dir) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M' + (dir === "prev" ? "15 6l-6 6 6 6" : "9 6l6 6-6 6") + '"/></svg>'; }
+    // One base set; wireCarousel() clones it to overflow + drives auto-scroll, arrows and the seamless midpoint loop.
+    var track = h("div", { class: "ss-carousel__track", "data-base": String(posts.length) }, posts.map(card));
+    var prev = h("button", { class: "ss-arrow ss-arrow--prev", type: "button", "aria-label": "Previous Substack posts", html: chev("prev") });
+    var next = h("button", { class: "ss-arrow ss-arrow--next", type: "button", "aria-label": "Next Substack posts", html: chev("next") });
     return h("section", { class: "substack bleed reveal", id: "substack" }, h("div", { class: "wrap substack__head" }, h("span", { class: "blk-num num" }, "04"), h("h2", { class: "blk-title" }, "From the Blockwall Substack")),
-      h("div", { class: "substack-marquee", "aria-label": "Blockwall Substack posts" }, h("div", { class: "substack-marquee__track" }, cards, clones)));
+      h("div", { class: "ss-carousel-wrap" }, prev,
+        h("div", { class: "ss-carousel", "aria-label": "Blockwall Substack posts", tabindex: "0" }, track), next));
   }
 
   function subscribe() {
@@ -150,7 +157,106 @@
       col("Editions", ["Daily", "Weekly", "Monthly", "Archive"]), col("Categories", ["DeFi", "Macro", "Regulation", "Funding"]), col("Blockwall", ["About", "Subscribe", "Substack"])));
   }
 
+  /* Clone a single-set CSS-marquee track until it overflows the viewport, so the
+     translateX(-50%) loop always lands on a set boundary (seamless, no gap/jump) and the
+     strip fills the full width regardless of item count. baseDurationSec keeps a constant
+     per-set scroll speed across screen widths. */
+  function fillMarquee(track, baseDurationSec) {
+    if (!track) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;   // no duplicate cells when motion is off
+    var base = track.__base || (track.__base = Array.prototype.slice.call(track.children));
+    if (!base.length) return;
+    var setW = 0; base.forEach(function (c) { setW += c.getBoundingClientRect().width; });
+    if (setW <= 0) return;
+    // size to the widest plausible viewport (both orientations) so it never under-fills; re-runnable on resize
+    var bound = Math.max(window.innerWidth || 0, (window.screen && screen.width) || 0, (window.screen && screen.height) || 0) || 1280;
+    var halfReps = Math.max(2, Math.ceil(bound / setW) + 1);
+    var needSets = halfReps * 2, haveSets = Math.round(track.children.length / base.length);
+    if (haveSets < needSets) {
+      var frag = document.createDocumentFragment();
+      for (var r = haveSets; r < needSets; r++) base.forEach(function (c) { var cl = c.cloneNode(true); cl.setAttribute("aria-hidden", "true"); frag.appendChild(cl); });
+      track.appendChild(frag);
+    }
+    if (baseDurationSec) track.style.animationDuration = (baseDurationSec * halfReps) + "s";
+  }
+
+  /* Substack carousel: driven off native scrollLeft. A single rAF loop auto-advances
+     scrollLeft; hover / focus / recent manual interaction pause it; arrow buttons scrollBy
+     one card; the base set is cloned to >= 2x the viewport so a midpoint reset (scrollLeft
+     -= one-unit width) loops seamlessly with no gap. Native overflow-x keeps it swipeable. */
+  function wireCarousel() {
+    var wrap = document.querySelector(".ss-carousel-wrap"); if (!wrap) return;
+    var view = wrap.querySelector(".ss-carousel"), track = wrap.querySelector(".ss-carousel__track");
+    if (!view || !track || !track.children.length) return;
+    var N = +(track.getAttribute("data-base") || track.children.length) || track.children.length;
+    var baseNodes = Array.prototype.slice.call(track.children, 0, N);
+    function appendSet() { baseNodes.forEach(function (c) { var cl = c.cloneNode(true); cl.setAttribute("aria-hidden", "true"); cl.setAttribute("tabindex", "-1"); track.appendChild(cl); }); }
+    var unitReps = 1, period = 0, cardStep = 0, resetWidth = 0;
+    function measure() {
+      var ch = track.children;
+      period = ch[N] ? (ch[N].offsetLeft - ch[0].offsetLeft) : track.scrollWidth;
+      if (period <= 0) period = track.scrollWidth || view.clientWidth || 1;
+      cardStep = ch[1] ? (ch[1].offsetLeft - ch[0].offsetLeft) : period;
+      var cw = view.clientWidth || period;
+      unitReps = Math.max(1, Math.ceil(cw / period));
+      resetWidth = unitReps * period;
+    }
+    appendSet();                                   // 2 sets → measurable period
+    measure();
+    for (var have = 2; have < unitReps * 2; have++) appendSet();   // [unit][unit] for midpoint loop
+    measure();
+
+    var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var canHover = matchMedia("(hover:hover) and (pointer:fine)").matches;   // treat hover/focus as pause only on real pointers
+    var SPEED = 26, hoverP = false, hoverF = false, pauseUntil = 0, target = null, last = 0, expected = view.scrollLeft;
+    function normalize() { if (view.scrollLeft >= resetWidth) view.scrollLeft -= resetWidth; else if (view.scrollLeft < 0) view.scrollLeft += resetWidth; }
+    function frame(ts) {
+      if (!last) last = ts; var dt = Math.min(0.05, (ts - last) / 1000); last = ts;
+      if (target !== null) {                              // arrow glide — rAF-eased, browser-agnostic
+        var d = target - view.scrollLeft;
+        if (Math.abs(d) < 0.5) { view.scrollLeft = target; target = null; normalize(); }
+        else view.scrollLeft += d * (reduce ? 1 : 0.2);
+        expected = view.scrollLeft;
+      } else if (!reduce && !hoverP && !hoverF && ts > pauseUntil) {   // only write+wrap while actually auto-advancing — never mid-pause/touch-fling
+        view.scrollLeft += SPEED * dt;
+        normalize();
+        expected = view.scrollLeft;
+      }
+      requestAnimationFrame(frame);
+    }
+    function pause(ms) { pauseUntil = performance.now() + (ms || 2600); }
+    function nudge(dir) {
+      if (view.scrollLeft >= resetWidth) view.scrollLeft -= resetWidth;       // keep within [0, resetWidth)
+      if (dir < 0 && view.scrollLeft - cardStep < 0) view.scrollLeft += resetWidth;  // wrap so prev can glide left
+      target = view.scrollLeft + dir * cardStep; expected = view.scrollLeft;
+      pause();
+    }
+    var prevBtn = wrap.querySelector(".ss-arrow--prev"), nextBtn = wrap.querySelector(".ss-arrow--next");
+    if (prevBtn) prevBtn.addEventListener("click", function () { nudge(-1); });
+    if (nextBtn) nextBtn.addEventListener("click", function () { nudge(1); });
+    if (canHover) {                                       // split sources so a focused-then-unhovered card stays paused; never set by touch
+      wrap.addEventListener("pointerenter", function () { hoverP = true; });
+      wrap.addEventListener("pointerleave", function () { hoverP = false; });
+      view.addEventListener("focusin", function () { hoverF = true; });
+      view.addEventListener("focusout", function () { hoverF = false; });
+    }
+    view.addEventListener("pointerdown", function () { hoverP = false; pause(3200); });  // a tap also self-heals any stuck hover
+    view.addEventListener("wheel", function () { pause(3200); }, { passive: true });
+    view.addEventListener("scroll", function () {        // a real swipe/fling moves scrollLeft away from our last write → hold the pause through momentum
+      if (Math.abs(view.scrollLeft - expected) > 4) { expected = view.scrollLeft; pause(1500); }
+    }, { passive: true });
+    var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () {
+      measure(); for (var c = Math.round(track.children.length / N); c < unitReps * 2; c++) appendSet(); measure(); normalize(); expected = view.scrollLeft;
+    }, 200); }, { passive: true });
+    requestAnimationFrame(frame);
+  }
+
   function wire() {
+    var ticker = document.querySelector('.livetape-track[data-marquee="ticker"]');
+    fillMarquee(ticker, 38);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fillMarquee(ticker, 38); });  // re-fill once Inter metrics load
+    var trt; window.addEventListener("resize", function () { clearTimeout(trt); trt = setTimeout(function () { fillMarquee(ticker, 38); }, 200); }, { passive: true });
+    wireCarousel();
     if (window.SaveStore) { var sync = function () { var el = document.getElementById("saved-count"); if (el) { var c = window.SaveStore.count(); el.textContent = String(c); el.style.display = c ? "" : "none"; } }; window.SaveStore.subscribe(sync); sync(); window.SaveStore.ensureLoaded().then(sync); }
     var mh = document.getElementById("masthead"), prog = document.getElementById("scroll-progress");
     function onScroll() { if (mh) mh.classList.toggle("is-stuck", true); if (prog) { var sc = document.documentElement.scrollHeight - window.innerHeight; prog.style.width = (sc > 0 ? window.scrollY / sc * 100 : 0) + "%"; } }
