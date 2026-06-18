@@ -204,6 +204,9 @@
     var headline = L.headline || (cad === "monthly" ? "The month in crypto" + (ed.date_display ? " · " + ed.date_display : "") : cad === "weekly" ? "The week in crypto" : "Today's signal");
     var stand = firstSentences(L.tldr, 280);
     var bg = heroImg ? h("div", { class: "hero__bg", style: "background-image:url('" + heroImg + "')" }) : h("div", { class: "hero__bg is-fallback" });
+    /* hero bg is a CSS background-image (no onerror) — probe it and degrade to the branded
+       fallback gradient if the (hotlinked) image is dead, matching the signal cards. */
+    if (heroImg) { var heroProbe = new Image(); heroProbe.onerror = function () { bg.className = "hero__bg is-fallback"; bg.removeAttribute("style"); }; heroProbe.src = heroImg; }
     var shareBtn = h("button", { class: "hero__share", type: "button", "aria-label": "Copy link to this edition" },
       h("span", { class: "hero__share-ico", "aria-hidden": "true", html: ICON.link }), h("span", { class: "hero__share-txt" }, "Copy link"));
     return h("section", { class: "hero reveal", id: "hero" }, bg, h("div", { class: "hero__scrim" }),

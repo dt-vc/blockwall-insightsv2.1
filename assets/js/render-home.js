@@ -54,6 +54,7 @@
   function hero(daily, no) {
     var heroSrc = pickImg(daily.top_signals && daily.top_signals[0]);
     var bg = heroSrc ? h("div", { class: "hero__bg", style: "background-image:url('" + heroSrc + "')" }) : h("div", { class: "hero__bg is-fallback" });
+    if (heroSrc) { var heroProbe = new Image(); heroProbe.onerror = function () { bg.className = "hero__bg is-fallback"; bg.removeAttribute("style"); }; heroProbe.src = heroSrc; }
     return h("section", { class: "hero home-hero reveal", id: "latest" }, bg, h("div", { class: "hero__scrim" }),
       h("div", { class: "hero3d-stage", id: "hero3d", "aria-hidden": "true" }),
       h("div", { class: "hero__card" },

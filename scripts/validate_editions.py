@@ -22,6 +22,12 @@ URL_RE = re.compile(r"^https?://", re.I)
 # aggregate themes-drift counters so we emit a single summary line per cadence
 # instead of ~120 near-identical warnings
 themes_missing = {c: [0, 0] for c in CADENCES}  # cadence -> [editions, items]
+# editions whose top_signals ALL lack image_url -> signature of an upstream og:image
+# scrape miss (e.g. the June 2026 window). Aggregated to one summary WARN per cadence;
+# emitted as a GitHub Actions annotation so a silent regression becomes loud. NOT fatal
+# (this validator gates the separately-owned data pipeline; a missing image is degraded
+# gracefully by the renderer's branded tile, so it must not fail the build).
+images_zero = {c: [] for c in CADENCES}  # cadence -> [edition_ids]
 
 def err(m): errors.append(m)
 def warn(m): warnings.append(m)
@@ -117,6 +123,10 @@ def validate_edition(path, cadence):
         if missing:
             themes_missing[cadence][0] += 1
             themes_missing[cadence][1] += missing
+        # image coverage: an edition whose top_signals ALL lack image_url signals an
+        # upstream og:image scrape miss (the renderer then shows branded tiles for all).
+        if sum(1 for it in ts if isinstance(it, dict) and it.get("image_url")) == 0:
+            images_zero[cadence].append(os.path.splitext(os.path.basename(path))[0])
 
     # what_to_watch: forward catalysts ({label,date,note}) — NOT savable, no id required
     wtw = d.get("what_to_watch")
@@ -217,6 +227,13 @@ def main():
         if miss_ed:
             warn(f"{cadence}: {miss_ed} edition(s) have top_signals without themes[] "
                  f"({miss_items} items total) — brief §3 drift (older migrated editions are best-effort)")
+        zero = images_zero[cadence]
+        if zero:
+            shown = ", ".join(zero[:12]) + (" …" if len(zero) > 12 else "")
+            imsg = (f"{cadence}: {len(zero)} edition(s) have ZERO article images "
+                    f"(all top_signals image_url null) — likely an upstream og:image scrape miss: {shown}")
+            warn(imsg)
+            print(f"::warning title=Image coverage::{imsg}")  # loud in GitHub Actions; non-fatal
         print(f"{cadence}: {len(paths)} edition(s) checked")
     if not any_data:
         err("no edition JSON found under data/* — is the checkout correct?")
