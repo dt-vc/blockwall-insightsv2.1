@@ -208,27 +208,28 @@
 
     var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
     var canHover = matchMedia("(hover:hover) and (pointer:fine)").matches;   // treat hover/focus as pause only on real pointers
-    var SPEED = 26, hoverP = false, hoverF = false, pauseUntil = 0, target = null, last = 0, expected = view.scrollLeft;
-    function normalize() { if (view.scrollLeft >= resetWidth) view.scrollLeft -= resetWidth; else if (view.scrollLeft < 0) view.scrollLeft += resetWidth; }
+    var SPEED = 26, hoverP = false, hoverF = false, pauseUntil = 0, target = null, last = 0;
+    var pos = view.scrollLeft;            // fractional intended position — scrollLeft snaps to integers, so sub-pixel/frame must accumulate here
+    function wrapPos() { if (pos >= resetWidth) pos -= resetWidth; else if (pos < 0) pos += resetWidth; }
     function frame(ts) {
       if (!last) last = ts; var dt = Math.min(0.05, (ts - last) / 1000); last = ts;
-      if (target !== null) {                              // arrow glide — rAF-eased, browser-agnostic
-        var d = target - view.scrollLeft;
-        if (Math.abs(d) < 0.5) { view.scrollLeft = target; target = null; normalize(); }
-        else view.scrollLeft += d * (reduce ? 1 : 0.2);
-        expected = view.scrollLeft;
-      } else if (!reduce && !hoverP && !hoverF && ts > pauseUntil) {   // only write+wrap while actually auto-advancing — never mid-pause/touch-fling
-        view.scrollLeft += SPEED * dt;
-        normalize();
-        expected = view.scrollLeft;
+      if (Math.abs(view.scrollLeft - pos) > 2) { pos = view.scrollLeft; pause(1500); }   // user swipe/drag/fling diverged from us → yield + hold the pause through momentum
+      var drive = false;
+      if (target !== null) {                              // arrow glide — rAF-eased
+        var d = target - pos;
+        if (Math.abs(d) < 0.5) { pos = target; target = null; } else pos += d * (reduce ? 1 : 0.2);
+        drive = true;
+      } else if (!reduce && !hoverP && !hoverF && ts > pauseUntil) {
+        pos += SPEED * dt; drive = true;
       }
+      if (drive) { wrapPos(); view.scrollLeft = pos; }    // only write while WE drive — never fight a native touch fling
       requestAnimationFrame(frame);
     }
     function pause(ms) { pauseUntil = performance.now() + (ms || 2600); }
     function nudge(dir) {
-      if (view.scrollLeft >= resetWidth) view.scrollLeft -= resetWidth;       // keep within [0, resetWidth)
-      if (dir < 0 && view.scrollLeft - cardStep < 0) view.scrollLeft += resetWidth;  // wrap so prev can glide left
-      target = view.scrollLeft + dir * cardStep; expected = view.scrollLeft;
+      if (pos >= resetWidth) pos -= resetWidth;                          // keep within [0, resetWidth)
+      if (dir < 0 && pos - cardStep < 0) pos += resetWidth;             // wrap so prev can glide left
+      target = pos + dir * cardStep;
       pause();
     }
     var prevBtn = wrap.querySelector(".ss-arrow--prev"), nextBtn = wrap.querySelector(".ss-arrow--next");
@@ -242,11 +243,8 @@
     }
     view.addEventListener("pointerdown", function () { hoverP = false; pause(3200); });  // a tap also self-heals any stuck hover
     view.addEventListener("wheel", function () { pause(3200); }, { passive: true });
-    view.addEventListener("scroll", function () {        // a real swipe/fling moves scrollLeft away from our last write → hold the pause through momentum
-      if (Math.abs(view.scrollLeft - expected) > 4) { expected = view.scrollLeft; pause(1500); }
-    }, { passive: true });
     var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () {
-      measure(); for (var c = Math.round(track.children.length / N); c < unitReps * 2; c++) appendSet(); measure(); normalize(); expected = view.scrollLeft;
+      measure(); for (var c = Math.round(track.children.length / N); c < unitReps * 2; c++) appendSet(); measure(); pos = view.scrollLeft; wrapPos();
     }, 200); }, { passive: true });
     requestAnimationFrame(frame);
   }
