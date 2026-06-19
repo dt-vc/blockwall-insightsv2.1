@@ -16,6 +16,8 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { buildValidators } = require('./portfolio-validate');
+const sitemap = require('./portfolio-sitemap');
 
 // ── paths ───────────────────────────────────────────────────────────────────
 const ROOT       = path.join(__dirname, '..');
@@ -23,6 +25,7 @@ const DATA_DIR   = path.join(ROOT, 'data', 'portfolio');
 const INDEX_DIR  = path.join(DATA_DIR, 'indexes');
 const ITEMS_FILE = path.join(DATA_DIR, 'items.json');
 const SOURCES_FILE = path.join(DATA_DIR, 'company_sources.json');
+const COMPANIES_FILE = path.join(DATA_DIR, 'companies.json');
 
 // ── config ──────────────────────────────────────────────────────────────────
 const FETCH_TIMEOUT   = 12000;
@@ -83,6 +86,13 @@ function detectSentiment(text) {
 
 function domainFromURL(url) {
   try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
+}
+
+// sort key for "newest first": undated (null/invalid) items sink to the bottom
+// instead of ranking as epoch-or-now. -8.64e15 is the minimum JS timestamp.
+function dateSortKey(d) {
+  const t = d ? Date.parse(d) : NaN;
+  return isNaN(t) ? -8.64e15 : t;
 }
 
 // ── fetch wrapper ───────────────────────────────────────────────────────────
@@ -185,8 +195,12 @@ function toPortfolioItem(slug, companyName, raw, sourceType) {
   const title = raw.title || 'Untitled';
   const url   = raw.link;
   const text  = `${title} ${raw.description || ''}`;
-  let pubDate;
-  try { pubDate = new Date(raw.pubDate).toISOString(); } catch { pubDate = new Date().toISOString(); }
+  // honest date: keep null when missing/invalid — do NOT fake "today" (sorts to bottom)
+  let pubDate = null;
+  if (raw.pubDate) {
+    const _d = new Date(raw.pubDate);
+    if (!isNaN(_d.getTime())) pubDate = _d.toISOString();
+  }
 
   return {
     id:                itemId(slug, url),
@@ -199,53 +213,107 @@ function toPortfolioItem(slug, companyName, raw, sourceType) {
     url:               url,
     publisher:         raw.source || domainFromURL(url),
     summary_short:     truncate(raw.description || '', 280),
-    image_url:         null,
+    image_url:         raw.image || null,
     significance_score: 5,
     sentiment:         detectSentiment(text),
     tags:              []
   };
 }
 
-// ── collect for one company ─────────────────────────────────────────────────
-async function collectCompany(slug, cfg) {
-  const items = [];
+// ── collect for one company (routed by company_sources.json "method") ────────
+// Returns the candidates that PASS the registry validator. Raw/kept/drop stats
+// are accumulated on ctx for the end-of-run report.
+async function collectCompany(slug, cfg, ctx) {
   const limit = MAX_ITEMS_PER_SOURCE;
+  const candidates = [];
+  const method = cfg.method || 'news';
 
-  // 1. Google News
-  try {
-    const raw = await fetchGoogleNews(cfg.query, limit);
-    for (const r of raw) items.push(toPortfolioItem(slug, cfg.name, r, 'news'));
-    console.log(`    Google News: ${raw.length} items`);
-  } catch (e) {
-    console.log(`    Google News failed: ${e.message}`);
-  }
-  await sleep(DELAY_BETWEEN);
+  if (method === 'feed') {
+    // existing blog_rss path (unchanged)
+    if (cfg.blog_rss) {
+      try {
+        const raw = await fetchBlogRSS(cfg.blog_rss, limit);
+        for (const r of raw) candidates.push(toPortfolioItem(slug, cfg.name, r, 'blog'));
+        console.log(`    feed:    ${raw.length} items  (${cfg.blog_rss})`);
+      } catch (e) {
+        console.log(`    feed failed: ${e.message}  (${cfg.blog_rss})`);
+      }
+    } else {
+      console.log(`    feed:    no blog_rss set — skipped`);
+    }
+    await sleep(DELAY_BETWEEN);
 
-  // 2. Blog RSS
-  if (cfg.blog_rss) {
+  } else if (method === 'sitemap') {
+    // NEW: sitemap-diff + og-extract (inert metadata becomes live here)
+    if (cfg.sitemap) {
+      try {
+        const res = await sitemap.collectNewFromSitemap(
+          { slug, sitemapUrl: cfg.sitemap, domain: ctx.domainBySlug[slug] },
+          ctx.seenUrls,          // existing items.json URLs (dedup set)
+          { maxNew: 20 }         // seed run; tune later
+        );
+        if (res.ok) {
+          for (const it of res.items) {
+            candidates.push(toPortfolioItem(slug, cfg.name, {
+              title: it.title, link: it.url, description: it.summary,
+              pubDate: it.date, source: it.publisher, image: it.image_url,
+            }, it.source_type || 'blog'));
+          }
+          console.log(`    sitemap: ${res.new} new of ${res.discovered} post URLs  (${cfg.sitemap})`);
+        } else {
+          console.log(`    sitemap failed: ${res.error}  (${cfg.sitemap})`);
+        }
+      } catch (e) {
+        console.log(`    sitemap failed: ${e.message}  (${cfg.sitemap})`);
+      }
+    } else {
+      console.log(`    sitemap: no sitemap url set — skipped`);
+    }
+    await sleep(DELAY_BETWEEN);
+
+  } else {
+    // method === 'news' (and any unknown method): existing Google-News path
+    if (method !== 'news') console.log(`    (unknown method "${method}" — falling back to news)`);
     try {
-      const raw = await fetchBlogRSS(cfg.blog_rss, limit);
-      for (const r of raw) items.push(toPortfolioItem(slug, cfg.name, r, 'blog'));
-      console.log(`    Blog RSS:    ${raw.length} items`);
+      const raw = await fetchGoogleNews(cfg.query, limit);
+      for (const r of raw) candidates.push(toPortfolioItem(slug, cfg.name, r, 'news'));
+      console.log(`    news:    ${raw.length} items  (${cfg.query})`);
     } catch (e) {
-      console.log(`    Blog RSS failed: ${e.message}`);
+      console.log(`    news failed: ${e.message}`);
     }
     await sleep(DELAY_BETWEEN);
   }
 
-  // 3. X / Twitter
+  // X / Twitter — UNCHANGED (separate later milestone; skipped without token)
   if (cfg.x_handle && TWITTER_TOKEN) {
     try {
       const raw = await fetchXPosts(cfg.x_handle, 5);
-      for (const r of raw) items.push(toPortfolioItem(slug, cfg.name, r, 'x'));
-      console.log(`    X posts:     ${raw.length} items`);
+      for (const r of raw) candidates.push(toPortfolioItem(slug, cfg.name, r, 'x'));
+      console.log(`    X posts: ${raw.length} items`);
     } catch (e) {
       console.log(`    X failed: ${e.message}`);
     }
     await sleep(DELAY_BETWEEN);
   }
 
-  return items;
+  ctx.fetchedBySlug[slug] = candidates.length;
+
+  // ── validator gate — BEFORE dedup/save ──
+  // feed/sitemap items are on the company domain or a trusted host -> pass ("on-domain").
+  // this mainly filters the Google-News path's name-collision noise.
+  const v = (ctx.validators && ctx.validators[slug]) || (() => ({ ok: true, reason: 'no-validator' }));
+  const kept = candidates.filter(it => {
+    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher });
+    if (!r.ok) {
+      ctx.drops.total++;
+      const line = `  drop [${slug}] ${r.reason}  ${it.url}`;
+      if (ctx.drops.samples.length < 60) ctx.drops.samples.push(line);
+      console.log(line);
+    }
+    return r.ok;
+  });
+  ctx.keptBySlug[slug] = kept.length;
+  return kept;
 }
 
 // ── deduplication ───────────────────────────────────────────────────────────
@@ -265,8 +333,8 @@ function dedup(existingItems, newItems) {
 function generateIndexes(allItems) {
   const now = new Date().toISOString();
 
-  // sort newest first
-  allItems.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
+  // sort newest first (undated items sink to the bottom)
+  allItems.sort((a, b) => dateSortKey(b.date_published) - dateSortKey(a.date_published));
 
   // 1. latest.json — top 50
   const latestDir = INDEX_DIR;
@@ -305,6 +373,7 @@ function generateIndexes(allItems) {
   fs.mkdirSync(dailyDir, { recursive: true });
   const byDate = {};
   for (const item of allItems) {
+    if (!item.date_published) continue;   // undated -> excluded from daily (don't bucket as today)
     const d = item.date_published.slice(0, 10);
     if (!byDate[d]) byDate[d] = [];
     byDate[d].push(item);
@@ -331,24 +400,43 @@ async function main() {
   if (TWITTER_TOKEN) console.log('X API token detected — will fetch tweets.\n');
   else console.log('No TWITTER_BEARER_TOKEN set — skipping X posts.\n');
 
-  // load sources
+  // load sources (routing) + registry (identifiers live in companies.json, NOT here)
   const sources = JSON.parse(fs.readFileSync(SOURCES_FILE, 'utf8'));
+  const registry = JSON.parse(fs.readFileSync(COMPANIES_FILE, 'utf8'));
   const slugs = Object.keys(sources);
   console.log(`Companies: ${slugs.length}\n`);
 
-  // load existing items
+  // trusted off-domain feed hosts (Substack / blog subdomains) for the validator
+  const TRUSTED = {
+    river:           ['irlurl.substack.com'],
+    busha:           ['blog.busha.io'],
+    validationcloud: ['blog.validationcloud.io'],
+    zealy:           ['blog.zealy.io'],
+  };
+  const validators = buildValidators(registry, TRUSTED);
+  const domainBySlug = {};
+  for (const c of (registry.companies || [])) domainBySlug[c.slug] = c.domain;
+
+  // load existing items + build the seen-URL set (used by dedup AND the sitemap module)
   let existing = [];
   try {
     const data = JSON.parse(fs.readFileSync(ITEMS_FILE, 'utf8'));
     existing = data.items || [];
   } catch { /* first run */ }
+  const seenUrls = new Set(existing.map(i => i.url));
 
-  // collect
+  const ctx = {
+    validators, domainBySlug, seenUrls,
+    drops: { total: 0, samples: [] },
+    fetchedBySlug: {}, keptBySlug: {},
+  };
+
+  // collect (routed by method)
   const allNew = [];
   for (const slug of slugs) {
-    console.log(`[${slug}]`);
+    console.log(`[${slug}]  method=${sources[slug].method || 'news'}`);
     try {
-      const items = await collectCompany(slug, sources[slug]);
+      const items = await collectCompany(slug, sources[slug], ctx);
       allNew.push(...items);
     } catch (e) {
       console.log(`  FAILED: ${e.message}`);
@@ -358,9 +446,23 @@ async function main() {
   // merge + dedup
   const added = dedup(existing, allNew);
   const merged = [...existing, ...added];
-  merged.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
+  merged.sort((a, b) => dateSortKey(b.date_published) - dateSortKey(a.date_published));
 
-  console.log(`\nResults: ${allNew.length} fetched, ${added.length} new (${existing.length} existing)`);
+  // per-company report: fetched (raw) -> kept (passed validator) -> new (after dedup)
+  const newBySlug = {};
+  for (const it of added) newBySlug[it.company_slug] = (newBySlug[it.company_slug] || 0) + 1;
+  console.log(`\n── per-company  (method | fetched -> kept -> new) ──`);
+  for (const slug of slugs) {
+    const f = ctx.fetchedBySlug[slug] || 0, k = ctx.keptBySlug[slug] || 0, n = newBySlug[slug] || 0;
+    console.log(`  ${slug.padEnd(16)} ${String(sources[slug].method || 'news').padEnd(8)} ${String(f).padStart(3)} -> ${String(k).padStart(3)} -> ${String(n).padStart(3)}`);
+  }
+
+  // validator drops
+  console.log(`\n── validator drops: ${ctx.drops.total} total ──`);
+  for (const line of ctx.drops.samples.slice(0, 25)) console.log(line);
+  if (ctx.drops.total > 25) console.log(`  … and ${ctx.drops.total - 25} more (see inline "drop [...]" lines above)`);
+
+  console.log(`\nResults: ${allNew.length} validated-fetched, ${added.length} new (${existing.length} existing)`);
 
   // save items.json
   const itemsData = {
@@ -388,6 +490,7 @@ function updatePortfolioJSON(items) {
   // group items by date
   const byDate = {};
   for (const item of items) {
+    if (!item.date_published) continue;   // undated -> excluded from the daily digest archive
     const d = item.date_published.slice(0, 10);
     if (!byDate[d]) byDate[d] = [];
     byDate[d].push(item);
