@@ -133,3 +133,7 @@
   .pf-companies { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 420px) { .pf-companies { grid-template-columns: 1fr; } }
+
+/* ---------- Portfolio Moves block (injected into weekly/monthly editions) ---------- */
+.blk .pf-moves { margin-top: var(--space-3); }
+.pf-moves-sub { margin: 0 0 var(--space-4); font-size: 0.8rem; }

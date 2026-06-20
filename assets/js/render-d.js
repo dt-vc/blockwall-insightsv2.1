@@ -457,6 +457,65 @@
     }
   }
 
+  /* ---------- Portfolio Moves (weekly/monthly only) ----------------------------
+     Sourced CLIENT-SIDE from data/portfolio/* — the editions pipeline/JSON is never
+     touched. Reuses the river item component (.pf-* from assets/css/portfolio.css,
+     loaded on the weekly/monthly skeletons) with root-relative paths. */
+  var PF_FUND_RE = /rais(e|ed|ing)|seed|pre-seed|series|funding round/i;
+  var PF_MIN_SIG = 6;     // knob: significance threshold. NOTE: the collector currently
+                          // writes a uniform significance_score of 5, so this arm is inert
+                          // until real scoring lands — today "moves" = funding posts.
+  var PF_MAX_MOVES = 8;
+  var PF_STATUS = { Active: { cls: "pf-status--active", label: "Live", live: true }, Inactive: { cls: "pf-status--inactive", label: "Inactive" }, "Wind-down": { cls: "pf-status--winddown", label: "Winding down" }, "Write-off": { cls: "pf-status--writeoff", label: "Acquired / closed" } };
+  function pfRel(iso) { if (!iso) return ""; var t = Date.parse(iso); if (isNaN(t)) return ""; var d = Math.round((Date.now() - t) / 1000), fut = d < 0, a = Math.abs(d), s; if (a < 60) return fut ? "soon" : "just now"; if (a < 3600) s = Math.floor(a / 60) + "m"; else if (a < 86400) s = Math.floor(a / 3600) + "h"; else if (a < 2592000) s = Math.floor(a / 86400) + "d"; else if (a < 31536000) s = Math.floor(a / 2592000) + "mo"; else s = Math.floor(a / 31536000) + "y"; return fut ? "in " + s : s + " ago"; }
+  function pfIsFund(it) { var t = (it.tags || []).map(function (x) { return String(x).toLowerCase(); }); if (t.some(function (x) { return /fund|raise|seed|series|round|investment/.test(x); })) return true; return PF_FUND_RE.test(it.title || ""); }
+  function pfStatusBadge(status) { var def = PF_STATUS[status] || PF_STATUS.Active; var s = h("span", { class: "pf-status " + def.cls }); if (def.live) s.appendChild(h("span", { class: "pf-livedot" })); s.appendChild(document.createTextNode(def.label)); return s; }
+  function pfMonth(y, mo) { return { start: Date.UTC(y, mo, 1), end: Date.UTC(mo === 11 ? y + 1 : y, (mo + 1) % 12, 1) }; }
+  function pfWindow(ed) {
+    if (ed.type === "monthly") {
+      var m = /^(\d{4})-(\d{2})$/.exec(String(ed.id || "")); if (m) return pfMonth(+m[1], +m[2] - 1);
+      var d = new Date((ed.date_display || "") + " 1"); if (!isNaN(d)) return pfMonth(d.getFullYear(), d.getMonth()); return null;
+    }
+    if (ed.type === "weekly") {
+      // date_display ("Week 25 · June 9 - June 15, 2026") is the authoritative period —
+      // the pipeline's weeks aren't ISO-Mon-Sun, so parse the displayed range.
+      var mm = /([A-Za-z]+\s+\d{1,2})\s*[-–]\s*([A-Za-z]+\s+\d{1,2}),?\s*(\d{4})/.exec(ed.date_display || "");
+      if (mm) { var yr = +mm[3], sD = new Date(mm[1] + ", " + yr), eD = new Date(mm[2] + ", " + yr); if (isNaN(sD) || isNaN(eD)) return null; if (sD > eD) sD = new Date(mm[1] + ", " + (yr - 1)); return { start: Date.UTC(sD.getFullYear(), sD.getMonth(), sD.getDate()), end: Date.UTC(eD.getFullYear(), eD.getMonth(), eD.getDate()) + 86400000 }; }
+      return null;
+    }
+    return null;
+  }
+  function pfLogo(co, imgCls, monoCls) { var name = (co && co.name) || (co && co.slug) || ""; if (co && co.logo) { var img = h("img", { class: imgCls, src: "assets/companies/" + co.logo, alt: "", loading: "lazy", decoding: "async" }); img.addEventListener("error", function () { var p = img.parentNode; if (p) p.replaceChild(h("span", { class: monoCls }, monogram(name)), img); }); return img; } return h("span", { class: monoCls }, monogram(name)); }
+  function pfThumb(it, co) { var box = h("div", { class: "pf-thumb" }), mono = monogram((co && co.name) || it.company_name || it.publisher); function cover() { return h("div", { class: "pf-cover" }, h("span", { class: "pf-cover__mono" }, mono)); } if (it.image_url) { var img = h("img", { src: it.image_url, alt: "", loading: "lazy", decoding: "async" }); img.addEventListener("error", function () { if (box.contains(img)) box.replaceChild(cover(), img); }); box.appendChild(img); } else box.appendChild(cover()); return box; }
+  function pfMoveCard(it, co) {
+    co = co || { slug: it.company_slug, name: it.company_name };
+    var chip = pfIsFund(it) ? h("span", { class: "pf-chip pf-chip--funding" }, "Funding") : (it.source_type === "news" ? h("span", { class: "pf-chip pf-chip--news" }, "News") : h("span", { class: "pf-chip pf-chip--blog" }, "Blog"));
+    var rel = pfRel(it.date_published), meta = h("div", { class: "pf-item-meta" }, it.publisher || "");
+    if (rel) { meta.appendChild(h("span", { class: "sep" }, "·")); meta.appendChild(document.createTextNode(rel)); }
+    var body = h("div", { class: "pf-item-body" },
+      h("div", { class: "pf-item-top" }, h("a", { class: "pf-co", href: "portfolio/company.html?slug=" + encodeURIComponent(co.slug) }, pfLogo(co, "pf-co__logo", "pf-co__mono"), (co.name || it.company_name)), chip, pfStatusBadge(co.status)),
+      h("a", { class: "pf-item-title", href: safeUrl(it.url) || it.url, target: "_blank", rel: "noopener" }, it.title || "Untitled"),
+      it.summary_short ? h("div", { class: "pf-item-summary" }, it.summary_short) : null, meta);
+    return h("article", { class: "pf-item" }, pfThumb(it, co), body);
+  }
+  function pfMoves(ed) {
+    var w = pfWindow(ed); if (!w) return;
+    Promise.all([jget("data/portfolio/items.json"), jget("data/portfolio/companies.json")]).then(function (res) {
+      var items = (res[0] && res[0].items) || [], reg = (res[1] && res[1].companies) || [], coBySlug = {};
+      reg.forEach(function (c) { coBySlug[c.slug] = c; });
+      var moves = items.filter(function (it) { if (!it.date_published) return false; var t = Date.parse(it.date_published); if (isNaN(t) || t < w.start || t >= w.end) return false; return pfIsFund(it) || (it.significance_score || 0) >= PF_MIN_SIG; });
+      if (!moves.length) return;   // empty window -> hide the section entirely
+      moves.sort(function (a, b) { return ((b.significance_score || 0) - (a.significance_score || 0)) || (a.date_published < b.date_published ? 1 : -1); });
+      moves = moves.slice(0, PF_MAX_MOVES);
+      var sec = blk("portfolio-moves", null, "Portfolio Moves", h("div", null,
+        h("p", { class: "pf-moves-sub t-caption muted" }, "Funding and notable updates from the Blockwall portfolio this " + (ed.type === "monthly" ? "month" : "week") + " · " + moves.length + " of " + reg.length + " companies."),
+        h("div", { class: "pf-river pf-moves" }, moves.map(function (it) { return pfMoveCard(it, coBySlug[it.company_slug]); }))));
+      var lower = document.querySelector("main .wrap.lower");
+      if (lower) lower.insertBefore(sec, lower.firstChild);
+      else { var mn = document.querySelector("main"); if (mn) mn.appendChild(h("div", { class: "wrap lower" }, sec)); }
+    }).catch(function () { /* portfolio data unavailable — silently skip, editions unaffected */ });
+  }
+
   function build(ed, no, assets) {
     var app = document.getElementById("app");
     app.appendChild(masthead(ed, no));
@@ -504,6 +563,7 @@
       _ed = ed; _man = man; _nav = { older: older, newer: newer };
       build(ed, no, assets);
       if (window.LiveTape && !qid && ed.type === "daily") window.LiveTape.upgrade(ed);
+      if (ed.type === "weekly" || ed.type === "monthly") pfMoves(ed);
     });
   }).catch(function (e) { document.getElementById("app").innerHTML = '<p style="padding:48px;color:#f66">Failed to load: ' + (e && e.message) + "</p>"; });
 })();
