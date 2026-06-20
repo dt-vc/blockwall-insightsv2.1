@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Blockwall — Portfolio</title>
-<meta name="description" content="Live signal across the Blockwall portfolio — blog posts, news and funding from our companies, newest first.">
+<title>Blockwall — Portfolio company</title>
+<meta name="description" content="Update history for a Blockwall portfolio company.">
 <link rel="icon" type="image/png" href="../assets/images/blockwall-logo.png">
 <script>(function(){try{var u=new URLSearchParams(location.search).get('theme');var s=localStorage.getItem('bw-theme');var t=(u==='light'||u==='dark')?u:(s==='light'?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <link rel="stylesheet" href="../assets/css/fonts.css">
@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="../assets/css/dir-d4.css">
 <link rel="stylesheet" href="../assets/css/portfolio.css">
 </head>
-<body data-page="river">
-<a class="skip-link" href="#river">Skip to content</a>
+<body data-page="company">
+<a class="skip-link" href="#pf-company">Skip to content</a>
 
 <header class="masthead" id="masthead">
   <div class="wrap masthead-inner">
@@ -28,7 +28,7 @@
       <a href="index.html" aria-current="page">Portfolio</a>
     </nav>
     <span class="nav-spacer"></span>
-    <span class="dateline eyebrow num" id="pf-dateline">Portfolio</span>
+    <span class="dateline eyebrow num">Portfolio</span>
     <div class="nav-actions">
       <a href="../index.html">Home</a>
       <a href="../archive.html">Archive</a>
@@ -38,33 +38,14 @@
   </div>
   <div class="wrap">
     <nav class="subnav" aria-label="Sections">
-      <a href="#river">The River</a>
-      <a href="#companies">Companies</a>
+      <a href="index.html#river">The River</a>
+      <a href="index.html#companies">Companies</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap pf-main">
-  <section class="pf-hero">
-    <h1>Portfolio</h1>
-    <p>Live signal across the Blockwall portfolio — blog posts, news and funding from our companies, newest first.</p>
-    <div class="pf-hero__stats">
-      <span class="pf-hero__stat"><b id="pf-stat-companies">—</b> companies</span>
-      <span class="pf-hero__stat"><b id="pf-stat-active">—</b> active</span>
-      <span class="pf-hero__stat"><b id="pf-stat-updates">—</b> recent updates</span>
-    </div>
-  </section>
-
-  <section class="pf-section" id="river">
-    <div class="pf-section-head"><h2>The river</h2><span class="pf-eyebrow">Newest first</span></div>
-    <div class="pf-river" id="pf-river-feed" aria-live="polite"></div>
-  </section>
-
-  <section class="pf-section" id="companies">
-    <div class="pf-section-head"><h2>Portfolio companies</h2><span class="pf-eyebrow">By sector</span></div>
-    <div class="pf-filters" id="pf-filters"></div>
-    <div class="pf-companies" id="pf-companies-grid"></div>
-  </section>
+  <div id="pf-company" aria-live="polite"></div>
 </main>
 
 <footer class="foot">

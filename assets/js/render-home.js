@@ -34,7 +34,7 @@
     return h("header", { class: "masthead is-stuck", id: "masthead" },
       h("div", { class: "wrap masthead-inner" },
         h("a", { class: "wordmark", href: "index.html", style: "color:inherit" }, window.BWBrand ? window.BWBrand.mark() : "Blockwall"),
-        h("nav", { class: "cadence-switch", "aria-label": "Cadence" }, seg("Daily", "daily.html"), seg("Weekly", "weekly.html"), seg("Monthly", "monthly.html")),
+        h("nav", { class: "cadence-switch", "aria-label": "Cadence" }, seg("Daily", "daily.html"), seg("Weekly", "weekly.html"), seg("Monthly", "monthly.html"), seg("Portfolio", "portfolio/index.html")),
         h("span", { class: "nav-spacer" }),
         h("span", { class: "dateline eyebrow num" }, "Daily · No. " + (no || "—") + " · " + date),
         h("div", { class: "nav-actions" }, h("a", { href: "archive.html" }, "Archive"),

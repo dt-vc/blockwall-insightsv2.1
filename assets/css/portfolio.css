@@ -1,0 +1,135 @@
+/* Blockwall Portfolio — the "river" + per-company drill-down.
+   Built on the Signal Desk system (tokens.css + dir-d*.css); <html class="dir-d">.
+   Reuses design tokens only; all selectors are .pf-* so nothing else is affected. */
+
+/* ---------- page scaffolding ---------- */
+.pf-main { padding-block: var(--space-6) var(--space-9); }
+.pf-hero { padding-block: var(--space-5) var(--space-6); border-bottom: 1px solid var(--border); margin-bottom: var(--space-6); }
+.pf-hero h1 { font-family: "Satoshi", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.04; letter-spacing: -0.02em; color: var(--text-primary); margin: 0 0 8px; }
+.pf-hero p { color: var(--text-secondary); font-size: 0.975rem; line-height: 1.55; max-width: 60ch; margin: 0; }
+.pf-hero__stats { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-4); }
+.pf-hero__stat { display: flex; align-items: baseline; gap: 6px; font-size: 0.8rem; color: var(--text-muted); }
+.pf-hero__stat b { font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--text-primary); }
+
+.pf-section { margin-top: var(--space-7); }
+.pf-section-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-4); }
+.pf-section-head h2 { font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--text-primary); margin: 0; }
+.pf-section-head .pf-eyebrow { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+
+/* ---------- the river (feed) ---------- */
+.pf-river { display: flex; flex-direction: column; gap: var(--space-3); }
+.pf-item {
+  display: grid; grid-template-columns: 96px 1fr; gap: var(--space-4);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: var(--space-3); transition: border-color var(--dur-base) var(--ease-standard), transform var(--dur-base) var(--ease-standard), box-shadow var(--dur-base) var(--ease-standard);
+}
+.pf-item:hover { border-color: var(--border-strong); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.pf-item.is-undated { opacity: 0.86; }
+
+/* thumbnail + branded fallback (mirrors the editions fallback-cover, square-cropped) */
+.pf-thumb { position: relative; width: 96px; height: 96px; border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-elevated); border: 1px solid var(--border); flex: none; }
+.pf-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--dur-slow) var(--ease-standard); }
+.pf-item:hover .pf-thumb img { transform: scale(1.04); }
+.pf-cover {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background:
+    linear-gradient(rgba(244,246,248,.05) 1px,transparent 1px) 0 0/18px 18px,
+    linear-gradient(90deg,rgba(244,246,248,.05) 1px,transparent 1px) 0 0/18px 18px,
+    radial-gradient(125% 100% at 16% 0%, rgba(29,82,220,.40), transparent 64%),
+    radial-gradient(90% 80% at 100% 100%, rgba(244,68,190,.12), transparent 60%),
+    linear-gradient(135deg, #1b2433, #0b0d10);
+  box-shadow: inset 0 0 60px rgba(29,82,220,.18);
+}
+.pf-cover__mono { font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1; letter-spacing: .02em; color: #cdd9ff; }
+[data-theme="light"] .pf-cover {
+  background:
+    linear-gradient(rgba(13,20,36,.05) 1px,transparent 1px) 0 0/18px 18px,
+    linear-gradient(90deg,rgba(13,20,36,.05) 1px,transparent 1px) 0 0/18px 18px,
+    radial-gradient(125% 100% at 16% 0%, rgba(29,82,220,.16), transparent 64%),
+    linear-gradient(135deg, #eef1f6, #e3e8f0);
+  box-shadow: inset 0 0 50px rgba(29,82,220,.10);
+}
+[data-theme="light"] .pf-cover__mono { color: var(--accent-strong); }
+
+.pf-item-body { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.pf-item-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pf-co { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; color: var(--text-secondary); font-size: 0.78rem; font-weight: 600; border-radius: var(--radius-pill); }
+.pf-co:hover { color: var(--accent); }
+.pf-co__logo { width: 18px; height: 18px; border-radius: 50%; object-fit: cover; background: var(--surface-elevated); flex: none; }
+.pf-co__mono { width: 18px; height: 18px; border-radius: 50%; flex: none; display: inline-flex; align-items: center; justify-content: center; font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 0.5rem; color: #cdd9ff; background: linear-gradient(135deg, var(--accent-strong), #143a9e); }
+.pf-dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+.pf-dot--bullish { background: var(--up); } .pf-dot--bearish { background: var(--down); } .pf-dot--neutral { background: var(--flat); }
+
+.pf-item-title { font-size: 1rem; font-weight: 600; line-height: 1.32; color: var(--text-primary); text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pf-item-title:hover { color: var(--accent); }
+.pf-item-summary { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pf-item-meta { display: flex; align-items: center; gap: 7px; font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+.pf-item-meta .sep { opacity: 0.5; }
+
+/* chips (reuse the global .chip; add source-typed tints) */
+.pf-chip { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: var(--radius-pill); border: 1px solid var(--border); font-size: 0.625rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-secondary); white-space: nowrap; }
+.pf-chip--news { color: var(--text-secondary); }
+.pf-chip--blog { color: var(--accent); border-color: var(--accent-subtle); background: var(--accent-subtle); }
+.pf-chip--funding { color: var(--up); border-color: transparent; background: var(--up-bg); }
+.pf-chip--funding::before { content: "◆"; font-size: 0.6rem; }
+
+/* ---------- companies directory ---------- */
+.pf-companies { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: var(--space-3); }
+.pf-co-card { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-4); text-decoration: none; transition: border-color var(--dur-base) var(--ease-standard), transform var(--dur-base) var(--ease-standard); }
+.pf-co-card:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.pf-co-card.is-dead { opacity: 0.72; }
+.pf-co-card.is-dead:hover { opacity: 1; }
+.pf-co-card__head { display: flex; align-items: center; gap: 10px; }
+.pf-co-card__logo, .pf-co-card__mono { width: 34px; height: 34px; border-radius: 8px; flex: none; }
+.pf-co-card__logo { object-fit: contain; background: var(--surface-elevated); padding: 3px; border: 1px solid var(--border); }
+.pf-co-card__mono { display: inline-flex; align-items: center; justify-content: center; font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 0.8rem; color: #cdd9ff; background: linear-gradient(135deg, var(--accent-strong), #143a9e); }
+.pf-co-card__name { font-family: "Satoshi", sans-serif; font-weight: 600; font-size: 0.92rem; color: var(--text-primary); line-height: 1.2; }
+.pf-co-card__sector { font-size: 0.7rem; color: var(--text-muted); }
+.pf-co-card__desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pf-co-card__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; }
+.pf-co-card__count { font-size: 0.7rem; color: var(--text-muted); }
+
+/* status badges (muted; dead portcos clearly distinguished) */
+.pf-status { display: inline-flex; align-items: center; gap: 5px; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: var(--radius-pill); }
+.pf-status--active { color: var(--up); background: var(--up-bg); }
+.pf-status--active .pf-livedot { width: 6px; height: 6px; border-radius: 50%; background: var(--up); box-shadow: 0 0 0 0 var(--up); animation: pf-pulse 2.4s var(--ease-standard) infinite; }
+.pf-status--inactive { color: var(--text-muted); background: var(--flat-bg); }
+.pf-status--winddown { color: #d8a23a; background: rgba(216,162,58,.12); }
+.pf-status--writeoff { color: var(--text-muted); background: var(--flat-bg); }
+@keyframes pf-pulse { 0% { box-shadow: 0 0 0 0 rgba(61,220,151,.5); } 70% { box-shadow: 0 0 0 6px rgba(61,220,151,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,151,0); } }
+@media (prefers-reduced-motion: reduce) { .pf-status--active .pf-livedot { animation: none; } }
+
+/* sector filter strip */
+.pf-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: var(--space-5); }
+.pf-filter { cursor: pointer; padding: 4px 12px; border-radius: var(--radius-pill); border: 1px solid var(--border); background: transparent; color: var(--text-secondary); font-size: 0.74rem; font-weight: 600; transition: all var(--dur-fast) var(--ease-standard); }
+.pf-filter:hover { border-color: var(--border-strong); color: var(--text-primary); }
+.pf-filter.is-active { background: var(--accent-subtle); border-color: transparent; color: var(--accent); }
+
+/* ---------- company drill-down ---------- */
+.pf-back { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 0.78rem; font-weight: 600; margin-bottom: var(--space-4); }
+.pf-back:hover { color: var(--accent); }
+.pf-company-head { display: flex; gap: var(--space-5); align-items: flex-start; padding-bottom: var(--space-6); border-bottom: 1px solid var(--border); margin-bottom: var(--space-6); flex-wrap: wrap; }
+.pf-company-logo, .pf-company-mono { width: 72px; height: 72px; border-radius: 14px; flex: none; }
+.pf-company-logo { object-fit: contain; background: var(--surface-elevated); padding: 8px; border: 1px solid var(--border); }
+.pf-company-mono { display: inline-flex; align-items: center; justify-content: center; font-family: "Satoshi", sans-serif; font-weight: 700; font-size: 1.7rem; color: #cdd9ff; background: linear-gradient(135deg, var(--accent-strong), #143a9e); }
+.pf-company-info { min-width: 0; flex: 1 1 320px; }
+.pf-company-info h1 { font-family: "Satoshi", sans-serif; font-weight: 700; font-size: clamp(1.5rem, 3.5vw, 2rem); letter-spacing: -0.02em; color: var(--text-primary); margin: 0 0 8px; }
+.pf-company-tags { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.pf-company-desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; max-width: 64ch; margin: 0 0 14px; }
+.pf-company-links { display: flex; gap: 10px; flex-wrap: wrap; }
+.pf-link { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: var(--radius-md); border: 1px solid var(--border); color: var(--text-primary); text-decoration: none; font-size: 0.82rem; font-weight: 600; transition: all var(--dur-fast) var(--ease-standard); }
+.pf-link:hover { border-color: var(--accent); color: var(--accent); }
+.pf-link svg { width: 15px; height: 15px; }
+.pf-link--primary { background: var(--accent-subtle); border-color: transparent; color: var(--accent); }
+
+.pf-empty { text-align: center; color: var(--text-muted); padding: var(--space-8) var(--space-4); border: 1px dashed var(--border); border-radius: var(--radius-md); font-size: 0.9rem; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 600px) {
+  .pf-item { grid-template-columns: 64px 1fr; gap: var(--space-3); }
+  .pf-thumb { width: 64px; height: 64px; }
+  .pf-cover__mono { font-size: 1.1rem; }
+  .pf-item-summary { display: none; }
+  .pf-companies { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) { .pf-companies { grid-template-columns: 1fr; } }

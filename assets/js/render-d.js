@@ -171,11 +171,11 @@
   /* ---------- masthead + live tape ---------- */
   function masthead(ed, no) {
     var cad = ed.type || "daily", Cad = cad.charAt(0).toUpperCase() + cad.slice(1);
-    function seg(n) { return h("a", { href: n === "Daily" ? "daily.html" : n === "Weekly" ? "weekly.html" : "monthly.html", "aria-current": n.toLowerCase() === cad ? "page" : null }, n); }
+    function seg(n) { return h("a", { href: n === "Daily" ? "daily.html" : n === "Weekly" ? "weekly.html" : n === "Monthly" ? "monthly.html" : "portfolio/index.html", "aria-current": n.toLowerCase() === cad ? "page" : null }, n); }
     return h("header", { class: "masthead", id: "masthead" },
       h("div", { class: "wrap masthead-inner" },
         h("a", { class: "wordmark", href: "index.html", style: "color:inherit" }, window.BWBrand ? window.BWBrand.mark() : "Blockwall"),
-        h("nav", { class: "cadence-switch", "aria-label": "Cadence" }, seg("Daily"), seg("Weekly"), seg("Monthly")),
+        h("nav", { class: "cadence-switch", "aria-label": "Cadence" }, seg("Daily"), seg("Weekly"), seg("Monthly"), seg("Portfolio")),
         h("span", { class: "nav-spacer" }),
         h("span", { class: "dateline eyebrow num" }, Cad + (no ? " · No. " + no : "") + " · " + (ed.date_display || fmtDate(ed.id))),
         h("div", { class: "nav-actions" }, h("a", { href: "index.html" }, "Home"), h("a", { href: "archive.html" }, "Archive"),

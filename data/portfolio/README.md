@@ -10,10 +10,13 @@ data/portfolio/
 │   ├── spiko.json
 │   └── ...
 ├── indexes/
-│   ├── latest.json         # Raw news items (may contain false positives)
-│   ├── latest-validated.json # Validated news with match_reason
+│   ├── latest.json         # Top 50, already inline-validated (collect-portfolio-updates.js gates before save)
+│   ├── by-company/<slug>.json # Per-company history (frontend drill-down reads this)
+│   ├── daily/<date>.json   # Per-date index
 │   ├── peerintel-latest.json
 │   └── dealflow.json
+# NOTE: latest-validated.json was removed 2026-06 — validation is now inline in the
+# collector, so latest.json IS the validated feed. The old two-step relic is gone.
 └── README.md               # This file
 ```
 
@@ -154,24 +157,19 @@ Each company has an `identifiers[]` array in `companies.json` containing:
 | TLON | "Far-right blogger..." | Unrelated person named Curtis Yarvin |
 | Blink Labs | Generic "Blink" mentions | Common word, needs "cardano" or "blinklabs" |
 
-### Validated News Format
+### Validation
 
-`latest-validated.json` includes `match_reason` for debugging:
-```json
-{
-  "id": "...",
-  "company_slug": "busha",
-  "title": "Busha launches new identity...",
-  "match_reason": "title_contains_name_and_domain_context"
-}
-```
+Validation is **inline** in `scripts/collect-portfolio-updates.js`: each candidate is
+gated by `scripts/portfolio-validate.js` (registry identifiers + trusted hosts) BEFORE
+dedup/save, so `latest.json` and `by-company/<slug>.json` only contain validated items.
+There is no separate validated file.
 
 ## Data Pipeline
 
-1. **Collection**: Raw news fetched and stored in `latest.json`
-2. **Validation**: Apply matching rules, output to `latest-validated.json`
-3. **Blog Posts**: Pre-fetched from RSS feeds, stored in `blog/*.json`
-4. **Display**: Company pages load from validated JSON files
+1. **Collection + validation**: `collect-portfolio-updates.js` fetches per `company_sources.json`
+   method (feed/news/sitemap), validates inline, and writes `items.json` + `indexes/**`.
+2. **Display**: the frontend (`portfolio/index.html` river, `portfolio/company.html` drill-down)
+   reads `indexes/latest.json` and `indexes/by-company/<slug>.json`.
 
 ## Maintenance
 
