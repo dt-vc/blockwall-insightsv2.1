@@ -84,6 +84,27 @@ function detectSentiment(text) {
   return 'neutral';
 }
 
+// ── significance scoring ──────────────────────────────────────────────────────
+// Deterministic, first-match-wins (highest category first), scored 1–9 off the
+// title (+ funding tag). Transparent and idempotent — re-running yields the same
+// score. The frontend "Portfolio Moves" block surfaces fundings OR score >= 6, so
+// M&A / launches / product releases now clear that bar; generic posts stay below it.
+const SIG_FUNDING = /rais(e|ed|ing)|seed|pre-seed|series [A-E]|funding round|valuation/i;
+const SIG_MA      = /acqui|merger|acquires|acquired|buyout/i;
+const SIG_LAUNCH  = /launch|mainnet|goes live|token|TGE|listed|partners with|integrat/i;
+const SIG_PRODUCT = /release|unveil|introduc|ships|v\d/i;
+const SIG_FUND_TAG = /fund|raise|seed|series|round|investment/i;
+
+function scoreSignificance(item) {
+  const title = item.title || '';
+  const fundTag = (item.tags || []).some(t => SIG_FUND_TAG.test(String(t)));
+  if (fundTag || SIG_FUNDING.test(title)) return 9;   // funding event
+  if (SIG_MA.test(title))                 return 8;   // M&A
+  if (SIG_LAUNCH.test(title))             return 7;   // launch / partnership / listing
+  if (SIG_PRODUCT.test(title))            return 6;   // notable product / release
+  return item.source_type === 'news' ? 5 : 4;         // generic: news edges blog
+}
+
 function domainFromURL(url) {
   try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
 }
@@ -160,6 +181,38 @@ async function fetchBlogRSS(rssUrl, limit) {
   return parseRSSItems(xml).slice(0, limit);
 }
 
+// ── Substack (CI-safe) ───────────────────────────────────────────────────────
+// Substack's RSS /feed is datacenter-blocked (returns 403/empty from GitHub
+// runners), which is why river surfaced 0 items in CI while working locally. The
+// public JSON archive API is NOT blocked — same endpoint + browser-ish UA that
+// scripts/fetch-substack.js uses for the homepage carousel. Route Substack hosts
+// through it instead of the RSS feed.
+function isSubstackHost(u) {
+  try { return /(^|\.)substack\.com$/i.test(new URL(u).hostname); } catch { return false; }
+}
+
+async function fetchSubstackArchive(feedUrl, limit) {
+  const origin = new URL(feedUrl).origin;
+  const url = `${origin}/api/v1/archive?sort=new&search=&offset=0&limit=${Math.max(limit, 12)}`;
+  const body = await safeFetch(url, {
+    headers: { accept: 'application/json', 'user-agent': 'blockwall-insights-site/1.0 (+refresh-portfolio)' }
+  });
+  let arr;
+  try { arr = JSON.parse(body); } catch { throw new Error('substack archive: bad JSON'); }
+  if (!Array.isArray(arr)) throw new Error('substack archive: unexpected payload');
+  return arr
+    .filter(p => p && p.title && p.canonical_url)
+    .slice(0, limit)
+    .map(p => ({
+      title:       p.title,
+      link:        p.canonical_url,
+      description: p.description || p.subtitle || '',
+      pubDate:     p.post_date || null,
+      source:      'Substack',
+      image:       p.cover_image || null,
+    }));
+}
+
 // ── X / Twitter API v2 ─────────────────────────────────────────────────────
 async function fetchXPosts(handle, limit) {
   if (!TWITTER_TOKEN || !handle) return [];
@@ -202,7 +255,7 @@ function toPortfolioItem(slug, companyName, raw, sourceType) {
     if (!isNaN(_d.getTime())) pubDate = _d.toISOString();
   }
 
-  return {
+  const item = {
     id:                itemId(slug, url),
     company_slug:      slug,
     company_name:      companyName,
@@ -218,6 +271,8 @@ function toPortfolioItem(slug, companyName, raw, sourceType) {
     sentiment:         detectSentiment(text),
     tags:              []
   };
+  item.significance_score = scoreSignificance(item);
+  return item;
 }
 
 // ── collect for one company (routed by company_sources.json "method") ────────
@@ -229,12 +284,15 @@ async function collectCompany(slug, cfg, ctx) {
   const method = cfg.method || 'news';
 
   if (method === 'feed') {
-    // existing blog_rss path (unchanged)
+    // blog_rss path — Substack hosts go through the CI-safe JSON archive API
     if (cfg.blog_rss) {
+      const substack = isSubstackHost(cfg.blog_rss);
       try {
-        const raw = await fetchBlogRSS(cfg.blog_rss, limit);
+        const raw = substack
+          ? await fetchSubstackArchive(cfg.blog_rss, limit)
+          : await fetchBlogRSS(cfg.blog_rss, limit);
         for (const r of raw) candidates.push(toPortfolioItem(slug, cfg.name, r, 'blog'));
-        console.log(`    feed:    ${raw.length} items  (${cfg.blog_rss})`);
+        console.log(`    feed:    ${raw.length} items  (${substack ? 'substack-api ' : ''}${cfg.blog_rss})`);
       } catch (e) {
         console.log(`    feed failed: ${e.message}  (${cfg.blog_rss})`);
       }
@@ -327,6 +385,68 @@ function dedup(existingItems, newItems) {
     }
   }
   return added;
+}
+
+// ── self-healing normalize pass (runs over the ENTIRE stored set every run) ────
+// Dedup only ever ADDS, so stale baseline items (mislabels from the old registry,
+// future-dated posts, build-artifact timestamps, locale translations) never leave
+// on their own. This pass re-applies the current validators + heuristics to every
+// stored item so the corpus self-heals: bad items drop, dates get honest, scores
+// get recomputed. Non-destructive in spirit — it only removes items that FAIL the
+// current rules, and legit history (which still passes) stays.
+function normalizeAndHeal(items, ctx) {
+  const NOW = Date.now();
+  const stats = { revalidated_dropped: 0, locale_dropped: 0, future_clamped: 0, cluster_nulled: 0, samples: [] };
+  const sample = (line) => { if (stats.samples.length < 40) stats.samples.push(line); };
+
+  // (#6) registry identity + re-validation: drop items that no longer belong to
+  // their company under the CURRENT registry (e.g. the river=Towns mislabel).
+  let kept = items.filter(it => {
+    const v = ctx.validators[it.company_slug];
+    if (!v) { stats.revalidated_dropped++; sample(`  heal-drop [${it.company_slug}] no-registry-entry  ${it.url}`); return false; }
+    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher });
+    if (!r.ok) { stats.revalidated_dropped++; sample(`  heal-drop [${it.company_slug}] ${r.reason}  ${it.url}`); return false; }
+    return true;
+  });
+
+  // (#5) preferred-locale filter: drop non-English locale translations of stored
+  // items (the sitemap module already filters these for NEW discoveries).
+  kept = kept.filter(it => {
+    if (sitemap.isPreferredLocaleUrl(it.url)) return true;
+    stats.locale_dropped++; sample(`  heal-drop [${it.company_slug}] non-pref-locale  ${it.url}`);
+    return false;
+  });
+
+  // (#4a) future-date clamp: a date_published after "now" can't be a real publish
+  // time — pin it to date_ingested (the real first-seen time) so it stops floating
+  // to the top of newest-first views.
+  for (const it of kept) {
+    const t = it.date_published ? Date.parse(it.date_published) : NaN;
+    if (!isNaN(t) && t > NOW) { it.date_published = it.date_ingested || null; stats.future_clamped++; }
+  }
+
+  // (#4b) uniform-lastmod cluster null: when a single company has the IDENTICAL
+  // timestamp on more than 3 items, that's a sitemap build-date artifact, not real
+  // publish dates — null them so they sink as honestly undated instead of clustering
+  // at a fake-precise time.
+  const tsCount = {};
+  for (const it of kept) {
+    if (!it.date_published) continue;
+    (tsCount[it.company_slug] = tsCount[it.company_slug] || {});
+    tsCount[it.company_slug][it.date_published] = (tsCount[it.company_slug][it.date_published] || 0) + 1;
+  }
+  for (const it of kept) {
+    if (it.date_published && (tsCount[it.company_slug][it.date_published] || 0) > 3) {
+      it.date_published = null; stats.cluster_nulled++;
+    }
+  }
+
+  // (#1) significance re-scoring: deterministic + idempotent, applied to the whole
+  // corpus so existing items leave the old uniform-5 placeholder behind.
+  for (const it of kept) it.significance_score = scoreSignificance(it);
+
+  ctx.healStats = stats;
+  return kept;
 }
 
 // ── index generation ────────────────────────────────────────────────────────
@@ -443,9 +563,10 @@ async function main() {
     }
   }
 
-  // merge + dedup
+  // merge + dedup, then self-heal the WHOLE set (re-validate / re-date / re-score)
   const added = dedup(existing, allNew);
-  const merged = [...existing, ...added];
+  const beforeHeal = existing.length + added.length;
+  const merged = normalizeAndHeal([...existing, ...added], ctx);
   merged.sort((a, b) => dateSortKey(b.date_published) - dateSortKey(a.date_published));
 
   // per-company report: fetched (raw) -> kept (passed validator) -> new (after dedup)
@@ -457,12 +578,29 @@ async function main() {
     console.log(`  ${slug.padEnd(16)} ${String(sources[slug].method || 'news').padEnd(8)} ${String(f).padStart(3)} -> ${String(k).padStart(3)} -> ${String(n).padStart(3)}`);
   }
 
-  // validator drops
-  console.log(`\n── validator drops: ${ctx.drops.total} total ──`);
+  // validator drops (new candidates rejected at ingest)
+  console.log(`\n── validator drops (new candidates): ${ctx.drops.total} total ──`);
   for (const line of ctx.drops.samples.slice(0, 25)) console.log(line);
   if (ctx.drops.total > 25) console.log(`  … and ${ctx.drops.total - 25} more (see inline "drop [...]" lines above)`);
 
-  console.log(`\nResults: ${allNew.length} validated-fetched, ${added.length} new (${existing.length} existing)`);
+  // self-healing re-validation over the stored corpus
+  const hs = ctx.healStats || { revalidated_dropped: 0, locale_dropped: 0, future_clamped: 0, cluster_nulled: 0, samples: [] };
+  const healedDropped = hs.revalidated_dropped + hs.locale_dropped;
+  console.log(`\n── self-heal pass (whole corpus: ${beforeHeal} -> ${merged.length}) ──`);
+  console.log(`  re-validation dropped : ${hs.revalidated_dropped}  (stale mislabels / namesakes)`);
+  console.log(`  locale dropped        : ${hs.locale_dropped}  (non-English translations)`);
+  console.log(`  future-dates clamped  : ${hs.future_clamped}  (-> date_ingested)`);
+  console.log(`  cluster-dates nulled  : ${hs.cluster_nulled}  (build-artifact timestamps)`);
+  for (const line of hs.samples.slice(0, 30)) console.log(line);
+  if (healedDropped > 30) console.log(`  … and ${healedDropped - 30} more heal-drops`);
+
+  // significance distribution (sanity: should be varied, not all 5)
+  const sigDist = {};
+  for (const it of merged) sigDist[it.significance_score] = (sigDist[it.significance_score] || 0) + 1;
+  const sigLine = Object.keys(sigDist).sort((a, b) => b - a).map(s => `${s}:${sigDist[s]}`).join('  ');
+  console.log(`\n── significance distribution ──\n  ${sigLine}`);
+
+  console.log(`\nResults: ${allNew.length} validated-fetched, ${added.length} new, ${merged.length} stored after self-heal (was ${existing.length})`);
 
   // save items.json
   const itemsData = {
@@ -517,4 +655,10 @@ function updatePortfolioJSON(items) {
   fs.writeFileSync(pFile, JSON.stringify(existing, null, 2));
 }
 
-main().catch(e => { console.error('Fatal:', e); process.exit(1); });
+// Export pure helpers for offline testing; only run the network collector when
+// invoked directly (node collect-portfolio-updates.js).
+module.exports = { scoreSignificance, normalizeAndHeal, isSubstackHost, dedup };
+
+if (require.main === module) {
+  main().catch(e => { console.error('Fatal:', e); process.exit(1); });
+}

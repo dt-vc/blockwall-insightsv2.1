@@ -104,6 +104,21 @@ function dedupeLocales(entries) {
     return [...best.values()];
 }
 
+// Preferred-locale filter: keep non-prefixed and English URLs; DROP any URL whose
+// first path segment is a non-English locale (the /fr//de//es/ translations). Unlike
+// dedupeLocales (which only collapses same-slug locale variants), this also drops
+// translations whose slug itself is localized (e.g. Spiko's /de/blog/<german-slug>,
+// which has no shared canonical key with its English original). Applied during
+// discovery — BEFORE the per-company cap — so the cap fills with distinct articles,
+// not translations.
+function isPreferredLocaleUrl(url) {
+    const parts = pathParts(url);
+    if (!parts.length) return true;
+    const seg = String(parts[0]).toLowerCase();
+    if (!isLocale(seg)) return true;            // not a locale prefix -> keep
+    return seg === 'en' || /^en[-_]/.test(seg); // keep only English locale variants
+}
+
 // ── sitemap parsing ─────────────────────────────────────────────────────────
 function parseSitemapXml(body) {
     const isIndex = /<sitemapindex[\s>]/i.test(body);
@@ -139,7 +154,7 @@ async function discoverPosts(sitemapUrl, { maxChildren = 6, childDelayMs = 250 }
         }
     }
 
-    const posts = dedupeLocales(entries.filter(e => isPostUrl(e.url)));
+    const posts = dedupeLocales(entries.filter(e => isPostUrl(e.url) && isPreferredLocaleUrl(e.url)));
     return { ok: true, total: entries.length, posts };
 }
 
@@ -220,7 +235,7 @@ async function collectNewFromSitemap(company, seenUrls = new Set(), opts = {}) {
 }
 
 module.exports = {
-    parseSitemapXml, discoverPosts, isPostUrl, dedupeLocales, canonicalKey,
+    parseSitemapXml, discoverPosts, isPostUrl, dedupeLocales, isPreferredLocaleUrl, canonicalKey,
     metaContent, jsonLdDate, timeTagDate, dateFromUrl, parseOg, extractOg, collectNewFromSitemap,
 };
 
@@ -278,6 +293,15 @@ function selftest() {
     ]);
     A('dedupe: collapses locales to 2', deduped.length === 2);
     A('dedupe: keeps non-localized', deduped.some(e => e.url === 'https://x.io/blog/post'));
+
+    // preferred-locale filter (drops translated-slug dupes that dedupeLocales misses)
+    A('locale-pref: non-prefixed kept', isPreferredLocaleUrl('https://spiko.io/blog/a-day') === true);
+    A('locale-pref: /en/ kept', isPreferredLocaleUrl('https://spiko.io/en/blog/a-day') === true);
+    A('locale-pref: en-US kept', isPreferredLocaleUrl('https://spiko.io/en-us/blog/a-day') === true);
+    A('locale-pref: /de/ dropped', isPreferredLocaleUrl('https://spiko.io/de/blog/ein-tag') === false);
+    A('locale-pref: /fr/ dropped', isPreferredLocaleUrl('https://spiko.io/fr/blog/un-jour') === false);
+    A('locale-pref: /es/ dropped', isPreferredLocaleUrl('https://spiko.io/es/blog/un-dia') === false);
+    A('locale-pref: non-locale first seg kept (rss path)', isPreferredLocaleUrl('https://news.google.com/rss/articles/abc') === true);
 
     // dates
     A('dateFromUrl: /2026/06/12/', dateFromUrl('https://x.io/blog/2026/06/12/post') === '2026-06-12');
