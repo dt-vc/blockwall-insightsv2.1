@@ -191,26 +191,42 @@ function isSubstackHost(u) {
   try { return /(^|\.)substack\.com$/i.test(new URL(u).hostname); } catch { return false; }
 }
 
+// A raw *.substack.com subdomain (unlike the blockwall custom domain that
+// fetch-substack.js hits) sits behind Substack's Cloudflare bot-fight edge, which
+// 403s non-browser UAs from datacenter IPs on BOTH /feed and /api/v1/archive. So
+// present a real desktop-browser UA and try the JSON archive first, then the RSS
+// feed as a fallback.
+const SUBSTACK_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
 async function fetchSubstackArchive(feedUrl, limit) {
   const origin = new URL(feedUrl).origin;
-  const url = `${origin}/api/v1/archive?sort=new&search=&offset=0&limit=${Math.max(limit, 12)}`;
-  const body = await safeFetch(url, {
-    headers: { accept: 'application/json', 'user-agent': 'blockwall-insights-site/1.0 (+refresh-portfolio)' }
-  });
-  let arr;
-  try { arr = JSON.parse(body); } catch { throw new Error('substack archive: bad JSON'); }
-  if (!Array.isArray(arr)) throw new Error('substack archive: unexpected payload');
-  return arr
-    .filter(p => p && p.title && p.canonical_url)
-    .slice(0, limit)
-    .map(p => ({
-      title:       p.title,
-      link:        p.canonical_url,
-      description: p.description || p.subtitle || '',
-      pubDate:     p.post_date || null,
-      source:      'Substack',
-      image:       p.cover_image || null,
-    }));
+  const base = { 'user-agent': SUBSTACK_UA, 'accept-language': 'en-US,en;q=0.9' };
+
+  // 1) JSON archive API
+  try {
+    const apiUrl = `${origin}/api/v1/archive?sort=new&search=&offset=0&limit=${Math.max(limit, 12)}`;
+    const body = await safeFetch(apiUrl, { headers: { ...base, accept: 'application/json' } });
+    const arr = JSON.parse(body);
+    if (Array.isArray(arr) && arr.length) {
+      return arr
+        .filter(p => p && p.title && p.canonical_url)
+        .slice(0, limit)
+        .map(p => ({
+          title:       p.title,
+          link:        p.canonical_url,
+          description: p.description || p.subtitle || '',
+          pubDate:     p.post_date || null,
+          source:      'Substack',
+          image:       p.cover_image || null,
+        }));
+    }
+  } catch (e) {
+    console.log(`    substack-api: ${e.message} — falling back to RSS`);
+  }
+
+  // 2) RSS feed fallback (same browser UA)
+  const xml = await safeFetch(feedUrl, { headers: { ...base, accept: 'application/rss+xml, application/xml;q=0.9, */*;q=0.8' } });
+  return parseRSSItems(xml).slice(0, limit);
 }
 
 // ── X / Twitter API v2 ─────────────────────────────────────────────────────
