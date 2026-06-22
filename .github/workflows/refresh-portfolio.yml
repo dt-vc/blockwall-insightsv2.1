@@ -7,7 +7,7 @@ name: Refresh portfolio updates
 
 on:
   schedule:
-    - cron: "40 6 * * *"    # daily ~06:40 UTC. Knob: "0 */6 * * *" = 4x/day, "0 */3 * * *" = every 3h
+    - cron: "40 */6 * * *"  # every 6h at :40 past 00/06/12/18 UTC. Knob: "40 6 * * *" = daily, "0 */3 * * *" = every 3h
   workflow_dispatch: {}      # manual run from the Actions tab
 
 permissions:
