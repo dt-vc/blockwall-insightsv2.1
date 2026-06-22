@@ -29,5 +29,15 @@
       + '<path d="' + p.d + '" fill="none" stroke="var(--' + p.dir + ')" stroke-width="1.4" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round" pathLength="1"/>'
       + '<circle cx="' + p.lx.toFixed(1) + '" cy="' + p.ly.toFixed(1) + '" r="1.8" fill="var(--' + p.dir + ')"/></svg>';
   }
-  g.BWSpark = { path: path, svg: svg };
+  /* Hand-brushed accent stroke — the editions/home hero signature.
+     Returns the SAME SVG markup render-d.js / render-home.js emit inline, promoted
+     onto the shared helper so any page (e.g. the portfolio hero) can reuse the exact
+     primitive. Styled by .brush-dash / .hero__rule .brush-dash in dir-d4.css. */
+  function brushDash() {
+    var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 120 34"); s.setAttribute("class", "brush-dash"); s.setAttribute("aria-hidden", "true"); s.setAttribute("focusable", "false");
+    s.innerHTML = '<path fill="currentColor" d="M3 22 C 26 13, 52 11, 78 13 C 95 14, 108 16, 117 13 C 110 17, 96 20, 79 20 C 53 21, 27 22, 5 27 C 3.6 27.3 2.4 26.6 2.2 25.2 C 2 24 2 23 3 22 Z"/>';
+    return s;
+  }
+  g.BWSpark = { path: path, svg: svg, brushDash: brushDash };
 })(window);

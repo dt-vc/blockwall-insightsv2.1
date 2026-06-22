@@ -229,11 +229,27 @@
   function setText(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; }
   function showError(id, e) { var el = document.getElementById(id); if (el) el.appendChild(h("div", { class: "pf-empty" }, "Couldn't load portfolio data. " + (e && e.message ? e.message : ""))); }
 
+  /* hero brush-dash signature — reuse the exact shared editions/home primitive */
+  function heroSpark() {
+    var rule = document.getElementById("pf-hero-rule");
+    if (rule && !rule.firstChild && window.BWSpark && window.BWSpark.brushDash) rule.appendChild(window.BWSpark.brushDash());
+  }
+  /* scroll-reveal — mirrors the editions/home IntersectionObserver (.reveal -> .in-view) */
+  function revealWire() {
+    var rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (window.IntersectionObserver && !rm) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in-view"); io.unobserve(en.target); } }); }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+      document.querySelectorAll(".reveal:not(.in-view)").forEach(function (el) { io.observe(el); });
+    } else { document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in-view"); }); }
+  }
+
   function boot() {
     document.documentElement.classList.add("dir-d");
     wordmark();
+    heroSpark();
     var page = document.body.getAttribute("data-page");
     if (page === "company") renderCompany(); else renderRiver();
+    revealWire();
   }
   if (document.readyState !== "loading") boot(); else document.addEventListener("DOMContentLoaded", boot);
 })();

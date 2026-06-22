@@ -45,22 +45,32 @@
 </header>
 
 <main class="wrap pf-main">
-  <section class="pf-hero">
-    <h1>Portfolio</h1>
-    <p>Live signal across the Blockwall portfolio — blog posts, news and funding from our companies, newest first.</p>
-    <div class="pf-hero__stats">
-      <span class="pf-hero__stat"><b id="pf-stat-companies">—</b> companies</span>
-      <span class="pf-hero__stat"><b id="pf-stat-active">—</b> active</span>
-      <span class="pf-hero__stat"><b id="pf-stat-updates">—</b> recent updates</span>
+  <section class="pf-hero hero reveal" id="pf-hero">
+    <div class="hero__bg is-fallback"></div>
+    <div class="hero__scrim"></div>
+    <div class="hero__card">
+      <div class="hero__eyebrow eyebrow">
+        <span class="chip accent">Portfolio</span>
+        <span class="num pf-hero__live"><span class="pf-livedot" aria-hidden="true"></span>Live signal</span>
+      </div>
+      <p class="desk-byline"><span class="desk-dot" aria-hidden="true"></span>Blockwall Portfolio<span class="desk-sep" aria-hidden="true">·</span>Frankfurt</p>
+      <div class="hero__rule" id="pf-hero-rule"></div>
+      <h1 class="hero__title">Portfolio</h1>
+      <p class="hero__tldr">Live signal across the Blockwall portfolio — blog posts, news and funding from our companies, newest first.</p>
+      <div class="pf-hero__stats">
+        <span class="pf-hero__stat"><b id="pf-stat-companies">—</b> companies</span>
+        <span class="pf-hero__stat"><b id="pf-stat-active">—</b> active</span>
+        <span class="pf-hero__stat"><b id="pf-stat-updates">—</b> recent updates</span>
+      </div>
     </div>
   </section>
 
-  <section class="pf-section" id="river">
+  <section class="pf-section reveal" id="river">
     <div class="pf-section-head"><h2>The river</h2><span class="pf-eyebrow">Newest first</span></div>
     <div class="pf-river" id="pf-river-feed" aria-live="polite"></div>
   </section>
 
-  <section class="pf-section" id="companies">
+  <section class="pf-section reveal" id="companies">
     <div class="pf-section-head"><h2>Portfolio companies</h2><span class="pf-eyebrow">By sector</span></div>
     <div class="pf-filters" id="pf-filters"></div>
     <div class="pf-companies" id="pf-companies-grid"></div>
@@ -84,6 +94,7 @@
   <div class="foot-logo"><a class="foot-logo__mark" href="../index.html" aria-label="Blockwall"><span class="bw-mark bw-mark--big">Blockwall</span></a></div>
 </footer>
 
+<script src="../assets/js/spark.js"></script>
 <script src="../assets/js/portfolio.js"></script>
 <script src="../assets/js/theme.js"></script>
 </body>
