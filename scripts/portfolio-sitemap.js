@@ -33,8 +33,13 @@
 
 const TIMEOUT_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; BlockwallPortfolioCollector/1.0; +https://blockwall.vc)';
-const SECTION_WORD = /^(blogs?|posts?|news|articles?|insights?|updates?|stories|story|press|resources?|learn|library)$/i;
+const SECTION_WORD = /^(blogs?|posts?|news|articles?|insights?|updates?|stories|story|press|resources?|learn|library|research)$/i;
 const NONPOST_SLUG = /^(page|pages|tag|tags|category|categories|topic|topics|author|authors|archive|archives|feed|rss|amp|search|index|all)$/i;
+// Sub-section index segments that nest UNDER a section (functionSpace puts opinions &
+// bounties under /research/). As the FINAL path segment they mark a listing page, not a
+// post (/research/opinions, /research/bounties); with a further slug after them
+// (/research/opinions/<slug>) that slug IS the post and this never fires.
+const SUBSECTION_WORD = /^(opinions?|bounty|bounties)$/i;
 const KNOWN_LOCALES = new Set(['en', 'fr', 'de', 'es', 'pt', 'it', 'nl', 'pl', 'ja', 'zh', 'ko', 'ru', 'tr', 'ar', 'sv', 'da', 'no', 'fi', 'cs', 'el', 'he', 'hi', 'id', 'th', 'vi', 'uk', 'ro', 'hu', 'sk', 'bg', 'hr', 'sr', 'sl', 'et', 'lv', 'lt', 'ca']);
 
 // ── helpers ───────────────────────────────────────────────────────────────
@@ -70,7 +75,13 @@ async function fetchText(url) {
 function isPostUrl(url) {
     let parts = stripLocale(pathParts(url));
     if (parts.length < 2) return false;                       // need section + slug
-    if (/^\d+$/.test(parts[parts.length - 1])) return false;  // pagination / year archive
+    const last = parts[parts.length - 1];
+    if (/^\d+$/.test(last)) return false;                     // pagination / year archive
+    // A URL that ENDS in a section or sub-section keyword is an index/listing, not a
+    // post: /research/ (-> ['research'] caught above), /research/opinions, /research/bounties.
+    // Real posts end in an article slug. (A post nested below a sub-section keeps the
+    // slug last: /research/opinions/<slug>, so this guard doesn't reject those.)
+    if (SECTION_WORD.test(last) || SUBSECTION_WORD.test(last)) return false;
     for (let i = 0; i < parts.length - 1; i++) {
         if (SECTION_WORD.test(parts[i])) {
             if (NONPOST_SLUG.test(parts[i + 1])) return false;    // listing/archive: /blog/tag/x, /blog/page/2
@@ -283,6 +294,13 @@ function selftest() {
     A('post: dated path post accepted', isPostUrl('https://x.io/blog/2026/06/my-post') === true);
     A('post: non-blog page rejected', isPostUrl('https://x.io/about') === false);
     A('post: tag listing rejected', isPostUrl('https://x.io/blog/tag/defi') === false);
+    // functionSpace: /research/<slug> posts + nested /research/opinions/<slug>, with the
+    // /research/, /research/opinions and /research/bounties index pages all rejected.
+    A('post: /research/<slug> accepted', isPostUrl('https://www.functionspace.dev/research/the-yes-bias-might-not-exist') === true);
+    A('post: /research/opinions/<slug> accepted', isPostUrl('https://www.functionspace.dev/research/opinions/oracle-should-be-a-market') === true);
+    A('post: /research/ index rejected', isPostUrl('https://www.functionspace.dev/research/') === false);
+    A('post: /research/opinions section rejected', isPostUrl('https://www.functionspace.dev/research/opinions') === false);
+    A('post: /research/bounties section rejected', isPostUrl('https://www.functionspace.dev/research/bounties') === false);
 
     // locale dedupe
     const deduped = dedupeLocales([
