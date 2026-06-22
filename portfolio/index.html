@@ -38,8 +38,9 @@
   </div>
   <div class="wrap">
     <nav class="subnav" aria-label="Sections">
-      <a href="#river">The River</a>
+      <a href="#river">Newest</a>
       <a href="#companies">Companies</a>
+      <a href="#updates">All updates</a>
     </nav>
   </div>
 </header>
@@ -66,14 +67,19 @@
   </section>
 
   <section class="pf-section reveal" id="river">
-    <div class="pf-section-head"><h2>The river</h2><span class="pf-eyebrow">Newest first</span></div>
-    <div class="pf-river" id="pf-river-feed" aria-live="polite"></div>
+    <div class="pf-section-head"><h2>Newest signal</h2><span class="pf-eyebrow">Across the portfolio</span></div>
+    <div id="pf-river-feed"></div>
   </section>
 
   <section class="pf-section reveal" id="companies">
-    <div class="pf-section-head"><h2>Portfolio companies</h2><span class="pf-eyebrow">By sector</span></div>
+    <div class="pf-section-head"><h2>The portfolio</h2><span class="pf-eyebrow">By sector</span></div>
     <div class="pf-filters" id="pf-filters"></div>
-    <div class="pf-companies" id="pf-companies-grid"></div>
+    <div id="pf-companies-grid"></div>
+  </section>
+
+  <section class="pf-section reveal" id="updates">
+    <div class="pf-section-head"><h2>All updates</h2><span class="pf-eyebrow">Newest first</span></div>
+    <div class="pf-river" id="pf-updates-feed" aria-live="polite"></div>
   </section>
 </main>
 
@@ -95,6 +101,8 @@
 </footer>
 
 <script src="../assets/js/spark.js"></script>
+<script src="../assets/js/lenis.min.js"></script>
+<script src="../assets/js/smooth-scroll.js"></script>
 <script src="../assets/js/portfolio.js"></script>
 <script src="../assets/js/theme.js"></script>
 </body>
