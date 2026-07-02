@@ -293,6 +293,33 @@
     var rest = arr.slice(1).map(function (s) { return signalCard(s, assets, false, ed.id, s.id === topId); });
     return blk("signals", "02", "Top Signals", h("div", null, signalCard(arr[0], assets, true, ed.id, arr[0].id === topId), rest.length ? h("div", { class: "signals__list" }, rest) : null));
   }
+  function titleCase(s) { return String(s || "").trim().replace(/\S+/g, function (w) { return w.charAt(0).toUpperCase() + w.slice(1); }); }
+  /* Weekly/monthly: same featured card as signals(), then the remaining signals grouped into
+     themed sections by `category`. Reuses signalCard() verbatim so card styling/behavior is identical. */
+  function signalsThemed(ed, assets) {
+    var arr = ed.top_signals || []; if (!arr.length) return null;
+    var maxSig = Math.max.apply(null, arr.map(function (s) { return s.significance || 0; }));
+    var topId = null; for (var i = 0; i < arr.length; i++) { if ((arr[i].significance || 0) === maxSig) { topId = arr[i].id; break; } }
+    var featured = signalCard(arr[0], assets, true, ed.id, arr[0].id === topId);
+    /* group the remaining signals by category — preserve the existing (significance) order within each group */
+    var groups = [], byKey = {};
+    arr.slice(1).forEach(function (s) {
+      var cat = (s.category || "").trim(), key = cat ? cat.toLowerCase() : "other";
+      var g = byKey[key]; if (!g) { g = byKey[key] = { label: cat ? titleCase(cat) : "Other", items: [], maxSig: 0 }; groups.push(g); }
+      g.items.push(s); if ((s.significance || 0) > g.maxSig) g.maxSig = s.significance || 0;
+    });
+    /* theme order: signal count desc, then max significance within the theme desc */
+    groups.sort(function (a, b) { return (b.items.length - a.items.length) || (b.maxSig - a.maxSig); });
+    var groupEls = groups.map(function (g) {
+      return h("section", { class: "sig-theme" },
+        h("div", { class: "sig-theme__head" }, h("h3", { class: "sig-theme__name" }, g.label), h("span", { class: "sig-theme__count num" }, "· " + g.items.length)),
+        h("div", { class: "signals__list" }, g.items.map(function (s) { return signalCard(s, assets, false, ed.id, s.id === topId); })));
+    });
+    var thesis = ((ed.lead || {}).tldr || "").trim();
+    var stand = thesis ? h("p", { class: "measure signals-thesis" }, thesis) : null;
+    var title = ed.type === "monthly" ? "The Month in Focus" : "The Week in Focus";
+    return blk("signals", "02", title, h("div", null, stand, featured, groupEls));
+  }
 
   function ascroll(label, items, axis, speed, cls) {
     return h("section", { class: "ascroll " + (cls || ""), "data-axis": axis || "y", "data-speed": speed || "" },
@@ -524,7 +551,8 @@
     var heroRec = imgFor((ed.top_signals && ed.top_signals[0]) || {}, assets);
     var main = h("main", null,
       h("div", { class: "wrap edition" }, h("div", { class: "edition__main" }, hero(ed, no, heroRec && heroRec.img),
-        ed.intro ? blk(null, null, null, h("p", { class: "measure" }, ed.intro), "intro") : null, leadBody(ed), keyTakeaways(ed), tape(ed), statsBlock(ed), signals(ed, assets), pullQuote(ed)), rail(ed, assets)),
+        ed.intro ? blk(null, null, null, h("p", { class: "measure" }, ed.intro), "intro") : null, leadBody(ed), keyTakeaways(ed), tape(ed), statsBlock(ed),
+        (ed.type === "weekly" || ed.type === "monthly") ? signalsThemed(ed, assets) : signals(ed, assets), pullQuote(ed)), rail(ed, assets)),
       h("div", { class: "wrap lower" }, deals(ed), resources(ed, assets), whatToWatch(ed), linkedinBlock(ed)));
     app.appendChild(main);
     var ednav = editionNav(_nav); if (ednav) app.appendChild(h("div", { class: "wrap" }, ednav));

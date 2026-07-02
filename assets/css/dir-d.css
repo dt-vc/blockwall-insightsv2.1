@@ -53,7 +53,7 @@
 /* ---------- edition grid ---------- */
 .dir-d .edition { display:grid; grid-template-columns:minmax(0,1.7fr) clamp(320px,27vw,366px); column-gap:40px; align-items:start; padding-top:var(--space-7); }
 .dir-d .edition__rail { border-left:1px solid var(--hairline); padding-left:32px; }
-.dir-d .edition__rail-inner { position:sticky; top:104px; max-height:calc(100vh - 124px); display:flex; flex-direction:column; gap:20px; }
+.dir-d .edition__rail-inner { position:sticky; top:104px; max-height:clamp(520px, 70vh, 720px); display:flex; flex-direction:column; gap:20px; }
 .dir-d .blk { padding-block:var(--space-7); border-top:1px solid var(--hairline); }
 .dir-d .blk:first-child { border-top:none; }
 .dir-d .blk-head { display:flex; align-items:baseline; gap:12px; margin-bottom:var(--space-5); }
@@ -101,6 +101,13 @@
 .dir-d .signal__why { margin:12px 0 0; padding-left:12px; border-left:2px solid var(--accent); color:var(--text-secondary); font-size:0.9375rem; line-height:1.5; }
 .dir-d .signal__why b { color:var(--text-muted); font-weight:600; font-size:0.6875rem; letter-spacing:0.12em; text-transform:uppercase; display:block; margin-bottom:3px; }
 .dir-d .signal__foot { display:flex; align-items:center; gap:10px; margin-top:14px; }
+
+/* ---------- themed signals (weekly/monthly "…in Focus") ---------- */
+.dir-d .signals-thesis { color:var(--text-secondary); font-size:1.0625rem; line-height:1.6; margin:0 0 var(--space-5); }
+.dir-d .sig-theme { margin-top:var(--space-6); }
+.dir-d .sig-theme__head { display:flex; align-items:baseline; gap:10px; margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid var(--hairline); }
+.dir-d .sig-theme__name { font-family:"Satoshi"; font-weight:500; font-size:1.0625rem; letter-spacing:-0.01em; color:var(--text-primary); margin:0; }
+.dir-d .sig-theme__count { font-variant-numeric:tabular-nums; font-size:0.8125rem; color:var(--text-muted); font-weight:600; }
 
 /* underline reveal */
 .dir-d a.uline { background-image:linear-gradient(currentColor,currentColor); background-size:0% 1px; background-position:left bottom; background-repeat:no-repeat; transition:background-size .3s var(--ease-entrance),color var(--t-micro); padding-bottom:1px; }
