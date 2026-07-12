@@ -18,6 +18,7 @@ const path = require('path');
 const crypto = require('crypto');
 const { buildValidators } = require('./portfolio-validate');
 const sitemap = require('./portfolio-sitemap');
+const gnews = require('./portfolio-gnews');
 
 // ── paths ───────────────────────────────────────────────────────────────────
 const ROOT       = path.join(__dirname, '..');
@@ -318,11 +319,13 @@ async function collectCompany(slug, cfg, ctx) {
     await sleep(DELAY_BETWEEN);
 
   } else if (method === 'sitemap') {
-    // NEW: sitemap-diff + og-extract (inert metadata becomes live here)
-    if (cfg.sitemap) {
+    // sitemap-diff + blog-index scrape (FIX C) + og-extract. A company may have a sitemap,
+    // a blog_index, or both (blog_index also gives a source to companies with no sitemap/feed).
+    if (cfg.sitemap || cfg.blog_index) {
+      const srcUrl = cfg.sitemap || cfg.blog_index;
       try {
         const res = await sitemap.collectNewFromSitemap(
-          { slug, sitemapUrl: cfg.sitemap, domain: ctx.domainBySlug[slug] },
+          { slug, sitemapUrl: cfg.sitemap, domain: ctx.domainBySlug[slug], blogIndexUrl: cfg.blog_index },
           ctx.seenUrls,          // existing items.json URLs (dedup set)
           { maxNew: 20 }         // seed run; tune later
         );
@@ -333,27 +336,55 @@ async function collectCompany(slug, cfg, ctx) {
               pubDate: it.date, source: it.publisher, image: it.image_url,
             }, it.source_type || 'blog'));
           }
-          console.log(`    sitemap: ${res.new} new of ${res.discovered} post URLs  (${cfg.sitemap})`);
+          const via = cfg.blog_index ? ` [${res.sitemap} sitemap + ${res.blogIndex} blog-index]` : '';
+          console.log(`    sitemap: ${res.new} new of ${res.discovered} post URLs${via}  (${srcUrl})`);
         } else {
-          console.log(`    sitemap failed: ${res.error}  (${cfg.sitemap})`);
+          console.log(`    sitemap failed: ${res.error}  (${srcUrl})`);
         }
       } catch (e) {
-        console.log(`    sitemap failed: ${e.message}  (${cfg.sitemap})`);
+        console.log(`    sitemap failed: ${e.message}  (${srcUrl})`);
       }
     } else {
-      console.log(`    sitemap: no sitemap url set — skipped`);
+      console.log(`    sitemap: no sitemap/blog_index url set — skipped`);
     }
     await sleep(DELAY_BETWEEN);
 
   } else {
-    // method === 'news' (and any unknown method): existing Google-News path
+    // method === 'news' (and any unknown method): Google-News path.
+    // FIX B: Google News now serves opaque .../articles/CBMi… redirect URLs, so the
+    // validator's domain/text match can't fire. Decode each to the real publisher URL
+    // and enrich from that article's og so the (tightened) identifiers can match on the
+    // real title/description. A company with query:null/"" is intentionally disabled
+    // (Google News returns only namesake junk for it — e.g. blinklabs/opfn/portmarkets).
     if (method !== 'news') console.log(`    (unknown method "${method}" — falling back to news)`);
-    try {
-      const raw = await fetchGoogleNews(cfg.query, limit);
-      for (const r of raw) candidates.push(toPortfolioItem(slug, cfg.name, r, 'news'));
-      console.log(`    news:    ${raw.length} items  (${cfg.query})`);
-    } catch (e) {
-      console.log(`    news failed: ${e.message}`);
+    if (!cfg.query) {
+      console.log(`    news:    disabled (no query — Google News too noisy for this entity)`);
+    } else {
+      try {
+        const raw = await fetchGoogleNews(cfg.query, limit);
+        let resolved = 0, unresolved = 0, seenSkip = 0;
+        for (const r of raw) {
+          const realUrl = await gnews.decodeGoogleNewsUrl(r.link).catch(() => null);
+          if (!realUrl || /news\.google\./.test(realUrl)) { unresolved++; continue; }  // opaque link is useless downstream
+          if (ctx.seenUrls.has(realUrl)) { seenSkip++; continue; }                      // already ingested — skip the enrich fetch
+          resolved++;
+          const og = await sitemap.extractOg(realUrl).catch(() => ({ ok: false }));
+          const nItem = toPortfolioItem(slug, cfg.name, {
+            title:       (og.ok && og.title) || r.title,
+            link:        realUrl,
+            description: (og.ok && og.description) || r.description,
+            pubDate:     (og.ok && og.published) || r.pubDate,
+            source:      (og.ok && og.site_name) || r.source || domainFromURL(realUrl),
+            image:       (og.ok && og.image) || null,
+          }, 'news');
+          if (og.ok && og.text) nItem._matchText = og.text;   // body sample for validation only
+          candidates.push(nItem);
+          await sleep(400);   // politeness: decode = 2 reqs + og = 1 req per item
+        }
+        console.log(`    news:    ${raw.length} fetched → ${resolved} resolved+enriched, ${seenSkip} already-seen, ${unresolved} unresolvable  (${cfg.query})`);
+      } catch (e) {
+        console.log(`    news failed: ${e.message}`);
+      }
     }
     await sleep(DELAY_BETWEEN);
   }
@@ -377,7 +408,8 @@ async function collectCompany(slug, cfg, ctx) {
   // this mainly filters the Google-News path's name-collision noise.
   const v = (ctx.validators && ctx.validators[slug]) || (() => ({ ok: true, reason: 'no-validator' }));
   const kept = candidates.filter(it => {
-    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher });
+    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher, matchText: it._matchText });
+    delete it._matchText;   // transient (news body sample) — validate only, never stored
     if (!r.ok) {
       ctx.drops.total++;
       const line = `  drop [${slug}] ${r.reason}  ${it.url}`;

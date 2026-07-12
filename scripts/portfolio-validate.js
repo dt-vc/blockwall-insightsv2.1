@@ -89,19 +89,31 @@ function makeValidator(company, trustedHosts = []) {
         return trusted.some(t => h === t || h.endsWith('.' + t));
     }
 
+    // Founder / person-name identifiers (registry .founders) are "body-safe": a story naming a
+    // specific person is almost always ABOUT their company, so these may match in the article
+    // BODY sample too (recovers coverage that names the company only as "Den" in the headline but
+    // the founder in the body). Everything else — domain, company name, product token — is
+    // co-mention-prone (fintech roundups link rivals) and matches in CORE text only. Populate
+    // .founders ONLY with names that don't collide with a namesake (we deliberately excluded
+    // Casper Yonel, Oneal Bhambani, Adeoye Ojo, Jonah Erlich for exactly that reason).
+    const founders = ((company && company.founders) || []).map(norm).filter(Boolean);
+
     return function validate(item) {
         const url = (item && item.url) || '';
-        const hay = norm(
-            [item && item.title, item && item.summary, item && item.publisher, url].join(' ')
-        );
+        // core = headline/description/publisher/url (reliable). body = a capped article-body
+        // sample supplied for off-domain NEWS items (co-mention-prone → founder names only).
+        const core = norm([item && item.title, item && item.summary, item && item.publisher, url].join(' '));
+        const body = norm(item && item.matchText);
 
         if (onTrustedHost(url)) return { ok: true, reason: 'on-domain', signal: hostOf(url) };
-        if (domain && hay.includes(domain)) return { ok: true, reason: 'domain-mention', signal: domain };
-        if (rootRe && rootRe.test(hay)) return { ok: true, reason: 'root-mention', signal: root };
-        for (const sid of strongIds) {
-            if (hay.includes(sid)) return { ok: true, reason: 'strong-identifier', signal: sid };
+        if (domain && core.includes(domain)) return { ok: true, reason: 'domain-mention', signal: domain };
+        if (rootRe && rootRe.test(core)) return { ok: true, reason: 'root-mention', signal: root };
+        for (const sid of strongIds) { if (core.includes(sid)) return { ok: true, reason: 'strong-identifier', signal: sid }; }
+        for (const f of founders) {
+            if (core.includes(f)) return { ok: true, reason: 'founder', signal: f };
+            if (body.includes(f)) return { ok: true, reason: 'founder-body', signal: f };
         }
-        const weak = weakRes.find(w => w.re.test(hay));
+        const weak = weakRes.find(w => w.re.test(core));
         return { ok: false, reason: weak ? `weak-match-only:${weak.id}` : 'no-match', signal: weak ? weak.id : null };
     };
 }

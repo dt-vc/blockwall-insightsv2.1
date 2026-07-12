@@ -51,6 +51,10 @@ function decode(s) {
         .trim();
 }
 function hostOf(url) { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; } }
+// canonical key for cross-source dedup: host (no www) + path (no trailing slash), lowercased,
+// protocol/query/hash dropped — so a blog-index's www URL and the sitemap's non-www URL for the
+// same post collapse to one (prevents staex-style www/non-www double-ingestion).
+function canonUrl(url) { try { const u = new URL(url); return u.hostname.replace(/^www\./, '').toLowerCase() + u.pathname.replace(/\/+$/, '').toLowerCase(); } catch { return String(url || '').toLowerCase(); } }
 function pathParts(url) { try { return new URL(url).pathname.split('/').filter(Boolean); } catch { return []; } }
 function isLocale(seg) { const s = String(seg || '').toLowerCase(); return KNOWN_LOCALES.has(s) || /^[a-z]{2}-[a-z]{2,4}$/.test(s); }
 function stripLocale(parts) { return parts.length && isLocale(parts[0]) ? parts.slice(1) : parts; }
@@ -169,6 +173,31 @@ async function discoverPosts(sitemapUrl, { maxChildren = 6, childDelayMs = 250 }
     return { ok: true, total: entries.length, posts };
 }
 
+// ── blog-INDEX scrape fallback (FIX C) ───────────────────────────────────────
+// Some companies publish posts that never enter their sitemap.xml (confirmed:
+// spiko's Jul-9 Ramify post; saltox & kirha whose sitemaps yield 0 post URLs).
+// sitemap-diff logs a truthful "0 new" while missing them. This scrapes the
+// company's blog INDEX HTML and returns post URLs the same way discoverPosts does
+// (isPostUrl + preferred-locale + locale-dedupe), for union with the sitemap set.
+async function discoverFromBlogIndex(indexUrl) {
+    const r = await fetchText(indexUrl);
+    if (!r.ok) return { ok: false, error: `blog-index ${r.status || r.error}`, posts: [] };
+    const base = r.finalUrl || indexUrl;
+    const host = hostOf(base);
+    const urls = new Set();
+    // href="..."/href='...' (root-relative or absolute) resolved against the page URL
+    for (const m of r.body.matchAll(/\bhref\s*=\s*["']([^"'#]+)["']/gi)) {
+        try { urls.add(new URL(m[1], base).href.split('#')[0]); } catch { /* skip */ }
+    }
+    // bare absolute URLs in the markup (SSR JSON, data-* attrs)
+    for (const m of r.body.matchAll(/https?:\/\/[^\s"'<>()\\]+/gi)) urls.add(m[0].split('#')[0]);
+    const entries = [...urls]
+        .filter(u => hostOf(u) === host)                              // same site only
+        .filter(u => isPostUrl(u) && isPreferredLocaleUrl(u))         // real posts, English/none-locale
+        .map(u => ({ url: u, lastmod: null }));                       // date comes from og-enrich later
+    return { ok: true, total: urls.size, posts: dedupeLocales(entries) };
+}
+
 // ── og / meta / JSON-LD / <time> / URL date extraction ───────────────────────
 function metaContent(html, keys) {
     const tags = html.match(/<meta\b[^>]*>/gi) || [];
@@ -215,18 +244,44 @@ function parseOg(html, url) {
     };
 }
 
+// stripped, capped body-text sample — lets the news validator match a company's
+// strong identifier (founder name, full name) that appears in the ARTICLE BODY but
+// not in og:title/description (e.g. CoinDesk names "Den" in the title but "Ittai
+// Svidler" only in the body). Capped so a deep co-mention in a long roundup doesn't count.
+function bodyText(html, cap = 4000) {
+    return String(html || '')
+        .replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim().slice(0, cap);
+}
 async function extractOg(url) {
     const r = await fetchText(url);
     if (!r.ok) return { ok: false, status: r.status, error: r.error };
-    return { ok: true, ...parseOg(r.body, url) };
+    return { ok: true, ...parseOg(r.body, url), text: bodyText(r.body) };
 }
 
 async function collectNewFromSitemap(company, seenUrls = new Set(), opts = {}) {
     const { maxNew = 20, enrichDelayMs = 350 } = opts;
-    const disc = await discoverPosts(company.sitemapUrl, opts);
-    if (!disc.ok) return { ok: false, error: disc.error, items: [] };
+    // a company may have a sitemap, a blog index, or both. Skip sitemap discovery cleanly
+    // when there's no sitemap URL (blog-index-only sources, e.g. a news company with no feed).
+    const disc = company.sitemapUrl ? await discoverPosts(company.sitemapUrl, opts) : { ok: false, error: 'no sitemap', posts: [] };
+    let posts = disc.ok ? disc.posts.slice() : [];
+    const sitemapCount = disc.ok ? disc.posts.length : 0;
 
-    const fresh = disc.posts.filter(p => !seenUrls.has(p.url)).slice(0, maxNew);
+    // FIX C: union blog-index posts the sitemap omits. Canonical dedup (www/non-www, trailing
+    // slash) so a blog index that redirects to www doesn't re-add the sitemap's non-www posts.
+    let blogIndexCount = 0;
+    if (company.blogIndexUrl) {
+        const bi = await discoverFromBlogIndex(company.blogIndexUrl);
+        if (bi.ok) {
+            const known = new Set(posts.map(p => canonUrl(p.url)));
+            for (const p of bi.posts) { const k = canonUrl(p.url); if (!known.has(k)) { posts.push(p); known.add(k); blogIndexCount++; } }
+        }
+    }
+    // fail only if BOTH sources failed to yield anything
+    if (!disc.ok && !posts.length) return { ok: false, error: disc.error, items: [] };
+
+    const seenCanon = new Set([...seenUrls].map(canonUrl));
+    const fresh = posts.filter(p => !seenUrls.has(p.url) && !seenCanon.has(canonUrl(p.url))).slice(0, maxNew);
     const items = [];
     for (const p of fresh) {
         const og = await extractOg(p.url);
@@ -242,11 +297,11 @@ async function collectNewFromSitemap(company, seenUrls = new Set(), opts = {}) {
         });
         await sleep(enrichDelayMs);
     }
-    return { ok: true, discovered: disc.posts.length, new: items.length, items };
+    return { ok: true, discovered: posts.length, sitemap: sitemapCount, blogIndex: blogIndexCount, new: items.length, items };
 }
 
 module.exports = {
-    parseSitemapXml, discoverPosts, isPostUrl, dedupeLocales, isPreferredLocaleUrl, canonicalKey,
+    parseSitemapXml, discoverPosts, discoverFromBlogIndex, isPostUrl, dedupeLocales, isPreferredLocaleUrl, canonicalKey,
     metaContent, jsonLdDate, timeTagDate, dateFromUrl, parseOg, extractOg, collectNewFromSitemap,
 };
 
