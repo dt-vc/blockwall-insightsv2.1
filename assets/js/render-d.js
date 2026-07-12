@@ -543,6 +543,56 @@
     }).catch(function () { /* portfolio data unavailable — silently skip, editions unaffected */ });
   }
 
+  /* ---------- Portfolio Radar ----------------------------------------------------
+     Highlights when a Blockwall portfolio company is named in THIS edition's signals
+     (scans top_signals + on_the_radar). Renders ONLY when >=1 company matches.
+     TWIN COPY: the n8n "Prepare Prompt" node holds an IDENTICAL PORTFOLIO registry +
+     hasTerm() for the LinkedIn post's portfolio line — keep the two in sync so the
+     on-page block and the LinkedIn line never disagree. */
+  var PORTFOLIO = [{slug:'bloxmove',name:'BloXmove',terms:['bloxmove']},{slug:'xylene',name:'Xylene',terms:['xylene']},{slug:'busha',name:'Busha',terms:['busha']},{slug:'staex',name:'Staex',terms:['staex']},{slug:'saltox',name:'Salto X',terms:['saltox','salto x']},{slug:'blinklabs',name:'Blink Labs',terms:['blinklabs','blink labs']},{slug:'spiko',name:'Spiko',terms:['spiko']},{slug:'zealy',name:'Zealy',terms:['zealy']},{slug:'validationcloud',name:'Validation Cloud',terms:['validationcloud','validation cloud']},{slug:'opfn',name:'Opfn',terms:['opfn']},{slug:'spherity',name:'Spherity',terms:['spherity']},{slug:'tlon',name:'Tlon',terms:['tlon']},{slug:'nilos',name:'Nilos',terms:['nilos']},{slug:'tranched',name:'Tranched',terms:['tranched']},{slug:'river',name:'River',terms:['getriver','river platform']},{slug:'byzantine',name:'Byzantine Finance',terms:['byzantine finance']},{slug:'rebind',name:'Rebind',terms:['rebind']},{slug:'kirha',name:'Kirha',terms:['kirha']},{slug:'blu',name:'Blu',terms:['blufinanciero','identdefi']},{slug:'spectarium',name:'Spectarium',terms:['spectarium']},{slug:'kulipa',name:'Kulipa',terms:['kulipa']},{slug:'den',name:'Den',terms:['onchainden','den technologies']},{slug:'yousend',name:'Yousend',terms:['yousend']},{slug:'flyra',name:'Flyra',terms:['flyra']},{slug:'functionspace',name:'functionSpace',terms:['functionspace']},{slug:'portmarkets',name:'Port Markets',terms:['portmarkets','port markets']}];
+  /* word-boundary, case-insensitive match (hay must be lowercased). Identical to the n8n twin.
+     Registry terms are deliberately distinctive ('getriver' not bare 'river', 'onchainden' not
+     'den', 'port markets' not 'port') so ordinary words never false-match. */
+  function hasTerm(hay, term) {
+    var idx = hay.indexOf(term);
+    while (idx !== -1) {
+      var b = idx === 0 ? " " : hay[idx - 1];
+      var a = idx + term.length >= hay.length ? " " : hay[idx + term.length];
+      if (!/[a-z0-9]/.test(b) && !/[a-z0-9]/.test(a)) return true;
+      idx = hay.indexOf(term, idx + 1);
+    }
+    return false;
+  }
+  function portfolioRadar(ed) {
+    var pool = (ed.top_signals || []).concat(ed.on_the_radar || []);
+    if (!pool.length) return null;
+    var matched = [];
+    PORTFOLIO.forEach(function (co) {
+      var arts = pool.filter(function (it) {
+        var hay = ((it.title || "") + " " + (it.summary || "")).toLowerCase();
+        return co.terms.some(function (t) { return hasTerm(hay, t); });
+      });
+      if (arts.length) matched.push({ co: co, arts: arts });
+    });
+    if (!matched.length) return null;   // no portfolio company in the news -> render nothing
+    var rows = matched.map(function (m) {
+      var arts = m.arts.map(function (it) {
+        var url = safeUrl(it.url);
+        return h("div", { class: "pr-article" },
+          url ? h("a", { class: "pr-article__title uline", href: url, target: "_blank", rel: "noopener" }, it.title || "")
+              : h("span", { class: "pr-article__title" }, it.title || ""),
+          it.source ? h("span", { class: "pr-article__src num" }, it.source) : null);
+      });
+      return h("div", { class: "pr-co" },
+        h("div", { class: "pr-co__head" }, h("span", { class: "chip accent" }, m.co.name),
+          h("span", { class: "pr-co__count" }, m.arts.length + (m.arts.length === 1 ? " mention" : " mentions"))),
+        h("div", { class: "pr-co__arts" }, arts));
+    });
+    return blk("portfolio-radar", null, "Portfolio Radar", h("div", null,
+      h("p", { class: "pradar__intro t-caption muted" }, "Blockwall portfolio companies named in this edition's signals."),
+      h("div", { class: "pr-list" }, rows)), "pradar");
+  }
+
   function build(ed, no, assets) {
     var app = document.getElementById("app");
     app.appendChild(masthead(ed, no));
@@ -552,7 +602,7 @@
     var main = h("main", null,
       h("div", { class: "wrap edition" }, h("div", { class: "edition__main" }, hero(ed, no, heroRec && heroRec.img),
         ed.intro ? blk(null, null, null, h("p", { class: "measure" }, ed.intro), "intro") : null, leadBody(ed), keyTakeaways(ed), tape(ed), statsBlock(ed),
-        (ed.type === "weekly" || ed.type === "monthly") ? signalsThemed(ed, assets) : signals(ed, assets), pullQuote(ed)), rail(ed, assets)),
+        (ed.type === "weekly" || ed.type === "monthly") ? signalsThemed(ed, assets) : signals(ed, assets), pullQuote(ed), portfolioRadar(ed)), rail(ed, assets)),
       h("div", { class: "wrap lower" }, deals(ed), resources(ed, assets), whatToWatch(ed), linkedinBlock(ed)));
     app.appendChild(main);
     var ednav = editionNav(_nav); if (ednav) app.appendChild(h("div", { class: "wrap" }, ednav));

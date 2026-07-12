@@ -109,6 +109,17 @@
 .dir-d .sig-theme__name { font-family:"Satoshi"; font-weight:500; font-size:1.0625rem; letter-spacing:-0.01em; color:var(--text-primary); margin:0; }
 .dir-d .sig-theme__count { font-variant-numeric:tabular-nums; font-size:0.8125rem; color:var(--text-muted); font-weight:600; }
 
+/* ---------- Portfolio Radar (portfolio companies named in this edition) ---------- */
+.dir-d .pradar__intro { margin:0 0 var(--space-4); }
+.dir-d .pr-co { padding:14px 0; border-top:1px solid var(--hairline); }
+.dir-d .pr-co:first-child { border-top:none; padding-top:0; }
+.dir-d .pr-co__head { display:flex; align-items:baseline; gap:10px; margin-bottom:8px; }
+.dir-d .pr-co__count { font-variant-numeric:tabular-nums; font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); font-weight:600; }
+.dir-d .pr-article { padding:5px 0 5px 12px; border-left:2px solid var(--hairline); }
+.dir-d .pr-article + .pr-article { margin-top:2px; }
+.dir-d .pr-article__title { font-size:0.9375rem; line-height:1.35; color:var(--text-primary); }
+.dir-d .pr-article__src { display:block; font-size:0.6875rem; color:var(--text-muted); margin-top:3px; }
+
 /* underline reveal */
 .dir-d a.uline { background-image:linear-gradient(currentColor,currentColor); background-size:0% 1px; background-position:left bottom; background-repeat:no-repeat; transition:background-size .3s var(--ease-entrance),color var(--t-micro); padding-bottom:1px; }
 .dir-d a.uline:hover { background-size:100% 1px; color:var(--accent-link); }
