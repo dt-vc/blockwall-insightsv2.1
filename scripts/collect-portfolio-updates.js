@@ -409,7 +409,10 @@ async function collectCompany(slug, cfg, ctx) {
   const v = (ctx.validators && ctx.validators[slug]) || (() => ({ ok: true, reason: 'no-validator' }));
   const kept = candidates.filter(it => {
     const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher, matchText: it._matchText });
-    delete it._matchText;   // transient (news body sample) — validate only, never stored
+    delete it._matchText;   // drop the bulky body sample — never stored
+    // persist the compact body signal (the matched founder) so the self-healing re-validation
+    // pass can reproduce a body-only match on the stored item (which no longer carries the body).
+    if (r.ok && r.reason === 'founder-body' && r.signal) it.matchText = r.signal;
     if (!r.ok) {
       ctx.drops.total++;
       const line = `  drop [${slug}] ${r.reason}  ${it.url}`;
@@ -452,7 +455,8 @@ function normalizeAndHeal(items, ctx) {
   let kept = items.filter(it => {
     const v = ctx.validators[it.company_slug];
     if (!v) { stats.revalidated_dropped++; sample(`  heal-drop [${it.company_slug}] no-registry-entry  ${it.url}`); return false; }
-    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher });
+    // pass the persisted body signal (matchText) so a founder-body match survives re-validation.
+    const r = v({ url: it.url, title: it.title, summary: it.summary_short, publisher: it.publisher, matchText: it.matchText });
     if (!r.ok) { stats.revalidated_dropped++; sample(`  heal-drop [${it.company_slug}] ${r.reason}  ${it.url}`); return false; }
     return true;
   });
