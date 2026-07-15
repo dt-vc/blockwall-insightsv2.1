@@ -1,0 +1,722 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-15",
+  "date_display": "July 15, 2026",
+  "generated_at": "2026-07-15T05:00:17.582Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "US-UK Treasury alignment on stablecoins signals regulatory race is shifting from fragmentation to competitive harmonization",
+    "tldr": "The transatlantic coordination on tokenization rules, combined with enterprise stablecoin infrastructure raises, suggests the policy window is narrowing toward institutional-grade compliance rather than retail crypto liberalization."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the regulatory-institutional convergence is accelerating faster than most allocations assume.",
+  "market_snapshot": {
+    "as_of": "2026-07-15T05:00:17.582Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,697",
+        "change_24h": "+3.2%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,874",
+        "change_24h": "+5.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.31T",
+        "change_24h": "+2.9%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.2B",
+        "change_24h": "+2.8%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 9,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 26,
+    "bearish": 7,
+    "neutral": 11,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_1813614",
+      "title": "US, UK treasuries to align transatlantic rules on tokenization and stablecoins38m, US, UK treasuries to align transatlantic rules on tokenization and stablecoinsThe two governments issued recommendations on the treatment of digital assets as the US prepares to implement a 2025 law on payment stablecoins.",
+      "url": "https://cointelegraph.com/news/us-uk-treasuries-rules-tokenized-finance",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The US and UK treasuries are working to align regulatory frameworks for tokenization and stablecoins. This coordination comes as the US prepares to implement new laws regarding payment stablecoins in 2025.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/us-uk-treasuries-rules-tokenized-finance",
+      "themes": [
+        "regulation",
+        "tokenization"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-regulation-considerations-in-the-united-states-and-united-kingdom.jpg",
+      "why_it_matters": "The US-UK alignment creates a G7-sized regulatory bloc that will likely become the default standard for institutional tokenization, forcing projects to build for dual-jurisdiction compliance from day one rather than optimizing for regulatory arbitrage."
+    },
+    {
+      "id": "art_1802141",
+      "title": "Decentralized AI project Nous Research in talks to raise $75M at $1.5B valuation: report",
+      "url": "https://www.theblock.co/post/408237/decentralized-ai-project-nous-research-in-talks-to-raise-75m-at-1-5b-valuation-report",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Decentralized AI project Nous Research is reportedly in talks to raise at least $75 million. The funding round is led by Robot Ventures and values the company at $1.5 billion.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/408237/decentralized-ai-project-nous-research-in-talks-to-raise-75m-at-1-5b-valuation-report",
+      "themes": [
+        "infrastructure",
+        "decentralized-ai"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20220906_Funding_News.jpg",
+      "why_it_matters": "Nous Research's $1.5B valuation at this stage reflects investor conviction that decentralized AI infrastructure will capture value from model inference demand, though the revenue visibility required to justify this entry price remains largely unproven."
+    },
+    {
+      "id": "art_1829345",
+      "title": "US Treasury, Tether Freezes $131M in Crypto Tied to Iran",
+      "url": "https://cointelegraph.com/news/us-freezes-131m-in-iran-linked-crypto-as-middle-east-tensions-rise",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The US Treasury has ordered Tether to freeze over $131 million in USDT associated with wallets linked to Iran's central bank. This action comes amid escalating hostilities in the Middle East.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/us-freezes-131m-in-iran-linked-crypto-as-middle-east-tensions-rise",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/tether-mints-usdt-iran.jpg",
+      "why_it_matters": "The Treasury-Tether freeze demonstrates that even purportedly decentralized stablecoin issuers operate under direct government coercion, repricing the censorship-resistance premium in stablecoin design and issuer jurisdiction selection."
+    },
+    {
+      "id": "art_1814485",
+      "title": "Ethereum Foundation privacy team spins out as for-profit EthSystems to serve institutions with Lubin, Bitmine backing",
+      "url": "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "The Ethereum Foundation's privacy team is spinning out into a for-profit entity called EthSystems. The new company aims to provide privacy-focused infrastructure for institutional users with backing from Lubin and Bitmine.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing",
+      "themes": [
+        "infrastructure",
+        "privacy"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": null,
+      "why_it_matters": "EthSystems' spinout with Lubin and Bitmine backing validates our view that institutional privacy infrastructure is becoming a standalone investable category separate from base-layer speculation, though the timing suggests Foundation resources are being redirected toward revenue-generating entities."
+    },
+    {
+      "id": "art_1813612",
+      "title": "Velocity raises $38M to build stablecoin treasury infrastructure for enterprises19m",
+      "url": "https://cointelegraph.com/news/velocity-raises-38m-to-build-stablecoin-treasury-infrastructure-for-enterprises",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Velocity has raised $38 million to develop stablecoin treasury infrastructure specifically designed for enterprise use. The funding aims to bridge the gap between traditional corporate finance and digital asset management.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/velocity-raises-38m-to-build-stablecoin-treasury-infrastructure-for-enterprises",
+      "themes": [
+        "infrastructure",
+        "stablecoin-treasury"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-erisx-raises-275-mln-from-fidelity-nasdaq-ventures-and-others-details-2.jpg",
+      "why_it_matters": "Velocity's $38M raise with Dragonfly, FirstMark, Coinbase and Ripple signals that enterprise stablecoin treasury management is attracting multi-strategy capital because it sits at the intersection of TradFi yield optimization and regulatory-compliant onchain settlement."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_1802141",
+      "company": "Nous Research",
+      "amount": "$75M",
+      "round": "",
+      "investors": [
+        "Robot Ventures"
+      ],
+      "category": "Infrastructure",
+      "url": "https://www.theblock.co/post/408237/decentralized-ai-project-nous-research-in-talks-to-raise-75m-at-1-5b-valuation-report",
+      "summary": "Decentralized AI project Nous Research is reportedly in talks to raise at least $75 million. The funding round is led by Robot Ventures and values the company at $1.5 billion."
+    },
+    {
+      "id": "art_1813612",
+      "company": "Velocity",
+      "amount": "$38M",
+      "round": "",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/velocity-raises-38m-to-build-stablecoin-treasury-infrastructure-for-enterprises",
+      "summary": "Velocity has raised $38 million to develop stablecoin treasury infrastructure specifically designed for enterprise use. The funding aims to bridge the gap between traditional corporate finance and digital asset management."
+    },
+    {
+      "id": "art_1802140",
+      "company": "Velocity",
+      "amount": "$38M",
+      "round": "Series A",
+      "investors": [
+        "Dragonfly",
+        "FirstMark",
+        "Coinbase",
+        "Ripple"
+      ],
+      "category": "Stablecoins",
+      "url": "https://www.theblock.co/post/408242/dragonfly-firstmark-series-a-stablecoin-velocity-coinbase-ripple-capital-one-ventures",
+      "summary": "Stablecoin startup Velocity has raised $38 million in a Series A funding round led by Dragonfly and FirstMark. The platform focuses on bridging corporate stablecoin usage with traditional banking rails and compliance systems."
+    },
+    {
+      "id": "art_1777776",
+      "company": "Project Q",
+      "amount": "€15m",
+      "round": "Series A",
+      "investors": [],
+      "category": "Other",
+      "url": "https://sifted.eu/articles/exclusive-defence-tech-project-q-15m/",
+      "summary": ""
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_1808871",
+      "title": "US-UK transatlantic taskforce unveils digital asset roadmap promoting stablecoin innovation",
+      "url": "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The United States and United Kingdom have established a transatlantic taskforce to coordinate on digital asset roadmaps. The initiative specifically focuses on promoting innovation for stablecoins and tokenized assets.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220210_UK_Generic_Funding.jpg"
+    },
+    {
+      "id": "art_1807999",
+      "title": "UK government defers capital gains on certain crypto with ‘no gain, no loss’ approach28m, UK government defers capital gains on certain crypto with ‘no gain, no loss’ approachThe change in tax policy, expected to impact about 700,000 people in the UK, was related to the disposal of crypto in lending and liquidity pools.",
+      "url": "https://cointelegraph.com/news/uk-government-capital-gains-lending-liquidity-no-gain-no-loss",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The UK government is implementing a 'no gain, no loss' approach to defer capital gains tax on certain cryptocurrency transactions. This policy specifically targets the disposal of crypto assets within lending and liquidity pools, potentially benefiting around 700,000 individuals.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-capital-gains-tax-italy-vs-france-vs-germany.jpg"
+    },
+    {
+      "id": "art_1806877",
+      "title": "JCB Signs Circle MOU to Explore USDC Payments in Japan",
+      "url": "https://cointelegraph.com/news/japans-jcb-signs-mou-with-circle-to-explore-usdc-payments-and-cross-border-settlements",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Japanese payment giant JCB has signed a Memorandum of Understanding with Circle to explore the use of USDC for merchant payments and cross-border treasury transfers. This partnership aims to integrate stablecoin technology into Japan's existing payment infrastructure.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/cross-border-transaction-stablecoin-swift.png"
+    },
+    {
+      "id": "art_1806878",
+      "title": "CleanSpark Signs $6.6B Data Center Lease in Georgia",
+      "url": "https://cointelegraph.com/news/cleanspark-shares-jump-after-georgia-data-center-lease",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitcoin miner CleanSpark has entered into a 20-year data center lease agreement in Georgia valued at $6.6 billion. The deal is with an undisclosed technology company and has led to a rise in CleanSpark's share price.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-cleanspark.jpg"
+    },
+    {
+      "id": "art_1798773",
+      "title": "European Central Bank taps 36 payment providers for yearlong digital euro pilot",
+      "url": "https://www.theblock.co/post/408228/european-central-bank-taps-36-payment-providers-for-yearlong-digital-euro-pilot",
+      "source": "The Block",
+      "category": "Payments",
+      "sentiment": "neutral",
+      "summary": "The European Central Bank has selected 36 payment providers to participate in a yearlong pilot for the digital euro. The beta testing phase is scheduled to begin in late 2027.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221012_EuropeanVC_CryptoFunds_Feature.jpg"
+    },
+    {
+      "id": "art_1799024",
+      "title": "Humanity Protocol to Prioritize Operational Security following $36M Hack",
+      "url": "https://cointelegraph.com/news/humanity-protocol-operational-security-36m-hack",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Humanity Protocol is shifting its security focus toward operational security following a $36M hack. The protocol aims to combat the trend of attackers targeting human behavior rather than smart contract vulnerabilities.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-dns-hijacking.jpg"
+    },
+    {
+      "id": "art_1794541",
+      "title": "ECB picks 36 payment providers to test digital euro ahead of 2027 pilot25m, ECB picks 36 payment providers to test digital euro ahead of 2027 pilot",
+      "url": "https://cointelegraph.com/news/ecb-36-payment-providers-digital-euro-pilot",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "The European Central Bank has selected 36 payment providers to participate in the testing phase of the digital euro. This initiative serves as a critical precursor to the broader pilot phase scheduled for 2027.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-digital-euro-project-how-it-will-impact-the-current-financial-system-ecb-1.jpg"
+    },
+    {
+      "id": "art_1794289",
+      "title": "UK HMRC adopts 'no gain, no loss' tax treatment for crypto lending, liquidity pools",
+      "url": "https://www.theblock.co/post/408206/uk-hmrc-adopts-no-gain-no-loss-tax-treatment-for-crypto-lending-liquidity-pools",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The UK's HMRC has implemented a 'no gain, no loss' tax treatment for specific crypto lending and liquidity pool activities. This allows taxpayers to defer Capital Gains Tax until the assets are economically disposed of, rather than at the moment of deposit.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230712_UK_CryptoTax_News.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_1810833",
+      "title": "JTX: Solana’s New Trading Layer ",
+      "url": "https://members.delphidigital.io/reports/jtx-solanas-new-trading-layer",
+      "source": "Delphi Digital",
+      "note": "Solana's execution environment is fragmenting into specialized layers; this piece maps how JTX fits into the trading stack and whether it captures order flow from existing venues.",
+      "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/07/feeba33b-cover-d39a718a-7982-4e8d-8f89-c87fd9fdb9a9-1784053765054-1024x576.jpg"
+    },
+    {
+      "id": "art_1794339",
+      "title": "TradFi doesn’t want DeFi. It wants blockchain.",
+      "url": "https://a16zcrypto.com/posts/article/tradfi-doesnt-want-defi-it-wants-blockchain/",
+      "source": "a16z crypto",
+      "note": "The a16z framing is useful for underwriting which infrastructure layers actually extract rent from TradFi adoption versus those that merely enable it.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/07/Blockchain-not-crypto.png"
+    },
+    {
+      "id": "art_1826998",
+      "title": "Robinhood Chain, Onchain Lending, and Bitcoin's BIP-110 Debate",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/robinhood-chain-onchain-lending-and-bitcoin-s-bip-110-debate",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's coverage of Robinhood's chain ambitions and BIP-110 debate provides the technical-political context for how retail brokerage entry and Bitcoin soft fork politics could collide this year.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_1806878",
+          "title": "CleanSpark Signs $6.6B Data Center Lease in Georgia",
+          "url": "https://cointelegraph.com/news/cleanspark-shares-jump-after-georgia-data-center-lease",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-cleanspark.jpg"
+        },
+        {
+          "id": "art_1803262",
+          "title": "'Soft print, hard regime': Bitcoin climbs toward $64,000 as June CPI falls 0.4% in largest monthly drop since 2020",
+          "url": "https://www.theblock.co/post/408263/soft-print-hard-regime-bitcoin-climbs-64000-june-cpi-falls-largest-monthly-drop-since-2020",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_1787814",
+          "title": "US spot Bitcoin ETFs post $425M outflow after brief rebound25m, US spot Bitcoin ETFs post $425M outflow after brief reboundUS spot Bitcoin ETFs saw their largest single-day outflows in July, with $424.66 million leaving the funds, reversing a brief return to positive weekly flows.",
+          "url": "https://cointelegraph.com/news/bitcoin-etf-425-million-daily-outflow-inflows-reverse",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1804383",
+          "title": "Bitcoin mining production slips in June for CleanSpark, BitFuFu and Canaan",
+          "url": "https://www.theblock.co/post/408260/bitcoin-mining-production-slips-june-cleanspark-bitfufu-canaan",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/10/210930_Bitcoin_Mining_General.jpg"
+        },
+        {
+          "id": "art_1791176",
+          "title": "Hobby-level miner bags $200K solo BTC block with budget Bitaxe rig8m, Hobby-level miner bags $200K solo BTC block with budget Bitaxe rigA solo Bitcoin miner secured a $200,000 block reward with a budget mining rig, pushing payouts to hobby-level miners to $4.7 million for the past year.",
+          "url": "https://cointelegraph.com/news/solo-bitcoin-miner-200k-block-budget-bitaxe-rig",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_1810833",
+          "title": "JTX: Solana’s New Trading Layer ",
+          "url": "https://members.delphidigital.io/reports/jtx-solanas-new-trading-layer",
+          "source": "Delphi Digital",
+          "sentiment": "bullish",
+          "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/07/feeba33b-cover-d39a718a-7982-4e8d-8f89-c87fd9fdb9a9-1784053765054-1024x576.jpg"
+        },
+        {
+          "id": "art_1803261",
+          "title": "Galaxy blends Aave, Morpho and other DeFi rates in new GOFR crypto borrowing product",
+          "url": "https://www.theblock.co/post/408267/galaxy-blends-aave-morpho-other-defi-rates-new-gofr-crypto-borrowing-product",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230317_Galaxy-1200x675.jpg"
+        },
+        {
+          "id": "art_1802139",
+          "title": "Forkast Launches ATLAS Agents for Prediction Markets",
+          "url": "https://www.theblock.co/post/407948/forkast-launches-atlas-agents-for-prediction-markets",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/Screenshot-2026-07-11-at-9.47.11%E2%80%AFAM.png"
+        },
+        {
+          "id": "art_1792297",
+          "title": "AI has not triggered DeFi ‘hackpocalypse,’ Dragonfly partner says19m",
+          "url": "https://cointelegraph.com/news/dragonfly-defi-ai-hackpocalypse-fears",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_1825973",
+          "title": "Bitmine generated $46M from Ethereum staking last quarter",
+          "url": "https://cointelegraph.com/news/bitmine-generated-46m-from-ethereum-staking-last-quarter",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_1802141",
+          "title": "Decentralized AI project Nous Research in talks to raise $75M at $1.5B valuation: report",
+          "url": "https://www.theblock.co/post/408237/decentralized-ai-project-nous-research-in-talks-to-raise-75m-at-1-5b-valuation-report",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20220906_Funding_News.jpg"
+        },
+        {
+          "id": "art_1814485",
+          "title": "Ethereum Foundation privacy team spins out as for-profit EthSystems to serve institutions with Lubin, Bitmine backing",
+          "url": "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_1813612",
+          "title": "Velocity raises $38M to build stablecoin treasury infrastructure for enterprises19m",
+          "url": "https://cointelegraph.com/news/velocity-raises-38m-to-build-stablecoin-treasury-infrastructure-for-enterprises",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-erisx-raises-275-mln-from-fidelity-nasdaq-ventures-and-others-details-2.jpg"
+        },
+        {
+          "id": "art_1803263",
+          "title": "Benchmark sees ‘long pathway for growth’ in Hut 8, raises target to $165 on $16.8 billion AI data center deals",
+          "url": "https://www.theblock.co/post/408264/benchmark-sees-long-pathway-growth-hut-8-raises-target-to-165-on-ai-data-center-deals",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/10/20251028_Hut8_News-1200x675.jpg"
+        },
+        {
+          "id": "art_1798774",
+          "title": "Distributed compute startup Boundless expands 4,000-GPU network from ZK to AI",
+          "url": "https://www.theblock.co/post/408213/distributed-compute-startup-boundless-gpus-zk-to-ai",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/defi-interop-crosschain-network-protocol.jpg"
+        },
+        {
+          "id": "art_1802389",
+          "title": "Anchorage Expands TRON Support with Institutional TRX Staking",
+          "url": "https://cointelegraph.com/news/anchorage-digital-expands-tron-support-with-institutional-trx-staking",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-digital-asset-exchanges-can-meet-institutional-investors-need-for-speed2.png"
+        },
+        {
+          "id": "art_1822601",
+          "title": "Over 95% of Coinbase’s Code is Written with AI: Rob Witoff",
+          "url": "https://cointelegraph.com/news/over-95-of-coinbases-code-is-now-written-with-ai",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-a-coinbase-transaction-ai-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_1827971",
+          "title": "Ark Invest adds $14 million in Circle shares while selling Robinhood",
+          "url": "https://www.theblock.co/post/408336/ark-invest-adds-14-million-in-circle",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221114_ArkInvest.jpg"
+        },
+        {
+          "id": "art_1798531",
+          "title": "2026 H1 암호화폐 VC 투자 현황 보고서",
+          "url": "https://reports.tiger-research.com/p/the-age-of-control-crypto-venture-kor",
+          "source": "Tiger Research",
+          "sentiment": "neutral",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!d5mC!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F206966840%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_1798532",
+          "title": "The Age of Control: Crypto Venture Capital in H1 2026",
+          "url": "https://reports.tiger-research.com/p/the-age-of-control-crypto-venture-eng",
+          "source": "Tiger Research",
+          "sentiment": "neutral",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!-9Dw!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F206966834%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_1826998",
+          "title": "Robinhood Chain, Onchain Lending, and Bitcoin's BIP-110 Debate",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/robinhood-chain-onchain-lending-and-bitcoin-s-bip-110-debate",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1777776",
+          "title": "Exclusive: Defence tech Project Q lands €15m Series A 11 months after last raise",
+          "url": "https://sifted.eu/articles/exclusive-defence-tech-project-q-15m/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/13171858/Project-Q.jpg?w=1076&h=618&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_1799023",
+          "title": "OpenAI Adds Kalshi World Cup Odds to ChatGPT Search",
+          "url": "https://cointelegraph.com/news/openai-kalshi-prediction-markets-world-cup-chatgpt",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/sam-altman-polymarket.png"
+        },
+        {
+          "id": "art_1807749",
+          "title": "CoinFund's David Pakman says crypto hasn't solved tokenomics",
+          "url": "https://www.theblock.co/post/408285/coinfunds-david-pakman-says-crypto-hasnt-solved-tokenomics",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/08/20220816_DavidPakman-1200x675.jpg"
+        },
+        {
+          "id": "art_1794540",
+          "title": "Solana Community Lead Enters UK By-Election With Onchain Transparency Pledge",
+          "url": "https://cointelegraph.com/news/solana-community-lead-uk-by-election-pension-self-custody",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/voteremaster.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_1806877",
+          "title": "JCB Signs Circle MOU to Explore USDC Payments in Japan",
+          "url": "https://cointelegraph.com/news/japans-jcb-signs-mou-with-circle-to-explore-usdc-payments-and-cross-border-settlements",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/cross-border-transaction-stablecoin-swift.png"
+        },
+        {
+          "id": "art_1798773",
+          "title": "European Central Bank taps 36 payment providers for yearlong digital euro pilot",
+          "url": "https://www.theblock.co/post/408228/european-central-bank-taps-36-payment-providers-for-yearlong-digital-euro-pilot",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221012_EuropeanVC_CryptoFunds_Feature.jpg"
+        },
+        {
+          "id": "art_1794541",
+          "title": "ECB picks 36 payment providers to test digital euro ahead of 2027 pilot25m, ECB picks 36 payment providers to test digital euro ahead of 2027 pilot",
+          "url": "https://cointelegraph.com/news/ecb-36-payment-providers-digital-euro-pilot",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-digital-euro-project-how-it-will-impact-the-current-financial-system-ecb-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_1813614",
+          "title": "US, UK treasuries to align transatlantic rules on tokenization and stablecoins38m, US, UK treasuries to align transatlantic rules on tokenization and stablecoinsThe two governments issued recommendations on the treatment of digital assets as the US prepares to implement a 2025 law on payment stablecoins.",
+          "url": "https://cointelegraph.com/news/us-uk-treasuries-rules-tokenized-finance",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-regulation-considerations-in-the-united-states-and-united-kingdom.jpg"
+        },
+        {
+          "id": "art_1829345",
+          "title": "US Treasury, Tether Freezes $131M in Crypto Tied to Iran",
+          "url": "https://cointelegraph.com/news/us-freezes-131m-in-iran-linked-crypto-as-middle-east-tensions-rise",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/tether-mints-usdt-iran.jpg"
+        },
+        {
+          "id": "art_1808871",
+          "title": "US-UK transatlantic taskforce unveils digital asset roadmap promoting stablecoin innovation",
+          "url": "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220210_UK_Generic_Funding.jpg"
+        },
+        {
+          "id": "art_1807999",
+          "title": "UK government defers capital gains on certain crypto with ‘no gain, no loss’ approach28m, UK government defers capital gains on certain crypto with ‘no gain, no loss’ approachThe change in tax policy, expected to impact about 700,000 people in the UK, was related to the disposal of crypto in lending and liquidity pools.",
+          "url": "https://cointelegraph.com/news/uk-government-capital-gains-lending-liquidity-no-gain-no-loss",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-capital-gains-tax-italy-vs-france-vs-germany.jpg"
+        },
+        {
+          "id": "art_1794289",
+          "title": "UK HMRC adopts 'no gain, no loss' tax treatment for crypto lending, liquidity pools",
+          "url": "https://www.theblock.co/post/408206/uk-hmrc-adopts-no-gain-no-loss-tax-treatment-for-crypto-lending-liquidity-pools",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230712_UK_CryptoTax_News.jpg"
+        },
+        {
+          "id": "art_1788684",
+          "title": "South Korea maintains blockchain economy push as AI takes center stage",
+          "url": "https://www.theblock.co/post/408180/south-korea-blockchain-economy-h2-2026",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News3.jpg"
+        },
+        {
+          "id": "art_1816981",
+          "title": "Three US Senators Oppose CLARITY Act on Ethics Grounds with Vote Expected Soon",
+          "url": "https://cointelegraph.com/news/us-senators-oppose-clarity-act-vote-senate",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-senate-infrastructure-bill-doom-and-gloom-for-crypto-clarity-act.jpg"
+        },
+        {
+          "id": "art_1811116",
+          "title": "CFTC orders Kalshi to honor Michigan trades, escalating clash with state regulators",
+          "url": "https://www.theblock.co/post/408323/cftc-orders-kalshi-honor-michigan-trades-escalating-clash-state-regulators",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News.jpg"
+        },
+        {
+          "id": "art_1790926",
+          "title": "US government moves over $288 million in seized bitcoin, ether to Coinbase Prime: Arkham",
+          "url": "https://www.theblock.co/post/408202/us-government-moves-288-million-bitcoin-ether",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_1824266",
+          "title": "An SEC email address mix-up is causing confusion and threatening to disrupt its proposal to scrap quarterly reporting requirements",
+          "url": "https://fortune.com/2026/07/14/dispute-over-sec-comments-fuels-new-controversy-over-rule-to-scrap-quarterly-earnings/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2284342382-e1784057261404.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1790927",
+          "title": "Former LASD deputy jailed for obstructing crypto 'mogul' Adam Iza extortion probe",
+          "url": "https://www.theblock.co/post/408193/former-lasd-deputy-jailed-for-obstructing-crypto-mogul-adam-iza-extortion-probe",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_1799024",
+          "title": "Humanity Protocol to Prioritize Operational Security following $36M Hack",
+          "url": "https://cointelegraph.com/news/humanity-protocol-operational-security-36m-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-dns-hijacking.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_1802140",
+          "title": "Dragonfly, FirstMark lead $38 million Series A for stablecoin startup Velocity with support from Coinbase, Ripple and more",
+          "url": "https://www.theblock.co/post/408242/dragonfly-firstmark-series-a-stablecoin-velocity-coinbase-ripple-capital-one-ventures",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241104_Money_News.jpg"
+        },
+        {
+          "id": "art_1824417",
+          "title": "Circle clashed with Tether-backed fund over market manipulation concerns",
+          "url": "https://www.ft.com/content/d2ea75d8-ffe4-406f-a04e-59416ae1ed20",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fimages.ft.com%2Fv3%2Fimage%2Fraw%2Fhttps%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd4856b87-b4bf-48f7-9067-e255fa82735c.jpg%3Fsource%3Dnext-barrier-page%26fit%3Dscale-down%26quality%3Dhighest%26width%3D700%26dpr%3D1?source=next-barrier-page"
+        },
+        {
+          "id": "art_1807750",
+          "title": "Wall Street turns cautious on Circle as analysts warn USDC economics face mounting pressure",
+          "url": "https://www.theblock.co/post/408280/wall-street-cautious-circle-warn-usdc-economics",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_1794339",
+          "title": "TradFi doesn’t want DeFi. It wants blockchain.",
+          "url": "https://a16zcrypto.com/posts/article/tradfi-doesnt-want-defi-it-wants-blockchain/",
+          "source": "a16z crypto",
+          "sentiment": "bullish",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/07/Blockchain-not-crypto.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "A lot of people saw the US-UK treasury alignment on stablecoins and filed it under 'more regulation, same timeline.' That is the wrong read. The joint recommendations drop as the US prepares 2025 payment stablecoin implementation, which means this is coordinated acceleration, not bureaucratic drift. The UK is effectively pre-committing to interoperability with whatever Washington finalizes, creating a transatlantic standard that projects will have to build against. On our radar: Velocity raised $38 million from Dragonfly, FirstMark, Coinbase and Ripple for enterprise stablecoin treasury infrastructure the same week. The market is pricing in institutional adoption, but I think it is underpricing how fast compliance requirements will consolidate around these G7-aligned frameworks. We have underwritten stablecoin infrastructure on the assumption of fragmented global regulation, and that feels mispriced if Treasury-Federal Reserve-Bank of England coordination becomes the baseline. The value proposition is shifting from yield optimization to jurisdictional pre-certification. What to watch: whether Tether's $131 million freeze at Treasury request gets priced as a one-off enforcement action or a structural repricing of offshore issuer risk. I'd watch how USDC trades versus USDT in institutional corridors through Q2. Equities got the headline; stablecoin issuer selection did the volume."
+}
