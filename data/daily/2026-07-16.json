@@ -1,0 +1,622 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-16",
+  "date_display": "July 16, 2026",
+  "generated_at": "2026-07-16T05:00:17.603Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "BlackRock and JPMorgan move tokenized stocks and Treasuries into production at DTCC",
+    "tldr": "The world's largest asset manager and its Wall Street peers have stopped experimenting with tokenization and started clearing production trades, while Japan simultaneously rewrites its financial code to absorb crypto into conventional market infrastructure. The institutional deployment phase is no longer coming; it is being cleared through DTCC today."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the boundary between TradFi plumbing and on-chain settlement effectively dissolved at the clearinghouse level, and the regulatory vacuum is being filled by jurisdictions writing crypto into existing financial law rather than around it.",
+  "market_snapshot": {
+    "as_of": "2026-07-16T05:00:17.603Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,546",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,917",
+        "change_24h": "+2.2%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.6B",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 3,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 20,
+    "bearish": 8,
+    "neutral": 7,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_1851575",
+      "title": "DTCC begins first tokenized stock and Treasury production trades involving JPMorgan, BlackRock and Goldman: WSJ",
+      "url": "https://www.theblock.co/post/408419/dtcc-begins-first-tokenized-stock-and-treasury-production-trades-involving-jpmorgan-blackrock-and-goldman-wsj",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "DTCC has commenced the first production trades of tokenized stocks and Treasuries in collaboration with major financial institutions including JPMorgan, BlackRock, and Goldman Sachs. The initiative involves the tokenization of various assets, including Invesco QQQ Trust holdings and SPY shares.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/post/408419/dtcc-begins-first-tokenized-stock-and-treasury-production-trades-involving-jpmorgan-blackrock-and-goldman-wsj",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240624_Tokenization_News_2.jpg",
+      "why_it_matters": "DTCC production trades with JPMorgan, BlackRock, and Goldman signal that tokenized securities are now being processed through the same clearing infrastructure that handles $2+ quadrillion in annual volume, which means the operational risk discount applied to on-chain assets should compress rapidly for institutional allocators."
+    },
+    {
+      "id": "art_1860567",
+      "title": "BlackRock outlines vision for crypto-TradFi convergence as product pipeline grows",
+      "url": "https://www.theblock.co/post/408436/blackrock-outlines-vision-crypto-tradfi-convergence-product-pipeline-grows",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "BlackRock is advancing its strategy to merge traditional finance with crypto through the tokenization of various assets. The firm plans to expand its product pipeline to include tokenized Treasury funds, iShares ETFs, and private markets.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/408436/blackrock-outlines-vision-crypto-tradfi-convergence-product-pipeline-grows",
+      "themes": [
+        "tokenization",
+        "tradfi-convergence"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Blackrock2.jpg",
+      "why_it_matters": "BlackRock's explicit product roadmap—tokenized Treasuries, iShares ETFs, and private markets—reveals a firm that is not testing demand but manufacturing supply ahead of what it underwrites as a secular repricing of settlement infrastructure."
+    },
+    {
+      "id": "art_1846205",
+      "title": "Japan passes crypto overhaul to bring digital assets under financial rules12m, Japan passes crypto overhaul to bring digital assets under financial rulesJapan’s revised Financial Instruments and Exchange Act introduces crypto insider trading rules, tougher penalties and new oversight requirements for crypto businesses.",
+      "url": "https://cointelegraph.com/news/japan-crypto-amendment-digital-assets-financial-rules",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Japan has passed a comprehensive overhaul of its Financial Instruments and Exchange Act to integrate digital assets into its formal financial regulatory framework. The new laws introduce strict insider trading rules and increased penalties for crypto businesses to enhance market integrity.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/japan-crypto-amendment-digital-assets-financial-rules",
+      "themes": [
+        "regulation",
+        "legal-framework"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-bills-compared-stable-act.png",
+      "why_it_matters": "Japan's integration of digital assets into its Financial Instruments and Exchange Act, complete with insider trading rules and enhanced penalties, creates a template for G7 regulators to treat crypto as a regulated security rather than a novel asset class, which expands the addressable market for compliant products."
+    },
+    {
+      "id": "art_1843707",
+      "title": "Japan passes key bill recognizing crypto as financial product, lowering tax rate",
+      "url": "https://www.theblock.co/post/408361/japan-passes-key-bill",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Japan has passed a key bill that officially recognizes cryptocurrency as a financial product. This legislative change allows for a separate taxation system, significantly lowering the maximum tax rate from 55% to approximately 20%.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/408361/japan-passes-key-bill",
+      "themes": [
+        "regulation",
+        "taxation"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/06/japan-flag-building.jpg",
+      "why_it_matters": "Japan's tax rate collapse from 55% to 20% on crypto gains, achieved by reclassifying digital assets as financial products, demonstrates how quickly capital allocation shifts when a major economy removes the friction of punitive withholding."
+    },
+    {
+      "id": "art_1840585",
+      "title": "Stripe, Advent Offer $53B to Acquire PayPal: Report",
+      "url": "https://cointelegraph.com/news/stripe-advent-53b-acquire-paypal-report",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Stripe and Advent have reportedly made a $53 billion offer to acquire PayPal. The bid represents a 28% premium over PayPal's recent closing stock price.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/stripe-advent-53b-acquire-paypal-report",
+      "themes": [
+        "payments",
+        "m-a"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-paypal-and-the-credit-card-industry-are-taking-advantage-of-consumers.jpg",
+      "why_it_matters": "Stripe and Advent's $53 billion bid for PayPal at a 28% premium suggests that payments incumbents are being repriced as infrastructure plays with embedded stablecoin and tokenization optionality, not merely as legacy fintech."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_1840585",
+      "company": "PayPal",
+      "amount": "$53B",
+      "round": "Acquisition",
+      "investors": [
+        "Stripe",
+        "Advent"
+      ],
+      "category": "Payments",
+      "url": "https://cointelegraph.com/news/stripe-advent-53b-acquire-paypal-report",
+      "summary": "Stripe and Advent have reportedly made a $53 billion offer to acquire PayPal. The bid represents a 28% premium over PayPal's recent closing stock price."
+    },
+    {
+      "id": "art_1853498",
+      "company": "Cyclops",
+      "amount": "$20M",
+      "round": "Series A",
+      "investors": [
+        "Nava Ventures"
+      ],
+      "category": "Payments",
+      "url": "https://fortune.com/2026/07/15/exclusive-cyclops-20-million-payment-companies-settlement-stablecoins/",
+      "summary": "Miami-based startup Cyclops has raised $20 million in a Series A funding round led by Nava Ventures. The company focuses on enabling payment companies to accelerate settlement processes using stablecoins."
+    },
+    {
+      "id": "art_1844499",
+      "company": "AlleyCorp",
+      "amount": "$335M",
+      "round": "Fund",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://fortune.com/2026/07/15/kevin-ryan-alleycorp-raises-new-335-million-fund-early-stage-bets/",
+      "summary": "Kevin Ryan's venture capital firm, AlleyCorp, has raised a new $335 million fund. The fund will focus primarily on early-stage investments with a strong emphasis on AI-driven opportunities."
+    },
+    {
+      "id": "art_1858319",
+      "company": "Glacis Labs",
+      "amount": "$6.8M",
+      "round": "Seed",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://www.theblock.co/post/408490/crypto-clearinghouse-glacis-labs-zerodelta-funding",
+      "summary": "Glacis Labs has raised $6.8 million in seed funding to scale its ZeroDelta multichain clearing platform. The company intends to expand its current stablecoin clearing capabilities into tokenized securities and foreign exchange."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_1859693",
+      "title": "Aave Brings V4 to Avalanche as Tokenized Asset Market Grows",
+      "url": "https://cointelegraph.com/news/aave-brings-v4-to-avalanche-laying-groundwork-for-tokenized-asset-lending",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Aave has deployed its V4 protocol on Avalanche, representing its first expansion outside of the Ethereum ecosystem. This move is specifically designed to facilitate lending markets supported by tokenized real-world assets (RWAs).",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-ethereum-credit-1.png"
+    },
+    {
+      "id": "art_1859694",
+      "title": "Securitize and Cantor Fitzgerald Expand Tokenized Securities Push",
+      "url": "https://cointelegraph.com/news/securitize-cantor-target-tokenized-ipos-for-public-markets",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize and Cantor Fitzgerald are collaborating to build blockchain infrastructure specifically for the issuance of public stocks. This move aims to facilitate the transition of traditional equities into tokenized formats for institutional adoption.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ipo-models-that-exist.jpg"
+    },
+    {
+      "id": "art_1849327",
+      "title": "Circle suspended Tether-backed fund over market manipulation concerns, arbitration filings show",
+      "url": "https://www.theblock.co/post/408377/circle-suspended-tether-backed-fund-over-market-manipulation-concerns-arbitration-filings-show",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bearish",
+      "summary": "Circle suspended Heka Funds due to concerns over market manipulation after discovering a $800 million investment from Tether. The details emerged through arbitration filings involving the arbitrage fund.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic_4-1200x675.jpg"
+    },
+    {
+      "id": "art_1846206",
+      "title": "South Korea to bring digital assets under new state asset management system24m, South Korea to bring digital assets under new state asset management system",
+      "url": "https://cointelegraph.com/news/south-korea-digital-assets-state-asset-management",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "South Korea is planning to integrate digital assets into its official state asset management system. This move signals a significant shift toward the institutionalization and formal recognition of crypto assets by the South Korean government.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-will-crypto-be-the-only-digital-currency-left-standing-south-korea.jpg"
+    },
+    {
+      "id": "art_1841459",
+      "title": "US Treasury freezes over $130 million tied to Iran-linked crypto wallets",
+      "url": "https://www.theblock.co/post/408357/us-treasury-freezes-130-million-iran-linked-wallets",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The US Treasury's Office of Foreign Assets Control (OFAC) has sanctioned several cryptocurrency wallets linked to Iran. This action resulted in the freezing of over $130 million in digital assets.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/02/20210203_Department_of_Treasury.png"
+    },
+    {
+      "id": "art_1865313",
+      "title": "Revolut Receives In-Principle Approval from UAE Authorities for Crypto Services",
+      "url": "https://cointelegraph.com/news/revolut-approval-uae-crypto-services",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Revolut has received in-principle approval from Dubai's Virtual Assets Regulatory Authority (VARA) to provide cryptocurrency services in the UAE. This move expands the fintech giant's global footprint in the digital asset space.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-follow-up-license-blockchain.jpg"
+    },
+    {
+      "id": "art_1860817",
+      "title": "Ostium Pauses Trading After Apparent Oracle Exploit Targets OLP Vault",
+      "url": "https://cointelegraph.com/news/ostium-pauses-trading-as-security-firms-report-multimillion-dollar-oracle-exploit",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Ostium has paused all trading activities following an apparent oracle exploit targeting its OLP vault. The incident was flagged by blockchain security firms and contributes to a broader trend of DeFi security vulnerabilities.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/magazine-defillama-hacks-analysis.png"
+    },
+    {
+      "id": "art_1858321",
+      "title": "'Bull markets everywhere': Bitwise says crypto equities beat every major asset class but emerging markets in H1 2026",
+      "url": "https://www.theblock.co/post/408449/bull-markets-everywhere-bitwise-crypto-equities-beat-major-asset-class-h1",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Bitwise reports that crypto equities outperformed most major asset classes in the first half of 2026, gaining 23% despite a 36% drop in crypto assets. Additionally, tokenized real-world assets (RWAs) reached a record valuation of $33 billion in Q2.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/07/20210402_Crypto_Credit_Market-Research-1.jpg"
+    }
+  ],
+  "worth_a_read": [],
+  "all_resources": [
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_1859693",
+          "title": "Aave Brings V4 to Avalanche as Tokenized Asset Market Grows",
+          "url": "https://cointelegraph.com/news/aave-brings-v4-to-avalanche-laying-groundwork-for-tokenized-asset-lending",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-ethereum-credit-1.png"
+        },
+        {
+          "id": "art_1858320",
+          "title": "Kraken Institutional taps Upshift to build vaults that earn yield on idle bitcoin, ETH and stablecoins",
+          "url": "https://www.theblock.co/post/408448/kraken-institutional-taps-upshift-to-build-vaults-that-earn-yield-on-idle-bitcoin-eth-and-stablecoins",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/02/20230201_Kraken.jpg"
+        },
+        {
+          "id": "art_1866438",
+          "title": "Stanford Study Examines Manipulation in Polymarket Bitcoin Contracts",
+          "url": "https://cointelegraph.com/news/stanford-study-5-minute-bitcoin-prediction-markets-enable-settlement-manipulation",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-could-bitcoin-enter-the-mainstream-as-a-means-of-payments-kalshi.png"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_1850452",
+          "title": "FLock.io spotlighted by the WEF for NHS AI use cases",
+          "url": "https://www.theblock.co/post/408322/flock-io-spotlighted-by-the-wef-for-nhs-ai-use-cases",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/FLock.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_1850451",
+          "title": "Bitmine says ETH staking generated $45.7 million, accounting for 98% of quarterly revenue",
+          "url": "https://www.theblock.co/post/408400/bitmine-eth-staking-generated-45-7-million-accounting-98-of-quarterly-revenue",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/ethereum-eth-work-news.jpg"
+        },
+        {
+          "id": "art_1825973",
+          "title": "Bitmine generated $46M from Ethereum staking last quarter",
+          "url": "https://cointelegraph.com/news/bitmine-generated-46m-from-ethereum-staking-last-quarter",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_1858319",
+          "title": "Crypto clearinghouse Glacis Labs raises $6.8 million seed to expand ZeroDelta platform",
+          "url": "https://www.theblock.co/post/408490/crypto-clearinghouse-glacis-labs-zerodelta-funding",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260409_Tokens_News.jpg"
+        },
+        {
+          "id": "art_1833591",
+          "title": "TeraWulf falls 7% after New York orders one-year pause on new data center permits",
+          "url": "https://www.theblock.co/post/408344/new-york-pause-new-data-center-permits-terawulf-falls",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/07/20220725_Bitcoin_Mining_Storage_Container-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_1858321",
+          "title": "'Bull markets everywhere': Bitwise says crypto equities beat every major asset class but emerging markets in H1 2026",
+          "url": "https://www.theblock.co/post/408449/bull-markets-everywhere-bitwise-crypto-equities-beat-major-asset-class-h1",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/07/20210402_Crypto_Credit_Market-Research-1.jpg"
+        },
+        {
+          "id": "art_1844499",
+          "title": "Kevin Ryan’s AlleyCorp raises new $335 million fund, all in on early-stage bets",
+          "url": "https://fortune.com/2026/07/15/kevin-ryan-alleycorp-raises-new-335-million-fund-early-stage-bets/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/Kevin-Ryan-at-Deep-Tech-New-York-e1784060801784.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1858323",
+          "title": "William Blair cuts Coinbase forecasts but says crypto downturn nearing a bottom",
+          "url": "https://www.theblock.co/post/408423/blair-cuts-coinbase-forecasts-but-crypto-downturn-nearing-bottom",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_1841709",
+          "title": "Cathie Wood’s ARK buys another 220K Circle shares despite sell-off33m",
+          "url": "https://cointelegraph.com/news/cathie-woods-ark-buy-220k-circle-stock-sell-off",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_1861691",
+          "title": "Coinbase's Jesse Pollak hands Base app leadership to Cobie after admitting social bets fell short",
+          "url": "https://www.theblock.co/post/408504/coinbases-jesse-pollak-hands-base-app-leadership-cobie-social-bets-fell-short",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260427_Base_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_1869560",
+          "title": "Public Hyperliquid treasury firm Hyperion enters into new 500k HYPE bond agreement with Skew",
+          "url": "https://www.theblock.co/post/408538/hyperliquid-treasury-firm-hyperion-new-500k-hype-bond-skew",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_1871809",
+          "title": "Pepperstone and the 24/7 CFD Frontier",
+          "url": "https://www.theblock.co/post/408469/pepperstone-and-the-24-7-cfd-frontier",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/20260714_Pepperstone_ResearchThumbnail-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_1840585",
+          "title": "Stripe, Advent Offer $53B to Acquire PayPal: Report",
+          "url": "https://cointelegraph.com/news/stripe-advent-53b-acquire-paypal-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-paypal-and-the-credit-card-industry-are-taking-advantage-of-consumers.jpg"
+        },
+        {
+          "id": "art_1853498",
+          "title": "Exclusive: Cyclops raises $20 million to help payment companies settle faster with stablecoins",
+          "url": "https://fortune.com/2026/07/15/exclusive-cyclops-20-million-payment-companies-settlement-stablecoins/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/cyclops_photo_cropped.png?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_1846205",
+          "title": "Japan passes crypto overhaul to bring digital assets under financial rules12m, Japan passes crypto overhaul to bring digital assets under financial rulesJapan’s revised Financial Instruments and Exchange Act introduces crypto insider trading rules, tougher penalties and new oversight requirements for crypto businesses.",
+          "url": "https://cointelegraph.com/news/japan-crypto-amendment-digital-assets-financial-rules",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-bills-compared-stable-act.png"
+        },
+        {
+          "id": "art_1843707",
+          "title": "Japan passes key bill recognizing crypto as financial product, lowering tax rate",
+          "url": "https://www.theblock.co/post/408361/japan-passes-key-bill",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/06/japan-flag-building.jpg"
+        },
+        {
+          "id": "art_1866187",
+          "title": "'Hugely positive' meeting on Thursday with Trump to discuss ethics raises hopes for passage of sweeping crypto legislation",
+          "url": "https://www.theblock.co/post/408517/hugely-positive-meeting-thursday-trump-ethics-raises-hopes-passage-crypto-legislation",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250523_DJT.jpg"
+        },
+        {
+          "id": "art_1846206",
+          "title": "South Korea to bring digital assets under new state asset management system24m, South Korea to bring digital assets under new state asset management system",
+          "url": "https://cointelegraph.com/news/south-korea-digital-assets-state-asset-management",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-will-crypto-be-the-only-digital-currency-left-standing-south-korea.jpg"
+        },
+        {
+          "id": "art_1841459",
+          "title": "US Treasury freezes over $130 million tied to Iran-linked crypto wallets",
+          "url": "https://www.theblock.co/post/408357/us-treasury-freezes-130-million-iran-linked-wallets",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/02/20210203_Department_of_Treasury.png"
+        },
+        {
+          "id": "art_1865313",
+          "title": "Revolut Receives In-Principle Approval from UAE Authorities for Crypto Services",
+          "url": "https://cointelegraph.com/news/revolut-approval-uae-crypto-services",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-follow-up-license-blockchain.jpg"
+        },
+        {
+          "id": "art_1850702",
+          "title": "AMLA Warns Customer Migration Could Strain Compliance at Licensed CASPs",
+          "url": "https://cointelegraph.com/news/amla-customer-migration-strain-mica-licensed-casps",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-setting-court-precedent-for-mica.jpg"
+        },
+        {
+          "id": "art_1845081",
+          "title": "Czech Republic tells ISPs to block Polymarket after gambling blacklisting37m",
+          "url": "https://cointelegraph.com/news/czech-republic-adds-polymarket-to-unauthorized-gambling-blacklist",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1834965",
+          "title": "Kalshi says CFTC, Michigan orders leave it in ‘impossible position’16m, Kalshi says CFTC, Michigan orders leave it in ‘impossible position’“We are disappointed by this decision and believe it is unfair to Kalshi,” the company’s legal counsel said on X.",
+          "url": "https://cointelegraph.com/news/kalshi-says-cftc-michigan-orders-leave-it-in-impossible-position",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1872934",
+          "title": "From Perpetual Swaps to Perpetual CFDs: The Regulated Evolution",
+          "url": "https://www.theblock.co/post/408553/from-perpetual-swaps-to-perpetual-cfds-the-regulated-evolution",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/20260714_Pepperstone_ResearchThumbnail-1-1.jpg"
+        },
+        {
+          "id": "art_1824266",
+          "title": "An SEC email address mix-up is causing confusion and threatening to disrupt its proposal to scrap quarterly reporting requirements",
+          "url": "https://fortune.com/2026/07/14/dispute-over-sec-comments-fuels-new-controversy-over-rule-to-scrap-quarterly-earnings/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2284342382-e1784057261404.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_1860817",
+          "title": "Ostium Pauses Trading After Apparent Oracle Exploit Targets OLP Vault",
+          "url": "https://cointelegraph.com/news/ostium-pauses-trading-as-security-firms-report-multimillion-dollar-oracle-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/magazine-defillama-hacks-analysis.png"
+        },
+        {
+          "id": "art_1858322",
+          "title": "Ostium pauses trading after apparent $18 million vault exploit",
+          "url": "https://www.theblock.co/post/408450/ostium-pauses-trading-after-apparent-18-million-vault-exploit",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg"
+        },
+        {
+          "id": "art_1879684",
+          "title": "California pair charged with laundering crypto proceeds from darknet fentanyl sales",
+          "url": "https://www.theblock.co/post/408560/california-duo-darknet-drug-crypto-money-laundering",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/06/20210601_Hydra_Darknet.png"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_1849327",
+          "title": "Circle suspended Tether-backed fund over market manipulation concerns, arbitration filings show",
+          "url": "https://www.theblock.co/post/408377/circle-suspended-tether-backed-fund-over-market-manipulation-concerns-arbitration-filings-show",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic_4-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_1851575",
+          "title": "DTCC begins first tokenized stock and Treasury production trades involving JPMorgan, BlackRock and Goldman: WSJ",
+          "url": "https://www.theblock.co/post/408419/dtcc-begins-first-tokenized-stock-and-treasury-production-trades-involving-jpmorgan-blackrock-and-goldman-wsj",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240624_Tokenization_News_2.jpg"
+        },
+        {
+          "id": "art_1860567",
+          "title": "BlackRock outlines vision for crypto-TradFi convergence as product pipeline grows",
+          "url": "https://www.theblock.co/post/408436/blackrock-outlines-vision-crypto-tradfi-convergence-product-pipeline-grows",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+        },
+        {
+          "id": "art_1859694",
+          "title": "Securitize and Cantor Fitzgerald Expand Tokenized Securities Push",
+          "url": "https://cointelegraph.com/news/securitize-cantor-target-tokenized-ipos-for-public-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ipo-models-that-exist.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Stripe and Advent just put a 28% premium on PayPal. Not because PayPal's growth story changed. Because the underwriting of what a payments rail is worth has shifted underneath it.\n\nThe same week, BlackRock, JPMorgan, and Goldman moved tokenized stocks and Treasuries into production at DTCC. Not pilot. Production. Invesco QQQ. SPY. Cleared through the same pipes that handle everything else. BlackRock's product pipeline now runs from tokenized Treasuries to private markets, which tells you where they think fee compression and balance sheet velocity are heading.\n\nJapan's overhaul is the regulatory mirror image. Crypto insider trading rules. 55% tax rates cut to 20%. Not sandboxed. Folded into the Financial Instruments and Exchange Act. The template is: regulate it like securities, tax it like capital gains, let the capital flow.\n\nWe underwrite this sector on whether tokenized assets clear through existing infrastructure or build parallel systems. DTCC just answered. The question that would kill this thesis: if production volumes stall and institutions retreat to pilots, or if the DTCC trades prove to be one-way publicity moves without two-sided market making. We are watching monthly clearing data, not press releases.\n\nPayPal at $53 billion is someone pricing in the stablecoin settlement layer. The value is shifting from consumer app to clearing infrastructure. That is the repricing."
+}
