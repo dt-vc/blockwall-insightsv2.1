@@ -1,0 +1,916 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-18",
+  "date_display": "July 18, 2026",
+  "generated_at": "2026-07-18T05:00:17.567Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Citadel Securities marks Crypto.com at $20B as institutional market makers price in permanent crypto infrastructure",
+    "tldr": "Wall Street's most sophisticated market maker just placed a $20 billion valuation on a retail crypto exchange, while prediction markets, tokenization sandboxes, and regulated M&A in Singapore all point to the same repricing: crypto infrastructure is being underwritten as durable plumbing, not speculative optionality."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the signals converge on a single underwriting question—whether the infrastructure being built now justifies the valuations being placed on it by operators who have no incentive to be wrong.",
+  "market_snapshot": {
+    "as_of": "2026-07-18T05:00:17.567Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,918",
+        "change_24h": "+0.8%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,843",
+        "change_24h": "-0.3%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": "+0.4%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$74.9B",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 9,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 25,
+    "bearish": 16,
+    "neutral": 24,
+    "deduped": 13
+  },
+  "top_signals": [
+    {
+      "id": "art_1915512",
+      "title": "Crypto.com valuation hits $20bn after investment from Citadel Securities",
+      "url": "https://www.ft.com/content/21d76406-b5ae-409b-8120-be8a885c02fd",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Crypto.com has reached a valuation of $20 billion following a strategic investment from Citadel Securities. This move highlights the increasing integration of Wall Street market makers into the digital asset and blockchain ecosystem.",
+      "significance": 8,
+      "primary_source": "https://www.ft.com/content/21d76406-b5ae-409b-8120-be8a885c02fd",
+      "themes": [
+        "investment",
+        "venture-capital"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fimages.ft.com%2Fv3%2Fimage%2Fraw%2Fhttps%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F66943eda-c928-4ff1-b400-0e2310f9a90d.jpg%3Fsource%3Dnext-barrier-page%26fit%3Dscale-down%26quality%3Dhighest%26width%3D700%26dpr%3D1?source=next-barrier-page",
+      "why_it_matters": "Citadel Securities' involvement in Crypto.com's $20 billion valuation is significant because it represents a market maker with deep options-market expertise pricing crypto infrastructure as a core revenue stream rather than a hedged bet."
+    },
+    {
+      "id": "art_1975671",
+      "title": "FTX to distribute $900M to creditors in fifth payment round7m",
+      "url": "https://cointelegraph.com/news/ftx-distribute-millions-creditors-fifth-payment-round",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "FTX is set to distribute approximately $900 million to its creditors as part of its fifth payment round. This move is part of the ongoing bankruptcy proceedings to recover and return assets to affected users.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/ftx-distribute-millions-creditors-fifth-payment-round",
+      "themes": [
+        "regulation",
+        "bankruptcy"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ftx-distribution.png",
+      "why_it_matters": "The $900 million FTX creditor distribution matters because it demonstrates that bankruptcy recoveries in crypto can achieve meaningful scale, which gradually reprices counterparty risk assumptions across lending and custody markets."
+    },
+    {
+      "id": "art_1969457",
+      "title": "World Cup final is already the biggest ever prediction market as Kalshi bets top $1.27 billion—with Spain favored to beat Argentina",
+      "url": "https://fortune.com/2026/07/17/world-cup-final-biggest-ever-prediction-market-kalshi-bets-top-spain-argentina/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Prediction markets are seeing massive adoption with the World Cup final, with Kalshi and Polymarket recording over $29 billion in total trading volume. Kalshi specifically has seen bets exceeding $1.27 billion on the final match.",
+      "significance": 7,
+      "primary_source": "https://fortune.com/2026/07/17/world-cup-final-biggest-ever-prediction-market-kalshi-bets-top-spain-argentina/",
+      "themes": [
+        "defi",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2286435662-e1784308309437.jpg?resize=1200,600",
+      "why_it_matters": "Prediction markets hitting $1.27 billion on a single sporting event with Kalshi and Polymarket's combined $29 billion volume indicates that regulated and offshore venues are simultaneously finding product-market fit in event-derived liquidity, not just price speculation."
+    },
+    {
+      "id": "art_1958766",
+      "title": "HSBC Approved for Bank of England Digital Securities Sandbox",
+      "url": "https://cointelegraph.com/news/hsbc-bank-of-england-approval-digital-securities-sandbox",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "HSBC has become the first applicant approved by the Bank of England to go live in the UK's Digital Securities Sandbox. The bank will utilize its HSBC Orion platform to test the tokenization and settlement of securities.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/hsbc-bank-of-england-approval-digital-securities-sandbox",
+      "themes": [
+        "tokenization",
+        "enterprise"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-world-bank-blockchain-initiatives-hsbc.jpg",
+      "why_it_matters": "HSBC's approval in the Bank of England's Digital Securities Sandbox matters because a systemically important bank entering live tokenization testing signals that settlement infrastructure is moving from pilot to production-grade, with regulatory cover."
+    },
+    {
+      "id": "art_1957639",
+      "title": "SBI Acquires Singaporean Crypto Exchange Coinhako After MAS Approval",
+      "url": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "SBI Holdings has received approval from the Monetary Authority of Singapore (MAS) to acquire a majority stake in the crypto exchange Coinhako. This acquisition is intended to bolster SBI's strategic expansion into stablecoins, on-chain finance, and tokenization.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako",
+      "themes": [
+        "investment",
+        "m-a"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sbi-virtual-currencies-the-bank-backed-japanese-exchange-with-big-plans.jpg",
+      "why_it_matters": "SBI's MAS-approved acquisition of Coinhako matters because Japanese-Singaporean regulatory arbitrage is being replaced by compliant consolidation, with stablecoin and tokenization licenses as the actual assets being acquired."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_1957639",
+      "company": "Coinhako",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "SBI Holdings"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako",
+      "summary": "SBI Holdings has received approval from the Monetary Authority of Singapore (MAS) to acquire a majority stake in the crypto exchange Coinhako. This acquisition is intended to bolster SBI's strategic expansion into stablecoins, on-chain finance, and tokenization."
+    },
+    {
+      "id": "art_1899934",
+      "company": "ORANGE JUICE",
+      "amount": "$40M",
+      "round": "",
+      "investors": [
+        "Jeff Booth",
+        "Lyn Alden"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/post/408594/jeff-booth-lyn-alden-backed-orange-juice-raises-40-million-to-launch-permanent-capital-firm-with-bitcoin-treasury-strategy",
+      "summary": "ORANGE JUICE has raised $40 million to establish a permanent capital firm. The firm intends to acquire businesses while implementing a strategic Bitcoin treasury model."
+    },
+    {
+      "id": "art_1937353",
+      "company": "NOBI",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Bybit"
+      ],
+      "category": "Other",
+      "url": "https://cointelegraph.com/news/crypto-exchange-bybit-launches-in-indonesia-after-nobi-acquisition",
+      "summary": "Crypto exchange Bybit has officially launched its services in Indonesia following the acquisition of NOBI. This move allows Bybit to establish a legal presence and expand its user base in the Southeast Asian market."
+    },
+    {
+      "id": "art_1903309",
+      "company": "Coinme",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Polygon Labs"
+      ],
+      "category": "Infrastructure",
+      "url": "https://www.theblock.co/post/408625/polygon-labs-second-round-of-layoffs-2026-finalize-coinme-acquisition",
+      "summary": "Polygon Labs has announced its second round of layoffs within a year as the company streamlines operations. This restructuring occurs as the firm works toward finalizing the acquisition of Coinme."
+    },
+    {
+      "id": "art_1902435",
+      "company": "Glide",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "MoonPay"
+      ],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/moonpay-acquires-glide-strengthen-crypto-deposits",
+      "summary": "MoonPay has acquired Glide, a crypto infrastructure startup founded by former Robinhood Wallet engineers. The acquisition aims to integrate Glide's cross-chain deposit routing technology into MoonPay's existing platform."
+    },
+    {
+      "id": "art_1902187",
+      "company": "Ualá",
+      "amount": "$20M",
+      "round": "",
+      "investors": [
+        "Tether"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/post/408604/tether-invests-20-million-in-uala-as-the-fintech-firm-reaches-3-2-billion-valuation",
+      "summary": "Tether has invested $20 million in the Argentine neobank Ualá. This investment was part of a larger $197 million funding round that brought Ualá's valuation to $3.2 billion."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_1962051",
+      "title": "Ostium Left an Opening for Exploiters and $24m Went Out the Door",
+      "url": "https://www.galaxy.com/insights/research/ostium-left-an-opening-for-exploiters-and-24m-went-out-the-door",
+      "source": "Galaxy — Insights",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The synthetic trading platform Ostium suffered a security exploit resulting in the loss of approximately $23.75 million. The stolen funds were primarily in the form of USDC stablecoins.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/265TqkOphaBdbkHfnVJCJ4/74874eda0a7233693cac7f9eb461e9a1/General-ChartGraph-3_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_1971163",
+      "title": "Consensys unknowingly outsourced developer work to North Korean9m",
+      "url": "https://cointelegraph.com/news/consensys-north-korean-hacker-software-developer",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Consensys discovered that it had unknowingly hired developers linked to North Korea for outsourced work. The company has since taken steps to terminate these relationships and enhance its vetting processes.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-hacker-interview.png"
+    },
+    {
+      "id": "art_1965528",
+      "title": "OKX Europe Lets Users Convert USDT to MiCA-Compliant USDC",
+      "url": "https://cointelegraph.com/news/okx-europe-lets-users-convert-usdt-to-mica-compliant-usdc",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "OKX Europe has introduced a tool allowing users to convert USDT to USDC. This move is a proactive response to the Markets in Crypto-Assets (MiCA) regulation, which imposes restrictions on non-compliant stablecoins within the EU.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-decentralized-exchanges-101-2.png"
+    },
+    {
+      "id": "art_1955135",
+      "title": "Crypto-style derivatives reach AI compute ahead of planned CME and ICE futures: Bernstein",
+      "url": "https://www.theblock.co/post/408758/crypto-style-derivatives-reach-ai-compute-ahead-of-planned-cme-and-ice-futures-bernstein",
+      "source": "The Block",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Bernstein reports that crypto-style perpetuals and prediction markets are currently leading the way in AI compute derivatives. This trend precedes the expected launch of regulated GPU futures from CME and ICE, which are targeted for late 2026.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/06/ai-artificial-intelligence.jpg"
+    },
+    {
+      "id": "art_1962048",
+      "title": "Weekly Top Stories: Shakeup at Coinbase's Base",
+      "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-17-26-base-pivot-creator-coins-new-york-data-center-moratorium-ostium-exploit",
+      "source": "Galaxy — Insights",
+      "category": "Other",
+      "sentiment": "bearish",
+      "summary": "A weekly news summary highlighting organizational changes at Coinbase's Base network and a significant security breach. The report also mentions a freeze on data centers in New York.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4j1IgfM1BEOV5ZjXfQZTtt/5c9004d80dff8dab50755400ab7c9491/Top_Stories_B1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_1953131",
+      "title": "UK sentences 2 hackers tied to $115M crypto ransom scheme30m",
+      "url": "https://cointelegraph.com/news/london-police-sentence-hackers-crypto-ransom-public-transport",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Two hackers have been sentenced in the UK for their involvement in a cryptocurrency ransom scheme totaling $115 million. The legal action highlights ongoing efforts by authorities to combat cybercrime and ransomware within the digital asset ecosystem.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-artificial-intelligence-is-used-in-fraud-detection-france.jpg"
+    },
+    {
+      "id": "art_1947496",
+      "title": "MacOS Malware Uses Telegram Session Hijacking to Target Crypto Wallets",
+      "url": "https://cointelegraph.com/news/macos-malware-crypto-investors-slowmist",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A new macOS malware has been identified that targets cryptocurrency wallets by hijacking Telegram sessions. The malware steals credentials and decrypts wallet databases to compromise user assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-victim-of-a-scam-heres-what-to-do-next.jpg"
+    },
+    {
+      "id": "art_1902185",
+      "title": "Ledger unveils hardware-backed Agent Stack to prevent rogue AI transactions",
+      "url": "https://www.theblock.co/post/408549/ledger-unveils-hardware-backed-agent-stack",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "Ledger has introduced the Agent Stack, a hardware-backed framework designed to secure AI-driven transactions. The system allows users to deploy bots for portfolio management and transaction drafting while preventing rogue AI from executing unauthorized transfers.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/01/ledger.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_1962051",
+      "title": "Ostium Left an Opening for Exploiters and $24m Went Out the Door",
+      "url": "https://www.galaxy.com/insights/research/ostium-left-an-opening-for-exploiters-and-24m-went-out-the-door",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's analysis of Ostium's $24 million exploit is worth reading because it examines how perpetual futures DEXs with novel oracle designs create specific attack surfaces that differ materially from lending protocol exploits.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/265TqkOphaBdbkHfnVJCJ4/74874eda0a7233693cac7f9eb461e9a1/General-ChartGraph-3_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_1962048",
+      "title": "Weekly Top Stories: Shakeup at Coinbase's Base",
+      "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-17-26-base-pivot-creator-coins-new-york-data-center-moratorium-ostium-exploit",
+      "source": "Galaxy — Insights",
+      "note": "The Base leadership shakeup coverage merits attention because Coinbase's L2 strategy is a bellwether for how US-listed exchanges navigate the tension between decentralized sequencing narratives and centralized revenue capture.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4j1IgfM1BEOV5ZjXfQZTtt/5c9004d80dff8dab50755400ab7c9491/Top_Stories_B1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_1936276",
+      "title": "Mollie doubles down on Europe with €350m expansion plan: ‘Superapp is a convoluted word’",
+      "url": "https://sifted.eu/articles/mollie-350m-europe-expansion/",
+      "source": "Sifted",
+      "note": "Sifted's interview with Mollie's CEO is relevant because his explicit rejection of the 'superapp' framing for European fintech expansion offers a counter-narrative to the bundling thesis that many Web3 consumer plays rely on.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/16161511/Koen-Koppen-Headshot-scaled.jpeg?w=1638&h=2048&q=75&fit=crop&auto=compress,format"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_1944115",
+          "title": "Bitcoin ETFs Extend Inflows as BTC Briefly Hits $65K",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-368-million-three-day-buying-streak",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/bitcoin-etf-3.jpg"
+        },
+        {
+          "id": "art_1915694",
+          "title": "JPMorgan says bitcoin outlook sees 'encouraging sign' as Strategy boosts cash reserves",
+          "url": "https://www.theblock.co/post/408712/jpmorgan-bitcoin-outlook-encouraging-sign-strategy-cash-reserves",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/10/20201026_JPMorgan-Crypto-Org.jpg"
+        },
+        {
+          "id": "art_1963024",
+          "title": "Bitcoin ETFs could mirror gold’s history of 'spectacular gains' and 'painful drawdowns,' analyst says",
+          "url": "https://www.theblock.co/post/408782/bitcoin-etfs-ibit-mirror-golds-history-spectacular-gains-painful-drawdowns-analyst",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_4-1200x675.jpg"
+        },
+        {
+          "id": "art_1962049",
+          "title": "Charts of the Week: Bitcoin's Great Awakenings",
+          "url": "https://www.galaxy.com/insights/research/charts-of-the-week-bitcoins-great-awakenings",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5ArKVZKUpzBXPH724qUMur/bd43e728d1f7fa32f831a05e8c656095/Bitcoin-13.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1940735",
+          "title": "Ordinals Dev Proposes New Bitcoin Client: ‘$DOG Mode’",
+          "url": "https://cointelegraph.com/news/ordinals-dev-leonidas-proposes-new-bitcoin-client-dog-mode",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/teaching-coin-board-bitcoin.jpg"
+        },
+        {
+          "id": "art_1888684",
+          "title": "Bitcoin whale moves $383 million in BTC after 8 years of dormancy: onchain data",
+          "url": "https://www.theblock.co/post/408570/bitcoin-whale-moves-8-years",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Whale_News_2.jpg"
+        },
+        {
+          "id": "art_1973167",
+          "title": "CryptoQuant says Strategy still needs disciplined bitcoin buying and selling framework",
+          "url": "https://www.theblock.co/post/408825/cryptoquant-strategy-bitcoin-buying-selling-framework-mstr",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250304_Strategy_News_4.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_1969457",
+          "title": "World Cup final is already the biggest ever prediction market as Kalshi bets top $1.27 billion—with Spain favored to beat Argentina",
+          "url": "https://fortune.com/2026/07/17/world-cup-final-biggest-ever-prediction-market-kalshi-bets-top-spain-argentina/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2286435662-e1784308309437.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1955135",
+          "title": "Crypto-style derivatives reach AI compute ahead of planned CME and ICE futures: Bernstein",
+          "url": "https://www.theblock.co/post/408758/crypto-style-derivatives-reach-ai-compute-ahead-of-planned-cme-and-ice-futures-bernstein",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/ai-artificial-intelligence.jpg"
+        },
+        {
+          "id": "art_1902186",
+          "title": "Dune research finds 85% of concentrated DeFi liquidity is underutilized, with $150M in annual fees foregone",
+          "url": "https://www.theblock.co/post/408591/dune-research-finds-85-of-concentrated-defi-liquidity-is-underutilized-with-150m-in-annual-fees-foregone",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/cropped-3.jpg"
+        },
+        {
+          "id": "art_1919322",
+          "title": "1inch Co-Founder Says He Was Fired, Announces New Venture",
+          "url": "https://cointelegraph.com/news/1inch-co-founder-not-involved-company",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/layoffs-fired-human-resource-hr-leaving-quit.png"
+        },
+        {
+          "id": "art_1900184",
+          "title": "ARK pushes back against a16z’s ‘TradFi wants blockchain, not DeFi’ claim33m, ARK pushes back against a16z’s ‘TradFi wants blockchain, not DeFi’ claimARK Invest’s director of research disputed a16z crypto’s thesis that traditional finance will adopt permissioned blockchain infrastructure instead of decentralized finance, saying institutions will increasingly rely on DeFi rails.",
+          "url": "https://cointelegraph.com/news/ark-sentora-a16zs-tradfi-blockchain-defi-thesis",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_1888934",
+          "title": "Hyperion DeFi to deploy 500K HYPE for Hyperliquid HIP-3 markets3m",
+          "url": "https://cointelegraph.com/news/hyperion-defi-to-deploy-500k-hype-for-hyperliquid-hip-3-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_1975421",
+          "title": "Bank of America taps new leaders to bridge crypto, AI and traditional finance",
+          "url": "https://www.theblock.co/post/408830/bank-america-taps-new-leaders-bridge-crypto-ai-traditional-finance",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/05/bank-of-america-1200x675.jpg"
+        },
+        {
+          "id": "art_1896559",
+          "title": "Volvo Group tests proprietary cryptocurrency for supplier transactions in blockchain push",
+          "url": "https://www.theblock.co/post/408586/volvo-group-tests-proprietary-cryptocurrency",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/volvo-group-e1784194906473.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_1903309",
+          "title": "Polygon Labs announces second round of layoffs in 2026 as firm looks to finalize Coinme acquisition",
+          "url": "https://www.theblock.co/post/408625/polygon-labs-second-round-of-layoffs-2026-finalize-coinme-acquisition",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/07/20220705_JobCuts_Generic-1200x675.jpg"
+        },
+        {
+          "id": "art_1902435",
+          "title": "MoonPay Acquires Glide to Expand Crypto Deposit Tools",
+          "url": "https://cointelegraph.com/news/moonpay-acquires-glide-strengthen-crypto-deposits",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/digital-wallet-moonpay.jpg"
+        },
+        {
+          "id": "art_1897934",
+          "title": "Autonomous AI Economy Faces Infrastructure Gaps: Visa, Artemis",
+          "url": "https://cointelegraph.com/news/autonomous-ai-agent-economy-infrastructure-gaps-visa-artemis",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-could-those-who-left-visa-come-back-ai.jpg"
+        },
+        {
+          "id": "art_1892309",
+          "title": "Robinhood Chain memecoin launchpad Vlad.fun halts after ‘internal integrity’ issue27m",
+          "url": "https://cointelegraph.com/news/robinhood-chain-memecoin-vladfun-halts-integrity",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1962052",
+          "title": "N.Y. Data Center Freeze Tests State’s Leverage With Developers",
+          "url": "https://www.galaxy.com/insights/research/new-york-state-data-center-moratorium",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5yRbZLqkidO4vBFClL62I5/8cd7c8d90326e1802cb962600fe0a22b/General-ChartGraph-5_Gray-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1917946",
+          "title": "MegaETH sunsets Mega Mafia accelerator program, noting 'most' of its successful apps left",
+          "url": "https://www.theblock.co/post/408718/megaeth-sunsets-mega-mafia-accelerator-program-noting-most-successful-apps-left",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250411_MegaEth_News_3-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_1915512",
+          "title": "Crypto.com valuation hits $20bn after investment from Citadel Securities",
+          "url": "https://www.ft.com/content/21d76406-b5ae-409b-8120-be8a885c02fd",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fimages.ft.com%2Fv3%2Fimage%2Fraw%2Fhttps%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F66943eda-c928-4ff1-b400-0e2310f9a90d.jpg%3Fsource%3Dnext-barrier-page%26fit%3Dscale-down%26quality%3Dhighest%26width%3D700%26dpr%3D1?source=next-barrier-page"
+        },
+        {
+          "id": "art_1957639",
+          "title": "SBI Acquires Singaporean Crypto Exchange Coinhako After MAS Approval",
+          "url": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sbi-virtual-currencies-the-bank-backed-japanese-exchange-with-big-plans.jpg"
+        },
+        {
+          "id": "art_1899934",
+          "title": "Jeff Booth, Lyn Alden-backed ORANGE JUICE raises $40 million to launch permanent capital firm with bitcoin treasury strategy",
+          "url": "https://www.theblock.co/post/408594/jeff-booth-lyn-alden-backed-orange-juice-raises-40-million-to-launch-permanent-capital-firm-with-bitcoin-treasury-strategy",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Funding_News_3.jpg"
+        },
+        {
+          "id": "art_1902187",
+          "title": "Tether invests $20 million in Ualá as the fintech firm reaches $3.2 billion valuation",
+          "url": "https://www.theblock.co/post/408604/tether-invests-20-million-in-uala-as-the-fintech-firm-reaches-3-2-billion-valuation",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Tether_News_2.jpg"
+        },
+        {
+          "id": "art_1959643",
+          "title": "Galaxy Digital puts its name on Texas Tech football stadium in 15-year partnership",
+          "url": "https://www.theblock.co/post/408772/galaxy-digital-puts-name-texas-tech-football-stadium-15-year-partnership",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240725_Galaxy_News.jpg"
+        },
+        {
+          "id": "art_1908939",
+          "title": "Multicoin Capital makes first Hyperliquid ecosystem investment in Trasia, an Asia-focused trading platform",
+          "url": "https://www.theblock.co/post/408670/multicoin-capital-hyperliquid-ecosystem-investment-trasia",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/hype-hyperliquid.jpg"
+        },
+        {
+          "id": "art_1905561",
+          "title": "Keyrock closes deal for BlockFills’ institutional trading and brokerage assets",
+          "url": "https://www.theblock.co/post/408639/keyrock-closes-deal-blockfill-institutional-trading-brokerage-assets",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/10/20211005_Acquisitions.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_1876559",
+          "title": "Base’s social bet left it trailing in prediction markets and perps: Pollak9m",
+          "url": "https://cointelegraph.com/news/bases-social-bet-left-it-trailing-in-prediction-markets-and-perps-pollak",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_1962048",
+          "title": "Weekly Top Stories: Shakeup at Coinbase's Base",
+          "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-17-26-base-pivot-creator-coins-new-york-data-center-moratorium-ostium-exploit",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4j1IgfM1BEOV5ZjXfQZTtt/5c9004d80dff8dab50755400ab7c9491/Top_Stories_B1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1937353",
+          "title": "Crypto exchange Bybit launches in Indonesia after NOBI acquisition34m",
+          "url": "https://cointelegraph.com/news/crypto-exchange-bybit-launches-in-indonesia-after-nobi-acquisition",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_1948041",
+          "title": "Kevin O’Leary claimed opposition to his Utah data center was fueled by Chinese money. Now he and Fox News are being sued for defamation",
+          "url": "https://fortune.com/2026/07/17/kevin-oleary-defamation-lawsuit-chinese-communist-party-utah-data-center/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2149161247-e1784237793531.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1936276",
+          "title": "Mollie doubles down on Europe with €350m expansion plan: ‘Superapp is a convoluted word’",
+          "url": "https://sifted.eu/articles/mollie-350m-europe-expansion/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/16161511/Koen-Koppen-Headshot-scaled.jpeg?w=1638&h=2048&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_1910861",
+          "title": "JPMorgan CEO Jamie Dimon says 300,000 workers are needed to rebuild American shipbuilding—with jobs paying $100,000 without a college degree",
+          "url": "https://fortune.com/2026/07/16/jpmorgan-chase-ceo-jamie-dimon-skilled-trade-shortage-shipbuilding-six-figure-gen-z-ai-proof-job-opportunity-philadelphia-investment/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-1793796772-e1784214075248.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1931719",
+          "title": "Balaji seeks Malaysia deal, threatens exit after Network School probe“If we are not welcome, there are many other countries that would welcome us,” said Network School founder Balaji Srinivasan in a message to the Malaysian prime minister.",
+          "url": "https://cointelegraph.com/news/balaji-seeks-malaysia-deal-threatens-exit-after-network-school-probe",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1871809",
+          "title": "Pepperstone and the 24/7 CFD Frontier",
+          "url": "https://www.theblock.co/post/408469/pepperstone-and-the-24-7-cfd-frontier",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/20260714_Pepperstone_ResearchThumbnail-1.jpg"
+        },
+        {
+          "id": "art_1907962",
+          "title": "Compute Capital Markets with Lucas Tcheyan",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/compute-capital-markets-with-lucas-tcheyan",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1920809",
+          "title": "🟪 The Chicago Plan Comeback  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_0852a087-1fe9-42fb-bd63-87c9d8989b6b",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_1914128",
+          "title": "Token Terminal",
+          "url": "https://tokenterminal.com/resources/newsletter/tokenized-assets-are-taking-off-on-bnb-chain",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_1975671",
+          "title": "FTX to distribute $900M to creditors in fifth payment round7m",
+          "url": "https://cointelegraph.com/news/ftx-distribute-millions-creditors-fifth-payment-round",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ftx-distribution.png"
+        },
+        {
+          "id": "art_1965528",
+          "title": "OKX Europe Lets Users Convert USDT to MiCA-Compliant USDC",
+          "url": "https://cointelegraph.com/news/okx-europe-lets-users-convert-usdt-to-mica-compliant-usdc",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-decentralized-exchanges-101-2.png"
+        },
+        {
+          "id": "art_1884434",
+          "title": "Trump to Meet Senators on CLARITY Act push",
+          "url": "https://cointelegraph.com/news/trump-to-meet-with-senators-over-clarity-act-on-thursday-politico",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/trump-signing-papers.jpg"
+        },
+        {
+          "id": "art_1950877",
+          "title": "MiCA Licensing Slows as ESMA Adds 14 New CASPs to Its Register",
+          "url": "https://cointelegraph.com/news/mica-licensing-momentum-slows-post-deadline",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-mica-markets-in-crypto-assets-regulation-esma-1.jpg"
+        },
+        {
+          "id": "art_1948623",
+          "title": "US indicts crypto investor over alleged $20M fraud scheme20m",
+          "url": "https://cointelegraph.com/news/us-indicts-crypto-investor-over-alleged-20m-fraud-scheme",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_1910314",
+          "title": "Ethics in crypto market structure ‘really not our concern,’ says Blockchain Association CEO5m, Ethics in crypto market structure ‘really not our concern,’ says Blockchain Association CEOA former CFTC commissioner urged lawmakers not to “kill all the hard work that we put in the rest of the bill” by making ethics a make-or-break issue on crypto market structure.",
+          "url": "https://cointelegraph.com/news/ethics-crypto-market-structure-concerns-blockchain-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_1906687",
+          "title": "US jury indicts South Dakota crypto investor on 29 counts over alleged $20 million investor fraud",
+          "url": "https://www.theblock.co/post/408654/us-jury-indicts-south-dakota-crypto-investor-29-counts-alleged-20m-investor-fraud",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic_3.jpg"
+        },
+        {
+          "id": "art_1965529",
+          "title": "Senator Warren Requests 2026 Reporting for Trump’s Crypto Earnings after $1.4B Disclosure",
+          "url": "https://cointelegraph.com/news/senator-warren-2026-reporting-donald-trump-crypto-earnings",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-warren-joins-call-for-probe-of-trump.png"
+        },
+        {
+          "id": "art_1961564",
+          "title": "White House insists it has ‘extremely strict ethical guidelines’ as teleprompter op goes on unpaid leave over $100,000 insider trading allegations",
+          "url": "https://fortune.com/2026/07/17/trump-teleprompter-betting-kalshi-probe/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/AP26197650029562-e1784299061921.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1895684",
+          "title": "US Senate unanimously adopts resolution opposing clemency for SBF14m",
+          "url": "https://cointelegraph.com/news/senate-adopts-resolution-opposing-clemency-sbf-ftx",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_1872934",
+          "title": "From Perpetual Swaps to Perpetual CFDs: The Regulated Evolution",
+          "url": "https://www.theblock.co/post/408553/from-perpetual-swaps-to-perpetual-cfds-the-regulated-evolution",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/20260714_Pepperstone_ResearchThumbnail-1-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_1962051",
+          "title": "Ostium Left an Opening for Exploiters and $24m Went Out the Door",
+          "url": "https://www.galaxy.com/insights/research/ostium-left-an-opening-for-exploiters-and-24m-went-out-the-door",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/265TqkOphaBdbkHfnVJCJ4/74874eda0a7233693cac7f9eb461e9a1/General-ChartGraph-3_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_1971163",
+          "title": "Consensys unknowingly outsourced developer work to North Korean9m",
+          "url": "https://cointelegraph.com/news/consensys-north-korean-hacker-software-developer",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-hacker-interview.png"
+        },
+        {
+          "id": "art_1953131",
+          "title": "UK sentences 2 hackers tied to $115M crypto ransom scheme30m",
+          "url": "https://cointelegraph.com/news/london-police-sentence-hackers-crypto-ransom-public-transport",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-artificial-intelligence-is-used-in-fraud-detection-france.jpg"
+        },
+        {
+          "id": "art_1947496",
+          "title": "MacOS Malware Uses Telegram Session Hijacking to Target Crypto Wallets",
+          "url": "https://cointelegraph.com/news/macos-malware-crypto-investors-slowmist",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-victim-of-a-scam-heres-what-to-do-next.jpg"
+        },
+        {
+          "id": "art_1902185",
+          "title": "Ledger unveils hardware-backed Agent Stack to prevent rogue AI transactions",
+          "url": "https://www.theblock.co/post/408549/ledger-unveils-hardware-backed-agent-stack",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/ledger.jpg"
+        },
+        {
+          "id": "art_1955386",
+          "title": "Dutch Court Declares Knaken Crypto Platform Bankrupt",
+          "url": "https://cointelegraph.com/news/dutch-court-knaken-crypto-platform-bankruptcy",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/man-documents-breaking-news.png"
+        },
+        {
+          "id": "art_1947246",
+          "title": "UK gang jailed over $5.4 million crypto scam posing as police",
+          "url": "https://www.theblock.co/post/408745/uk-gang-jailed-crypto-scam",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic_2.jpg"
+        },
+        {
+          "id": "art_1924373",
+          "title": "Airbnb CEO Brian Chesky’s X account was hijacked in an AI slop hack pushing crypto tokenization",
+          "url": "https://fortune.com/2026/07/16/airbnb-ceo-x-hack-ai-slop-security/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2276716878.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_1879684",
+          "title": "California pair charged with laundering crypto proceeds from darknet fentanyl sales",
+          "url": "https://www.theblock.co/post/408560/california-duo-darknet-drug-crypto-money-laundering",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/06/20210601_Hydra_Darknet.png"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_1971164",
+          "title": "Bolivia Eyes USDT as Miners’ AI Pivot Faces New Scrutiny",
+          "url": "https://cointelegraph.com/news/crypto-biz-when-dollars-disappear-stablecoins-step-in",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/cross-border-transaction-stablecoin-dollar-1.jpg"
+        },
+        {
+          "id": "art_1954258",
+          "title": "ECB’s Cipollone Says Stablecoin Adoption Could Erode Bank Deposits",
+          "url": "https://cointelegraph.com/news/stablecoin-growth-bank-deposits-ecbs-cipollone",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-company-wants-to-launch-digital-currency-bank-stablecoin-eu.jpg"
+        },
+        {
+          "id": "art_1907571",
+          "title": "스테이블코인 밸류체인: 발행 이후의 산업을 주목하라",
+          "url": "https://reports.tiger-research.com/p/stablecoin-value-chain-opportunities-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Z0FV!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F207296536%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_1907570",
+          "title": "Stablecoin Value Chain: Opportunities Besides Issuance",
+          "url": "https://reports.tiger-research.com/p/stablecoin-value-chain-opportunities-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!1bg0!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F207299120%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_1958766",
+          "title": "HSBC Approved for Bank of England Digital Securities Sandbox",
+          "url": "https://cointelegraph.com/news/hsbc-bank-of-england-approval-digital-securities-sandbox",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-world-bank-blockchain-initiatives-hsbc.jpg"
+        },
+        {
+          "id": "art_1901309",
+          "title": "Tokenized stocks market cap gains to record $2.3B21m",
+          "url": "https://cointelegraph.com/news/tokenized-stocks-rise-23b-all-time-high",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Ken Griffin's shop does not price $20 billion by accident. Citadel Securities taking a strategic position in Crypto.com at that valuation is a market maker with real-time flow data declaring that the exchange infrastructure layer has reached institutional-grade durability. They see the order book. We do not. But we can read what they underwrite.\n\nThe same week, HSBC goes live in the Bank of England's tokenization sandbox. SBI gets MAS approval to buy Coinhako for its stablecoin license stack. Kalshi and Polymarket clear $29 billion combined volume. These are not correlated hype cycles. They are separate regulatory and commercial systems converging on the same repricing: crypto as settlement and prediction infrastructure, not as speculative asset class.\n\nWhat we underwrite a sector on is shifting. The question is no longer whether tokenization happens. It is whether the first-mover advantage in regulated sandboxes like HSBC's Orion deployment compounds into network effects before the technology commoditizes. The test: in twelve months, does the BoE sandbox produce live corporate bond settlement at reduced cost, or does it remain a press release?\n\nIf it is the latter, the infrastructure valuations reprice down hard. If it is the former, the Citadel mark starts to look conservative."
+}
