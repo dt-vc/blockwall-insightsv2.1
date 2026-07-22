@@ -1,0 +1,661 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-22",
+  "date_display": "July 22, 2026",
+  "generated_at": "2026-07-22T05:00:17.556Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Telegram's Gram Wallet Rollout Tests Whether Distribution Can Overcome Regulatory Fog",
+    "tldr": "Telegram is betting that 900 million users and a non-custodial architecture can succeed where its 2019 ICO failed, even as the US advances market-structure legislation and Russia opens regulated retail access—creating divergent regulatory lanes that infrastructure plays must now navigate simultaneously."
+  },
+  "intro": "Dear Founders, Investors, and Friends, Telegram is attempting the largest non-custodial wallet deployment in history while Washington and Moscow both rewrite the rules of access, so today's brief tracks how distribution scale and regulatory fragmentation are colliding in real time.",
+  "market_snapshot": {
+    "as_of": "2026-07-22T05:00:17.556Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$66,327",
+        "change_24h": "+1.3%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,935",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.34T",
+        "change_24h": "+0.9%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$77.0B",
+        "change_24h": "+0.7%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 17,
+    "bearish": 9,
+    "neutral": 16,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_2176286",
+      "title": "Telegram plans 'largest rollout of a non-custodial crypto wallet in human history'",
+      "url": "https://www.theblock.co/post/409099/telegram-plans-largest-rollout-non-custodial-crypto-wallet-in-history",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Telegram is planning a massive rollout of a non-custodial crypto wallet to its vast user base. The move is seen as a significant effort to onboard a mainstream audience into the cryptocurrency ecosystem.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/409099/telegram-plans-largest-rollout-non-custodial-crypto-wallet-in-history",
+      "themes": [
+        "infrastructure",
+        "wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/08/shutterstock_1022060599.jpg",
+      "why_it_matters": "The 'largest rollout' framing matters because Telegram is explicitly testing whether user base scale can substitute for the compliance-heavy onboarding that has bottlenecked every prior mass-market wallet attempt, and the non-custodial architecture is a direct hedge against the regulatory exposure that killed its 2019 Gram token sale."
+    },
+    {
+      "id": "art_2183315",
+      "title": "Pavel Durov says Telegram to roll out native Gram crypto wallet22m",
+      "url": "https://cointelegraph.com/news/telegram-launch-native-self-custody-gram-wallet-for-over-1-billion-users-durov",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Telegram CEO Pavel Durov announced the rollout of a native crypto wallet for the Gram token. This integration aims to bring cryptocurrency functionality directly into the messaging platform's ecosystem.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/telegram-launch-native-self-custody-gram-wallet-for-over-1-billion-users-durov",
+      "themes": [
+        "payments",
+        "wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/wallet3.png",
+      "why_it_matters": "Durov's native Gram wallet announcement confirms the wallet will be token-specific rather than multi-chain, which means Telegram is underwriting the thesis that a closed-loop messaging economy can generate sufficient transaction velocity to justify the infrastructure investment without needing broad DeFi interoperability."
+    },
+    {
+      "id": "art_2183066",
+      "title": "Solana, Hyperliquid ETFs dominate altcoin fund flows despite flying under the radar",
+      "url": "https://www.theblock.co/post/408963/solana-hyperliquid-etfs-dominate-altcoin-fund-flows-despite-flying-under-the-radar",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Solana and Hyperliquid ETFs are seeing significant capital inflows, signaling strong institutional interest in altcoin assets. Solana ETFs have reached $904 million in AUM, while Hyperliquid funds have seen $350 million in net inflows.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/408963/solana-hyperliquid-etfs-dominate-altcoin-fund-flows-despite-flying-under-the-radar",
+      "themes": [
+        "investment",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/10/20230810_Solana_News.jpg",
+      "why_it_matters": "Solana and Hyperliquid ETFs commanding $1.25 billion in combined flows while 'flying under the radar' suggests institutional allocation to altcoin beta is happening faster than sell-side coverage can model, which typically precedes either a repricing event or a sharp correction when the lagged narrative catches up."
+    },
+    {
+      "id": "art_2180805",
+      "title": "Russia passes landmark crypto bill allowing regulated retail trading",
+      "url": "https://www.theblock.co/post/409121/russia-passes-landmark-crypto-bill-allowing-regulated-retail-trading",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Russia's State Duma has passed a landmark bill that establishes a legal framework for regulated retail cryptocurrency trading. The law introduces specific purchase limits for non-qualified investors to manage risk.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409121/russia-passes-landmark-crypto-bill-allowing-regulated-retail-trading",
+      "themes": [
+        "regulation",
+        "legal-framework"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2018/10/russian-flag.jpg",
+      "why_it_matters": "Russia's retail trading limits for non-qualified investors create a template for how major economies can permit crypto access without fully liberalizing it, and any infrastructure or exchange play with Russian exposure now has a testable regulatory framework to underwrite against rather than pure speculation."
+    },
+    {
+      "id": "art_2181055",
+      "title": "White House Agrees to Ethics Provisions in Market Structure Bill",
+      "url": "https://cointelegraph.com/news/white-house-ethics-provisions-crypto-market-structure-bill",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The White House has reached an agreement on ethics provisions within a proposed crypto market structure bill. This compromise removes a significant hurdle for Democratic support of the legislation.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/white-house-ethics-provisions-crypto-market-structure-bill",
+      "themes": [
+        "regulation",
+        "legislative"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-negotiation-wh.png",
+      "why_it_matters": "The White House ethics compromise on market structure legislation removes the last identifiable Democratic procedural objection, which means the bill's passage probability has shifted materially and any US-facing exchange or custody business should now be modeling compliance costs against a statutory rather than enforcement-only regime."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_2188717",
+      "company": "Digital Asset",
+      "amount": "$10M",
+      "round": "Additional funding",
+      "investors": [
+        "Shinhan Financial Group",
+        "SC Ventures"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/post/409168/canton-digital-asset-additional-10-million-funding-same-2-billion-equity-valuation-expanding-round-365-million",
+      "summary": "Digital Asset, the developer of the Canton Network, has secured an additional $10 million in funding. The investment comes from Shinhan Financial Group and SC Ventures at a maintained equity valuation of $2 billion."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_2161595",
+      "title": "CoinShares launches UCITS platform targeting Europe's institutional investors",
+      "url": "https://www.theblock.co/post/409029/coinshares-launches-europe-ucits-platform",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "CoinShares is launching a new platform targeting Europe's $30 trillion UCITS ecosystem to attract institutional investors. The expansion includes the introduction of a Bitcoin Mining ETF.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/07/eu-european-union-1200x675.jpg"
+    },
+    {
+      "id": "art_2150545",
+      "title": "Grayscale files S-1 for first US Worldcoin ETF23m, Grayscale files S-1 for first US Worldcoin ETFThe filing expands Grayscale’s growing lineup of crypto-related exchange-traded products outside of Bitcoin and Ether.",
+      "url": "https://cointelegraph.com/news/grayscale-files-s-1-for-worldcoin-etf",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Grayscale has filed an S-1 registration statement to launch the first US-based Worldcoin ETF. This move expands Grayscale's suite of digital asset products beyond its existing Bitcoin and Ether offerings.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/worldcoin.jpg"
+    },
+    {
+      "id": "art_2157330",
+      "title": "Base Creator Says 1:1-Backed Tokenized Equities Launch Is ‘Imminent’",
+      "url": "https://cointelegraph.com/news/bases-tokenized-equities-imminent-pollak",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Base creator Jesse Pollak announced that the launch of 1:1-backed tokenized equities on the Ethereum layer-2 network is imminent. This move signals a strategic pivot for Base toward trading and the integration of real-world tokenized assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-base-coinbase-l2-network-2.jpg"
+    },
+    {
+      "id": "art_2167503",
+      "title": "Russia Completes Final Readings on Crypto Regulation Bill",
+      "url": "https://cointelegraph.com/news/russias-parliament-passes-law-regulating-crypto-market",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Russia's State Duma has completed the final readings of a comprehensive cryptocurrency bill. The legislation aims to establish a regulatory framework for crypto assets, market participants, and trading operations within the country.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/russia-bitcoin.jpg"
+    },
+    {
+      "id": "art_2190095",
+      "title": "CLARITY Act Could Help CFTC Deal with Prediction Markets: Lawyer",
+      "url": "https://cointelegraph.com/news/clarity-act-cftc-prediction-markets-resources",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "A US House subcommittee held a hearing to discuss the CFTC's oversight of prediction markets and the potential impact of the CLARITY Act. The legislation aims to provide clearer regulatory frameworks for these markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-prediction-market-cftc-rule.jpg"
+    },
+    {
+      "id": "art_2192909",
+      "title": "U.N. reports Southeast Asia’s criminal networks are using tech to build a global illicit economy",
+      "url": "https://fortune.com/2026/07/21/un-report-southeast-asia-crime-tech-global-illicit-economy/",
+      "source": "Fortune Crypto",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A U.N. report highlights how criminal networks in Southeast Asia are leveraging technology to scale a global illicit economy. These operations resulted in an estimated $114.1 billion in losses last year through expanded scamming activities.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2283751131-e1784668105550.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_2188715",
+      "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies",
+      "url": "https://www.theblock.co/post/409173/trump-backed-crypto-ethics-rule-doj-enforcement-prohibits-federal-officials-issuing-cryptocurrencies",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "President Donald Trump has signed new ethics rules that prohibit federal officials from issuing cryptocurrencies. The rules also designate the Department of Justice (DOJ) as the primary body responsible for enforcement.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250523_DJT-3.jpg"
+    },
+    {
+      "id": "art_2188716",
+      "title": "The Digital Chamber sues Illinois over incoming crypto transaction tax",
+      "url": "https://www.theblock.co/post/409160/the-digital-chamber-sues-illinois-over-incoming-crypto-transaction-tax",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Digital Chamber is filing a lawsuit against the state of Illinois to challenge a new law. The legal action targets a proposed 0.2% tax on digital asset transactions.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/05/20220526_Bangkok-Thailand-Tax-Calculator.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_2181105",
+      "title": "Exclusive: Visionaries shakes up investment team ahead of new fund",
+      "url": "https://sifted.eu/articles/visionaries-investment-team-shake-up/",
+      "source": "Sifted",
+      "note": "Visionaries' investment team shakeup ahead of a new fund launch is worth tracking because European venture restructuring patterns often signal LP pressure on deployment pace or strategy drift before they become visible in fundraising data.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2024/12/19172643/Visionaries-Club-Robert-Lacher-scaled-e1734629233447.jpg?w=1464&h=1174&q=75&fit=crop&auto=compress,format"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_2171766",
+          "title": "Jack Mallers leaves Twenty One as Strike exits Tether's three-way bitcoin merger",
+          "url": "https://www.theblock.co/post/409075/jack-mallers-leaves-twenty-one-as-strike-exits-tethers-three-way-bitcoin-merger",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_2186455",
+          "title": "Satsuma shareholders approve bitcoin treasury liquidation and London delisting",
+          "url": "https://www.theblock.co/post/409155/satsuma-shareholders-approve-bitcoin-treasury-liquidation-london-delisting",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/09/20240904_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_2183065",
+          "title": "Galaxy launches Bitcoin quantum computing initiative, commits up to $5 million in developer grants",
+          "url": "https://www.theblock.co/post/409129/galaxy-bitcoin-quantum-computing-threat-initiative",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_2182185",
+          "title": "Crypto Gains Momentum as AI Boom Shows Signs of Cooling",
+          "url": "https://cointelegraph.com/news/crypto-market-breakout-ai-trade-cools-analyst-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-can-bitcoins-hard-cap-be-changed.png"
+        },
+        {
+          "id": "art_2158455",
+          "title": "Bitcoin ETFs post five-day inflow streak, longest since May12m, Bitcoin ETFs post five-day inflow streak, longest since MayUS spot Bitcoin ETFs recorded $227 million in inflows as BTC climbed above $65,000, extending their longest winning streak since early May.",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-five-day-inflow-streak-btc-65k",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_2170887",
+          "title": "Morpho launches fixed-rate lending protocol on Base27m, Morpho launches fixed-rate lending protocol on BaseMorpho Midnight introduces fixed rates and defined maturities alongside Morpho Blue’s variable-rate lending markets.",
+          "url": "https://cointelegraph.com/news/morpho-midnight-fixed-rate-lending-base",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_2159335",
+          "title": "London Stock Exchange plans overnight venue to extend trading hours: FT",
+          "url": "https://www.theblock.co/post/409021/london-stock-exchange-plans-extended-trading-hours",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/08/shutterstock_431001775.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_2176286",
+          "title": "Telegram plans 'largest rollout of a non-custodial crypto wallet in human history'",
+          "url": "https://www.theblock.co/post/409099/telegram-plans-largest-rollout-non-custodial-crypto-wallet-in-history",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/08/shutterstock_1022060599.jpg"
+        },
+        {
+          "id": "art_2177665",
+          "title": "MEXC Launches Bittensor TAO Staking with Yuma Integration",
+          "url": "https://cointelegraph.com/news/mexc-adds-bittensor-tao-staking-for-its-global-user-base",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-staking-explained.png"
+        },
+        {
+          "id": "art_2176285",
+          "title": "Coinbase says 'low-risk' config change behind 50-minute July 14 outage impacting trading, card transactions",
+          "url": "https://www.theblock.co/post/409105/coinbase-says-low-risk-config-change-behind-50-minute-july-14-outage-impacting-trading-card-transactions",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Coinbase_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_2183066",
+          "title": "Solana, Hyperliquid ETFs dominate altcoin fund flows despite flying under the radar",
+          "url": "https://www.theblock.co/post/408963/solana-hyperliquid-etfs-dominate-altcoin-fund-flows-despite-flying-under-the-radar",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/10/20230810_Solana_News.jpg"
+        },
+        {
+          "id": "art_2161595",
+          "title": "CoinShares launches UCITS platform targeting Europe's institutional investors",
+          "url": "https://www.theblock.co/post/409029/coinshares-launches-europe-ucits-platform",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/07/eu-european-union-1200x675.jpg"
+        },
+        {
+          "id": "art_2150545",
+          "title": "Grayscale files S-1 for first US Worldcoin ETF23m, Grayscale files S-1 for first US Worldcoin ETFThe filing expands Grayscale’s growing lineup of crypto-related exchange-traded products outside of Bitcoin and Ether.",
+          "url": "https://cointelegraph.com/news/grayscale-files-s-1-for-worldcoin-etf",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/worldcoin.jpg"
+        },
+        {
+          "id": "art_2188717",
+          "title": "Canton developer Digital Asset raises additional $10 million at same $2 billion equity valuation",
+          "url": "https://www.theblock.co/post/409168/canton-digital-asset-additional-10-million-funding-same-2-billion-equity-valuation-expanding-round-365-million",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260613_Canton_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_2181105",
+          "title": "Exclusive: Visionaries shakes up investment team ahead of new fund",
+          "url": "https://sifted.eu/articles/visionaries-investment-team-shake-up/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2024/12/19172643/Visionaries-Club-Robert-Lacher-scaled-e1734629233447.jpg?w=1464&h=1174&q=75&fit=crop&auto=compress,format"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_2170635",
+          "title": "Aztec upgrades to V5 in alpha, adding full private execution environment to decentralized Ethereum L2",
+          "url": "https://www.theblock.co/post/409065/aztec-upgrades-v5-alpha-adding-private-execution-environment-decentralized-ethereum-l2",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241101_Surveillance-Privacy_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_2188965",
+          "title": "Movement Labs files for Chapter 11 bankruptcy after months of MOVE token turmoil 30m",
+          "url": "https://cointelegraph.com/news/movement-labs-files-chapter-11-bankruptcy-move-token-turmoil",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2183864",
+          "title": "A FINRA for AI? The idea from Google DeepMind CEO Demis Hassabis is gaining momentum. But is it any good?",
+          "url": "https://fortune.com/2026/07/21/google-deepmind-ceo-demis-hassabis-finra-for-ai-proposal-gains-momentum-but-is-it-any-good/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2273112134-e1784653976807.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2170636",
+          "title": "Jito rolls out JTX self-custodial trading platform for Solana tokens and RWAs",
+          "url": "https://www.theblock.co/post/409040/jito-rolls-out-jtx-self-custodial-trading-platform-for-solana-tokens-and-rwas",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2201405",
+          "title": "OpenAI says AI Models Broke Out of Sandbox to Hack Hugging Face",
+          "url": "https://cointelegraph.com/news/openai-models-hacked-hugging-face-to-cheat-on-a-test",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/ai-hack.jpg"
+        },
+        {
+          "id": "art_2171765",
+          "title": "Malaysia shuts down Balaji Srinivasan's Network School in Forest City",
+          "url": "https://www.theblock.co/post/409076/malaysia-shuts-down-balaji-srinivasans-network-school-forest-city",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/05/Balaji-Srinivasan-1200x675.jpg"
+        },
+        {
+          "id": "art_2171523",
+          "title": "2026년 암호화폐 시장의 변화: 내러티브에서 PMF로",
+          "url": "https://reports.tiger-research.com/p/the-crypto-markets-shift-from-narrative-kor",
+          "source": "Tiger Research",
+          "sentiment": "neutral",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!5WK5!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F207896507%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_2183045",
+          "title": "LSE Will Trade 22.83 Hours a Day",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-07-21/lse-will-trade-22-83-hours-a-day",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2171524",
+          "title": "The Crypto Market's Shift: From Narrative to PMF",
+          "url": "https://reports.tiger-research.com/p/the-crypto-markets-shift-from-narrative-eng",
+          "source": "Tiger Research",
+          "sentiment": "neutral",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!A2k8!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F207896492%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_2170302",
+          "title": "Kalshi’s ‘chronically online’ war room figured out World Cup virality — and realized AI might be bringing back the monoculture",
+          "url": "https://fortune.com/2026/07/21/kalshi-world-cup-marketing-war-room-ai-monoculture/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/kalshi.png?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_2183315",
+          "title": "Pavel Durov says Telegram to roll out native Gram crypto wallet22m",
+          "url": "https://cointelegraph.com/news/telegram-launch-native-self-custody-gram-wallet-for-over-1-billion-users-durov",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/wallet3.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_2180805",
+          "title": "Russia passes landmark crypto bill allowing regulated retail trading",
+          "url": "https://www.theblock.co/post/409121/russia-passes-landmark-crypto-bill-allowing-regulated-retail-trading",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2018/10/russian-flag.jpg"
+        },
+        {
+          "id": "art_2181055",
+          "title": "White House Agrees to Ethics Provisions in Market Structure Bill",
+          "url": "https://cointelegraph.com/news/white-house-ethics-provisions-crypto-market-structure-bill",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-negotiation-wh.png"
+        },
+        {
+          "id": "art_2167503",
+          "title": "Russia Completes Final Readings on Crypto Regulation Bill",
+          "url": "https://cointelegraph.com/news/russias-parliament-passes-law-regulating-crypto-market",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/russia-bitcoin.jpg"
+        },
+        {
+          "id": "art_2190095",
+          "title": "CLARITY Act Could Help CFTC Deal with Prediction Markets: Lawyer",
+          "url": "https://cointelegraph.com/news/clarity-act-cftc-prediction-markets-resources",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-prediction-market-cftc-rule.jpg"
+        },
+        {
+          "id": "art_2188715",
+          "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies",
+          "url": "https://www.theblock.co/post/409173/trump-backed-crypto-ethics-rule-doj-enforcement-prohibits-federal-officials-issuing-cryptocurrencies",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250523_DJT-3.jpg"
+        },
+        {
+          "id": "art_2188716",
+          "title": "The Digital Chamber sues Illinois over incoming crypto transaction tax",
+          "url": "https://www.theblock.co/post/409160/the-digital-chamber-sues-illinois-over-incoming-crypto-transaction-tax",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/05/20220526_Bangkok-Thailand-Tax-Calculator.jpg"
+        },
+        {
+          "id": "art_2168625",
+          "title": "More MiCA-licensed crypto firms could exit EU market: Gate Europe CEO20m, More MiCA-licensed crypto firms could exit EU market: Gate Europe CEOGate Europe’s Giovanni Cunti says some MiCA-licensed crypto firms may struggle to sustain compliance costs as Europe enters its new regulatory era.",
+          "url": "https://cointelegraph.com/news/mica-licensed-crypto-firms-eu-market-gate-europe-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_2161845",
+          "title": "UK Inquiry Probes Banking Barriers Facing Crypto Firms",
+          "url": "https://cointelegraph.com/news/uk-inquiry-banking-barriers-crypto-firms",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/blockchainweek2020uk1.jpg"
+        },
+        {
+          "id": "art_2185325",
+          "title": "Congress weighs its role as fight over sports betting prediction market oversight forges on",
+          "url": "https://www.theblock.co/post/409152/congress-weighs-its-role-as-fight-over-sports-betting-prediction-market-oversight-forges-on",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/01/20210120_Capitol_Generic.jpg"
+        },
+        {
+          "id": "art_2185575",
+          "title": "Pakistan steps up crypto enforcement with dedicated federal unit39m, Pakistan steps up crypto enforcement with dedicated federal unitA senior official with Pakistan’s Federal Investigation Agency reportedly recommended other agencies establish similar units to address crypto-related crime.",
+          "url": "https://cointelegraph.com/news/pakistan-crypto-enforcement-dedicated-unit-crimes",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2149415",
+          "title": "Celsius Co-Founders Leon, Goldstein to Pay FTC Over $6M",
+          "url": "https://cointelegraph.com/news/celsius-co-founders-leon-goldstein-to-pay-ftc-over-6m",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/celsius.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_2192909",
+          "title": "U.N. reports Southeast Asia’s criminal networks are using tech to build a global illicit economy",
+          "url": "https://fortune.com/2026/07/21/un-report-southeast-asia-crime-tech-global-illicit-economy/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2283751131-e1784668105550.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2203667",
+          "title": "Balance Coin crashes 99% after reported $915K exploit",
+          "url": "https://cointelegraph.com/news/algorithmic-stablecoin-balance-coin-plummets-99-after-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_2178795",
+          "title": "BIS: Stablecoins May Bypass Capital Controls, Study Finds",
+          "url": "https://cointelegraph.com/news/bis-study-says-stablecoins-bypass-capital-controls-more-easily-than-bank-deposits",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-the-significance-of-bis-statement-that-fiat-and-stablecoins-can-co-exist.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_2157330",
+          "title": "Base Creator Says 1:1-Backed Tokenized Equities Launch Is ‘Imminent’",
+          "url": "https://cointelegraph.com/news/bases-tokenized-equities-imminent-pollak",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-base-coinbase-l2-network-2.jpg"
+        },
+        {
+          "id": "art_2170885",
+          "title": "Arcus Launches Tokenized Stocks on Robinhood Chain",
+          "url": "https://cointelegraph.com/news/robinhood-backed-dex-arcus-debut-multi-asset-trading",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-japan-robin-hood-join-trading-platform.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Telegram tried to sell Gram tokens in 2019. The SEC stopped it. Now Durov is back with a non-custodial wallet for those same tokens, baked into 900 million active messaging accounts. The architecture changed; the regulatory exposure did not, it shifted. Non-custodial means no licensed custody, no money-transmitter nexus, no obvious SEC hook. That is not a loophole, it is a design choice, and it will be tested immediately.\n\nWhat is different this time is the competitive set. In 2019 Telegram was early. In 2025 every major messaging app has some payment rail, and the US is three procedural votes from a statutory market-structure regime that would legitimize onshore exchange competition. Russia just opened regulated retail access with purchase caps. The lanes are diverging: permissioned in Moscow, rule-bound in Washington, architecture-first in Dubai where Telegram sits.\n\nWe underwrite infrastructure on regulatory clarity and user acquisition cost. Telegram's user acquisition cost for this wallet is effectively zero. Its regulatory clarity is deliberately thin. That asymmetry is the bet.\n\nThe test: if Gram wallet transaction volume fails to correlate with Telegram's existing peer-to-peer payment behavior, the token becomes a speculative appendage rather than a utility layer, and the non-custodial shield will not matter. We are watching Q3 on-chain data. If the volume is there, the model spreads. If not, this joins the file of distribution-without-demand cases that crypto keeps producing."
+}
