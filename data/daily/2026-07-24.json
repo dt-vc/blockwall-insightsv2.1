@@ -1,0 +1,618 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-24",
+  "date_display": "July 24, 2026",
+  "generated_at": "2026-07-24T05:00:17.545Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Coinbase Bets the Firm on AI Payments and Sovereign-Grade Tokenization in Same Week",
+    "tldr": "Coinbase is simultaneously building the rails for autonomous machine payments and tokenizing Abu Dhabi's sovereign wealth, while Circle and Mirae Asset race to own Asia's payment infrastructure. The throughline: crypto's institutional pivot is accelerating from speculative trading to programmable settlement layers."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today we are watching the same institution try to own both the agent-to-merchant transaction layer and the tokenization of sovereign balance sheets, which tells us something about where the fee compression is heading.",
+  "market_snapshot": {
+    "as_of": "2026-07-24T05:00:17.545Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$65,237",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,875",
+        "change_24h": "-2.5%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.30T",
+        "change_24h": "-0.8%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.8B",
+        "change_24h": "-1.5%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 8,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 18,
+    "bearish": 8,
+    "neutral": 11,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_2286070",
+      "title": "Coinbase calls AI payments its 'most high-conviction bet' as businesses begin accepting agent payments",
+      "url": "https://www.theblock.co/post/409539/coinbase-ai-payments-most-high-conviction-bet-businesses-accepting-agent-payments",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Coinbase is positioning AI payments as a primary growth driver, enabling businesses to accept payments from AI agents. This initiative leverages Coinbase Payments and the x402 standard to facilitate autonomous machine-to-machine transactions.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409539/coinbase-ai-payments-most-high-conviction-bet-businesses-accepting-agent-payments",
+      "themes": [
+        "payments",
+        "ai-payments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230306_Coinbase_News.jpg",
+      "why_it_matters": "Coinbase's AI payments push represents a strategic attempt to capture recurring transaction volume in a market where human trading fees are commoditizing, though the x402 standard's adoption curve remains the critical underwrite."
+    },
+    {
+      "id": "art_2280075",
+      "title": "Coinbase invests in tokenized version of Abu Dhabi’s sovereign wealth fund",
+      "url": "https://fortune.com/2026/07/23/coinbase-tokenized-version-abu-dhabi-sovereign-wealth-fund/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Coinbase is investing in a tokenized version of a private-markets fund managed by Abu Dhabi's sovereign wealth fund, Mubadala. Infrastructure provider KAIO will be responsible for building the necessary architecture to enable this tokenization.",
+      "significance": 7,
+      "primary_source": "https://fortune.com/2026/07/23/coinbase-tokenized-version-abu-dhabi-sovereign-wealth-fund/",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/Mubadala-Capital-and-KAIO-e1784773256243.png?resize=1200,600",
+      "why_it_matters": "The Mubadala tokenization signals that sovereign capital is now willing to accept blockchain counterparty risk for liquidity premium, validating the infrastructure play over the asset play."
+    },
+    {
+      "id": "art_2270208",
+      "title": "Circle partners with Kakao, Toss Bank to explore stablecoin payment rails in South Korea",
+      "url": "https://www.theblock.co/post/409497/circle-partners-with-kakao-toss",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Circle is partnering with South Korean tech giants Kakao and Toss Bank to explore the implementation of stablecoin-based payment rails. The collaboration aims to leverage blockchain infrastructure to enhance payment efficiency within the South Korean market.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409497/circle-partners-with-kakao-toss",
+      "themes": [
+        "payments",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg",
+      "why_it_matters": "Circle's Korean partnerships expose the stablecoin race's geographic logic: capture regulatory clarity first, then build network effects before competitors establish local banking relationships."
+    },
+    {
+      "id": "art_2270209",
+      "title": "BitMEX to shut down permanently 11 years after Arthur Hayes co-founded crypto exchange",
+      "url": "https://www.theblock.co/post/409495/bitmex-to-shut-down-permanently",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Other",
+      "sentiment": "bearish",
+      "summary": "BitMEX, the crypto exchange co-founded by Arthur Hayes, has announced it will permanently shut down on September 23, 2026. The decision follows a strategic review by the exchange's owner, HDR Global Trading.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409495/bitmex-to-shut-down-permanently",
+      "themes": [
+        "other",
+        "exchange-shutdown"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230315_BitMex_3.jpg",
+      "why_it_matters": "BitMEX's closure after eleven years marks the end of the unregulated derivatives era and confirms that compliance costs have permanently bifurcated exchange economics between incumbents who paid and those who didn't."
+    },
+    {
+      "id": "art_2269326",
+      "title": "BitMEX to Shut Down Crypto Exchange After 11 Years",
+      "url": "https://cointelegraph.com/news/bitmex-crypto-derivatives-exchange-shut-down",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Other",
+      "sentiment": "bearish",
+      "summary": "BitMEX has announced it will shut down its cryptocurrency exchange in September 2026 following a strategic review by HDR Global Trading Limited. The company is now urging all users to withdraw their funds from the platform.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/bitmex-crypto-derivatives-exchange-shut-down",
+      "themes": [
+        "other",
+        "exchange-shutdown"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-cryptocom-excludes-users.png",
+      "why_it_matters": "The September 2026 wind-down date gives HDR Global Trading eighteen months to manage orderly exits, but the announcement itself accelerates user migration and likely impairs final-quarter revenue."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_2268192",
+      "company": "Korbit",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Mirae Asset"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/mirae-asset-korbit-acquisition-largest-shareholder",
+      "summary": "Mirae Asset has completed the acquisition of Korbit, officially becoming the largest shareholder of the South Korean cryptocurrency exchange. This move signals a significant expansion of a major traditional financial institution into the digital asset market."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_2297650",
+      "title": "Coinbase lets businesses accept USDC payments from AI agents21m",
+      "url": "https://cointelegraph.com/news/coinbase-lets-businesses-accept-usdc-payments-from-ai-agents",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Coinbase has introduced a new capability allowing businesses to accept USDC payments directly from AI agents. This move aims to integrate autonomous AI agents into the crypto economy by enabling them to hold and spend digital assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-trading-bots-vs-ai-agents-facebook-x.png"
+    },
+    {
+      "id": "art_2295385",
+      "title": "Crypto industry to contribute $55B to US economy in 2026: NCA study39m",
+      "url": "https://cointelegraph.com/news/crypto-industry-contributed-us-economy-2026-nca",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "A study by the NCA predicts that the crypto industry will contribute $55 billion to the US economy by 2026. The report highlights the growing economic footprint of digital assets and blockchain technology within the United States.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/us-coin.jpg"
+    },
+    {
+      "id": "art_2288586",
+      "title": "Goldman Sachs CEO Backs CLARITY Act with Vote Expected Soon",
+      "url": "https://cointelegraph.com/news/goldman-sachs-ceo-clarity-act-stablecoin-vote",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Goldman Sachs CEO David Solomon has expressed support for the CLARITY Act following the release of its text. The backing from a major financial institution suggests the bill could have a significant impact on digital asset markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.jpg"
+    },
+    {
+      "id": "art_2288587",
+      "title": "BTC treasury firm Empery Digital invests $20M in AI data center developer Cardinal Data Power40m",
+      "url": "https://cointelegraph.com/news/bitcoin-treasury-firm-empery-digital-invests-20m-in-ai-data-center-developer-cardinal-data-power",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "BTC treasury firm Empery Digital has invested $20 million into Cardinal Data Power, a developer of AI data centers. This move highlights the growing intersection between Bitcoin treasury strategies and physical AI infrastructure investment.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/apple-ai.png"
+    },
+    {
+      "id": "art_2281538",
+      "title": "Strategy, BlackRock form Bitcoin Security Consortium to prepare for quantum computing threat",
+      "url": "https://www.theblock.co/post/409522/strategy-blackrock-form-bitcoin-security-consortium-to-prepare-for-quantum-computing-threat",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "Strategy, BlackRock, and seven other firms have established a security consortium to protect Bitcoin from potential quantum computing threats. The group is allocating $15 million to fund research into post-quantum cryptography.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News_2.jpg"
+    },
+    {
+      "id": "art_2280072",
+      "title": "MoonPay launches universal AI shopping wallet for non-technical Claude and ChatGPT consumers",
+      "url": "https://fortune.com/2026/07/23/moonpay-launches-universal-ai-shopping-wallet-for-non-technical-claude-and-chatgpt-consumers/",
+      "source": "Fortune Crypto",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "MoonPay has launched Paybox, a universal AI shopping wallet designed for non-technical users. The tool allows consumers to instruct AI agents like Claude and ChatGPT to execute purchases directly within the platform.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-1749124917.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_2274990",
+      "title": "Kazakhstan approves strategic crypto mining rules tied to national reserve8m, Kazakhstan approves strategic crypto mining rules tied to national reserveKazakhstan plans to require miners to meet strict infrastructure standards and transfer part of their mined crypto assets to a state-backed reserve under new rules.",
+      "url": "https://cointelegraph.com/news/kazakhstan-strategic-crypto-mining-national-reserve",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Kazakhstan is introducing new strategic regulations for crypto mining that mandate strict infrastructure standards. Additionally, miners will be required to transfer a portion of their mined assets into a state-backed national reserve.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/coins-damba-waterfall-kazakhstan.jpg"
+    },
+    {
+      "id": "art_2269075",
+      "title": "New Verus-Ethereum bridge attack drains $7.5 million through flaw used in May: Blockaid",
+      "url": "https://www.theblock.co/post/409489/new-verus-ethereum-bridge-attack",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A second exploit targeting the Verus-Ethereum bridge has resulted in the loss of $7.54 million. According to Blockaid, the attack utilized a vulnerability class similar to one exploited in May.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221129_Hack-Exploit-2.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_2259179",
+      "title": "Meet the team helping Yann LeCun build AI startup AMI Labs",
+      "url": "https://sifted.eu/articles/meet-the-team-ami-labs/",
+      "source": "Sifted",
+      "note": "LeCun's AMI Labs team composition reveals how frontier AI research is being productized, with implications for which agent architectures will actually need crypto-native payment rails.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2025/12/04111431/54319041499_7363c14f77_k-e1764846890133.jpg?w=1365&h=1273&q=75&fit=crop&auto=compress,format"
+    },
+    {
+      "id": "art_2298683",
+      "title": "Can Bitcoin Survive AI & Quantum? with Nic Carter",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/can-bitcoin-survive-ai-and-quantum-with-nic-carter",
+      "source": "Galaxy — Insights",
+      "note": "Carter's framing of Bitcoin's survivability against AI and quantum vectors offers a stress-test for the store-of-value thesis that institutional allocators are now required to underwrite.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_2279522",
+          "title": "Strategy-led group pledges $15M to quantum-proof Bitcoin network16m",
+          "url": "https://cointelegraph.com/news/strategy-consortium-15m-quantum-proof-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2277256",
+          "title": "Bernstein says Bitcoin mining deals necessary for AI power crunch36m, Bernstein says Bitcoin mining deals necessary for AI power crunchBernstein analysts remain bullish on the Bitcoin mining sector, as deals with third-party providers will be necessary to address the computing power limits of AI data centers.",
+          "url": "https://cointelegraph.com/news/bernstein-bitcoin-mining-deals-necessary-ai-power-crunch",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2298683",
+          "title": "Can Bitcoin Survive AI & Quantum? with Nic Carter",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/can-bitcoin-survive-ai-and-quantum-with-nic-carter",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2273607",
+          "title": "'Not currently the right capital solution': Smarter Web sells 178 bitcoin to repay $11.7M convertible instrument",
+          "url": "https://www.theblock.co/post/409506/not-currently-the-right-capital-solution-smarter-web-sells-178-bitcoin-to-repay-11-7m-convertible-instrument",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_1-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_2298205",
+          "title": "The Miami Heat, LeBron James and prediction markets: how a ‘mistake’ social media post turbo-charged a $245 million wager",
+          "url": "https://fortune.com/2026/07/23/miami-heat-lebron-james-prediction-markets-mistake-social-media-post/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-113416659-e1784834440349.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2280405",
+          "title": "Flow Traders pilots Lombard’s new bitcoin-backed credit strategy for stablecoin borrowing",
+          "url": "https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_2272724",
+          "title": "Coinbase to expand Singapore office headcount by 25%: report38m",
+          "url": "https://cointelegraph.com/news/coinbase-expand-singapore-headcount-25",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_2287453",
+          "title": "Ethereum nears market bottom against Bitcoin, though key signals remain unconfirmed: CryptoQuant19m, Ethereum nears market bottom against Bitcoin, though key signals remain unconfirmed: CryptoQuantEther trades below its realized price while onchain indicators point to easing selling pressure and recovering demand, though a definitive cycle bottom has yet to emerge.",
+          "url": "https://cointelegraph.com/news/ethereum-nears-market-bottom-against-bitcoin-key-signals-remain-unconfirmed-cryptoquant",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_2268192",
+          "title": "Mirae Asset completes Korbit acquisition, becomes largest shareholder22m",
+          "url": "https://cointelegraph.com/news/mirae-asset-korbit-acquisition-largest-shareholder",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2295385",
+          "title": "Crypto industry to contribute $55B to US economy in 2026: NCA study39m",
+          "url": "https://cointelegraph.com/news/crypto-industry-contributed-us-economy-2026-nca",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/us-coin.jpg"
+        },
+        {
+          "id": "art_2288587",
+          "title": "BTC treasury firm Empery Digital invests $20M in AI data center developer Cardinal Data Power40m",
+          "url": "https://cointelegraph.com/news/bitcoin-treasury-firm-empery-digital-invests-20m-in-ai-data-center-developer-cardinal-data-power",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/apple-ai.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_2270209",
+          "title": "BitMEX to shut down permanently 11 years after Arthur Hayes co-founded crypto exchange",
+          "url": "https://www.theblock.co/post/409495/bitmex-to-shut-down-permanently",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230315_BitMex_3.jpg"
+        },
+        {
+          "id": "art_2269326",
+          "title": "BitMEX to Shut Down Crypto Exchange After 11 Years",
+          "url": "https://cointelegraph.com/news/bitmex-crypto-derivatives-exchange-shut-down",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-cryptocom-excludes-users.png"
+        },
+        {
+          "id": "art_2292427",
+          "title": "The race for the tokenized euro ",
+          "url": "https://tokenterminal.com/resources/newsletter/the-race-for-the-tokenized-euro",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_2259179",
+          "title": "Meet the team helping Yann LeCun build AI startup AMI Labs",
+          "url": "https://sifted.eu/articles/meet-the-team-ami-labs/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2025/12/04111431/54319041499_7363c14f77_k-e1764846890133.jpg?w=1365&h=1273&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_2299146",
+          "title": "🟪 In defense of markets that sometimes close ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_d22ca4fd-f996-4dea-8e36-7f94eaba03db",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_2286070",
+          "title": "Coinbase calls AI payments its 'most high-conviction bet' as businesses begin accepting agent payments",
+          "url": "https://www.theblock.co/post/409539/coinbase-ai-payments-most-high-conviction-bet-businesses-accepting-agent-payments",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230306_Coinbase_News.jpg"
+        },
+        {
+          "id": "art_2270208",
+          "title": "Circle partners with Kakao, Toss Bank to explore stablecoin payment rails in South Korea",
+          "url": "https://www.theblock.co/post/409497/circle-partners-with-kakao-toss",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg"
+        },
+        {
+          "id": "art_2297650",
+          "title": "Coinbase lets businesses accept USDC payments from AI agents21m",
+          "url": "https://cointelegraph.com/news/coinbase-lets-businesses-accept-usdc-payments-from-ai-agents",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-trading-bots-vs-ai-agents-facebook-x.png"
+        },
+        {
+          "id": "art_2280072",
+          "title": "MoonPay launches universal AI shopping wallet for non-technical Claude and ChatGPT consumers",
+          "url": "https://fortune.com/2026/07/23/moonpay-launches-universal-ai-shopping-wallet-for-non-technical-claude-and-chatgpt-consumers/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-1749124917.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2263661",
+          "title": "BancaStato Launches Bitcoin Trading With Sygnum",
+          "url": "https://cointelegraph.com/news/bancastato-regulated-crypto-trading-sygnum-avaloq",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-u-banks-have-deeper-interest-in-digital-than-previously-thought-switzerland.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_2288586",
+          "title": "Goldman Sachs CEO Backs CLARITY Act with Vote Expected Soon",
+          "url": "https://cointelegraph.com/news/goldman-sachs-ceo-clarity-act-stablecoin-vote",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.jpg"
+        },
+        {
+          "id": "art_2274990",
+          "title": "Kazakhstan approves strategic crypto mining rules tied to national reserve8m, Kazakhstan approves strategic crypto mining rules tied to national reserveKazakhstan plans to require miners to meet strict infrastructure standards and transfer part of their mined crypto assets to a state-backed reserve under new rules.",
+          "url": "https://cointelegraph.com/news/kazakhstan-strategic-crypto-mining-national-reserve",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/coins-damba-waterfall-kazakhstan.jpg"
+        },
+        {
+          "id": "art_2299917",
+          "title": "Gemini sent $10M in Bitcoin to Trump PAC after joint motion with CFTC35m, Gemini sent $10M in Bitcoin to Trump PAC after joint motion with CFTCThe Bitcoin donation can be used to support Donald Trump as a New York court considers whether to reverse a $5 million settlement between the CFTC and Gemini.",
+          "url": "https://cointelegraph.com/news/gemini-winklevoss-bitcoin-donald-trump-pac-cftc-deal",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2287203",
+          "title": "Swan CEO claims Twenty One serves Tether’s US political interests, calls Mallers' role 'ceremonial'",
+          "url": "https://www.theblock.co/post/409538/swan-ceo-twenty-one-serves-tethers-us-political-interests-mallers-role-ceremonial",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_2279523",
+          "title": "Binance Partners With STOP THE TRAFFIK to Fight Crypto Use in Human Trafficking",
+          "url": "https://cointelegraph.com/news/binance-stop-the-traffik-anti-human-trafficking",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/binance-nonprofit-human-trafficking.jpg"
+        },
+        {
+          "id": "art_2278389",
+          "title": "Bitget secures license for New Zealand expansion10m",
+          "url": "https://cointelegraph.com/news/bitget-secures-license-new-zealand-expansion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2311257",
+          "title": "Dem Senator Slams CLARITY Ethics Proposal",
+          "url": "https://cointelegraph.com/news/senator-gallego-says-gop-clarity-counterproposal-not-a-serious-effort",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/republicans-vs-democrats-crypto2.jpg"
+        },
+        {
+          "id": "art_2307855",
+          "title": "SEC Sets September Roundtable 24-Hour Trading",
+          "url": "https://cointelegraph.com/news/sec-to-host-roundtable-on-24-hour-trading-in-us-equities",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-timeframes3.jpg"
+        },
+        {
+          "id": "art_2256862",
+          "title": "SEC Pays $150,000 Settle Coinbase FOIA Suit",
+          "url": "https://cointelegraph.com/news/sec-settles-coinbase-suit-over-text-messages-that-disappeared",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/judge-law-court-regulation-coinbase.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_2281538",
+          "title": "Strategy, BlackRock form Bitcoin Security Consortium to prepare for quantum computing threat",
+          "url": "https://www.theblock.co/post/409522/strategy-blackrock-form-bitcoin-security-consortium-to-prepare-for-quantum-computing-threat",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News_2.jpg"
+        },
+        {
+          "id": "art_2269075",
+          "title": "New Verus-Ethereum bridge attack drains $7.5 million through flaw used in May: Blockaid",
+          "url": "https://www.theblock.co/post/409489/new-verus-ethereum-bridge-attack",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221129_Hack-Exploit-2.jpg"
+        },
+        {
+          "id": "art_2269325",
+          "title": "Home invasions became most common crypto wrench attack in H1 2026: CertiK21m",
+          "url": "https://cointelegraph.com/news/crypto-home-invasions-wrench-attacks-certik-h1-2026",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_2290852",
+          "title": "Robinhood CEO Vlad Tenev’s X Account Hacked in Token Scam",
+          "url": "https://cointelegraph.com/news/robinhood-ceo-x-account-hacked-in-apparent-memecoin-scam",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-robinhood-down-several-times-as-dj-sees-biggest-one-day-gains.jpg"
+        },
+        {
+          "id": "art_2290602",
+          "title": "Robinhood CEO’s X account apparently hacked to promote Vladhood memecoin flagged as 'scam'",
+          "url": "https://www.theblock.co/post/409560/robinhood-ceo-x-account-apparently-hacked-promote-vladhood-memecoin-flagged-scam",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/10/cropped-17.jpg"
+        },
+        {
+          "id": "art_2259829",
+          "title": "Betting account in George Cottrell’s name received $9mn in crypto from unidentified sources",
+          "url": "https://www.ft.com/content/b74cbc54-c6ae-4f4a-9350-3dab1f2758d0",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fff45402f-0b48-459e-9a6f-07feb8d28b14.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_2280075",
+          "title": "Coinbase invests in tokenized version of Abu Dhabi’s sovereign wealth fund",
+          "url": "https://fortune.com/2026/07/23/coinbase-tokenized-version-abu-dhabi-sovereign-wealth-fund/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/Mubadala-Capital-and-KAIO-e1784773256243.png?resize=1200,600"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Two things Coinbase did this week. First, it called AI payments its highest-conviction bet. Second, it put capital behind tokenizing Abu Dhabi's sovereign wealth fund through KAIO. These are not separate experiments. They are the same thesis: the addressable market for crypto is shifting from human speculation to machine settlement and institutional balance-sheet plumbing. The x402 standard for agent payments is early. The Mubadala tokenization is earlier still. But both point to where Coinbase is trying to build moats as trading fees compress toward zero. We underwrite this sector on regulatory clarity and banking integration velocity, not whitepaper ambition. Circle's Korean partnerships with Kakao and Toss Bank are the counterpoint: stablecoin rails are being built in jurisdictions that have already chosen sides. Mirae Asset completing its Korbit acquisition confirms that traditional finance is no longer waiting for regulatory permission in Asia. BitMEX shutting down after eleven years is the cost of being wrong on compliance timing. The exchange that defined unregulated crypto derivatives will close in September 2026. HDR Global Trading had years to adapt. The bifurcation is complete. What we watch now: whether Coinbase can convert sovereign and corporate partnerships into recurring transaction revenue before the infrastructure layer commoditizes. The test is simple. If x402 agent payments show merchant adoption metrics by Q1 2026, the bet is working. If not, this is another protocol in search of a user."
+}
