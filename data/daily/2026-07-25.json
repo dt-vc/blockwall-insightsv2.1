@@ -1,0 +1,796 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-25",
+  "date_display": "July 25, 2026",
+  "generated_at": "2026-07-25T05:00:17.735Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "US State Department formally integrates Bitcoin policy and defense-tech contractors under diplomatic umbrella",
+    "tldr": "Today's throughline is the widening gap between two regulatory regimes: Washington is actively recruiting crypto-adjacent firms into national-security infrastructure, while Brussels and Bangkok escalate enforcement against exchanges. The market is being asked to price sovereign adoption and sovereign crackdown simultaneously."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks how governments are resolving their ambivalence toward crypto not by choosing one posture but by running contradictory ones in parallel, with material consequences for where capital can safely land.",
+  "market_snapshot": {
+    "as_of": "2026-07-25T05:00:17.735Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,097",
+        "change_24h": "-1.6%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,859",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": "-1.3%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.4B",
+        "change_24h": "-0.7%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 11,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 25,
+    "bearish": 17,
+    "neutral": 12,
+    "deduped": 14
+  },
+  "top_signals": [
+    {
+      "id": "art_2354154",
+      "title": "Bitcoin Policy Institute, Palantir and Anduril join US State Department's Freedom Tech Excellence Program",
+      "url": "https://www.theblock.co/post/409652/bitcoin-policy-institute-palantir-anduril-us-state-departments-freedom-tech-excellence-program",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Bitcoin Policy Institute has partnered with Palantir and Anduril as part of the U.S. State Department's Freedom Tech Excellence Program. This represents a significant integration of Bitcoin-focused policy and advanced technology firms within U.S. diplomatic and governmental frameworks.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409652/bitcoin-policy-institute-palantir-anduril-us-state-departments-freedom-tech-excellence-program",
+      "themes": [
+        "regulation",
+        "government-partnerships"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News_3.jpg",
+      "why_it_matters": "The State Department's inclusion of Bitcoin Policy Institute alongside Palantir and Anduril signals that Bitcoin is being underwritten as strategic infrastructure rather than tolerated as speculative asset class, which reprices regulatory risk for US-facing infrastructure plays."
+    },
+    {
+      "id": "art_2353266",
+      "title": "EU authorities include HTX exchange in Russian sanctions36m, EU authorities include HTX exchange in Russian sanctionsThe exchange, already sanctioned by the UK, is now on a list of 18 entities “providing crypto-assets services or payment services“ in defiance of the EU’s measures against Russia.",
+      "url": "https://cointelegraph.com/news/htx-exchange-european-union-russia-sanctions",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "EU authorities have added the HTX cryptocurrency exchange to a sanctions list for allegedly providing services that bypass measures against Russia. HTX is one of 18 entities identified as providing crypto-asset or payment services in defiance of EU regulations.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/htx-exchange-european-union-russia-sanctions",
+      "themes": [
+        "regulation",
+        "sanctions"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-do-eus-new-sanctions-mean-for-russian-crypto-users-1.jpg",
+      "why_it_matters": "HTX's addition to the EU sanctions list demonstrates that exchange compliance programs are now being stress-tested against geopolitical enforcement rather than mere AML box-checking, raising the cost of capital for offshore venues serving gray-market demand."
+    },
+    {
+      "id": "art_2337353",
+      "title": "World Foundation raises $52.5M in Pantera-led funding to expand World ID infrastructure16m",
+      "url": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "World Foundation has secured $52.5 million in a funding round led by Pantera Capital. The capital will be used to further expand and develop the World ID infrastructure.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure",
+      "themes": [
+        "infrastructure",
+        "identity"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-fundraising-ripple-a-beginners-guide-on-raising-funds-using-cryptocurrencies.png",
+      "why_it_matters": "Pantera's lead in World Foundation's $52.5M round indicates that despite consumer-facing skepticism, institutional capital continues to underwrite identity infrastructure at the protocol layer, betting that proof-of-personhood becomes extractable value rather than public good."
+    },
+    {
+      "id": "art_2332810",
+      "title": "Thailand SEC Files Complaint Against Bitkub Over 2021 Hack Reporting",
+      "url": "https://cointelegraph.com/news/bitkub-criminal-complaint-thailand-sec",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Thailand SEC has filed a complaint against Bitkub and two former directors regarding false disclosures following a 2021 cyberattack. The hack in question resulted in losses totaling approximately $50 million.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/bitkub-criminal-complaint-thailand-sec",
+      "themes": [
+        "regulation",
+        "legal-action"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-reporting-failures-can-be-expensive-even-criminal-ftx.png",
+      "why_it_matters": "The Thailand SEC's complaint against Bitkub for 2021 hack disclosures reveals that historical incident response is becoming fair game for retroactive enforcement, extending statute-of-limitations risk for exchanges with legacy compliance gaps."
+    },
+    {
+      "id": "art_2331425",
+      "title": "Arthur Hayes, BitMEX co-founders face fraud claims over alleged 'Insider Trading Desk' as exchange winds down",
+      "url": "https://www.theblock.co/post/409595/arthur-hayes-bitmex-co-founders-face-fraud-claims-over-alleged-insider-trading-desk-as-exchange-winds-down",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "BitMEX co-founders Arthur Hayes, Samuel Reed, and Benjamin Delo are facing a proposed class action lawsuit. The claims allege the existence of an 'insider trading desk' and the intentional freezing of servers to manipulate outcomes.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409595/arthur-hayes-bitmex-co-founders-face-fraud-claims-over-alleged-insider-trading-desk-as-exchange-winds-down",
+      "themes": [
+        "security",
+        "legal-fraud"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/09/20220914_Legal_Generic4-1200x675.jpg",
+      "why_it_matters": "The BitMEX insider trading desk allegations resurfacing during wind-down proceedings show that founder liability does not terminate with operational exit, complicating M&A underwriting for exchange assets with opaque trading histories."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_2337353",
+      "company": "World Foundation",
+      "amount": "$52.5M",
+      "round": "",
+      "investors": [
+        "Pantera Capital"
+      ],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure",
+      "summary": "World Foundation has secured $52.5 million in a funding round led by Pantera Capital. The capital will be used to further expand and develop the World ID infrastructure."
+    },
+    {
+      "id": "art_2268192",
+      "company": "Korbit",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Mirae Asset"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/mirae-asset-korbit-acquisition-largest-shareholder",
+      "summary": "Mirae Asset has completed the acquisition of Korbit, officially becoming the largest shareholder of the South Korean cryptocurrency exchange. This move signals a significant expansion of a major traditional financial institution into the digital asset market."
+    },
+    {
+      "id": "art_2330590",
+      "company": "Gravis",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Softbank"
+      ],
+      "category": "Other",
+      "url": "https://sifted.eu/articles/softbank-gravis-robotics/",
+      "summary": ""
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_2327135",
+      "title": "Samsung Wallet to Add Stablecoin Support",
+      "url": "https://cointelegraph.com/news/samsung-wallet-stablecoin-support-galaxy-unpacked",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Samsung is expanding the capabilities of Samsung Wallet by adding support for stablecoins. This move follows the previous integration of cryptocurrency purchasing features via Coinbase.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-samsung-coin-new.jpg"
+    },
+    {
+      "id": "art_2320883",
+      "title": "Hopes for key crypto bill fade amid delays, Trump ethics controversy",
+      "url": "https://fortune.com/2026/07/24/hopes-for-key-crypto-bill-fade-amid-delays-trump-ethics-controversy/",
+      "source": "Fortune Crypto",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CLARITY Act, a key piece of cryptocurrency legislation, is facing significant delays and may not pass due to mid-term political pressures. The bill's progress is further complicated by ethics controversies surrounding Donald Trump.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2287088517.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_2315793",
+      "title": "BitMEX hit with 623 BTC lawsuit on day it announces shutdown 7m, BitMEX hit with 623 BTC lawsuit on day it announces shutdown The proposed class action alleges BitMEX used privileged trading access and server freezes to profit from forced liquidations.",
+      "url": "https://cointelegraph.com/news/bitmex-liquidation-fraud-lawsuit-shutdown",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "BitMEX is facing a class action lawsuit seeking 623 BTC over allegations of market manipulation and unfair trading practices. The lawsuit claims the exchange used privileged access and server freezes to profit from forced user liquidations.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-1.png"
+    },
+    {
+      "id": "art_2265926",
+      "title": "Kakao, Circle Explore Won Stablecoin Payment Infrastructure",
+      "url": "https://cointelegraph.com/news/kakao-circle-won-stablecoin-payment-infrastructure",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Kakao, Kakao Pay, and Kakao Bank are partnering with Circle to explore stablecoin-based payments, remittances, and tokenized finance. This initiative aligns with South Korea's broader efforts to establish a comprehensive digital asset regulatory framework.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-south-korea-staking-lending-service-1.png"
+    },
+    {
+      "id": "art_2343919",
+      "title": "Wise plans to resubmit national trust bank application under GENIUS Act framework",
+      "url": "https://www.theblock.co/post/409631/wise-plans-resubmit-national-trust-bank-application-under-genius-act-framework",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Wise is planning to resubmit its application for a national trust bank charter utilizing the GENIUS Act framework. This move follows the OCC's trend of granting conditional approval to stablecoin-focused entities.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg"
+    },
+    {
+      "id": "art_2341896",
+      "title": "Crypto Advocacy Groups Support CLARITY Passage as Ethics Rules Face Pushback",
+      "url": "https://cointelegraph.com/news/crypto-advocacy-groups-support-clarity-act-pushback-ethics-rules",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Three crypto industry advocacy groups are urging the US Senate to consider the CLARITY Act despite potential roadblocks regarding proposed ethics rules. The effort aims to push the bill forward to establish clearer regulatory frameworks for the industry.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-the-genius-act-how-it-could-reshape-us-stablecoin-regulation.png"
+    },
+    {
+      "id": "art_2337308",
+      "title": "Weekly Top Stories: Clarity Act Falls to 30% Odds",
+      "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-24-26",
+      "source": "Galaxy — Network",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Clarity Act's probability of passing has dropped to 30%. Additionally, a new Quantum Security Consortium for Bitcoin has launched, and an AI model reportedly compromised Hugging Face.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3xXY8wvrzPrIrnhmNcX3W4/55826ebdc08af973dbdaae5a389a8c10/Top_Stories_O3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_2330540",
+      "title": "Odos Protocol to shut down, gives users until July 30 to withdraw assets27m",
+      "url": "https://cointelegraph.com/news/odos-protocol-shut-down-4-years",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bearish",
+      "summary": "Odos Protocol has announced its decision to shut down operations. Users have been instructed to withdraw their assets from the platform by July 30.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-got-crypto-losses-wallet.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_2337308",
+      "title": "Weekly Top Stories: Clarity Act Falls to 30% Odds",
+      "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-24-26",
+      "source": "Galaxy — Network",
+      "note": "Galaxy's odds-tracking on the CLARITY Act provides a rare quantitative lens on legislative probability that should inform any US regulatory exposure model.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3xXY8wvrzPrIrnhmNcX3W4/55826ebdc08af973dbdaae5a389a8c10/Top_Stories_O3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_2338338",
+      "title": "Formally Verifying a Compiler Using Automated Research",
+      "url": "https://www.paradigm.xyz/writing/formally-verifying-a-compiler-using-automated-research",
+      "source": "Paradigm",
+      "note": "Paradigm's work on compiler verification matters because formal methods remain the underinvested path to reducing smart contract exploit surface at scale.",
+      "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/5BvFfg1wzGgdRoRzC2dD2n/0739c95e798eed29b1352908dce79b62/Formally_Verifying_a_Compiler_Using_Automated_Research.jpg?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+    },
+    {
+      "id": "art_2337307",
+      "title": "CLARITY’s Combined Text Is Here. Now It Needs Votes",
+      "url": "https://www.galaxy.com/insights/research/clarity-act-30-percent-odds",
+      "source": "Galaxy — Network",
+      "note": "The combined CLARITY text analysis offers concrete language to assess whether the bill's carve-outs actually protect decentralized operations or merely recentralize them under friendlier regulators.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6mF2mzZgbu38IFOKYjgihT/3d7318d3ed798cf44c0bb63350601344/Regulation-1_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_2326885",
+          "title": "Former bitcoin miner Poolin files Chapter 11, sets $52 million floor bid for Texas operations",
+          "url": "https://www.theblock.co/post/409587/former-bitcoin-miner-poolin-files-chapter-11-sets-52-million-floor-bid-for-texas-operations",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_2279522",
+          "title": "Strategy-led group pledges $15M to quantum-proof Bitcoin network16m",
+          "url": "https://cointelegraph.com/news/strategy-consortium-15m-quantum-proof-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2277256",
+          "title": "Bernstein says Bitcoin mining deals necessary for AI power crunch36m, Bernstein says Bitcoin mining deals necessary for AI power crunchBernstein analysts remain bullish on the Bitcoin mining sector, as deals with third-party providers will be necessary to address the computing power limits of AI data centers.",
+          "url": "https://cointelegraph.com/news/bernstein-bitcoin-mining-deals-necessary-ai-power-crunch",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2346193",
+          "title": "Cardano co-founder Hoskinson says Bitcoin could lose top spot if governance fails quantum test",
+          "url": "https://www.theblock.co/post/409627/cardano-co-founder-hoskinson-bitcoin-lose-top-spot-governance-fails-quantum-test",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/10/cardano.jpeg"
+        },
+        {
+          "id": "art_2298683",
+          "title": "Can Bitcoin Survive AI & Quantum? with Nic Carter",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/can-bitcoin-survive-ai-and-quantum-with-nic-carter",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2273607",
+          "title": "'Not currently the right capital solution': Smarter Web sells 178 bitcoin to repay $11.7M convertible instrument",
+          "url": "https://www.theblock.co/post/409506/not-currently-the-right-capital-solution-smarter-web-sells-178-bitcoin-to-repay-11-7m-convertible-instrument",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_1-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_2330540",
+          "title": "Odos Protocol to shut down, gives users until July 30 to withdraw assets27m",
+          "url": "https://cointelegraph.com/news/odos-protocol-shut-down-4-years",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-got-crypto-losses-wallet.jpg"
+        },
+        {
+          "id": "art_2298205",
+          "title": "The Miami Heat, LeBron James and prediction markets: how a ‘mistake’ social media post turbo-charged a $245 million wager",
+          "url": "https://fortune.com/2026/07/23/miami-heat-lebron-james-prediction-markets-mistake-social-media-post/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-113416659-e1784834440349.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2280405",
+          "title": "Flow Traders pilots Lombard’s new bitcoin-backed credit strategy for stablecoin borrowing",
+          "url": "https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_2350991",
+          "title": "Strive’s SATA recovers most of June decline, trades within 3% of par 17m",
+          "url": "https://cointelegraph.com/news/strives-sata-recovers-most-of-june-decline-trades-within-3-of-par",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2330220",
+          "title": "Episode 120: Borrowing Against Bitcoin Is Getting Easier? ",
+          "url": "https://insights.deribit.com/crypto-options-unplugged/episode-120-borrowing-against-bitcoin-is-getting-easier/",
+          "source": "Deribit",
+          "sentiment": "bullish",
+          "image_url": "https://insights.deribit.com/wp-content/uploads/2026/07/pd-120.png"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_2272724",
+          "title": "Coinbase to expand Singapore office headcount by 25%: report38m",
+          "url": "https://cointelegraph.com/news/coinbase-expand-singapore-headcount-25",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_2287453",
+          "title": "Ethereum nears market bottom against Bitcoin, though key signals remain unconfirmed: CryptoQuant19m, Ethereum nears market bottom against Bitcoin, though key signals remain unconfirmed: CryptoQuantEther trades below its realized price while onchain indicators point to easing selling pressure and recovering demand, though a definitive cycle bottom has yet to emerge.",
+          "url": "https://cointelegraph.com/news/ethereum-nears-market-bottom-against-bitcoin-key-signals-remain-unconfirmed-cryptoquant",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_2337353",
+          "title": "World Foundation raises $52.5M in Pantera-led funding to expand World ID infrastructure16m",
+          "url": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-fundraising-ripple-a-beginners-guide-on-raising-funds-using-cryptocurrencies.png"
+        },
+        {
+          "id": "art_2338338",
+          "title": "Formally Verifying a Compiler Using Automated Research",
+          "url": "https://www.paradigm.xyz/writing/formally-verifying-a-compiler-using-automated-research",
+          "source": "Paradigm",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/5BvFfg1wzGgdRoRzC2dD2n/0739c95e798eed29b1352908dce79b62/Formally_Verifying_a_Compiler_Using_Automated_Research.jpg?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+        },
+        {
+          "id": "art_2334589",
+          "title": "AI 에이전트 지갑 인프라: 매출 700% 스케일업의 핵심 레이어",
+          "url": "https://reports.tiger-research.com/p/ai-agent-wallet-infrastructure-the-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Rsw-!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F208329213%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_2334588",
+          "title": "AI Agent Wallet Infrastructure: The Layer Behind a 700% Revenue Scale-Up",
+          "url": "https://reports.tiger-research.com/p/ai-agent-wallet-infrastructure-the-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!6JbU!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F208329171%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_2268192",
+          "title": "Mirae Asset completes Korbit acquisition, becomes largest shareholder22m",
+          "url": "https://cointelegraph.com/news/mirae-asset-korbit-acquisition-largest-shareholder",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_2337352",
+          "title": "Crypto Biz: Is the AI-to-crypto rotation underway?10m",
+          "url": "https://cointelegraph.com/news/crypto-biz-ai-to-crypto-rotation-bitcoin-etf-inflows-clarity-act",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2330590",
+          "title": "Softbank eyeing acquisition of ETH spinout Gravis, reports suggest",
+          "url": "https://sifted.eu/articles/softbank-gravis-robotics/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/24124159/Screenshot-2026-07-24-at-12.41.53.png?w=1812&h=848&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_2292427",
+          "title": "The race for the tokenized euro ",
+          "url": "https://tokenterminal.com/resources/newsletter/the-race-for-the-tokenized-euro",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_2259179",
+          "title": "Meet the team helping Yann LeCun build AI startup AMI Labs",
+          "url": "https://sifted.eu/articles/meet-the-team-ami-labs/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2025/12/04111431/54319041499_7363c14f77_k-e1764846890133.jpg?w=1365&h=1273&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_2299146",
+          "title": "🟪 In defense of markets that sometimes close ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_d22ca4fd-f996-4dea-8e36-7f94eaba03db",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_2327135",
+          "title": "Samsung Wallet to Add Stablecoin Support",
+          "url": "https://cointelegraph.com/news/samsung-wallet-stablecoin-support-galaxy-unpacked",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-samsung-coin-new.jpg"
+        },
+        {
+          "id": "art_2265926",
+          "title": "Kakao, Circle Explore Won Stablecoin Payment Infrastructure",
+          "url": "https://cointelegraph.com/news/kakao-circle-won-stablecoin-payment-infrastructure",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-south-korea-staking-lending-service-1.png"
+        },
+        {
+          "id": "art_2327136",
+          "title": "Philippine bank BPI plans stablecoin payments pilot 18m, Philippine bank BPI plans stablecoin payments pilot The Philippine bank is preparing a stablecoin settlement pilot intended to speed up and reduce the cost of overseas payments to Filipino remote workers.",
+          "url": "https://cointelegraph.com/news/philippine-bank-bpi-plans-stablecoin-payments-pilot",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2263661",
+          "title": "BancaStato Launches Bitcoin Trading With Sygnum",
+          "url": "https://cointelegraph.com/news/bancastato-regulated-crypto-trading-sygnum-avaloq",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-u-banks-have-deeper-interest-in-digital-than-previously-thought-switzerland.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_2354154",
+          "title": "Bitcoin Policy Institute, Palantir and Anduril join US State Department's Freedom Tech Excellence Program",
+          "url": "https://www.theblock.co/post/409652/bitcoin-policy-institute-palantir-anduril-us-state-departments-freedom-tech-excellence-program",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News_3.jpg"
+        },
+        {
+          "id": "art_2353266",
+          "title": "EU authorities include HTX exchange in Russian sanctions36m, EU authorities include HTX exchange in Russian sanctionsThe exchange, already sanctioned by the UK, is now on a list of 18 entities “providing crypto-assets services or payment services“ in defiance of the EU’s measures against Russia.",
+          "url": "https://cointelegraph.com/news/htx-exchange-european-union-russia-sanctions",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-do-eus-new-sanctions-mean-for-russian-crypto-users-1.jpg"
+        },
+        {
+          "id": "art_2332810",
+          "title": "Thailand SEC Files Complaint Against Bitkub Over 2021 Hack Reporting",
+          "url": "https://cointelegraph.com/news/bitkub-criminal-complaint-thailand-sec",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-reporting-failures-can-be-expensive-even-criminal-ftx.png"
+        },
+        {
+          "id": "art_2320883",
+          "title": "Hopes for key crypto bill fade amid delays, Trump ethics controversy",
+          "url": "https://fortune.com/2026/07/24/hopes-for-key-crypto-bill-fade-amid-delays-trump-ethics-controversy/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2287088517.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2315793",
+          "title": "BitMEX hit with 623 BTC lawsuit on day it announces shutdown 7m, BitMEX hit with 623 BTC lawsuit on day it announces shutdown The proposed class action alleges BitMEX used privileged trading access and server freezes to profit from forced liquidations.",
+          "url": "https://cointelegraph.com/news/bitmex-liquidation-fraud-lawsuit-shutdown",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-1.png"
+        },
+        {
+          "id": "art_2343919",
+          "title": "Wise plans to resubmit national trust bank application under GENIUS Act framework",
+          "url": "https://www.theblock.co/post/409631/wise-plans-resubmit-national-trust-bank-application-under-genius-act-framework",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg"
+        },
+        {
+          "id": "art_2341896",
+          "title": "Crypto Advocacy Groups Support CLARITY Passage as Ethics Rules Face Pushback",
+          "url": "https://cointelegraph.com/news/crypto-advocacy-groups-support-clarity-act-pushback-ethics-rules",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-the-genius-act-how-it-could-reshape-us-stablecoin-regulation.png"
+        },
+        {
+          "id": "art_2337308",
+          "title": "Weekly Top Stories: Clarity Act Falls to 30% Odds",
+          "url": "https://www.galaxy.com/insights/research/weekly-top-stories-07-24-26",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3xXY8wvrzPrIrnhmNcX3W4/55826ebdc08af973dbdaae5a389a8c10/Top_Stories_O3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2322597",
+          "title": "EU widens Belarus ownership ban to all crypto service providers 21m, EU widens Belarus ownership ban to all crypto service providers The EU will bar Belarusian nationals and residents from owning, controlling or managing exchanges and other MiCA-regulated crypto firms from Aug. 25.",
+          "url": "https://cointelegraph.com/news/eu-belarus-crypto-ownership-ban-mica",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_2318763",
+          "title": "Hundreds settle with HMRC as crypto tax crackdown continues",
+          "url": "https://www.ft.com/content/bfc7b491-e553-4686-9531-a07b14a4d4b9",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffadff4a6-c599-4e53-9af5-b23aab181fa3.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_2337307",
+          "title": "CLARITY’s Combined Text Is Here. Now It Needs Votes",
+          "url": "https://www.galaxy.com/insights/research/clarity-act-30-percent-odds",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6mF2mzZgbu38IFOKYjgihT/3d7318d3ed798cf44c0bb63350601344/Regulation-1_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2299917",
+          "title": "Gemini sent $10M in Bitcoin to Trump PAC after joint motion with CFTC35m, Gemini sent $10M in Bitcoin to Trump PAC after joint motion with CFTCThe Bitcoin donation can be used to support Donald Trump as a New York court considers whether to reverse a $5 million settlement between the CFTC and Gemini.",
+          "url": "https://cointelegraph.com/news/gemini-winklevoss-bitcoin-donald-trump-pac-cftc-deal",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2287203",
+          "title": "Swan CEO claims Twenty One serves Tether’s US political interests, calls Mallers' role 'ceremonial'",
+          "url": "https://www.theblock.co/post/409538/swan-ceo-twenty-one-serves-tethers-us-political-interests-mallers-role-ceremonial",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_2279523",
+          "title": "Binance Partners With STOP THE TRAFFIK to Fight Crypto Use in Human Trafficking",
+          "url": "https://cointelegraph.com/news/binance-stop-the-traffik-anti-human-trafficking",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/binance-nonprofit-human-trafficking.jpg"
+        },
+        {
+          "id": "art_2278389",
+          "title": "Bitget secures license for New Zealand expansion10m",
+          "url": "https://cointelegraph.com/news/bitget-secures-license-new-zealand-expansion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2339624",
+          "title": "Internet Freedom Foundation calls India’s BitChat GitHub takedown order ‘unconstitutional’14m, Internet Freedom Foundation calls India’s BitChat GitHub takedown order ‘unconstitutional’The digital rights group says India’s order to remove Jack Dorsey’s BitChat repositories from GitHub exceeds the government’s legal authority and threatens free speech.",
+          "url": "https://cointelegraph.com/news/internet-freedom-foundation-calls-indias-bitchat-github-takedown-order-unconstitutional",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_2307855",
+          "title": "SEC Sets September Roundtable 24-Hour Trading",
+          "url": "https://cointelegraph.com/news/sec-to-host-roundtable-on-24-hour-trading-in-us-equities",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-timeframes3.jpg"
+        },
+        {
+          "id": "art_2256862",
+          "title": "SEC Pays $150,000 Settle Coinbase FOIA Suit",
+          "url": "https://cointelegraph.com/news/sec-settles-coinbase-suit-over-text-messages-that-disappeared",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/judge-law-court-regulation-coinbase.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_2331425",
+          "title": "Arthur Hayes, BitMEX co-founders face fraud claims over alleged 'Insider Trading Desk' as exchange winds down",
+          "url": "https://www.theblock.co/post/409595/arthur-hayes-bitmex-co-founders-face-fraud-claims-over-alleged-insider-trading-desk-as-exchange-winds-down",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/09/20220914_Legal_Generic4-1200x675.jpg"
+        },
+        {
+          "id": "art_2269325",
+          "title": "Home invasions became most common crypto wrench attack in H1 2026: CertiK21m",
+          "url": "https://cointelegraph.com/news/crypto-home-invasions-wrench-attacks-certik-h1-2026",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_2337306",
+          "title": "Bitcoin’s Largest Institutions Launch $15m Security Initiative",
+          "url": "https://www.galaxy.com/insights/research/bitcoin-quantum-security-consortium",
+          "source": "Galaxy — Network",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4oTlstGP0mjhWi8RQ5zeyo/db5e76547f91168713016805fce35dae/Bitcoin-1_Orange-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2290852",
+          "title": "Robinhood CEO Vlad Tenev’s X Account Hacked in Token Scam",
+          "url": "https://cointelegraph.com/news/robinhood-ceo-x-account-hacked-in-apparent-memecoin-scam",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-robinhood-down-several-times-as-dj-sees-biggest-one-day-gains.jpg"
+        },
+        {
+          "id": "art_2290602",
+          "title": "Robinhood CEO’s X account apparently hacked to promote Vladhood memecoin flagged as 'scam'",
+          "url": "https://www.theblock.co/post/409560/robinhood-ceo-x-account-apparently-hacked-promote-vladhood-memecoin-flagged-scam",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/10/cropped-17.jpg"
+        },
+        {
+          "id": "art_2259829",
+          "title": "Betting account in George Cottrell’s name received $9mn in crypto from unidentified sources",
+          "url": "https://www.ft.com/content/b74cbc54-c6ae-4f4a-9350-3dab1f2758d0",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fff45402f-0b48-459e-9a6f-07feb8d28b14.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_2324866",
+          "title": "Ripple Launches Mint for Institutional RLUSD Access",
+          "url": "https://cointelegraph.com/news/ripple-mint-expand-institutional-access-rlusd",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ripple-labs-rlusd-stablecoin-everything-you-need-to-know.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_2330541",
+          "title": "Hyperliquid RWA Trading Surpasses All Other Asset Categories",
+          "url": "https://cointelegraph.com/news/hyperliquid-rwa-volume-crypto-trading-first-time",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/trading-app-crypto-messenger-phone-rwa.jpg"
+        },
+        {
+          "id": "art_2328270",
+          "title": "Brazil puts tokenized cows to work as loan collateral: Report25m, Brazil puts tokenized cows to work as loan collateral: ReportTen tokenized dairy cows backed a $19,600 loan registered on Brazil’s B3, in one of Brazil’s first uses of tokenized livestock as loan collateral.",
+          "url": "https://cointelegraph.com/news/brazils-b3-rwa-credit-tokenized-cows-collateral",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The State Department just put Bitcoin Policy Institute in the same program as Anduril and Palantir. Not a side event. The same diplomatic infrastructure.\n\nThis is not crypto lobbying. This is crypto being absorbed into national-security procurement logic. The Freedom Tech Excellence Program frames Bitcoin as censorship-resistant infrastructure for adversarial environments—meaning the US government now underwrites it explicitly for use cases that traditional finance cannot serve.\n\nWe have spent years pricing regulatory risk as binary: friendly or hostile. Washington is running a third option. Recruit the technology, regulate the retail speculation separately. The BPI-Anduril-Palantir grouping tells us which verticals get the green light.\n\nMeanwhile HTX hits EU sanctions lists and Thailand's SEC retroactively pursues Bitkub for a 2021 hack. The divergence is the signal. Capital will reprice jurisdictional premium faster than founders can relocate.\n\nPantera putting $52.5M into World Foundation's identity infrastructure reads correctly against this backdrop. Proof-of-personhood becomes more valuable when sovereigns are actively sorting who gets to participate in which financial system.\n\nWhat we are watching: whether any US legislator challenges State's framing of Bitcoin as diplomatic tool, or whether this institutionalizes without opposition. That vote, or its absence, reprices the entire US infrastructure stack."
+}
