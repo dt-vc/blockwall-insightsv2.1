@@ -1,0 +1,635 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-28",
+  "date_display": "July 28, 2026",
+  "generated_at": "2026-07-28T05:00:17.572Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "BNY Mellon MiCA registration signals bank custody race is accelerating",
+    "tldr": "Traditional financial infrastructure is hardening around regulated crypto rails, while DeFi incumbents consolidate and distressed token projects face restructuring. The gap between compliant and non-compliant infrastructure is widening into a moat."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks how regulatory scaffolding and institutional balance-sheet decisions are rapidly repricing what 'infrastructure' means in Web3.",
+  "market_snapshot": {
+    "as_of": "2026-07-28T05:00:17.572Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,275",
+        "change_24h": "-3.0%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,878",
+        "change_24h": "-3.8%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.25T",
+        "change_24h": "-2.9%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$74.8B",
+        "change_24h": "-2.7%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 13,
+    "neutral": 6,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_2492194",
+      "title": "Strategy Raises $544.5M and Buys Back STRC Shares",
+      "url": "https://cointelegraph.com/news/strategy-sells-mstr-buys-back-25-milllion-strc",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "MicroStrategy has increased its US dollar reserves to $3.75 billion by raising $544.5 million through stock sales. The company also executed a $25 million buyback of STRC shares.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/strategy-sells-mstr-buys-back-25-milllion-strc",
+      "themes": [
+        "investment",
+        "treasury-management"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/michael-saylors-big-bet-institutional-investments-role-1.jpg",
+      "why_it_matters": "MicroStrategy's $544.5M raise and $25M STRC buyback signal that Saylor views the equity itself as undervalued relative to its embedded Bitcoin optionality, not merely a fundraising vehicle."
+    },
+    {
+      "id": "art_2497645",
+      "title": "Lido begins consolidating $16 billion worth of staked ETH as Curated Module v2 rolls out",
+      "url": "https://www.theblock.co/post/409780/lido-begins-consolidating-16-billion-worth-of-staked-eth-as-curated-module-v2-rolls-out",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Lido is consolidating over 8 million ETH (approximately $16 billion) onto larger validators in preparation for the Ethereum Pectra upgrade. This move is part of the rollout of Curated Module v2 to optimize validator efficiency.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409780/lido-begins-consolidating-16-billion-worth-of-staked-eth-as-curated-module-v2-rolls-out",
+      "themes": [
+        "defi",
+        "liquid-staking"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/06/20220616_Lido_Community-1200x675.jpg",
+      "why_it_matters": "Lido's $16B validator consolidation ahead of Pectra is a forced efficiency play that concentrates staking risk into fewer operators, making the 'decentralized' liquid staking thesis harder to underwrite."
+    },
+    {
+      "id": "art_2489666",
+      "title": "STORJ token falls 20% as decentralized storage firm files for Chapter 11 bankruptcy amid crypto shutdown wave",
+      "url": "https://www.theblock.co/post/409712/storj-token-falls-20-as-decentralized-storage-firm-files-for-chapter-11-bankruptcy-amid-crypto-shutdown-wave",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bearish",
+      "summary": "Storj Labs has filed for voluntary Chapter 11 bankruptcy to address legacy liabilities. Following the announcement, the STORJ token experienced a price drop of approximately 20%.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409712/storj-token-falls-20-as-decentralized-storage-firm-files-for-chapter-11-bankruptcy-amid-crypto-shutdown-wave",
+      "themes": [
+        "infrastructure",
+        "decentralized-storage"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241111_Decentralized-prediction-markets_News.jpg",
+      "why_it_matters": "Storj's Chapter 11 filing and 20% token collapse demonstrate that token-model liabilities can outlast product-market fit, creating a template for how distressed crypto infrastructure gets repriced through bankruptcy."
+    },
+    {
+      "id": "art_2488777",
+      "title": "BNY Mellon unit joins MiCA register as ESMA adds 15 providers43m, BNY Mellon unit joins MiCA register as ESMA adds 15 providersBNY Mellon’s European subsidiary joined the MiCA register as ESMA added 15 CASPs, including banks and crypto platforms, in the third post-deadline update.",
+      "url": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "BNY Mellon's European subsidiary has officially joined the MiCA register. The European Securities and Markets Authority (ESMA) added 15 Crypto-Asset Service Providers (CASPs), including major banks and crypto platforms, in its latest update.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update",
+      "themes": [
+        "regulation",
+        "mica"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/crypto-regulation-paper-rule-office-mica-eu.jpg",
+      "why_it_matters": "BNY Mellon's MiCA registration alongside 14 other CASPs marks the point where bank custody becomes a regulated commodity rather than a competitive differentiator, shifting value to execution and integration."
+    },
+    {
+      "id": "art_2480554",
+      "title": "South Korea's KB Kookmin Bank to launch cross-border payment service on JPMorgan's Kinexys: report",
+      "url": "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "South Korea's largest bank, KB Kookmin Bank, is set to launch a blockchain-based cross-border corporate payment service. The service will utilize JPMorgan's Kinexys platform to streamline international transactions.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys",
+      "themes": [
+        "payments",
+        "cross-border-payments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News.jpg",
+      "why_it_matters": "KB Kookmin's Kinexys integration shows JPMorgan's blockchain payment rails are becoming the default plumbing for Asian bank-correspondent relationships, sidelapping public-chain alternatives."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_2492194",
+      "company": "MicroStrategy (Strategy)",
+      "amount": "$544.5M",
+      "round": "",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/strategy-sells-mstr-buys-back-25-milllion-strc",
+      "summary": "MicroStrategy has increased its US dollar reserves to $3.75 billion by raising $544.5 million through stock sales. The company also executed a $25 million buyback of STRC shares."
+    },
+    {
+      "id": "art_2502455",
+      "company": "Payward (Kraken parent)",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/kraken-parent-payward-acquires-magic-labs-wallet-business",
+      "summary": "Payward, the parent company of Kraken, has acquired the wallet business from Magic Labs. This move aims to enhance Kraken's self-custody and onboarding capabilities for users."
+    },
+    {
+      "id": "art_2495364",
+      "company": "Circle",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://www.theblock.co/post/409750/circle-acquires-ibm-blockchain-patent-portfolio-becomes-largest-us-patent-holder",
+      "summary": "Circle has acquired IBM's extensive blockchain patent portfolio, consisting of over 680 patent families and nearly 1,000 issued patents. This acquisition positions Circle as the largest holder of blockchain patents in the United States."
+    },
+    {
+      "id": "art_2496804",
+      "company": "ETN",
+      "amount": "$1.6m",
+      "round": "",
+      "investors": [
+        "Powerhouse Capital",
+        "Axel Springer"
+      ],
+      "category": "Investment",
+      "url": "https://sifted.eu/articles/etn-tbpn-launch-funding-round-axel-springer/",
+      "summary": "ETN has raised $1.6 million from Powerhouse Capital and Axel Springer to support its goal of becoming Europe's TBPN. The funding comes ahead of a planned relaunch of the project."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_2478526",
+      "title": "Triple-A confirms treasury-wallet breach after losses reach $11.8M 43m, Triple-A confirms treasury-wallet breach after losses reach $11.8M The stablecoin payments company said client funds were unaffected and that the financial impact would be absorbed through its treasury reserves.",
+      "url": "https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Stablecoin payments provider Triple-A confirmed a security breach of its treasury wallet resulting in a loss of $11.8 million. The company stated that client funds remain safe and the loss will be covered by its own treasury reserves.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/password-fraud-hacker-scam3-2.jpg"
+    },
+    {
+      "id": "art_2475998",
+      "title": "The Funding: Are crypto vaults funds and curators fund managers?",
+      "url": "https://www.theblock.co/post/409690/are-crypto-vaults-funds-curators-fund-managers",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "SEC Commissioner Hester Peirce suggests that crypto vaults and their curators may be classified as fund managers. This classification could mandate registration with regulatory bodies, potentially increasing the compliance burden for DeFi protocols.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/06/20210628_Hester_Peirce.jpg"
+    },
+    {
+      "id": "art_2476248",
+      "title": "BitMart withdrawals appear to slow following wind-down announcement15m, BitMart withdrawals appear to slow following wind-down announcementUsers reported withdrawal delays and freeze notices as wallets attributed to BitMart fell to about $69 million and its BMX token extended an 81.5% weekly decline.",
+      "url": "https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "BitMart is experiencing reported withdrawal delays and freezes following a wind-down announcement. This has coincided with a significant drop in wallet balances and a sharp decline in the value of its BMX token.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bancor-excludes-users-1.jpg"
+    },
+    {
+      "id": "art_2521934",
+      "title": "Hong Kong Prepares Banks for Quantum Threats",
+      "url": "https://cointelegraph.com/news/hong-kong-banks-quantum-threats-tokenization",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Hong Kong has introduced a quantum-readiness index to help banks prepare for potential quantum computing threats. This initiative coincides with the expansion of tokenized deposits, digital-asset custody, and blockchain settlement systems within the region.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-hong-kong-fund-how-dats-could-redefine-stablecoin-treasuries.jpg"
+    },
+    {
+      "id": "art_2505874",
+      "title": "Securitize Registers as SEC Investment Adviser Through Capital Unit",
+      "url": "https://cointelegraph.com/news/securitize-becomes-sec-registered-investment-adviser-through-capital-unit",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize Capital has officially registered as an investment adviser with the SEC. This move allows the firm to expand its regulated platform for institutional clients and further its growth in onchain capital markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-crypto-deriv-could-change-the-industry-stablecoin.png"
+    },
+    {
+      "id": "art_2493334",
+      "title": "Binance disappears from Google Play in certain EU countries3m, Binance disappears from Google Play in certain EU countriesBinance’s Android app is unavailable on Google Play in some EU markets amid scrutiny over MiCA compliance.",
+      "url": "https://cointelegraph.com/news/binance-disappears-android-google-play-certain-eu-countries",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Binance's Android application has been removed from the Google Play Store in several European Union markets. The move is linked to ongoing scrutiny regarding the exchange's compliance with the Markets in Crypto-Assets (MiCA) regulation.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-digitized-europe-the-shift-to-a-cashless-world2-1.jpg"
+    },
+    {
+      "id": "art_2486499",
+      "title": "Brazil Police Bust Cartel Laundering Billions With Crypto",
+      "url": "https://cointelegraph.com/news/brazilian-police-cracks-down-on-crypto-fueled-international-drug-traffickers-suspected-of-moving-billions",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Brazilian police have dismantled a drug cartel that allegedly laundered billions of reals using cryptocurrencies, shell companies, and luxury assets. The operation highlights the use of digital assets for large-scale illicit financial activities.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-anti-money-laundering-and-on-chain-analytics-for-digital-assets-a-deep-dive-1.jpg"
+    },
+    {
+      "id": "art_2524215",
+      "title": "Zimbabwe Adds Seven Fintech Projects to Regulatory Sandbox",
+      "url": "https://cointelegraph.com/news/zimbabwe-seven-fintech-projects-regulatory-sandbox",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Zimbabwe's securities regulator has admitted seven fintech projects into its regulatory sandbox. Four of these projects are specifically focused on the tokenization of assets, securities, or infrastructure.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/coinsavanna.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_2475160",
+      "title": "Nothing to cut around 100 jobs in cost-cutting push, reports say",
+      "url": "https://sifted.eu/articles/nothing-to-cut-around-100-jobs-in-cost-cutting-push-reports-say/",
+      "source": "Sifted",
+      "note": "Nothing's 100-job cut is worth tracking as a proxy for how Web3-adjacent hardware and consumer plays are faring in the broader tech contraction.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2022/03/08142958/Carl-Pei-Nothing_1-scaled-e1646821386830.jpg?w=2048&h=1008&q=75&fit=crop&auto=compress,format"
+    },
+    {
+      "id": "art_2496804",
+      "title": "ETN steps up bid to become Europe’s TBPN with $1.6m raise: ‘We’re taking this incredibly seriously’",
+      "url": "https://sifted.eu/articles/etn-tbpn-launch-funding-round-axel-springer/",
+      "source": "Sifted",
+      "note": "ETN's TBPN positioning and Powerhouse/Axel Springer backing merit attention for whether European media-crypto convergence models can find product-market fit.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/27151238/Screenshot-2026-07-27-at-15.12.25.png?w=1182&h=786&q=75&fit=crop&auto=compress,format"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_2497644",
+          "title": "Metaplanet's brokerage deal 'badly undersells' plans for bitcoin-backed 'Bitbonds,' Benchmark says",
+          "url": "https://www.theblock.co/post/409752/benchmark-metaplanet-brokerage-deal-badly-undersells-plans-bitcoin-backed-bitbonds",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_2497645",
+          "title": "Lido begins consolidating $16 billion worth of staked ETH as Curated Module v2 rolls out",
+          "url": "https://www.theblock.co/post/409780/lido-begins-consolidating-16-billion-worth-of-staked-eth-as-curated-module-v2-rolls-out",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/06/20220616_Lido_Community-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_2493898",
+          "title": "Bank-run blockchains are back in style—but history suggests they will be a bust",
+          "url": "https://fortune.com/2026/07/27/bank-run-blockchains-tokenized-stocks-centralized-canton/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2285437321.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_2508154",
+          "title": "Bitmine keeps buying Ether as ETH outperforms Bitcoin22m, Bitmine keeps buying Ether as ETH outperforms BitcoinThe company added nearly 10,000 ETH over the past week, bringing its holdings to 5.79 million Ether, about 85% of which is staked through its validator operations.",
+          "url": "https://cointelegraph.com/news/bitmine-keeps-buying-ether-as-eth-outperforms-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_2489666",
+          "title": "STORJ token falls 20% as decentralized storage firm files for Chapter 11 bankruptcy amid crypto shutdown wave",
+          "url": "https://www.theblock.co/post/409712/storj-token-falls-20-as-decentralized-storage-firm-files-for-chapter-11-bankruptcy-amid-crypto-shutdown-wave",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241111_Decentralized-prediction-markets_News.jpg"
+        },
+        {
+          "id": "art_2521934",
+          "title": "Hong Kong Prepares Banks for Quantum Threats",
+          "url": "https://cointelegraph.com/news/hong-kong-banks-quantum-threats-tokenization",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-hong-kong-fund-how-dats-could-redefine-stablecoin-treasuries.jpg"
+        },
+        {
+          "id": "art_2502455",
+          "title": "Kraken parent Payward acquires Magic Labs’ wallet business41m",
+          "url": "https://cointelegraph.com/news/kraken-parent-payward-acquires-magic-labs-wallet-business",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2495364",
+          "title": "IBM portfolio acquisition makes Circle the largest US blockchain patent holder",
+          "url": "https://www.theblock.co/post/409750/circle-acquires-ibm-blockchain-patent-portfolio-becomes-largest-us-patent-holder",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg"
+        },
+        {
+          "id": "art_2507905",
+          "title": "Ethereum, Solana and Avalanche get busier and cheaper even as token prices fall: Bitwise",
+          "url": "https://www.theblock.co/post/409799/ethereum-solana-avalanche-get-busier-cheaper-even-as-token-prices-fall-bitwise",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Bitwise_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_2499924",
+          "title": "Ondo launches new execution network, calling it 'evolution' of Ondo Chain",
+          "url": "https://www.theblock.co/post/409792/ondo-launches-new-execution-network-calling-it-evolution-of-ondo-chain",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20230216_Ondo.jpg"
+        },
+        {
+          "id": "art_2485360",
+          "title": "Coinbase CEO Touts AI Agents Driving Crypto Adoption",
+          "url": "https://cointelegraph.com/news/coinbase-ceo-agentic-finance-base-100-million-aifi-transactions",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/portraitbrian-armstrong1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_2492194",
+          "title": "Strategy Raises $544.5M and Buys Back STRC Shares",
+          "url": "https://cointelegraph.com/news/strategy-sells-mstr-buys-back-25-milllion-strc",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/michael-saylors-big-bet-institutional-investments-role-1.jpg"
+        },
+        {
+          "id": "art_2502204",
+          "title": "TD Cowen cuts David Bailey’s Nakamoto target 58% after bitcoin outlook reset",
+          "url": "https://www.theblock.co/post/409797/td-cowen-cuts-david-bailey-nakamoto-target-58-bitcoin-outlook-reset",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_4.jpg"
+        },
+        {
+          "id": "art_2508711",
+          "title": "A VC says he declined to join the Trump family’s crypto venture after cofounder Steve Witkoff couldn’t pronounce ‘memecoin’",
+          "url": "https://fortune.com/2026/07/27/vc-trump-familys-crypto-venture-cofounder-steve-witkoff-memecoin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2264701765-e1785177773745.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2496804",
+          "title": "ETN steps up bid to become Europe’s TBPN with $1.6m raise: ‘We’re taking this incredibly seriously’",
+          "url": "https://sifted.eu/articles/etn-tbpn-launch-funding-round-axel-springer/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2026/07/27151238/Screenshot-2026-07-27-at-15.12.25.png?w=1182&h=786&q=75&fit=crop&auto=compress,format"
+        }
+      ]
+    },
+    {
+      "category": "NFT_Gaming",
+      "items": [
+        {
+          "id": "art_2492557",
+          "title": "View latest issue, The NFT Slot Machine",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_a770e2c9-fad6-4dc2-807f-3032b36ceae9",
+          "source": "Blockworks (1)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_2515094",
+          "title": "New York AG warns CLARITY Act could weaken state crypto enforcement",
+          "url": "https://cointelegraph.com/news/new-york-ag-clarity-act-state-crypto-enforcement",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2482498",
+          "title": "Greenhouse CEO says job seekers are paying $20 to apply for every job on the hiring platform and spamming bosses—he calls it the AI doom loop",
+          "url": "https://fortune.com/2026/07/27/greenhouse-ceo-daniel-chait-ai-doom-loop-job-seekers-spam-interview-applications-unemployment/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-1304984224-e1784908730301.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2475160",
+          "title": "Nothing to cut around 100 jobs in cost-cutting push, reports say",
+          "url": "https://sifted.eu/articles/nothing-to-cut-around-100-jobs-in-cost-cutting-push-reports-say/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2022/03/08142958/Carl-Pei-Nothing_1-scaled-e1646821386830.jpg?w=2048&h=1008&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_2505604",
+          "title": "A Merger Closing Mystery",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-07-27/a-merger-closing-mystery",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_2480554",
+          "title": "South Korea's KB Kookmin Bank to launch cross-border payment service on JPMorgan's Kinexys: report",
+          "url": "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News.jpg"
+        },
+        {
+          "id": "art_2510534",
+          "title": "Cross River to Provide Banking Infrastructure for X Money",
+          "url": "https://cointelegraph.com/news/x-money-cross-river-embedded-banking-p2p-payments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-is-the-next-step-toward-a-cashless-society-eu.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_2488777",
+          "title": "BNY Mellon unit joins MiCA register as ESMA adds 15 providers43m, BNY Mellon unit joins MiCA register as ESMA adds 15 providersBNY Mellon’s European subsidiary joined the MiCA register as ESMA added 15 CASPs, including banks and crypto platforms, in the third post-deadline update.",
+          "url": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/crypto-regulation-paper-rule-office-mica-eu.jpg"
+        },
+        {
+          "id": "art_2475998",
+          "title": "The Funding: Are crypto vaults funds and curators fund managers?",
+          "url": "https://www.theblock.co/post/409690/are-crypto-vaults-funds-curators-fund-managers",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/06/20210628_Hester_Peirce.jpg"
+        },
+        {
+          "id": "art_2493334",
+          "title": "Binance disappears from Google Play in certain EU countries3m, Binance disappears from Google Play in certain EU countriesBinance’s Android app is unavailable on Google Play in some EU markets amid scrutiny over MiCA compliance.",
+          "url": "https://cointelegraph.com/news/binance-disappears-android-google-play-certain-eu-countries",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-digitized-europe-the-shift-to-a-cashless-world2-1.jpg"
+        },
+        {
+          "id": "art_2486499",
+          "title": "Brazil Police Bust Cartel Laundering Billions With Crypto",
+          "url": "https://cointelegraph.com/news/brazilian-police-cracks-down-on-crypto-fueled-international-drug-traffickers-suspected-of-moving-billions",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-anti-money-laundering-and-on-chain-analytics-for-digital-assets-a-deep-dive-1.jpg"
+        },
+        {
+          "id": "art_2511424",
+          "title": "NFL urges CFTC to strengthen rules on sports prediction markets: report",
+          "url": "https://www.theblock.co/post/409846/nfl-urges-cftc-to-strengthen-rules-on-sports-prediction-markets-report",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/03/621e4e41dfcf311335ccaefc_NFL-x6-1920-1080-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_2478526",
+          "title": "Triple-A confirms treasury-wallet breach after losses reach $11.8M 43m, Triple-A confirms treasury-wallet breach after losses reach $11.8M The stablecoin payments company said client funds were unaffected and that the financial impact would be absorbed through its treasury reserves.",
+          "url": "https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/password-fraud-hacker-scam3-2.jpg"
+        },
+        {
+          "id": "art_2476248",
+          "title": "BitMart withdrawals appear to slow following wind-down announcement15m, BitMart withdrawals appear to slow following wind-down announcementUsers reported withdrawal delays and freeze notices as wallets attributed to BitMart fell to about $69 million and its BMX token extended an 81.5% weekly decline.",
+          "url": "https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bancor-excludes-users-1.jpg"
+        },
+        {
+          "id": "art_2471692",
+          "title": "Garden Finance Disables App Amid $450K HTLC Exploit",
+          "url": "https://cointelegraph.com/news/garden-finance-app-offline-450k-htlc-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bithumb-hack-what-is-known.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_2505874",
+          "title": "Securitize Registers as SEC Investment Adviser Through Capital Unit",
+          "url": "https://cointelegraph.com/news/securitize-becomes-sec-registered-investment-adviser-through-capital-unit",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-crypto-deriv-could-change-the-industry-stablecoin.png"
+        },
+        {
+          "id": "art_2524215",
+          "title": "Zimbabwe Adds Seven Fintech Projects to Regulatory Sandbox",
+          "url": "https://cointelegraph.com/news/zimbabwe-seven-fintech-projects-regulatory-sandbox",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/coinsavanna.jpg"
+        },
+        {
+          "id": "art_2502454",
+          "title": "Tether’s XAUT Gains Shariah Certification for Islamic Finance",
+          "url": "https://cointelegraph.com/news/tether-xaut-gold-token-receives-shariah-certification-islamic-finance-access",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sharia-ruling-on-crypto-will-it-set-a-standard-for-acceptance.png"
+        },
+        {
+          "id": "art_2486067",
+          "title": "Beware holographic markets",
+          "url": "https://www.ft.com/content/e76f5ce3-3bd6-4793-87d9-071ecd75f0bb",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fc75035d3-b1f9-479e-9494-9ab322a206a8.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Three balance-sheet moves today, none of them about retail. MicroStrategy raised $544.5 million and immediately bought back $25 million of its own STRC shares. That is not a company starved for Bitcoin acquisition firepower. That is a company that thinks its equity is cheap relative to the asset it holds. We underwrite that differently.\n\nThen BNY Mellon's European unit registered under MiCA, one of fifteen CASPs ESMA approved in its third post-deadline batch. The register is becoming crowded. Custody is not a moat anymore; it is table stakes. What gets repriced next is who can plug that custody into corporate treasury workflows without friction. KB Kookmin choosing JPMorgan's Kinexys for cross-border payments, not a public chain, is one answer.\n\nAgainst this, Storj filed Chapter 11. Token down 20%. The model where protocol tokens fund operations and also trade on secondary markets is being stress-tested in bankruptcy court. What equity, if any, converts to what claims, will set a marker.\n\nLido's $16 billion validator consolidation is the other side: efficiency at the cost of operator concentration. We are watching whether stakers vote with their feet, or whether liquidity inertia keeps capital parked.\n\nThe test for our thesis: does the next MiCA batch include a US bank of comparable size to BNY Mellon, or does regulatory arbitrage keep them offshore?"
+}
