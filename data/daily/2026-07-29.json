@@ -1,0 +1,669 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-07-29",
+  "date_display": "July 29, 2026",
+  "generated_at": "2026-07-29T05:00:17.549Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Morgan Stanley launches staked Ether and Solana ETPs as South Korea moves to repeal crypto tax and formalize stablecoin law",
+    "tldr": "Traditional finance is repricing crypto from speculative asset to yield-bearing infrastructure, while regulators in major markets pivot from extraction to framework-building; the gap between institutional product velocity and security outcomes is widening."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's signals show institutional capital treating crypto as infrastructure to be underwritten, not novelty to be traded, even as the cost of that infrastructure's fragility keeps climbing.",
+  "market_snapshot": {
+    "as_of": "2026-07-29T05:00:17.549Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,852",
+        "change_24h": "+0.8%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,902",
+        "change_24h": "+0.9%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.4B",
+        "change_24h": "+0.5%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 21,
+    "bearish": 8,
+    "neutral": 13,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_2544784",
+      "title": "AI rollup startup Dwelly raises $170m backed by EQT and General Catalyst",
+      "url": "https://sifted.eu/articles/dwelly-ai-property-rollup-funding-round-elevenlabs-legora/",
+      "source": "Sifted",
+      "source_domain": "sifted.eu",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "AI rollup startup Dwelly has raised $170 million in funding. The round was backed by major investors EQT and General Catalyst, with participation from prominent AI founders.",
+      "significance": 9,
+      "primary_source": "https://sifted.eu/articles/dwelly-ai-property-rollup-funding-round-elevenlabs-legora/",
+      "themes": [
+        "infrastructure",
+        "layer2"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2019/02/25140415/sifted-on-pink.png?w=1200&h=628&q=75&fit=crop&auto=compress,format",
+      "why_it_matters": "Dwelly's $170M AI rollup round from EQT and General Catalyst signals that venture is now underwriting 'AI infrastructure' and 'crypto infrastructure' as overlapping categories, which reprices the entire rollup sector toward enterprise multiples rather than token premiums."
+    },
+    {
+      "id": "art_2561834",
+      "title": "Morgan Stanley Launches Ether and Solana ETPs with Staking",
+      "url": "https://cointelegraph.com/news/morgan-stanley-expands-crypto-lineup-with-ether-solana-etps",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Morgan Stanley Investment Management has expanded its digital asset offerings by launching Ether and Solana exchange-traded products (ETPs). Notably, these products include staking capabilities, marking a significant move by a major traditional financial institution into yield-generating crypto assets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/morgan-stanley-expands-crypto-lineup-with-ether-solana-etps",
+      "themes": [
+        "investment",
+        "etp"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/bankcman-morgan-stanley.png",
+      "why_it_matters": "Morgan Stanley's staked ETPs represent a structural shift: TradFi is no longer just offering crypto exposure, it is capturing the native yield mechanism and charging for it, which compresses the margin available to standalone staking providers and DeFi protocols."
+    },
+    {
+      "id": "art_2561584",
+      "title": "Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says",
+      "url": "https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Crypto hacks reached a record high in the first half of 2026, with total losses exceeding $1 billion. Ethereum and Solana projects were the most targeted, losing $332 million and $326 million respectively.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says",
+      "themes": [
+        "security",
+        "hacks"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg",
+      "why_it_matters": "H1 2026 losses exceeding $1 billion on Ethereum and Solana specifically means investors must now price security failure as a base-case cost of capital in any L1 or L2 deployment, not as an externality."
+    },
+    {
+      "id": "art_2578947",
+      "title": "South Korea Plans Crypto Law as Tax Repeal Reaches Committee",
+      "url": "https://cointelegraph.com/news/south-korea-consolidated-crypto-law-tax-repeal",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "South Korea's Financial Services Commission (FSC) is planning a comprehensive cryptocurrency law to regulate stablecoins and exchanges. Simultaneously, lawmakers are reviewing the repeal of a proposed 22% crypto tax originally scheduled for 2027.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/south-korea-consolidated-crypto-law-tax-repeal",
+      "themes": [
+        "regulation",
+        "legal-framework"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-people-start-trust-stablecoin-in-period-of-crisis-south-korea.png",
+      "why_it_matters": "South Korea's simultaneous move toward stablecoin regulation and crypto tax repeal indicates a policy pivot from revenue extraction to market development, which typically precedes accelerated institutional inflow in East Asian markets."
+    },
+    {
+      "id": "art_2577806",
+      "title": "Tether signs tokenization deal with Nairobi Securities Exchange28m, Tether signs tokenization deal with Nairobi Securities ExchangeThe agreement covers tokenized securities, blockchain-based market infrastructure and the potential use of USDT as a settlement layer.",
+      "url": "https://cointelegraph.com/news/tether-signs-tokenization-deal-with-nairobi-securities-exchange",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Tether has entered a strategic partnership with the Nairobi Securities Exchange to implement tokenized securities and blockchain-based market infrastructure. The deal also explores the integration of USDT as a settlement layer for the exchange.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/tether-signs-tokenization-deal-with-nairobi-securities-exchange",
+      "themes": [
+        "tokenization",
+        "enterprise"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/bank-building-hall-entrance-revolving-doorsthreetether.jpg",
+      "why_it_matters": "Tether's Nairobi Securities Exchange deal tests whether USDT can function as a settlement layer in regulated emerging-market equity infrastructure, with success likely triggering replication across frontier exchanges seeking dollar liquidity without correspondent banking."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_2544784",
+      "company": "Dwelly",
+      "amount": "$170M",
+      "round": "",
+      "investors": [
+        "EQT",
+        "General Catalyst"
+      ],
+      "category": "Infrastructure",
+      "url": "https://sifted.eu/articles/dwelly-ai-property-rollup-funding-round-elevenlabs-legora/",
+      "summary": "AI rollup startup Dwelly has raised $170 million in funding. The round was backed by major investors EQT and General Catalyst, with participation from prominent AI founders."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_2570960",
+      "title": "European Institutions Launch RL1 Blockchain Network",
+      "url": "https://cointelegraph.com/news/european-financial-institutions-launch-rl1-blockchain",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ten European financial institutions have established RL1, a blockchain cooperative designed for regulated markets. The network focuses specifically on the tokenization of assets to improve efficiency within the financial sector.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report-eu.png"
+    },
+    {
+      "id": "art_2553854",
+      "title": "Kraken opens Jersey Mike’s IPO to retail investors through tokenized shares and direct allocations24m",
+      "url": "https://cointelegraph.com/news/kraken-opens-jersey-mikes-ipo-to-retail-investors-through-tokenized-shares-and-direct-allocations",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Kraken is enabling retail investors to participate in the Jersey Mike's IPO via tokenized shares and direct allocations. This move represents a significant application of real-world asset (RWA) tokenization to democratize access to traditional equity markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-an-ipo-a-beginners-guide-on-how-crypto-firms-can-go-public.png"
+    },
+    {
+      "id": "art_2546764",
+      "title": "Core Scientific ties its AI pivot to AMD in multi-gigawatt infrastructure deal",
+      "url": "https://www.theblock.co/post/409887/core-scientific-ties-ai-pivot-amd-multi-gigawatt-infrastructure-deal",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Core Scientific has entered a strategic partnership with AMD to develop AI data-center capacity in the U.S. The deal starts with 500 MW of capacity available from 2027 and can scale up to 2.5 GW, including stock warrants for AMD.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221028_Core-Scientific-Bankruptcy-1200x675.jpg"
+    },
+    {
+      "id": "art_2546523",
+      "title": "The SEC's Warning to a $25.9 Billion Market: Why Risk Curators Are in the Crosshairs",
+      "url": "https://reports.tiger-research.com/p/the-secs-warning-to-a-259-billion-eng",
+      "source": "Tiger Research",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "SEC Commissioner Hester Peirce has warned that on-chain vaults and lending strategies may be subject to existing securities laws. This signal targets a market valued at approximately $25.9 billion, potentially increasing regulatory pressure on risk curators.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!-ltB!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F208813227%2Ftwitter.jpg%3FisDraft%3Dtrue%26version%3D4"
+    },
+    {
+      "id": "art_2545874",
+      "title": "Ethereum And Solana Lead H1 2026 Crypto Hack Losses",
+      "url": "https://cointelegraph.com/news/ethereum-solana-led-crypto-hack-losses-h1-2026-blockaid",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Ethereum and Solana experienced the highest volume of crypto losses in the first half of 2026. According to Blockaid, these losses were primarily driven by protocol exploits and compromised private keys.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-solana-vs-ethereum-a-comprehensive-blockchain-comparison.jpg"
+    },
+    {
+      "id": "art_2543594",
+      "title": "PayPal expands stablecoin push as crypto assets factor into Q2 results6m",
+      "url": "https://cointelegraph.com/news/paypal-expands-stablecoin-push-crypto-assets-q2-results",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "PayPal is expanding its stablecoin initiatives as crypto assets begin to impact its quarterly financial results. The company continues to integrate digital asset capabilities into its broader payment ecosystem.",
+      "image_url": null
+    },
+    {
+      "id": "art_2575425",
+      "title": "SEC Vault Guidance, Institutional DeFi, and Bitcoin's Quantum Future",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/sec-vault-guidance-institutional-de-fi-and-bitcoin-s-quantum-future",
+      "source": "Galaxy — Insights",
+      "category": "Other",
+      "sentiment": "bullish",
+      "summary": "A weekly roundup highlighting SEC guidance on vaults and lending markets, institutional efforts to secure Bitcoin against quantum threats, and strong growth for Robinhood Chain. The report also notes Ethereum ETF flows outpacing Bitcoin and ETH's 20% monthly gain.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_2533084",
+      "title": "Judge blocks Minnesota from enforcing prediction market ban in win for Kalshi, Polymarket",
+      "url": "https://www.theblock.co/post/409861/judge-blocks-minnesota-prediction-market-ban",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "A federal judge has blocked the state of Minnesota from enforcing a law that would have banned prediction markets. This ruling is a significant legal victory for platforms like Kalshi and Polymarket.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_2575425",
+      "title": "SEC Vault Guidance, Institutional DeFi, and Bitcoin's Quantum Future",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/sec-vault-guidance-institutional-de-fi-and-bitcoin-s-quantum-future",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's analysis of SEC vault guidance, institutional DeFi mechanics, and quantum threat modeling for Bitcoin offers a consolidated framework for how regulated entities are currently underwriting custody and settlement risk.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_2542504",
+      "title": "Visionaries cuts investment team to two lead partners for next fund",
+      "url": "https://sifted.eu/articles/visionaries-cuts-investment-team-next-fund/",
+      "source": "Sifted",
+      "note": "Visionaries' team reduction to two lead partners is a datapoint on whether European venture firms can maintain deployment pace with leaner structures, relevant for LPs reprising fund economics.",
+      "image_url": "https://images.sifted.eu/wp-content/uploads/2024/12/19172643/Visionaries-Club-Robert-Lacher-scaled-e1734629233447.jpg?w=1464&h=1174&q=75&fit=crop&auto=compress,format"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_2544484",
+          "title": "1inch launches Aqua publicly, a shared liquidity layer for DeFi across 13 chains",
+          "url": "https://www.theblock.co/post/409866/1inch-launches-aqua-publicly-a-shared-liquidity-layer-for-defi-across-13-chains",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230731_Liquidity_News-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_2547570",
+          "title": "BNY skipped the ‘tokenmaxxing’ craze. Here’s what AI metrics it tracks instead",
+          "url": "https://fortune.com/2026/07/28/bny-skipped-tokenmaxxing-craze-what-ai-metrics-tracks-cfo/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2224894315.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_2536759",
+          "title": "Lido Reshapes Ethereum Staking With New Upgrade",
+          "url": "https://cointelegraph.com/news/lido-upgrade-ethereum-validator-count-one-third-slash",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-lido-ldo-a-beginners-guide-to-liquidity-for-staked-assets.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_2544784",
+          "title": "AI rollup startup Dwelly raises $170m backed by EQT and General Catalyst",
+          "url": "https://sifted.eu/articles/dwelly-ai-property-rollup-funding-round-elevenlabs-legora/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2019/02/25140415/sifted-on-pink.png?w=1200&h=628&q=75&fit=crop&auto=compress,format"
+        },
+        {
+          "id": "art_2546764",
+          "title": "Core Scientific ties its AI pivot to AMD in multi-gigawatt infrastructure deal",
+          "url": "https://www.theblock.co/post/409887/core-scientific-ties-ai-pivot-amd-multi-gigawatt-infrastructure-deal",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221028_Core-Scientific-Bankruptcy-1200x675.jpg"
+        },
+        {
+          "id": "art_2573242",
+          "title": "Zcash says Ironwood proof rules out undetectable counterfeiting bugs12m, Zcash says Ironwood proof rules out undetectable counterfeiting bugsZcash researchers published more than 2,700 machine-checked theorems designed to rule out undetectable counterfeiting bugs in Ironwood.",
+          "url": "https://cointelegraph.com/news/zcash-ironwood-proof-counterfeiting-orchard-flaw",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2557274",
+          "title": "Galaxy, MARA Holdings deepen Texas expansion with land Acquisitions5m",
+          "url": "https://cointelegraph.com/news/galaxy-mara-texas-land-deals-ai-bitcoin-data-centers",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2537895",
+          "title": "Ondo shifts from layer-1 blockchain plan to offchain execution network42m, Ondo shifts from layer-1 blockchain plan to offchain execution networkThe new system marks an apparent departure from the institution-focused layer-1 blockchain Ondo announced in 2025.",
+          "url": "https://cointelegraph.com/news/ondo-shifts-from-layer-1-blockchain-plan-to-offchain-execution-network",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2562724",
+          "title": "Ionic Digital jumps 25% in Nasdaq debut after expanding Celsius bitcoin mining assets into AI infrastructure",
+          "url": "https://www.theblock.co/post/409945/ionic-digital-jumps-22-nasdaq-debut-celsius-bitcoin-mining-assets-ai-infrastructure",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/12/20231204_BitcoinMining_News.jpg"
+        },
+        {
+          "id": "art_2553604",
+          "title": "Robinhood Chain deposits climb but volume and users fade after memecoin-fueled launch",
+          "url": "https://www.theblock.co/post/409813/robinhood-chain-deposits-climb-volume-users-fade-memecoin-fueled-launch",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News.jpg"
+        },
+        {
+          "id": "art_2550184",
+          "title": "Barry Silbert-backed Zcash miner Fortitude brings Nebraska facility online to cut its ZEC production costs",
+          "url": "https://www.theblock.co/post/409899/barry-silbert-zcash-miner-fortitude-nebraska-facility-online-cut-zec-mining-costs",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251202_ZCash_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_2561834",
+          "title": "Morgan Stanley Launches Ether and Solana ETPs with Staking",
+          "url": "https://cointelegraph.com/news/morgan-stanley-expands-crypto-lineup-with-ether-solana-etps",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/bankcman-morgan-stanley.png"
+        },
+        {
+          "id": "art_2565817",
+          "title": "Coinbase and Robinhood are locked in a heated battle ahead of Q2 earnings—but only one is being called the industry’s ‘first hyperscaler’",
+          "url": "https://fortune.com/2026/07/28/coinbase-and-robinhood-are-locked-in-a-heated-battle-ahead-of-q2-earningsbut-only-one-is-being-called-the-industrys-first-hyperscaler/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/Fortune-Coinbase-Robinhood.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2542504",
+          "title": "Visionaries cuts investment team to two lead partners for next fund",
+          "url": "https://sifted.eu/articles/visionaries-cuts-investment-team-next-fund/",
+          "source": "Sifted",
+          "sentiment": "bearish",
+          "image_url": "https://images.sifted.eu/wp-content/uploads/2024/12/19172643/Visionaries-Club-Robert-Lacher-scaled-e1734629233447.jpg?w=1464&h=1174&q=75&fit=crop&auto=compress,format"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_2558164",
+          "title": "Ethereum L2 ecosystem loses momentum as TVL drops to two-year low",
+          "url": "https://www.theblock.co/post/409811/ethereum-l2-ecosystem-loses-momentum-as-tvl-drops-to-two-year-low",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_2575425",
+          "title": "SEC Vault Guidance, Institutional DeFi, and Bitcoin's Quantum Future",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/sec-vault-guidance-institutional-de-fi-and-bitcoin-s-quantum-future",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_2561251",
+          "title": "The Erling Haaland boom: Norway’s ‘pop-up economy’ during the World Cup revealed in Visa data",
+          "url": "https://fortune.com/2026/07/28/erling-haaland-pop-up-economy-world-cup-visa-norway/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2285318303-e1785259890576.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2552130",
+          "title": "Despite making over $135K, 1 in 5 high-earners feel ‘depressed’ when thinking about their finances—they may have ‘money dysmorphia’",
+          "url": "https://fortune.com/2026/07/28/despite-making-over-135k-1-in-5-high-earners-feel-depressed-thinking-about-finances-may-have-money-dysmorphia/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2064405962-e1785251826100.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2552133",
+          "title": "Bernard Arnault is denying a family rift—and any kind of real-life Succession. LVMH earnings tell a stranger story",
+          "url": "https://fortune.com/2026/07/28/bernard-arnault-succession-lvmh-earnings-children-denies-family-rift/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2218647312-e1785249111123.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2547572",
+          "title": "IMF praises ‘sacrifice of the Argentine people’ as Milei’s austerity measures bring end of debt deals into view",
+          "url": "https://fortune.com/2026/07/28/argentina-milei-imf-georgieva-sacrifice/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/AP26208544629282-e1785239140202.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2547573",
+          "title": "A Chinese firm has begun manufacturing chipmaking machines, putting ASML and the world on notice",
+          "url": "https://fortune.com/2026/07/28/chinese-firm-begun-manufacturing-chipmaking-machines-asml-world-notice/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-1644657109.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_2545876",
+          "title": "1Inch moves to unite DeFi liquidity across 11 chains with Aqua2h",
+          "url": "https://cointelegraph.com/news/1inch-moves-to-unite-defi-liquidity-across-11-chains-with-aqua",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_2564479",
+          "title": "🟪 From playground to Parliament ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_dc265408-9314-4f3e-9d8e-771470fa9dbf",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_2530470",
+          "title": "Kalshi tiptoes back into canceled flight markets with JFK airport wager",
+          "url": "https://fortune.com/2026/07/27/kalshi-tiptoes-back-into-canceled-flight-markets-with-jfk-airport-wager/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/07/GettyImages-2285600278.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_2566396",
+          "title": "Visa Outlines Stablecoin Strategy After Q3 Earnings",
+          "url": "https://cointelegraph.com/news/visa-earnings-stablecoin-strategy",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/visa.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_2578947",
+          "title": "South Korea Plans Crypto Law as Tax Repeal Reaches Committee",
+          "url": "https://cointelegraph.com/news/south-korea-consolidated-crypto-law-tax-repeal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-people-start-trust-stablecoin-in-period-of-crisis-south-korea.png"
+        },
+        {
+          "id": "art_2546523",
+          "title": "The SEC's Warning to a $25.9 Billion Market: Why Risk Curators Are in the Crosshairs",
+          "url": "https://reports.tiger-research.com/p/the-secs-warning-to-a-259-billion-eng",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!-ltB!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F208813227%2Ftwitter.jpg%3FisDraft%3Dtrue%26version%3D4"
+        },
+        {
+          "id": "art_2533084",
+          "title": "Judge blocks Minnesota from enforcing prediction market ban in win for Kalshi, Polymarket",
+          "url": "https://www.theblock.co/post/409861/judge-blocks-minnesota-prediction-market-ban",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+        },
+        {
+          "id": "art_2545624",
+          "title": "Russia's central bank drafts first rules for ‘organized’ crypto trading",
+          "url": "https://www.theblock.co/post/409877/russias-central-bank-drafts-first-rules-for-organized-crypto-trading",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2018/10/russian-flag.jpg"
+        },
+        {
+          "id": "art_2546522",
+          "title": "259억 달러 규모 시장에 경고 던진 SEC, 리스크 큐레이터는 왜 표적이 되었는가?",
+          "url": "https://reports.tiger-research.com/p/the-secs-warning-to-a-259-billion-kor",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!XoeS!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F208813225%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_2531054",
+          "title": "CZ Backs Crypto License Passporting Across ASEAN",
+          "url": "https://cointelegraph.com/news/binance-co-founder-cz-backs-crypto-license-passporting-across-asean",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-cz-vs-eu.png"
+        },
+        {
+          "id": "art_2569819",
+          "title": "Myanmar Passes Bill Targeting Crypto Scams With Life Sentences",
+          "url": "https://cointelegraph.com/news/myanmar-parliament-crypto-scam-bill-life-sentences",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-evolution-of-crypto-regulations-in-2024-what-it-means-for-2025.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_2561584",
+          "title": "Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says",
+          "url": "https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg"
+        },
+        {
+          "id": "art_2545874",
+          "title": "Ethereum And Solana Lead H1 2026 Crypto Hack Losses",
+          "url": "https://cointelegraph.com/news/ethereum-solana-led-crypto-hack-losses-h1-2026-blockaid",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-solana-vs-ethereum-a-comprehensive-blockchain-comparison.jpg"
+        },
+        {
+          "id": "art_2559554",
+          "title": "AmericanFortress proposes quantum-safe crypto wallet protection without fund migration34m",
+          "url": "https://cointelegraph.com/news/americanfortress-proposes-quantum-safe-crypto-wallet-protection-without-fund-migration",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2534474",
+          "title": "Apple Faces Lawsuit Over Alleged Bitcoin Wallet Scam",
+          "url": "https://cointelegraph.com/news/apple-lawsuit-alleged-1-8-million-loss-fake-bitcoin-wallet",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ledger-and-monero2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_2543594",
+          "title": "PayPal expands stablecoin push as crypto assets factor into Q2 results6m",
+          "url": "https://cointelegraph.com/news/paypal-expands-stablecoin-push-crypto-assets-q2-results",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_2540174",
+          "title": "IMF warns Brazil’s stablecoin activity outpaces traditional capital flows38m, IMF warns Brazil’s stablecoin activity outpaces traditional capital flowsThe IMF said Brazil’s stablecoin market has expanded rapidly since 2017, with cross-border crypto flows growing faster than traditional capital flows.",
+          "url": "https://cointelegraph.com/news/imf-brazil-stablecoin-activity-outpaces-traditional-capital-flows",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_2577806",
+          "title": "Tether signs tokenization deal with Nairobi Securities Exchange28m, Tether signs tokenization deal with Nairobi Securities ExchangeThe agreement covers tokenized securities, blockchain-based market infrastructure and the potential use of USDT as a settlement layer.",
+          "url": "https://cointelegraph.com/news/tether-signs-tokenization-deal-with-nairobi-securities-exchange",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/bank-building-hall-entrance-revolving-doorsthreetether.jpg"
+        },
+        {
+          "id": "art_2570960",
+          "title": "European Institutions Launch RL1 Blockchain Network",
+          "url": "https://cointelegraph.com/news/european-financial-institutions-launch-rl1-blockchain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report-eu.png"
+        },
+        {
+          "id": "art_2553854",
+          "title": "Kraken opens Jersey Mike’s IPO to retail investors through tokenized shares and direct allocations24m",
+          "url": "https://cointelegraph.com/news/kraken-opens-jersey-mikes-ipo-to-retail-investors-through-tokenized-shares-and-direct-allocations",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-an-ipo-a-beginners-guide-on-how-crypto-firms-can-go-public.png"
+        },
+        {
+          "id": "art_2546765",
+          "title": "rToken Institutional Cross-asset Collateral Playbook",
+          "url": "https://www.theblock.co/post/409751/rtoken-institutional-cross-asset-collateral-playbook",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/07/Screenshot-2026-07-27-at-12.51.04%E2%80%AFPM.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Morgan Stanley is now selling staked Ether and Solana yield to its clients. Not exposure. Yield. The product structure matters because it captures the mechanism native to the protocol and wraps it in TradFi fee architecture.\n\nWe've watched this compression coming. Standalone staking providers built businesses on a spread that disappears when every major wealth manager offers the same return with FDIC-adjacent branding. The repricing isn't theoretical. It's in the product filing.\n\nSouth Korea's tax repeal and stablecoin law land the same week. That's not coincidence. Policymakers there are choosing market development over revenue extraction, which is the sequence we watch for in markets that subsequently see accelerated institutional allocation. The Nairobi Securities Exchange deal with Tether tests something adjacent: whether USDT can substitute for correspondent banking in frontier equity settlement. If it functions, replication follows fast.\n\nThe $1 billion in H1 hacks is the counterweight. Ethereum and Solana, the same chains in Morgan Stanley's ETPs, accounted for two-thirds of losses. We're underwriting infrastructure now, but the infrastructure keeps failing.\n\nThe test: whether the next $170M rollup round includes security failure in its base-case cost of capital, or still treats it as an externality someone else will price."
+}
