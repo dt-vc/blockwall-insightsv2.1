@@ -1,0 +1,528 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-09",
+  "date_display": "August 9, 2026",
+  "generated_at": "2026-08-09T05:00:17.859Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Bitcoin ETFs absorb $1.1B as Coldcard hack exposes hardware wallet security assumptions",
+    "tldr": "Institutional flows into spot Bitcoin ETFs hit their highest weekly level since April even as a $130M+ Coldcard exploit reveals critical vulnerabilities in self-custody hardware. The tension between regulated on-ramps and self-custody security is now a live pricing factor."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the ETF-custody divergence is becoming a core underwriting variable for our positions.",
+  "market_snapshot": {
+    "as_of": "2026-08-09T05:00:17.859Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,742",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,912",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.30T",
+        "change_24h": "-0.1%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.6B",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 9,
+    "bearish": 13,
+    "neutral": 6,
+    "deduped": 14
+  },
+  "top_signals": [
+    {
+      "id": "art_3079403",
+      "title": "Weekly Research Brief: Coldcard Hacked for $130m+; BTC Price Resilient",
+      "url": "https://www.galaxy.com/insights/research/coldcard-hardware-wallet-hack-bitcoin-resilience-ethereum-solana-inflation-proposals",
+      "source": "Galaxy — Network",
+      "source_domain": "galaxy.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A major security breach involving Coldcard has resulted in a loss of over $130 million. Despite the exploit, the price of Bitcoin has remained resilient, while Ethereum and Solana are reviewing their inflation schedules.",
+      "significance": 9,
+      "primary_source": "https://www.galaxy.com/insights/research/coldcard-hardware-wallet-hack-bitcoin-resilience-ethereum-solana-inflation-proposals",
+      "themes": [
+        "security",
+        "hardware-wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7gcutRFHGRiQN0NDpBf9YK/689ba5885f6db412495effe5aac4198a/Top_Stories_P3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "The Coldcard exploit reframes hardware wallet risk from theoretical to material at $130M+, forcing investors to price the security premium of regulated custody against self-custory assumptions that are proving porous under determined attack."
+    },
+    {
+      "id": "art_3124143",
+      "title": "Landmark crypto bill stalls in US Senate despite $225mn spending push",
+      "url": "https://www.ft.com/content/352a15ac-53c4-46eb-b75e-957f0388dc79",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "A major cryptocurrency bill has stalled in the US Senate despite a significant $225 million lobbying effort. Lawmakers remain divided over the legislation, hindering the passage of a top priority for the crypto industry.",
+      "significance": 8,
+      "primary_source": "https://www.ft.com/content/352a15ac-53c4-46eb-b75e-957f0388dc79",
+      "themes": [
+        "regulation",
+        "legislative"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F17cf3bd6-6f28-4620-b151-6ee0a60d0b7c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1",
+      "why_it_matters": "The $225M lobbying failure signals that regulatory clarity remains a binary, not a continuum, and that capital deployed to policy does not linearly convert to legislative outcomes—a critical input for any portfolio with US market-structure exposure."
+    },
+    {
+      "id": "art_3133836",
+      "title": "US spot Bitcoin ETFs post best week since April with $1B inflows39m, US spot Bitcoin ETFs post best week since April with $1B inflowsThe spot Bitcoin exchange-traded funds registered their third-strongest showing since October as institutional demand showed signs of renewed momentum.",
+      "url": "https://cointelegraph.com/news/us-bitcoin-etfs-best-weekly-inflows-april-coldcard-hack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "US spot Bitcoin ETFs experienced their strongest weekly performance since April, recording $1 billion in inflows. This surge indicates a renewal of institutional demand for Bitcoin through regulated investment vehicles.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/us-bitcoin-etfs-best-weekly-inflows-april-coldcard-hack",
+      "themes": [
+        "bitcoin",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-part-2-where-oh-where-has-btc-volatility-gone-etf.jpg",
+      "why_it_matters": "The $1B weekly inflow into spot Bitcoin ETFs demonstrates that institutional demand is repricing through regulated vehicles even during security shocks, suggesting these products have achieved sticky allocation status independent of on-chain sentiment."
+    },
+    {
+      "id": "art_3130362",
+      "title": "US Senate to vote on advancing CLARITY Act on Sept. 15 after Thune files cloture",
+      "url": "https://cointelegraph.com/news/us-senate-clarity-act-september-vote-thune-cloture",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The US Senate is scheduled to vote on advancing the CLARITY Act on September 15 following a cloture filing by Senator Thune. The act aims to establish clearer market-structure rules and ethics provisions for the cryptocurrency industry.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/us-senate-clarity-act-september-vote-thune-cloture",
+      "themes": [
+        "regulation",
+        "legislative"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-regulation-is-pushing-its-way-to-clarity-act-2.jpg",
+      "why_it_matters": "The September 15 cloture vote on the CLARITY Act creates a near-term catalyst with defined probability, giving traders and allocators a specific date to anchor position sizing around US regulatory trajectory."
+    },
+    {
+      "id": "art_3130112",
+      "title": "Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume",
+      "url": "https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Bitcoin and Ethereum ETFs experienced their strongest inflow week since April, totaling $1.1 billion. Analyst Eric Balchunas suggests this trend may be linked to reactions following a Coldcard wallet exploit.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204",
+      "themes": [
+        "investment",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230726_BitcoinVEthereum_News.jpg",
+      "why_it_matters": "Balchunas's linkage of ETF inflows to the Coldcard exploit implies institutional capital is treating regulated custody as a substitute good for self-custody hardware, a demand shift we need to model in custody-adjacent valuations."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_3114162",
+      "title": "Domestic stablecoins could boost demand for dollar-backed tokens: IMF32m, Domestic stablecoins could boost demand for dollar-backed tokens: IMFIMF first deputy managing director Dan Katz says users may favor digital dollars for their liquidity, network effects and cross-border acceptance.",
+      "url": "https://cointelegraph.com/news/imf-domestic-stablecoins-dollar-token-demand",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "The IMF suggests that the rise of domestic stablecoins may actually increase the demand for dollar-backed digital assets. First Deputy Managing Director Dan Katz highlighted that liquidity and network effects make the digital dollar highly attractive for cross-border use.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-imf-and-blockchain-cbdc.png"
+    },
+    {
+      "id": "art_3108377",
+      "title": "US court backs Bybit’s bid to trace funds from $1.5B North Korea hack 7m",
+      "url": "https://cointelegraph.com/news/bybit-us-court-trace-funds-north-korea-hack",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "A US court has granted Bybit's request to trace and recover funds linked to a $1.5 billion hack attributed to North Korea. This legal victory allows the exchange to pursue stolen assets across the blockchain.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-aftermath-of-bybit-ftx-consequences-of-cryptos-ongoing-regulatory-process.png"
+    },
+    {
+      "id": "art_3078051",
+      "title": "Sui to add post-quantum signature schemes for quantum-safe accounts",
+      "url": "https://www.theblock.co/news/web3/2026-08-06-sui-post-quantum-signature-scheme-410968",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Sui is implementing post-quantum signature schemes to ensure accounts are quantum-safe. The update is designed to be seamless, requiring no new seed phrases or address migrations from users.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/10/sui-news.png"
+    },
+    {
+      "id": "art_3145416",
+      "title": "Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%34m, Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%The deployment milestone tests whether enforcing nodes can sustain the change amid limited miner signaling and discussion of a hard-fork fallback.",
+      "url": "https://cointelegraph.com/news/bitcoin-bip-110-mandatory-signaling",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "neutral",
+      "summary": "Bitcoin's BIP-110 has entered the mandatory signaling phase despite having miner support below 3%. The process is currently testing whether enforcing nodes can sustain the change or if a hard-fork fallback will be necessary.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/the-bitcoin-and-bitcoin-cash-wars.png"
+    },
+    {
+      "id": "art_3089865",
+      "title": "US Treasury’s OFAC sanctions 2 Iran-linked crypto exchanges21m, US Treasury’s OFAC sanctions 2 Iran-linked crypto exchangesThe US government sanctioned an individual and two crypto exchanges it said facilitated money laundering for a combined $5 million in digital assets linked to Iran.",
+      "url": "https://cointelegraph.com/news/us-treasury-sanctions-iran-crypto-exchanges",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US Treasury's OFAC has sanctioned two crypto exchanges and one individual for facilitating money laundering. The actions are linked to the movement of approximately $5 million in digital assets associated with Iran.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-users-in-iran-sanctions2.jpg"
+    },
+    {
+      "id": "art_3088458",
+      "title": "SharpLink CEO warns EIP-8363 could kill ETH’s biggest advantage over Bitcoin",
+      "url": "https://www.theblock.co/news/defi/2026-08-07-sharplink-ceo-warns-eip-8363-could-kill-eths-biggest-advantage-over-bitcoin-411186",
+      "source": "The Block",
+      "category": "Ethereum",
+      "sentiment": "bearish",
+      "summary": "The CEO of SharpLink has expressed concerns regarding the EIP-8363 proposal, arguing it could undermine Ethereum's competitive advantage over Bitcoin. The proposal suggests a 'Tapered Issuance Burn' to limit the amount of staked ETH by increasing the burn of consensus rewards.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/05/20260512_Sharplink_News_2.jpg"
+    },
+    {
+      "id": "art_3087301",
+      "title": "CFTC cautions prediction markets over using American-style 'moneyline' betting odds: Bloomberg",
+      "url": "https://www.theblock.co/news/regulation/2026-08-07-cftc-cautions-prediction-markets-american-style-moneyline-betting-odds-bloomberg-411178",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CFTC has issued warnings to prediction market platforms regarding the use of American-style 'moneyline' betting odds. This move indicates increased regulatory scrutiny over how these platforms present odds to users.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200630_CFTC-Daily.jpg"
+    },
+    {
+      "id": "art_3084080",
+      "title": "Circle expands USDC to OKX ecosystem with X Layer launch",
+      "url": "https://cointelegraph.com/news/circle-native-usdc-okx-x-layer-cctp",
+      "source": "Cointelegraph",
+      "category": "Layer2",
+      "sentiment": "bullish",
+      "summary": "Circle has integrated native USDC and its Cross-Chain Transfer Protocol (CCTP) into OKX's X Layer. This expansion facilitates seamless cross-chain transfers and enhances DeFi activity on the Ethereum layer-2 network.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/token-for-ads-polymarket-usdc.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3079406",
+      "title": "BTC Price Shrugs Off Coldcard Debacle, Strategy Sale, CLARITY Struggles",
+      "url": "https://www.galaxy.com/insights/research/btc-price-shrugs-off-coldcard-debacle-strategy-sale-clarity-struggles",
+      "source": "Galaxy — Network",
+      "note": "Galaxy's synthesis of how Bitcoin price action decoupled from Coldcard, Strategy, and CLARITY noise offers a useful framework for isolating which signals actually drive institutional flows versus which merely generate headlines.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2KHfI0Brl0kfnFPiX4xwnR/ca95b7367ed7cb438d2cde964c824ee4/Bitcoin-9_Yellow-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3056362",
+      "title": "Meet the 30+ venture scouts A16z has hunting for deals across Europe",
+      "url": "https://sifted.eu/articles/a16z-scouts-europe-2026/",
+      "source": "Sifted",
+      "note": "A16z's European scout network expansion is worth tracking as a competitive intelligence input on where tier-one capital is sourcing early-stage deal flow, particularly for founders positioning pre-seed rounds ahead of these filters.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2026/08/06145938/1280px-Marc_Andreessen-9.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3133836",
+          "title": "US spot Bitcoin ETFs post best week since April with $1B inflows39m, US spot Bitcoin ETFs post best week since April with $1B inflowsThe spot Bitcoin exchange-traded funds registered their third-strongest showing since October as institutional demand showed signs of renewed momentum.",
+          "url": "https://cointelegraph.com/news/us-bitcoin-etfs-best-weekly-inflows-april-coldcard-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-part-2-where-oh-where-has-btc-volatility-gone-etf.jpg"
+        },
+        {
+          "id": "art_3145416",
+          "title": "Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%34m, Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%The deployment milestone tests whether enforcing nodes can sustain the change amid limited miner signaling and discussion of a hard-fork fallback.",
+          "url": "https://cointelegraph.com/news/bitcoin-bip-110-mandatory-signaling",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/the-bitcoin-and-bitcoin-cash-wars.png"
+        },
+        {
+          "id": "art_3146324",
+          "title": "Bitcoin’s BIP-110 supporters split onto minority chain as main network pulls ahead",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-08-bitcoins-bip-110-supporters-split-onto-minority-chain-as-main-network-pulls-ahead-411213",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/09/20240904_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_3079406",
+          "title": "BTC Price Shrugs Off Coldcard Debacle, Strategy Sale, CLARITY Struggles",
+          "url": "https://www.galaxy.com/insights/research/btc-price-shrugs-off-coldcard-debacle-strategy-sale-clarity-struggles",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2KHfI0Brl0kfnFPiX4xwnR/ca95b7367ed7cb438d2cde964c824ee4/Bitcoin-9_Yellow-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3072260",
+          "title": "Bernstein favors CleanSpark on AI execution as MARA awaits first commercial contract",
+          "url": "https://www.theblock.co/post/411136/bernstein-favors-cleanspark-on-ai-execution-as-mara-awaits-first-commercial-contract",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3069039",
+          "title": "CleanSpark misses Wall Street revenue estimates as shares sink",
+          "url": "https://cointelegraph.com/news/cleanspark-wall-street-revenue-estimates-shares-sink",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-cleanspark-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3088458",
+          "title": "SharpLink CEO warns EIP-8363 could kill ETH’s biggest advantage over Bitcoin",
+          "url": "https://www.theblock.co/news/defi/2026-08-07-sharplink-ceo-warns-eip-8363-could-kill-eths-biggest-advantage-over-bitcoin-411186",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/05/20260512_Sharplink_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3078051",
+          "title": "Sui to add post-quantum signature schemes for quantum-safe accounts",
+          "url": "https://www.theblock.co/news/web3/2026-08-06-sui-post-quantum-signature-scheme-410968",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/10/sui-news.png"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3130112",
+          "title": "Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume",
+          "url": "https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230726_BitcoinVEthereum_News.jpg"
+        },
+        {
+          "id": "art_3056062",
+          "title": "Cathie Wood's Ark Invest buys $21 million in Block as stock drops 6%",
+          "url": "https://www.theblock.co/post/411075/cathie-wood-ark-invest-buys-21-million-block",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/01/20230118_ArkInvest.jpg"
+        },
+        {
+          "id": "art_3056362",
+          "title": "Meet the 30+ venture scouts A16z has hunting for deals across Europe",
+          "url": "https://sifted.eu/articles/a16z-scouts-europe-2026/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2026/08/06145938/1280px-Marc_Andreessen-9.jpg"
+        },
+        {
+          "id": "art_3128576",
+          "title": "Crypto Fundraisings on Week 02 ",
+          "url": "https://crypto-fundraising.info/blog/dates-02-08-aug-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/02-08-Aug-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_3084080",
+          "title": "Circle expands USDC to OKX ecosystem with X Layer launch",
+          "url": "https://cointelegraph.com/news/circle-native-usdc-okx-x-layer-cctp",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/token-for-ads-polymarket-usdc.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3091929",
+          "title": "Trump Media and Crypto.com end partnerships as companies shifts priorities",
+          "url": "https://www.theblock.co/news/deals/2026-08-07-trump-media-crypto-com-end-partnerships-as-companies-shifts-priorities-411198",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250513_Donald_Trump-1200x675-1.jpg"
+        },
+        {
+          "id": "art_3072510",
+          "title": "CEX perpetual futures volume falls to $4T, lowest since late 2023",
+          "url": "https://cointelegraph.com/news/cex-futures-volume-falls-4t-july-lowest-level-2023",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-market-trading-trader-breaking-news.jpg"
+        },
+        {
+          "id": "art_3078865",
+          "title": "DOGE seems to have hallucinated government savings, like $1.7 billion from a contract it never canceled",
+          "url": "https://fortune.com/2026/08/07/doge-government-savings-wall-of-receipts-audit/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/AP26210651212756_785b8e.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3124143",
+          "title": "Landmark crypto bill stalls in US Senate despite $225mn spending push",
+          "url": "https://www.ft.com/content/352a15ac-53c4-46eb-b75e-957f0388dc79",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F17cf3bd6-6f28-4620-b151-6ee0a60d0b7c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3130362",
+          "title": "US Senate to vote on advancing CLARITY Act on Sept. 15 after Thune files cloture",
+          "url": "https://cointelegraph.com/news/us-senate-clarity-act-september-vote-thune-cloture",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-regulation-is-pushing-its-way-to-clarity-act-2.jpg"
+        },
+        {
+          "id": "art_3089865",
+          "title": "US Treasury’s OFAC sanctions 2 Iran-linked crypto exchanges21m, US Treasury’s OFAC sanctions 2 Iran-linked crypto exchangesThe US government sanctioned an individual and two crypto exchanges it said facilitated money laundering for a combined $5 million in digital assets linked to Iran.",
+          "url": "https://cointelegraph.com/news/us-treasury-sanctions-iran-crypto-exchanges",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-users-in-iran-sanctions2.jpg"
+        },
+        {
+          "id": "art_3087301",
+          "title": "CFTC cautions prediction markets over using American-style 'moneyline' betting odds: Bloomberg",
+          "url": "https://www.theblock.co/news/regulation/2026-08-07-cftc-cautions-prediction-markets-american-style-moneyline-betting-odds-bloomberg-411178",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200630_CFTC-Daily.jpg"
+        },
+        {
+          "id": "art_3073667",
+          "title": "Russia cracks down on 9 crypto exchanges in Moscow City",
+          "url": "https://cointelegraph.com/news/russia-shuts-down-crypto-exchanges-moscow-city",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-russias-law-on-crypto-whats-the-latest.jpg"
+        },
+        {
+          "id": "art_3055155",
+          "title": "Bitget explores licensed crypto presence in Bhutan25m",
+          "url": "https://cointelegraph.com/news/bitget-explores-licensed-crypto-presence-in-bhutan",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3067632",
+          "title": "'Applesauce': Michigan judge denies Coinbase bid to block state enforcement of sports event contracts",
+          "url": "https://www.theblock.co/post/411128/michigan-judge-denies-coinbase-bid-prediction-markets",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221006_Coinbase-1200x675.jpg"
+        },
+        {
+          "id": "art_3082923",
+          "title": "Reform UK chair calls for probe into SBF-linked donation: Report",
+          "url": "https://cointelegraph.com/news/reform-uk-probe-ftx-sam-bankman-fried-donation",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/sam-bankman-fried-portrait-uk.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3079403",
+          "title": "Weekly Research Brief: Coldcard Hacked for $130m+; BTC Price Resilient",
+          "url": "https://www.galaxy.com/insights/research/coldcard-hardware-wallet-hack-bitcoin-resilience-ethereum-solana-inflation-proposals",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7gcutRFHGRiQN0NDpBf9YK/689ba5885f6db412495effe5aac4198a/Top_Stories_P3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3108377",
+          "title": "US court backs Bybit’s bid to trace funds from $1.5B North Korea hack 7m",
+          "url": "https://cointelegraph.com/news/bybit-us-court-trace-funds-north-korea-hack",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-aftermath-of-bybit-ftx-consequences-of-cryptos-ongoing-regulatory-process.png"
+        },
+        {
+          "id": "art_3079202",
+          "title": "Coldcard bitcoin exploit exposes crypto's 'original sin' of private keys, Blockaid CEO says",
+          "url": "https://www.theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240508_Security_News_2-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3114162",
+          "title": "Domestic stablecoins could boost demand for dollar-backed tokens: IMF32m, Domestic stablecoins could boost demand for dollar-backed tokens: IMFIMF first deputy managing director Dan Katz says users may favor digital dollars for their liquidity, network effects and cross-border acceptance.",
+          "url": "https://cointelegraph.com/news/imf-domestic-stablecoins-dollar-token-demand",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-imf-and-blockchain-cbdc.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Hardware wallets have spent a decade marketing themselves as the final settlement layer of personal sovereignty. This week, Coldcard got drained for $130 million plus, and Bitcoin ETFs took in $1.1 billion in the same breath.\n\nWe are not reading this as coincidence. Eric Balchunas at Bloomberg made the connection explicit: the inflows came as the exploit surfaced. Regulated custody is being priced as a feature, not a compromise. The self-custody premium—always more ideological than actuarial for most allocators—is under pressure.\n\nOur underwriting question is sharper now. If spot ETFs absorb demand that would have flowed to hardware wallets two years ago, what happens to the custody stack's economics? Not the hardware margins. The entire adjacent infrastructure: insurance, recovery services, multisig coordination. We have been modeling that layer as a growth vertical. It may be a shrinking one.\n\nThe CLARITY Act vote on September 15 matters here because it could accelerate the trend or stall it. A clear market-structure framework reduces the regulatory discount on ETFs. A stall keeps the uncertainty premium in self-custory's favor. We are not betting on the vote. We are repricing our exposure to the custody bifurcation either way.\n\nOne test: watch whether the next $100M exploit triggers outflows from ETFs or simply rotates more capital into them. That tells us if this is a secular shift or a temporary flight."
+}
