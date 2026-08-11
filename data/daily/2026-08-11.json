@@ -1,0 +1,593 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-11",
+  "date_display": "August 11, 2026",
+  "generated_at": "2026-08-11T05:00:17.868Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Riot's $9.1B Anthropic pivot tests whether Bitcoin miners can reprice as AI infrastructure",
+    "tldr": "Riot Platforms' reported $9.1 billion AI deal with Anthropic signals a structural repricing of stranded miner capacity toward compute markets, even as hardware wallet security and Trump-adjacent token compliance face separate stress tests."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the market is forced to underwrite the same Bitcoin infrastructure on two completely different cash flow curves.",
+  "market_snapshot": {
+    "as_of": "2026-08-11T05:00:17.868Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,981",
+        "change_24h": "-1.5%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,875",
+        "change_24h": "-2.2%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": "-1.2%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.2B",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 9,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 19,
+    "bearish": 11,
+    "neutral": 2,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_3227044",
+      "title": "Why the latest Bitcoin hack hurt more than most",
+      "url": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A major security breach has resulted in the theft of $100 million from Coldcard hardware wallet users. The incident is particularly significant as it targeted users who followed strict security protocols.",
+      "significance": 9,
+      "primary_source": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+      "themes": [
+        "security",
+        "hardware-wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/03/Bitcoin_disappearing_3.jpg?resize=1200,600",
+      "why_it_matters": ""
+    },
+    {
+      "id": "art_3262139",
+      "title": "Riot Platforms stock jumps 25% after-hours on $9.1 billion AI deal reportedly with Anthropic",
+      "url": "https://www.theblock.co/news/business/2026-08-10-riot-platforms-ai-deal-anthropic-411358",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Riot Platforms' stock surged 25% following reports of a $9.1 billion AI deal with Anthropic. The contract includes extension options that could potentially increase the total value to $16.1 billion.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-08-10-riot-platforms-ai-deal-anthropic-411358",
+      "themes": [
+        "bitcoin",
+        "mining"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/09/20220907_Riot.jpg",
+      "why_it_matters": ""
+    },
+    {
+      "id": "art_3246163",
+      "title": "UK money laundering suspect bought $100M in Trump crypto business: NYT13m, UK money laundering suspect bought $100M in Trump crypto business: NYTAn individual behind the Aqua 1 entity that purchased $100 million worth of World Liberty Financial tokens in 2025 is reportedly a businessman with ties to the UK and UAE.",
+      "url": "https://cointelegraph.com/news/world-liberty-financial-uk-money-laundering-donald-trump",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "A businessman with ties to the UK and UAE, allegedly linked to money laundering, is reported to have purchased $100 million in tokens from Donald Trump's World Liberty Financial via the Aqua 1 entity. The news, reported by the NYT, raises significant regulatory and compliance concerns for the project.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/world-liberty-financial-uk-money-laundering-donald-trump",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparing-money-laundering-with-cryptocurrencies-and-fiat2.jpg",
+      "why_it_matters": ""
+    },
+    {
+      "id": "art_3243846",
+      "title": "Coinsbuy offers $100K reward after Sunday security breach",
+      "url": "https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Coinsbuy experienced a security breach resulting in unauthorized withdrawals totaling approximately $7.9 million. The platform has committed to covering all client losses and is offering a $100,000 reward for information leading to the recovery of funds.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-got-crypto-losses-wallet-shutdown.png",
+      "why_it_matters": ""
+    },
+    {
+      "id": "art_3237806",
+      "title": "Vitalik Buterin puts privacy and quantum resistance front and center in Ethereum’s latest roadmap",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Vitalik Buterin has outlined a new roadmap for Ethereum focusing on privacy and quantum resistance. These upgrades are intended to form the protocol's third major iteration, known as 'Lean Ethereum'.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298",
+      "themes": [
+        "ethereum",
+        "infrastructure"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg",
+      "why_it_matters": ""
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3240272",
+      "company": "USHP",
+      "amount": "$50M",
+      "round": "Pre-launch institutional funding round",
+      "investors": [
+        "Galaxy"
+      ],
+      "category": "Tokenization",
+      "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+      "summary": "Galaxy has committed $50 million to USHP through a pre-launch institutional funding round. USHP is developing the first digital asset that references a U.S. home price index, bringing real estate pricing data onchain."
+    },
+    {
+      "id": "art_3245534",
+      "company": "Memebook",
+      "amount": "$1M",
+      "round": "Seed",
+      "investors": [
+        "TOF Ventures"
+      ],
+      "category": "Investment",
+      "url": "https://crypto-fundraising.info/blog/memebook-raised-1m-in-a-seed-funding-round/",
+      "summary": "Memebook, a social application built on the Solana blockchain, has successfully raised $1 million in a Seed funding round. The investment was led by TOF Ventures."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3238056",
+      "title": "BlackRock launches two Canada ETFs, with one allocating 3% to Bitcoin15m",
+      "url": "https://cointelegraph.com/news/blackrock-launches-two-canada-etfs-with-one-allocating-3-to-bitcoin",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "BlackRock has launched two new ETFs in Canada, one of which includes a 3% allocation to Bitcoin. This move further integrates digital assets into traditional financial products offered by the world's largest asset manager.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-canada-crypto-regultion-bitcoin-etfs-strict-licensing-and-a-digital-dollar.png"
+    },
+    {
+      "id": "art_3220686",
+      "title": "UK regulators to prepare tokenized gold framework: Report",
+      "url": "https://cointelegraph.com/news/uk-regulators-tokenized-gold-framework-report",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The UK's Financial Conduct Authority (FCA) is reportedly developing a regulatory framework for tokenized gold. This initiative aims to enable the use of digital gold as collateral within wholesale financial markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-uk-and-crypto-fca.jpg"
+    },
+    {
+      "id": "art_3219278",
+      "title": "Robinhood brings crypto trading to main UK app through Bitstamp",
+      "url": "https://www.theblock.co/news/business/2026-08-10-robinhood-uk-crypto-trading-bitstamp-411140",
+      "source": "The Block",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Robinhood has integrated cryptocurrency trading into its primary UK application via a partnership with Bitstamp. This move allows UK users to trade digital assets alongside traditional financial instruments like stocks and options.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News_3.jpg"
+    },
+    {
+      "id": "art_3214464",
+      "title": "UK regulator prepares framework for tokenised gold",
+      "url": "https://www.ft.com/content/9973f186-5834-4b66-8faa-e8b2e8711466",
+      "source": "FT Crypto",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The UK's Financial Conduct Authority (FCA) is developing a regulatory framework to support the tokenization of gold. This move aims to modernize financial markets and maintain London's global leadership in bullion trading.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F386bd377-c59a-46ed-857b-de342dc2cbc4.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    },
+    {
+      "id": "art_3247322",
+      "title": "TRON USDT supply hits $87.9B as transfers reach $2.1T in Q2: Messari37m",
+      "url": "https://cointelegraph.com/news/tron-usdt-supply-hits-879b-as-transfers-reach-21t-in-q2-messari",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "TRON's USDT supply has reached $87.9 billion, reflecting strong demand for the stablecoin on the network. Additionally, the network processed $2.1 trillion in transfers during the second quarter.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/tron.jpg"
+    },
+    {
+      "id": "art_3245913",
+      "title": "BlackRock says bitcoin sentiment is turning as decoupling from stocks takes hold",
+      "url": "https://www.theblock.co/news/markets/2026-08-10-blackrock-says-bitcoin-sentiment-turning-decoupling-stocks-takes-hold-411333",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "BlackRock observes that Bitcoin is decoupling from traditional stock markets, which they view as a positive development. This trend supports the investment thesis of Bitcoin serving as a portfolio diversifier.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+    },
+    {
+      "id": "art_3240372",
+      "title": "‘Disappointing’ — crypto advocates react to delay in CLARITY vote17m, ‘Disappointing’ — crypto advocates react to delay in CLARITY voteFollowing a procedural delay in the US Senate, lawmakers are expected to address a major crypto market structure bill after they return from a month-long recess, which met with industry criticism.",
+      "url": "https://cointelegraph.com/news/clarity-act-vote-disappointing-crypto-advocates-delay",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Crypto advocates have expressed disappointment following a procedural delay in the US Senate regarding the CLARITY crypto market structure bill. Lawmakers are now expected to address the legislation after a month-long recess.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/sams-in-a-labirynth-clarity-act-us-1.jpg"
+    },
+    {
+      "id": "art_3240939",
+      "title": "Strategy dumps yet more Bitcoin, latest $109 million sell-off comes amid a seven-week buying hiatus",
+      "url": "https://fortune.com/2026/08/10/strategy-bitcoin-109-million-sell-off-seven-week-buying-hiatus/",
+      "source": "Fortune Crypto",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "MicroStrategy has sold an additional $109 million worth of Bitcoin, marking its fourth sale since June. This move is part of a broader strategy to increase cash reserves and provide reassurance to investors during a period of decreased buying activity.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2274862431-e1786377369856.jpg?resize=1200,600"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3240272",
+      "title": "Committing $50M to USHP: The Product Bringing U.S. Home Prices Onchain",
+      "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's $50 million USHP commitment is worth reading for the structural mechanics of bringing real estate index data onchain and how institutional pre-launch rounds are being priced before tokenized reference assets have live oracle feeds.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3GlVUqvFKdKCzP5tSunZ07/0ee92f39cf5dbcda840fea5711cc0a56/General-Cube-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3238221",
+      "title": "State of TRON Q2 2026",
+      "url": "https://messari.io/report/state-of-tron-q2-2026",
+      "source": "Messari — Research",
+      "note": "Messari's TRON Q2 analysis merits attention for whether revenue concentration in USDT issuance can sustain network value as competing stablecoin infrastructure expands across Ethereum L2s and Solana.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/a04ab4d30e913ffcec2d4933dc01b2f8a03c598f-6400x3600.png"
+    },
+    {
+      "id": "art_3244904",
+      "title": "Solana Q2 2026 Update: Building for the Tokenized Economy",
+      "url": "https://www.galaxy.com/insights/research/solana-q2-2026-report-tokenized-economy-dex-rwa-stablecoins",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's Solana Q2 update should be read for its assessment of whether the chain's tokenized economy buildout is translating into sticky fee generation or remains subsidized by foundation grants and validator economics.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7IJQQ7RcsgquXhCtIXavfn/efd37c41d0a2b0a971ba95e27c6b4ffa/Solana-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3262139",
+          "title": "Riot Platforms stock jumps 25% after-hours on $9.1 billion AI deal reportedly with Anthropic",
+          "url": "https://www.theblock.co/news/business/2026-08-10-riot-platforms-ai-deal-anthropic-411358",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/09/20220907_Riot.jpg"
+        },
+        {
+          "id": "art_3245913",
+          "title": "BlackRock says bitcoin sentiment is turning as decoupling from stocks takes hold",
+          "url": "https://www.theblock.co/news/markets/2026-08-10-blackrock-says-bitcoin-sentiment-turning-decoupling-stocks-takes-hold-411333",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+        },
+        {
+          "id": "art_3240939",
+          "title": "Strategy dumps yet more Bitcoin, latest $109 million sell-off comes amid a seven-week buying hiatus",
+          "url": "https://fortune.com/2026/08/10/strategy-bitcoin-109-million-sell-off-seven-week-buying-hiatus/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2274862431-e1786377369856.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3235490",
+          "title": "Adam Back-backed H100 more than triples bitcoin holdings to 3,506 BTC in acquisition deal",
+          "url": "https://www.theblock.co/news/business/2026-08-10-adam-back-backed-h100-more-triples-bitcoin-holdings-3506-btc-acquisition-411270",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_4-1200x675.jpg"
+        },
+        {
+          "id": "art_3231108",
+          "title": "Bitdeer increased Bitcoin mining output by nearly fivefold in Q221m, Bitdeer increased Bitcoin mining output by nearly fivefold in Q2Bitdeer mined 2,694 BTC in Q2, but ended the quarter holding just 150 BTC after liquidating its treasury earlier this year.",
+          "url": "https://cointelegraph.com/news/bitdeer-bitcoin-mining-output-fivefold-q2",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3228542",
+          "title": "Michael Saylor's Strategy sells another 1,690 BTC as USD reserve hits $4.65 billion",
+          "url": "https://www.theblock.co/news/business/2026-08-10-michael-saylor-strategy-bitcoin-treasury-411237",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250304_Strategy_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3225318",
+          "title": "H100 becomes Europe’s No. 2 Bitcoin treasury after 2,455 BTC deal32m, H100 becomes Europe’s No. 2 Bitcoin treasury after 2,455 BTC dealSweden’s H100 more than tripled its Bitcoin holdings to 3,506 BTC after completing an acquisition involving 2,455 BTC.",
+          "url": "https://cointelegraph.com/news/sweden-h100-bitcoin-treasury-btc-deal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3236648",
+          "title": "Bitcoin miner Bitdeer's shares sink 15% despite revenue growth, progress on AI pivot",
+          "url": "https://www.theblock.co/news/business/2026-08-10-bitcoin-miner-bitdeer-shares-sink-despite-revenue-growth-progress-ai-pivot-411276",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3217212",
+          "title": "Bitcoin Red Team founder turns to Chinese AI: ‘It absolutely guts me’",
+          "url": "https://cointelegraph.com/news/bitcoin-red-team-founder-turns-to-chinese-ai",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3237806",
+          "title": "Vitalik Buterin puts privacy and quantum resistance front and center in Ethereum’s latest roadmap",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg"
+        },
+        {
+          "id": "art_3233175",
+          "title": "Bitmine adds 7,391 ether in a week, bringing total Ethereum holdings to 5.81 million ETH",
+          "url": "https://www.theblock.co/news/business/2026-08-10-bitmine-adds-7391-eth-411265",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_5-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3238221",
+          "title": "State of TRON Q2 2026",
+          "url": "https://messari.io/report/state-of-tron-q2-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/a04ab4d30e913ffcec2d4933dc01b2f8a03c598f-6400x3600.png"
+        },
+        {
+          "id": "art_3244904",
+          "title": "Solana Q2 2026 Update: Building for the Tokenized Economy",
+          "url": "https://www.galaxy.com/insights/research/solana-q2-2026-report-tokenized-economy-dex-rwa-stablecoins",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7IJQQ7RcsgquXhCtIXavfn/efd37c41d0a2b0a971ba95e27c6b4ffa/Solana-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3242538",
+          "title": "Centaur 2.0: Permissions, Context, and MCP",
+          "url": "https://www.paradigm.xyz/writing/centaur-2-0-permissions-context-and-mcp",
+          "source": "Paradigm",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/2WpwqOyFAU6LKjbbeOvror/cc17cb4117a363e04470a86429891398/Centaur_2.0.png?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3238056",
+          "title": "BlackRock launches two Canada ETFs, with one allocating 3% to Bitcoin15m",
+          "url": "https://cointelegraph.com/news/blackrock-launches-two-canada-etfs-with-one-allocating-3-to-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-canada-crypto-regultion-bitcoin-etfs-strict-licensing-and-a-digital-dollar.png"
+        },
+        {
+          "id": "art_3245534",
+          "title": "Memebook raised $1M in a Seed funding round",
+          "url": "https://crypto-fundraising.info/blog/memebook-raised-1m-in-a-seed-funding-round/",
+          "source": "Crypto Fundraising",
+          "sentiment": "bullish",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/2026/08/Memebook-Seed-funding-round-scaled.png"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3219278",
+          "title": "Robinhood brings crypto trading to main UK app through Bitstamp",
+          "url": "https://www.theblock.co/news/business/2026-08-10-robinhood-uk-crypto-trading-bitstamp-411140",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News_3.jpg"
+        },
+        {
+          "id": "art_3226527",
+          "title": "Revolut granted French banking licence",
+          "url": "https://sifted.eu/articles/revolut-french-banking-licence/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://content.sifted.eu/wp-content/uploads/2026/05/01151433/PR-lib-office-exterior-1-1-1024x537.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3246163",
+          "title": "UK money laundering suspect bought $100M in Trump crypto business: NYT13m, UK money laundering suspect bought $100M in Trump crypto business: NYTAn individual behind the Aqua 1 entity that purchased $100 million worth of World Liberty Financial tokens in 2025 is reportedly a businessman with ties to the UK and UAE.",
+          "url": "https://cointelegraph.com/news/world-liberty-financial-uk-money-laundering-donald-trump",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparing-money-laundering-with-cryptocurrencies-and-fiat2.jpg"
+        },
+        {
+          "id": "art_3240372",
+          "title": "‘Disappointing’ — crypto advocates react to delay in CLARITY vote17m, ‘Disappointing’ — crypto advocates react to delay in CLARITY voteFollowing a procedural delay in the US Senate, lawmakers are expected to address a major crypto market structure bill after they return from a month-long recess, which met with industry criticism.",
+          "url": "https://cointelegraph.com/news/clarity-act-vote-disappointing-crypto-advocates-delay",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/sams-in-a-labirynth-clarity-act-us-1.jpg"
+        },
+        {
+          "id": "art_3248481",
+          "title": "Judge stays CFTC’s case against US solider over prediction market bets8m, Judge stays CFTC’s case against US solider over prediction market betsA New York judge granted a motion filed by US prosecutors in July to stay the CFTC’s civil case against Gannon Ken Van Dyke over making more than $400,000 on prediction markets.",
+          "url": "https://cointelegraph.com/news/cftc-us-solider-insider-trading-polymarket-nicolas-maduro",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3214896",
+          "title": "Australia orders Cryptolink Bitcoin ATMs offline over ‘basic reporting’ failures",
+          "url": "https://cointelegraph.com/news/australia-orders-cryptolink-bitcoin-atms-offline-over-basic-reporting-failures",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/atm.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3227044",
+          "title": "Why the latest Bitcoin hack hurt more than most",
+          "url": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/03/Bitcoin_disappearing_3.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3243846",
+          "title": "Coinsbuy offers $100K reward after Sunday security breach",
+          "url": "https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-got-crypto-losses-wallet-shutdown.png"
+        },
+        {
+          "id": "art_3233174",
+          "title": "Crypto lost $110 million to hacks in July amid rising bug bounty activity: Immunefi",
+          "url": "https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+        },
+        {
+          "id": "art_3221594",
+          "title": "North Korea's Kimsuky integrates AI into cyberattacks targeting crypto and finance",
+          "url": "https://www.theblock.co/news/defi/2026-08-10-north-korea-kimsuky-ai-crypto-411229",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/03/north-korea-2662076_1920-e1734489004471.jpg"
+        },
+        {
+          "id": "art_3249390",
+          "title": "BTCPay Server supporters offer up to 3 BTC for recovery bounty after critical exploit",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-10-btcpay-server-supporters-offer-3-btc-recovery-bounty-critical-exploit-411353",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3247322",
+          "title": "TRON USDT supply hits $87.9B as transfers reach $2.1T in Q2: Messari37m",
+          "url": "https://cointelegraph.com/news/tron-usdt-supply-hits-879b-as-transfers-reach-21t-in-q2-messari",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/tron.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3240272",
+          "title": "Committing $50M to USHP: The Product Bringing U.S. Home Prices Onchain",
+          "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3GlVUqvFKdKCzP5tSunZ07/0ee92f39cf5dbcda840fea5711cc0a56/General-Cube-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3220686",
+          "title": "UK regulators to prepare tokenized gold framework: Report",
+          "url": "https://cointelegraph.com/news/uk-regulators-tokenized-gold-framework-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-uk-and-crypto-fca.jpg"
+        },
+        {
+          "id": "art_3214464",
+          "title": "UK regulator prepares framework for tokenised gold",
+          "url": "https://www.ft.com/content/9973f186-5834-4b66-8faa-e8b2e8711466",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F386bd377-c59a-46ed-857b-de342dc2cbc4.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3230858",
+          "title": "'Owning the rails': Standard Chartered sees LINK at $200 by 2030 as Chainlink underpins tokenized-asset boom",
+          "url": "https://www.theblock.co/news/defi/2026-08-10-standard-chartered-chainlink-tokenization-411252",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Chainlink.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Riot Platforms is reportedly getting $9.1 billion from Anthropic for data center capacity, with extensions to $16.1 billion. The stock moved 25% after hours. We have seen miner pivot narratives before—usually to hosting, sometimes to HPC lite. This is different in scale and in counterparty quality.\n\nThe underwriting question is not whether Riot can run GPUs. It is whether the market is repricing stranded power contracts and pre-built shell infrastructure as optionality on AI compute scarcity, or whether this is a one-off where Anthropic needed capacity fast and Riot had land and interconnect permits ready.\n\nIf the template holds, every public miner with 2024-2025 vintage buildouts now has a comparable story to tell. The ones that cannot will trade at a widening discount to net asset value. We are watching Core Scientific's existing CoreWeave relationship, Marathon's idle capacity disclosures, and whether private miners start marketing themselves as 'AI-ready' before they have a single signed LOI.\n\nThe Coldcard breach and the Coinsbuy incident run on a separate track but land in the same portfolio: custody and exchange security are still being underwritten on marketing claims rather than demonstrated failure modes. The gap between promised and actual security is where the next $100 million will exit.\n\nWhat would kill the miner-to-AI thesis: Anthropic confirms the deal is capacity-flexible and can terminate with 90 days notice. What would confirm it: a second major AI lab signs comparable terms with a different miner at similar economics.\n\nWe are not there yet."
+}
