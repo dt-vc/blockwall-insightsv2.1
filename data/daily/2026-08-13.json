@@ -1,0 +1,623 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-13",
+  "date_display": "August 13, 2026",
+  "generated_at": "2026-08-13T05:00:17.881Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "SEC clears Franklin Templeton onchain fund system as Goldman pays $2.25B for crypto ETF access",
+    "tldr": "Today's signals mark a pivot in how TradFi institutions acquire crypto exposure: not by building, but by buying regulated wrappers. The SEC's no-action letter for Franklin Templeton's BENJI system and Goldman's NEOS acquisition show parallel paths to the same endpoint—traditional finance internalizing onchain infrastructure rather than competing with it."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the boundary between TradFi and onchain asset management is dissolving faster than either side expected.",
+  "market_snapshot": {
+    "as_of": "2026-08-13T05:00:17.881Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,664",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,891",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": "-0.0%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$74.9B",
+        "change_24h": "-0.0%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 20,
+    "bearish": 12,
+    "neutral": 6,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_3323691",
+      "title": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Harmony has confirmed a security exploit involving the unauthorized minting of 4 billion ONE tokens. The breach was first reported by X user Juiceberg.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230411_Hack_Generic_1.jpg",
+      "why_it_matters": "Harmony's 4 billion ONE exploit exposes the persistent repricing risk in L1 tokens where minting logic remains a single point of failure, making governance and bridge security a core underwriting variable we cannot model away."
+    },
+    {
+      "id": "art_3353964",
+      "title": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The SEC has issued a no-action letter allowing Franklin Templeton's traditional registered funds to utilize its onchain BENJI system for cash management. This marks a significant step in integrating traditional finance (TradFi) with blockchain-based asset management.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+      "themes": [
+        "tokenization",
+        "asset-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg",
+      "why_it_matters": "The SEC's no-action letter for Franklin Templeton's BENJI system creates a regulatory template that reduces compliance cost for fund tokenization, directly repricing the competitive moat of crypto-native asset management infrastructure."
+    },
+    {
+      "id": "art_3353049",
+      "title": "Goldman Sachs to acquire ETF manager NEOS in $2.25B deal",
+      "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Goldman Sachs is acquiring ETF manager NEOS Investments in a deal valued at up to $2.25 billion. This move integrates NEOS's Bitcoin and Ether-linked ETFs into Goldman's asset management division.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+      "themes": [
+        "investment",
+        "asset-management"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.png",
+      "why_it_matters": "Goldman's $2.25B NEOS acquisition reveals that TradFi incumbents now value regulated crypto ETF distribution more than building proprietary crypto capabilities, shifting the value capture from product innovation to distribution and balance sheet scale."
+    },
+    {
+      "id": "art_3344895",
+      "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments34m",
+      "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "The Bank of England is conducting tests to ensure interoperability between a potential digital pound (CBDC) and private stablecoins for cross-border payments. This initiative aims to modernize the UK's payment infrastructure and enhance the efficiency of international settlements.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments",
+      "themes": [
+        "stablecoins",
+        "cbdc"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-list-of-most-prominent-fiat-backed-stablecoins-uk-1.jpg",
+      "why_it_matters": "The Bank of England's CBDC-stablecoin interoperability tests signal that major central banks are designing payment rails where private stablecoins coexist with sovereign digital currency, preserving a role for non-bank issuers that the ECB and Fed have been less explicit about."
+    },
+    {
+      "id": "art_3336746",
+      "title": "Wintermute to pour $1B into AI, high-frequency trading amid TradFi expansion: Report28m",
+      "url": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Wintermute plans to invest $1 billion into AI and high-frequency trading as part of its expansion into traditional finance (TradFi). The move signals a strategic push to integrate advanced trading technologies across both crypto and conventional markets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report",
+      "themes": [
+        "investment",
+        "market-making"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-project-explained-a-global-initiative-for-asset-tokenization.jpg",
+      "why_it_matters": "Wintermute's $1B AI and HFT expansion into TradFi indicates that crypto-native market makers are now underwriting their growth on cross-asset liquidity provision rather than crypto volatility premia alone, which reprices how we assess their revenue durability."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3353049",
+      "company": "NEOS Investments",
+      "amount": "$2.25B",
+      "round": "Acquisition",
+      "investors": [
+        "Goldman Sachs"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+      "summary": "Goldman Sachs is acquiring ETF manager NEOS Investments in a deal valued at up to $2.25 billion. This move integrates NEOS's Bitcoin and Ether-linked ETFs into Goldman's asset management division."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3334417",
+      "title": "Fidelity files with SEC to add staking to Ethereum ETF16m, Fidelity files with SEC to add staking to Ethereum ETFFidelity plans to add staking to its Ether fund, with 85% of rewards retained by FETH and quarterly cash distributions planned for investors.",
+      "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Fidelity has filed with the SEC to incorporate staking rewards into its Ethereum ETF. The proposal suggests that 85% of rewards would be retained by the fund, with quarterly cash distributions provided to investors.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/option-1-bold-white-montserrat.jpeg"
+    },
+    {
+      "id": "art_3343729",
+      "title": "HashKey begins beta distribution of Hong Kong-regulated HKDAP stablecoin41m",
+      "url": "https://cointelegraph.com/news/hashkey-begins-beta-distribution-of-hong-kong-regulated-hkdap-stablecoin",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "HashKey has launched the beta distribution of HKDAP, a stablecoin regulated within Hong Kong. This move aligns with the region's efforts to integrate regulated digital assets into the financial ecosystem.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-hashkey-plans-to-become-hong-kongs-first-crypto-ipo-1.jpg"
+    },
+    {
+      "id": "art_3340813",
+      "title": "New York City probes Kalshi and Polymarket over social harms",
+      "url": "https://fortune.com/2026/08/12/kalshi-polymarket-nyc-probe/",
+      "source": "Fortune Crypto",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The New York City council is investigating prediction markets Kalshi and Polymarket regarding potential social harms. The platforms have been given 14 days to disclose user data, including ages and financial wins or losses of NYC residents.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2259602081-e1786542539103.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_3333003",
+      "title": "Standard Chartered-backed Anchorpoint begins HKDAP stablecoin rollout",
+      "url": "https://www.theblock.co/news/business/2026-08-12-standard-chartered-anchorpoint-hkdap-stablecoin-rollout-411575",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Anchorpoint, backed by Standard Chartered, has initiated the institutional rollout of its Hong Kong dollar-pegged stablecoin, HKDAP. The launch follows the receipt of necessary licensing approvals in Hong Kong.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240802_HongKong_News_2.jpg"
+    },
+    {
+      "id": "art_3367954",
+      "title": "BitGo sees revenue jump 80% to $4.3 billion in Q2 but posts net loss",
+      "url": "https://www.theblock.co/news/business/2026-08-12-bitgo-sees-revenue-jump-q2-411664",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "neutral",
+      "summary": "BitGo reported a significant 80% increase in Q2 revenue, reaching $4.3 billion. However, the company shifted to a net loss of $19 million for the quarter, compared to a profit in the previous year.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/12/bitgo.jpg"
+    },
+    {
+      "id": "art_3355379",
+      "title": "Hawaii crypto ATM ban to take effect on Oct. 137m, Hawaii crypto ATM ban to take effect on Oct. 1Hawaii will join Minnesota, Tennessee and Indiana in becoming the fourth US state to completely ban the use of cryptocurrency ATMs and kiosks in response to scams.",
+      "url": "https://cointelegraph.com/news/hawaii-crypto-atm-ban-october-enforcement",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Hawaii is set to implement a complete ban on cryptocurrency ATMs and kiosks starting October 1. The state is joining Minnesota, Tennessee, and Indiana in this move to protect consumers from scams.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bitcoins-real-world-uses.png"
+    },
+    {
+      "id": "art_3353050",
+      "title": "NYC council announces probe into ‘predatory marketing practices’ on prediction markets27m, NYC council announces probe into ‘predatory marketing practices’ on prediction marketsCouncil Speaker Julie Menin sent letters to four companies offering prediction market services to New Yorkers as part of an investigation into their marketing practices.",
+      "url": "https://cointelegraph.com/news/new-york-council-probe-marketing-practices-prediction-markets",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The New York City Council has launched an investigation into prediction markets over alleged predatory marketing practices. Council Speaker Julie Menin has sent formal inquiries to four companies providing these services to NYC residents.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-takes-regulatory-steps-for-blockchain-technology-adoption-1.jpg"
+    },
+    {
+      "id": "art_3349304",
+      "title": "Ethereum staking climbs to 34% as proposal targets validator rewards and ETH treasury firm yields",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-12-ethereum-staking-climbs-34-proposal-targets-validator-rewards-eth-treasury-firm-yields-411312",
+      "source": "The Block",
+      "category": "Ethereum",
+      "sentiment": "neutral",
+      "summary": "Ethereum staking has reached 34% of the total supply. A new proposal, EIP-8361, suggests a tapered issuance burn to reduce validator rewards as the staking ratio increases to maintain economic balance.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_3.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3365772",
+      "title": "The Red Team Defending Bitcoin with Rob Hamilton",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/the-red-team-defending-bitcoin-with-rob-hamilton",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's profile of Rob Hamilton's red team work on Bitcoin security offers a rare look at how institutional-grade adversarial testing is being applied to L1 infrastructure, relevant for anyone underwriting protocol risk.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3338823",
+          "title": "Bitcoin dips under $64,000 as in-line CPI buys the Fed time, not conviction: analysts",
+          "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-dips-under-64000-in-line-cpi-buys-fed-time-not-conviction-analysts-411594",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/09/20240904_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_3341152",
+          "title": "BIP-110 failure shows Bitcoin would be 'almost impossible to reproduce,' Plan B Network director says",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-12-bip-110-failure-bitcoin-impossible-reproduce-plan-b-network-director-411596",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/01/20240111_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_3329511",
+          "title": "Bitcoin market in 'hibernation' as perp trading activity sinks to three-year low ahead of US CPI release: K33",
+          "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-perp-trading-activity-three-year-low-us-cpi-k33-411545",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241111_Decentralized-prediction-markets_News.jpg"
+        },
+        {
+          "id": "art_3327433",
+          "title": "Crypto companies urge AI firms to give Bitcoin developers early access27m, Crypto companies urge AI firms to give Bitcoin developers early accessThe Bitcoin Policy Institute and other industry participants urged AI companies to offer early access to their frontier models to aid Bitcoin and open-source developers in their cybersecurity efforts.",
+          "url": "https://cointelegraph.com/news/crypto-companies-ai-firms-bitcoin-developers-access",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3345472",
+          "title": "Billionaire Michael Saylor says Elon Musk is wrong about AI making money irrelevant: ‘Everybody doesn’t get their own private jet’",
+          "url": "https://fortune.com/2026/08/12/elon-musk-predicts-money-becomes-irrelevant-billionaire-bitcoin-mogul-michael-saylor-disagrees-shifting-luxury-wealth-status/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/Saylor-GettyImages2273112978.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_3355129",
+          "title": "Hyperliquid treasury Hyperion triples quarterly profits as HYPE holdings rise in value",
+          "url": "https://www.theblock.co/news/markets/2026-08-12-hyperliquid-treasury-hyperion-triples-quarterly-profits-as-hype-holdings-rise-in-value-411652",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News.jpg"
+        },
+        {
+          "id": "art_3346974",
+          "title": "Polymarket taps ex-Uber and Bird exec Travis VanderZanden to boost growth",
+          "url": "https://www.theblock.co/news/business/2026-08-12-polymarket-taps-ex-uber-and-bird-exec-travis-vanderzanden-to-boost-growth-411631",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/polymarket-news-editorial.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_3363540",
+          "title": "ASX shareholder plans to sue former directors over failed blockchain project",
+          "url": "https://cointelegraph.com/news/asx-shareholder-lawsuit-failed-blockchain-chess-project",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3334417",
+          "title": "Fidelity files with SEC to add staking to Ethereum ETF16m, Fidelity files with SEC to add staking to Ethereum ETFFidelity plans to add staking to its Ether fund, with 85% of rewards retained by FETH and quarterly cash distributions planned for investors.",
+          "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/option-1-bold-white-montserrat.jpeg"
+        },
+        {
+          "id": "art_3349304",
+          "title": "Ethereum staking climbs to 34% as proposal targets validator rewards and ETH treasury firm yields",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-12-ethereum-staking-climbs-34-proposal-targets-validator-rewards-eth-treasury-firm-yields-411312",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3367954",
+          "title": "BitGo sees revenue jump 80% to $4.3 billion in Q2 but posts net loss",
+          "url": "https://www.theblock.co/news/business/2026-08-12-bitgo-sees-revenue-jump-q2-411664",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/12/bitgo.jpg"
+        },
+        {
+          "id": "art_3341151",
+          "title": "SKALE launches Agent Pit to let builders train AI agents before taking them live on Polymarket",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-skales-agent-pit-lets-builders-train-ai-agents-before-taking-them-live-on-polymarket-411580",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240814_Crypto-AI_News_2.jpg"
+        },
+        {
+          "id": "art_3337909",
+          "title": "Kalshi launches sports and crypto perps data feed on DoubleZero",
+          "url": "https://cointelegraph.com/news/kalshi-launches-sports-crypto-data-feed-doublezero",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparison-us-elections-2.jpg"
+        },
+        {
+          "id": "art_3322184",
+          "title": "CoreWeave CEO Michael Intrator cites ‘sold out’ capacity as revenue more than doubles and backlog swells to $104 billion",
+          "url": "https://fortune.com/2026/08/11/coreweave-ceo-michael-intrator-cites-sold-out-capacity-as-revenue-more-than-doubles-and-backlog-swells-to-104-billion/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2236260070-e1786493162675.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3344157",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/uniswap-data-dashboard-primer",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3353049",
+          "title": "Goldman Sachs to acquire ETF manager NEOS in $2.25B deal",
+          "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.png"
+        },
+        {
+          "id": "art_3336746",
+          "title": "Wintermute to pour $1B into AI, high-frequency trading amid TradFi expansion: Report28m",
+          "url": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-project-explained-a-global-initiative-for-asset-tokenization.jpg"
+        },
+        {
+          "id": "art_3322527",
+          "title": "Bitwise cuts 14% of staff as crypto layoffs mount during market downturn",
+          "url": "https://www.theblock.co/news/business/2026-08-12-bitwise-layoffs-411522",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Bitwise_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3348389",
+          "title": "Bitwise cuts 14% of staff while still expecting growth50m",
+          "url": "https://cointelegraph.com/news/bitwise-staff-cuts-market-downturn-growth",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3337316",
+          "title": "87.5% of venture dollars went to AI. The rest fought over scraps",
+          "url": "https://fortune.com/2026/08/12/venture-capital-funding-ai-pitchbook-us-vc-valuations-series-d/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/Dario-Amodei-GettyImages-2256664479.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3349554",
+          "title": "Kraken adds S&P 500 to funded trading program, commodities to follow",
+          "url": "https://cointelegraph.com/news/kraken-prop-sp500-perpetual-commodities-next",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sp-500-can-be-confusing-bitcoin.png"
+        },
+        {
+          "id": "art_3348139",
+          "title": "Trump sued over Truth Social’s early-access feed as firm explores licensing data to prediction markets",
+          "url": "https://www.theblock.co/news/business/2026-08-12-trump-sued-truth-social-early-access-feed-firm-explores-licensing-data-prediction-markets-411628",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241125_Trump_News.jpg"
+        },
+        {
+          "id": "art_3344894",
+          "title": "FlightAware drops Kalshi lawsuit one day after filing26m, FlightAware drops Kalshi lawsuit one day after filingFollowing the initial lawsuit, at least one of Kalshi’s event contracts was changed to list “Primary Source Agency” as the entity behind verifying flight cancellation data.",
+          "url": "https://cointelegraph.com/news/flightaware-drops-kalshi-lawsuit-one-day-after-filing",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3341154",
+          "title": "Attackers keep hitting the wrong house in rural France after crypto millionaire moved: report",
+          "url": "https://www.theblock.co/news/regulation/2026-08-12-attackers-keep-hitting-wrong-house-rural-france-after-crypto-millionaire-moved-report-411605",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/07/france-flag-french-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3340813",
+          "title": "New York City probes Kalshi and Polymarket over social harms",
+          "url": "https://fortune.com/2026/08/12/kalshi-polymarket-nyc-probe/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2259602081-e1786542539103.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3355379",
+          "title": "Hawaii crypto ATM ban to take effect on Oct. 137m, Hawaii crypto ATM ban to take effect on Oct. 1Hawaii will join Minnesota, Tennessee and Indiana in becoming the fourth US state to completely ban the use of cryptocurrency ATMs and kiosks in response to scams.",
+          "url": "https://cointelegraph.com/news/hawaii-crypto-atm-ban-october-enforcement",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bitcoins-real-world-uses.png"
+        },
+        {
+          "id": "art_3353050",
+          "title": "NYC council announces probe into ‘predatory marketing practices’ on prediction markets27m, NYC council announces probe into ‘predatory marketing practices’ on prediction marketsCouncil Speaker Julie Menin sent letters to four companies offering prediction market services to New Yorkers as part of an investigation into their marketing practices.",
+          "url": "https://cointelegraph.com/news/new-york-council-probe-marketing-practices-prediction-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-takes-regulatory-steps-for-blockchain-technology-adoption-1.jpg"
+        },
+        {
+          "id": "art_3336745",
+          "title": "Slovenia joins EU’s MiCA stablecoin register with first issuer",
+          "url": "https://cointelegraph.com/news/slovenia-eu-mica-stablecoin-register-dinaro",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-beginners-guide-to-storing-your-cryptocurrency-mica-eu-license.jpg"
+        },
+        {
+          "id": "art_3360042",
+          "title": "Arizona crypto ATM law helps 35 scam victims recover $171K 14m, Arizona crypto ATM law helps 35 scam victims recover $171K Qualifying new customers can receive full reimbursement, including fees, if they notify both the operator and law enforcement within 30 days.",
+          "url": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3329761",
+          "title": "Binance, RedotPay clash over fate of Singapore lawsuit38m",
+          "url": "https://cointelegraph.com/news/binance-redotpay-clash-singapore-lawsuit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3323691",
+          "title": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230411_Hack_Generic_1.jpg"
+        },
+        {
+          "id": "art_3365772",
+          "title": "The Red Team Defending Bitcoin with Rob Hamilton",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/the-red-team-defending-bitcoin-with-rob-hamilton",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3344895",
+          "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments34m",
+          "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-list-of-most-prominent-fiat-backed-stablecoins-uk-1.jpg"
+        },
+        {
+          "id": "art_3343729",
+          "title": "HashKey begins beta distribution of Hong Kong-regulated HKDAP stablecoin41m",
+          "url": "https://cointelegraph.com/news/hashkey-begins-beta-distribution-of-hong-kong-regulated-hkdap-stablecoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-hashkey-plans-to-become-hong-kongs-first-crypto-ipo-1.jpg"
+        },
+        {
+          "id": "art_3333003",
+          "title": "Standard Chartered-backed Anchorpoint begins HKDAP stablecoin rollout",
+          "url": "https://www.theblock.co/news/business/2026-08-12-standard-chartered-anchorpoint-hkdap-stablecoin-rollout-411575",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240802_HongKong_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3353964",
+          "title": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg"
+        },
+        {
+          "id": "art_3368938",
+          "title": "Digital gold, copper and uranium: prospectors stake bets on metals-crypto fusion",
+          "url": "https://www.ft.com/content/de7ded5c-23d4-44ac-8b21-bf7f5cdfefda",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F16d9d100-13c2-415c-9184-1265452a7bf3.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3348119",
+          "title": "AI-Backed Securities",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-08-12/ai-backed-securities",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The SEC no-action letter for Franklin Templeton's BENJI system landed the same week Goldman paid $2.25 billion for NEOS and its Bitcoin and Ether-linked ETFs. Two paths. Same read.\n\nTradFi is not coming to crypto on crypto's terms. It is buying the regulated wrappers and building the compliant pipes, then running its own funds through them. Franklin Templeton gets to tokenize cash management for traditional registered funds. Goldman gets ETF distribution without the years of product development. Both skip the unregulated onchain native stack entirely.\n\nThis reprices what we underwrite in crypto infrastructure. The value is shifting to regulated bridges and ETF wrappers, not to the underlying protocols those wrappers reference. Harmony's 4 billion ONE exploit today is a reminder of why: protocol risk is still real, still unpriceable for most institutional balance sheets, and still the reason they will pay premiums for distance from it.\n\nWintermute's $1 billion push into AI and HFT across TradFi markets fits the same pattern. Cross-asset liquidity, same compliance stack, no need to bet the firm on any single chain's security model.\n\nThe testable thesis: watch whether the next three crypto-native asset management launches seek SEC no-action letters themselves, or position as acquisition targets for banks that need the wrapper but not the team. If it's the latter, the infrastructure layer we have been building is not the layer getting paid."
+}
