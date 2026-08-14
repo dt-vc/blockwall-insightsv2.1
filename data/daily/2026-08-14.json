@@ -1,0 +1,660 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-14",
+  "date_display": "August 14, 2026",
+  "generated_at": "2026-08-14T05:00:18.031Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Tether's KPMG clean audit ends the reserve-question era; prediction markets face first major US city lawsuit",
+    "tldr": "Tether's first full independent audit marks a structural inflection for stablecoin credibility, even as Baltimore's lawsuit against Kalshi and Polymarket signals that prediction markets have drawn genuine regulatory fire from state-level enforcers. The throughline: institutional legitimacy is being priced in unevenly across crypto subsectors."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks two opposing forces—audit-grade transparency arriving in stablecoins, and municipal prosecutors treating prediction markets as unlicensed sportsbooks—that together show how crypto's regulatory map is being redrawn in real time.",
+  "market_snapshot": {
+    "as_of": "2026-08-14T05:00:18.031Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,326",
+        "change_24h": "-0.2%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,883",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.26T",
+        "change_24h": "-0.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.0B",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 22,
+    "bearish": 13,
+    "neutral": 7,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_3409014",
+      "title": "Tether completes first full financial audit, receives clean KPMG opinion",
+      "url": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Tether has completed its first full independent financial audit for its 2025 financial statements. The audit was conducted by KPMG, which issued a clean opinion on the stablecoin issuer's financials.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+      "themes": [
+        "stablecoins",
+        "audit-compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report.png",
+      "why_it_matters": "Tether's clean KPMG opinion removes the last credible objection from TradFi allocators who underwrote USDT exposure on reserve uncertainty, repricing the entire stablecoin competitive set toward audit frequency and auditor brand as table stakes."
+    },
+    {
+      "id": "art_3405267",
+      "title": "Baltimore sues Kalshi and Polymarket, roping Coinbase, Robinhood and Webull into the fight",
+      "url": "https://www.theblock.co/news/business/2026-08-13-baltimore-sues-kalshi-polymarket-roping-coinbase-robinhood-webull-into-fight-411746",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Mayor and City Council of Baltimore have filed a lawsuit against prediction markets Kalshi and Polymarket, as well as major trading platforms including Coinbase and Robinhood. The lawsuit alleges that these platforms are facilitating illegal sports betting.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/business/2026-08-13-baltimore-sues-kalshi-polymarket-roping-coinbase-robinhood-webull-into-fight-411746",
+      "themes": [
+        "regulation",
+        "legal-action"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News.jpg",
+      "why_it_matters": "Baltimore's suit naming Coinbase and Robinhood alongside Kalshi and Polymarket signals that state AGs are willing to treat prediction market infrastructure as aiding and abetting unlicensed gambling, creating liability exposure that CEX partners must now underwrite."
+    },
+    {
+      "id": "art_3402018",
+      "title": "Crypto group backs Custodia in Supreme Court battle over Fed access19m, Crypto group backs Custodia in Supreme Court battle over Fed accessThe Blockchain Association argues the Fed should not have broad discretion to deny eligible state-chartered banks direct access to its payment system.",
+      "url": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Blockchain Association has filed a brief supporting Custodia Bank in its legal battle against the Federal Reserve. The group argues that the Fed should not have the discretion to deny eligible state-chartered banks access to its payment systems.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account",
+      "themes": [
+        "regulation",
+        "banking-fed-access"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-reserve-asset-bill-explained.png",
+      "why_it_matters": "The Blockchain Association's Supreme Court brief in Custodia v. Fed frames the case as a test of whether the Fed can discretionarily exclude state-chartered crypto banks from its payment rails, with direct implications for any bank seeking to custody or settle tokenized assets."
+    },
+    {
+      "id": "art_3402019",
+      "title": "Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard Chartered26m, Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard CharteredStandard Chartered said Robinhood’s Uniswap integration could solve a key challenge for new blockchains while accelerating UNI token burns.",
+      "url": "https://cointelegraph.com/news/robinhood-chain-uniswap-liquidity-uni-burns",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Standard Chartered reports that Robinhood Chain is approaching $1 billion in Total Value Locked (TVL). The growth is largely attributed to the integration of Uniswap, which is driving liquidity and potentially accelerating UNI token burns.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/robinhood-chain-uniswap-liquidity-uni-burns",
+      "themes": [
+        "infrastructure",
+        "layer2"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-robinhood-and-how-does-it-work-2.jpg",
+      "why_it_matters": "Robinhood Chain's near-$1B TVL, driven by Uniswap integration, suggests that retail brokerage distribution plus DeFi liquidity infrastructure can bootstrap new L1 traction faster than the 2021 playbook of grants and mercenary yield, with UNI burn mechanics as a secondary repricing lever."
+    },
+    {
+      "id": "art_3391525",
+      "title": "MUFG PoC to bring Japanese government bond repo transactions onchain26m, MUFG PoC to bring Japanese government bond repo transactions onchainMUFG’s experiment plans to bring Japanese government bond repo transactions onchain to achieve 24/7 settlement, as well as improved capital and operational efficiency.",
+      "url": "https://cointelegraph.com/news/mufg-bring-japanese-government-bond-repo-transactions-onchain",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "MUFG is conducting a Proof of Concept (PoC) to move Japanese government bond repo transactions onto a blockchain. The initiative aims to enable 24/7 settlement and enhance overall operational and capital efficiency.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/mufg-bring-japanese-government-bond-repo-transactions-onchain",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-japan-issue-bonds-on-blockchain-how-significant-is-this-1.jpg",
+      "why_it_matters": "MUFG's government bond repo PoC represents the first major G7 sovereign debt market experiment with 24/7 onchain settlement, testing whether repo—a $10T+ daily market—can absorb the operational efficiency gains that tokenization theory has promised since 2017."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3378448",
+      "company": "Korbit",
+      "amount": "$35M",
+      "round": "Follow-on",
+      "investors": [
+        "Mirae Asset"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-08-13-mirae-asset-35-million-korbit-411677",
+      "summary": "Mirae Asset plans to invest an additional $35 million into the Korbit crypto exchange. This follows the firm's acquisition of a 97.15% stake in the company in July for approximately $91.5 million."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3388026",
+      "title": "SEC allows Franklin Templeton funds to invest in onchain money fund10m",
+      "url": "https://cointelegraph.com/news/sec-franklin-templeton-funds-invest-onchain-money-fund",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The SEC has granted Franklin Templeton permission to allow its funds to invest in an on-chain money market fund. This move represents a significant step in the integration of traditional finance with blockchain-based asset management.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/rwa.jpg"
+    },
+    {
+      "id": "art_3423015",
+      "title": "Figure reports $4.3B in loan marketplace volume as profit nearly triples41m, Figure reports $4.3B in loan marketplace volume as profit nearly triplesFigure expects consumer loan marketplace volume to range from $4.8 billion to $5.2 billion in the third quarter.",
+      "url": "https://cointelegraph.com/news/figure-q2-loan-marketplace-volume-profit",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Figure reported $4.3 billion in loan marketplace volume and a significant increase in profits. The company projects continued growth with expected Q3 volume between $4.8 billion and $5.2 billion.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/loan-cash.jpg"
+    },
+    {
+      "id": "art_3416013",
+      "title": "Ethereum Foundation pivots away from Poseidon in post-quantum plan22m, Ethereum Foundation pivots away from Poseidon in post-quantum planAdvances in compact proofs have erased Poseidon’s previous performance advantage, according to researcher Justin Drake.",
+      "url": "https://cointelegraph.com/news/ethereum-foundation-drops-poseidon-post-quantum-plan",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "neutral",
+      "summary": "The Ethereum Foundation is shifting its post-quantum security strategy away from the Poseidon hash function. Researcher Justin Drake noted that recent advancements in compact proofs have eliminated the performance benefits Poseidon once offered.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-eth-20-progress.jpg"
+    },
+    {
+      "id": "art_3409930",
+      "title": "Gemini shares slide after $108 million loss as Winklevoss says 'we still have work to do'",
+      "url": "https://www.theblock.co/news/business/2026-08-13-gemini-shares-slide-108-million-loss-winklevoss-says-we-still-have-work-to-do-411775",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "Gemini reported a $108 million loss, leading to a slide in share value. Despite the financial loss, the exchange is seeing growth in its prediction market volume as it diversifies beyond crypto trading.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221116_Gemini-2.jpg"
+    },
+    {
+      "id": "art_3406682",
+      "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea37m, Delio CEO sentenced to 15 years in prison on crypto fraud in South KoreaMore than a year after being indicted on fraud charges related to his activities at crypto company Delio, Jeong Sang-ho faces prison time in South Korea.",
+      "url": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CEO of crypto company Delio, Jeong Sang-ho, has been sentenced to 15 years in prison by a South Korean court. The sentencing follows fraud charges related to the company's activities and the mishandling of user funds.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/arrest-police-crime-prison-jail-imprisonment-man-person2-1.jpg"
+    },
+    {
+      "id": "art_3405516",
+      "title": "CFTC to join SEC in exploring crypto regulations without CLARITY bill47m, CFTC to join SEC in exploring crypto regulations without CLARITY billThe CFTC will hold a meeting for its Innovation Advisory Committee on Aug. 20 to address regulation related to crypto assets, artificial intelligence and prediction markets.",
+      "url": "https://cointelegraph.com/news/cftc-exploring-crypto-regulations-clarity-act",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The CFTC is convening its Innovation Advisory Committee on August 20 to discuss regulations concerning crypto assets, AI, and prediction markets. This move indicates a push for regulatory exploration in the absence of the CLARITY bill.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/paper-document-man-office-cftc-1.jpg"
+    },
+    {
+      "id": "art_3402934",
+      "title": "Citigroup CEO Fraser on Clarity Act: 'We would like to see a good bill go through,' as stablecoin reward issues simmer",
+      "url": "https://www.theblock.co/news/regulation/2026-08-13-citigroup-ceo-fraser-on-clarity-act-we-would-like-to-see-good-bill-go-stablecoin-reward-issues-simmer-411751",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Citigroup CEO Jane Fraser expressed support for the passage of a crypto-related bill, specifically referencing the need for regulatory clarity. The comments come amid ongoing discussions regarding the Clarity Act and stablecoin reward structures.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg"
+    },
+    {
+      "id": "art_3402752",
+      "title": "Nearly 14,000 crypto holders face security risk after data breach",
+      "url": "https://www.ft.com/content/a91356ef-67bd-4bd9-947b-b272423f1318",
+      "source": "FT Crypto",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Approximately 14,000 Trezor hardware wallet users have had their personal details stolen in a data breach. This marks the second security incident involving 'cold' storage solutions within a two-week period.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F70586850-7256-4a8d-9ddd-b8e0a799e56a.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3365772",
+      "title": "The Red Team Defending Bitcoin with Rob Hamilton",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/the-red-team-defending-bitcoin-with-rob-hamilton",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's profile of Rob Hamilton's 'red team' approach to Bitcoin security offers a practitioner's lens on how institutional custody infrastructure stress-tests assumptions that most investors take as given.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3398520",
+          "title": "Public Bitcoin miners cut hashrate 13.4% as AI infrastructure revenue grows",
+          "url": "https://cointelegraph.com/news/bitcoin-miners-hashrate-ai-data-centers-hpc",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bitcoin-miners-as-energy-buyers-ai.jpg"
+        },
+        {
+          "id": "art_3370536",
+          "title": "Metaplanet CEO shuts down Bitcoin sale speculation after $322M transfer9m, Metaplanet CEO shuts down Bitcoin sale speculation after $322M transferMetaplanet CEO Simon Gerovich said no Bitcoin was sold after the company moved 5,014 BTC between custodial addresses for about $8 in fees.",
+          "url": "https://cointelegraph.com/news/gerovich-shuts-down-bitcoin-sale-metaplanets-transfer",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_3386860",
+          "title": "‘DeFi doesn’t exist anymore,’ just onchain finance: Andre Cronje33m",
+          "url": "https://cointelegraph.com/news/defi-doesnt-exist-onchain-finance-andre-cronje",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_3363540",
+          "title": "ASX shareholder plans to sue former directors over failed blockchain project",
+          "url": "https://cointelegraph.com/news/asx-shareholder-lawsuit-failed-blockchain-chess-project",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3416013",
+          "title": "Ethereum Foundation pivots away from Poseidon in post-quantum plan22m, Ethereum Foundation pivots away from Poseidon in post-quantum planAdvances in compact proofs have erased Poseidon’s previous performance advantage, according to researcher Justin Drake.",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-drops-poseidon-post-quantum-plan",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-eth-20-progress.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3402019",
+          "title": "Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard Chartered26m, Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard CharteredStandard Chartered said Robinhood’s Uniswap integration could solve a key challenge for new blockchains while accelerating UNI token burns.",
+          "url": "https://cointelegraph.com/news/robinhood-chain-uniswap-liquidity-uni-burns",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-robinhood-and-how-does-it-work-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3409930",
+          "title": "Gemini shares slide after $108 million loss as Winklevoss says 'we still have work to do'",
+          "url": "https://www.theblock.co/news/business/2026-08-13-gemini-shares-slide-108-million-loss-winklevoss-says-we-still-have-work-to-do-411775",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221116_Gemini-2.jpg"
+        },
+        {
+          "id": "art_3378448",
+          "title": "Mirae Asset to inject additional $35 million into Korbit crypto exchange following July acquisition: report",
+          "url": "https://www.theblock.co/news/business/2026-08-13-mirae-asset-35-million-korbit-411677",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News.jpg"
+        },
+        {
+          "id": "art_3372868",
+          "title": "Crypto valuations could double as protocols link revenue to tokens: Bitwise CIO 14m",
+          "url": "https://cointelegraph.com/news/crypto-valuations-protocol-revenue-token-buybacks",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3397354",
+          "title": "Bullish shares jump 10% as Q2 adjusted EBITDA more than triples",
+          "url": "https://cointelegraph.com/news/bullish-shares-surge-as-q2-adjusted-revenue-surges-62",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/trading-up.png"
+        },
+        {
+          "id": "art_3391274",
+          "title": "Peter Thiel-backed Bullish posts $280 million Q2 net loss as digital asset sales fall 44%",
+          "url": "https://www.theblock.co/news/business/2026-08-13-peter-thiel-backed-bullish-posts-280-million-q2-net-loss-as-digital-asset-sales-fall-44-411695",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221116_Earnings_Generic.jpg"
+        },
+        {
+          "id": "art_3380780",
+          "title": "Bitwise CIO sees market repricing as crypto embraces 'revenue fever'",
+          "url": "https://www.theblock.co/news/defi/2026-08-13-bitwise-cio-sees-market-repricing-as-crypto-embraces-revenue-fever-411682",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Tokens_News_2.jpg"
+        },
+        {
+          "id": "art_3379864",
+          "title": "BitGo posts $19M Q2 loss despite 80% revenue surge to $4.3B43m",
+          "url": "https://cointelegraph.com/news/bitgo-q2-19-million-revenue-surge-4-3-billion",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3394773",
+          "title": "Bitcoin continues ranging as crowded longs meet soft inflation, the quietest tape since 2019: analysts",
+          "url": "https://www.theblock.co/news/markets/2026-08-13-bitcoin-continues-ranging-as-crowded-longs-meet-soft-inflation-the-quietest-tape-since-2019-analysts-411708",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_2.jpg"
+        },
+        {
+          "id": "art_3391524",
+          "title": "Bitmine’s $257M annualized staking income ‘fills’ operational gaps, share buybacks: analysts12m, Bitmine’s $257M annualized staking income ‘fills’ operational gaps, share buybacks: analystsBitmine’s Ether staking revenue is an important financial buffer that fills financial gaps and provides recurring revenue streams beyond Ether’s price appreciation, analysts told Cointelegraph.",
+          "url": "https://cointelegraph.com/news/bitmines-257m-staking-income-operational-gaps-share-buybacks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3392097",
+          "title": "Trump sued over ‘selling priority access to news he himself generates for the benefit of a private company he controls’",
+          "url": "https://fortune.com/2026/08/13/trump-truth-social-priority-access-lawsuit/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2289907132-e1786625832310.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3422515",
+          "title": "KiiChain: An On-Chain FX Settlement Layer for Emerging Markets",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!_0S2!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021955%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_3422516",
+          "title": "키체인(KiiChain): 이머징 마켓을 위한 온체인 외환 정산 인프라",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!yK0E!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021960%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3405267",
+          "title": "Baltimore sues Kalshi and Polymarket, roping Coinbase, Robinhood and Webull into the fight",
+          "url": "https://www.theblock.co/news/business/2026-08-13-baltimore-sues-kalshi-polymarket-roping-coinbase-robinhood-webull-into-fight-411746",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News.jpg"
+        },
+        {
+          "id": "art_3402018",
+          "title": "Crypto group backs Custodia in Supreme Court battle over Fed access19m, Crypto group backs Custodia in Supreme Court battle over Fed accessThe Blockchain Association argues the Fed should not have broad discretion to deny eligible state-chartered banks direct access to its payment system.",
+          "url": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-reserve-asset-bill-explained.png"
+        },
+        {
+          "id": "art_3406682",
+          "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea37m, Delio CEO sentenced to 15 years in prison on crypto fraud in South KoreaMore than a year after being indicted on fraud charges related to his activities at crypto company Delio, Jeong Sang-ho faces prison time in South Korea.",
+          "url": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/arrest-police-crime-prison-jail-imprisonment-man-person2-1.jpg"
+        },
+        {
+          "id": "art_3405516",
+          "title": "CFTC to join SEC in exploring crypto regulations without CLARITY bill47m, CFTC to join SEC in exploring crypto regulations without CLARITY billThe CFTC will hold a meeting for its Innovation Advisory Committee on Aug. 20 to address regulation related to crypto assets, artificial intelligence and prediction markets.",
+          "url": "https://cointelegraph.com/news/cftc-exploring-crypto-regulations-clarity-act",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/paper-document-man-office-cftc-1.jpg"
+        },
+        {
+          "id": "art_3402934",
+          "title": "Citigroup CEO Fraser on Clarity Act: 'We would like to see a good bill go through,' as stablecoin reward issues simmer",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-citigroup-ceo-fraser-on-clarity-act-we-would-like-to-see-good-bill-go-stablecoin-reward-issues-simmer-411751",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg"
+        },
+        {
+          "id": "art_3378698",
+          "title": "Copper US arm becomes FINRA member, SEC-registered broker-dealer",
+          "url": "https://cointelegraph.com/news/copper-us-arm-joins-finra-after-sec-broker-dealer-approval",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/crypto-bitcoin-storage-us-2.jpg"
+        },
+        {
+          "id": "art_3410180",
+          "title": "City of Baltimore goes after prediction markets for sports betting",
+          "url": "https://cointelegraph.com/news/baltimore-lawsuit-prediction-markets-kalshi-polymarket-sports-betting",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/sports-fan-football.jpg"
+        },
+        {
+          "id": "art_3360042",
+          "title": "Arizona crypto ATM law helps 35 scam victims recover $171K 14m, Arizona crypto ATM law helps 35 scam victims recover $171K Qualifying new customers can receive full reimbursement, including fees, if they notify both the operator and law enforcement within 30 days.",
+          "url": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3425099",
+          "title": "Washington court orders Kalshi to halt most prediction market offerings in state",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-washington-court-orders-kalshi-411785",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3402752",
+          "title": "Nearly 14,000 crypto holders face security risk after data breach",
+          "url": "https://www.ft.com/content/a91356ef-67bd-4bd9-947b-b272423f1318",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F70586850-7256-4a8d-9ddd-b8e0a799e56a.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3397355",
+          "title": "Trezor reports data from 14K users exposed through shipping provider26m",
+          "url": "https://cointelegraph.com/news/trezor-customer-data-shipping-provider-shipmonk",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3405268",
+          "title": "Google ad phishing scam drains $550,000 from Hyperliquid user, security specialist says",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-google-ad-phishing-scam-drains-550000-from-hyperliquid-user-security-specialist-says-411755",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220207-Hacking-Generic.jpg"
+        },
+        {
+          "id": "art_3394772",
+          "title": "Trezor shipping provider breach exposes personal data of nearly 14,000 customers",
+          "url": "https://www.theblock.co/news/business/2026-08-13-trezor-shipping-provider-breach-exposes-personal-data-nearly-14000-customers-411702",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/02/20230222_Trezor.jpg"
+        },
+        {
+          "id": "art_3365772",
+          "title": "The Red Team Defending Bitcoin with Rob Hamilton",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/the-red-team-defending-bitcoin-with-rob-hamilton",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3409014",
+          "title": "Tether completes first full financial audit, receives clean KPMG opinion",
+          "url": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3391525",
+          "title": "MUFG PoC to bring Japanese government bond repo transactions onchain26m, MUFG PoC to bring Japanese government bond repo transactions onchainMUFG’s experiment plans to bring Japanese government bond repo transactions onchain to achieve 24/7 settlement, as well as improved capital and operational efficiency.",
+          "url": "https://cointelegraph.com/news/mufg-bring-japanese-government-bond-repo-transactions-onchain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-japan-issue-bonds-on-blockchain-how-significant-is-this-1.jpg"
+        },
+        {
+          "id": "art_3388026",
+          "title": "SEC allows Franklin Templeton funds to invest in onchain money fund10m",
+          "url": "https://cointelegraph.com/news/sec-franklin-templeton-funds-invest-onchain-money-fund",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/rwa.jpg"
+        },
+        {
+          "id": "art_3423015",
+          "title": "Figure reports $4.3B in loan marketplace volume as profit nearly triples41m, Figure reports $4.3B in loan marketplace volume as profit nearly triplesFigure expects consumer loan marketplace volume to range from $4.8 billion to $5.2 billion in the third quarter.",
+          "url": "https://cointelegraph.com/news/figure-q2-loan-marketplace-volume-profit",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/loan-cash.jpg"
+        },
+        {
+          "id": "art_3398270",
+          "title": "Onchain lender Figure nearly triples quarterly profits as loan marketplace volume surges to $4.3 billion",
+          "url": "https://www.theblock.co/news/business/2026-08-13-onchain-lender-figure-nearly-triples-quarterly-profits-as-loan-marketplace-volume-surges-to-4-3-billion-411736",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/12/20221221_Crypto-Lending-2.jpg"
+        },
+        {
+          "id": "art_3394774",
+          "title": "Ether.fi adds tokenized stocks, metals and Aave-powered portfolio loans in latest 'neobank' expansion",
+          "url": "https://www.theblock.co/news/defi/2026-08-13-ether-fi-adds-tokenized-stocks-metals-and-aave-powered-portfolio-loans-in-latest-neobank-expansion-411704",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/220202_NFT_Raising_Money_Charity_2.jpg"
+        },
+        {
+          "id": "art_3384528",
+          "title": "Binance bStocks passes xStocks as second-largest tokenized stock issuer18m",
+          "url": "https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3381030",
+          "title": "Securitize falls 16% after earnings miss, tokenization revenue drops15m",
+          "url": "https://cointelegraph.com/news/securitize-falls-earnings-miss-tokenization-revenue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3368938",
+          "title": "Digital gold, copper and uranium: prospectors stake bets on metals-crypto fusion",
+          "url": "https://www.ft.com/content/de7ded5c-23d4-44ac-8b21-bf7f5cdfefda",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F16d9d100-13c2-415c-9184-1265452a7bf3.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3407140",
+          "title": "What's behind the growth in tokenized stocks? ",
+          "url": "https://tokenterminal.com/resources/newsletter/what-s-behind-the-growth-in-tokenized-stocks",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "KPMG put its name on Tether's reserves this morning. That's not a press release. That's a Big Four firm accepting liability for USDT's 2025 financials, which means the question 'what backs the token?' has shifted from 'who knows' to 'read the audit opinion.' We've watched stablecoin issuers trade on opacity for a decade. That arbitrage is closing.\n\nThe repricing won't be even. USDC has had attestations for years; PYUSD launched with Paxos structure. Tether's move raises the floor for everyone, but it also squeezes the middle tier of issuers who can't afford KPMG-grade diligence or who haven't built the treasury infrastructure to survive it. We underwrite stablecoin exposure differently now: auditor rotation, reserve granularity, and counterparty concentration in the repo book.\n\nWhat kills this thesis? A qualified opinion in Tether's 2026 audit, or KPMG walking away. That's the testable line.\n\nSame day, Baltimore sues Kalshi and Polymarket as illegal sportsbooks, and names Coinbase and Robinhood as facilitators. Prediction markets just drew state-level litigation that treats them as betting operators, not derivatives venues. The CFTC's regulatory perimeter mattered. Municipal court jurisdiction matters more for near-term operating risk.\n\nTwo signals, same market: legitimacy is being manufactured and contested simultaneously. We price the audit. We discount the lawsuit. The gap between those two prices is where the work sits."
+}
