@@ -1,0 +1,584 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-16",
+  "date_display": "August 16, 2026",
+  "generated_at": "2026-08-16T05:00:17.834Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "White House Crypto Meeting Signals CFTC Ascendancy Over SEC in Regulatory Turf War",
+    "tldr": "Trump hosting crypto executives alongside CFTC Chair Selig—while the CLARITY Act stalls—suggests the administration is betting on commodities regulators over securities enforcers, with prediction markets now bundled into the same political package."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks how regulatory momentum is concentrating in one agency's corner while tokenized equities quietly scale to $23 billion monthly volume—two developments that reshape how we underwrite compliance risk and secondary-market liquidity.",
+  "market_snapshot": {
+    "as_of": "2026-08-16T05:00:17.834Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,044",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,880",
+        "change_24h": "-0.1%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.25T",
+        "change_24h": "-0.1%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$74.9B",
+        "change_24h": "+0.5%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 7,
+    "bearish": 14,
+    "neutral": 13,
+    "deduped": 13
+  },
+  "top_signals": [
+    {
+      "id": "art_3509126",
+      "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
+      "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "President Trump and CFTC Chair Rusty Selig are expected to meet with crypto and prediction market executives at the White House this Wednesday. The meeting serves as a kickoff for the CFTC's inaugural Innovation Advisory Committee meeting.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+      "themes": [
+        "regulation",
+        "government-relations"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg",
+      "why_it_matters": "The White House optics—Trump plus Selig, not Gensler—are a directional bet on CFTC jurisdiction that reprices every US exchange and DeFi protocol's legal roadmap, especially with prediction markets now explicitly in the room."
+    },
+    {
+      "id": "art_3500613",
+      "title": "‘The great quantum migration’ is coming as more than $2 trillion in digital assets is at risk—nearly the entire value of the overall crypto market",
+      "url": "https://fortune.com/2026/08/15/quantum-computing-migration-2-trillion-digital-assets-risk-crypto-market-bitcoin/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The crypto market faces a systemic risk as quantum computing threatens the elliptic-curve cryptography securing over $2 trillion in digital assets. Quantus CEO Christoper Smith warns of a necessary 'great quantum migration' to protect the industry from future quantum attacks.",
+      "significance": 7,
+      "primary_source": "https://fortune.com/2026/08/15/quantum-computing-migration-2-trillion-digital-assets-risk-crypto-market-bitcoin/",
+      "themes": [
+        "security",
+        "quantum-computing"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2278602022-e1786742155382.jpg?resize=1200,600",
+      "why_it_matters": "Quantum risk to $2 trillion in cryptographic-secured assets is an unpriced tail risk in most token valuations and infrastructure due diligence, one that will eventually force costly migration of legacy UTXO and account-based systems."
+    },
+    {
+      "id": "art_3453357",
+      "title": "Israel’s largest bank taps Galaxy to offer Bitcoin, Ether, Solana trading10m",
+      "url": "https://cointelegraph.com/news/israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Israel's largest bank has partnered with Galaxy to enable the trading of major digital assets including Bitcoin, Ether, and Solana. This move signals significant institutional adoption of cryptocurrencies within the Israeli banking sector.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading",
+      "themes": [
+        "investment",
+        "institutional-adoption"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-why-21-is-betting-on-10-cryptos-not-just-bitcoin-and-ethereum-zz.png",
+      "why_it_matters": "Israel's largest bank outsourcing to Galaxy rather than building proprietary stacks validates the B2B infrastructure thesis and narrows the competitive set for regulated crypto custody and execution in G20 banking."
+    },
+    {
+      "id": "art_3448689",
+      "title": "Binance to restrict transactions involving HTX, 10 other crypto platforms11m",
+      "url": "https://cointelegraph.com/news/binance-restrict-htx-10-crypto-platforms",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance is implementing restrictions on transactions involving HTX and ten other cryptocurrency platforms. This move is likely aimed at enhancing security and compliance measures regarding fund transfers between exchanges.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/binance-restrict-htx-10-crypto-platforms",
+      "themes": [
+        "security",
+        "exchange-compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/regulation-binance-1.jpg",
+      "why_it_matters": "Binance's platform-level transaction restrictions signal intensifying exchange self-regulation that fragments liquidity pools and raises counterparty diligence costs for trading strategies across venues."
+    },
+    {
+      "id": "art_3514048",
+      "title": "Tokenized stock holders more than double as monthly volume surges",
+      "url": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The number of tokenized stock holders has more than doubled over the last month, reaching 1.31 million. Monthly transfer volume for these assets also saw a significant surge, climbing to $23.13 billion.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/blockchain-waterfall-rwa.jpg",
+      "why_it_matters": "1.31 million tokenized stock holders and $23.13 billion monthly transfer volume demonstrate that tokenized securities have crossed from proof-of-concept to scalable distribution, though legal finality of ownership remains jurisdictionally untested."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_3498870",
+      "title": "Kalshi ordered to stop broad range of prediction markets in Washington38m, Kalshi ordered to stop broad range of prediction markets in WashingtonKalshi must implement initial geofencing by Aug. 19 and a GeoComply multi-source geofencing system by Sept. 2.",
+      "url": "https://cointelegraph.com/news/kalshi-stop-prediction-market-contracts-washington",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Kalshi has been ordered to halt a broad range of its prediction markets within the state of Washington. The company is required to implement strict geofencing measures by August 19 and September 2 to ensure compliance.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-paying-the-price-kalshi-banned-politician-for-insider-trading-2.jpg"
+    },
+    {
+      "id": "art_3462444",
+      "title": "'Honestly, I don't care': Tether CEO dismisses critics following first KPMG audit",
+      "url": "https://www.theblock.co/news/business/2026-08-14-honestly-i-dont-care-tether-ceo-dismisses-critics-first-kpmg-audit-411886",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "neutral",
+      "summary": "Tether's CEO has dismissed critics regarding the company's transparency following its first audit by KPMG. The company maintains that it does not publicly share audited statements because it operates as a private entity.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/10/tether.jpg"
+    },
+    {
+      "id": "art_3450976",
+      "title": "Fizzling CLARITY Act Odds Leave SEC and CFTC Scrambling to Act",
+      "url": "https://www.galaxy.com/insights/research/fizzling-clarity-act-odds-leave-agencies-scrambling-to-act",
+      "source": "Galaxy — Network",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The likelihood of the CLARITY Act passing in 2026 is decreasing, leaving the SEC and CFTC to navigate regulatory gaps. The SEC reportedly considered offering major exemptions to foster crypto innovation but has since backtracked.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/WsDfycZbqoOGrOWHvdJHp/d9c90b9227fef1cda9019aeaf016cbbd/Regulation-1_Gray-4.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3444021",
+      "title": "Shinhan Asset Management partners with Plume on tokenized fund pilot",
+      "url": "https://cointelegraph.com/news/shinhan-partners-plume-tokenized-fund-experiment",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Shinhan Asset Management is partnering with Plume to launch a pilot for a tokenized fund. The project will focus on a Korean won-denominated fund backed by ultra-short-term bonds.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/south-korea-crypto-1.jpg"
+    },
+    {
+      "id": "art_3442604",
+      "title": "Strategy, Metaplanet could face MSCI index removal under new proposal",
+      "url": "https://www.theblock.co/news/business/2026-08-14-strategy-metaplanet-msci-index-proposal-411809",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "MSCI is proposing a new non-operating company screen that could lead to the removal of MicroStrategy and Metaplanet from its global indexes. This move targets companies whose primary activity is holding assets rather than traditional operations.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Microstrategy_News.jpg"
+    },
+    {
+      "id": "art_3440520",
+      "title": "RedotPay US IPO delayed amid regulatory, legal hurdles: Report",
+      "url": "https://cointelegraph.com/news/redotpay-us-license-ipo-delay-binance-report",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "RedotPay's planned US IPO has been delayed due to regulatory hurdles and legal challenges. The company is currently facing a lawsuit from Binance affiliates totaling nearly $473 million.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-will-ripple-launch-an-ipo-bid-can-it-succeed0-1.jpg"
+    },
+    {
+      "id": "art_3438186",
+      "title": "JPMorgan cut Polymarket banking ties over regulatory concerns: Report29m",
+      "url": "https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "JPMorgan has reportedly severed its banking relationship with the prediction market Polymarket due to regulatory concerns. This move highlights the ongoing tension between traditional financial institutions and decentralized betting platforms.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-jp-morgan-chase-and-crypto-recap.jpg"
+    },
+    {
+      "id": "art_3462445",
+      "title": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A data breach of French tax records has exposed the personal information of nearly 678,000 individuals, potentially increasing the risk of targeted attacks. This occurs amidst a rising trend of 'wrench attacks'—violent crimes targeting cryptocurrency holders in France.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3450976",
+      "title": "Fizzling CLARITY Act Odds Leave SEC and CFTC Scrambling to Act",
+      "url": "https://www.galaxy.com/insights/research/fizzling-clarity-act-odds-leave-agencies-scrambling-to-act",
+      "source": "Galaxy — Network",
+      "note": "Tracks how stalled legislation is forcing SEC and CFTC into unilateral rulemaking, with material implications for which agency's enforcement playbook becomes the de facto standard.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/WsDfycZbqoOGrOWHvdJHp/d9c90b9227fef1cda9019aeaf016cbbd/Regulation-1_Gray-4.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3450974",
+      "title": "Charts of the Week: Crypto Lending Contracts, But Slowly This Time",
+      "url": "https://www.galaxy.com/insights/research/charts-of-the-week-crypto-lending-contraction-q2-2026",
+      "source": "Galaxy — Network",
+      "note": "Lending contract growth rates matter for whether DeFi credit markets can absorb institutional capital without the leverage spirals of 2022.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3kloG2qYzCAsPbqK4yw22B/15b2cb6ba575a102b88d98988ff002ed/General-ChartGraph-3_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3450977",
+      "title": "The Bitcoin Fork That Lasted Two Blocks",
+      "url": "https://www.galaxy.com/insights/research/the-bitcoin-fork-that-lasted-two-blocks",
+      "source": "Galaxy — Network",
+      "note": "The two-block fork episode is a live case study in consensus failure modes that stress-tests assumptions about Bitcoin's settlement finality.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/574fM8hth1YVg4x039doed/398de99200fb2d5fd831da1f8b69116e/Bitcoin-9_Orange-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3447272",
+          "title": "Hyperscale Data sells 685 bitcoin for $43 million to fund Michigan data center",
+          "url": "https://www.theblock.co/news/business/2026-08-14-hyperscale-data-sells-685-bitcoin-for-43-million-to-fund-michigan-data-center-411827",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3450977",
+          "title": "The Bitcoin Fork That Lasted Two Blocks",
+          "url": "https://www.galaxy.com/insights/research/the-bitcoin-fork-that-lasted-two-blocks",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/574fM8hth1YVg4x039doed/398de99200fb2d5fd831da1f8b69116e/Bitcoin-9_Orange-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_3440636",
+          "title": "What Korea's chip crash showed about Hyperliquid's equity markets ",
+          "url": "https://dune.com/blog/digital-asset-brief-5",
+          "source": "Dune",
+          "sentiment": "neutral",
+          "image_url": "https://cdn.sanity.io/images/fox336rh/production/f4833b63b33f14e9241144b13b6b05fc986d0421-1200x630.png"
+        },
+        {
+          "id": "art_3450974",
+          "title": "Charts of the Week: Crypto Lending Contracts, But Slowly This Time",
+          "url": "https://www.galaxy.com/insights/research/charts-of-the-week-crypto-lending-contraction-q2-2026",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3kloG2qYzCAsPbqK4yw22B/15b2cb6ba575a102b88d98988ff002ed/General-ChartGraph-3_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3425923",
+          "title": "Prediction markets’ reputation comes back to earth after surprise result in Wisconsin",
+          "url": "https://fortune.com/2026/08/13/prediction-markets-reputation-surprise-result-wisconsin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2290106771-e1786675774241.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3453357",
+          "title": "Israel’s largest bank taps Galaxy to offer Bitcoin, Ether, Solana trading10m",
+          "url": "https://cointelegraph.com/news/israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-why-21-is-betting-on-10-cryptos-not-just-bitcoin-and-ethereum-zz.png"
+        },
+        {
+          "id": "art_3442604",
+          "title": "Strategy, Metaplanet could face MSCI index removal under new proposal",
+          "url": "https://www.theblock.co/news/business/2026-08-14-strategy-metaplanet-msci-index-proposal-411809",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Microstrategy_News.jpg"
+        },
+        {
+          "id": "art_3461527",
+          "title": "Kraken parent Payward revenue rises 17% as trading volume falls in Q237m",
+          "url": "https://cointelegraph.com/news/kraken-parent-payward-revenue-rises-as-trading-volume-falls-q2",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3445188",
+          "title": "Gemini posts $108M Q2 net loss despite 37% revenue growth",
+          "url": "https://cointelegraph.com/news/gemini-45m-q2-revenue-financial-services",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-libra-vs-gemini-as-us-regulation-pioneer2.jpg"
+        },
+        {
+          "id": "art_3516134",
+          "title": "Harvard leaves bitcoin ETF stake untouched in Q2 after cutting it 43% in the prior quarter",
+          "url": "https://www.theblock.co/news/markets/2026-08-15-harvard-leaves-bitcoin-etf-stake-untouched-in-q2-after-cutting-it-43-in-the-prior-quarter-411926",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_1.jpg"
+        },
+        {
+          "id": "art_3467361",
+          "title": "Gen Z favors ETFs and trades less than older cohorts: Binance36m",
+          "url": "https://cointelegraph.com/news/gen-z-favors-etfs-and-trades-less-than-older-cohorts-binance",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3461526",
+          "title": "Dartmouth endowment’s crypto exposure drops by $2M amid falling prices25m",
+          "url": "https://cointelegraph.com/news/dartmouth-endowment-crypto-investments-btc-eth-sol-dropped",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3506409",
+          "title": "Crypto Fundraisings on Week 09 ",
+          "url": "https://crypto-fundraising.info/blog/dates-09-15-aug-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/09-15-Aug-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3453934",
+          "title": "Flock Safety says it will totally be better about (not) giving your license plate to law enforcement",
+          "url": "https://fortune.com/2026/08/14/flock-safety-says-it-will-totally-be-better-about-not-giving-your-license-plate-to-law-enforcement/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2270933501-e1786715570116.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3449267",
+          "title": "Trump’s ‘Golden Age’ economy pitch fizzles with midterm voters",
+          "url": "https://fortune.com/2026/08/14/trump-economy-midterm-voters-inflation-gas/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2290094066-e1786712178745.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3444938",
+          "title": "Norway sovereign wealth fund sees indirect bitcoin exposure hit all-time high, with Strategy accounting for 86%: K33",
+          "url": "https://www.theblock.co/news/markets/2026-08-14-norway-sovereign-wealth-fund-indirect-bitcoin-exposure-all-time-high-strategy-k33-411815",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_6.jpg"
+        },
+        {
+          "id": "art_3518720",
+          "title": "Bybit adds Unitree, Moonshot AI to pre-IPO perpetuals lineup19m",
+          "url": "https://cointelegraph.com/news/bybit-launches-unitree-pre-ipo-perpetual-as-crypto-platforms-push-into-private-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3437019",
+          "title": "Crypto payments barely register among euro area merchants, ECB finds25m",
+          "url": "https://cointelegraph.com/news/ecb-survey-0-2-euro-area-companies-accept-crypto-online",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3422515",
+          "title": "KiiChain: An On-Chain FX Settlement Layer for Emerging Markets",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!_0S2!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021955%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_3422516",
+          "title": "키체인(KiiChain): 이머징 마켓을 위한 온체인 외환 정산 인프라",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!yK0E!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021960%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3509126",
+          "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
+          "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg"
+        },
+        {
+          "id": "art_3498870",
+          "title": "Kalshi ordered to stop broad range of prediction markets in Washington38m, Kalshi ordered to stop broad range of prediction markets in WashingtonKalshi must implement initial geofencing by Aug. 19 and a GeoComply multi-source geofencing system by Sept. 2.",
+          "url": "https://cointelegraph.com/news/kalshi-stop-prediction-market-contracts-washington",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-paying-the-price-kalshi-banned-politician-for-insider-trading-2.jpg"
+        },
+        {
+          "id": "art_3450976",
+          "title": "Fizzling CLARITY Act Odds Leave SEC and CFTC Scrambling to Act",
+          "url": "https://www.galaxy.com/insights/research/fizzling-clarity-act-odds-leave-agencies-scrambling-to-act",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/WsDfycZbqoOGrOWHvdJHp/d9c90b9227fef1cda9019aeaf016cbbd/Regulation-1_Gray-4.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3440520",
+          "title": "RedotPay US IPO delayed amid regulatory, legal hurdles: Report",
+          "url": "https://cointelegraph.com/news/redotpay-us-license-ipo-delay-binance-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-will-ripple-launch-an-ipo-bid-can-it-succeed0-1.jpg"
+        },
+        {
+          "id": "art_3438186",
+          "title": "JPMorgan cut Polymarket banking ties over regulatory concerns: Report29m",
+          "url": "https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-jp-morgan-chase-and-crypto-recap.jpg"
+        },
+        {
+          "id": "art_3466194",
+          "title": "Ireland plans industry standards for illicit crypto use",
+          "url": "https://cointelegraph.com/news/ireland-industry-standards-crypto-gambling-aml",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/irish-dance-crypto.jpg"
+        },
+        {
+          "id": "art_3456858",
+          "title": "UK authorities continue probe into Nigel Farage’s crypto ‘gifts’ after by-election win",
+          "url": "https://cointelegraph.com/news/uk-investigation-nigel-farage-crypto-donations-by-election",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-j-crypto-donations-in-politics-uk.jpg"
+        },
+        {
+          "id": "art_3425099",
+          "title": "Washington court orders Kalshi to halt most prediction market offerings in state",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-washington-court-orders-kalshi-411785",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3500613",
+          "title": "‘The great quantum migration’ is coming as more than $2 trillion in digital assets is at risk—nearly the entire value of the overall crypto market",
+          "url": "https://fortune.com/2026/08/15/quantum-computing-migration-2-trillion-digital-assets-risk-crypto-market-bitcoin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2278602022-e1786742155382.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3448689",
+          "title": "Binance to restrict transactions involving HTX, 10 other crypto platforms11m",
+          "url": "https://cointelegraph.com/news/binance-restrict-htx-10-crypto-platforms",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/regulation-binance-1.jpg"
+        },
+        {
+          "id": "art_3462445",
+          "title": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3462444",
+          "title": "'Honestly, I don't care': Tether CEO dismisses critics following first KPMG audit",
+          "url": "https://www.theblock.co/news/business/2026-08-14-honestly-i-dont-care-tether-ceo-dismisses-critics-first-kpmg-audit-411886",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/10/tether.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3514048",
+          "title": "Tokenized stock holders more than double as monthly volume surges",
+          "url": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/blockchain-waterfall-rwa.jpg"
+        },
+        {
+          "id": "art_3444021",
+          "title": "Shinhan Asset Management partners with Plume on tokenized fund pilot",
+          "url": "https://cointelegraph.com/news/shinhan-partners-plume-tokenized-fund-experiment",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/south-korea-crypto-1.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The CFTC's Innovation Advisory Committee is meeting at the White House this Wednesday. Trump will be there. So will Rusty Selig. The SEC chair will not. That is not an oversight. The CLARITY Act—designed to settle the SEC-CFTC turf war—is fizzling in Congress, which means the agencies are scrambling to act unilaterally. The White House just placed its chip on Selig's side of the table. For founders building in the US, this matters because the CFTC's framework for commodities and, increasingly, prediction markets, is narrower and more permissive than the SEC's securities-based enforcement machine. We are underwriting US regulatory risk on the assumption that the CFTC's remit expands through administrative action where legislation fails. The test: whether the CFTC publishes a workable registration pathway for prediction market operators before the SEC issues a no-action letter for tokenized equities. One of those will happen first. The other may not happen at all. Tokenized stocks are scaling regardless—$23 billion in monthly volume, 1.31 million holders. The market is moving faster than either agency's rulebook. Our question is which regulator catches up, and which gets bypassed."
+}
