@@ -1,0 +1,1899 @@
+{
+  "schema": 2,
+  "type": "weekly",
+  "id": "2026-W34",
+  "date_display": "Week 34 · August 11 - August 17, 2026",
+  "generated_at": "2026-08-17T05:00:02.253Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Tether's KPMG Clean Opinion Marks First Full Audit Milestone as Hardware Wallet Security Model Fractures",
+    "tldr": "This week exposed a structural fault line in crypto's security stack: the same self-custody hardware vendors long marketed as 'unhackable' are now absorbing nine-figure losses, while institutional validation of onchain infrastructure—from Tether's audit to Franklin Templeton's SEC no-action letter—accelerates faster than retail risk tools can adapt."
+  },
+  "intro": "Dear Founders, Investors, and Friends, this week the gap between institutional-grade onchain validation and retail self-custody security widened into a chasm worth tracking closely.",
+  "market_snapshot": {
+    "as_of": "2026-08-17T05:00:02.253Z",
+    "source": "CoinGecko, DefiLlama (week)",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$63,497",
+        "change_24h": "-2.5%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,902",
+        "change_24h": "-1.1%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.27T",
+        "change_24h": null,
+        "direction": "flat"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.2B",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 15,
+    "signals": 6,
+    "watching": 12,
+    "bullish": 87,
+    "bearish": 58,
+    "neutral": 32
+  },
+  "top_signals": [
+    {
+      "id": "art_3450975",
+      "title": "Coldcard Exploit Abates as Total Losses Climb to (at Least) 1,700 BTC",
+      "url": "https://www.galaxy.com/insights/research/coldcard-exploit-abates-as-total-losses-climb-to-at-least-1700-btc",
+      "source": "Galaxy — Network",
+      "source_domain": "galaxy.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A vulnerability in Coldcard hardware wallets has led to significant losses, with at least 1,700 BTC stolen. While new incidents of the exploit have slowed down, the total amount of lost funds continues to rise as more victims report their losses.",
+      "significance": 9,
+      "primary_source": "https://www.galaxy.com/insights/research/coldcard-exploit-abates-as-total-losses-climb-to-at-least-1700-btc",
+      "themes": [
+        "security",
+        "hardware-wallet-exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3Pu1Br0nAtqRYZ3HX7LZDS/6a909b064d83f6880388d4c6c03bf3d8/Bitcoin-9_Orange-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "The Coldcard exploit's climbing loss tally reframes hardware wallet security from a solved problem to an active underwriting concern for any fund with treasury exposure."
+    },
+    {
+      "id": "art_3323691",
+      "title": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Harmony has confirmed a security exploit involving the unauthorized minting of 4 billion ONE tokens. The breach was first reported by X user Juiceberg.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230411_Hack_Generic_1.jpg",
+      "why_it_matters": "Harmony's unauthorized mint of 4 billion ONE tokens demonstrates that inflationary attack vectors remain unpriced in layer-1 governance and tokenomics models."
+    },
+    {
+      "id": "art_3227044",
+      "title": "Why the latest Bitcoin hack hurt more than most",
+      "url": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A major security breach has resulted in the theft of $100 million from Coldcard hardware wallet users. The incident is particularly significant as it targeted users who followed strict security protocols.",
+      "significance": 9,
+      "primary_source": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+      "themes": [
+        "security",
+        "hardware-wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/03/Bitcoin_disappearing_3.jpg?resize=1200,600",
+      "why_it_matters": "The $100 million Coldcard breach targeting users with strict security protocols destroys the retail assumption that operational discipline alone guarantees self-custody safety."
+    },
+    {
+      "id": "art_3509126",
+      "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
+      "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "President Trump and CFTC Chair Rusty Selig are expected to meet with crypto and prediction market executives at the White House this Wednesday. The meeting serves as a kickoff for the CFTC's inaugural Innovation Advisory Committee meeting.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+      "themes": [
+        "regulation",
+        "government-relations"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg",
+      "why_it_matters": "The White House-CFTC meeting with prediction market and crypto executives signals that regulated derivatives and event contracts are being fast-tracked as a bipartisan policy priority."
+    },
+    {
+      "id": "art_3409014",
+      "title": "Tether completes first full financial audit, receives clean KPMG opinion",
+      "url": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Tether has completed its first full independent financial audit for its 2025 financial statements. The audit was conducted by KPMG, which issued a clean opinion on the stablecoin issuer's financials.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+      "themes": [
+        "stablecoins",
+        "audit-compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report.png",
+      "why_it_matters": "Tether's clean KPMG opinion removes the last credible objection to USDT's reserve backing for most institutional counterparties, repricing the stablecoin competitive landscape."
+    },
+    {
+      "id": "art_3353964",
+      "title": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The SEC has issued a no-action letter allowing Franklin Templeton's traditional registered funds to utilize its onchain BENJI system for cash management. This marks a significant step in integrating traditional finance (TradFi) with blockchain-based asset management.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+      "themes": [
+        "tokenization",
+        "asset-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg",
+      "why_it_matters": "The SEC's no-action letter for Franklin Templeton's onchain BENJI system creates a replicable template for TradFi funds seeking compliant tokenized cash management infrastructure."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3353049",
+      "company": "NEOS Investments",
+      "amount": "$2.25B",
+      "round": "Acquisition",
+      "investors": [
+        "Goldman Sachs"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+      "summary": "Goldman Sachs is acquiring ETF manager NEOS Investments in a deal valued at up to $2.25 billion. This move integrates NEOS's Bitcoin and Ether-linked ETFs into Goldman's asset management division."
+    },
+    {
+      "id": "art_3291379",
+      "company": "LeveL Markets",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "Nasdaq"
+      ],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/nasdaq-to-acquire-level-markets-in-push-toward-always-on-markets",
+      "summary": "Nasdaq is acquiring LeveL Markets to advance its goal of creating 'always-on' financial markets. This move signals a shift toward 24/7 trading capabilities, mirroring the operational model of cryptocurrency markets."
+    },
+    {
+      "id": "art_3286485",
+      "company": "TradeZero",
+      "amount": "up to $231M",
+      "round": "Acquisition",
+      "investors": [
+        "eToro"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-08-11-etoro-to-buy-tradezero-for-231-million-equities-drive-q2-growth-411417",
+      "summary": "eToro has reached an agreement to acquire TradeZero for a total value of up to $231 million. The move comes as eToro reports strong Q2 growth driven primarily by equities trading."
+    },
+    {
+      "id": "art_3240272",
+      "company": "USHP",
+      "amount": "$50M",
+      "round": "Pre-launch institutional funding",
+      "investors": [
+        "Galaxy"
+      ],
+      "category": "Tokenization",
+      "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+      "summary": "Galaxy has committed $50 million to USHP through a pre-launch institutional funding round. USHP is developing the first digital asset that references a U.S. home price index, bringing real estate pricing data onchain."
+    },
+    {
+      "id": "art_3378448",
+      "company": "Korbit",
+      "amount": "$35M additional",
+      "round": "Follow-on",
+      "investors": [
+        "Mirae Asset"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-08-13-mirae-asset-35-million-korbit-411677",
+      "summary": "Mirae Asset plans to invest an additional $35 million into the Korbit crypto exchange. This follows the firm's acquisition of a 97.15% stake in the company in July for approximately $91.5 million."
+    },
+    {
+      "id": "art_3235490",
+      "company": "H100",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://www.theblock.co/news/business/2026-08-10-adam-back-backed-h100-more-triples-bitcoin-holdings-3506-btc-acquisition-411270",
+      "summary": "H100 has significantly increased its Bitcoin holdings to 3,506 BTC through an acquisition deal. The transaction was funded by the issuance of 790.5 million new shares."
+    },
+    {
+      "id": "art_3225318",
+      "company": "H100",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://cointelegraph.com/news/sweden-h100-bitcoin-treasury-btc-deal",
+      "summary": "Sweden-based company H100 has significantly increased its Bitcoin holdings to 3,506 BTC following a recent acquisition of 2,455 BTC. This move establishes H100 as the second-largest Bitcoin treasury in Europe."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3344895",
+      "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments34m",
+      "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "The Bank of England is conducting tests to ensure interoperability between a potential digital pound (CBDC) and private stablecoins for cross-border payments. This initiative aims to modernize the UK's payment infrastructure and enhance the efficiency of international settlements.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-list-of-most-prominent-fiat-backed-stablecoins-uk-1.jpg"
+    },
+    {
+      "id": "art_3336746",
+      "title": "Wintermute to pour $1B into AI, high-frequency trading amid TradFi expansion: Report28m",
+      "url": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Wintermute plans to invest $1 billion into AI and high-frequency trading as part of its expansion into traditional finance (TradFi). The move signals a strategic push to integrate advanced trading technologies across both crypto and conventional markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-project-explained-a-global-initiative-for-asset-tokenization.jpg"
+    },
+    {
+      "id": "art_3334417",
+      "title": "Fidelity files with SEC to add staking to Ethereum ETF16m, Fidelity files with SEC to add staking to Ethereum ETFFidelity plans to add staking to its Ether fund, with 85% of rewards retained by FETH and quarterly cash distributions planned for investors.",
+      "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Fidelity has filed with the SEC to incorporate staking rewards into its Ethereum ETF. The proposal suggests that 85% of rewards would be retained by the fund, with quarterly cash distributions provided to investors.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/option-1-bold-white-montserrat.jpeg"
+    },
+    {
+      "id": "art_3308809",
+      "title": "SEC, CFTC sue Goliath Ventures over $400M crypto Ponzi scheme",
+      "url": "https://cointelegraph.com/news/sec-cftc-sue-goliath-ventures-400m-crypto-ponzi",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The SEC and CFTC have filed lawsuits against Goliath Ventures in connection with a $400 million cryptocurrency Ponzi scheme. While Delgado has agreed to settle with the SEC, the CFTC is pursuing further penalties and market bans.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-most-famous-financial-pyramids-in-the-crypto-world.png"
+    },
+    {
+      "id": "art_3292289",
+      "title": "SEC could propose 'pivotal' crypto rules that may start with token safe harbor, TD Cowen says",
+      "url": "https://www.theblock.co/news/regulation/2026-08-11-sec-crypto-rules-token-safe-harbor-td-cowen-411455",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "TD Cowen suggests that an upcoming SEC meeting could initiate a pivotal rulemaking process for crypto. This may include the introduction of a token safe harbor, potentially providing much-needed regulatory clarity for the industry.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+    },
+    {
+      "id": "art_3283754",
+      "title": "Robinhood Vault: Retail Lenders, Institutional Borrowers",
+      "url": "https://www.stablewatch.io/research/robinhood-vault-retail-lenders-institutional-borrowers",
+      "source": "Stablewatch",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Robinhood has launched a curated Morpho vault for USDG, rapidly scaling to $600M in TVL and $287M in loans within one month. The vault allows Robinhood's retail user base to earn a 7% APY by providing liquidity to institutional borrowers.",
+      "image_url": "https://www.stablewatch.io/api/image-proxy?url=https%3A%2F%2Fghostadmin.stablewatch.io%2Fcontent%2Fimages%2F2026%2F08%2FSW-Cover_RobinhoodChain_Blog.png"
+    },
+    {
+      "id": "art_3280933",
+      "title": "Russia proposes exchange trading of Bitcoin, Ether and Tether’s USDT",
+      "url": "https://cointelegraph.com/news/bank-of-russia-trading-bitcoin-ether-tether-usdt",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Bank of Russia has proposed allowing the trading of Bitcoin, Ether, and USDT on regulated exchanges. The central bank is currently seeking public feedback on this proposal until August 24.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/bank-with-crypto-characters.png"
+    },
+    {
+      "id": "art_3272820",
+      "title": "Anthropic strikes $9B compute deal with Bitcoin miner Riot: Report21m, Anthropic strikes $9B compute deal with Bitcoin miner Riot: ReportAnthropic reportedly struck a $9 billion deal with Riot for 191 megawatts of capacity from the Bitcoin miner’s Rockdale campus in Texas.",
+      "url": "https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "AI firm Anthropic has reportedly entered into a $9 billion agreement with Bitcoin miner Riot Platforms to utilize compute capacity. The deal involves 191 megawatts of power from Riot's Rockdale campus in Texas.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-greenhouse.jpg"
+    },
+    {
+      "id": "art_3270252",
+      "title": "Broadridge's Distributed Ledger Repo platform processes $8 trillion in July volume",
+      "url": "https://www.theblock.co/news/business/2026-08-11-broadridge-8-trillion-july-411365",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Broadridge's distributed ledger-based repo platform achieved a massive milestone by processing $8 trillion in volume during July. This demonstrates significant institutional adoption of blockchain technology for traditional financial settlement.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240624_Tokenization_News_2.jpg"
+    },
+    {
+      "id": "art_3568694",
+      "title": "Wallet provider SafePal says data breach exposed personal info of nearly 40,000 customers",
+      "url": "https://www.theblock.co/news/business/2026-08-16-wallet-provider-safepal-says-data-breach-exposed-personal-info-of-nearly-40000-customers-411934",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Wallet provider SafePal has confirmed a data breach that exposed the personal information of approximately 40,000 customers. While the company recently identified the root cause, users had reported phishing attempts linked to the breach as early as July.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/09/extra2.jpg"
+    },
+    {
+      "id": "art_3500613",
+      "title": "‘The great quantum migration’ is coming as more than $2 trillion in digital assets is at risk—nearly the entire value of the overall crypto market",
+      "url": "https://fortune.com/2026/08/15/quantum-computing-migration-2-trillion-digital-assets-risk-crypto-market-bitcoin/",
+      "source": "Fortune Crypto",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The crypto market faces a systemic risk as quantum computing threatens the elliptic-curve cryptography securing over $2 trillion in digital assets. Quantus CEO Christoper Smith warns of a necessary 'great quantum migration' to protect the industry from future quantum attacks.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2278602022-e1786742155382.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_3456608",
+      "title": "Israel’s largest bank taps Galaxy to offer bitcoin, ether and solana trading",
+      "url": "https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Israel's largest bank is partnering with Galaxy to provide trading services for Bitcoin, Ether, and Solana. This move follows data showing significant on-chain crypto value flowing into Israel.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240725_Galaxy_News.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3240272",
+      "title": "Committing $50M to USHP: The Product Bringing U.S. Home Prices Onchain",
+      "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's $50M commitment to USHP offers a concrete look at how institutional capital is underwriting real estate index tokenization and the oracle mechanics required to make it work.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3GlVUqvFKdKCzP5tSunZ07/0ee92f39cf5dbcda840fea5711cc0a56/General-Cube-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3450973",
+      "title": "Weekly Research Brief: SEC Scrambles to Act as CLARITY Fizzles",
+      "url": "https://www.galaxy.com/insights/research/weekly-research-brief-clarity-act-10-percent-sec-reg-crypto-coldcard-losses-bip-110-bitcoin-fork",
+      "source": "Galaxy — Network",
+      "note": "The Galaxy brief on SEC scrambling post-CLARITY fizzle tracks how regulatory vacuum is being filled by agency enforcement rather than legislation, with direct implications for portfolio construction timelines.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6lX2xjnlFHCqqTHLySPtc6/f46427e186b5166b5ad69035f452097d/Top_Stories_G3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_3238221",
+      "title": "State of TRON Q2 2026",
+      "url": "https://messari.io/report/state-of-tron-q2-2026",
+      "source": "Messari — Research",
+      "note": "Messari's TRON Q2 analysis provides the data to test whether USDT supply concentration on the network is stabilizing or accelerating, which matters for Tether's newly audited liability structure.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/a04ab4d30e913ffcec2d4933dc01b2f8a03c598f-6400x3600.png"
+    },
+    {
+      "id": "art_3283869",
+      "title": "The Case For Plasma One: Stablecoins Are Eating The World ",
+      "url": "https://members.delphidigital.io/reports/the-case-for-plasma-one-stablecoins-are-eating-the-world",
+      "source": "Delphi Digital",
+      "note": "Delphi's Plasma One case reframes stablecoin growth not as payment rail adoption but as sovereign debt market displacement, a thesis worth stress-testing against Tether's audit disclosure.",
+      "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/08/b0dfc0ea-state-of-token-markets-42-1024x576.jpg"
+    },
+    {
+      "id": "art_3244904",
+      "title": "Solana Q2 2026 Update: Building for the Tokenized Economy",
+      "url": "https://www.galaxy.com/insights/research/solana-q2-2026-report-tokenized-economy-dex-rwa-stablecoins",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's Solana Q2 update maps the protocol's institutional infrastructure buildout against Franklin Templeton's BENJI approval, showing where tokenized economy tooling is actually shipping versus pitched.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7IJQQ7RcsgquXhCtIXavfn/efd37c41d0a2b0a971ba95e27c6b4ffa/Solana-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3294861",
+          "title": "Strategy CEO says company will resume Bitcoin accumulation this year22m, Strategy CEO says company will resume Bitcoin accumulation this yearThe company has bought roughly 25 times more BTC than it has sold this year, despite recent sales that challenged its long-standing accumulation strategy.",
+          "url": "https://cointelegraph.com/news/strategy-ceo-resume-bitcoin-accumulation-this-year",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3453358",
+          "title": "Crypto Biz: Bitcoin’s $116M self-custody wake-up call23m",
+          "url": "https://cointelegraph.com/news/crypto-biz-bitcoin-self-custody-etf-inflows-strategy-riot-ai",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3398520",
+          "title": "Public Bitcoin miners cut hashrate 13.4% as AI infrastructure revenue grows",
+          "url": "https://cointelegraph.com/news/bitcoin-miners-hashrate-ai-data-centers-hpc",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-bitcoin-miners-as-energy-buyers-ai.jpg"
+        },
+        {
+          "id": "art_3286484",
+          "title": "Benchmark sees over 150% upside for Bitdeer on bitcoin mining, AI outlook",
+          "url": "https://www.theblock.co/news/business/2026-08-11-benchmark-sees-over-150-upside-for-bitdeer-on-bitcoin-mining-ai-outlook-411424",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3245913",
+          "title": "BlackRock says bitcoin sentiment is turning as decoupling from stocks takes hold",
+          "url": "https://www.theblock.co/news/markets/2026-08-10-blackrock-says-bitcoin-sentiment-turning-decoupling-stocks-takes-hold-411333",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+        },
+        {
+          "id": "art_3235490",
+          "title": "Adam Back-backed H100 more than triples bitcoin holdings to 3,506 BTC in acquisition deal",
+          "url": "https://www.theblock.co/news/business/2026-08-10-adam-back-backed-h100-more-triples-bitcoin-holdings-3506-btc-acquisition-411270",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_4-1200x675.jpg"
+        },
+        {
+          "id": "art_3370536",
+          "title": "Metaplanet CEO shuts down Bitcoin sale speculation after $322M transfer9m, Metaplanet CEO shuts down Bitcoin sale speculation after $322M transferMetaplanet CEO Simon Gerovich said no Bitcoin was sold after the company moved 5,014 BTC between custodial addresses for about $8 in fees.",
+          "url": "https://cointelegraph.com/news/gerovich-shuts-down-bitcoin-sale-metaplanets-transfer",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3231108",
+          "title": "Bitdeer increased Bitcoin mining output by nearly fivefold in Q221m, Bitdeer increased Bitcoin mining output by nearly fivefold in Q2Bitdeer mined 2,694 BTC in Q2, but ended the quarter holding just 150 BTC after liquidating its treasury earlier this year.",
+          "url": "https://cointelegraph.com/news/bitdeer-bitcoin-mining-output-fivefold-q2",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3228542",
+          "title": "Michael Saylor's Strategy sells another 1,690 BTC as USD reserve hits $4.65 billion",
+          "url": "https://www.theblock.co/news/business/2026-08-10-michael-saylor-strategy-bitcoin-treasury-411237",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250304_Strategy_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3225318",
+          "title": "H100 becomes Europe’s No. 2 Bitcoin treasury after 2,455 BTC deal32m, H100 becomes Europe’s No. 2 Bitcoin treasury after 2,455 BTC dealSweden’s H100 more than tripled its Bitcoin holdings to 3,506 BTC after completing an acquisition involving 2,455 BTC.",
+          "url": "https://cointelegraph.com/news/sweden-h100-bitcoin-treasury-btc-deal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3447272",
+          "title": "Hyperscale Data sells 685 bitcoin for $43 million to fund Michigan data center",
+          "url": "https://www.theblock.co/news/business/2026-08-14-hyperscale-data-sells-685-bitcoin-for-43-million-to-fund-michigan-data-center-411827",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3341152",
+          "title": "BIP-110 failure shows Bitcoin would be 'almost impossible to reproduce,' Plan B Network director says",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-12-bip-110-failure-bitcoin-impossible-reproduce-plan-b-network-director-411596",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/01/20240111_Bitcoin_News_3.jpg"
+        },
+        {
+          "id": "art_3329511",
+          "title": "Bitcoin market in 'hibernation' as perp trading activity sinks to three-year low ahead of US CPI release: K33",
+          "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-perp-trading-activity-three-year-low-us-cpi-k33-411545",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/20241111_Decentralized-prediction-markets_News.jpg"
+        },
+        {
+          "id": "art_3327433",
+          "title": "Crypto companies urge AI firms to give Bitcoin developers early access27m, Crypto companies urge AI firms to give Bitcoin developers early accessThe Bitcoin Policy Institute and other industry participants urged AI companies to offer early access to their frontier models to aid Bitcoin and open-source developers in their cybersecurity efforts.",
+          "url": "https://cointelegraph.com/news/crypto-companies-ai-firms-bitcoin-developers-access",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3287646",
+          "title": "Bitcoin slips toward $64,000 as traders await Wednesday's inflation test",
+          "url": "https://www.theblock.co/news/markets/2026-08-11-bitcoin-slips-toward-64000-as-traders-await-wednesdays-inflation-test-411418",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_5-1200x675.jpg"
+        },
+        {
+          "id": "art_3275138",
+          "title": "Keel shuts US Bitcoin mining operations as Q2 revenue falls 50%",
+          "url": "https://cointelegraph.com/news/keel-shuts-bitcoin-mining-ai-pivot-revenue-falls",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-is-cryptocurrency-mining-still-profitable-in-2025.jpg"
+        },
+        {
+          "id": "art_3268184",
+          "title": "Luke Dashjr removed as Bitcoin Improvement Proposal editor29m, Luke Dashjr removed as Bitcoin Improvement Proposal editorLuke Dashjr lost his BIP editor privileges after developers raised concerns over his role in BIP 110 and its stalled minority fork.",
+          "url": "https://cointelegraph.com/news/luke-dashjr-removed-as-bitcoin-proposal-editor",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3236648",
+          "title": "Bitcoin miner Bitdeer's shares sink 15% despite revenue growth, progress on AI pivot",
+          "url": "https://www.theblock.co/news/business/2026-08-10-bitcoin-miner-bitdeer-shares-sink-despite-revenue-growth-progress-ai-pivot-411276",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3450977",
+          "title": "The Bitcoin Fork That Lasted Two Blocks",
+          "url": "https://www.galaxy.com/insights/research/the-bitcoin-fork-that-lasted-two-blocks",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/574fM8hth1YVg4x039doed/398de99200fb2d5fd831da1f8b69116e/Bitcoin-9_Orange-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3288806",
+          "title": "From bitcoin bull to ‘complete demolition’: Keel CEO bets on AI’s greater value",
+          "url": "https://www.theblock.co/news/business/2026-08-11-bitcoin-bull-to-complete-demolition-keel-ceo-bets-on-ai-greater-value-411435",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_3283754",
+          "title": "Robinhood Vault: Retail Lenders, Institutional Borrowers",
+          "url": "https://www.stablewatch.io/research/robinhood-vault-retail-lenders-institutional-borrowers",
+          "source": "Stablewatch",
+          "sentiment": "bullish",
+          "image_url": "https://www.stablewatch.io/api/image-proxy?url=https%3A%2F%2Fghostadmin.stablewatch.io%2Fcontent%2Fimages%2F2026%2F08%2FSW-Cover_RobinhoodChain_Blog.png"
+        },
+        {
+          "id": "art_3440636",
+          "title": "What Korea's chip crash showed about Hyperliquid's equity markets ",
+          "url": "https://dune.com/blog/digital-asset-brief-5",
+          "source": "Dune",
+          "sentiment": "neutral",
+          "image_url": "https://cdn.sanity.io/images/fox336rh/production/f4833b63b33f14e9241144b13b6b05fc986d0421-1200x630.png"
+        },
+        {
+          "id": "art_3355129",
+          "title": "Hyperliquid treasury Hyperion triples quarterly profits as HYPE holdings rise in value",
+          "url": "https://www.theblock.co/news/markets/2026-08-12-hyperliquid-treasury-hyperion-triples-quarterly-profits-as-hype-holdings-rise-in-value-411652",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News.jpg"
+        },
+        {
+          "id": "art_3559600",
+          "title": "DefiLlama delayed mobile launch over phishing apps on Apple Store, founder says",
+          "url": "https://cointelegraph.com/news/defillama-delayed-app-launch-fake-phishing-apps-apple",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-hackers-fishing.jpg"
+        },
+        {
+          "id": "art_3450974",
+          "title": "Charts of the Week: Crypto Lending Contracts, But Slowly This Time",
+          "url": "https://www.galaxy.com/insights/research/charts-of-the-week-crypto-lending-contraction-q2-2026",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3kloG2qYzCAsPbqK4yw22B/15b2cb6ba575a102b88d98988ff002ed/General-ChartGraph-3_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3386860",
+          "title": "‘DeFi doesn’t exist anymore,’ just onchain finance: Andre Cronje33m",
+          "url": "https://cointelegraph.com/news/defi-doesnt-exist-onchain-finance-andre-cronje",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3346974",
+          "title": "Polymarket taps ex-Uber and Bird exec Travis VanderZanden to boost growth",
+          "url": "https://www.theblock.co/news/business/2026-08-12-polymarket-taps-ex-uber-and-bird-exec-travis-vanderzanden-to-boost-growth-411631",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/polymarket-news-editorial.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_3363540",
+          "title": "ASX shareholder plans to sue former directors over failed blockchain project",
+          "url": "https://cointelegraph.com/news/asx-shareholder-lawsuit-failed-blockchain-chess-project",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3334417",
+          "title": "Fidelity files with SEC to add staking to Ethereum ETF16m, Fidelity files with SEC to add staking to Ethereum ETFFidelity plans to add staking to its Ether fund, with 85% of rewards retained by FETH and quarterly cash distributions planned for investors.",
+          "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/option-1-bold-white-montserrat.jpeg"
+        },
+        {
+          "id": "art_3237806",
+          "title": "Vitalik Buterin puts privacy and quantum resistance front and center in Ethereum’s latest roadmap",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg"
+        },
+        {
+          "id": "art_3554928",
+          "title": "Ethereum devs to narrow 66 proposals tied to Hegotá upgrade5m, Ethereum devs to narrow 66 proposals tied to Hegotá upgradeThe Hegotá upgrade aims to introduce more native privacy for Ethereum applications.",
+          "url": "https://cointelegraph.com/news/ethereum-devs-66-proposals-hegota-upgrade",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3416013",
+          "title": "Ethereum Foundation pivots away from Poseidon in post-quantum plan22m, Ethereum Foundation pivots away from Poseidon in post-quantum planAdvances in compact proofs have erased Poseidon’s previous performance advantage, according to researcher Justin Drake.",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-drops-poseidon-post-quantum-plan",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3349304",
+          "title": "Ethereum staking climbs to 34% as proposal targets validator rewards and ETH treasury firm yields",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-12-ethereum-staking-climbs-34-proposal-targets-validator-rewards-eth-treasury-firm-yields-411312",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_3.jpg"
+        },
+        {
+          "id": "art_3233175",
+          "title": "Bitmine adds 7,391 ether in a week, bringing total Ethereum holdings to 5.81 million ETH",
+          "url": "https://www.theblock.co/news/business/2026-08-10-bitmine-adds-7391-eth-411265",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_5-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3272820",
+          "title": "Anthropic strikes $9B compute deal with Bitcoin miner Riot: Report21m, Anthropic strikes $9B compute deal with Bitcoin miner Riot: ReportAnthropic reportedly struck a $9 billion deal with Riot for 191 megawatts of capacity from the Bitcoin miner’s Rockdale campus in Texas.",
+          "url": "https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-greenhouse.jpg"
+        },
+        {
+          "id": "art_3402019",
+          "title": "Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard Chartered26m, Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard CharteredStandard Chartered said Robinhood’s Uniswap integration could solve a key challenge for new blockchains while accelerating UNI token burns.",
+          "url": "https://cointelegraph.com/news/robinhood-chain-uniswap-liquidity-uni-burns",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3291379",
+          "title": "Nasdaq to acquire LeveL Markets in push toward ‘always-on’ markets24m",
+          "url": "https://cointelegraph.com/news/nasdaq-to-acquire-level-markets-in-push-toward-always-on-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3272572",
+          "title": "Zama brings its blockchain-privacy token to Revolut's 70 million users",
+          "url": "https://www.theblock.co/news/markets/2026-08-11-zama-brings-blockchain-privacy-token-to-revoluts-70-million-users-411290",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260409_Tokens_News.jpg"
+        },
+        {
+          "id": "art_3367954",
+          "title": "BitGo sees revenue jump 80% to $4.3 billion in Q2 but posts net loss",
+          "url": "https://www.theblock.co/news/business/2026-08-12-bitgo-sees-revenue-jump-q2-411664",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/12/bitgo.jpg"
+        },
+        {
+          "id": "art_3296934",
+          "title": "ENS Foundation takes administrative control of $65 million Endowment following tokenholder vote",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-11-ens-foundation-administrative-control-65-million-endowment-tokenholder-vote-411464",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/10/20231006EthereumNameService_News2.png"
+        },
+        {
+          "id": "art_3238221",
+          "title": "State of TRON Q2 2026",
+          "url": "https://messari.io/report/state-of-tron-q2-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/a04ab4d30e913ffcec2d4933dc01b2f8a03c598f-6400x3600.png"
+        },
+        {
+          "id": "art_3341151",
+          "title": "SKALE launches Agent Pit to let builders train AI agents before taking them live on Polymarket",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-skales-agent-pit-lets-builders-train-ai-agents-before-taking-them-live-on-polymarket-411580",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240814_Crypto-AI_News_2.jpg"
+        },
+        {
+          "id": "art_3337909",
+          "title": "Kalshi launches sports and crypto perps data feed on DoubleZero",
+          "url": "https://cointelegraph.com/news/kalshi-launches-sports-crypto-data-feed-doublezero",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-comparison-us-elections-2.jpg"
+        },
+        {
+          "id": "art_3244904",
+          "title": "Solana Q2 2026 Update: Building for the Tokenized Economy",
+          "url": "https://www.galaxy.com/insights/research/solana-q2-2026-report-tokenized-economy-dex-rwa-stablecoins",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7IJQQ7RcsgquXhCtIXavfn/efd37c41d0a2b0a971ba95e27c6b4ffa/Solana-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3561084",
+          "title": "Compute that pays twice ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_ae07e07d-bde9-4c95-a5b9-d543310553b5",
+          "source": "Blockworks (1)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_3322184",
+          "title": "CoreWeave CEO Michael Intrator cites ‘sold out’ capacity as revenue more than doubles and backlog swells to $104 billion",
+          "url": "https://fortune.com/2026/08/11/coreweave-ceo-michael-intrator-cites-sold-out-capacity-as-revenue-more-than-doubles-and-backlog-swells-to-104-billion/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2236260070-e1786493162675.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3242538",
+          "title": "Centaur 2.0: Permissions, Context, and MCP",
+          "url": "https://www.paradigm.xyz/writing/centaur-2-0-permissions-context-and-mcp",
+          "source": "Paradigm",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/2WpwqOyFAU6LKjbbeOvror/cc17cb4117a363e04470a86429891398/Centaur_2.0.png?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+        },
+        {
+          "id": "art_3316109",
+          "title": "Aptos Flips the Script ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_984188e6-9531-4700-8759-7e864443e633",
+          "source": "Blockworks (1)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_3298248",
+          "title": "Inference Market (and Micro) Structure",
+          "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4eVXjYHWmhMC3I8MFUhFmK/19ab20565f85e197bf04cd8c5b525156/Leverage_Unwinds_and_Liquidity_Tightens_Across_Crypto.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3344157",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/uniswap-data-dashboard-primer",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        },
+        {
+          "id": "art_3306909",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/fluent-data-dashboard-primer",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3353049",
+          "title": "Goldman Sachs to acquire ETF manager NEOS in $2.25B deal",
+          "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.png"
+        },
+        {
+          "id": "art_3336746",
+          "title": "Wintermute to pour $1B into AI, high-frequency trading amid TradFi expansion: Report28m",
+          "url": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-project-explained-a-global-initiative-for-asset-tokenization.jpg"
+        },
+        {
+          "id": "art_3456608",
+          "title": "Israel’s largest bank taps Galaxy to offer bitcoin, ether and solana trading",
+          "url": "https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240725_Galaxy_News.jpg"
+        },
+        {
+          "id": "art_3286485",
+          "title": "eToro agrees to buy TradeZero for up to $231 million as equities drive Q2 growth",
+          "url": "https://www.theblock.co/news/business/2026-08-11-etoro-to-buy-tradezero-for-231-million-equities-drive-q2-growth-411417",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/08/etoro.jpg"
+        },
+        {
+          "id": "art_3238056",
+          "title": "BlackRock launches two Canada ETFs, with one allocating 3% to Bitcoin15m",
+          "url": "https://cointelegraph.com/news/blackrock-launches-two-canada-etfs-with-one-allocating-3-to-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3451024",
+          "title": "Morgan Stanley’s BlackRock Bitcoin ETF holdings rise 23% in Q2",
+          "url": "https://cointelegraph.com/news/morgan-stanley-buys-blackrock-bitcoin-etf-q2",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-central-bank-issued-digital-currency-the-new-bank-account-morgan-stanley.jpg"
+        },
+        {
+          "id": "art_3444939",
+          "title": "Kraken parent Payward posts $508 million in Q2 adjusted revenue as growth broadens beyond crypto trading",
+          "url": "https://www.theblock.co/news/business/2026-08-14-kraken-parent-payward-508-million-q2-adjusted-revenue-411818",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20220906_Funding_News.jpg"
+        },
+        {
+          "id": "art_3409930",
+          "title": "Gemini shares slide after $108 million loss as Winklevoss says 'we still have work to do'",
+          "url": "https://www.theblock.co/news/business/2026-08-13-gemini-shares-slide-108-million-loss-winklevoss-says-we-still-have-work-to-do-411775",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221116_Gemini-2.jpg"
+        },
+        {
+          "id": "art_3378448",
+          "title": "Mirae Asset to inject additional $35 million into Korbit crypto exchange following July acquisition: report",
+          "url": "https://www.theblock.co/news/business/2026-08-13-mirae-asset-35-million-korbit-411677",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News.jpg"
+        },
+        {
+          "id": "art_3372868",
+          "title": "Crypto valuations could double as protocols link revenue to tokens: Bitwise CIO 14m",
+          "url": "https://cointelegraph.com/news/crypto-valuations-protocol-revenue-token-buybacks",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3287645",
+          "title": "Twenty One Capital takes $414 million Q2 loss as new CEO plots path to become 'more than a Bitcoin treasury'",
+          "url": "https://www.theblock.co/news/business/2026-08-11-twenty-one-capital-414-million-q2-loss-new-ceo-plots-path-bitcoin-treasury-411432",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/01/20240111_Bitcoin_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3279524",
+          "title": "Trump Media records $360.6 million unrealized loss on digital assets in first half of the year",
+          "url": "https://www.theblock.co/news/business/2026-08-11-trump-media-records-360-6-million-unrealized-loss-on-digital-assets-in-first-half-of-the-year-411394",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News_3.jpg"
+        },
+        {
+          "id": "art_3445188",
+          "title": "Gemini posts $108M Q2 net loss despite 37% revenue growth",
+          "url": "https://cointelegraph.com/news/gemini-45m-q2-revenue-financial-services",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-libra-vs-gemini-as-us-regulation-pioneer2.jpg"
+        },
+        {
+          "id": "art_3397354",
+          "title": "Bullish shares jump 10% as Q2 adjusted EBITDA more than triples",
+          "url": "https://cointelegraph.com/news/bullish-shares-surge-as-q2-adjusted-revenue-surges-62",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/trading-up.png"
+        },
+        {
+          "id": "art_3391274",
+          "title": "Peter Thiel-backed Bullish posts $280 million Q2 net loss as digital asset sales fall 44%",
+          "url": "https://www.theblock.co/news/business/2026-08-13-peter-thiel-backed-bullish-posts-280-million-q2-net-loss-as-digital-asset-sales-fall-44-411695",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221116_Earnings_Generic.jpg"
+        },
+        {
+          "id": "art_3380780",
+          "title": "Bitwise CIO sees market repricing as crypto embraces 'revenue fever'",
+          "url": "https://www.theblock.co/news/defi/2026-08-13-bitwise-cio-sees-market-repricing-as-crypto-embraces-revenue-fever-411682",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Tokens_News_2.jpg"
+        },
+        {
+          "id": "art_3379864",
+          "title": "BitGo posts $19M Q2 loss despite 80% revenue surge to $4.3B43m",
+          "url": "https://cointelegraph.com/news/bitgo-q2-19-million-revenue-surge-4-3-billion",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3322527",
+          "title": "Bitwise cuts 14% of staff as crypto layoffs mount during market downturn",
+          "url": "https://www.theblock.co/news/business/2026-08-12-bitwise-layoffs-411522",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Bitwise_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3516134",
+          "title": "Harvard leaves bitcoin ETF stake untouched in Q2 after cutting it 43% in the prior quarter",
+          "url": "https://www.theblock.co/news/markets/2026-08-15-harvard-leaves-bitcoin-etf-stake-untouched-in-q2-after-cutting-it-43-in-the-prior-quarter-411926",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_1.jpg"
+        },
+        {
+          "id": "art_3467361",
+          "title": "Gen Z favors ETFs and trades less than older cohorts: Binance36m",
+          "url": "https://cointelegraph.com/news/gen-z-favors-etfs-and-trades-less-than-older-cohorts-binance",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3348389",
+          "title": "Bitwise cuts 14% of staff while still expecting growth50m",
+          "url": "https://cointelegraph.com/news/bitwise-staff-cuts-market-downturn-growth",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3283251",
+          "title": "SharpLink reports $394M in Q2 net loss fueled by ETH decline",
+          "url": "https://cointelegraph.com/news/sharplink-reports-394m-q2-net-loss",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-takeaways-5-years-after-the-dao-crisis-and-ethereum-hardfork.jpg"
+        },
+        {
+          "id": "art_3298246",
+          "title": "Being a Fundamental Investor in Crypto w/ Toe from Theia",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/being-a-fundamental-investor-in-crypto-w-toe-from-theia",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3461526",
+          "title": "Dartmouth endowment’s crypto exposure drops by $2M amid falling prices25m",
+          "url": "https://cointelegraph.com/news/dartmouth-endowment-crypto-investments-btc-eth-sol-dropped",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3337316",
+          "title": "87.5% of venture dollars went to AI. The rest fought over scraps",
+          "url": "https://fortune.com/2026/08/12/venture-capital-funding-ai-pitchbook-us-vc-valuations-series-d/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/Dario-Amodei-GettyImages-2256664479.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3275706",
+          "title": "Apple’s summer of ‘Sell’ ratings",
+          "url": "https://fortune.com/2026/08/11/apple-summer-of-sell-ratings/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2149574147.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3245534",
+          "title": "Memebook raised $1M in a Seed funding round",
+          "url": "https://crypto-fundraising.info/blog/memebook-raised-1m-in-a-seed-funding-round/",
+          "source": "Crypto Fundraising",
+          "sentiment": "bullish",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/2026/08/Memebook-Seed-funding-round-scaled.png"
+        },
+        {
+          "id": "art_3506409",
+          "title": "Crypto Fundraisings on Week 09 ",
+          "url": "https://crypto-fundraising.info/blog/dates-09-15-aug-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/09-15-Aug-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3453934",
+          "title": "Flock Safety says it will totally be better about (not) giving your license plate to law enforcement",
+          "url": "https://fortune.com/2026/08/14/flock-safety-says-it-will-totally-be-better-about-not-giving-your-license-plate-to-law-enforcement/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2270933501-e1786715570116.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3449267",
+          "title": "Trump’s ‘Golden Age’ economy pitch fizzles with midterm voters",
+          "url": "https://fortune.com/2026/08/14/trump-economy-midterm-voters-inflation-gas/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2290094066-e1786712178745.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3444938",
+          "title": "Norway sovereign wealth fund sees indirect bitcoin exposure hit all-time high, with Strategy accounting for 86%: K33",
+          "url": "https://www.theblock.co/news/markets/2026-08-14-norway-sovereign-wealth-fund-indirect-bitcoin-exposure-all-time-high-strategy-k33-411815",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_6.jpg"
+        },
+        {
+          "id": "art_3394773",
+          "title": "Bitcoin continues ranging as crowded longs meet soft inflation, the quietest tape since 2019: analysts",
+          "url": "https://www.theblock.co/news/markets/2026-08-13-bitcoin-continues-ranging-as-crowded-longs-meet-soft-inflation-the-quietest-tape-since-2019-analysts-411708",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250603_Bitcoin_News_2.jpg"
+        },
+        {
+          "id": "art_3391524",
+          "title": "Bitmine’s $257M annualized staking income ‘fills’ operational gaps, share buybacks: analysts12m, Bitmine’s $257M annualized staking income ‘fills’ operational gaps, share buybacks: analystsBitmine’s Ether staking revenue is an important financial buffer that fills financial gaps and provides recurring revenue streams beyond Ether’s price appreciation, analysts told Cointelegraph.",
+          "url": "https://cointelegraph.com/news/bitmines-257m-staking-income-operational-gaps-share-buybacks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3349554",
+          "title": "Kraken adds S&P 500 to funded trading program, commodities to follow",
+          "url": "https://cointelegraph.com/news/kraken-prop-sp500-perpetual-commodities-next",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sp-500-can-be-confusing-bitcoin.png"
+        },
+        {
+          "id": "art_3298918",
+          "title": "Long-time OpenAI exec Brad Lightcap is leaving the ChatGPT maker to ‘start something new’",
+          "url": "https://fortune.com/2026/08/11/openai-exec-brad-lightcap-leaving-start-something-new/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2089847602-e1786469303819.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3518720",
+          "title": "Bybit adds Unitree, Moonshot AI to pre-IPO perpetuals lineup19m",
+          "url": "https://cointelegraph.com/news/bybit-launches-unitree-pre-ipo-perpetual-as-crypto-platforms-push-into-private-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3344894",
+          "title": "FlightAware drops Kalshi lawsuit one day after filing26m, FlightAware drops Kalshi lawsuit one day after filingFollowing the initial lawsuit, at least one of Kalshi’s event contracts was changed to list “Primary Source Agency” as the entity behind verifying flight cancellation data.",
+          "url": "https://cointelegraph.com/news/flightaware-drops-kalshi-lawsuit-one-day-after-filing",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3341154",
+          "title": "Attackers keep hitting the wrong house in rural France after crypto millionaire moved: report",
+          "url": "https://www.theblock.co/news/regulation/2026-08-12-attackers-keep-hitting-wrong-house-rural-france-after-crypto-millionaire-moved-report-411605",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/07/france-flag-french-1200x675.jpg"
+        },
+        {
+          "id": "art_3288463",
+          "title": "Kalshi CEO slams founders for being over-reliant on ‘mostly trash’ business advice—he founded his now-$22 billion prediction market as a college grad",
+          "url": "https://fortune.com/2026/08/11/kalshi-ceo-tarek-mansour-slams-founders-trash-business-advice-take-risks-instead-self-made-billioniare-prediction-markets/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2237779170-e1786460418446.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3283566",
+          "title": "Fomo Goes Mainstream ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_77bae2f9-0dc5-4c8b-bd53-35b98aebeae9",
+          "source": "Blockworks (1)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3299508",
+          "title": "MoneyGram expands crypto cash ramps to Solana33m",
+          "url": "https://cointelegraph.com/news/moneygram-expands-crypto-cash-ramps-to-solana",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3219278",
+          "title": "Robinhood brings crypto trading to main UK app through Bitstamp",
+          "url": "https://www.theblock.co/news/business/2026-08-10-robinhood-uk-crypto-trading-bitstamp-411140",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News_3.jpg"
+        },
+        {
+          "id": "art_3283869",
+          "title": "The Case For Plasma One: Stablecoins Are Eating The World ",
+          "url": "https://members.delphidigital.io/reports/the-case-for-plasma-one-stablecoins-are-eating-the-world",
+          "source": "Delphi Digital",
+          "sentiment": "bullish",
+          "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/08/b0dfc0ea-state-of-token-markets-42-1024x576.jpg"
+        },
+        {
+          "id": "art_3269343",
+          "title": "Payments platform Decta explores stablecoin-enabled treasury settlement",
+          "url": "https://cointelegraph.com/news/payments-platform-decta-explores-stablecoin-enabled-treasury-settlement",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-stablecoins-turn-a-corner-driven-by-the-acceptance-of-financial-institutions.jpg"
+        },
+        {
+          "id": "art_3437019",
+          "title": "Crypto payments barely register among euro area merchants, ECB finds25m",
+          "url": "https://cointelegraph.com/news/ecb-survey-0-2-euro-area-companies-accept-crypto-online",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3422515",
+          "title": "KiiChain: An On-Chain FX Settlement Layer for Emerging Markets",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!_0S2!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021955%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_3422516",
+          "title": "키체인(KiiChain): 이머징 마켓을 위한 온체인 외환 정산 인프라",
+          "url": "https://reports.tiger-research.com/p/kiichain-an-on-chain-fx-settlement-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!yK0E!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F211021960%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3509126",
+          "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
+          "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg"
+        },
+        {
+          "id": "art_3308809",
+          "title": "SEC, CFTC sue Goliath Ventures over $400M crypto Ponzi scheme",
+          "url": "https://cointelegraph.com/news/sec-cftc-sue-goliath-ventures-400m-crypto-ponzi",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-most-famous-financial-pyramids-in-the-crypto-world.png"
+        },
+        {
+          "id": "art_3292289",
+          "title": "SEC could propose 'pivotal' crypto rules that may start with token safe harbor, TD Cowen says",
+          "url": "https://www.theblock.co/news/regulation/2026-08-11-sec-crypto-rules-token-safe-harbor-td-cowen-411455",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+        },
+        {
+          "id": "art_3280933",
+          "title": "Russia proposes exchange trading of Bitcoin, Ether and Tether’s USDT",
+          "url": "https://cointelegraph.com/news/bank-of-russia-trading-bitcoin-ether-tether-usdt",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/bank-with-crypto-characters.png"
+        },
+        {
+          "id": "art_3453107",
+          "title": "Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions",
+          "url": "https://www.theblock.co/news/regulation/2026-08-14-binance-block-transactions-htx-10-other-exchanges-eu-russia-sanctions-411858",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/10/20231006_HTXImages_News3.png"
+        },
+        {
+          "id": "art_3405267",
+          "title": "Baltimore sues Kalshi and Polymarket, roping Coinbase, Robinhood and Webull into the fight",
+          "url": "https://www.theblock.co/news/business/2026-08-13-baltimore-sues-kalshi-polymarket-roping-coinbase-robinhood-webull-into-fight-411746",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News.jpg"
+        },
+        {
+          "id": "art_3402018",
+          "title": "Crypto group backs Custodia in Supreme Court battle over Fed access19m, Crypto group backs Custodia in Supreme Court battle over Fed accessThe Blockchain Association argues the Fed should not have broad discretion to deny eligible state-chartered banks direct access to its payment system.",
+          "url": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3298346",
+          "title": "Following Senate delay, crypto bill has a narrow window to become law",
+          "url": "https://cointelegraph.com/news/clarity-act-senate-delay-window-become-law-midterm-elections",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-10k-report-clarity-act-1.jpg"
+        },
+        {
+          "id": "art_3272570",
+          "title": "Coinbase rolls out derivatives for UK professional investors",
+          "url": "https://www.theblock.co/news/business/2026-08-11-coinbase-expands-uk-derivatives-411380",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
+        },
+        {
+          "id": "art_3498870",
+          "title": "Kalshi ordered to stop broad range of prediction markets in Washington38m, Kalshi ordered to stop broad range of prediction markets in WashingtonKalshi must implement initial geofencing by Aug. 19 and a GeoComply multi-source geofencing system by Sept. 2.",
+          "url": "https://cointelegraph.com/news/kalshi-stop-prediction-market-contracts-washington",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3450973",
+          "title": "Weekly Research Brief: SEC Scrambles to Act as CLARITY Fizzles",
+          "url": "https://www.galaxy.com/insights/research/weekly-research-brief-clarity-act-10-percent-sec-reg-crypto-coldcard-losses-bip-110-bitcoin-fork",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6lX2xjnlFHCqqTHLySPtc6/f46427e186b5166b5ad69035f452097d/Top_Stories_G3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3440520",
+          "title": "RedotPay US IPO delayed amid regulatory, legal hurdles: Report",
+          "url": "https://cointelegraph.com/news/redotpay-us-license-ipo-delay-binance-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-will-ripple-launch-an-ipo-bid-can-it-succeed0-1.jpg"
+        },
+        {
+          "id": "art_3438186",
+          "title": "JPMorgan cut Polymarket banking ties over regulatory concerns: Report29m",
+          "url": "https://cointelegraph.com/news/jpmorgan-debanked-polymarket-regulatory-concerns-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3406682",
+          "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea37m, Delio CEO sentenced to 15 years in prison on crypto fraud in South KoreaMore than a year after being indicted on fraud charges related to his activities at crypto company Delio, Jeong Sang-ho faces prison time in South Korea.",
+          "url": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3378698",
+          "title": "Copper US arm becomes FINRA member, SEC-registered broker-dealer",
+          "url": "https://cointelegraph.com/news/copper-us-arm-joins-finra-after-sec-broker-dealer-approval",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/crypto-bitcoin-storage-us-2.jpg"
+        },
+        {
+          "id": "art_3355379",
+          "title": "Hawaii crypto ATM ban to take effect on Oct. 137m, Hawaii crypto ATM ban to take effect on Oct. 1Hawaii will join Minnesota, Tennessee and Indiana in becoming the fourth US state to completely ban the use of cryptocurrency ATMs and kiosks in response to scams.",
+          "url": "https://cointelegraph.com/news/hawaii-crypto-atm-ban-october-enforcement",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3353050",
+          "title": "NYC council announces probe into ‘predatory marketing practices’ on prediction markets27m, NYC council announces probe into ‘predatory marketing practices’ on prediction marketsCouncil Speaker Julie Menin sent letters to four companies offering prediction market services to New Yorkers as part of an investigation into their marketing practices.",
+          "url": "https://cointelegraph.com/news/new-york-council-probe-marketing-practices-prediction-markets",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3341156",
+          "title": "New York City Council opens probe into prediction market platforms",
+          "url": "https://www.theblock.co/news/regulation/2026-08-12-new-york-city-council-opens-probe-into-prediction-market-platforms-411604",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/07/new-york-1-e1577451823576.jpg"
+        },
+        {
+          "id": "art_3336745",
+          "title": "Slovenia joins EU’s MiCA stablecoin register with first issuer",
+          "url": "https://cointelegraph.com/news/slovenia-eu-mica-stablecoin-register-dinaro",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-beginners-guide-to-storing-your-cryptocurrency-mica-eu-license.jpg"
+        },
+        {
+          "id": "art_3320449",
+          "title": "CFTC invokes emergency powers to keep Kalshi operating in New York fight20m, CFTC invokes emergency powers to keep Kalshi operating in New York fightThe order escalates a jurisdictional fight over whether states may treat federally regulated event contracts as illegal gambling.",
+          "url": "https://cointelegraph.com/news/cftc-kalshi-emergency-order-new-york-lawsuit",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_3291378",
+          "title": "Coinbase-backed Flowdesk secures full broker-dealer license in Dubai",
+          "url": "https://cointelegraph.com/news/flowdesk-dubai-vara-broker-dealer-license",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/arabian-khaliji-people-of-the-arabian-peninsula-agreement-handshake-crypto-1.jpg"
+        },
+        {
+          "id": "art_3278365",
+          "title": "'One of the single biggest barriers to growth': UK lawmakers press banks over crypto access ahead of new FCA regime",
+          "url": "https://www.theblock.co/news/regulation/2026-08-11-uk-crypto-banking-access-411389",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/uk-parliament.png"
+        },
+        {
+          "id": "art_3266593",
+          "title": "Banks’ refusal to take on crypto firms risks stunting UK industry’s growth, lawmakers say",
+          "url": "https://www.ft.com/content/291635b9-b401-47ed-a1aa-c9879147b883",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8a9ba579-7814-4209-8569-88fb9b231077.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3240372",
+          "title": "‘Disappointing’ — crypto advocates react to delay in CLARITY vote17m, ‘Disappointing’ — crypto advocates react to delay in CLARITY voteFollowing a procedural delay in the US Senate, lawmakers are expected to address a major crypto market structure bill after they return from a month-long recess, which met with industry criticism.",
+          "url": "https://cointelegraph.com/news/clarity-act-vote-disappointing-crypto-advocates-delay",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3593472",
+          "title": "Chainalysis sues US over $95M ICE contract with TRM Labs",
+          "url": "https://cointelegraph.com/news/chainalysis-sues-us-over-ices-sole-source-contract-with-trm-labs",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/court-crypto-lawsuit-us.png"
+        },
+        {
+          "id": "art_3410180",
+          "title": "City of Baltimore goes after prediction markets for sports betting",
+          "url": "https://cointelegraph.com/news/baltimore-lawsuit-prediction-markets-kalshi-polymarket-sports-betting",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/sports-fan-football.jpg"
+        },
+        {
+          "id": "art_3360042",
+          "title": "Arizona crypto ATM law helps 35 scam victims recover $171K 14m, Arizona crypto ATM law helps 35 scam victims recover $171K Qualifying new customers can receive full reimbursement, including fees, if they notify both the operator and law enforcement within 30 days.",
+          "url": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3294862",
+          "title": "ARP Digital secures Dubai VARA broker-dealer license",
+          "url": "https://cointelegraph.com/news/arp-digital-secures-dubai-vara-broker-dealer-license",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-vat-law-in-uae-the-impact-on-stablecoins-and-digital-assets.png"
+        },
+        {
+          "id": "art_3287396",
+          "title": "해외로 향한 700조, 한국이 놓친 디지털자산 시장",
+          "url": "https://reports.tiger-research.com/p/2026-korea-exodus-kor",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!dola!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F210757381%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_3466194",
+          "title": "Ireland plans industry standards for illicit crypto use",
+          "url": "https://cointelegraph.com/news/ireland-industry-standards-crypto-gambling-aml",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/irish-dance-crypto.jpg"
+        },
+        {
+          "id": "art_3456858",
+          "title": "UK authorities continue probe into Nigel Farage’s crypto ‘gifts’ after by-election win",
+          "url": "https://cointelegraph.com/news/uk-investigation-nigel-farage-crypto-donations-by-election",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-j-crypto-donations-in-politics-uk.jpg"
+        },
+        {
+          "id": "art_3425099",
+          "title": "Washington court orders Kalshi to halt most prediction market offerings in state",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-washington-court-orders-kalshi-411785",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+        },
+        {
+          "id": "art_3584703",
+          "title": "US probe on Mark Walter focused on four intermediaries, WSJ says",
+          "url": "https://fortune.com/2026/08/16/fraud-investigation-mark-walter-guggenheim-partners-insurance-companies/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2268085899-e1786920235376.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3580374",
+          "title": "Prediction market Novig sues Wisconsin AG in latest spat over sports contracts",
+          "url": "https://www.theblock.co/news/business/2026-08-16-prediction-market-novig-sues-wisconsin-ag-in-latest-spat-over-sports-contracts-411938",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230412_Legal_Generic_5.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3450975",
+          "title": "Coldcard Exploit Abates as Total Losses Climb to (at Least) 1,700 BTC",
+          "url": "https://www.galaxy.com/insights/research/coldcard-exploit-abates-as-total-losses-climb-to-at-least-1700-btc",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3Pu1Br0nAtqRYZ3HX7LZDS/6a909b064d83f6880388d4c6c03bf3d8/Bitcoin-9_Orange-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3323691",
+          "title": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230411_Hack_Generic_1.jpg"
+        },
+        {
+          "id": "art_3227044",
+          "title": "Why the latest Bitcoin hack hurt more than most",
+          "url": "https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/03/Bitcoin_disappearing_3.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3568694",
+          "title": "Wallet provider SafePal says data breach exposed personal info of nearly 40,000 customers",
+          "url": "https://www.theblock.co/news/business/2026-08-16-wallet-provider-safepal-says-data-breach-exposed-personal-info-of-nearly-40000-customers-411934",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/extra2.jpg"
+        },
+        {
+          "id": "art_3500613",
+          "title": "‘The great quantum migration’ is coming as more than $2 trillion in digital assets is at risk—nearly the entire value of the overall crypto market",
+          "url": "https://fortune.com/2026/08/15/quantum-computing-migration-2-trillion-digital-assets-risk-crypto-market-bitcoin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2278602022-e1786742155382.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3312301",
+          "title": "Ravencoin hits record low as network exploit puts transactions at risk 38m, Ravencoin hits record low as network exploit puts transactions at risk Mining pools controlling most of Ravencoin’s hash rate are building a competing chain that could trigger a three-day reorganization.",
+          "url": "https://cointelegraph.com/news/ravencoin-rvn-record-low-consensus-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3243846",
+          "title": "Coinsbuy offers $100K reward after Sunday security breach",
+          "url": "https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-got-crypto-losses-wallet-shutdown.png"
+        },
+        {
+          "id": "art_3402752",
+          "title": "Nearly 14,000 crypto holders face security risk after data breach",
+          "url": "https://www.ft.com/content/a91356ef-67bd-4bd9-947b-b272423f1318",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F70586850-7256-4a8d-9ddd-b8e0a799e56a.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3397355",
+          "title": "Trezor reports data from 14K users exposed through shipping provider26m",
+          "url": "https://cointelegraph.com/news/trezor-customer-data-shipping-provider-shipmonk",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3292291",
+          "title": "New Bitcoin addresses jump as Coldcard exploit pushes users to move funds",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-11-new-bitcoin-addresses-jump-coldcard-exploit-pushes-users-move-funds-411317",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/09/20240904_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_3233174",
+          "title": "Crypto lost $110 million to hacks in July amid rising bug bounty activity: Immunefi",
+          "url": "https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+        },
+        {
+          "id": "art_3221594",
+          "title": "North Korea's Kimsuky integrates AI into cyberattacks targeting crypto and finance",
+          "url": "https://www.theblock.co/news/defi/2026-08-10-north-korea-kimsuky-ai-crypto-411229",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/03/north-korea-2662076_1920-e1734489004471.jpg"
+        },
+        {
+          "id": "art_3462445",
+          "title": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+        },
+        {
+          "id": "art_3405268",
+          "title": "Google ad phishing scam drains $550,000 from Hyperliquid user, security specialist says",
+          "url": "https://www.theblock.co/news/regulation/2026-08-13-google-ad-phishing-scam-drains-550000-from-hyperliquid-user-security-specialist-says-411755",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220207-Hacking-Generic.jpg"
+        },
+        {
+          "id": "art_3394772",
+          "title": "Trezor shipping provider breach exposes personal data of nearly 14,000 customers",
+          "url": "https://www.theblock.co/news/business/2026-08-13-trezor-shipping-provider-breach-exposes-personal-data-nearly-14000-customers-411702",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/02/20230222_Trezor.jpg"
+        },
+        {
+          "id": "art_3276297",
+          "title": "Coldcard hack losses: How investigators trace stolen Bitcoin",
+          "url": "https://cointelegraph.com/news/coldcard-losses-how-investigators-trace-stolen-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/coldcard-screen-edit.png"
+        },
+        {
+          "id": "art_3249390",
+          "title": "BTCPay Server supporters offer up to 3 BTC for recovery bounty after critical exploit",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-10-btcpay-server-supporters-offer-3-btc-recovery-bounty-critical-exploit-411353",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg"
+        },
+        {
+          "id": "art_3564022",
+          "title": "Hackers exploited macOS Screen Sharing flaw to install Monero miners, Dutch cyber agency says",
+          "url": "https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/07/20240710_Cypherpunks_News_1.jpg"
+        },
+        {
+          "id": "art_3365772",
+          "title": "The Red Team Defending Bitcoin with Rob Hamilton",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/the-red-team-defending-bitcoin-with-rob-hamilton",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3409014",
+          "title": "Tether completes first full financial audit, receives clean KPMG opinion",
+          "url": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report.png"
+        },
+        {
+          "id": "art_3344895",
+          "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments34m",
+          "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-a-list-of-most-prominent-fiat-backed-stablecoins-uk-1.jpg"
+        },
+        {
+          "id": "art_3451940",
+          "title": "Ethena treasury company StablecoinX shares jump 12% after revealing 20% stake in ENA supply",
+          "url": "https://www.theblock.co/news/business/2026-08-14-ethena-treasury-company-stablecoinx-shares-jump-12-revealing-20-stake-ena-supply-411845",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Ethena_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3428850",
+          "title": "Neutrl pauses NUSD redemptions over undisclosed reserve issue BA Labs had previously classified a proposed NUSD integration as higher risk because of its counterparty, operational and liquidity exposure.",
+          "url": "https://cointelegraph.com/news/neutrl-pauses-nusd-redemptions-over-undisclosed-reserve-issue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3343729",
+          "title": "HashKey begins beta distribution of Hong Kong-regulated HKDAP stablecoin41m",
+          "url": "https://cointelegraph.com/news/hashkey-begins-beta-distribution-of-hong-kong-regulated-hkdap-stablecoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3247322",
+          "title": "TRON USDT supply hits $87.9B as transfers reach $2.1T in Q2: Messari37m",
+          "url": "https://cointelegraph.com/news/tron-usdt-supply-hits-879b-as-transfers-reach-21t-in-q2-messari",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3356910",
+          "title": "🟪 The singleness of stablecoins  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_a6376007-5d42-405e-8c10-f7b73af3ed90",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3353964",
+          "title": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+          "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg"
+        },
+        {
+          "id": "art_3270252",
+          "title": "Broadridge's Distributed Ledger Repo platform processes $8 trillion in July volume",
+          "url": "https://www.theblock.co/news/business/2026-08-11-broadridge-8-trillion-july-411365",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240624_Tokenization_News_2.jpg"
+        },
+        {
+          "id": "art_3426266",
+          "title": "Bitwise mulls tokenizing its Solana staking ETF via Superstate partnership",
+          "url": "https://www.theblock.co/news/defi/2026-08-14-bitwise-tokenize-sol-staking-etf-411790",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Bitwise_News_2.jpg"
+        },
+        {
+          "id": "art_3391525",
+          "title": "MUFG PoC to bring Japanese government bond repo transactions onchain26m, MUFG PoC to bring Japanese government bond repo transactions onchainMUFG’s experiment plans to bring Japanese government bond repo transactions onchain to achieve 24/7 settlement, as well as improved capital and operational efficiency.",
+          "url": "https://cointelegraph.com/news/mufg-bring-japanese-government-bond-repo-transactions-onchain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3301833",
+          "title": "Itaú joins Brazil tokenization pilot with OpenAssets21m",
+          "url": "https://cointelegraph.com/news/ita-joins-brazil-tokenization-pilot-with-openassets-brief",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3285573",
+          "title": "ADI Chain, Shipfinex partner to tokenize $500M vessel pipeline",
+          "url": "https://cointelegraph.com/news/adi-chain-shipfinex-partner-to-tokenize-500m-vessel-pipeline",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-inside-the-mas-sandbox-how-ripple-is-testing-rlusd-for-real-trade-settlements.png"
+        },
+        {
+          "id": "art_3240272",
+          "title": "Committing $50M to USHP: The Product Bringing U.S. Home Prices Onchain",
+          "url": "https://www.galaxy.com/insights/perspectives/committing-50m-to-ushp-the-product-bringing-u-s-home-prices-onchain",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3GlVUqvFKdKCzP5tSunZ07/0ee92f39cf5dbcda840fea5711cc0a56/General-Cube-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_3220686",
+          "title": "UK regulators to prepare tokenized gold framework: Report",
+          "url": "https://cointelegraph.com/news/uk-regulators-tokenized-gold-framework-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-uk-and-crypto-fca.jpg"
+        },
+        {
+          "id": "art_3514048",
+          "title": "Tokenized stock holders more than double as monthly volume surges",
+          "url": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/blockchain-waterfall-rwa.jpg"
+        },
+        {
+          "id": "art_3444021",
+          "title": "Shinhan Asset Management partners with Plume on tokenized fund pilot",
+          "url": "https://cointelegraph.com/news/shinhan-partners-plume-tokenized-fund-experiment",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/south-korea-crypto-1.jpg"
+        },
+        {
+          "id": "art_3423015",
+          "title": "Figure reports $4.3B in loan marketplace volume as profit nearly triples41m, Figure reports $4.3B in loan marketplace volume as profit nearly triplesFigure expects consumer loan marketplace volume to range from $4.8 billion to $5.2 billion in the third quarter.",
+          "url": "https://cointelegraph.com/news/figure-q2-loan-marketplace-volume-profit",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3398270",
+          "title": "Onchain lender Figure nearly triples quarterly profits as loan marketplace volume surges to $4.3 billion",
+          "url": "https://www.theblock.co/news/business/2026-08-13-onchain-lender-figure-nearly-triples-quarterly-profits-as-loan-marketplace-volume-surges-to-4-3-billion-411736",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/12/20221221_Crypto-Lending-2.jpg"
+        },
+        {
+          "id": "art_3394774",
+          "title": "Ether.fi adds tokenized stocks, metals and Aave-powered portfolio loans in latest 'neobank' expansion",
+          "url": "https://www.theblock.co/news/defi/2026-08-13-ether-fi-adds-tokenized-stocks-metals-and-aave-powered-portfolio-loans-in-latest-neobank-expansion-411704",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/220202_NFT_Raising_Money_Charity_2.jpg"
+        },
+        {
+          "id": "art_3384528",
+          "title": "Binance bStocks passes xStocks as second-largest tokenized stock issuer18m",
+          "url": "https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3381030",
+          "title": "Securitize falls 16% after earnings miss, tokenization revenue drops15m",
+          "url": "https://cointelegraph.com/news/securitize-falls-earnings-miss-tokenization-revenue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_3368938",
+          "title": "Digital gold, copper and uranium: prospectors stake bets on metals-crypto fusion",
+          "url": "https://www.ft.com/content/de7ded5c-23d4-44ac-8b21-bf7f5cdfefda",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F16d9d100-13c2-415c-9184-1265452a7bf3.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_3305684",
+          "title": "🟪 From porters to protocols  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_d99a6bb6-e046-478f-963f-17c0c4ceb6fd",
+          "source": "Blockworks (2)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_3407140",
+          "title": "What's behind the growth in tokenized stocks? ",
+          "url": "https://tokenterminal.com/resources/newsletter/what-s-behind-the-growth-in-tokenized-stocks",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_3348119",
+          "title": "AI-Backed Securities",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-08-12/ai-backed-securities",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Tether just got a clean opinion from KPMG on its first full audit. That sentence would have been unthinkable three years ago. We underwrote stablecoin risk on reserve opacity; that variable is now being priced out for USDT specifically, which reprices every competitor against a verified liability stack.\n\nThe same week, Coldcard users who followed every operational security protocol lost $100 million to a hardware exploit. The self-custody hardware sector is not being underwritten for firmware supply chain risk, and the loss curve is still climbing past 1,700 BTC.\n\nThese two signals do not balance. They split the market into institutional infrastructure that can pass Big Four audit and retail security tools that cannot survive targeted exploitation. Franklin Templeton's SEC no-action letter for onchain BENJI cash management is the logical next step: regulated funds will use tokenized rails, but they will not use them through hardware wallets.\n\nThe testable thesis: if Tether's audit triggers a wave of corporate treasury adoption, the stablecoin market bifurcates between audited and unaudued issuers by Q1. If Coldcard-class exploits repeat, hardware wallet market share shifts to custodial or multi-sig alternatives regardless of Bitcoin maximalist preference. One of these is already happening. The other depends on whether vendors treat firmware as a security surface or a marketing afterthought.\n\nWe are watching which stablecoin competitor publishes audit dates next, and which hardware vendor publishes a credible root cause on the Coldcard exploit. Neither has yet."
+}
