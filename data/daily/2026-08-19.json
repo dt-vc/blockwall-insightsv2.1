@@ -1,0 +1,516 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-19",
+  "date_display": "August 19, 2026",
+  "generated_at": "2026-08-19T05:00:17.727Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "SEC fills regulatory vacuum with new crypto rules as Congress stalls, while institutional tokenization and treasury strategies accelerate",
+    "tldr": "The regulatory gap left by the stalled CLARITY Act is being filled by SEC rulemaking, even as traditional finance and corporate treasuries push deeper into onchain infrastructure and Bitcoin accumulation, creating a bifurcated market where regulatory uncertainty coexists with accelerating institutional adoption."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the gap between regulatory drift and capital deployment is widening faster than the headlines capture.",
+  "market_snapshot": {
+    "as_of": "2026-08-19T05:00:17.727Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,266",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,909",
+        "change_24h": "+1.0%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.28T",
+        "change_24h": "+0.2%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$75.9B",
+        "change_24h": "+0.2%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 4,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 14,
+    "bearish": 6,
+    "neutral": 5,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_3691584",
+      "title": "SEC proposes new crypto rules in absence of CLARITY Act",
+      "url": "https://cointelegraph.com/news/us-sec-crypto-rules-clarity-act",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US SEC is proceeding with new cryptocurrency regulations following the Senate's failure to advance a market structure bill. This move occurs as the expected shift of more authority toward the CFTC via the CLARITY Act has stalled.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/us-sec-crypto-rules-clarity-act",
+      "themes": [
+        "regulation",
+        "us-sec"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sec-cftc-event-overview.jpg",
+      "why_it_matters": "The SEC's unilateral expansion into rulemaking without statutory backing from the CLARITY Act raises the enforcement risk premium for US-domiciled crypto infrastructure, particularly for exchanges and custodians that had underwritten their compliance spend on a bifurcated CFTC-SEC framework."
+    },
+    {
+      "id": "art_3686662",
+      "title": "SEC proposes new crypto offering rules as Congress stalls on digital asset legislation",
+      "url": "https://www.theblock.co/news/regulation/2026-08-18-sec-proposes-new-crypto-offering-rules-congress-stalls-digital-asset-legislation-412145",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The SEC has proposed a new rule intended to create a formal pathway for investments involving digital assets. This move comes amid a legislative stalemate in Congress regarding digital asset regulation.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-08-18-sec-proposes-new-crypto-offering-rules-congress-stalls-digital-asset-legislation-412145",
+      "themes": [
+        "regulation",
+        "sec-rules"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News-1200x675.jpg",
+      "why_it_matters": "A formal SEC pathway for digital asset offerings, however procedurally constrained, gives issuers a referenceable compliance cost to model against, which matters for venture pricing of US-facing tokenization plays even if the rule itself is contested."
+    },
+    {
+      "id": "art_3676151",
+      "title": "Securitize brings Neuberger’s $230 billion fixed-income platform onchain with new tokenized fund",
+      "url": "https://www.theblock.co/news/markets/2026-08-18-securitize-neubergers-230-billion-fixed-income-platform-onchain-new-tokenized-fund-412102",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize is bringing Neuberger Berman's $230 billion fixed-income platform onchain through a new tokenized fund. The HINC fund will be deployed across multiple major blockchains including Ethereum, Solana, Avalanche, and Sui.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/markets/2026-08-18-securitize-neubergers-230-billion-fixed-income-platform-onchain-new-tokenized-fund-412102",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/10/20251028_Secrutize_News_2.jpg",
+      "why_it_matters": "Neuberger Berman's $230 billion fixed-income platform coming onchain via Securitize, deployed across Ethereum, Solana, Avalanche, and Sui, validates multi-chain tokenization as the institutional default rather than a pilot, and reprices the infrastructure layer toward settlement-finality guarantees rather than speculative throughput metrics."
+    },
+    {
+      "id": "art_3670310",
+      "title": "Citi expects to launch bitcoin custody later this year under its new Custody+ platform",
+      "url": "https://www.theblock.co/news/business/2026-08-18-citi-bitcoin-custody-412090",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Citi plans to launch Bitcoin custody services later this year as part of its new Custody+ platform. The platform will integrate AI-powered market intelligence, instant settlements, and liquidity tools.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-08-18-citi-bitcoin-custody-412090",
+      "themes": [
+        "infrastructure",
+        "custody"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg",
+      "why_it_matters": "Citi's Bitcoin custody launch under Custody+ integrates AI-powered market intelligence and instant settlements, signaling that tier-one banks are now competing on the full stack of treasury services rather than treating crypto custody as a standalone novelty, which compresses margins for pure-play crypto custodians."
+    },
+    {
+      "id": "art_3676150",
+      "title": "Metaplanet takes 96% of Super League in 2,100 BTC, cash deal to launch US bitcoin treasury firm",
+      "url": "https://www.theblock.co/news/deals/2026-08-18-metaplanet-super-league-2100-btc-cash-deal-launch-us-bitcoin-treasury-sle-stock-sruge-412101",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Metaplanet is expanding its Bitcoin treasury strategy into the U.S. by acquiring a 96% controlling stake in Super League. The deal consists of 2,100 BTC and cash, leading to an 80% surge in Super League's value.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/deals/2026-08-18-metaplanet-super-league-2100-btc-cash-deal-launch-us-bitcoin-treasury-sle-stock-sruge-412101",
+      "themes": [
+        "bitcoin",
+        "treasury-strategy"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News_2-1200x675.jpg",
+      "why_it_matters": "Metaplanet's 2,100 BTC acquisition of Super League's controlling stake, triggering an 80% value surge, demonstrates that Bitcoin-denominated M&A is becoming a viable treasury strategy with immediate market repricing power, though the premium paid tests whether the model scales beyond thinly-traded targets."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3658630",
+      "company": "Block Inc",
+      "amount": "$15M",
+      "round": "Secondary / Public market accumulation",
+      "investors": [
+        "Ark Invest"
+      ],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/markets/2026-08-18-cathie-wood-ark-invest-15-million-block-inc-412060",
+      "summary": "Ark Invest has increased its holdings in Block Inc by purchasing $15 million in shares during a price dip. Additionally, the firm acquired $1 million in shares of Securitize following a significant drop in the company's valuation."
+    },
+    {
+      "id": "art_3676150",
+      "company": "Super League",
+      "amount": "2,100 BTC + cash",
+      "round": "Acquisition / Controlling stake",
+      "investors": [
+        "Metaplanet"
+      ],
+      "category": "Bitcoin",
+      "url": "https://www.theblock.co/news/deals/2026-08-18-metaplanet-super-league-2100-btc-cash-deal-launch-us-bitcoin-treasury-sle-stock-sruge-412101",
+      "summary": "Metaplanet is expanding its Bitcoin treasury strategy into the U.S. by acquiring a 96% controlling stake in Super League. The deal consists of 2,100 BTC and cash, leading to an 80% surge in Super League's value."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3672896",
+      "title": "Toyota Finance opens tokenized bonds to retail investors via mobile payment app9m, Toyota Finance opens tokenized bonds to retail investors via mobile payment appRetail investors can apply to buy the 1 billion yen bond without a securities account and receive perks through Toyota’s payment app.",
+      "url": "https://cointelegraph.com/news/toyota-finance-tokenized-bond-offering-mobile-payment",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Toyota Finance is offering 1 billion yen in tokenized bonds to retail investors through its mobile payment app. The initiative allows users to invest without a traditional securities account and receive specific perks.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/toyota-security-token.png"
+    },
+    {
+      "id": "art_3669142",
+      "title": "Cypherpunk Technologies launches Zcash mining fleet with $33 million Winklevoss deal",
+      "url": "https://www.theblock.co/news/business/2026-08-18-cypherpunk-technologies-launches-zcash-mining-fleet-412071",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Cypherpunk Technologies has launched a Zcash mining fleet in the US following a $33 million deal with the Winklevosses. The operation has deployed approximately 4.2 GSol/s of Equihash hashrate.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251202_ZCash_News.jpg"
+    },
+    {
+      "id": "art_3667056",
+      "title": "Kraken launches US-listed stock trading for EEA customers28m, Kraken launches US-listed stock trading for EEA customersEligible EEA users can trade conventional US shares alongside more than 700 tokenized xStocks through Kraken’s European entity.",
+      "url": "https://cointelegraph.com/news/kraken-us-stock-trading-eea-customers",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Kraken has expanded its offerings for customers in the European Economic Area (EEA), allowing them to trade US-listed stocks. The platform provides access to conventional shares as well as over 700 tokenized 'xStocks' via its European entity.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-european-blockchain-partnership-24-countries-kraken.jpg"
+    },
+    {
+      "id": "art_3665638",
+      "title": "'The Crypto Program' promoter deported from Fiji over alleged $165 million Ponzi scheme",
+      "url": "https://www.theblock.co/news/regulation/2026-08-18-the-crypto-program-promoter-deported-from-fiji-over-alleged-165-million-ponzi-scheme-412083",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Edward Zimbardi, the promoter of 'The Crypto Program', has been deported from Fiji to the United States. He faces charges related to an alleged $165 million cryptocurrency Ponzi scheme that impacted thousands of investors.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/07/20210714_UK_Police_Seizures.jpg"
+    },
+    {
+      "id": "art_3689248",
+      "title": "FalconX, Interstice Connect Canton to Ethereum, Solana and Robinhood Chain",
+      "url": "https://cointelegraph.com/news/interstice-falconx-cross-chain-swap-engine-canton-solana-ethereum-robinhood-chain",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "FalconX and Interstice Digital have launched a cross-chain swap engine to bridge Canton's institutional tokenized-asset markets. The engine connects Canton with major networks including Ethereum, Solana, and the Robinhood Chain.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-chainlink-a-beginners-guide-to-the-cross-chain-interoperability-protocol.png"
+    },
+    {
+      "id": "art_3682240",
+      "title": "Kraken’s Krak debuts US debit card as Payward broadens financial services push",
+      "url": "https://cointelegraph.com/news/krakens-krak-launches-us-debit-card-as-payward-broadens-financial-services-push",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Kraken's Krak has launched a multi-asset debit card in the US, offering users up to 2% cashback. This move is part of parent company Payward's broader strategy to expand its financial services and support additional asset classes.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/btc-comau-sponsor2.png"
+    },
+    {
+      "id": "art_3662384",
+      "title": "China adds 8 banks to digital yuan network as operator count hits 3041m, China adds 8 banks to digital yuan network as operator count hits 30The newly authorized lenders will begin offering e-CNY services after completing operational and technical preparations.",
+      "url": "https://cointelegraph.com/news/china-adds-8-banks-to-digital-yuan-network-as-operator-count-hits-30",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "China has expanded its digital yuan (e-CNY) network by adding eight new authorized banks. This expansion brings the total number of operators in the network to 304.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-an-overview-of-chinas-e-cny.jpg"
+    },
+    {
+      "id": "art_3661216",
+      "title": "South Korea moves to block Polymarket over gambling concerns13m, South Korea moves to block Polymarket over gambling concernsThe Korea Media and Communications Commission said Polymarket’s structure and operations amount to illegal gambling despite its noncustodial design and smart contracts.",
+      "url": "https://cointelegraph.com/news/south-korea-block-polymarket-gambling-concerns",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "South Korea's Korea Media and Communications Commission is moving to block Polymarket, citing concerns that the platform's operations constitute illegal gambling. The regulator maintains this stance despite Polymarket's use of smart contracts and noncustodial design.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-you-are-once-again-banning-crypto-content-polymarket.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3703174",
+      "title": "What is the Business Model of a Blockchain with Castle Labs",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/what-is-the-business-model-of-a-blockchain-with-castle-labs",
+      "source": "Galaxy — Insights",
+      "note": "Castle Labs' framework for blockchain business model analysis provides a structured lens for underwriting how value accrues to tokenholders versus validators versus application layers, which is directly applicable to evaluating the L1s now competing for institutional tokenization volume.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3676150",
+          "title": "Metaplanet takes 96% of Super League in 2,100 BTC, cash deal to launch US bitcoin treasury firm",
+          "url": "https://www.theblock.co/news/deals/2026-08-18-metaplanet-super-league-2100-btc-cash-deal-launch-us-bitcoin-treasury-sle-stock-sruge-412101",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3685494",
+          "title": "Bitcoin correction may be nearing an end with 8 of 12 capitulation signals flashing, VanEck says",
+          "url": "https://www.theblock.co/news/markets/2026-08-18-bitcoin-correction-may-nearing-end-8-capitulation-signals-flashing-vaneck-412130",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/01/20240111_Bitcoin_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_3654208",
+          "title": "Ethereum Foundation warns some tools may break with Glamsterdam upgrade",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-warns-some-tools-may-break-with-glamsterdam-upgrade",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3670310",
+          "title": "Citi expects to launch bitcoin custody later this year under its new Custody+ platform",
+          "url": "https://www.theblock.co/news/business/2026-08-18-citi-bitcoin-custody-412090",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg"
+        },
+        {
+          "id": "art_3669142",
+          "title": "Cypherpunk Technologies launches Zcash mining fleet with $33 million Winklevoss deal",
+          "url": "https://www.theblock.co/news/business/2026-08-18-cypherpunk-technologies-launches-zcash-mining-fleet-412071",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251202_ZCash_News.jpg"
+        },
+        {
+          "id": "art_3703174",
+          "title": "What is the Business Model of a Blockchain with Castle Labs",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/what-is-the-business-model-of-a-blockchain-with-castle-labs",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3653958",
+          "title": "Upbit and Bithumb report 50% declines in H1 revenue, reflecting market contraction",
+          "url": "https://www.theblock.co/news/markets/2026-08-18-upbit-bithumb-h1-decline-412034",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_SouthKorea_News2.jpg"
+        },
+        {
+          "id": "art_3658630",
+          "title": "Cathie Wood's Ark Invest scoops up $15 million in Block Inc shares as stock dips 3%",
+          "url": "https://www.theblock.co/news/markets/2026-08-18-cathie-wood-ark-invest-15-million-block-inc-412060",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221114_ArkInvest4-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3682240",
+          "title": "Kraken’s Krak debuts US debit card as Payward broadens financial services push",
+          "url": "https://cointelegraph.com/news/krakens-krak-launches-us-debit-card-as-payward-broadens-financial-services-push",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/btc-comau-sponsor2.png"
+        },
+        {
+          "id": "art_3662384",
+          "title": "China adds 8 banks to digital yuan network as operator count hits 3041m, China adds 8 banks to digital yuan network as operator count hits 30The newly authorized lenders will begin offering e-CNY services after completing operational and technical preparations.",
+          "url": "https://cointelegraph.com/news/china-adds-8-banks-to-digital-yuan-network-as-operator-count-hits-30",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-an-overview-of-chinas-e-cny.jpg"
+        },
+        {
+          "id": "art_3671728",
+          "title": "MoonPay adds Cash App Pay for crypto purchases by US customers",
+          "url": "https://cointelegraph.com/news/moonpay-cash-app-pay-crypto-purchases-us-customers",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-stablecoin-has-been-listed-an-exchange-traded-note-in-europe-moonpay.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3691584",
+          "title": "SEC proposes new crypto rules in absence of CLARITY Act",
+          "url": "https://cointelegraph.com/news/us-sec-crypto-rules-clarity-act",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sec-cftc-event-overview.jpg"
+        },
+        {
+          "id": "art_3686662",
+          "title": "SEC proposes new crypto offering rules as Congress stalls on digital asset legislation",
+          "url": "https://www.theblock.co/news/regulation/2026-08-18-sec-proposes-new-crypto-offering-rules-congress-stalls-digital-asset-legislation-412145",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News-1200x675.jpg"
+        },
+        {
+          "id": "art_3661216",
+          "title": "South Korea moves to block Polymarket over gambling concerns13m, South Korea moves to block Polymarket over gambling concernsThe Korea Media and Communications Commission said Polymarket’s structure and operations amount to illegal gambling despite its noncustodial design and smart contracts.",
+          "url": "https://cointelegraph.com/news/south-korea-block-polymarket-gambling-concerns",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-you-are-once-again-banning-crypto-content-polymarket.jpg"
+        },
+        {
+          "id": "art_3681072",
+          "title": "Federal prosecutors blast ex-Celsius CEO’s motion to vacate as ‘without merit’",
+          "url": "https://cointelegraph.com/news/us-prosecutors-celsius-ceo-alex-mashinsky-motion-vacate-deny",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/interviewalex-mashinsky2-1.jpg"
+        },
+        {
+          "id": "art_3665640",
+          "title": "Curve founder says FATF pressure could make DeFi safer and more decentralized",
+          "url": "https://www.theblock.co/news/defi/2026-08-18-curve-founder-fatf-pressure-could-make-defi-safer-412059",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/defi_Category.jpeg"
+        },
+        {
+          "id": "art_3663302",
+          "title": "Blockchain Association backs SEC's proposal to scrap outdated NMS rules, citing tokenization benefits",
+          "url": "https://www.theblock.co/news/regulation/2026-08-18-blockchain-association-backs-secs-proposal-to-scrap-outdated-nms-rules-citing-tokenization-benefits-412069",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/09/20230814_TheSEC_News2-1200x675.jpg"
+        },
+        {
+          "id": "art_3688080",
+          "title": "Ripple- and Coinbase-funded PAC spends $2M in Florida race with little mention of crypto",
+          "url": "https://cointelegraph.com/news/crypto-pac-ads-florida-congress-spending",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-industry-votes-us-1.png"
+        },
+        {
+          "id": "art_3687488",
+          "title": "Meet the venture capital and crypto billionaires quietly bankrolling the fight against California’s wealth tax",
+          "url": "https://fortune.com/2026/08/18/billionaires-california-wealth-tax/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2274637039-e1787078867868.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3665638",
+          "title": "'The Crypto Program' promoter deported from Fiji over alleged $165 million Ponzi scheme",
+          "url": "https://www.theblock.co/news/regulation/2026-08-18-the-crypto-program-promoter-deported-from-fiji-over-alleged-165-million-ponzi-scheme-412083",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/07/20210714_UK_Police_Seizures.jpg"
+        },
+        {
+          "id": "art_3660048",
+          "title": "BitBox patches ‘severe’ wallet flaws that could put funds at risk 9m, BitBox patches ‘severe’ wallet flaws that could put funds at risk BitBox recommended all users update to firmware version 9.26.5 and said it had received no reports of exploitation or fund losses.",
+          "url": "https://cointelegraph.com/news/bitbox-patches-severe-wallet-firmware-flaws",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3676151",
+          "title": "Securitize brings Neuberger’s $230 billion fixed-income platform onchain with new tokenized fund",
+          "url": "https://www.theblock.co/news/markets/2026-08-18-securitize-neubergers-230-billion-fixed-income-platform-onchain-new-tokenized-fund-412102",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/10/20251028_Secrutize_News_2.jpg"
+        },
+        {
+          "id": "art_3672896",
+          "title": "Toyota Finance opens tokenized bonds to retail investors via mobile payment app9m, Toyota Finance opens tokenized bonds to retail investors via mobile payment appRetail investors can apply to buy the 1 billion yen bond without a securities account and receive perks through Toyota’s payment app.",
+          "url": "https://cointelegraph.com/news/toyota-finance-tokenized-bond-offering-mobile-payment",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/toyota-security-token.png"
+        },
+        {
+          "id": "art_3667056",
+          "title": "Kraken launches US-listed stock trading for EEA customers28m, Kraken launches US-listed stock trading for EEA customersEligible EEA users can trade conventional US shares alongside more than 700 tokenized xStocks through Kraken’s European entity.",
+          "url": "https://cointelegraph.com/news/kraken-us-stock-trading-eea-customers",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-european-blockchain-partnership-24-countries-kraken.jpg"
+        },
+        {
+          "id": "art_3689248",
+          "title": "FalconX, Interstice Connect Canton to Ethereum, Solana and Robinhood Chain",
+          "url": "https://cointelegraph.com/news/interstice-falconx-cross-chain-swap-engine-canton-solana-ethereum-robinhood-chain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-chainlink-a-beginners-guide-to-the-cross-chain-interoperability-protocol.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Two things happened this week. The CLARITY Act stalled in the Senate, and the SEC moved immediately to fill the space with its own offering rules. This is not coordination failure. It is a contest for jurisdictional primacy that will outlast this Congress.\n\nWhile that plays out in Washington, Neuberger Berman put $230 billion of fixed-income infrastructure onchain through Securitize. Not as a pilot. Across Ethereum, Solana, Avalanche, and Sui. The multi-chain default is now set at the institutional tier, which means the underwriting question for L1 infrastructure has shifted from throughput marketing to settlement guarantees and counterparty recourse.\n\nThen Metaplanet acquired Super League for 2,100 BTC. The target's value surged 80% on announcement. This is the treasury strategy Masa Son's shop has been refining: use Bitcoin as acquisition currency, force immediate repricing, capture the spread. It works on thin floats. Whether it works on liquid targets is the test.\n\nCiti's Custody+ launch later this year, with AI-integrated market intelligence and instant settlement, puts traditional finance in direct competition with crypto-native custodians on the full service stack. The margin pressure on pure-plays is now structural.\n\nThe pattern: regulatory drift in the US, capital deployment accelerating anyway. We are underwriting a market where the rules are being written after the positions are taken. The confirming signal would be a second tier-one asset manager announcing tokenized fund deployment on a non-Ethereum chain. The killing signal would be an SEC enforcement action against a Securitize-issued product using the new offering framework.\n\nWe are watching for both."
+}
