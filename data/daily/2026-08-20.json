@@ -1,0 +1,605 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-20",
+  "date_display": "August 20, 2026",
+  "generated_at": "2026-08-20T05:00:18.957Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "CFTC clears path for Hyperliquid US entry as OCC races to lock in stablecoin rules before November deadline",
+    "tldr": "Regulatory infrastructure is being built in real time: the CFTC is engineering a compliant on-ramp for Hyperliquid, while the OCC compresses its timeline to implement the GENIUS Act. The signal is that US agencies are now competing to define the architecture, not merely police it."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-08-20T05:00:18.957Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$69,465",
+        "change_24h": "+7.5%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,251",
+        "change_24h": "+18.0%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.38T",
+        "change_24h": "+4.7%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$81.7B",
+        "change_24h": "+7.2%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 23,
+    "bearish": 4,
+    "neutral": 7,
+    "deduped": 0
+  },
+  "top_signals": [
+    {
+      "id": "art_3745107",
+      "title": "HYPE token surges after Trump says CFTC is working to bring Hyperliquid to US in 'fully compliant fashion'",
+      "url": "https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "President Trump announced that CFTC Chair Mike Selig is working to enable Hyperliquid to operate within the United States in a fully compliant manner. This news has triggered a price surge for the HYPE token.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News_2-1200x675.jpg",
+      "why_it_matters": "A CFTC-engineered compliance pathway for Hyperliquid would validate the 'offshore-first, regulate-later' go-to-market model and likely accelerate competitor filings from other perpetual DEXs now racing to avoid being priced out of the US institutional market."
+    },
+    {
+      "id": "art_3741600",
+      "title": "Bitcoin hits $69,000, ether jumps 10% as Treasury buybacks, SEC crypto proposal fuel market rally",
+      "url": "https://www.theblock.co/news/markets/2026-08-19-bitcoin-69000-ether-jumps-treasury-buybacks-sec-crypto-proposal-fuel-market-rally-412248",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitcoin and Ethereum experienced a significant price rally, with Bitcoin reaching $69,000 and Ether jumping 10%. The surge was driven by Treasury buybacks and a new SEC crypto proposal, resulting in nearly $2 billion in liquidations.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/markets/2026-08-19-bitcoin-69000-ether-jumps-treasury-buybacks-sec-crypto-proposal-fuel-market-rally-412248",
+      "themes": [
+        "bitcoin",
+        "market-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250312_Markets_Category-1200x675.jpg",
+      "why_it_matters": "The $2 billion liquidation figure suggests levered positioning was caught offsides by policy-driven moves, which means the rally's sustainability depends on whether Treasury buybacks and SEC rulemaking translate into actual ETF inflows rather than short-term gamma squeezes."
+    },
+    {
+      "id": "art_3736924",
+      "title": "OCC races to finalize GENIUS Act stablecoin rules by November",
+      "url": "https://www.theblock.co/news/regulation/2026-08-19-occ-races-to-finalize-genius-act-stablecoin-rules-by-november-412240",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Office of the Comptroller of the Currency (OCC) is working to finalize stablecoin regulations by November. This effort is to implement the GENIUS Act, a law previously signed by President Trump.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-08-19-occ-races-to-finalize-genius-act-stablecoin-rules-by-november-412240",
+      "themes": [
+        "regulation",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/01/occ-scaled-e1772072708836.jpg",
+      "why_it_matters": "Compressing stablecoin rulemaking into a November deadline signals the OCC views this as a competitive race against state charters and foreign regimes, with first-mover advantage in federal standards likely to determine which issuers achieve systemic scale."
+    },
+    {
+      "id": "art_3736005",
+      "title": "StanChart, HSBC execute first live transaction on Swift blockchain ledger",
+      "url": "https://cointelegraph.com/news/standard-chartered-hsbc-execute-first-live-transaction-on-swift-blockchain-ledger",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Standard Chartered and HSBC have successfully executed the first live cross-border transaction using Swift's blockchain ledger. This milestone marks a significant step in the expansion of tokenized deposit infrastructure among global systemic banks.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/standard-chartered-hsbc-execute-first-live-transaction-on-swift-blockchain-ledger",
+      "themes": [
+        "tokenization",
+        "cross-border-payments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/cross-border-transaction-stablecoin-swift.jpg",
+      "why_it_matters": "Swift's blockchain ledger moving from pilot to live transaction between two G-SIBs indicates the messaging layer itself is becoming a tokenization infrastructure play, which reprices the value question from 'who builds the ledger' to 'who controls the interoperability standard.'"
+    },
+    {
+      "id": "art_3723146",
+      "title": "Ripple raises $275M for US prime brokerage to meet institutional demand",
+      "url": "https://cointelegraph.com/news/ripple-raises-275m-us-prime-brokerage",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Ripple has successfully raised $275 million through a senior note offering to expand its US operations. The funds will be used to develop institutional financial services, specifically focusing on prime brokerage and multi-asset clearing.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/ripple-raises-275m-us-prime-brokerage",
+      "themes": [
+        "investment",
+        "institutional-finance"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-dubai-overview-ripple-and-blockchain.jpg",
+      "why_it_matters": "Ripple's $275M senior note offering for prime brokerage infrastructure confirms that institutional crypto clearing remains underbuilt relative to demand, and that debt financing at this scale implies underwriters see revenue visibility from custody and clearing fees before equity markets would price it."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_3723146",
+      "company": "Ripple",
+      "amount": "$275M",
+      "round": "Senior note offering",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/ripple-raises-275m-us-prime-brokerage",
+      "summary": "Ripple has successfully raised $275 million through a senior note offering to expand its US operations. The funds will be used to develop institutional financial services, specifically focusing on prime brokerage and multi-asset clearing."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_3738343",
+      "title": "FalconX, Ethena bring USDe backing assets into $1B institutional credit facility",
+      "url": "https://cointelegraph.com/news/falconx-ethena-launch-1b-usde-backed-institutional-lending-facility",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "FalconX and Ethena have established a $1 billion secured lending facility. The facility utilizes assets backing the USDe stablecoin to provide overcollateralized loans to institutional clients.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/dollar-fiat-money-bitcoin.png"
+    },
+    {
+      "id": "art_3735755",
+      "title": "Injective becomes SEC-registered transfer agent as it expands tokenization push",
+      "url": "https://www.theblock.co/news/regulation/2026-08-19-injective-becomes-sec-registered-transfer-agent-expands-tokenization-push-412225",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Injective has become an SEC-registered transfer agent to support its expansion into the tokenization of securities. This registration allows the protocol to legally track ownership and transfers of regulated digital assets.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+    },
+    {
+      "id": "art_3728991",
+      "title": "SEC regulatory proposal marks ‘important’ step forward from ‘inapt’ crypto rules: Commissioner Peirce",
+      "url": "https://cointelegraph.com/news/sec-proposal-forward-inapt-crypto-rules-commissioner-peirce",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "SEC Commissioner Hester Peirce has praised a new regulatory proposal for crypto, describing it as a significant improvement over previous 'inapt' rules. This development follows the Senate's failure to pass the CLARITY Act.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-new-sec-crypto-task-force-key-changes-to-watch-hester-peirce-1.jpg"
+    },
+    {
+      "id": "art_3725484",
+      "title": "Centrifuge adds Symbiotic liquidity network across $1.6B in Janus Henderson, NYLIM funds",
+      "url": "https://cointelegraph.com/news/centrifuge-symbiotic-liquidity-network-janus-henderson-nylim-fund",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Centrifuge has integrated Symbiotic's Liquid Lane to provide instant liquidity for tokenized funds. This integration covers approximately $1.6 billion in assets managed by Janus Henderson and NYLIM.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-saga-1.jpg"
+    },
+    {
+      "id": "art_3720215",
+      "title": "How the UAE has emerged as a ‘leading light’ for tokenization",
+      "url": "https://fortune.com/2026/08/19/how-uae-has-emerged-leading-light-for-tokenization/",
+      "source": "Fortune Crypto",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The UAE is positioning itself as a global leader in tokenization, highlighted by Coinbase establishing its global tokenization hub in Abu Dhabi. Projections suggest that $500 billion in GCC assets could migrate to the blockchain by 2030.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/UAE-CRYPTO-CONFERENCE-e1787132131864.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_3720216",
+      "title": "Coinbase establishes Abu Dhabi tokenization hub",
+      "url": "https://fortune.com/2026/08/19/coinbase-establishes-abu-dhabi-tokenization-hub/",
+      "source": "Fortune Crypto",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Coinbase has established a new tokenization hub in Abu Dhabi. This move signals a strategic expansion into the Middle East to advance the digitization of real-world assets.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/ADGM-The-International-Financial-Centre-of-Abu-Dhabi-e1787131036583.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_3706780",
+      "title": "US accounting board FASB proposes conditions for stablecoins as cash equivalents",
+      "url": "https://cointelegraph.com/news/us-accounting-board-fasb-proposes-conditions-for-stablecoins-as-cash-equivalents",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Financial Accounting Standards Board (FASB) is proposing specific conditions under which stablecoins can be classified as cash equivalents. This move could significantly simplify financial reporting for companies holding digital assets and encourage institutional adoption.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-monitoring-payers-cryptocurrency-compliance.jpg"
+    },
+    {
+      "id": "art_3761484",
+      "title": "AI agents could make today's billion-dollar crypto hacks look like 'pennies,' industry leaders warn",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-19-ai-agents-todays-billion-dollar-crypto-hacks-look-like-pennies-industry-leaders-412278",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Industry leaders warn that the integration of AI agents into crypto could lead to massive security vulnerabilities and hacks far exceeding current records. The primary concerns center around trust, AI hallucinations, and the lack of clear legal liability for autonomous agent actions.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240814_Crypto-AI_News_2.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_3716298",
+      "title": "The Race to Reinvent the Deposit",
+      "url": "https://messari.io/report/the-race-to-reinvent-the-deposit",
+      "source": "Messari — Research",
+      "note": "Messari's framing of deposit reinvention maps directly onto the Swift/StanChart/HSBC live transaction, giving analytical scaffolding for how tokenized bank liabilities compete with stablecoins on regulatory capital and counterparty risk dimensions.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e110dfb82edc9c946053f967701fb600d6b522c8-1500x600.jpg"
+    },
+    {
+      "id": "art_3706832",
+      "title": "Inside the FCA’s Scaleup Unit: ‘Don't be frightened of the regulator’",
+      "url": "https://sifted.eu/articles/fca-scaleup-unit/",
+      "source": "Sifted",
+      "note": "The FCA Scaleup Unit's operational transparency offers a rare window into how a major regulator is restructuring its engagement model with crypto-native firms, relevant for any founder weighing UK versus US incorporation post-GENIUS Act.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1080,quality=75,fit=cover,format=auto/wp-content/uploads/2026/08/18170444/fca-logo-two.jpg"
+    },
+    {
+      "id": "art_3731379",
+      "title": "Revolut to allow CEO to borrow up to $250m against his shares, reports say",
+      "url": "https://sifted.eu/articles/revolut-ceo-to-borrow-250m/",
+      "source": "Sifted",
+      "note": "Revolut's CEO share-backed lending facility is a governance signal worth tracking: concentrated insider leverage against fintech equity often precedes either accelerated IPO timelines or defensive recapitalizations, with implications for crypto-fintech comparables.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2000,quality=75,fit=cover,format=auto/wp-content/uploads/2026/04/20103840/PR-headshot-landscape-nik-1-1.png"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_3741600",
+          "title": "Bitcoin hits $69,000, ether jumps 10% as Treasury buybacks, SEC crypto proposal fuel market rally",
+          "url": "https://www.theblock.co/news/markets/2026-08-19-bitcoin-69000-ether-jumps-treasury-buybacks-sec-crypto-proposal-fuel-market-rally-412248",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250312_Markets_Category-1200x675.jpg"
+        },
+        {
+          "id": "art_3750611",
+          "title": "Bitcoin posts surprise rally as currency nears $70,000 for the first time since June",
+          "url": "https://fortune.com/2026/08/19/bitcoin-surprise-rally-since-june/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-1329055819-e1787177673458.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3722896",
+          "title": "Scaramucci points to $100,000 bitcoin as 'magic number' for OG sellers, eyes AI-blockchain convergence",
+          "url": "https://www.theblock.co/news/markets/2026-08-19-scaramucci-points-to-100000-bitcoin-as-magic-number-for-og-sellers-eyes-ai-blockchain-convergence-412190",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/11/20201116_Scaramucci_Bitcoin-Daily-1200x675.jpg"
+        },
+        {
+          "id": "art_3709855",
+          "title": "Craig Wright, academic publishing phenomenon",
+          "url": "https://www.ft.com/content/fe3a8ce6-e348-4588-aba0-bb88650f87b9",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fed10d5f7-8c03-435a-8cd5-9afbebd10461.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_3738343",
+          "title": "FalconX, Ethena bring USDe backing assets into $1B institutional credit facility",
+          "url": "https://cointelegraph.com/news/falconx-ethena-launch-1b-usde-backed-institutional-lending-facility",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/dollar-fiat-money-bitcoin.png"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_3727572",
+          "title": "Ex-Signature Bank chair warns big banks could use blockchain to take market share from smaller rivals as N3XT goes global",
+          "url": "https://www.theblock.co/news/business/2026-08-19-ex-signature-bank-chair-big-banks-blockchain-n3xt-412202",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/11/crypto.jpeg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_3717301",
+          "title": "Arthur Hayes takes CEO role at Flop Labs ahead of Q4 airdrop25m",
+          "url": "https://cointelegraph.com/news/arthur-hayes-ceo-role-flop-labs-q4-airdrop",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_3734586",
+          "title": "Ethereum engineering firm Nethermind leaves LayerZero verifier role for Chainlink",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-19-nethermind-layerzero-chainlink-412226",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/10/20221005_Chainlink2-1200x675.jpg"
+        },
+        {
+          "id": "art_3749230",
+          "title": "🟪 Can blockchains save the internet? ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_a0a7baa6-049f-4bf2-bc48-87f42dbf99de",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_3723146",
+          "title": "Ripple raises $275M for US prime brokerage to meet institutional demand",
+          "url": "https://cointelegraph.com/news/ripple-raises-275m-us-prime-brokerage",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-dubai-overview-ripple-and-blockchain.jpg"
+        },
+        {
+          "id": "art_3736926",
+          "title": "Grayscale's latest Zcash ETF amendment shows DCG in talks to contribute 200,000 ZEC to fund",
+          "url": "https://www.theblock.co/news/markets/2026-08-19-grayscale-zcash-etf-amendment-dcg-discussions-contribute-200000-zec-fund-412232",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/03/20230317_Grayscale_Color.jpg"
+        },
+        {
+          "id": "art_3725485",
+          "title": "Sweden’s H100 reports $26M H1 loss driven by falling Bitcoin value",
+          "url": "https://cointelegraph.com/news/swedens-h100-26m-h1-loss-falling-bitcoin-value",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-an-overview-update-on-the-level-of-institutional-interest-in-bitcoin-breaking-news.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_3719689",
+          "title": "OpenAI clarifies ‘acquisition’ offer for Irish teen's startup idea was a joke",
+          "url": "https://sifted.eu/articles/openai-clarifies-acquisition-offer/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2023/09/14101035/SamAltmanTechCrunch2019-scaled.jpeg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_3720558",
+          "title": "Rain CEO says stablecoin payments reach more than 100,000 merchants without them knowing it",
+          "url": "https://www.theblock.co/news/business/2026-08-19-rain-ceo-says-stablecoin-payments-reach-more-than-100000-merchants-without-them-knowing-it-412184",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/20250514_Tokenization-3-1200x675-1.jpg"
+        },
+        {
+          "id": "art_3721977",
+          "title": "Nexo launches regulated crypto-backed credit in Australia",
+          "url": "https://cointelegraph.com/news/nexo-launches-crypto-backed-credit-australia",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-sponsored-of-nexo-1.jpg"
+        },
+        {
+          "id": "art_3731379",
+          "title": "Revolut to allow CEO to borrow up to $250m against his shares, reports say",
+          "url": "https://sifted.eu/articles/revolut-ceo-to-borrow-250m/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2000,quality=75,fit=cover,format=auto/wp-content/uploads/2026/04/20103840/PR-headshot-landscape-nik-1-1.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_3745107",
+          "title": "HYPE token surges after Trump says CFTC is working to bring Hyperliquid to US in 'fully compliant fashion'",
+          "url": "https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_3736924",
+          "title": "OCC races to finalize GENIUS Act stablecoin rules by November",
+          "url": "https://www.theblock.co/news/regulation/2026-08-19-occ-races-to-finalize-genius-act-stablecoin-rules-by-november-412240",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/01/occ-scaled-e1772072708836.jpg"
+        },
+        {
+          "id": "art_3735755",
+          "title": "Injective becomes SEC-registered transfer agent as it expands tokenization push",
+          "url": "https://www.theblock.co/news/regulation/2026-08-19-injective-becomes-sec-registered-transfer-agent-expands-tokenization-push-412225",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+        },
+        {
+          "id": "art_3728991",
+          "title": "SEC regulatory proposal marks ‘important’ step forward from ‘inapt’ crypto rules: Commissioner Peirce",
+          "url": "https://cointelegraph.com/news/sec-proposal-forward-inapt-crypto-rules-commissioner-peirce",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-new-sec-crypto-task-force-key-changes-to-watch-hester-peirce-1.jpg"
+        },
+        {
+          "id": "art_3706780",
+          "title": "US accounting board FASB proposes conditions for stablecoins as cash equivalents",
+          "url": "https://cointelegraph.com/news/us-accounting-board-fasb-proposes-conditions-for-stablecoins-as-cash-equivalents",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-monitoring-payers-cryptocurrency-compliance.jpg"
+        },
+        {
+          "id": "art_3749784",
+          "title": "Congress can still 'land this plane' on crypto bill as ethics talks stall, says Democratic Sen. Gallego",
+          "url": "https://www.theblock.co/news/regulation/2026-08-19-congress-can-still-land-this-plane-crypto-bill-ethics-talks-stall-democratic-sen-gallego-412272",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/12/20211208_Capitol-Congress-Regulation.jpg"
+        },
+        {
+          "id": "art_3734836",
+          "title": "US commodities regulator imposes 5-year trading ban on ex-Alameda, FTX execs",
+          "url": "https://cointelegraph.com/news/us-cftc-trading-ban-alameda-ftx-executives",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-the-cftc-action-against-ftx.jpg"
+        },
+        {
+          "id": "art_3741850",
+          "title": "Crypto PAC notches primary wins, but loses $2M Florida race",
+          "url": "https://cointelegraph.com/news/crypto-pac-wins-primaries-loses-florida-race",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-can-somebody-predict-the-next-us-elections-crypto-2.jpg"
+        },
+        {
+          "id": "art_3706832",
+          "title": "Inside the FCA’s Scaleup Unit: ‘Don't be frightened of the regulator’",
+          "url": "https://sifted.eu/articles/fca-scaleup-unit/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1080,quality=75,fit=cover,format=auto/wp-content/uploads/2026/08/18170444/fca-logo-two.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_3761484",
+          "title": "AI agents could make today's billion-dollar crypto hacks look like 'pennies,' industry leaders warn",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-19-ai-agents-todays-billion-dollar-crypto-hacks-look-like-pennies-industry-leaders-412278",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/08/20240814_Crypto-AI_News_2.jpg"
+        },
+        {
+          "id": "art_3709118",
+          "title": "MAYAChain halts network after estimated $1.7M exploit",
+          "url": "https://cointelegraph.com/news/maya-protocol-1-7m-exploit-network-halt",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-company-hits-vulnerability.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_3745357",
+          "title": "Bitcoin.com integrates UAE-registered US dollar stablecoin into self-custodial wallet",
+          "url": "https://cointelegraph.com/news/bitcoincom-integrates-uae-registered-usdu-stablecoin-into-self-custodial-wallet",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-read-a-stablecoin-attestation-report-eu-1.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_3736005",
+          "title": "StanChart, HSBC execute first live transaction on Swift blockchain ledger",
+          "url": "https://cointelegraph.com/news/standard-chartered-hsbc-execute-first-live-transaction-on-swift-blockchain-ledger",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/cross-border-transaction-stablecoin-swift.jpg"
+        },
+        {
+          "id": "art_3725484",
+          "title": "Centrifuge adds Symbiotic liquidity network across $1.6B in Janus Henderson, NYLIM funds",
+          "url": "https://cointelegraph.com/news/centrifuge-symbiotic-liquidity-network-janus-henderson-nylim-fund",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/hi-crypto-saga-1.jpg"
+        },
+        {
+          "id": "art_3720215",
+          "title": "How the UAE has emerged as a ‘leading light’ for tokenization",
+          "url": "https://fortune.com/2026/08/19/how-uae-has-emerged-leading-light-for-tokenization/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/UAE-CRYPTO-CONFERENCE-e1787132131864.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3720216",
+          "title": "Coinbase establishes Abu Dhabi tokenization hub",
+          "url": "https://fortune.com/2026/08/19/coinbase-establishes-abu-dhabi-tokenization-hub/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/ADGM-The-International-Financial-Centre-of-Abu-Dhabi-e1787131036583.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_3716298",
+          "title": "The Race to Reinvent the Deposit",
+          "url": "https://messari.io/report/the-race-to-reinvent-the-deposit",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e110dfb82edc9c946053f967701fb600d6b522c8-1500x600.jpg"
+        },
+        {
+          "id": "art_3724065",
+          "title": "Bitwise CIO sees potential for 10-100x blockchain transaction growth as AI agents meet tokenized markets",
+          "url": "https://www.theblock.co/news/ecosystems/2026-08-19-bitwise-cio-sees-potential-for-10-100x-blockchain-transaction-growth-as-ai-agents-meet-tokenized-markets-412196",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240624_Tokenization_News_2.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The CFTC is building Hyperliquid a door. Not kicking one down—constructing it, with hinges, from timber the agency is still selecting.\n\nTrump's announcement that Chair Selig is working to bring Hyperliquid into the US 'fully compliant' is the first time I can recall a regulator being tasked with retrofitting compliance around an existing offshore exchange rather than forcing the exchange to rebuild from zero. That's a different underwriting of political risk. It assumes the product works, the users are real, and the only missing piece is jurisdiction.\n\nSame day, the OCC compresses its GENIUS Act stablecoin timeline to November. Two agencies, two races. The CFTC is chasing market presence; the OCC is chasing legislative lock-in before the window shifts.\n\nWhat I'm watching: whether Hyperliquid's US entity ends up with segregation requirements that Ripple's new $275M prime brokerage infrastructure can service. If yes, the value isn't in the exchange token—it's in the clearing stack underneath. If no, and the CFTC demands full rebuild, the first-mover advantage dissolves.\n\nThe test is simple. Six months from now, is Hyperliquid US clearing through Ripple-built infrastructure, or did the compliance cost kill the economics?\n\nThat's the bet."
+}
