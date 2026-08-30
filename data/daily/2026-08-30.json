@@ -1,0 +1,531 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-08-30",
+  "date_display": "August 30, 2026",
+  "generated_at": "2026-08-30T05:00:17.726Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "BIS chief dismisses stablecoins for payments at scale as tokenized deposits gain institutional backing",
+    "tldr": "The tension between crypto-native settlement rails and traditional financial infrastructure sharpened today, with the BIS head rejecting stablecoins while Coinbase and Capital B advanced competing visions for on-chain value storage."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks how institutional authority is being reasserted over the terms of on-chain finance just as private capital tests the boundaries of what can be tokenized.",
+  "market_snapshot": {
+    "as_of": "2026-08-30T05:00:17.726Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$78,072",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,454",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.63T",
+        "change_24h": "-2.8%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$87.9B",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 9,
+    "bearish": 7,
+    "neutral": 9,
+    "deduped": 13
+  },
+  "top_signals": [
+    {
+      "id": "art_4280454",
+      "title": "Stablecoins not credible for payments at scale, BIS chief says",
+      "url": "https://cointelegraph.com/news/stablecoins-not-credible-payments-scale-bis-chief",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bearish",
+      "summary": "The head of the Bank for International Settlements (BIS) has stated that stablecoins lack the credibility required for large-scale payment systems. He instead advocates for the use of tokenized bank deposits as a superior alternative for everyday transactions.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/stablecoins-not-credible-payments-scale-bis-chief",
+      "themes": [
+        "stablecoins",
+        "regulation"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M166CFV826H6EC9FT9NRRV7E/hi-stablecoin-has-been-listed-an-exchange-traded-note-in-europe.jpg",
+      "why_it_matters": "The BIS chief's endorsement of tokenized bank deposits over stablecoins signals that G20-level payment infrastructure will likely exclude unregulated crypto issuers, repricing the competitive moat for compliant tokenization platforms."
+    },
+    {
+      "id": "art_4312106",
+      "title": "Layer 1 blockchain Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of circulating supply",
+      "url": "https://www.theblock.co/news/defi/2026-08-29-layer-1-blockchain-fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-of-circulating-supply-413064",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Layer 1 blockchain Fogo has halted its mainnet following a security breach. An attacker successfully acquired 400 million FOGO tokens, representing 10% of the circulating supply.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-29-layer-1-blockchain-fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-of-circulating-supply-413064",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg",
+      "why_it_matters": "A 10% circulating supply capture in a single exploit reveals that newer L1 security assumptions remain materially untested at scale, making chain halts a recurring underwrite risk for infrastructure investors."
+    },
+    {
+      "id": "art_4308560",
+      "title": "Cosmos Labs says it wrongly cleared the bug behind a $5.7 million six-chain hack",
+      "url": "https://www.theblock.co/news/defi/2026-08-29-cosmos-labs-says-it-wrongly-cleared-the-bug-behind-a-5-7-million-six-chain-hack-413061",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Cosmos Labs admitted to incorrectly clearing a bug that led to a $5.7 million hack across six different chains. MANTRA Chain, one of the affected networks, alleges the patch was released too late and lacked sufficient detail regarding the flaw.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/defi/2026-08-29-cosmos-labs-says-it-wrongly-cleared-the-bug-behind-a-5-7-million-six-chain-hack-413061",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/09/extra2.jpg",
+      "why_it_matters": "Cosmos Labs' admission that it wrongly cleared a known bug introduces liability questions for core development teams and will tighten due diligence standards on cross-chain security audits across the Interchain ecosystem."
+    },
+    {
+      "id": "art_4235536",
+      "title": "Coinbase Enters Tokenized Stock Fray on Third-Party ‘Wrapper’ Side",
+      "url": "https://www.galaxy.com/insights/research/coinbase-tokenized-stocks-base-third-party-issuer-sec-innovation-exemption",
+      "source": "Galaxy — Network",
+      "source_domain": "galaxy.com",
+      "category": "Tokenization",
+      "sentiment": "neutral",
+      "summary": "Coinbase is expanding into the tokenized stock market by utilizing third-party wrappers. The move has raised questions regarding the legal nature of the assets, specifically whether users own the shares directly or a claim on them.",
+      "significance": 6,
+      "primary_source": "https://www.galaxy.com/insights/research/coinbase-tokenized-stocks-base-third-party-issuer-sec-innovation-exemption",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7pQucRIGIsVrAGB11jgCr0/10a504dfa6a82707e6ddf7cfabf922ce/General-ChartGraph-1_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "Coinbase's wrapper-based approach to tokenized equities creates legal ambiguity around beneficial ownership that regulators will likely resolve against the platform, constraining the TAM for retail tokenized stock products."
+    },
+    {
+      "id": "art_4233225",
+      "title": "Capital B raises $24.5M for its Bitcoin treasury amid market uncertainty with BlockStream’s Adam Back chipping in42m, Capital B raises $24.5M for its Bitcoin treasury amid market uncertainty with BlockStream’s Adam Back chipping inThe French Bitcoin treasury firm’s private placement drew support from Adam Back and TOBAM, with warrant exercises potentially unlocking another $158 million.",
+      "url": "https://cointelegraph.com/news/capital-b-raises-245m-for-its-bitcoin-treasury-amid-market-uncertainty-with-blockstreams-adam-back-chipping-in",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "French Bitcoin treasury firm Capital B has raised $24.5 million through a private placement to expand its BTC holdings. The round saw participation from notable figures including BlockStream's Adam Back and TOBAM, with potential for further funding via warrants.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/capital-b-raises-245m-for-its-bitcoin-treasury-amid-market-uncertainty-with-blockstreams-adam-back-chipping-in",
+      "themes": [
+        "bitcoin",
+        "investment"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M142AJ5B6BQSFDTHCF63GJPC/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price-1.jpg",
+      "why_it_matters": "Capital B's $24.5 million raise with Adam Back's participation demonstrates that Bitcoin treasury strategies remain fundable in uncertain conditions, though the warrant overhang to $158 million suggests aggressive dilution risk if BTC rallies."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_4233225",
+      "company": "Capital B",
+      "amount": "$24.5M",
+      "round": "Private placement",
+      "investors": [
+        "Adam Back",
+        "TOBAM"
+      ],
+      "category": "Bitcoin",
+      "url": "https://cointelegraph.com/news/capital-b-raises-245m-for-its-bitcoin-treasury-amid-market-uncertainty-with-blockstreams-adam-back-chipping-in",
+      "summary": "French Bitcoin treasury firm Capital B has raised $24.5 million through a private placement to expand its BTC holdings. The round saw participation from notable figures including BlockStream's Adam Back and TOBAM, with potential for further funding via warrants."
+    },
+    {
+      "id": "art_4208194",
+      "company": "BitGo",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-08-27-bitgo-buys-nydig-institutional-trading-412975",
+      "summary": "BitGo has acquired NYDIG's institutional trading business to expand its derivatives offerings. The deal includes the transfer of approximately 30 employees and their existing institutional trading relationships."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_4231794",
+      "title": "Investors at least $4.7 billion underwater across Trump crypto ventures, Public Citizen says",
+      "url": "https://www.theblock.co/news/business/2026-08-28-investors-at-least-4-7-billion-underwater-across-trump-crypto-ventures-public-citizen-says-413003",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "A report from Public Citizen claims that investors in Donald Trump's crypto ventures have lost approximately $4.7 billion. In contrast, the report alleges that Trump himself earned $1.4 billion from these activities.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News.jpg"
+    },
+    {
+      "id": "art_4230614",
+      "title": "Circle strikes Chelsea front-of-shirt sponsorship deal featuring USDC",
+      "url": "https://www.theblock.co/news/business/2026-08-28-circle-strikes-chelsea-front-of-shirt-sponsorship-deal-featuring-usdc-413002",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Circle has entered into a front-of-shirt sponsorship agreement with Chelsea Football Club. The deal will feature USDC branding across the men's, women's, and academy team kits starting this season.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg"
+    },
+    {
+      "id": "art_4309992",
+      "title": "Polygon discloses security flaws fixed in recent hard forks",
+      "url": "https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Polygon has disclosed security vulnerabilities that could have led to denial-of-service attacks and risks for validators. The flaws were addressed and resolved through the implementation of two hard forks.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17JHBKVPG032T0G1E4PGVX3/hi-quadrigacx-ceo-died-what-next.png"
+    },
+    {
+      "id": "art_4256584",
+      "title": "TRON DAO Engages Brazilian Authorities at DCGG and CNMP Digital Asset Recovery Forum",
+      "url": "https://www.theblock.co/news/sponsored/2026-08-28-tron-dao-engages-brazilian-authorities-at-dcgg-and-cnmp-digital-asset-recovery-forum-413053",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "TRON DAO has engaged with Brazilian authorities, including the DCGG and CNMP, during a digital asset recovery forum. The collaboration focuses on improving the recovery of digital assets within the Brazilian legal framework.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/08/Screenshot-2026-08-28-at-5.16.03%E2%80%AFPM.png"
+    },
+    {
+      "id": "art_4250679",
+      "title": "Ninth Circuit deals blow to Kalshi in Nevada sports betting fight, challenging CFTC's exclusive jurisdiction claim",
+      "url": "https://www.theblock.co/news/regulation/2026-08-28-ninth-circuit-deals-blow-to-kalshi-in-nevada-sports-betting-fight-challenging-cftcs-exclusive-jurisdiction-claim-413046",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Ninth Circuit Court of Appeals upheld a lower court ruling against Kalshi regarding its sports betting operations in Nevada. The court found that Kalshi failed to prove that federal government authority preempts Nevada's state-level regulatory authority.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+    },
+    {
+      "id": "art_4237694",
+      "title": "Ondo Finance taps former GFMA Executive Director Allison Parent as chief policy officer",
+      "url": "https://www.theblock.co/news/regulation/2026-08-28-ondo-finance-taps-former-gfma-executive-director-allison-parent-chief-policy-officer-413022",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ondo Finance has appointed Allison Parent, a former Executive Director of the GFMA, as its new chief policy officer. The move is intended to strengthen the firm's regulatory and policy efforts within the tokenized assets space.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20230216_Ondo.jpg"
+    },
+    {
+      "id": "art_4233224",
+      "title": "California Senate passes bill to ban memecoin issuance by public officials9m, California Senate passes bill to ban memecoin issuance by public officialsThe bill seeks to prohibit the listing of memecoins issued by federal public officials to California residents, citing conflicts of interest and “pay-to-play arrangements.”",
+      "url": "https://cointelegraph.com/news/california-bill-ban-memecoin-issuance-public-officials",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The California Senate has passed a bill aimed at banning the issuance of memecoins by public officials. The legislation intends to prevent conflicts of interest and 'pay-to-play' schemes by prohibiting such tokens from being listed for California residents.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M142VHEYF1NJ88CYWK7HGE6J/hi-california-vs-maga-memecoins.jpg"
+    },
+    {
+      "id": "art_4235535",
+      "title": "Solana Stakeholders Debate SOL Issuance and Burn Rates",
+      "url": "https://www.galaxy.com/insights/research/solana-sgp-0002-sgp-0003-governance-vote-issuance-fee-burn-economics",
+      "source": "Galaxy — Network",
+      "category": "Infrastructure",
+      "sentiment": "neutral",
+      "summary": "Solana stakeholders are currently debating proposals regarding the network's SOL issuance and burn rates. The discussion focuses on balancing inflation and deflationary mechanisms, with participants acknowledging that each proposed approach involves specific trade-offs.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7hyFL2XN8OjgnfhLMku8ho/be47ce09cc23f203838f7829a97da03f/Solana-4_Yellow-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_4235535",
+      "title": "Solana Stakeholders Debate SOL Issuance and Burn Rates",
+      "url": "https://www.galaxy.com/insights/research/solana-sgp-0002-sgp-0003-governance-vote-issuance-fee-burn-economics",
+      "source": "Galaxy — Network",
+      "note": "Solana's issuance and burn rate debate will determine whether the network can sustain validator economics without inflating holder dilution, making this essential for anyone underwriting SOL's monetary policy.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7hyFL2XN8OjgnfhLMku8ho/be47ce09cc23f203838f7829a97da03f/Solana-4_Yellow-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_4237848",
+      "title": "Bitcoin Logs Biggest Weekly Dollar Gain as It Chases 50-Week Moving Average",
+      "url": "https://www.galaxy.com/insights/research/bitcoin-biggest-weekly-dollar-gain-50-week-moving-average-bear-market-2026",
+      "source": "Galaxy — Insights",
+      "note": "The 50-week moving average test provides a technical framework for assessing whether BTC's recent dollar-denominated gains represent trend reversal or bear-market rally within a broader consolidation.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3igvWwkyhhqTU8J1A8tNW3/b4378e21b365a75d66c50a61ef914eb1/Bitcoin-7_Orange-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_4235537",
+      "title": "Charts of the Week: Polymarket US Nips at Flagship Exchange’s Heels",
+      "url": "https://www.galaxy.com/insights/research/polymarket-us-volume-growth-vs-polymarket-offshore-kalshi-prediction-markets-2026",
+      "source": "Galaxy — Network",
+      "note": "Polymarket's volume proximity to established exchanges offers a real-time proxy for how prediction market liquidity is being repriced relative to traditional event-risk trading venues.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3hz2TLkh6flH9qiLHBvU8y/0c070f8bcc810bbcfd2d8f6c1b0886fd/General-ChartGraph-4_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_4233225",
+          "title": "Capital B raises $24.5M for its Bitcoin treasury amid market uncertainty with BlockStream’s Adam Back chipping in42m, Capital B raises $24.5M for its Bitcoin treasury amid market uncertainty with BlockStream’s Adam Back chipping inThe French Bitcoin treasury firm’s private placement drew support from Adam Back and TOBAM, with warrant exercises potentially unlocking another $158 million.",
+          "url": "https://cointelegraph.com/news/capital-b-raises-245m-for-its-bitcoin-treasury-amid-market-uncertainty-with-blockstreams-adam-back-chipping-in",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M142AJ5B6BQSFDTHCF63GJPC/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price-1.jpg"
+        },
+        {
+          "id": "art_4237848",
+          "title": "Bitcoin Logs Biggest Weekly Dollar Gain as It Chases 50-Week Moving Average",
+          "url": "https://www.galaxy.com/insights/research/bitcoin-biggest-weekly-dollar-gain-50-week-moving-average-bear-market-2026",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3igvWwkyhhqTU8J1A8tNW3/b4378e21b365a75d66c50a61ef914eb1/Bitcoin-7_Orange-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_4235535",
+          "title": "Solana Stakeholders Debate SOL Issuance and Burn Rates",
+          "url": "https://www.galaxy.com/insights/research/solana-sgp-0002-sgp-0003-governance-vote-issuance-fee-burn-economics",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7hyFL2XN8OjgnfhLMku8ho/be47ce09cc23f203838f7829a97da03f/Solana-4_Yellow-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_4245459",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/metaplex-data-dashboard-primer",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_4231794",
+          "title": "Investors at least $4.7 billion underwater across Trump crypto ventures, Public Citizen says",
+          "url": "https://www.theblock.co/news/business/2026-08-28-investors-at-least-4-7-billion-underwater-across-trump-crypto-ventures-public-citizen-says-413003",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/20250602_Trump_News.jpg"
+        },
+        {
+          "id": "art_4208194",
+          "title": "BitGo buys NYDIG's institutional trading business, expanding derivatives offering",
+          "url": "https://www.theblock.co/news/business/2026-08-27-bitgo-buys-nydig-institutional-trading-412975",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/12/bitgo.jpg"
+        },
+        {
+          "id": "art_4295172",
+          "title": "Crypto Fundraisings on Week 23 ",
+          "url": "https://crypto-fundraising.info/blog/dates-23-29-aug-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/23-29-Aug-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_4255059",
+          "title": "‘We have work to do’: Fed Reserve Chair Warsh suggests rate hike in coming months amid high inflation",
+          "url": "https://fortune.com/2026/08/28/federal-reserve-chair-kevin-warsh-raising-interest-rate/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2288203975_add812-e1787942339560.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_4235537",
+          "title": "Charts of the Week: Polymarket US Nips at Flagship Exchange’s Heels",
+          "url": "https://www.galaxy.com/insights/research/polymarket-us-volume-growth-vs-polymarket-offshore-kalshi-prediction-markets-2026",
+          "source": "Galaxy — Network",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3hz2TLkh6flH9qiLHBvU8y/0c070f8bcc810bbcfd2d8f6c1b0886fd/General-ChartGraph-4_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_4316492",
+          "title": "New U.S. sanctions will hit ordinary Iranians hard. That may be the whole point as the crashing economy stirs fresh protests",
+          "url": "https://fortune.com/2026/08/29/iran-economy-us-sanctions-gold-crypto-protests-inflation-naval-blockade/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2291440636-e1788034687288.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_4256584",
+          "title": "TRON DAO Engages Brazilian Authorities at DCGG and CNMP Digital Asset Recovery Forum",
+          "url": "https://www.theblock.co/news/sponsored/2026-08-28-tron-dao-engages-brazilian-authorities-at-dcgg-and-cnmp-digital-asset-recovery-forum-413053",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/08/Screenshot-2026-08-28-at-5.16.03%E2%80%AFPM.png"
+        },
+        {
+          "id": "art_4250679",
+          "title": "Ninth Circuit deals blow to Kalshi in Nevada sports betting fight, challenging CFTC's exclusive jurisdiction claim",
+          "url": "https://www.theblock.co/news/regulation/2026-08-28-ninth-circuit-deals-blow-to-kalshi-in-nevada-sports-betting-fight-challenging-cftcs-exclusive-jurisdiction-claim-413046",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+        },
+        {
+          "id": "art_4233224",
+          "title": "California Senate passes bill to ban memecoin issuance by public officials9m, California Senate passes bill to ban memecoin issuance by public officialsThe bill seeks to prohibit the listing of memecoins issued by federal public officials to California residents, citing conflicts of interest and “pay-to-play arrangements.”",
+          "url": "https://cointelegraph.com/news/california-bill-ban-memecoin-issuance-public-officials",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M142VHEYF1NJ88CYWK7HGE6J/hi-california-vs-maga-memecoins.jpg"
+        },
+        {
+          "id": "art_4227074",
+          "title": "Latest annual UK tax data shows 240 people reported more than £1 million in crypto capital gains",
+          "url": "https://www.theblock.co/news/regulation/2026-08-28-uk-tax-crypto-capital-gains-412993",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/08/20230712_UK_CryptoTax_News-1200x675.jpg"
+        },
+        {
+          "id": "art_4298762",
+          "title": "Former White House teleprompter operator must turn over more than $100,000 in profits and pay a $65,000 fine in insider trading settlement",
+          "url": "https://fortune.com/2026/08/29/former-white-house-teleprompter-operator-profits-fine-insider-trading-settlement/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/AP26240779913904-e1788011944981.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_4312106",
+          "title": "Layer 1 blockchain Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of circulating supply",
+          "url": "https://www.theblock.co/news/defi/2026-08-29-layer-1-blockchain-fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-of-circulating-supply-413064",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General.jpg"
+        },
+        {
+          "id": "art_4308560",
+          "title": "Cosmos Labs says it wrongly cleared the bug behind a $5.7 million six-chain hack",
+          "url": "https://www.theblock.co/news/defi/2026-08-29-cosmos-labs-says-it-wrongly-cleared-the-bug-behind-a-5-7-million-six-chain-hack-413061",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/extra2.jpg"
+        },
+        {
+          "id": "art_4309992",
+          "title": "Polygon discloses security flaws fixed in recent hard forks",
+          "url": "https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17JHBKVPG032T0G1E4PGVX3/hi-quadrigacx-ceo-died-what-next.png"
+        },
+        {
+          "id": "art_4217885",
+          "title": "The Sandbox pledges 1:1 repayment after $700K bridge exploitEligible holders on Base and BNB Chain will receive Ethereum-based SAND from the project’s treasury, with claims expected to open within two weeks.",
+          "url": "https://cointelegraph.com/news/the-sandbox-compensation-sand-bridge-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_4280454",
+          "title": "Stablecoins not credible for payments at scale, BIS chief says",
+          "url": "https://cointelegraph.com/news/stablecoins-not-credible-payments-scale-bis-chief",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M166CFV826H6EC9FT9NRRV7E/hi-stablecoin-has-been-listed-an-exchange-traded-note-in-europe.jpg"
+        },
+        {
+          "id": "art_4230614",
+          "title": "Circle strikes Chelsea front-of-shirt sponsorship deal featuring USDC",
+          "url": "https://www.theblock.co/news/business/2026-08-28-circle-strikes-chelsea-front-of-shirt-sponsorship-deal-featuring-usdc-413002",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/12/20201218_Circle-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_4235536",
+          "title": "Coinbase Enters Tokenized Stock Fray on Third-Party ‘Wrapper’ Side",
+          "url": "https://www.galaxy.com/insights/research/coinbase-tokenized-stocks-base-third-party-issuer-sec-innovation-exemption",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7pQucRIGIsVrAGB11jgCr0/10a504dfa6a82707e6ddf7cfabf922ce/General-ChartGraph-1_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_4237694",
+          "title": "Ondo Finance taps former GFMA Executive Director Allison Parent as chief policy officer",
+          "url": "https://www.theblock.co/news/regulation/2026-08-28-ondo-finance-taps-former-gfma-executive-director-allison-parent-chief-policy-officer-413022",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/09/20230216_Ondo.jpg"
+        },
+        {
+          "id": "art_4222008",
+          "title": "Bridge founder Zach Abrams sees an opportunity for ‘tokenized local currencies’ across Asia",
+          "url": "https://fortune.com/2026/08/28/bridge-founder-zach-abrams-stripe-stablecoins-asia-singapore-dollars/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/08/3LPA0623-e1787887890987.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_4226260",
+          "title": "A holistic view of real-world assets ",
+          "url": "https://dune.com/blog/digital-asset-brief-real-world-assets-rwa",
+          "source": "Dune",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/fox336rh/production/988bb3c91ada5143bba28e01fc9131a57e612a8a-1200x630.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Three blows to crypto-native settlement in one day. The BIS head called stablecoins unfit for payments at scale. Fogo halted its chain after someone walked off with 10% of supply. Cosmos Labs admitted it cleared a bug that cost six chains $5.7 million. The throughline is not that crypto is broken. It is that the infrastructure layer is still being underwritten on trust assumptions that do not survive contact with adversarial reality.\n\nAgainst this, Capital B raised $24.5 million for a Bitcoin treasury strategy. Adam Back participated. Warrants could take it to $183 million total. We have seen this movie with MicroStrategy and its imitators. The bet is that BTC volatility in a corporate treasury beats fiat debasement, and that the legal and custody stack around pure holding is mature enough to price. The underwrite there is on Bitcoin's Lindy effect, not on any novel settlement rail.\n\nWhat sharpens the contrast is Coinbase entering tokenized stocks through third-party wrappers. The legal question—do users own shares or a claim?—is the same one that killed earlier tokenized equity attempts. The BIS wants tokenized bank deposits. Coinbase wants tokenized equities through wrappers. Neither wants stablecoins to own the payment layer. The repricing is already happening. The open question is whether regulated tokenization can move fast enough to capture the TAM before the compliance costs eat the margin.\n\nWe are watching whether Capital B exercises those warrants above current prices. That is the test."
+}
