@@ -1,0 +1,526 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-03",
+  "date_display": "September 3, 2026",
+  "generated_at": "2026-09-03T05:00:17.804Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Coinbase opens Canadian derivatives market as Wyoming puts stablecoin reserves on-chain",
+    "tldr": "Regulated infrastructure is advancing on two fronts: Coinbase's Canadian derivatives launch and Wyoming's Chainlink-verified state stablecoin signal that compliance and transparency are becoming competitive moats rather than afterthoughts. The gap between jurisdictions treating crypto as regulated finance versus those still litigating its existence is widening fast."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the infrastructure layer is where the next repricing happens.",
+  "market_snapshot": {
+    "as_of": "2026-09-03T05:00:17.804Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$77,714",
+        "change_24h": "+0.2%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,406",
+        "change_24h": "-0.3%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.64T",
+        "change_24h": "-2.2%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$85.3B",
+        "change_24h": "+0.4%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 4,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 7,
+    "neutral": 4,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_4538234",
+      "title": "Coinbase launches regulated crypto derivatives in Canada",
+      "url": "https://cointelegraph.com/news/coinbase-launches-regulated-crypto-derivatives-in-canada",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Coinbase has expanded its offerings in Canada by launching regulated crypto derivatives. Eligible traders can now access perpetual and dated futures for major assets including Bitcoin, Ether, and Solana.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/coinbase-launches-regulated-crypto-derivatives-in-canada",
+      "themes": [
+        "regulation",
+        "derivatives"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HT238M4JD1C8SQAQHTYKWY/people-street-futures.jpg",
+      "why_it_matters": "Coinbase's Canadian derivatives launch demonstrates that regulated venue access is now the primary battleground for institutional flow capture, and firms with existing compliance infrastructure can expand geographically faster than competitors must build it."
+    },
+    {
+      "id": "art_4536032",
+      "title": "ETH August 2026 Update: Flows Recover, Fundamentals Don't",
+      "url": "https://messari.io/report/eth-august-2026-update-squeezed-higher",
+      "source": "Messari — Research",
+      "source_domain": "messari.io",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Ethereum saw a strong recovery in August with a 32.6% price increase driven by US Treasury buybacks and massive short liquidations. ETF inflows reached $1.8 billion, marking the strongest month since August 2025.",
+      "significance": 7,
+      "primary_source": "https://messari.io/report/eth-august-2026-update-squeezed-higher",
+      "themes": [
+        "ethereum",
+        "market-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e3d5518e02332ad289e8f3e9665efe3ac2cf1408-1983x793.png",
+      "why_it_matters": "The August ETH recovery driven by Treasury buybacks and short liquidations rather than organic demand growth suggests ETF inflows are becoming a reflexive but potentially fragile price support mechanism that founders should not underwrite long-term valuations on."
+    },
+    {
+      "id": "art_4533499",
+      "title": "New Jersey officials petition US Supreme Court over prediction markets24m, New Jersey officials petition US Supreme Court over prediction marketsNew Jersey’s Attorney General and gaming authorities filed a petition for a writ of certiorari to the US Supreme Court over Kalshi offering sporting event contracts to residents.",
+      "url": "https://cointelegraph.com/news/new-jersey-supreme-court-kalshi-prediction-markets-cftc",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "New Jersey officials have petitioned the US Supreme Court to challenge Kalshi's offering of sporting event contracts to its residents. The legal action involves the state's Attorney General and gaming authorities seeking a writ of certiorari.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/new-jersey-supreme-court-kalshi-prediction-markets-cftc",
+      "themes": [
+        "regulation",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HKH1HH1DMHKVCZWY8RFR6Q/b-lawsuit-kalshi-3.jpg",
+      "why_it_matters": "New Jersey's Supreme Court petition against Kalshi reveals that even prediction markets with federal regulatory approval face state-level fragmentation risk, creating jurisdictional arbitrage opportunities for platforms that can navigate multi-layer compliance."
+    },
+    {
+      "id": "art_4533500",
+      "title": "Wyoming adds Chainlink reserve verification to state-issued stable token",
+      "url": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "The state of Wyoming has integrated Chainlink's Proof of Reserve to provide transparency for its state-issued FRNT stable token. This implementation allows for near-real-time on-chain verification of the token's reserves and total supply.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token",
+      "themes": [
+        "stablecoins",
+        "proof-of-reserve"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HMS4JRWZ5GYFS8E74WQ8XR/hi-wyoming-crypto.jpg",
+      "why_it_matters": "Wyoming's adoption of Chainlink Proof of Reserve for its state-issued stablecoin establishes on-chain verification as a minimum viable transparency standard for government-backed digital currency, raising the bar for private stablecoin issuers."
+    },
+    {
+      "id": "art_4529697",
+      "title": "Securitize and Socios team up to tokenize equity in pro sports teams",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-02-securitize-and-socios-team-up-to-tokenize-equity-in-pro-sports-teams-413378",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize and Socios have partnered to tokenize equity in professional sports teams. This marks the first project launched under Securitize's European Trading & Settlement System utilizing the EU DLT Pilot Regime.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/ecosystems/2026-09-02-securitize-and-socios-team-up-to-tokenize-equity-in-pro-sports-teams-413378",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220208_Crypto_Sports_Funding.jpg",
+      "why_it_matters": "The Securitize-Socios partnership under the EU DLT Pilot Regime represents the first live test of whether tokenized sports equity can achieve regulatory-compliant secondary liquidity, with implications for all real-world asset tokenization verticals."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_4501530",
+      "company": "Hyperliquid Strategies",
+      "amount": "$2.5B",
+      "round": "",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/hyperliquid-strategies-equity-facility-2-5-billion",
+      "summary": "Hyperliquid Strategies has significantly expanded its equity facility, increasing it from $1 billion to $2.5 billion. This move enhances the firm's capacity to raise capital through the sale of shares."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_4525210",
+      "title": "G20 members tout ‘clear pathways’ for digital asset innovation10m, G20 members tout ‘clear pathways’ for digital asset innovationOfficials in the G20, under the US’ presidency, recognized that digital assets could support “broad-based economic growth” and called for improvements in cross-border transactions.",
+      "url": "https://cointelegraph.com/news/g20-members-clear-pathways-digital-asset-innovation",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "G20 members, under the US presidency, have acknowledged that digital assets can drive broad-based economic growth. The group is calling for enhanced frameworks to improve the efficiency of cross-border transactions.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1H85V728VXBM9KYCSEJAD01/g20-discuss-crypto-desk-table-meeting-hand-paper-people2.jpg"
+    },
+    {
+      "id": "art_4519290",
+      "title": "Hashkey joins DTCC working group as first Asian crypto service provider",
+      "url": "https://cointelegraph.com/news/hashkey-dtcc-first-asian-crypto-service-provider",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Hashkey has become the first Asian crypto service provider to join the DTCC's working group focused on tokenization innovation. The group includes major global financial institutions such as Goldman Sachs and JPMorgan.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1H3JQK56T4TK5037VBE2WN3/south-korea.jpg"
+    },
+    {
+      "id": "art_4501280",
+      "title": "G20 finance leaders vow to establish 'clear pathways' for digital assets innovation",
+      "url": "https://www.theblock.co/news/regulation/2026-09-02-g20-finance-leaders-digital-assets-413310",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "G20 finance leaders have committed to creating clear pathways for innovation within the digital assets space. The officials recognized that digital assets have the potential to drive economic growth and foster private sector innovation.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Tokens_News.jpg"
+    },
+    {
+      "id": "art_4528762",
+      "title": "Ondo urges SEC, CFTC to bring US stock perpetuals onshore48m, Ondo urges SEC, CFTC to bring US stock perpetuals onshoreOndo says existing US securities laws can accommodate perpetual futures tied to individual stocks as regulators look to bring more derivatives activity onshore.",
+      "url": "https://cointelegraph.com/news/ondo-urges-sec-cftc-bring-us-stock-perpetuals-onshore",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Ondo Finance is advocating for the SEC and CFTC to allow US stock perpetual futures to be traded onshore. The company argues that current US securities laws are sufficient to accommodate these derivatives, aiming to bring more trading activity back to US jurisdictions.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HFDYJCKJWQTKRMYKMVPJFP/hi-how-ondo-finance-plans-to-bring-tokenized-us-stocks-to-solana-3.jpg"
+    },
+    {
+      "id": "art_4526146",
+      "title": "Arbitrum DAO reports $6.2 million in first-half income as Robinhood Chain adds new revenue stream",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-02-arbitrum-dao-reports-6-2-million-first-half-income-robinhood-chain-adds-new-revenue-stream-413345",
+      "source": "The Block",
+      "category": "Layer2",
+      "sentiment": "bullish",
+      "summary": "Arbitrum DAO reported $6.2 million in income for the first half of the year, bolstered by a new revenue stream from the Robinhood Chain. Licensing fees from the Robinhood integration accounted for 35% of the DAO's income in July.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/07/arbitrum.jpg"
+    },
+    {
+      "id": "art_4516922",
+      "title": "Thai businessmen sue Tether for freezing $42M in $61M pig butchering case10m, Thai businessmen sue Tether for freezing $42M in $61M pig butchering case",
+      "url": "https://cointelegraph.com/news/thai-sue-tether-freezing-61m-pig-butchering-case",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Thai businessmen have filed a lawsuit against Tether after the company froze $42 million in assets linked to a $61 million 'pig butchering' scam. The plaintiffs are challenging the freeze as they attempt to recover funds lost in the fraudulent scheme.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1GZE23FCTZPM7XCYNR7Q35B/hi-how-pig-butchering-crypto-scams-turn-trust-into-a-financial-weapon.jpg"
+    },
+    {
+      "id": "art_4515488",
+      "title": "Japan-listed Remixpoint sells all ETH, SOL, XRP and DOGE holdings in shift to bitcoin-only crypto strategy",
+      "url": "https://www.theblock.co/news/business/2026-09-02-japan-listed-remixpoint-sells-all-eth-sol-xrp-and-doge-holdings-in-shift-to-bitcoin-only-crypto-strategy-413333",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Japan-listed company Remixpoint has shifted to a bitcoin-only treasury strategy, selling off all its holdings of ETH, SOL, XRP, and DOGE. The company now holds approximately 1,506 BTC, valued at roughly $115 million.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/05/Screen-Shot-2019-05-23-at-6.44.52-PM.png"
+    },
+    {
+      "id": "art_4511002",
+      "title": "Crypto industry urges SEC to avoid blanket novel ETF restrictions10m, Crypto industry urges SEC to avoid blanket novel ETF restrictionsGrayscale, a16z, and the CCI asked the SEC to preserve existing classification rules and avoid treating novel exchange-traded products as a single category, while proposing different routes to clearer and faster reviews.",
+      "url": "https://cointelegraph.com/news/crypto-industry-sec-novel-etf-restrictions",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Major industry players including Grayscale and a16z have urged the SEC to avoid applying blanket restrictions on novel crypto ETFs. They are advocating for the preservation of existing classification rules to ensure faster and clearer review processes for new exchange-traded products.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1GP20DVTRFKRWTMYV78JG6F/hi-a-beginners-guide-on-launching-a-security-token-offering-copy.jpg"
+    }
+  ],
+  "worth_a_read": [],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_4524960",
+          "title": "Hyperscale Data shares hit all-time low as company flips Michigan site from bitcoin mining into AI",
+          "url": "https://www.theblock.co/news/markets/2026-09-02-hyperscale-data-shares-all-time-low-company-flips-michigan-site-bitcoin-mining-into-ai-413357",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4513120",
+          "title": "Strategy CEO says selling bitcoin at $60,000 before buying at $80,000 was the 'right trade'",
+          "url": "https://www.theblock.co/news/business/2026-09-02-strategy-ceo-says-selling-bitcoin-at-60000-before-buying-at-80000-was-the-right-trade-413323",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/03/20260320_Strategy_Learn.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_4521658",
+          "title": "Sui DeFi protocol Full Sail to wind down after Switchboard incident46m",
+          "url": "https://cointelegraph.com/news/full-sail-sui-wind-down-switchboard-incident",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_4537984",
+          "title": "Anthony Armstrong, former CFO at Elon Musk's xAI and X, joins Coinbase board",
+          "url": "https://www.theblock.co/news/business/2026-09-02-anthony-armstrong-former-cfo-elon-musk-xai-x-joins-coinbase-board-413405",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/06/20260612_Coinbase_News_2-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_4536032",
+          "title": "ETH August 2026 Update: Flows Recover, Fundamentals Don't",
+          "url": "https://messari.io/report/eth-august-2026-update-squeezed-higher",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e3d5518e02332ad289e8f3e9665efe3ac2cf1408-1983x793.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_4497978",
+          "title": "Core DAO plans emergency hard fork after validators drew excess rewards14m, Core DAO plans emergency hard fork after validators drew excess rewardsCore says the incident is contained and its planned forward upgrade will not roll back the network or reverse previously confirmed transactions.",
+          "url": "https://cointelegraph.com/news/core-dao-emergency-hard-fork-excess-validator-rewards",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4526144",
+          "title": "World open-sources ProveKit, a zero-knowledge identity proving toolkit",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-02-world-provekit-zero-knowledge-identity-proving-toolkit-413364",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/02/20240220_Wordlcoin_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_4501530",
+          "title": "HYPE treasury firm Hyperliquid Strategies boosts equity facility to $2.5B",
+          "url": "https://cointelegraph.com/news/hyperliquid-strategies-equity-facility-2-5-billion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1GAJCXZX0S74T4ZCR5AKST8/hype-treasury.png"
+        },
+        {
+          "id": "art_4515488",
+          "title": "Japan-listed Remixpoint sells all ETH, SOL, XRP and DOGE holdings in shift to bitcoin-only crypto strategy",
+          "url": "https://www.theblock.co/news/business/2026-09-02-japan-listed-remixpoint-sells-all-eth-sol-xrp-and-doge-holdings-in-shift-to-bitcoin-only-crypto-strategy-413333",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/05/Screen-Shot-2019-05-23-at-6.44.52-PM.png"
+        },
+        {
+          "id": "art_4517856",
+          "title": "Adam Back invests another $8.8 million in Capital B as bitcoin treasury firm targets 3,521 BTC",
+          "url": "https://www.theblock.co/news/business/2026-09-02-adam-back-invests-another-8-8-million-in-capital-b-as-bitcoin-treasury-firm-targets-3521-btc-413339",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_4526146",
+          "title": "Arbitrum DAO reports $6.2 million in first-half income as Robinhood Chain adds new revenue stream",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-02-arbitrum-dao-reports-6-2-million-first-half-income-robinhood-chain-adds-new-revenue-stream-413345",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/07/arbitrum.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_4498912",
+          "title": "Kalshi and Polymarket's combined volume falls 15% in August, first monthly decline in a year",
+          "url": "https://www.theblock.co/news/business/2026-09-02-kalshi-polymarkets-volume-falls-august-413309",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+        },
+        {
+          "id": "art_4529696",
+          "title": "Memecoin shenanigans spill into Nasdaq as microcap mushroom seller Farmmi surges 350%",
+          "url": "https://www.theblock.co/news/markets/2026-09-02-memecoin-shenanigans-nasdaq-microcap-mushroom-seller-farmmi-413374",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/09/20200924_Wallstreet_Credit_Swaps-Daily.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_4519881",
+          "title": "Stripe is giving off early Google vibes—for good and for bad",
+          "url": "https://fortune.com/2026/09/02/stripe-is-giving-off-early-google-vibesfor-good-and-for-bad/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2025/09/GettyImages-938151664-e1756997857474.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_4538234",
+          "title": "Coinbase launches regulated crypto derivatives in Canada",
+          "url": "https://cointelegraph.com/news/coinbase-launches-regulated-crypto-derivatives-in-canada",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HT238M4JD1C8SQAQHTYKWY/people-street-futures.jpg"
+        },
+        {
+          "id": "art_4533499",
+          "title": "New Jersey officials petition US Supreme Court over prediction markets24m, New Jersey officials petition US Supreme Court over prediction marketsNew Jersey’s Attorney General and gaming authorities filed a petition for a writ of certiorari to the US Supreme Court over Kalshi offering sporting event contracts to residents.",
+          "url": "https://cointelegraph.com/news/new-jersey-supreme-court-kalshi-prediction-markets-cftc",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HKH1HH1DMHKVCZWY8RFR6Q/b-lawsuit-kalshi-3.jpg"
+        },
+        {
+          "id": "art_4525210",
+          "title": "G20 members tout ‘clear pathways’ for digital asset innovation10m, G20 members tout ‘clear pathways’ for digital asset innovationOfficials in the G20, under the US’ presidency, recognized that digital assets could support “broad-based economic growth” and called for improvements in cross-border transactions.",
+          "url": "https://cointelegraph.com/news/g20-members-clear-pathways-digital-asset-innovation",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1H85V728VXBM9KYCSEJAD01/g20-discuss-crypto-desk-table-meeting-hand-paper-people2.jpg"
+        },
+        {
+          "id": "art_4501280",
+          "title": "G20 finance leaders vow to establish 'clear pathways' for digital assets innovation",
+          "url": "https://www.theblock.co/news/regulation/2026-09-02-g20-finance-leaders-digital-assets-413310",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Tokens_News.jpg"
+        },
+        {
+          "id": "art_4528762",
+          "title": "Ondo urges SEC, CFTC to bring US stock perpetuals onshore48m, Ondo urges SEC, CFTC to bring US stock perpetuals onshoreOndo says existing US securities laws can accommodate perpetual futures tied to individual stocks as regulators look to bring more derivatives activity onshore.",
+          "url": "https://cointelegraph.com/news/ondo-urges-sec-cftc-bring-us-stock-perpetuals-onshore",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HFDYJCKJWQTKRMYKMVPJFP/hi-how-ondo-finance-plans-to-bring-tokenized-us-stocks-to-solana-3.jpg"
+        },
+        {
+          "id": "art_4511002",
+          "title": "Crypto industry urges SEC to avoid blanket novel ETF restrictions10m, Crypto industry urges SEC to avoid blanket novel ETF restrictionsGrayscale, a16z, and the CCI asked the SEC to preserve existing classification rules and avoid treating novel exchange-traded products as a single category, while proposing different routes to clearer and faster reviews.",
+          "url": "https://cointelegraph.com/news/crypto-industry-sec-novel-etf-restrictions",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1GP20DVTRFKRWTMYV78JG6F/hi-a-beginners-guide-on-launching-a-security-token-offering-copy.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_4516922",
+          "title": "Thai businessmen sue Tether for freezing $42M in $61M pig butchering case10m, Thai businessmen sue Tether for freezing $42M in $61M pig butchering case",
+          "url": "https://cointelegraph.com/news/thai-sue-tether-freezing-61m-pig-butchering-case",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1GZE23FCTZPM7XCYNR7Q35B/hi-how-pig-butchering-crypto-scams-turn-trust-into-a-financial-weapon.jpg"
+        },
+        {
+          "id": "art_4537637",
+          "title": "‘What a fool I was’: Reported scams reach record high of $15.9 billion, and estimates reach upwards of $500 billion annually",
+          "url": "https://fortune.com/2026/09/02/scams-record-highs-us-victims/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/AP26244751227279-e1788378116934.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_4539418",
+          "title": "US officials work with CrowdStrike to fight malware behind crypto theft20m, US officials work with CrowdStrike to fight malware behind crypto theftFederal authorities and private-sector partners were part of an operation to disrupt malware that redirected about $150,000 in crypto over the last eight years.",
+          "url": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_4533500",
+          "title": "Wyoming adds Chainlink reserve verification to state-issued stable token",
+          "url": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HMS4JRWZ5GYFS8E74WQ8XR/hi-wyoming-crypto.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_4529697",
+          "title": "Securitize and Socios team up to tokenize equity in pro sports teams",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-02-securitize-and-socios-team-up-to-tokenize-equity-in-pro-sports-teams-413378",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/02/20220208_Crypto_Sports_Funding.jpg"
+        },
+        {
+          "id": "art_4519290",
+          "title": "Hashkey joins DTCC working group as first Asian crypto service provider",
+          "url": "https://cointelegraph.com/news/hashkey-dtcc-first-asian-crypto-service-provider",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1H3JQK56T4TK5037VBE2WN3/south-korea.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Canada now has regulated crypto perpetuals. Wyoming's state stablecoin runs on Chainlink Proof of Reserve. The EU DLT Pilot Regime just cleared tokenized sports equity for trading.\n\nThree separate jurisdictions, three separate product types, same underlying bet: infrastructure that meets regulators where they are wins flow.\n\nCoinbase in Canada is the headline. The repricing is quieter. For two years the market has paid a premium on 'decentralized' and discounted 'permissioned.' That spread is compressing. Not because ideology shifted. Because the institutions with mandates to deploy are running out of excuses not to.\n\nThe Wyoming stablecoin matters more than its $40 million or so in circulation. A state government voluntarily putting reserves on-chain, verifiable in near-real-time, sets a floor for what 'backed' means. Private issuers now compete against a public standard they did not set.\n\nHyperliquid Strategies expanding its equity facility to $2.5 billion is the other side of this. Treasury management at protocol scale is becoming a specialized function, and the firms that institutionalize it are attracting capital on terms that look more like asset management than venture.\n\nThe test: if Canadian derivatives volume tracks institutional onboarding rather than retail speculation, the regulated-venue thesis hardens. If not, we're still in the cycle where compliance is theater.\n\nWe are underwriting the former. Carefully."
+}
