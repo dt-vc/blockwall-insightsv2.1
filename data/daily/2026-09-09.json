@@ -1,0 +1,620 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-09",
+  "date_display": "September 9, 2026",
+  "generated_at": "2026-09-09T05:00:17.791Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Visa bridges onchain credit to stablecoin rails as institutional accumulation hits extremes",
+    "tldr": "Today's signals show two parallel tracks hardening: traditional finance building product on crypto infrastructure while corporate treasuries concentrate supply to levels that reshape float dynamics. The throughline is infrastructure maturing enough to attract incumbent product-builders, but with ownership structures that could amplify volatility."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for how we underwrite infrastructure and supply-concentration risk in the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-09-09T05:00:17.791Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$79,173",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,510",
+        "change_24h": "+1.2%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.71T",
+        "change_24h": "-1.3%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$88.0B",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 23,
+    "bearish": 8,
+    "neutral": 3,
+    "deduped": 0
+  },
+  "top_signals": [
+    {
+      "id": "art_4868971",
+      "title": "Visa brings onchain credit to its growing stablecoin card business39m",
+      "url": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Visa is integrating onchain credit capabilities into its stablecoin card business to expand financial utility. This move aims to bridge traditional credit mechanisms with blockchain-based payment rails.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement",
+      "themes": [
+        "payments",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20SBKPJPVDD6E1F2T89YK6W/hi-your-crypto-wallet-is-the-key-to-your-web3.jpg",
+      "why_it_matters": "Visa's onchain credit integration signals that payment incumbents are now confident enough in stablecoin rails to attach regulated lending products, which expands addressable market but also introduces compliance complexity that favors scaled players."
+    },
+    {
+      "id": "art_4863973",
+      "title": "Bitmine nears 5% of Ethereum supply after buying 28,086 ETH",
+      "url": "https://www.theblock.co/news/business/2026-09-08-bitmine-nears-5-of-ethereum-supply-after-buying-28086-eth-413790",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Bitmine has significantly increased its Ethereum holdings by purchasing an additional 28,086 ETH. The company's treasury now holds 5.93 million tokens, accounting for approximately 4.9% of the total Ethereum supply.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-09-08-bitmine-nears-5-of-ethereum-supply-after-buying-28086-eth-413790",
+      "themes": [
+        "ethereum",
+        "investment"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/05/eth-ethereum-network.jpg",
+      "why_it_matters": "Bitmine approaching 5% of Ethereum supply creates a structural float constraint that changes how we model sell-pressure scenarios and network decentralization metrics for institutional underwriting."
+    },
+    {
+      "id": "art_4839295",
+      "title": "Liquid ‘white hats’ return $270M in Bitcoin as network prepares restartThe actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.",
+      "url": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "White hat actors have returned approximately $270 million in Bitcoin, representing 85% of the funds withdrawn during a security incident involving Liquid's federation wallet. The network is now preparing for a restart to resolve the situation.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart",
+      "themes": [
+        "security",
+        "exploit-recovery"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1ZHYDRMBN9CQ2AV6CCP6WB8/hacky-hack.png",
+      "why_it_matters": "The 85% recovery rate on Liquid's incident demonstrates that federation-wallet architectures can achieve meaningful recourse, but the 15% gap and network restart dependency still leave insurance and slashing models inadequately priced."
+    },
+    {
+      "id": "art_4882977",
+      "title": "Pons propels Robinhood Chain fees to record $6 million in daily fees as DEX volume doubles",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-pons-propels-robinhood-chain-fees-record-6-million-daily-fees-dex-volume-doubles-413852",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Robinhood Chain has seen a surge in activity, with daily fees hitting a record $6 million as DEX volume doubled. This growth is largely driven by the PONS token, which reached a valuation of over $970 million.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/ecosystems/2026-09-08-pons-propels-robinhood-chain-fees-record-6-million-daily-fees-dex-volume-doubles-413852",
+      "themes": [
+        "defi",
+        "dex"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/06/onchain-blockchain-news-protocol-crosschain.jpg",
+      "why_it_matters": "PONS-driven fee records on Robinhood Chain reveal that memetic token velocity can temporarily subsidize infrastructure economics, though the $970M valuation against $6M daily fees implies extraction timing risk that DEX LPs should model explicitly."
+    },
+    {
+      "id": "art_4875849",
+      "title": "A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
+      "url": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Malone Lam, a 22-year-old, has pleaded guilty to leading an international racketeering scheme that stole $245 million in cryptocurrency. The operation utilized social engineering tactics to defraud victims on a global scale.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911",
+      "themes": [
+        "security",
+        "crime"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/02/shutterstock_622639580-e1582810191850.jpg",
+      "why_it_matters": "Lam's guilty plea to a $245M social-engineering scheme confirms that attack surfaces have shifted from contract exploits to operational security, yet coverage and underwriting frameworks remain calibrated to technical rather than human-factor risk."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_4870159",
+      "company": "Robinhood",
+      "amount": "",
+      "round": "Strategic acquisition",
+      "investors": [
+        "Crypto.com",
+        "OG.com"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/robinhood-takes-stakes-in-cryptocom-ogcom-in-prediction-markets-deal",
+      "summary": "Robinhood has acquired stakes in Crypto.com and OG.com as part of a strategic move into the prediction markets sector. This deal signals Robinhood's intent to expand its crypto ecosystem and integrate betting/prediction capabilities."
+    },
+    {
+      "id": "art_4857100",
+      "company": "Circle",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Payments",
+      "url": "https://cointelegraph.com/news/circle-tazapay-usdc-cross-border-payments",
+      "summary": "Circle has agreed to acquire Singapore-based Tazapay to enhance the cross-border payment capabilities of USDC. The acquisition expands Circle's reach to over 100 markets and adds more than 60 banking and fintech partners."
+    },
+    {
+      "id": "art_4860661",
+      "company": "Strategy",
+      "amount": "$176M",
+      "round": "Share repurchase",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/strategy-skips-bitcoin-buy-repurchase-176m-strc",
+      "summary": "Strategy has repurchased $176 million of its STRC preferred shares and expanded its digital securities repurchase program to $2 billion. Consequently, the company has paused its acquisition of new Bitcoin."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_4866347",
+      "title": "ZKsync developer Matter Labs open-sources Prividium permissioning engine; Bundesbank tests platform",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-zksync-developer-matter-labs-open-sources-prividium-permissioning-engine-bundesbank-tests-platform-413814",
+      "source": "The Block",
+      "category": "Enterprise",
+      "sentiment": "bullish",
+      "summary": "Matter Labs has open-sourced the permissioning engine for Prividium, its DLT platform designed for financial institutions. The platform is currently being tested by the Bundesbank, Germany's central bank.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240628_ZKsync_News_1.jpg"
+    },
+    {
+      "id": "art_4855663",
+      "title": "Visa stablecoin settlement tops $20 billion annualized run rate, up more than 15x year over year",
+      "url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749",
+      "source": "The Block",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Visa's stablecoin settlement volume has reached an annualized run rate exceeding $20 billion. This represents a significant increase of over 15x compared to the previous year, with payment volume growing nearly 200%.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/07/visa-office-1200x675.jpg"
+    },
+    {
+      "id": "art_4854476",
+      "title": "Polish prosecutors charge fifth suspect in Zondacrypto probe involving around $100 million in estimated losses",
+      "url": "https://www.theblock.co/news/regulation/2026-09-08-polish-prosecutors-charge-fifth-suspect-in-zondacrypto-probe-involving-around-100-million-in-estimated-losses-413745",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Polish prosecutors have charged a fifth suspect, Roman Ż., in connection with an investigation into Zondacrypto. The probe involves estimated losses of approximately $100 million.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/04/20210402_Cybercrime_Generic.jpg"
+    },
+    {
+      "id": "art_4853539",
+      "title": "Uzbekistan begins government bond-backed stablecoin payment pilot20m, Uzbekistan begins government bond-backed stablecoin payment pilotHumo Digital will test HUMO payments with more than 20 merchants under a sandbox jointly overseen by NAPP and Uzbekistan’s central bank.",
+      "url": "https://cointelegraph.com/news/uzbekistan-humo-stablecoin-payment-pilot",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Uzbekistan is launching a pilot program for a stablecoin backed by government bonds to facilitate payments. The initiative, led by Humo Digital, will involve over 20 merchants within a regulatory sandbox overseen by the central bank and NAPP.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M206SWCMNKXPJXWKTH0HCEYH/s.jpg"
+    },
+    {
+      "id": "art_4839045",
+      "title": "Ethereum aims for quantum-safe L1 by 2029 as Hegotá upgrade takes form",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-ethereum-foundation-quantum-resistance-2029-413716",
+      "source": "The Block",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Ethereum is planning a long-term roadmap to achieve full post-quantum security by 2029. This transition will begin with the Hegotá upgrade, focusing on account abstraction and censorship resistance.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_2-1200x675.jpg"
+    },
+    {
+      "id": "art_4881789",
+      "title": "Jack Dorsey's Block joins rush for federal bank charters from OCC",
+      "url": "https://www.theblock.co/news/regulation/2026-09-08-jack-dorsey-block-joins-rush-federal-bank-charters-from-occ-413947",
+      "source": "The Block",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Block, Inc., the company founded by Jack Dorsey, is applying for a federal bank charter from the Office of the Comptroller of the Currency (OCC). This move aims to transition the company into a federally regulated national bank.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/07/20210723_jack_Dorsey.jpg"
+    },
+    {
+      "id": "art_4879413",
+      "title": "Hyperliquid open interest climbs to $14.3 billion as HYPE hits all-time high",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-all-time-high-413855",
+      "source": "The Block",
+      "category": "DeFi",
+      "sentiment": "bearish",
+      "summary": "Hyperliquid experienced a significant drop in open interest, falling from $14.7 billion to $6.5 billion in a single day. This sharp decline occurred on October 10, 2025, despite the HYPE token reaching an all-time high.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News_2.jpg"
+    },
+    {
+      "id": "art_4874641",
+      "title": "Robinhood Tokenized AMC",
+      "url": "https://www.bloomberg.com/opinion/newsletters/2026-09-08/robinhood-tokenized-amc",
+      "source": "Matt Levine (Bloomberg)",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Robinhood has introduced tokenized versions of AMC assets, expanding its offerings into the digital asset space. This move reflects a broader trend of integrating traditional equities with blockchain technology.",
+      "image_url": null
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_4868423",
+      "title": "MetaDAO: Beyond The Token Sale ",
+      "url": "https://members.delphidigital.io/reports/metadao-beyond-the-token-sale",
+      "source": "Delphi Digital",
+      "note": "Delphi's framing of MetaDAO's shift from token issuance to full fundraising lifecycle governance offers a useful lens for evaluating whether post-ICO accountability mechanisms can actually constrain founder behavior or merely add compliance theater.",
+      "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/09/d63975e6-cover-b0073b71-0b8b-4a20-9d37-40b57152a658-1788882435046-1024x576.jpg"
+    },
+    {
+      "id": "art_4858453",
+      "title": "MetaDAO: Built for the Next ICO Boom",
+      "url": "https://messari.io/report/meta-dao-built-for-the-next-ico-boom",
+      "source": "Messari — Research",
+      "note": "Messari's ICO boom thesis for MetaDAO provides the counterfactual to test: if the next cycle does not produce sustained retail inflows, the infrastructure being built for volume may end up optimized for a demand profile that does not materialize.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/73c6ff43728912c0fdef8aba2c1cbc3356857462-1500x600.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_4859225",
+          "title": "Bitcoin volatility remains subdued as supply in profit nears historical bear-to-bull transition level: analysts",
+          "url": "https://www.theblock.co/news/markets/2026-09-08-bitcoin-volatility-remains-subdued-as-supply-in-profit-nears-historical-bear-to-bull-transition-level-analysts-413754",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News_2.jpg"
+        },
+        {
+          "id": "art_4852102",
+          "title": "Metaplanet slides 17% this week as CEO's public note fails to ease investor concerns",
+          "url": "https://www.theblock.co/news/markets/2026-09-08-metaplanet-slips-17-this-week-413738",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_4882977",
+          "title": "Pons propels Robinhood Chain fees to record $6 million in daily fees as DEX volume doubles",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-08-pons-propels-robinhood-chain-fees-record-6-million-daily-fees-dex-volume-doubles-413852",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/onchain-blockchain-news-protocol-crosschain.jpg"
+        },
+        {
+          "id": "art_4879413",
+          "title": "Hyperliquid open interest climbs to $14.3 billion as HYPE hits all-time high",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-all-time-high-413855",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News_2.jpg"
+        },
+        {
+          "id": "art_4873473",
+          "title": "DeFi Development closes Strategy-style $11 million CHAD offering to grow Solana treasury",
+          "url": "https://www.theblock.co/news/markets/2026-09-08-defi-development-closes-strategy-style-11-million-chad-offering-grow-solana-treasury-413892",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240502_Solana_News-1200x675.jpg"
+        },
+        {
+          "id": "art_4868423",
+          "title": "MetaDAO: Beyond The Token Sale ",
+          "url": "https://members.delphidigital.io/reports/metadao-beyond-the-token-sale",
+          "source": "Delphi Digital",
+          "sentiment": "bullish",
+          "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/09/d63975e6-cover-b0073b71-0b8b-4a20-9d37-40b57152a658-1788882435046-1024x576.jpg"
+        },
+        {
+          "id": "art_4863972",
+          "title": "Best Crypto Loan Platforms in 2026: Top 5 Compared",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-08-best-crypto-loan-platforms-in-2026-top-5-compared-413495",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250411_Funding_News_3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_4866347",
+          "title": "ZKsync developer Matter Labs open-sources Prividium permissioning engine; Bundesbank tests platform",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-08-zksync-developer-matter-labs-open-sources-prividium-permissioning-engine-bundesbank-tests-platform-413814",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/06/20240628_ZKsync_News_1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_4863973",
+          "title": "Bitmine nears 5% of Ethereum supply after buying 28,086 ETH",
+          "url": "https://www.theblock.co/news/business/2026-09-08-bitmine-nears-5-of-ethereum-supply-after-buying-28086-eth-413790",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/05/eth-ethereum-network.jpg"
+        },
+        {
+          "id": "art_4839045",
+          "title": "Ethereum aims for quantum-safe L1 by 2029 as Hegotá upgrade takes form",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-08-ethereum-foundation-quantum-resistance-2029-413716",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240523_Ethereum_News_2-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_4870159",
+          "title": "Robinhood takes stakes in Crypto.com, OG.com in prediction markets deal25m",
+          "url": "https://cointelegraph.com/news/robinhood-takes-stakes-in-cryptocom-ogcom-in-prediction-markets-deal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_4863035",
+          "title": "Bitmine buys 28k ETH, completes 97% of treasury accumulation goal",
+          "url": "https://cointelegraph.com/news/bitmine-buys-28k-eth-completes-97-treasury-goal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20KSZECABXAPAY6J96Y7ZX7/hi-the-7-largest-ethereum-treasury-companies-right-now-ranked-by-holdings-bitmine-4.jpg"
+        },
+        {
+          "id": "art_4860661",
+          "title": "Strategy skips Bitcoin buy to repurchase $176M of STRC preferred sharesStrategy repurchased $176 million worth of its STRC preferred stock and doubled the size of its digital securities repurchase program to $2 billion, while pausing on new Bitcoin buys.",
+          "url": "https://cointelegraph.com/news/strategy-skips-bitcoin-buy-repurchase-176m-strc",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_4866346",
+          "title": "Strive adds 1,375 bitcoin as SATA approaches 'billion-dollar' milestone",
+          "url": "https://www.theblock.co/news/markets/2026-09-08-strive-adds-1375-bitcoin-sata-approaches-billion-dollar-milestone-413800",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News_3-1200x675.jpg"
+        },
+        {
+          "id": "art_4858453",
+          "title": "MetaDAO: Built for the Next ICO Boom",
+          "url": "https://messari.io/report/meta-dao-built-for-the-next-ico-boom",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/73c6ff43728912c0fdef8aba2c1cbc3356857462-1500x600.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_4874911",
+          "title": "Bybit launches 24/7 perpetuals for major currency pairs33m",
+          "url": "https://cointelegraph.com/news/bybit-expands-tradfi-push-with-100x-fx-perpetuals",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_4859474",
+          "title": "Mexico quadruple homicide tied to alleged Bitcoin robbery attempt",
+          "url": "https://cointelegraph.com/news/mexico-quadruple-homicide-alleged-bitcoin-robbery",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20CE9T36VRN8990HWRW8AJS/hi-ledger-is-in-deep-trouble-that-may-only-just-be-starting.jpg"
+        },
+        {
+          "id": "art_4893669",
+          "title": "Hunter Biden details LAPTOP memecoin's airdrop and burn-or-charity rules ahead of launch",
+          "url": "https://www.theblock.co/news/defi/2026-09-08-hunter-biden-details-laptop-airdrop-413952",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250411_Tokens_News_2-1200x675.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_4868971",
+          "title": "Visa brings onchain credit to its growing stablecoin card business39m",
+          "url": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20SBKPJPVDD6E1F2T89YK6W/hi-your-crypto-wallet-is-the-key-to-your-web3.jpg"
+        },
+        {
+          "id": "art_4857100",
+          "title": "Circle to acquire Tazapay to expand USDC cross-border payments",
+          "url": "https://cointelegraph.com/news/circle-tazapay-usdc-cross-border-payments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20BVCME3MRSYGBFGFFS62XW/world-global-rating-circle.jpg"
+        },
+        {
+          "id": "art_4855663",
+          "title": "Visa stablecoin settlement tops $20 billion annualized run rate, up more than 15x year over year",
+          "url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/07/visa-office-1200x675.jpg"
+        },
+        {
+          "id": "art_4881789",
+          "title": "Jack Dorsey's Block joins rush for federal bank charters from OCC",
+          "url": "https://www.theblock.co/news/regulation/2026-09-08-jack-dorsey-block-joins-rush-federal-bank-charters-from-occ-413947",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/07/20210723_jack_Dorsey.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_4842856",
+          "title": "Australia says it removed 45 crypto, remittance registrations over the past year",
+          "url": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4880851",
+          "title": "New York town weighs crypto mining and AI data center ban",
+          "url": "https://cointelegraph.com/news/new-york-plattsburgh-crypto-mining-ai-ban",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M21D11KB4BXD9GBM5H39S2WK/hi-anti-dumping-policy-in-crypto-bitcoin-miner.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_4839295",
+          "title": "Liquid ‘white hats’ return $270M in Bitcoin as network prepares restartThe actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.",
+          "url": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1ZHYDRMBN9CQ2AV6CCP6WB8/hacky-hack.png"
+        },
+        {
+          "id": "art_4875849",
+          "title": "A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
+          "url": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/02/shutterstock_622639580-e1582810191850.jpg"
+        },
+        {
+          "id": "art_4854476",
+          "title": "Polish prosecutors charge fifth suspect in Zondacrypto probe involving around $100 million in estimated losses",
+          "url": "https://www.theblock.co/news/regulation/2026-09-08-polish-prosecutors-charge-fifth-suspect-in-zondacrypto-probe-involving-around-100-million-in-estimated-losses-413745",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/04/20210402_Cybercrime_Generic.jpg"
+        },
+        {
+          "id": "art_4848791",
+          "title": "Cronos confirms $9.2M slipped away before Tectonic exploit rollback",
+          "url": "https://cointelegraph.com/news/cronos-tectonic-rollback-111m-9m-escaped",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2005NQRX5E6SV5DN6KN3Z8T/hi-how-great-big-companies-use-blockchain3.jpg"
+        },
+        {
+          "id": "art_4853540",
+          "title": "Ledger CTO urges AI bug hunter responsibility, warns against ‘attention farming’24m",
+          "url": "https://cointelegraph.com/news/ledger-trezor-warn-ai-bug-hunters-attention-farming",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_4853539",
+          "title": "Uzbekistan begins government bond-backed stablecoin payment pilot20m, Uzbekistan begins government bond-backed stablecoin payment pilotHumo Digital will test HUMO payments with more than 20 merchants under a sandbox jointly overseen by NAPP and Uzbekistan’s central bank.",
+          "url": "https://cointelegraph.com/news/uzbekistan-humo-stablecoin-payment-pilot",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M206SWCMNKXPJXWKTH0HCEYH/s.jpg"
+        },
+        {
+          "id": "art_4847604",
+          "title": "Swiss stablecoin sandbox enters testing phase, adds two new partners",
+          "url": "https://cointelegraph.com/news/swiss-stablecoin-sandbox-testing-phase-two-new-partners",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1ZX2FFP141K4E1MB6ZD752S/switzerlandcryptovalley.jpg"
+        },
+        {
+          "id": "art_4879663",
+          "title": "Franklin Templeton digital asset veteran takes helm at StablecoinX",
+          "url": "https://cointelegraph.com/news/stablecoinx-franklin-templeton-veteran-to-oversee-roughly-480m-ena-treasury",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M21BC7WR8S6QJNY728RV1B71/handshake-agreement-union-partnership-cooperation-collaboration-join-deal-breaking-news.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_4874641",
+          "title": "Robinhood Tokenized AMC",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-09-08/robinhood-tokenized-amc",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_4853541",
+          "title": "Robinhood chain to generate $160M in annual fees by 2028: Bernstein",
+          "url": "https://cointelegraph.com/news/robinhood-chain-160m-annual-fees-2028-bernstein",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M205GJS8Q5S11AJAQ7022PC1/robinhood2-1.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Credit on stablecoin rails. That is what Visa is actually building now, not experimenting with. The onchain credit product sits inside a card business that already moved volume. This matters because it separates proof-of-concept from product-with-distribution, and distribution is where most crypto infrastructure bets die.\n\nWe are also watching Bitmine hold nearly 5% of Ethereum supply. Strategy pausing Bitcoin buys to repurchase $176M of its own preferreds. Strive adding 1,375 BTC via perpetual preferred issuance. The corporate treasury trade is not new, but the instruments are getting more complex, more levered, and more crowded.\n\nWhat we underwrite on now is float dynamics. When a single entity accumulates toward 5% of supply, the market is pricing in scarcity that may be real for months and then suddenly not. The test is whether these treasuries become forced sellers in a drawdown or whether the preferred-stock structures create enough buffer to hold through.\n\nRobinhood Chain's $6M fee day, driven by PONS, shows the other side: infrastructure can look healthy on metrics while the economic engine is memetic velocity. We do not confuse fee records with sustainable unit economics.\n\nThe question we are tracking: does Visa's move pull more regulated product onto crypto rails before the treasury concentration trade unwinds, or after? The sequence matters for where value accrues."
+}
