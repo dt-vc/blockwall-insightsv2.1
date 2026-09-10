@@ -1,0 +1,636 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-10",
+  "date_display": "September 10, 2026",
+  "generated_at": "2026-09-10T05:00:17.806Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Tether and Fasanara Launch $400M Private Credit Fund, Signaling Stablecoin Reserve Diversification Into Real-World Assets",
+    "tldr": "Today's signals trace a single arc: stablecoin issuers and traditional banks are racing to capture yield and settlement infrastructure, while crypto-native companies restructure for institutional credibility. The value is shifting from token speculation to regulated financial plumbing."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the competition between crypto-native and traditional finance infrastructure is accelerating faster than most models assume.",
+  "market_snapshot": {
+    "as_of": "2026-09-10T05:00:17.806Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$78,348",
+        "change_24h": "-1.0%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,478",
+        "change_24h": "-1.2%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.68T",
+        "change_24h": "-3.3%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$87.6B",
+        "change_24h": "-1.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 13,
+    "neutral": 9,
+    "deduped": 0
+  },
+  "top_signals": [
+    {
+      "id": "art_4923619",
+      "title": "Tether, Fasanara launch $400M private credit fund targeting $3B 28m",
+      "url": "https://cointelegraph.com/news/tether-fasanara-launch-400m-private-credit-fund-targeting-3b",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Tether and Fasanara have launched a private credit fund with an initial $400 million investment, aiming to scale up to $3 billion. The fund focuses on providing credit to underserved markets and diversifying Tether's reserve assets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/tether-fasanara-launch-400m-private-credit-fund-targeting-3b",
+      "themes": [
+        "investment",
+        "private-credit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23AK6XN00P8QY2D9WJ8JAAW/hi-crypto-negotiation-2.png",
+      "why_it_matters": "Tether's $400M private credit fund represents a structural pivot: the largest stablecoin issuer is actively repricing its reserves away from pure Treasuries into higher-yielding, less liquid credit instruments, which raises questions about how future redemptions will be underwritten if reserve quality degrades."
+    },
+    {
+      "id": "art_4931935",
+      "title": "Consensys to split into MetaMask and institutional blockchain company",
+      "url": "https://cointelegraph.com/news/consensys-to-split-into-metamask-and-institutional-blockchain-company",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "neutral",
+      "summary": "Consensys intends to split its operations into two separate entities by the end of 2026. One entity will focus on MetaMask's expansion into financial services, while the other will handle institutional blockchain business.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/consensys-to-split-into-metamask-and-institutional-blockchain-company",
+      "themes": [
+        "infrastructure",
+        "wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23QBD87GQQKWH5JQGT142KQ/hi-crypto-loan-platforms-how-they-work-and-who-are-the-main-players-consensys.png",
+      "why_it_matters": "Consensys splitting MetaMask from its institutional blockchain business reflects the operational reality that consumer wallet monetization and enterprise blockchain sales require fundamentally different capital structures, regulatory postures, and valuation multiples."
+    },
+    {
+      "id": "art_4930497",
+      "title": "Canary Capital Launches the First U.S. Spot Staked TRX ETF (Ticker: TRXS)",
+      "url": "https://www.theblock.co/news/sponsored/2026-09-09-canary-capital-launches-the-first-u-s-spot-staked-trx-etf-ticker-trxs-414082",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Canary Capital has launched the first U.S. spot staked TRX ETF under the ticker TRXS. This product allows investors to gain exposure to staked TRON assets within a regulated ETF framework.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/sponsored/2026-09-09-canary-capital-launches-the-first-u-s-spot-staked-trx-etf-ticker-trxs-414082",
+      "themes": [
+        "investment",
+        "etf"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/09/Screenshot-2026-09-09-at-2.30.22%E2%80%AFPM.png",
+      "why_it_matters": "Canary Capital's staked TRX ETF is a test of whether regulators will permit yield-bearing crypto ETPs to compete directly with traditional fixed-income products, and its reception will inform how quickly other staking-enabled ETFs reach market."
+    },
+    {
+      "id": "art_4928371",
+      "title": "TRM Labs doubles valuation to $2B in Series C expansion 19m",
+      "url": "https://cointelegraph.com/news/trm-labs-doubles-valuation-to-2b-in-series-c-expansion",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "TRM Labs has doubled its valuation to $2 billion following an expansion of its Series C funding round. The company provides blockchain intelligence and risk management tools to help institutions and regulators combat financial crime.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/trm-labs-doubles-valuation-to-2b-in-series-c-expansion",
+      "themes": [
+        "security",
+        "blockchain-intelligence"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23JCY6CREQKFY9A4SRB13GG/hi-institutional-trading-and-cryptocurrency-industry-investment.png",
+      "why_it_matters": "TRM Labs doubling to $2B in a Series C expansion validates that compliance infrastructure is being priced as a strategic monopoly in a market where every institutional entrant needs surveillance tooling to satisfy regulators."
+    },
+    {
+      "id": "art_4925995",
+      "title": "U.S. Bank tests proprietary stablecoin in cross-border Stellar transaction12m",
+      "url": "https://cointelegraph.com/news/us-bank-launches-usbdc-stablecoin-with-live-cross-border-payment",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "U.S. Bank has successfully tested a proprietary stablecoin to facilitate cross-border transactions using the Stellar network. This move signals increasing institutional adoption of blockchain technology for traditional banking settlement processes.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/us-bank-launches-usbdc-stablecoin-with-live-cross-border-payment",
+      "themes": [
+        "stablecoins",
+        "payments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23ENPDH8G235APECM7VERGK/cross-border-transaction-stablecoin-swift-2.png",
+      "why_it_matters": "U.S. Bank's stablecoin test on Stellar matters because it shows a top-10 U.S. bank is willing to bypass correspondent banking networks for blockchain settlement, which threatens the fee structures that underpin traditional cross-border revenue lines."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_4928371",
+      "company": "TRM Labs",
+      "amount": "",
+      "round": "Series C expansion",
+      "investors": [],
+      "category": "Security",
+      "url": "https://cointelegraph.com/news/trm-labs-doubles-valuation-to-2b-in-series-c-expansion",
+      "summary": "TRM Labs has doubled its valuation to $2 billion following an expansion of its Series C funding round. The company provides blockchain intelligence and risk management tools to help institutions and regulators combat financial crime."
+    },
+    {
+      "id": "art_4919457",
+      "company": "Latitude",
+      "amount": "$35M",
+      "round": "",
+      "investors": [],
+      "category": "Payments",
+      "url": "https://fortune.com/2026/09/09/exclusive-latitude-stripe-uber-alums-35-million-stablecoins-local-payments/",
+      "summary": "Latitude, a startup founded by former Stripe and Uber employees, has raised $35 million to bridge the gap between stablecoin transfers and local spending. The company aims to enable the seamless conversion of digital assets into usable local payments."
+    },
+    {
+      "id": "art_4896348",
+      "company": "Limetax",
+      "amount": "€36m",
+      "round": "",
+      "investors": [],
+      "category": "Payments",
+      "url": "https://sifted.eu/articles/limetax-pre-seed-fundraise/",
+      "summary": "Berlin-based fintech Limetax has raised €36 million to expand its AI-powered rollup strategy for tax advisory firms. The company aims to continue acquiring firms to consolidate the tax advisory market."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_4925563",
+      "title": "Tether launches private credit fund in effort to boost stablecoin use",
+      "url": "https://www.ft.com/content/b9e0b9b5-3b6e-420e-83da-381b75534635",
+      "source": "FT Crypto",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Tether, the issuer of the world's largest stablecoin, is launching a private credit fund to expand its investment strategies and boost stablecoin utility. This move aims to diversify Tether's reserves and integrate traditional credit markets with digital asset ecosystems.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F96e36824-7d90-483e-860e-628702f51d0c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    },
+    {
+      "id": "art_4920055",
+      "title": "German finance ministry proposes 25% crypto tax starting 2028: Report39m, German finance ministry proposes 25% crypto tax starting 2028: ReportThe German Ministry of Finance is reportedly seeking to impose a 25% tax on cryptocurrencies, departing from current laws that make crypto gains tax-free after one year of holding.",
+      "url": "https://cointelegraph.com/news/german-finance-ministry-25-crypto-tax-2028",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The German Ministry of Finance is reportedly proposing a 25% tax on cryptocurrency gains starting in 2028. This would replace the current regulation where crypto assets are tax-free if held for more than one year.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M236GTB6R3NKE0V3DBECZ26A/hi-here-is-why-germany-leads-the-crypto-friendly-countries-ranking3.jpg"
+    },
+    {
+      "id": "art_4912677",
+      "title": "India seeks takedowns of 15 crypto platforms over AML compliance",
+      "url": "https://www.theblock.co/news/regulation/2026-09-09-india-seeks-takedowns-of-15-crypto-platforms-over-aml-compliance-413975",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "India's Financial Intelligence Unit (FIU) has issued non-compliance notices to 15 cryptocurrency platforms. The agency is seeking the takedown of these platforms' apps and URLs due to failures in Anti-Money Laundering (AML) compliance.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/03/20210302_India_Crypto_Future.jpg"
+    },
+    {
+      "id": "art_4904611",
+      "title": "Jack Dorsey’s Block seeks US trust bank charter for Bitcoin, stablecoin17m, Jack Dorsey’s Block seeks US trust bank charter for Bitcoin, stablecoinThe proposed Builders Bank would offer federally supervised digital asset custody but would not accept deposits or issue loans.",
+      "url": "https://cointelegraph.com/news/block-us-trust-bank-charter-bitcoin-stablecoin-custody",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Jack Dorsey's Block is seeking a US trust bank charter to establish 'Builders Bank' for digital asset custody. The entity would provide federally supervised custody for Bitcoin and stablecoins without accepting deposits or issuing loans.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M22GDYQR3DVCE1PJVZEV5JJ4/hi-who-is-jack-dorsey-profile-and-biography.jpg"
+    },
+    {
+      "id": "art_4899860",
+      "title": "Gemini receives Singapore payment license for crypto services",
+      "url": "https://cointelegraph.com/news/gemini-singapore-mpi-license-crypto-services",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Gemini has been granted a Major Payment Institution license by the Monetary Authority of Singapore. This allows the exchange to provide digital payment token services within the city-state, expanding its regulated global footprint.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M22A0GM1G22S8VPZXWGBQS1G/hi-time-to-switch-license-singapore.jpg"
+    },
+    {
+      "id": "art_4896295",
+      "title": "Malone Lam pleads guilty in $245M crypto theft conspiracy16m",
+      "url": "https://cointelegraph.com/news/malone-lam-pleads-guilty-245m-crypto-theft-conspiracy",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Malone Lam has pleaded guilty to charges related to a conspiracy involving the theft of approximately $245 million in cryptocurrency. The case highlights ongoing law enforcement efforts to track and prosecute large-scale digital asset thefts.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M225DFFFFZQWQQC6PNGCEK5J/doj-hammer.png"
+    },
+    {
+      "id": "art_4897233",
+      "title": "First staked ETF tied to Tron hits the US markets on Wednesday",
+      "url": "https://www.theblock.co/news/regulation/2026-09-09-first-staked-etf-tied-to-tron-hits-the-us-markets-wednesday-413935",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "The first staked ETF tied to the Tron network is launching in the US markets this Wednesday. This financial product provides investors with a regulated vehicle to gain exposure to TRX while benefiting from staking rewards.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/06/22020627_Tron-1200x675.jpg"
+    },
+    {
+      "id": "art_4926933",
+      "title": "Hyperliquid Policy Center backs CFTC in fight over perpetual futures, asks court to drop CME's case",
+      "url": "https://www.theblock.co/news/regulation/2026-09-09-hyperliquid-policy-center-backs-cftc-fight-perpetual-futures-asks-court-drop-cme-case-414046",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The Hyperliquid Policy Center has filed a request for a court to dismiss a lawsuit brought by CME Group against the CFTC. Hyperliquid argues that CME Group is attempting to stifle innovation regarding perpetual futures.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News_2.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_4949655",
+      "title": "Is the Onchain Rally Overheating? AMC vs. Meme Stocks & Hunter Biden’s LAPTOP",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/is-the-onchain-rally-overheating-amc-vs-meme-stocks-and-hunter-biden-s-laptop",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's analysis of whether onchain activity metrics are flashing late-cycle warnings through the AMC and Hunter Biden memecoin analogies offers a useful framework for testing whether current volume is speculative excess or structural adoption.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_4896348",
+      "title": "This startup acquired four companies in its first eight months. Now it’s raised €36m to buy more",
+      "url": "https://sifted.eu/articles/limetax-pre-seed-fundraise/",
+      "source": "Sifted",
+      "note": "Limetax's rollup playbook for tax advisory firms is worth studying as a template for how crypto-adjacent verticals can use balance-sheet consolidation to achieve regulatory scale and pricing power in fragmented European markets.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1365,quality=75,fit=cover,format=auto/wp-content/uploads/2026/09/04155353/Pauline-Bossdorf-111-1-scaled.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_4928122",
+          "title": "Bitcoin miners are missing the crypto rally as exchanges, stablecoins surge",
+          "url": "https://www.theblock.co/news/markets/2026-09-09-bitcoin-miners-are-missing-the-crypto-rally-as-exchanges-stablecoins-surge-413848",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260428_Bitcoin-Mining_News_2-1200x675.jpg"
+        },
+        {
+          "id": "art_4912927",
+          "title": "Metaplanet’s executive stock pool sparks shareholder backlash as CEO addresses MMXX tiesMetaplanet’s executive stock pool continues to draw backlash over dilution concerns, as investors urged the company to freeze the exercise rights tied to 273 million shares.",
+          "url": "https://cointelegraph.com/news/metaplanets-executive-stock-pool-backlash-ceo-mmxx-ties",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4918269",
+          "title": "The latest Bitcoin mystery: Who is behind the tiny non-profit buying a $2 million ad campaign in the Wall Street Journal?",
+          "url": "https://fortune.com/2026/09/09/bitcoin-mystery-tiny-non-profit-2-million-ad-campaign-wall-street-journal/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-1288444581-e1788897710498.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_4915053",
+          "title": "Renzo expands beyond restaking with basis trade product on Hyperliquid",
+          "url": "https://www.theblock.co/news/defi/2026-09-09-renzo-crypto-basis-trade-product-hyperliquid-413979",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/06/onchain-blockchain-news-protocol-crosschain.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_4931935",
+          "title": "Consensys to split into MetaMask and institutional blockchain company",
+          "url": "https://cointelegraph.com/news/consensys-to-split-into-metamask-and-institutional-blockchain-company",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23QBD87GQQKWH5JQGT142KQ/hi-crypto-loan-platforms-how-they-work-and-who-are-the-main-players-consensys.png"
+        },
+        {
+          "id": "art_4904611",
+          "title": "Jack Dorsey’s Block seeks US trust bank charter for Bitcoin, stablecoin17m, Jack Dorsey’s Block seeks US trust bank charter for Bitcoin, stablecoinThe proposed Builders Bank would offer federally supervised digital asset custody but would not accept deposits or issue loans.",
+          "url": "https://cointelegraph.com/news/block-us-trust-bank-charter-bitcoin-stablecoin-custody",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M22GDYQR3DVCE1PJVZEV5JJ4/hi-who-is-jack-dorsey-profile-and-biography.jpg"
+        },
+        {
+          "id": "art_4923371",
+          "title": "Ink Foundation, GSR and others open Charter Foundation to help cut token launch costs",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-09-ink-foundation-gsr-crypto-charter-foundation-token-launch-costs-414023",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/01/20250115_Tokens_News_2.jpg"
+        },
+        {
+          "id": "art_4919183",
+          "title": "Solana’s Missing Piece ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_6d42fcbf-d36d-4837-88d3-c03aa076dec0",
+          "source": "Blockworks (1)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_4923619",
+          "title": "Tether, Fasanara launch $400M private credit fund targeting $3B 28m",
+          "url": "https://cointelegraph.com/news/tether-fasanara-launch-400m-private-credit-fund-targeting-3b",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23AK6XN00P8QY2D9WJ8JAAW/hi-crypto-negotiation-2.png"
+        },
+        {
+          "id": "art_4930497",
+          "title": "Canary Capital Launches the First U.S. Spot Staked TRX ETF (Ticker: TRXS)",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-09-canary-capital-launches-the-first-u-s-spot-staked-trx-etf-ticker-trxs-414082",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/Screenshot-2026-09-09-at-2.30.22%E2%80%AFPM.png"
+        },
+        {
+          "id": "art_4897233",
+          "title": "First staked ETF tied to Tron hits the US markets on Wednesday",
+          "url": "https://www.theblock.co/news/regulation/2026-09-09-first-staked-etf-tied-to-tron-hits-the-us-markets-wednesday-413935",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/06/22020627_Tron-1200x675.jpg"
+        },
+        {
+          "id": "art_4893670",
+          "title": "StoneX sees 45% upside for Robinhood, points to accelerating Layer 2 chain and prediction markets",
+          "url": "https://www.theblock.co/news/business/2026-09-08-stonex-sees-upside-robinhood-413955",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/20251208_Robinhood_News.jpg"
+        },
+        {
+          "id": "art_4928121",
+          "title": "Solana treasury firm SkyAI faces board challenge from would-be acquirer Forward Industries, shareholder group",
+          "url": "https://www.theblock.co/news/business/2026-09-09-solana-treasury-firm-skyai-board-challenge-would-be-acquirer-forward-industries-shareholder-group-414061",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240502_Solana_News_3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_4917679",
+          "title": "BitMart misses roadmap deadline, appoints financial adviser",
+          "url": "https://cointelegraph.com/news/bitmart-misses-roadmap-deadline-appoints-financial-adviser",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M232R0N5F96J1MTG6GJJKSA3/paper-document-man-office-2.jpg"
+        },
+        {
+          "id": "art_4949655",
+          "title": "Is the Onchain Rally Overheating? AMC vs. Meme Stocks & Hunter Biden’s LAPTOP",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/is-the-onchain-rally-overheating-amc-vs-meme-stocks-and-hunter-biden-s-laptop",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_4918619",
+          "title": "Bitget and UNICEF Launch Financial Literacy Module Featuring Blockchain Education",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-09-bitget-and-unicef-launch-financial-literacy-module-featuring-blockchain-education-413996",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/Screenshot-2026-09-09-at-9.17.51%E2%80%AFAM.png"
+        },
+        {
+          "id": "art_4936089",
+          "title": "Prediction markets spend big on celebrity campaigns even as Sydney Sweeney and LeBron James ads stir backlash",
+          "url": "https://fortune.com/2026/09/09/prediction-markets-celebrity-campaigns-sydney-sweeney-lebron-james-ads-backlash/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2270322336-e1788986199328.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_4936090",
+          "title": "The latest ‘crack in the thesis’ for the trillion-dollar AI boom: Tokens are getting cheaper",
+          "url": "https://fortune.com/2026/09/09/ai-compute-tokens-cheaper-boom/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2263283192-e1788984401697.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_4919457",
+          "title": "Exclusive: Latitude, founded by Stripe and Uber alums, raises $35 million to turn stablecoins into local payments",
+          "url": "https://fortune.com/2026/09/09/exclusive-latitude-stripe-uber-alums-35-million-stablecoins-local-payments/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Latitude-founders.png?resize=1200,600"
+        },
+        {
+          "id": "art_4896348",
+          "title": "This startup acquired four companies in its first eight months. Now it’s raised €36m to buy more",
+          "url": "https://sifted.eu/articles/limetax-pre-seed-fundraise/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1365,quality=75,fit=cover,format=auto/wp-content/uploads/2026/09/04155353/Pauline-Bossdorf-111-1-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_4920055",
+          "title": "German finance ministry proposes 25% crypto tax starting 2028: Report39m, German finance ministry proposes 25% crypto tax starting 2028: ReportThe German Ministry of Finance is reportedly seeking to impose a 25% tax on cryptocurrencies, departing from current laws that make crypto gains tax-free after one year of holding.",
+          "url": "https://cointelegraph.com/news/german-finance-ministry-25-crypto-tax-2028",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M236GTB6R3NKE0V3DBECZ26A/hi-here-is-why-germany-leads-the-crypto-friendly-countries-ranking3.jpg"
+        },
+        {
+          "id": "art_4912677",
+          "title": "India seeks takedowns of 15 crypto platforms over AML compliance",
+          "url": "https://www.theblock.co/news/regulation/2026-09-09-india-seeks-takedowns-of-15-crypto-platforms-over-aml-compliance-413975",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/03/20210302_India_Crypto_Future.jpg"
+        },
+        {
+          "id": "art_4899860",
+          "title": "Gemini receives Singapore payment license for crypto services",
+          "url": "https://cointelegraph.com/news/gemini-singapore-mpi-license-crypto-services",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M22A0GM1G22S8VPZXWGBQS1G/hi-time-to-switch-license-singapore.jpg"
+        },
+        {
+          "id": "art_4926933",
+          "title": "Hyperliquid Policy Center backs CFTC in fight over perpetual futures, asks court to drop CME's case",
+          "url": "https://www.theblock.co/news/regulation/2026-09-09-hyperliquid-policy-center-backs-cftc-fight-perpetual-futures-asks-court-drop-cme-case-414046",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Hyperliquid_News_2.jpg"
+        },
+        {
+          "id": "art_4915303",
+          "title": "Italy’s central bank orders sanctions screening for crypto transfers9m, Italy’s central bank orders sanctions screening for crypto transfersBanca d’Italia ordered crypto service providers to implement internal controls to screen for crypto transfers tied to sanctioned entities.",
+          "url": "https://cointelegraph.com/news/italys-central-bank-orders-sanctions-screening-for-crypto-transfers",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_4905799",
+          "title": "Iran eases currency rules to bypass US sanctions with crypto: Report35m",
+          "url": "https://cointelegraph.com/news/iran-central-bank-encourages-crypto-evade-sanctions",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_4897051",
+          "title": "Iran turns to crypto to get around sanctions",
+          "url": "https://www.ft.com/content/c1029e47-7487-4bd7-8ed4-7512b76f1834",
+          "source": "FT Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F2e17b974-5c4f-4958-853d-61e0f486e1fb.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_4924808",
+          "title": "Trade groups seek to block Illinois crypto tax before January effective date32m, Trade groups seek to block Illinois crypto tax before January effective dateFollowing on their earlier lawsuit, CCI and the Blockchain Association seek to block Illinois’ 0.2% crypto tax, arguing it is unconstitutional and would impose costly compliance burdens.",
+          "url": "https://cointelegraph.com/news/trade-groups-seek-block-illinois-crypto-tax-before-january-effective-date",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4923369",
+          "title": "Crypto industry groups escalate fight against Illinois, asking court to block controversial crypto tax",
+          "url": "https://www.theblock.co/news/regulation/2026-09-09-crypto-industry-groups-escalate-fight-illinois-asking-court-block-crypto-tax-414036",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/05/20220526_Bangkok-Thailand-Tax-Calculator-1200x675.jpg"
+        },
+        {
+          "id": "art_4915304",
+          "title": "What could happen if the CLARITY Act fails to pass in 202635m, What could happen if the CLARITY Act fails to pass in 2026",
+          "url": "https://cointelegraph.com/news/clarity-act-fails-passage-next-session-congress",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_4910551",
+          "title": "Silvergate ex-CEO blames Biden pressure for bank’s 2023 wind-down 25m, Silvergate ex-CEO blames Biden pressure for bank’s 2023 wind-down Alan Lane said a “coordinated attack” by the Biden administration made Silvergate’s continued operation untenable and prompted its liquidation.",
+          "url": "https://cointelegraph.com/news/silvergate-ex-ceo-biden-pressure-bank-wind-down",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_4928371",
+          "title": "TRM Labs doubles valuation to $2B in Series C expansion 19m",
+          "url": "https://cointelegraph.com/news/trm-labs-doubles-valuation-to-2b-in-series-c-expansion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23JCY6CREQKFY9A4SRB13GG/hi-institutional-trading-and-cryptocurrency-industry-investment.png"
+        },
+        {
+          "id": "art_4896295",
+          "title": "Malone Lam pleads guilty in $245M crypto theft conspiracy16m",
+          "url": "https://cointelegraph.com/news/malone-lam-pleads-guilty-245m-crypto-theft-conspiracy",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M225DFFFFZQWQQC6PNGCEK5J/doj-hammer.png"
+        },
+        {
+          "id": "art_4949505",
+          "title": "Trezor says third-party security breach led to phishing emails from legitimate domain",
+          "url": "https://www.theblock.co/news/defi/2026-09-09-trezor-phishing-emails-414086",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/02/20230222_Trezor.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_4925995",
+          "title": "U.S. Bank tests proprietary stablecoin in cross-border Stellar transaction12m",
+          "url": "https://cointelegraph.com/news/us-bank-launches-usbdc-stablecoin-with-live-cross-border-payment",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M23ENPDH8G235APECM7VERGK/cross-border-transaction-stablecoin-swift-2.png"
+        },
+        {
+          "id": "art_4925563",
+          "title": "Tether launches private credit fund in effort to boost stablecoin use",
+          "url": "https://www.ft.com/content/b9e0b9b5-3b6e-420e-83da-381b75534635",
+          "source": "FT Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F96e36824-7d90-483e-860e-628702f51d0c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_4934311",
+          "title": "DoubleZero adds Kalshi election market data ahead of US midterms 10m",
+          "url": "https://cointelegraph.com/news/doublezero-adds-kalshi-election-market-data-ahead-of-us-midterms",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Tether just put $400 million into private credit. Not DeFi lending. Not protocol treasuries. Middle-market loans to companies that banks won't touch. The reserve diversification story is real, and it's moving fast.\n\nWe have been underwriting stablecoin issuers on liquidity and redemption risk. Tether's move forces a recalculation: if reserves shift from overnight Treasuries into 3-5 year private credit, the asset-liability mismatch becomes the business model. Fasanara's involvement suggests they believe the yield spread compensates for the liquidity premium. We are less certain. The test is simple—watch Tether's 30-day redemption window during the next credit stress event. If they honor at par, the model holds. If they gate or impose fees, the repricing will be violent and cross-asset.\n\nMeanwhile U.S. Bank tested its own stablecoin on Stellar for cross-border settlement. Two paths, same destination: every player wants to own the settlement layer and clip the spread that correspondent banks have collected for decades. The difference is speed of execution. Tether is already deployed. U.S. Bank is piloting.\n\nOur read: the infrastructure race is not crypto versus tradfi. It is who can get regulated yield-bearing stablecoin products to market before the other side captures the float. Consensys splitting into two entities makes sense in this context—MetaMask needs to be a financial services company, not a wallet with a token swap feature.\n\nThe value is in the plumbing. The question is who gets to charge rent on it."
+}
