@@ -1,0 +1,687 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-12",
+  "date_display": "September 12, 2026",
+  "generated_at": "2026-09-12T05:00:19.017Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Nasdaq Bets $100M on Tokenized Stocks as India Moves $100M in Bond Tokenization",
+    "tldr": "Traditional finance is accelerating tokenization adoption through two distinct paths: Nasdaq's strategic investment in Kraken's parent company Payward for equity tokenization, and India's SEBI pilot using wholesale CBDC settlement for corporate bonds. The convergence suggests tokenization is shifting from pilot to infrastructure commitment."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the infrastructure layer for tokenized assets received two validation checks from very different senders, while Bitcoin's sidechain security model faced a $320 million stress test.",
+  "market_snapshot": {
+    "as_of": "2026-09-12T05:00:19.017Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$77,219",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,513",
+        "change_24h": "+2.2%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.66T",
+        "change_24h": "-1.8%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$87.6B",
+        "change_24h": "+1.3%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 11,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 18,
+    "bearish": 17,
+    "neutral": 9,
+    "deduped": 13
+  },
+  "top_signals": [
+    {
+      "id": "art_5032815",
+      "title": "Weekly Research Brief: $LAPTOP Flops, Liquid Looted, OpenAI's Fuzzy Math",
+      "url": "https://www.galaxy.com/insights/research/laptop-memecoin-flop-liquid-network-hack-openai-navier-stokes-math",
+      "source": "Galaxy — Insights",
+      "source_domain": "galaxy.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A weekly research brief covering a massive $320 million exploit of the Bitcoin sidechain Liquid and a postmortem on a failed memecoin associated with Hunter Biden. It also touches upon controversies regarding OpenAI's mathematical capabilities.",
+      "significance": 9,
+      "primary_source": "https://www.galaxy.com/insights/research/laptop-memecoin-flop-liquid-network-hack-openai-navier-stokes-math",
+      "themes": [
+        "security",
+        "exploits"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2h4ajKoJslT7ZSSRQYDF3j/9609d5997e653707b71917df95edf2d2/Top_Stories_B2-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "The $320 million Liquid exploit and the Hunter Biden memecoin failure together demonstrate that retail-grade hype and institutional-grade security are decoupling sharply, with capital now demanding proof over promise."
+    },
+    {
+      "id": "art_5029101",
+      "title": "India's SEBI Demat 2.0 pilot debuts with over $100 million in tokenized bonds",
+      "url": "https://www.theblock.co/news/regulation/2026-09-11-indias-sebi-demat-2-0-pilot-debuts-with-over-100-million-in-tokenized-bonds-414252",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "India's SEBI has launched the Demat 2.0 pilot, enabling the issuance of tokenized corporate bonds. The pilot has already seen over $100 million raised across three issuers, utilizing a wholesale CBDC for settlement.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-09-11-indias-sebi-demat-2-0-pilot-debuts-with-over-100-million-in-tokenized-bonds-414252",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200612_India_Crypto_Ban-Daily.jpg",
+      "why_it_matters": "SEBI's Demat 2.0 pilot using wholesale CBDC for settlement establishes a regulatory template that other emerging markets will study closely, particularly for sovereign-currency-linked tokenization rails."
+    },
+    {
+      "id": "art_5022223",
+      "title": "Blockstream rejects ransom as Liquid hackers hold nearly 600 BTC",
+      "url": "https://cointelegraph.com/news/blockstream-rejects-ransom-liquid-hackers-return-bitcoin",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Blockstream has refused to pay a ransom to hackers who exploited the Liquid network and are currently holding approximately 598 BTC. The company has explicitly rejected the attackers' claims of being 'white-hat' hackers.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/blockstream-rejects-ransom-liquid-hackers-return-bitcoin",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27QFNQHXK4AQ23CPKY39BZF/hi-can-bitcoin-be-hacked-3.jpg",
+      "why_it_matters": "Blockstream's refusal to negotiate with hackers holding 598 BTC tests whether transparency and defiance can function as a credible security strategy, or if it simply writes off recoverable value."
+    },
+    {
+      "id": "art_5043032",
+      "title": "Nasdaq bets big on tokenized stocks with $100 million investment in Kraken parent Payward",
+      "url": "https://fortune.com/2026/09/10/nasdaq-tokenized-stocks-100-million-investment-kraken-parent-payward/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Nasdaq has invested $100 million into Payward, the parent company of Kraken, to advance the development of tokenized stocks. This strategic move reportedly brings Kraken's overall valuation to $21 billion.",
+      "significance": 8,
+      "primary_source": "https://fortune.com/2026/09/10/nasdaq-tokenized-stocks-100-million-investment-kraken-parent-payward/",
+      "themes": [
+        "tokenization",
+        "investment"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-1497608143-e1789062393842.jpg?resize=1200,600",
+      "why_it_matters": "Nasdaq's $100 million investment at a $21 billion Kraken valuation prices in tokenized equities as a product line, not an experiment, and signals exchange incumbents see this as competitive infrastructure rather than novelty."
+    },
+    {
+      "id": "art_5028163",
+      "title": "UniCredit seeks infrastructure partner for crypto trading, custody: Report",
+      "url": "https://cointelegraph.com/news/unicredit-infrastructure-partners-crypto-trading-custody",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Enterprise",
+      "sentiment": "bullish",
+      "summary": "UniCredit is reportedly searching for an infrastructure partner to enable crypto trading and custody services for its clients. This move signals a significant step toward integrating digital asset services into a major European banking institution.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/unicredit-infrastructure-partners-crypto-trading-custody",
+      "themes": [
+        "enterprise",
+        "custody"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M282X830DCH6TSW5XZJXNKBH/hi-crypto-olympic-gods.jpg",
+      "why_it_matters": "UniCredit's search for a crypto infrastructure partner indicates European systemically important banks are moving past compliance theater toward actual service integration, with custody as the wedge product."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_5043032",
+      "company": "Payward (Kraken parent)",
+      "amount": "$100M",
+      "round": "Strategic",
+      "investors": [
+        "Nasdaq"
+      ],
+      "category": "Tokenization",
+      "url": "https://fortune.com/2026/09/10/nasdaq-tokenized-stocks-100-million-investment-kraken-parent-payward/",
+      "summary": "Nasdaq has invested $100 million into Payward, the parent company of Kraken, to advance the development of tokenized stocks. This strategic move reportedly brings Kraken's overall valuation to $21 billion."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_5025788",
+      "title": "India launches tokenized bond pilot with $107M issued",
+      "url": "https://cointelegraph.com/news/india-launches-tokenized-bond-pilot-with-107m-issued",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "India has launched the Demat 2.0 pilot program to settle and service $107 million in tokenized corporate bonds. The initiative leverages distributed ledger technology (DLT), wholesale CBDCs, and smart contracts to modernize bond issuance.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27X18G5K0AARQBBJ0SYKFK0/regulations-india-crypto.jpg"
+    },
+    {
+      "id": "art_5024349",
+      "title": "ESMA says major prediction platforms lack EU authorization, questions Polymarket and Kalshi's partial geo-blocks",
+      "url": "https://www.theblock.co/news/regulation/2026-09-11-esma-says-major-prediction-platforms-lack-eu-authorization-questions-polymarket-and-kalshis-partial-geo-blocks-414239",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The European Securities and Markets Authority (ESMA) has stated that major prediction markets, including Polymarket and Kalshi, are operating without necessary EU authorization. The regulator specifically questioned the effectiveness of the platforms' partial geographic blocks intended to restrict EU users.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2020/12/shutterstock_584623759-scaled-e1608125321172.jpg"
+    },
+    {
+      "id": "art_5016284",
+      "title": "Revised CLARITY Act targets ‘non-decentralized’ DeFi operatorsThe bill’s ethics section remained largely unchanged despite being one of the main points of contention ahead of a pivotal Senate vote.",
+      "url": "https://cointelegraph.com/news/revised-clarity-act-targets-non-decentralized-defi-operators",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The revised CLARITY Act aims to regulate DeFi operators who are not sufficiently decentralized. Despite previous contention, the bill's ethics section remains largely unchanged ahead of a critical Senate vote.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27H8K27MPGK3B4159W99VR1/senate-usa-flag.png"
+    },
+    {
+      "id": "art_4975891",
+      "title": "Coinbase, Moov to provide stablecoin infrastructure for US community banks15m",
+      "url": "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Coinbase and Moov are partnering to provide stablecoin infrastructure specifically tailored for US community banks. This initiative aims to modernize payment systems and integrate digital assets into traditional community banking frameworks.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M25QS3J7E4QKZ8FBTX1J64KM/hi-listing-frenzy-coinbase-has-added-nearly-100-assets-for-trading-in-2021-3.jpg"
+    },
+    {
+      "id": "art_5032665",
+      "title": "Ethena Brings USDe and sUSDe to TRON, Expanding Digital Dollar Access Across Its Stablecoin Ecosystem",
+      "url": "https://www.theblock.co/news/sponsored/2026-09-11-ethena-brings-usde-and-susde-to-tron-expanding-digital-dollar-access-across-its-stablecoin-ecosystem-414262",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Ethena Labs has integrated its synthetic dollar USDe and its staked version sUSDe onto the TRON network. This move aims to expand the accessibility and utility of Ethena's digital dollars within the TRON stablecoin ecosystem.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/09/Screenshot-2026-09-11-at-9.29.44%E2%80%AFAM.png"
+    },
+    {
+      "id": "art_5031129",
+      "title": "A four-time Fortune 500 CFO makes a huge career bet—on joining Polymarket",
+      "url": "https://fortune.com/2026/09/11/a-four-time-fortune-500-cfo-makes-a-huge-career-beton-joining-polymarket/",
+      "source": "Fortune Crypto",
+      "category": "Other",
+      "sentiment": "bullish",
+      "summary": "Polymarket has hired Warren Jenson, a former CFO of four Fortune 500 companies, as its new finance chief. The move comes as the prediction market platform navigates significant regulatory challenges and a $1 billion fundraising effort.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2265180272.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_5032817",
+      "title": "💧 Looting of Liquid Sidechain Underscores Emerging Cyber Threat to Bitcoin",
+      "url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+      "source": "Galaxy — Insights",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The article discusses the looting of a liquid sidechain, highlighting an emerging cyber threat targeting Bitcoin-related infrastructure. It emphasizes the distinction between ethical white-hat hacking and malicious theft of funds.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5PoNj0dscPwPKxRakkBMix/151cf2afd4033c1b878d304ba9ce96e8/Bitcoin-14_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5019847",
+      "title": "Bitwise to put down Dogecoin ETF less than a year after launch39m",
+      "url": "https://cointelegraph.com/news/bitwise-put-down-dogecoin-etf-year-launch",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "Bitwise is planning to file for a Dogecoin ETF shortly after the launch of other crypto investment products. This move signals an attempt to bring institutional access to the popular meme coin.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27PG6K246A1E33FQTARMGXQ/hi-how-to-buy-and-sell-dogecoin-etf.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_5032817",
+      "title": "💧 Looting of Liquid Sidechain Underscores Emerging Cyber Threat to Bitcoin",
+      "url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+      "source": "Galaxy — Insights",
+      "note": "The Galaxy analysis of the Liquid exploit maps specific attack vectors against Bitcoin sidechain architectures that any infrastructure investor should weigh before underwriting similar bridges.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5PoNj0dscPwPKxRakkBMix/151cf2afd4033c1b878d304ba9ce96e8/Bitcoin-14_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_4981997",
+      "title": "PumpFun: Undervalued or Worthless?",
+      "url": "https://messari.io/report/pump-fun-undervalued-or-worthless",
+      "source": "Messari — Research",
+      "note": "Messari's PumpFun valuation exercise offers a framework for distinguishing platform revenue from token speculation, directly relevant to any memecoin-adjacent infrastructure bet.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c2b9258c2cb9574c94f369ec5190ad34e7007033-1500x600.png"
+    },
+    {
+      "id": "art_5032818",
+      "title": "💻 $LAPTOP Flop Shows Market's Moved on From Celeb Memecoins",
+      "url": "https://www.galaxy.com/insights/research/laptop-memecoin-hunter-biden-base-celebrity-token-flop-crypto-market",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's postmortem on $LAPTOP traces how celebrity token fatigue has compressed to weeks rather than months, useful for timing liquidity in attention-driven markets.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4UC06uajoGMI2hlmPMv1DY/ea6911932a0a1f2bf0bcbca0412fbc2b/General-ChartGraph-5_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_5043357",
+          "title": "Bitcoin, ether rise as inflation data does little to alter Fed interest rate outlook",
+          "url": "https://www.theblock.co/news/markets/2026-09-11-bitcoin-ether-rise-inflation-data-does-little-alter-fed-interest-rate-outlook-414287",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250312_Markets_Category.jpg"
+        },
+        {
+          "id": "art_4968513",
+          "title": "Coinbase CEO Brian Armstrong says bitcoin has bottomed for current cycle, expects uptrend over next two years",
+          "url": "https://www.theblock.co/news/markets/2026-09-10-coinbase-ceo-brian-armstrong-says-bitcoin-has-bottomed-for-current-cycle-expects-uptrend-over-next-two-years-414104",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/04/20230414_Brianarmstrong_Generic.jpg"
+        },
+        {
+          "id": "art_5037417",
+          "title": "Metaplanet reverses course on executive options with 41% cut to potential shares, scraps employee warrant plan",
+          "url": "https://www.theblock.co/news/business/2026-09-11-metaplanet-reverses-course-executive-options-41-cut-potential-shares-scraps-employee-warrant-plan-414265",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_5040981",
+          "title": "'DeFi's federal bank': Standard Chartered sees SKY token rising fivefold by end-2028",
+          "url": "https://www.theblock.co/news/markets/2026-09-11-standard-chartered-sky-token-defi-federal-bank-414280",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/11/shutterstock_1286806993-e1573191968260.jpg"
+        },
+        {
+          "id": "art_4981997",
+          "title": "PumpFun: Undervalued or Worthless?",
+          "url": "https://messari.io/report/pump-fun-undervalued-or-worthless",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c2b9258c2cb9574c94f369ec5190ad34e7007033-1500x600.png"
+        },
+        {
+          "id": "art_4981112",
+          "title": "Uniswap after UNIfication ",
+          "url": "https://tokenterminal.com/resources/newsletter/uniswap-after-unification",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fasset%2Ffile%2F3af8cdd6-673c-44f0-ad29-e7638e47d4f8%2F1.png%3Ft%3D1789050076&w=1200&q=75"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_5028163",
+          "title": "UniCredit seeks infrastructure partner for crypto trading, custody: Report",
+          "url": "https://cointelegraph.com/news/unicredit-infrastructure-partners-crypto-trading-custody",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M282X830DCH6TSW5XZJXNKBH/hi-crypto-olympic-gods.jpg"
+        },
+        {
+          "id": "art_5048359",
+          "title": "Bitcoin Suisse to shift up to half of Swiss jobs abroad34m",
+          "url": "https://cointelegraph.com/news/bitcoin-suisse-to-shift-up-to-half-of-swiss-jobs-abroad",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_4986333",
+          "title": "Coinbase rebrands Base App back to Coinbase Wallet after just over a year as social experiment falls short",
+          "url": "https://www.theblock.co/news/defi/2026-09-10-coinbase-rebrands-base-app-back-to-coinbase-wallet-after-just-over-a-year-as-social-experiment-falls-short-414115",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/coinbase-wallet.jpg"
+        },
+        {
+          "id": "art_4974703",
+          "title": "Solana sees record 263K tokens issued in a single day",
+          "url": "https://cointelegraph.com/news/solana-record-263k-tokens-issued",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M25NP75E37J3BC23WNMYYFA2/hi-memecoins-tracing-the-journey-from-memes-to-the-multi-billion-dollar-world-of-scams-and-rugpulls.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_5019847",
+          "title": "Bitwise to put down Dogecoin ETF less than a year after launch39m",
+          "url": "https://cointelegraph.com/news/bitwise-put-down-dogecoin-etf-year-launch",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27PG6K246A1E33FQTARMGXQ/hi-how-to-buy-and-sell-dogecoin-etf.png"
+        },
+        {
+          "id": "art_5034103",
+          "title": "Metaplanet cuts Series 10 stock pool by 41%, plans Hong Kong subsidiary",
+          "url": "https://cointelegraph.com/news/metaplanet-executive-stock-pool-hong-kong-subsidiary",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_5029351",
+          "title": "Robinhood’s crypto volume increases 61% in August, still down 38% YoY40m",
+          "url": "https://cointelegraph.com/news/robinhoods-crypto-volume-rebounds-august",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_5031129",
+          "title": "A four-time Fortune 500 CFO makes a huge career bet—on joining Polymarket",
+          "url": "https://fortune.com/2026/09/11/a-four-time-fortune-500-cfo-makes-a-huge-career-beton-joining-polymarket/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2265180272.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_4987501",
+          "title": "Dallas Gets Some Equities",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-09-10/dallas-gets-some-equities",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_5051673",
+          "title": "Former Alameda CEO Caroline Ellison joins nonprofit charity Manifund",
+          "url": "https://www.theblock.co/news/business/2026-09-11-former-alameda-ceo-caroline-ellison-joins-nonprofit-charity-manifund-414310",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/CE-1920x1080-1.png"
+        },
+        {
+          "id": "art_5032818",
+          "title": "💻 $LAPTOP Flop Shows Market's Moved on From Celeb Memecoins",
+          "url": "https://www.galaxy.com/insights/research/laptop-memecoin-hunter-biden-base-celebrity-token-flop-crypto-market",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4UC06uajoGMI2hlmPMv1DY/ea6911932a0a1f2bf0bcbca0412fbc2b/General-ChartGraph-5_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_4996453",
+          "title": "🟪 AI could make markets unintelligible  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_4692c6b2-32ba-43bd-b1c1-36e67a2a6712",
+          "source": "Blockworks (2)",
+          "sentiment": "bearish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_4975891",
+          "title": "Coinbase, Moov to provide stablecoin infrastructure for US community banks15m",
+          "url": "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M25QS3J7E4QKZ8FBTX1J64KM/hi-listing-frenzy-coinbase-has-added-nearly-100-assets-for-trading-in-2021-3.jpg"
+        },
+        {
+          "id": "art_4978017",
+          "title": "MoneyGram launches first stablecoin-backed Visa card in Colombia",
+          "url": "https://www.theblock.co/news/business/2026-09-10-moneygram-card-stablecoin-visa-colombia-414137",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/08/visa.jpeg"
+        },
+        {
+          "id": "art_5030655",
+          "title": "Real-time payments are already here. So what do onchain payments add? ",
+          "url": "https://dune.com/blog/digital-asset-brief-onchain-payments",
+          "source": "Dune",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/fox336rh/production/904a3a1d8277e8286a571052fde8b321aac51888-1200x630.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_5024349",
+          "title": "ESMA says major prediction platforms lack EU authorization, questions Polymarket and Kalshi's partial geo-blocks",
+          "url": "https://www.theblock.co/news/regulation/2026-09-11-esma-says-major-prediction-platforms-lack-eu-authorization-questions-polymarket-and-kalshis-partial-geo-blocks-414239",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/12/shutterstock_584623759-scaled-e1608125321172.jpg"
+        },
+        {
+          "id": "art_5016284",
+          "title": "Revised CLARITY Act targets ‘non-decentralized’ DeFi operatorsThe bill’s ethics section remained largely unchanged despite being one of the main points of contention ahead of a pivotal Senate vote.",
+          "url": "https://cointelegraph.com/news/revised-clarity-act-targets-non-decentralized-defi-operators",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27H8K27MPGK3B4159W99VR1/senate-usa-flag.png"
+        },
+        {
+          "id": "art_5018659",
+          "title": "SBF asks Supreme Court to overturn conviction, $11B forfeiture: Report5m",
+          "url": "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_4976829",
+          "title": "Citadel urges SEC to assert oversight of event contracts tied to public firms",
+          "url": "https://www.theblock.co/news/regulation/2026-09-10-citadel-urges-sec-assert-oversight-event-contracts-tied-public-firms-414140",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+        },
+        {
+          "id": "art_4954075",
+          "title": "Trust companies turn away crypto-rich on money-laundering fears",
+          "url": "https://www.ft.com/content/482c18d2-c044-448d-8661-76e19b700523",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F625029f8-089d-4501-a1e3-4143666d3ca3.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_5003903",
+          "title": "The $62 Billion Gap: Korea’s Missing Corporate Crypto Market",
+          "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-eng",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!XSUv!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215143135%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5003904",
+          "title": "82조 원의 빈자리, 한국이 놓친 법인 시장",
+          "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-kor",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!zHVp!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215142280%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5045983",
+          "title": "Hyperliquid’s biggest risk is regulation, says Ran Neuner40m",
+          "url": "https://cointelegraph.com/news/hyperliquids-biggest-risk-is-regulation-says-ran-neuner",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_4965199",
+          "title": "Unicoin sues Uniswap Labs, seeks to cancel UNI registration",
+          "url": "https://cointelegraph.com/news/unicoin-sues-uniswap-court-cancel-uni-trademark",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M25608EVZEXN61YVC0S0C6R6/regulation-judgement-judge-crypto-breaking-news.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_5032815",
+          "title": "Weekly Research Brief: $LAPTOP Flops, Liquid Looted, OpenAI's Fuzzy Math",
+          "url": "https://www.galaxy.com/insights/research/laptop-memecoin-flop-liquid-network-hack-openai-navier-stokes-math",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2h4ajKoJslT7ZSSRQYDF3j/9609d5997e653707b71917df95edf2d2/Top_Stories_B2-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5022223",
+          "title": "Blockstream rejects ransom as Liquid hackers hold nearly 600 BTC",
+          "url": "https://cointelegraph.com/news/blockstream-rejects-ransom-liquid-hackers-return-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27QFNQHXK4AQ23CPKY39BZF/hi-can-bitcoin-be-hacked-3.jpg"
+        },
+        {
+          "id": "art_5032817",
+          "title": "💧 Looting of Liquid Sidechain Underscores Emerging Cyber Threat to Bitcoin",
+          "url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/5PoNj0dscPwPKxRakkBMix/151cf2afd4033c1b878d304ba9ce96e8/Bitcoin-14_Blue-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5010343",
+          "title": "Brevo login flaw enabled phishing email targeting 347K Trezor subscribers",
+          "url": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27B48EZAFAJ0FBBJM75HJAW/brevo-phishing.png"
+        },
+        {
+          "id": "art_4974454",
+          "title": "Researchers halve quantum resource benchmark for key operation in Bitcoin, Ethereum attack",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-10-researchers-halve-quantum-resource-benchmark-for-key-operation-in-bitcoin-ethereum-attack-414121",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/05/20260511_Quantum_News_4.jpg"
+        },
+        {
+          "id": "art_4949505",
+          "title": "Trezor says third-party security breach led to phishing emails from legitimate domain",
+          "url": "https://www.theblock.co/news/defi/2026-09-09-trezor-phishing-emails-414086",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/02/20230222_Trezor.jpg"
+        },
+        {
+          "id": "art_5032666",
+          "title": "Securing CoinW: How a former financial services developer built a culture of safety in crypto",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-11-securing-coinw-411514",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/20260813_CoinW_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_5032665",
+          "title": "Ethena Brings USDe and sUSDe to TRON, Expanding Digital Dollar Access Across Its Stablecoin Ecosystem",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-11-ethena-brings-usde-and-susde-to-tron-expanding-digital-dollar-access-across-its-stablecoin-ecosystem-414262",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/Screenshot-2026-09-11-at-9.29.44%E2%80%AFAM.png"
+        },
+        {
+          "id": "art_5038855",
+          "title": "Anchorage Digital adds institutional access to Frgmnt’s fUSD stablecoin",
+          "url": "https://cointelegraph.com/news/anchorage-digital-adds-institutional-access-to-frgmnts-fusd-stablecoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M28K89BM1GEXJ22T4BRVJH1V/hi-evergreen-guide-about-stablecoin-launch.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_5029101",
+          "title": "India's SEBI Demat 2.0 pilot debuts with over $100 million in tokenized bonds",
+          "url": "https://www.theblock.co/news/regulation/2026-09-11-indias-sebi-demat-2-0-pilot-debuts-with-over-100-million-in-tokenized-bonds-414252",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2020/06/20200612_India_Crypto_Ban-Daily.jpg"
+        },
+        {
+          "id": "art_5043032",
+          "title": "Nasdaq bets big on tokenized stocks with $100 million investment in Kraken parent Payward",
+          "url": "https://fortune.com/2026/09/10/nasdaq-tokenized-stocks-100-million-investment-kraken-parent-payward/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-1497608143-e1789062393842.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_5025788",
+          "title": "India launches tokenized bond pilot with $107M issued",
+          "url": "https://cointelegraph.com/news/india-launches-tokenized-bond-pilot-with-107m-issued",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27X18G5K0AARQBBJ0SYKFK0/regulations-india-crypto.jpg"
+        },
+        {
+          "id": "art_4972327",
+          "title": "Ex-BoE deputy governor headlines trio of former central bankers joining Fnality",
+          "url": "https://cointelegraph.com/news/ex-boe-cunliffe-central-bankers-fnality",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M25HQFKJSSFVM807MJZBJCMD/bank-building-hall-entrance-revolving-doorsthreepeople-1.jpg"
+        },
+        {
+          "id": "art_5040512",
+          "title": "Established businesses, not startups, are driving growth in RWAs ",
+          "url": "https://tokenterminal.com/resources/newsletter/established-businesses-not-startups-are-driving-growth-in-rwas",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Nasdaq just priced tokenized equities into Kraken at $21 billion. That's not a venture bet on possibility. That's an incumbent buying the rail it doesn't have time to build.\n\nThe India parallel is worth holding up. SEBI's Demat 2.0 pilot moved $100 million in corporate bonds settled through wholesale CBDC. Two $100 million commitments. One from a private exchange building product, one from a regulator building plumbing. Both assume the same thing: the settlement layer is where value shifts next.\n\nWe're underwriting this now. The question isn't whether tokenization happens. It's whether the winners are the regulated wrappers or the native rails. Nasdaq chose a wrapper. India is testing the rail.\n\nWhat would kill this thesis: if the next three SEBI-scale pilots revert to traditional settlement because CBDC friction proves higher than advertised. What would confirm it: a European bank like UniCredit actually deploying custody not as press release but as P&L line.\n\nWe're watching the second one more closely than the first."
+}
