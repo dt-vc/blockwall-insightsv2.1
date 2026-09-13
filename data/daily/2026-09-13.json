@@ -1,0 +1,501 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-13",
+  "date_display": "September 13, 2026",
+  "generated_at": "2026-09-13T05:00:17.749Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Social engineering breaches at Revolut and Trezor expose critical vulnerability in crypto customer data pipelines",
+    "tldr": "Today's signals reveal a coordinated exploitation of trust infrastructure—government-impersonation attacks and email-service compromises are becoming the primary vector for targeting crypto holders, shifting security risk from protocol layers to vendor and KYC relationships."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-09-13T05:00:17.749Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$77,200",
+        "change_24h": "-0.0%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,520",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.63T",
+        "change_24h": "-3.5%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$88.2B",
+        "change_24h": "+0.2%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 9,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 9,
+    "bearish": 10,
+    "neutral": 6,
+    "deduped": 11
+  },
+  "top_signals": [
+    {
+      "id": "art_5102767",
+      "title": "Revolut says customer KYC, Bitcoin transaction data exposed after fake request from gov't domain",
+      "url": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Revolut reported a data breach where customer KYC and Bitcoin transaction data were exposed due to a fraudulent request appearing to come from a government domain. Onchain investigator ZachXBT suggests the attack may have specifically targeted high-net-worth individuals.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
+      "themes": [
+        "security",
+        "data-breach"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221118_Revolut.jpg",
+      "why_it_matters": "The Revolut breach demonstrates that KYC data repositories have become higher-value targets than wallets themselves, exposing a repricing risk for neobanks and exchanges that underwrite customer acquisition on compliance infrastructure now proving porous to social engineering."
+    },
+    {
+      "id": "art_5095884",
+      "title": "North Korea using foreign talent to help infiltrate US companies: Report14m",
+      "url": "https://cointelegraph.com/news/north-korea-using-foreign-talent-to-help-infiltrate-us-companies-report",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "North Korean operatives are reportedly recruiting foreign talent to gain employment at US companies to facilitate infiltration. This strategy aims to bypass security screenings and gain access to sensitive corporate networks.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/north-korea-using-foreign-talent-to-help-infiltrate-us-companies-report",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2B5SN57G44ZRVJ1417WPGSB/job-interview-handover-scene.png",
+      "why_it_matters": "North Korea's pivot to foreign talent recruitment signals that state-level attackers are arbitraging jurisdictional screening gaps, which should force US-facing crypto employers to re-underwrite insider threat models and remote-hiring verification costs."
+    },
+    {
+      "id": "art_5095885",
+      "title": "Farage’s Reform UK gets biggest donation ever from crypto billionaire: Reports32m, Farage’s Reform UK gets biggest donation ever from crypto billionaire: ReportsBen Delo, co-founder of BitMEX, donated almost $50 million to Nigel Farage’s Reform UK party.",
+      "url": "https://cointelegraph.com/news/farages-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "BitMEX co-founder Ben Delo has reportedly donated nearly $50 million to Nigel Farage's Reform UK party. This represents the largest single donation in the party's history.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/farages-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports",
+      "themes": [
+        "regulation",
+        "political-donations"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2BA6J7HTH44ZK3SGYTVPE4V/two-donors-cheques.png",
+      "why_it_matters": "Ben Delo's $50 million donation to Reform UK illustrates how crypto wealth is being deployed into European political capital formation, creating concentrated counterparty risk for projects whose regulatory positioning depends on specific party access."
+    },
+    {
+      "id": "art_5018659",
+      "title": "SBF asks Supreme Court to overturn conviction, $11B forfeiture: Report5m",
+      "url": "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Sam Bankman-Fried has requested the Supreme Court to overturn his conviction and the associated $11 billion forfeiture order. The move represents a final legal attempt to challenge the findings of the fraud trial.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture",
+      "themes": [
+        "regulation",
+        "legal"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27MET6B0RDV87AVRKSVYNJF/sbf-newspapers.jpg",
+      "why_it_matters": "SBF's Supreme Court petition is a low-probability, high-salience event that would reset precedent expectations across fraud sentencing and forfeiture frameworks in crypto if granted cert, though the base case remains denial."
+    },
+    {
+      "id": "art_5010343",
+      "title": "Brevo login flaw enabled phishing email targeting 347K Trezor subscribers",
+      "url": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A login flaw in the email service Brevo allowed an attacker to compromise 138 accounts. This breach was used to send phishing emails to approximately 347,000 Trezor subscribers, as well as users of BitBox and CoinTracking.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing",
+      "themes": [
+        "security",
+        "phishing"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27B48EZAFAJ0FBBJM75HJAW/brevo-phishing.png",
+      "why_it_matters": "The Brevo-Trezor phishing cascade reveals that email marketing infrastructure has become a systemic single point of failure for hardware wallet user bases, suggesting customer communication channels now carry unpriced operational risk that vendors must internalize or outsource at higher cost."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_5043357",
+      "title": "Bitcoin, ether rise as inflation data does little to alter Fed interest rate outlook",
+      "url": "https://www.theblock.co/news/markets/2026-09-11-bitcoin-ether-rise-inflation-data-does-little-alter-fed-interest-rate-outlook-414287",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitcoin and Ether prices rose following inflation data that did not significantly shift the Federal Reserve's interest rate outlook. Analysis suggests a divergence between accelerating headline inflation driven by energy and easing core inflation.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250312_Markets_Category.jpg"
+    },
+    {
+      "id": "art_5040981",
+      "title": "'DeFi's federal bank': Standard Chartered sees SKY token rising fivefold by end-2028",
+      "url": "https://www.theblock.co/news/markets/2026-09-11-standard-chartered-sky-token-defi-federal-bank-414280",
+      "source": "The Block",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Standard Chartered Bank has initiated coverage of Sky, describing the protocol as 'DeFi's federal bank.' The bank forecasts a significant price increase for the SKY token, predicting it will reach $0.325 by 2028.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/11/shutterstock_1286806993-e1573191968260.jpg"
+    },
+    {
+      "id": "art_5038855",
+      "title": "Anchorage Digital adds institutional access to Frgmnt’s fUSD stablecoin",
+      "url": "https://cointelegraph.com/news/anchorage-digital-adds-institutional-access-to-frgmnts-fusd-stablecoin",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Anchorage Digital has integrated Frgmnt's fUSD and sfUSD stablecoins into its institutional custody platform. This allows institutional clients to mint, redeem, and stake these assets directly through the platform.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M28K89BM1GEXJ22T4BRVJH1V/hi-evergreen-guide-about-stablecoin-launch.png"
+    },
+    {
+      "id": "art_5034103",
+      "title": "Metaplanet cuts Series 10 stock pool by 41%, plans Hong Kong subsidiary",
+      "url": "https://cointelegraph.com/news/metaplanet-executive-stock-pool-hong-kong-subsidiary",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Metaplanet has reduced its Series 10 stock pool by 41% and announced plans to establish a subsidiary in Hong Kong. These moves are part of the company's broader strategy to optimize its capital structure and expand its operational footprint in Asia.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M28870PKEWGRDMAATE4PHF9G/investmentmoneycryptodollarcrowdfunding-metaplanet.jpg"
+    },
+    {
+      "id": "art_5030655",
+      "title": "Real-time payments are already here. So what do onchain payments add? ",
+      "url": "https://dune.com/blog/digital-asset-brief-onchain-payments",
+      "source": "Dune",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "The article discusses the value proposition of onchain payments compared to traditional real-time payment systems. It highlights that the primary advantage of blockchain payments is financial access, enabling transactions without the need for a bank account.",
+      "image_url": "https://cdn.sanity.io/images/fox336rh/production/904a3a1d8277e8286a571052fde8b321aac51888-1200x630.png"
+    },
+    {
+      "id": "art_5003903",
+      "title": "The $62 Billion Gap: Korea’s Missing Corporate Crypto Market",
+      "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-eng",
+      "source": "Tiger Research",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The article discusses the significant gap in South Korea's corporate crypto market, highlighting a $62 billion discrepancy. It examines the regulatory and structural barriers preventing institutional adoption of digital assets in the region.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!XSUv!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215143135%2Ftwitter.jpg%3Fversion%3D4"
+    },
+    {
+      "id": "art_5003904",
+      "title": "82조 원의 빈자리, 한국이 놓친 법인 시장",
+      "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-kor",
+      "source": "Tiger Research",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The article discusses the missed opportunity for South Korea in the corporate cryptocurrency market, highlighting a significant gap in institutional adoption. It emphasizes how regulatory restrictions have prevented Korean corporations from entering a market valued at trillions of won.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!zHVp!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215142280%2Ftwitter.jpg%3Fversion%3D4"
+    },
+    {
+      "id": "art_5109901",
+      "title": "CryptoQuant says bitcoin must clear resistance at $81,700 to confirm new bull market",
+      "url": "https://www.theblock.co/news/markets/2026-09-12-cryptoquant-bitcoin-resistance-support-levels-414519",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "CryptoQuant reports that Bitcoin maintains a bullish outlook but faces critical resistance levels. The asset must clear $81,700 and potentially reach $88,700 to confirm a new bull market.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_5032818",
+      "title": "💻 $LAPTOP Flop Shows Market's Moved on From Celeb Memecoins",
+      "url": "https://www.galaxy.com/insights/research/laptop-memecoin-hunter-biden-base-celebrity-token-flop-crypto-market",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's post-mortem on the $LAPTOP memecoin collapse offers a clean read on how quickly retail capital has rotated out of celebrity-backed tokens, which matters for anyone still modeling influencer-driven token distribution as a viable go-to-market.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4UC06uajoGMI2hlmPMv1DY/ea6911932a0a1f2bf0bcbca0412fbc2b/General-ChartGraph-5_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_5043357",
+          "title": "Bitcoin, ether rise as inflation data does little to alter Fed interest rate outlook",
+          "url": "https://www.theblock.co/news/markets/2026-09-11-bitcoin-ether-rise-inflation-data-does-little-alter-fed-interest-rate-outlook-414287",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/03/20250312_Markets_Category.jpg"
+        },
+        {
+          "id": "art_5109901",
+          "title": "CryptoQuant says bitcoin must clear resistance at $81,700 to confirm new bull market",
+          "url": "https://www.theblock.co/news/markets/2026-09-12-cryptoquant-bitcoin-resistance-support-levels-414519",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260410_Bitcoin_News.jpg"
+        },
+        {
+          "id": "art_5037417",
+          "title": "Metaplanet reverses course on executive options with 41% cut to potential shares, scraps employee warrant plan",
+          "url": "https://www.theblock.co/news/business/2026-09-11-metaplanet-reverses-course-executive-options-41-cut-potential-shares-scraps-employee-warrant-plan-414265",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/04/20250401_MetaPlanet_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_5040981",
+          "title": "'DeFi's federal bank': Standard Chartered sees SKY token rising fivefold by end-2028",
+          "url": "https://www.theblock.co/news/markets/2026-09-11-standard-chartered-sky-token-defi-federal-bank-414280",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/11/shutterstock_1286806993-e1573191968260.jpg"
+        },
+        {
+          "id": "art_5097669",
+          "title": "Big Players ravage prediction markets",
+          "url": "https://fortune.com/2026/09/12/big-players-prediction-markets-donald-trump-jr-cftc/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2273875436-e1789224796324.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_5048359",
+          "title": "Bitcoin Suisse to shift up to half of Swiss jobs abroad34m",
+          "url": "https://cointelegraph.com/news/bitcoin-suisse-to-shift-up-to-half-of-swiss-jobs-abroad",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_5034103",
+          "title": "Metaplanet cuts Series 10 stock pool by 41%, plans Hong Kong subsidiary",
+          "url": "https://cointelegraph.com/news/metaplanet-executive-stock-pool-hong-kong-subsidiary",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M28870PKEWGRDMAATE4PHF9G/investmentmoneycryptodollarcrowdfunding-metaplanet.jpg"
+        },
+        {
+          "id": "art_5029351",
+          "title": "Robinhood’s crypto volume increases 61% in August, still down 38% YoY40m",
+          "url": "https://cointelegraph.com/news/robinhoods-crypto-volume-rebounds-august",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_5091675",
+          "title": "Crypto Fundraisings on Week 06 ",
+          "url": "https://crypto-fundraising.info/blog/dates-06-12-sep-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/06-12-Sep-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_5068123",
+          "title": "Chinese crypto investor was seller of £190mn London mansion",
+          "url": "https://www.ft.com/content/dcfe97fe-8935-497f-abfb-c51973614458",
+          "source": "FT Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe60983e1-7f16-4779-91b5-0a3ad4eb303b.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_5051673",
+          "title": "Former Alameda CEO Caroline Ellison joins nonprofit charity Manifund",
+          "url": "https://www.theblock.co/news/business/2026-09-11-former-alameda-ceo-caroline-ellison-joins-nonprofit-charity-manifund-414310",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/wp/uploads/2025/12/CE-1920x1080-1.png"
+        },
+        {
+          "id": "art_5032818",
+          "title": "💻 $LAPTOP Flop Shows Market's Moved on From Celeb Memecoins",
+          "url": "https://www.galaxy.com/insights/research/laptop-memecoin-hunter-biden-base-celebrity-token-flop-crypto-market",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4UC06uajoGMI2hlmPMv1DY/ea6911932a0a1f2bf0bcbca0412fbc2b/General-ChartGraph-5_Gray-5.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_5030655",
+          "title": "Real-time payments are already here. So what do onchain payments add? ",
+          "url": "https://dune.com/blog/digital-asset-brief-onchain-payments",
+          "source": "Dune",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/fox336rh/production/904a3a1d8277e8286a571052fde8b321aac51888-1200x630.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_5095885",
+          "title": "Farage’s Reform UK gets biggest donation ever from crypto billionaire: Reports32m, Farage’s Reform UK gets biggest donation ever from crypto billionaire: ReportsBen Delo, co-founder of BitMEX, donated almost $50 million to Nigel Farage’s Reform UK party.",
+          "url": "https://cointelegraph.com/news/farages-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2BA6J7HTH44ZK3SGYTVPE4V/two-donors-cheques.png"
+        },
+        {
+          "id": "art_5018659",
+          "title": "SBF asks Supreme Court to overturn conviction, $11B forfeiture: Report5m",
+          "url": "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27MET6B0RDV87AVRKSVYNJF/sbf-newspapers.jpg"
+        },
+        {
+          "id": "art_5003903",
+          "title": "The $62 Billion Gap: Korea’s Missing Corporate Crypto Market",
+          "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-eng",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!XSUv!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215143135%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5003904",
+          "title": "82조 원의 빈자리, 한국이 놓친 법인 시장",
+          "url": "https://reports.tiger-research.com/p/missing-corporate-crypto-market-kor",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!zHVp!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215142280%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5045983",
+          "title": "Hyperliquid’s biggest risk is regulation, says Ran Neuner40m",
+          "url": "https://cointelegraph.com/news/hyperliquids-biggest-risk-is-regulation-says-ran-neuner",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_5102767",
+          "title": "Revolut says customer KYC, Bitcoin transaction data exposed after fake request from gov't domain",
+          "url": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/11/20221118_Revolut.jpg"
+        },
+        {
+          "id": "art_5095884",
+          "title": "North Korea using foreign talent to help infiltrate US companies: Report14m",
+          "url": "https://cointelegraph.com/news/north-korea-using-foreign-talent-to-help-infiltrate-us-companies-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2B5SN57G44ZRVJ1417WPGSB/job-interview-handover-scene.png"
+        },
+        {
+          "id": "art_5010343",
+          "title": "Brevo login flaw enabled phishing email targeting 347K Trezor subscribers",
+          "url": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27B48EZAFAJ0FBBJM75HJAW/brevo-phishing.png"
+        },
+        {
+          "id": "art_5032666",
+          "title": "Securing CoinW: How a former financial services developer built a culture of safety in crypto",
+          "url": "https://www.theblock.co/news/sponsored/2026-09-11-securing-coinw-411514",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/20260813_CoinW_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_5038855",
+          "title": "Anchorage Digital adds institutional access to Frgmnt’s fUSD stablecoin",
+          "url": "https://cointelegraph.com/news/anchorage-digital-adds-institutional-access-to-frgmnts-fusd-stablecoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M28K89BM1GEXJ22T4BRVJH1V/hi-evergreen-guide-about-stablecoin-launch.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_5092907",
+          "title": "(Sm)all banks should compete on technology, not fear it",
+          "url": "https://fortune.com/2026/09/12/community-banks-stablecoins-digital-payments/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2262209613-e1789175867194.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_5040512",
+          "title": "Established businesses, not startups, are driving growth in RWAs ",
+          "url": "https://tokenterminal.com/resources/newsletter/established-businesses-not-startups-are-driving-growth-in-rwas",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Three breaches. Three different attack surfaces. Same mechanism: trust.\n\nRevolut handed KYC and Bitcoin transaction data to someone spoofing a government domain. Brevo's login flaw let an attacker reach 347,000 Trezor subscribers with phishing emails. North Korean operatives are now hiring foreign nationals to infiltrate US companies because direct screening caught them.\n\nWe underwrite security in crypto on protocol exploits and smart contract audits. The market prices that risk. What it is not pricing: the cost of verifying who asks for data, and how that request arrives. Revolut's breach targeted high-net-worth individuals specifically. The value is not in the breach itself. It is in the targeting precision that KYC data enables.\n\nTrezor users received phishing emails because an email marketing vendor failed. Hardware wallet security is meaningless if the channel telling you to update it is compromised. The vendor stack extends the attack surface in ways no single company controls.\n\nThe repricing question: do exchanges and wallet makers now bear liability for vendor failures they did not engineer? Or does the market assign that risk to users who cannot audit upstream?\n\nWe are watching where insurers and custody agreements draw that line. It will move.\n\nThe Galaxy piece on celebrity memecoins collapsing is worth the read for a different reason. Capital rotated out of that trade fast. The same speed may apply to trust-based infrastructure plays if breaches accelerate.\n\nOne thing to watch: whether any exchange publishes vendor security requirements post-breach, or whether this stays quiet."
+}
