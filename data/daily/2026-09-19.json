@@ -1,0 +1,622 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-19",
+  "date_display": "September 19, 2026",
+  "generated_at": "2026-09-19T05:00:18.044Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "SEC Opens Secondary Trading Path for Tokenized Stocks as Traditional Finance Accelerates Onchain Infrastructure Buildout",
+    "tldr": "Today's signals trace a single arc: regulators are constructing bounded onramps for traditional assets to trade onchain, while incumbent financial infrastructure players are buying the rails rather than building them. The question is no longer whether stocks migrate to tokenized formats, but whose middleware captures the spread."
+  },
+  "intro": "Dear Founders, Investors, and Friends, the boundary between traditional securities infrastructure and onchain markets thinned materially in the last 24 hours, and the competitive map for who intermediates that gap is being redrawn faster than most allocation memos assume.",
+  "market_snapshot": {
+    "as_of": "2026-09-19T05:00:18.044Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$80,993",
+        "change_24h": "+4.6%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,619",
+        "change_24h": "+5.7%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.78T",
+        "change_24h": "+1.3%",
+        "direction": "up"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$93.0B",
+        "change_24h": "+5.5%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 8,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 27,
+    "bearish": 5,
+    "neutral": 3,
+    "deduped": 15
+  },
+  "top_signals": [
+    {
+      "id": "art_5438465",
+      "title": "SEC Paves Way for Tokenized Stocks With Secondary Trading Exemption",
+      "url": "https://www.galaxy.com/insights/research/sec-innovation-exemption-tokenized-stocks-secondary-trading-nms-permissioned-amm",
+      "source": "Galaxy — Network",
+      "source_domain": "galaxy.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The SEC has established a bounded pathway and secondary trading exemption to facilitate the launch of tokenized stocks. This approach allows the Commission to observe and improve market structures rather than applying outdated rules to new technology.",
+      "significance": 8,
+      "primary_source": "https://www.galaxy.com/insights/research/sec-innovation-exemption-tokenized-stocks-secondary-trading-nms-permissioned-amm",
+      "themes": [
+        "regulation",
+        "tokenization"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4IufvwR1m8f4DmZL5y02BI/2c8f689ff2e87e5f511d78633f15f8e8/Regulation-3_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "The SEC's secondary trading exemption for tokenized stocks creates a controlled experiment that lowers the regulatory discount rate for issuers considering onchain primary offerings, effectively underwriting a new asset class by permitting price discovery without full rulemaking."
+    },
+    {
+      "id": "art_5374148",
+      "title": "S&P Global to acquire blockchain security platform OpenZeppelin",
+      "url": "https://cointelegraph.com/news/sp-global-openzeppelin-acquisition-blockchain-security",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "Financial data giant S&P Global has agreed to acquire OpenZeppelin, a leading blockchain security platform. The move is intended to integrate smart contract security expertise as S&P Global expands its presence in onchain markets.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/sp-global-openzeppelin-acquisition-blockchain-security",
+      "themes": [
+        "security",
+        "smart-contract-auditing"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2QNBNVRQ7TMRW88EK0EQ7P2/world-sp-global-rating.jpg",
+      "why_it_matters": "S&P Global's acquisition of OpenZeppelin signals that smart contract security is being repriced from a cost center to a strategic moat, with incumbent data providers treating audit and verification infrastructure as essential to their onchain credibility premium."
+    },
+    {
+      "id": "art_5448048",
+      "title": "Coinbase files to bring single-stock perpetual futures to US market23m, Coinbase files to bring single-stock perpetual futures to US marketCoinbase wants to bring 24/5 perpetual futures trading to individual US stocks, with its proposed contracts now awaiting regulatory approval.",
+      "url": "https://cointelegraph.com/news/coinbase-files-to-bring-single-stock-perpetual-futures-to-us-market",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Coinbase has filed for regulatory approval to introduce single-stock perpetual futures for the US market. This would allow users to trade individual stocks on a 24/5 basis using perpetual contracts.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/coinbase-files-to-bring-single-stock-perpetual-futures-to-us-market",
+      "themes": [
+        "payments",
+        "derivatives"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2V02EPZ2W43H6167S8HZBPZ/hi-uk-compliance-deadline-is-upcoming-coinbase.png",
+      "why_it_matters": "Coinbase's filing for single-stock perpetual futures represents a direct attempt to capture equity derivatives volume onto its existing crypto rails, testing whether 24/5 perpetual mechanics can siphon liquidity from CME and equity options markets."
+    },
+    {
+      "id": "art_5438512",
+      "title": "CFTC submits crypto market regulation plan for White House review",
+      "url": "https://cointelegraph.com/news/cftc-submits-crypto-market-regulation-plan-for-white-house-review",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The Commodity Futures Trading Commission (CFTC) has submitted a plan for new crypto market regulations to the White House for review. The agency intends to implement these rules using its existing regulatory authority.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/cftc-submits-crypto-market-regulation-plan-for-white-house-review",
+      "themes": [
+        "regulation",
+        "market-oversight"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TJB7047S01XKJY4FWVJGEK/judge-hammer-regulation-cftc-2.jpg",
+      "why_it_matters": "The CFTC's submission of crypto market rules to the White House suggests the agency is front-running jurisdictional ambiguity by asserting its existing authority, which if validated would cement its lead role in derivatives oversight regardless of eventual statutory splits."
+    },
+    {
+      "id": "art_5437070",
+      "title": "Bitcoin reclaims $80,000, Solana and Hyperliquid rally as crypto markets shrug off Clarity setback",
+      "url": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitcoin has reclaimed the $80,000 level alongside rallies in Solana and Hyperliquid. The market is showing resilience despite the stalling of the Clarity Act in the Senate.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
+      "themes": [
+        "bitcoin",
+        "market-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/03/20220329_Crypto_Liquidity_And_Sanctions.jpg",
+      "why_it_matters": "Bitcoin's reclamation of $80,000 alongside Solana and Hyperliquid strength, despite the Clarity Act's Senate stall, indicates that near-term regulatory disappointment is already priced into crypto risk assets and that marginal capital is responding to monetary conditions rather than legislative calendars."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_5374148",
+      "company": "OpenZeppelin",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [
+        "S&P Global"
+      ],
+      "category": "Security",
+      "url": "https://cointelegraph.com/news/sp-global-openzeppelin-acquisition-blockchain-security",
+      "summary": "Financial data giant S&P Global has agreed to acquire OpenZeppelin, a leading blockchain security platform. The move is intended to integrate smart contract security expertise as S&P Global expands its presence in onchain markets."
+    },
+    {
+      "id": "art_5423016",
+      "company": "Dtcpay",
+      "amount": "$25M",
+      "round": "Series A",
+      "investors": [
+        "SBI"
+      ],
+      "category": "Payments",
+      "url": "https://cointelegraph.com/news/dtcpay-25m-series-a-sbi-stablecoin-payments",
+      "summary": "Singapore-based stablecoin payments firm Dtcpay has successfully closed a $25 million Series A funding round. The investment, backed by SBI, will be used to expand the company's merchant network and enhance its payment product offerings."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_5433744",
+      "title": "Banks double on EU MiCA crypto provider list as share hits 23%",
+      "url": "https://cointelegraph.com/news/banks-double-eu-mica-crypto-register-esma",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The number of crypto service providers on ESMA's MiCA list has grown significantly, with banks increasing their market share of these providers to 23%. This indicates growing institutional adoption and regulatory alignment within the European Union.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2T9WY6ZEBREY64C7KQFFW2D/2222222.png"
+    },
+    {
+      "id": "art_5432302",
+      "title": "Ava Labs president says NYSE spent a year testing Avalanche technology for tokenization plans",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-18-ava-labs-president-says-nyse-spent-a-year-testing-avalanche-technology-tokenization-plans-415509",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ava Labs president revealed that the NYSE spent a year testing Avalanche technology for potential tokenization initiatives. While a close relationship with parent company ICE exists, it has not been confirmed that Avalanche was officially selected.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2019/02/nyse.jpg"
+    },
+    {
+      "id": "art_5390582",
+      "title": "US sanctions Iranian crypto exchange BitBank over alleged bitcoin transfers to IRGC",
+      "url": "https://www.theblock.co/news/regulation/2026-09-17-us-sanctions-iranian-crypto-exchange-bitbank-alleged-bitcoin-transfers-to-irgc-415462",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US Treasury has imposed sanctions on the Iranian cryptocurrency exchange BitBank. The move follows allegations that the exchange facilitated bitcoin transfers to the Islamic Revolutionary Guard Corps (IRGC) via the Hormuz Safe platform.",
+      "image_url": "https://www.tbstat.com/wp/uploads/2021/02/20210203_Department_of_Treasury.png"
+    },
+    {
+      "id": "art_5445664",
+      "title": "Binance launches 24/7 FX perps with weekend pricing system15m",
+      "url": "https://cointelegraph.com/news/binance-expands-tradfi-push-with-247-foreign-exchange-perpetuals",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Binance has introduced 24/7 Foreign Exchange (FX) perpetual contracts, allowing users to trade currency pairs around the clock. The platform has implemented a specific pricing system to handle the traditional weekend closure of FX markets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TWPXVTDCGSQ1MYSQ30VK2W/man-office-screen-computer02-2.png"
+    },
+    {
+      "id": "art_5438467",
+      "title": "Charts of the Week: CFTC is the Captain Now",
+      "url": "https://www.galaxy.com/insights/research/sec-cftc-crypto-regulation-enforcement-actions-chart-2026",
+      "source": "Galaxy — Network",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The article suggests a shift in U.S. digital asset oversight, indicating that the CFTC is becoming the primary regulator over the SEC. This transition is measured by the volume of enforcement and advisory actions.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/8HVzHlqW4ygB2V5nLaFq5/e538b8e34089378b68fb9b701fbc0465/History_of_proof_of_work_THUMBNAIL__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5429568",
+      "title": "Onchain finance is coming to Wall Street—and ignoring it is no longer an option",
+      "url": "https://fortune.com/2026/09/18/onchain-finance-is-coming-to-wall-street-and-ignoring-it-is-no-longer-an-option/",
+      "source": "Fortune Crypto",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The article discusses the inevitable integration of onchain finance and blockchain technology into traditional Wall Street operations. Legal experts argue that these technologies are moving from exotic experiments to essential infrastructure for financial institutions.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2294331262.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_5443280",
+      "title": "Crypto stocks rebound after CLARITY Act selloff29m",
+      "url": "https://cointelegraph.com/news/crypto-stocks-rebound-after-clarity-selloff-as-us-regulators-move-ahead",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Crypto-related stocks are recovering following a period of selling pressure triggered by the CLARITY Act. The rebound suggests market resilience despite regulatory concerns.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TRCGEVT9CNFA3RQBK4NDTE/hi-japan-ipo-stocks-explained2.png"
+    },
+    {
+      "id": "art_5431360",
+      "title": "Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block times42m, Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block timesThe non-profit signaled support for reducing Ethereum block times, citing increasing institutional activity moving onto the smart-contract network.",
+      "url": "https://cointelegraph.com/news/ethereum-institutional-support-ethlabs-reduce-ethereum-block-times",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Ethereum Institutional has expressed support for a motion by Ethlabs to reduce Ethereum's block times. The move is intended to accommodate the increasing volume of institutional activity on the network.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2T7NKWN03KJ6ZDTP8T7YWSJ/hi-ethereum-classic-under-the-regulatory-spotlight.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_5438467",
+      "title": "Charts of the Week: CFTC is the Captain Now",
+      "url": "https://www.galaxy.com/insights/research/sec-cftc-crypto-regulation-enforcement-actions-chart-2026",
+      "source": "Galaxy — Network",
+      "note": "Galaxy's framing of CFTC regulatory momentum provides a useful analytical lens for tracking whether the agency's rulemaking velocity outpaces the SEC's, with direct implications for which tokens face what compliance costs.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/8HVzHlqW4ygB2V5nLaFq5/e538b8e34089378b68fb9b701fbc0465/History_of_proof_of_work_THUMBNAIL__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5380155",
+      "title": "Revolut mulls dual listing in London and New York",
+      "url": "https://sifted.eu/articles/revolut-dual-listing-2/",
+      "source": "Sifted",
+      "note": "Revolut's dual-listing deliberation matters for crypto-adjacent fintechs mapping their own path to public-market capital and regulatory credibility across jurisdictions.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2000,quality=75,fit=cover,format=auto/wp-content/uploads/2026/04/20103840/PR-headshot-landscape-nik-1-1.png"
+    },
+    {
+      "id": "art_5391925",
+      "title": "Crypto Markets Recover as Rates and Lending Conditions Shift",
+      "url": "https://www.galaxy.com/insights/perspectives/crypto-markets-recover-as-rates-and-lending-conditions-shift",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's rates-and-lending analysis offers a quantitative check on whether the current crypto recovery is driven by macro repricing or idiosyncratic flows, which determines how we underwrite duration risk in token portfolios.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/1jzAk7rknv3oKBCjUc17S0/dc84bbec9e437302fec57b4d959c3e43/Crypto_Credit_Remains_Resilient_Despite_Macro-Driven_Market_Volatility_hero.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_5437070",
+          "title": "Bitcoin reclaims $80,000, Solana and Hyperliquid rally as crypto markets shrug off Clarity setback",
+          "url": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/03/20220329_Crypto_Liquidity_And_Sanctions.jpg"
+        },
+        {
+          "id": "art_5385814",
+          "title": "JPMorgan says bitcoin could get more support than gold if ETF hedging eases",
+          "url": "https://www.theblock.co/news/markets/2026-09-17-jpmorgan-bitcoin-gold-415421",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2024/05/20240501_JpMorgan_News_3.jpg"
+        },
+        {
+          "id": "art_5370328",
+          "title": "Grayscale's Pandl still sees bitcoin's $58K low as the bottom, gives clients 'green light'",
+          "url": "https://www.theblock.co/news/markets/2026-09-17-grayscales-pandl-still-sees-bitcoins-58k-low-as-the-bottom-gives-clients-green-light-415346",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/09/bitcoin.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_5445664",
+          "title": "Binance launches 24/7 FX perps with weekend pricing system15m",
+          "url": "https://cointelegraph.com/news/binance-expands-tradfi-push-with-247-foreign-exchange-perpetuals",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TWPXVTDCGSQ1MYSQ30VK2W/man-office-screen-computer02-2.png"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_5431360",
+          "title": "Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block times42m, Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block timesThe non-profit signaled support for reducing Ethereum block times, citing increasing institutional activity moving onto the smart-contract network.",
+          "url": "https://cointelegraph.com/news/ethereum-institutional-support-ethlabs-reduce-ethereum-block-times",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2T7NKWN03KJ6ZDTP8T7YWSJ/hi-ethereum-classic-under-the-regulatory-spotlight.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_5411096",
+          "title": "Zcash targets November for NU7 mainnet upgrade with 25-second blocks",
+          "url": "https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2SBV8SBEEFJVCB357QGD89N/nu7-zec.png"
+        },
+        {
+          "id": "art_5381296",
+          "title": "Zcash miner Fortitude taps former Hut 8 CEO to lead ahead of public listing16m",
+          "url": "https://cointelegraph.com/news/former-hut-8-ceo-jaime-leverton-to-lead-zcash-miner-fortitude-ahead-of-nasdaq-listing",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_5379854",
+          "title": "'There’s not enough block space': Avalanche Treasury CEO says AI agents could crunch L1 blockspace",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-17-not-enough-block-space-avalanche-treasury-ceo-says-ai-agents-crunch-blockchain-capacity-415397",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2023/10/avalanche.jpeg"
+        },
+        {
+          "id": "art_5374838",
+          "title": "Maroo: A Korean Chain Built in Korea",
+          "url": "https://reports.tiger-research.com/p/maroo-a-korean-chain-built-in-korea-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!3URD!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215938883%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5374839",
+          "title": "한국에서 태어난 한국의 체인, 마루",
+          "url": "https://reports.tiger-research.com/p/maroo-a-korean-chain-built-in-korea-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!QANg!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F215938892%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_5376944",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/introducing-agentic-detection-asset-monitoring-built-for-the-ai-era",
+          "source": "Blockworks (3)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_5443280",
+          "title": "Crypto stocks rebound after CLARITY Act selloff29m",
+          "url": "https://cointelegraph.com/news/crypto-stocks-rebound-after-clarity-selloff-as-us-regulators-move-ahead",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TRCGEVT9CNFA3RQBK4NDTE/hi-japan-ipo-stocks-explained2.png"
+        },
+        {
+          "id": "art_5391925",
+          "title": "Crypto Markets Recover as Rates and Lending Conditions Shift",
+          "url": "https://www.galaxy.com/insights/perspectives/crypto-markets-recover-as-rates-and-lending-conditions-shift",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/1jzAk7rknv3oKBCjUc17S0/dc84bbec9e437302fec57b4d959c3e43/Crypto_Credit_Remains_Resilient_Despite_Macro-Driven_Market_Volatility_hero.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5423958",
+          "title": "Kevin O'Leary is buying crypto again, says major stock exchange adoption is the 'watershed moment' to watch",
+          "url": "https://www.theblock.co/news/business/2026-09-18-kevin-oleary-is-buying-crypto-again-says-major-stock-exchange-adoption-is-the-watershed-moment-to-watch-415491",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2022/04/Screen-Shot-2022-04-06-at-1.40.50-PM.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_5386656",
+          "title": "Crypto.com founder: Crypto’s battles will continue, but the war is over",
+          "url": "https://fortune.com/2026/09/17/crypto-com-founder-war-is-over-we-won-clarity-act-defeat/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_5445064",
+          "title": "Sydney Sweeney doesn’t just star in controversial ads. She helps engineer them.",
+          "url": "https://fortune.com/2026/09/18/sydney-sweeney-novig-viral-ads/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2295598439.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_5448048",
+          "title": "Coinbase files to bring single-stock perpetual futures to US market23m, Coinbase files to bring single-stock perpetual futures to US marketCoinbase wants to bring 24/5 perpetual futures trading to individual US stocks, with its proposed contracts now awaiting regulatory approval.",
+          "url": "https://cointelegraph.com/news/coinbase-files-to-bring-single-stock-perpetual-futures-to-us-market",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2V02EPZ2W43H6167S8HZBPZ/hi-uk-compliance-deadline-is-upcoming-coinbase.png"
+        },
+        {
+          "id": "art_5423016",
+          "title": "Stablecoin payments firm dtcpay closes $25M round with SBI backing",
+          "url": "https://cointelegraph.com/news/dtcpay-25m-series-a-sbi-stablecoin-payments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2SW0NN1AJCM8SBK7NYC8PRK/hi-crypto-negotiation-1.jpg"
+        },
+        {
+          "id": "art_5380155",
+          "title": "Revolut mulls dual listing in London and New York",
+          "url": "https://sifted.eu/articles/revolut-dual-listing-2/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2000,quality=75,fit=cover,format=auto/wp-content/uploads/2026/04/20103840/PR-headshot-landscape-nik-1-1.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_5438465",
+          "title": "SEC Paves Way for Tokenized Stocks With Secondary Trading Exemption",
+          "url": "https://www.galaxy.com/insights/research/sec-innovation-exemption-tokenized-stocks-secondary-trading-nms-permissioned-amm",
+          "source": "Galaxy — Network",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4IufvwR1m8f4DmZL5y02BI/2c8f689ff2e87e5f511d78633f15f8e8/Regulation-3_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5438512",
+          "title": "CFTC submits crypto market regulation plan for White House review",
+          "url": "https://cointelegraph.com/news/cftc-submits-crypto-market-regulation-plan-for-white-house-review",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TJB7047S01XKJY4FWVJGEK/judge-hammer-regulation-cftc-2.jpg"
+        },
+        {
+          "id": "art_5433744",
+          "title": "Banks double on EU MiCA crypto provider list as share hits 23%",
+          "url": "https://cointelegraph.com/news/banks-double-eu-mica-crypto-register-esma",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2T9WY6ZEBREY64C7KQFFW2D/2222222.png"
+        },
+        {
+          "id": "art_5390582",
+          "title": "US sanctions Iranian crypto exchange BitBank over alleged bitcoin transfers to IRGC",
+          "url": "https://www.theblock.co/news/regulation/2026-09-17-us-sanctions-iranian-crypto-exchange-bitbank-alleged-bitcoin-transfers-to-irgc-415462",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2021/02/20210203_Department_of_Treasury.png"
+        },
+        {
+          "id": "art_5438467",
+          "title": "Charts of the Week: CFTC is the Captain Now",
+          "url": "https://www.galaxy.com/insights/research/sec-cftc-crypto-regulation-enforcement-actions-chart-2026",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/8HVzHlqW4ygB2V5nLaFq5/e538b8e34089378b68fb9b701fbc0465/History_of_proof_of_work_THUMBNAIL__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5420632",
+          "title": "Binance brushes off Lagarde MiCA speculation, reaffirms Europe commitment7m, Binance brushes off Lagarde MiCA speculation, reaffirms Europe commitmentBinance declined to address reports of ECB intervention in its Greek MiCA bid, saying it remains committed to securing authorization in Europe.",
+          "url": "https://cointelegraph.com/news/binance-cites-speculation-report-ecb-chief-mica-intervention",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_5365818",
+          "title": "Polymarket users referred to prosecutors in South Korea: Report",
+          "url": "https://cointelegraph.com/news/south-korea-polymarket-users-prosecutors-gambling-probe",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2Q8HM2XMP2QNNDJSY3Y2316/hi-polymarket-ban-sk.png"
+        },
+        {
+          "id": "art_5372958",
+          "title": "Crypto adoption blooming in Germany, while UK is falling ‘behind,’ says CoinShares researcher",
+          "url": "https://cointelegraph.com/news/crypto-adoption-blooming-germany-uk-behind-researcher",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2QHYX57TFPR50NZSRV98AR3/hi-german-crypto-ecosystem-2021.jpg"
+        },
+        {
+          "id": "art_5438466",
+          "title": "AI Labs’ Call to 'Pace Frontier’ Give Crypto Vets FTX Flashbacks",
+          "url": "https://www.galaxy.com/insights/research/dario-amodei-pace-frontier-ai-essay-crypto-ftx-effective-altruism-critique",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/60Erq47al0rhGI4ZptL9PP/90465747a6492844895e3b96fdeeb1c3/General-Globe-5_Orange-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_5374148",
+          "title": "S&P Global to acquire blockchain security platform OpenZeppelin",
+          "url": "https://cointelegraph.com/news/sp-global-openzeppelin-acquisition-blockchain-security",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2QNBNVRQ7TMRW88EK0EQ7P2/world-sp-global-rating.jpg"
+        },
+        {
+          "id": "art_5367008",
+          "title": "Revolut says no direct contact after $3 million public ransom demand17m",
+          "url": "https://cointelegraph.com/news/revolut-data-breach-monero-ransom-no-direct-contact",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_5411097",
+          "title": "Cardano’s IOG warns users to avoid YouTube channel amid apparent hijack46m",
+          "url": "https://cointelegraph.com/news/cardanos-iog-warns-users-to-avoid-youtube-channel-amid-giveaway-scam",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_5432302",
+          "title": "Ava Labs president says NYSE spent a year testing Avalanche technology for tokenization plans",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-18-ava-labs-president-says-nyse-spent-a-year-testing-avalanche-technology-tokenization-plans-415509",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2019/02/nyse.jpg"
+        },
+        {
+          "id": "art_5429568",
+          "title": "Onchain finance is coming to Wall Street—and ignoring it is no longer an option",
+          "url": "https://fortune.com/2026/09/18/onchain-finance-is-coming-to-wall-street-and-ignoring-it-is-no-longer-an-option/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2294331262.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_5384622",
+          "title": "As RWA trading surges on Hyperliquid, Dragonfly’s Qureshi makes the case for a multichain future",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-17-as-rwa-trading-surges-hyperliquid-dragonflys-qureshi-makes-case-multichain-future-415406",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/wp/uploads/2026/04/20260409_Tokens_News_3.jpg"
+        },
+        {
+          "id": "art_5390110",
+          "title": "The tokenization platforms onboarding TradFi asset managers ",
+          "url": "https://tokenterminal.com/resources/newsletter/the-tokenization-platforms-onboarding-tradfi-asset-managers",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The SEC's tokenized stock exemption is not a handout. It's a bounded experiment with a kill switch, and that is precisely why it will get used. Issuers who have watched blockchain pilots die in legal review now have a documented path: tokenize, trade secondarily, and let the Commission observe what breaks. We underwrote this sector on the assumption that regulators would prefer observation to prohibition. The exemption confirms the hypothesis, but tightens the timeline. S&P Global buying OpenZeppelin the same week is not coincidence. Incumbents are purchasing the verification layer rather than building it, which tells us where they expect the bottleneck to sit. Coinbase's single-stock perpetual filing adds a third vector: derivatives liquidity migrating to 24/5 rails. Three separate signals, one repricing. Traditional finance is not adopting crypto infrastructure. It is colonizing the interface. The testable question is whether tokenized equities trade at a liquidity discount or premium to their legacy twins. If the spread compresses, the middleware providers—custodians, oracles, security auditors—capture the value. If it widens, the experiment gets recalled. We are watching the first trades."
+}
