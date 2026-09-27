@@ -1,0 +1,505 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-27",
+  "date_display": "September 27, 2026",
+  "generated_at": "2026-09-27T05:00:17.724Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Bitcoin ETFs record $2.4B weekly inflow as regulatory guardrails weaken at SEC and strengthen in Congress",
+    "tldr": "Institutional capital is flooding back into Bitcoin ETFs at record pace even as the SEC loses its most crypto-sympathetic commissioner and the Fed advances stablecoin rules. The divergence between capital flows and regulatory architecture is the defining tension."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the gap between price action and policy formation is widening fast.",
+  "market_snapshot": {
+    "as_of": "2026-09-27T05:00:17.724Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$84,304",
+        "change_24h": "+0.4%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,692",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.90T",
+        "change_24h": "-2.5%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$95.6B",
+        "change_24h": "+0.2%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 10,
+    "bearish": 8,
+    "neutral": 6,
+    "deduped": 12
+  },
+  "top_signals": [
+    {
+      "id": "art_5822550",
+      "title": "KelpDAO sues LayerZero, claims it endorsed setup used in $292 million rsETH exploit",
+      "url": "https://www.theblock.co/news/regulation/2026-09-25-kelpdao-sues-layerzero-claims-it-endorsed-setup-used-in-292-million-rseth-exploit-416361",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "KelpDAO (via Evercrest Technologies) is suing LayerZero, alleging the protocol endorsed a flawed DVN configuration that led to a $292 million rsETH exploit. The lawsuit focuses on the security setup used in the Unichain bridge.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-09-25-kelpdao-sues-layerzero-claims-it-endorsed-setup-used-in-292-million-rseth-exploit-416361",
+      "themes": [
+        "security",
+        "legal-exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230412_Legal_Generic_4.jpg",
+      "why_it_matters": "The KelpDAO suit against LayerZero tests whether bridge protocols bear liability for DVN configurations they endorse, with implications for how underwriters price cross-chain infrastructure risk going forward."
+    },
+    {
+      "id": "art_5900167",
+      "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
+      "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "U.S. spot Bitcoin ETFs saw a massive $2.4 billion weekly inflow, the largest since October, pushing net flows for 2026 into positive territory. Simultaneously, Ether funds recovered from previous outflows with $690 million in net inflows.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+      "themes": [
+        "bitcoin",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png",
+      "why_it_matters": "The $2.4 billion weekly inflow into Bitcoin ETFs, largest since October, suggests institutional allocators are repricing BTC independently of Ether and treating it as a discrete macro allocation again."
+    },
+    {
+      "id": "art_5887276",
+      "title": "Fed requests comment on two proposals for stablecoin issuers under GENIUS Act",
+      "url": "https://cointelegraph.com/news/fed-requests-comment-on-two-proposals-for-stablecoin-issuers-under-genius-act",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The Federal Reserve is seeking public feedback on two proposals regarding the regulation of stablecoin issuers under the GENIUS Act. This move indicates a step toward formalizing the legal framework for digital asset issuers in the US.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/fed-requests-comment-on-two-proposals-for-stablecoin-issuers-under-genius-act",
+      "themes": [
+        "regulation",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3ES7QX6TADAK53QHWY7G7SS/teaching-stablecoin-board.jpg",
+      "why_it_matters": "The Fed's request for comment on stablecoin issuer rules under the GENIUS Act signals that US dollar-denominated digital liability regulation is moving from agency guidance to statutory architecture."
+    },
+    {
+      "id": "art_5880112",
+      "title": "SEC Commissioner Hester Peirce to leave post on Oct. 2",
+      "url": "https://cointelegraph.com/news/sec-commissioner-hester-peirce-to-leave-post-on-oct-2",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "SEC Commissioner Hester Peirce, known as 'Crypto Mom' for her pro-innovation stance, is set to leave her post on October 2. Her departure removes a key internal voice advocating for clearer regulatory frameworks for digital assets.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/sec-commissioner-hester-peirce-to-leave-post-on-oct-2",
+      "themes": [
+        "regulation",
+        "sec"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3EF3D5VFWA1TXNZDN794WQV/hester-peirce-sec-1.jpg",
+      "why_it_matters": "Peirce's October 2 departure removes the SEC's most consistent internal advocate for crypto rulemaking, likely slowing commission-level clarity and shifting more regulatory initiative to Congress and the CFTC."
+    },
+    {
+      "id": "art_5875336",
+      "title": "CFTC sues Cash FX, alleges $950M crypto-linked forex scheme",
+      "url": "https://cointelegraph.com/news/cftc-sues-cash-fx-alleges-950m-crypto-linked-forex-scheme",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CFTC has filed a lawsuit against Cash FX and three individuals for allegedly operating a $950 million crypto-linked forex scheme. The action targets fraudulent activities involving digital assets and foreign exchange trading.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/cftc-sues-cash-fx-alleges-950m-crypto-linked-forex-scheme",
+      "themes": [
+        "regulation",
+        "enforcement"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3E7R5YFBEX21VBGW5MY4472/hi-how-can-transform-government-sector-cftc.jpg",
+      "why_it_matters": "The CFTC's $950 million action against Cash FX demonstrates that crypto-adjacent forex fraud remains a priority enforcement vector, reinforcing that retail-facing hybrid products attract disproportionate regulatory scrutiny."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_5832352",
+      "company": "CoinMarketCap / CoinGlass",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+      "summary": "CoinMarketCap has acquired the crypto derivatives data platform CoinGlass to expand its data offerings. CoinGlass will continue to operate under its own brand, team, and pricing structure."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_5890858",
+      "title": "Kalshi loses appeal, setting up potential Supreme Court case20m, Kalshi loses appeal, setting up potential Supreme Court caseThe 6th US Circuit Court of Appeals ruled against prediction market Kalshi, siding with Ohio and Tennessee on regulating sports-event contracts under state laws.",
+      "url": "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The 6th US Circuit Court of Appeals has ruled against prediction market Kalshi, supporting the rights of Ohio and Tennessee to regulate sports-event contracts. This decision sets the stage for a potential appeal to the US Supreme Court.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1M5NCSJSS1MAFGEDXXFPQN1/court-vs-kalshi-3.jpg"
+    },
+    {
+      "id": "art_5835684",
+      "title": "Magic Eden legacy approvals leave $5.7 million in NFTs exposed to exploit before rescue",
+      "url": "https://www.theblock.co/news/web3/2026-09-25-magic-eden-legacy-approvals-leave-5-7-million-in-nfts-exposed-to-exploit-before-rescue-416874",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Magic Eden reported that legacy EVM approvals exposed NFTs valued at over $5.7 million to a potential exploit involving the Limit Break Payment Processor V2. The assets were reportedly rescued before the exploit could be fully leveraged.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/01/20230110_MagicEden_Generic3.jpg"
+    },
+    {
+      "id": "art_5837029",
+      "title": "Charts of the Week: Bitcoin ETPs Return to 'Flow State'; Treasury Yields Soar",
+      "url": "https://www.galaxy.com/insights/research/bitcoin-etp-inflows-10-year-treasury-yield",
+      "source": "Galaxy — Insights",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "U.S. spot Bitcoin ETPs experienced their largest daily inflow of 2026. This surge in digital asset investment occurred simultaneously with a significant rise in 10-year Treasury yields.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6IKnuMCm6hcbYoIaYDOMsh/32898b7ef2cb170cd9654b738c79d374/General-ChartGraph-4_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5812054",
+      "title": "Researchers propose Zcash-style private Bitcoin transfers without a soft fork",
+      "url": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Researchers have proposed a method to enable Zcash-style private transfers on the Bitcoin network without requiring a soft fork. The proposal focuses on enhancing user privacy through advanced cryptographic techniques while maintaining network compatibility.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BDDFF8HPKJW2SF5YG537KT/shielded-bitcoin.png"
+    },
+    {
+      "id": "art_5842848",
+      "title": "Man charged in $16 million crypto 'massive pig butchering’ scam",
+      "url": "https://www.theblock.co/news/regulation/2026-09-25-man-charged-in-16-million-crypto-massive-pig-butchering-scam-416895",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A man has been charged in connection with a massive 'pig butchering' cryptocurrency scam that defrauded victims of $16 million. Prosecutors allege that funds from multiple U.S.-based victims were traced to the defendant's crypto wallet.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/image.png"
+    },
+    {
+      "id": "art_5834491",
+      "title": "Strategy proposes daily dividends for STRC, STRD, STRF and STRK preferred stocks",
+      "url": "https://www.theblock.co/news/business/2026-09-25-strategy-proposes-daily-dividends-for-strc-strd-strf-and-strk-preferred-stocks-416869",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "MicroStrategy has proposed transitioning to daily dividend payments for its STRC, STRD, STRF, and STRK preferred stocks. The company indicated that the total payment obligations and dividend rates would remain unchanged under this new schedule.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Microstrategy_News.jpg"
+    },
+    {
+      "id": "art_5832946",
+      "title": "Quantum won’t kill crypto—but it could accelerate Wall Street’s adoption of blockchain",
+      "url": "https://fortune.com/2026/09/25/chris-perkins-op-ed/",
+      "source": "Fortune Crypto",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "The article discusses the potential impact of quantum computing on cryptography and blockchain technology. A Franklin Templeton executive suggests that while quantum computing poses a threat, the industry's preparation could actually accelerate the adoption of blockchain by Wall Street.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2287693009.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_5831158",
+      "title": "SlowMist has yet to confirm crypto theft from iPhone Safari attack",
+      "url": "https://cointelegraph.com/news/no-confirmed-crypto-theft-iphone-safari-attack-slowmist",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "SlowMist is investigating a potential crypto theft campaign targeting iPhone Safari users. The attack reportedly leverages the DarkSword exploit chain, specifically affecting iOS versions 18.4 to 18.6.2.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BTS7FTRRJXR7DWT1DQ8993/hi-browser-for-ios1.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_5837029",
+      "title": "Charts of the Week: Bitcoin ETPs Return to 'Flow State'; Treasury Yields Soar",
+      "url": "https://www.galaxy.com/insights/research/bitcoin-etp-inflows-10-year-treasury-yield",
+      "source": "Galaxy — Insights",
+      "note": "The Galaxy flow data likely contains the granular ETF creation/redemption mechanics behind today's $2.4 billion headline, essential for distinguishing institutional conviction from short-term rebalancing.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6IKnuMCm6hcbYoIaYDOMsh/32898b7ef2cb170cd9654b738c79d374/General-ChartGraph-4_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5837031",
+      "title": "‘Shielded Bitcoin' Paper Proposes Private BTC Transfers",
+      "url": "https://www.galaxy.com/insights/research/shielded-bitcoin-private-btc-transfers-l1-zcash",
+      "source": "Galaxy — Insights",
+      "note": "Shielded Bitcoin proposals matter for founders building in jurisdictions where transaction traceability is becoming a compliance chokepoint, not merely a privacy preference.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6I3b6n5PDHzZdn0iqDDYTO/27a01b820a59745ec785c0fb177cf6bf/Bitcoin-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5837030",
+      "title": "Why Mention Markets Are So Difficult to Police",
+      "url": "https://www.galaxy.com/insights/research/cftc-mention-market-guidance-manipulation-risks",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's analysis of prediction market policing difficulties arrives as these platforms face their first stress tests, offering a framework for how regulators will approach information-market design.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/eZBbPZlOWK6AHiVDTslrs/811e2f7cb497f3db64c9f45c2022d1f9/Regulation-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_5900167",
+          "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
+          "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
+        },
+        {
+          "id": "art_5837029",
+          "title": "Charts of the Week: Bitcoin ETPs Return to 'Flow State'; Treasury Yields Soar",
+          "url": "https://www.galaxy.com/insights/research/bitcoin-etp-inflows-10-year-treasury-yield",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6IKnuMCm6hcbYoIaYDOMsh/32898b7ef2cb170cd9654b738c79d374/General-ChartGraph-4_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5812054",
+          "title": "Researchers propose Zcash-style private Bitcoin transfers without a soft fork",
+          "url": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BDDFF8HPKJW2SF5YG537KT/shielded-bitcoin.png"
+        },
+        {
+          "id": "art_5837031",
+          "title": "‘Shielded Bitcoin' Paper Proposes Private BTC Transfers",
+          "url": "https://www.galaxy.com/insights/research/shielded-bitcoin-private-btc-transfers-l1-zcash",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6I3b6n5PDHzZdn0iqDDYTO/27a01b820a59745ec785c0fb177cf6bf/Bitcoin-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_5832352",
+          "title": "CoinMarketCap buys CoinGlass to expand crypto derivatives data",
+          "url": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3C95VNCWEKXAFT14D52K8ZQ/crypto-market-trading2.jpg"
+        },
+        {
+          "id": "art_5832946",
+          "title": "Quantum won’t kill crypto—but it could accelerate Wall Street’s adoption of blockchain",
+          "url": "https://fortune.com/2026/09/25/chris-perkins-op-ed/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2287693009.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_5834491",
+          "title": "Strategy proposes daily dividends for STRC, STRD, STRF and STRK preferred stocks",
+          "url": "https://www.theblock.co/news/business/2026-09-25-strategy-proposes-daily-dividends-for-strc-strd-strf-and-strk-preferred-stocks-416869",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Microstrategy_News.jpg"
+        },
+        {
+          "id": "art_5840710",
+          "title": "Strategy seeks shareholder approval for daily preferred stock dividends",
+          "url": "https://cointelegraph.com/news/strategy-seeks-shareholder-approval-daily-preferred-stock-dividends",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3CNP9TAS87YZRJ48GX2N99M/hi-strategyb.png"
+        },
+        {
+          "id": "art_5892602",
+          "title": "Crypto Fundraisings on Week 20 ",
+          "url": "https://crypto-fundraising.info/blog/dates-20-26-sep-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/20-26-Sep-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_5837028",
+          "title": "Weekly Research Brief: AI Governance, Shielded Bitcoin, and Mention Markets",
+          "url": "https://www.galaxy.com/insights/research/ai-agents-bitcoin-privacy-cftc-mention-markets",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4YdP5n16gPHlJncHOt5BFH/37bea3a14a3c2e33026133bd18e6b7c7/General-ChartGraph-3_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_5887276",
+          "title": "Fed requests comment on two proposals for stablecoin issuers under GENIUS Act",
+          "url": "https://cointelegraph.com/news/fed-requests-comment-on-two-proposals-for-stablecoin-issuers-under-genius-act",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3ES7QX6TADAK53QHWY7G7SS/teaching-stablecoin-board.jpg"
+        },
+        {
+          "id": "art_5880112",
+          "title": "SEC Commissioner Hester Peirce to leave post on Oct. 2",
+          "url": "https://cointelegraph.com/news/sec-commissioner-hester-peirce-to-leave-post-on-oct-2",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3EF3D5VFWA1TXNZDN794WQV/hester-peirce-sec-1.jpg"
+        },
+        {
+          "id": "art_5875336",
+          "title": "CFTC sues Cash FX, alleges $950M crypto-linked forex scheme",
+          "url": "https://cointelegraph.com/news/cftc-sues-cash-fx-alleges-950m-crypto-linked-forex-scheme",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3E7R5YFBEX21VBGW5MY4472/hi-how-can-transform-government-sector-cftc.jpg"
+        },
+        {
+          "id": "art_5890858",
+          "title": "Kalshi loses appeal, setting up potential Supreme Court case20m, Kalshi loses appeal, setting up potential Supreme Court caseThe 6th US Circuit Court of Appeals ruled against prediction market Kalshi, siding with Ohio and Tennessee on regulating sports-event contracts under state laws.",
+          "url": "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1M5NCSJSS1MAFGEDXXFPQN1/court-vs-kalshi-3.jpg"
+        },
+        {
+          "id": "art_5850263",
+          "title": "Ex-CFTC leader to leave Blockchain Association after CLARITY vote fails",
+          "url": "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3D2CSJVVHTXWXSFEBTMN9GF/leaving-the-company-plain-1.jpg"
+        },
+        {
+          "id": "art_5838916",
+          "title": "Andrew Cuomo: America can’t afford to fall behind on the future of finance",
+          "url": "https://fortune.com/2026/09/25/andrew-cuomo-digital-assets-regulation-future-of-finance/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_5837030",
+          "title": "Why Mention Markets Are So Difficult to Police",
+          "url": "https://www.galaxy.com/insights/research/cftc-mention-market-guidance-manipulation-risks",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/eZBbPZlOWK6AHiVDTslrs/811e2f7cb497f3db64c9f45c2022d1f9/Regulation-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5819218",
+          "title": "Samourai Wallet co-founder faces new transfer after 30-day ordeal",
+          "url": "https://cointelegraph.com/news/samourai-wallet-co-founder-30-day-prison-transfer",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BM3DN348KFGP7858XFMCWJ/prison.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_5822550",
+          "title": "KelpDAO sues LayerZero, claims it endorsed setup used in $292 million rsETH exploit",
+          "url": "https://www.theblock.co/news/regulation/2026-09-25-kelpdao-sues-layerzero-claims-it-endorsed-setup-used-in-292-million-rseth-exploit-416361",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230412_Legal_Generic_4.jpg"
+        },
+        {
+          "id": "art_5835684",
+          "title": "Magic Eden legacy approvals leave $5.7 million in NFTs exposed to exploit before rescue",
+          "url": "https://www.theblock.co/news/web3/2026-09-25-magic-eden-legacy-approvals-leave-5-7-million-in-nfts-exposed-to-exploit-before-rescue-416874",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/01/20230110_MagicEden_Generic3.jpg"
+        },
+        {
+          "id": "art_5842848",
+          "title": "Man charged in $16 million crypto 'massive pig butchering’ scam",
+          "url": "https://www.theblock.co/news/regulation/2026-09-25-man-charged-in-16-million-crypto-massive-pig-butchering-scam-416895",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/image.png"
+        },
+        {
+          "id": "art_5831158",
+          "title": "SlowMist has yet to confirm crypto theft from iPhone Safari attack",
+          "url": "https://cointelegraph.com/news/no-confirmed-crypto-theft-iphone-safari-attack-slowmist",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BTS7FTRRJXR7DWT1DQ8993/hi-browser-for-ios1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_5846680",
+          "title": "Tether says it had ‘limited’ exposure to bank linked to $84M US seizure",
+          "url": "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3CMJJSCGPAGYWMC5WQF9J64/hi-what-happens-to-seized-cryptocurrency-1.jpg"
+        },
+        {
+          "id": "art_5818618",
+          "title": "Animoca’s Evan Auyang worked in finance and public transit before crypto—Why he thinks the blockchain should be more like a bus",
+          "url": "https://fortune.com/2026/09/25/animoca-evan-auyang-stablecoin-hong-kong/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Evan-Auyang-Animoca.jpg?resize=1200,600"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Bitcoin ETFs just pulled $2.4 billion in a week. That's not rotation from Ether, which took in $690 million separately. Two different flows, two different theses. We're watching allocators treat BTC as a standalone macro position again—Treasury volatility, dollar strength, duration trades—while ETH still struggles to find its narrative anchor post-ETF launch. The timing is not neutral. Hester Peirce leaves the SEC October 2. The Fed is now requesting comment on stablecoin rules under the GENIUS Act. One regulator loses its internal crypto advocate; another advances statutory architecture for dollar-denominated digital liabilities. The gap between capital price and policy formation is where we underwrite. If the SEC enforcement division interprets Peirce's departure as license to accelerate cases against staking, lending, and bridge protocols, the KelpDAO-LayerZero suit becomes a template, not an outlier. We are not calling a regime change. We are noting that the institutions buying Bitcoin this week are doing so into a regulatory picture that will look meaningfully different by year-end. The test: whether Q3 ETF inflows sustain if the SEC chair confirms no crypto-specific rulemaking until 2026. Our bet is they do, but the repricing of that assumption is what we're watching."
+}
