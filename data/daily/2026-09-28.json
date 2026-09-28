@@ -1,0 +1,470 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-28",
+  "date_display": "September 28, 2026",
+  "generated_at": "2026-09-28T05:00:16.111Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Ethereum reframes itself as compute layer; Zano proves chains still can't govern",
+    "tldr": "Vitalik Buterin's 2030 roadmap repositions Ethereum beyond blockchain semantics, while Zano's month-long rollback exposes the persistent governance-security gap in live networks. The contrast defines today's tension: infrastructure ambition versus operational fragility."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-09-28T05:00:16.111Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$83,447",
+        "change_24h": "-1.0%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,658",
+        "change_24h": "-1.3%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.85T",
+        "change_24h": "-4.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$94.9B",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 8,
+    "bearish": 5,
+    "neutral": 6,
+    "deduped": 25
+  },
+  "top_signals": [
+    {
+      "id": "art_5975724",
+      "title": "Zano rolls blockchain back a month after Gateway Address exploit",
+      "url": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Zano has implemented a blockchain rollback of approximately one month to rectify a security breach. The action follows a Gateway Address exploit that allowed unauthorized ZANO and Freedom Dollar tokens to be circulated.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
+      "themes": [
+        "security",
+        "exploit-recovery"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3JREXHTP98GQ5DQZXPMZ889/zano-rollback.jpg",
+      "why_it_matters": "A one-month rollback is not a security response; it is an admission that finality mechanisms and on-chain governance failed to contain an exploit in real time, raising the cost of underwriting any L1 that lacks mature incident response."
+    },
+    {
+      "id": "art_5950358",
+      "title": "'It's really not just a blockchain anymore': Vitalik Buterin maps Ethereum's path to 2030",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Vitalik Buterin outlined Ethereum's long-term technical roadmap leading up to 2030, emphasizing a shift beyond traditional blockchain architecture. He highlighted the upcoming Hegota upgrade as a transition point toward advanced technologies like recursive STARKs and quantum safety.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
+      "themes": [
+        "ethereum",
+        "infrastructure"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg",
+      "why_it_matters": "Buterin's reframing of Ethereum as 'not just a blockchain' signals a strategic pivot to capture enterprise and AI compute budgets, but the Hegota upgrade timeline to recursive STARKs must deliver measurable throughput gains before competing layers close the gap."
+    },
+    {
+      "id": "art_5939852",
+      "title": "Riot Platforms repays $200M credit facility, releases collateral13m",
+      "url": "https://cointelegraph.com/news/riot-platforms-repays-200m-credit-facility-releases-collateral",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Riot Platforms has fully repaid a $200 million credit facility, resulting in the release of its collateral. This move strengthens the company's balance sheet by reducing debt obligations.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/riot-platforms-repays-200m-credit-facility-releases-collateral",
+      "themes": [
+        "bitcoin",
+        "mining"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3H4K9S7MJRE0V8KP0S1ZAM6/hi-eu-vote-on-bitcoin-mining-ai-1.png",
+      "why_it_matters": "Riot's $200M debt retirement with collateral release demonstrates that well-capitalized miners are choosing balance-sheet strength over leverage, which we read as defensive positioning against a prolonged low-volatility environment in Bitcoin."
+    },
+    {
+      "id": "art_5832352",
+      "title": "CoinMarketCap buys CoinGlass to expand crypto derivatives data",
+      "url": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "CoinMarketCap has acquired the crypto derivatives data platform CoinGlass to expand its data offerings. CoinGlass will continue to operate under its own brand, team, and pricing structure.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+      "themes": [
+        "infrastructure",
+        "data-analytics"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3C95VNCWEKXAFT14D52K8ZQ/crypto-market-trading2.jpg",
+      "why_it_matters": "CoinMarketCap's acquisition of CoinGlass reflects consolidation pressure in crypto data infrastructure, where vertical integration of spot and derivatives analytics creates pricing power that standalone players cannot match."
+    },
+    {
+      "id": "art_5978116",
+      "title": "Newsom signs California ban on public officials issuing memecoins 5m, Newsom signs California ban on public officials issuing memecoins The law also restricts crypto companies from offering certain memecoins tied to public officials to California residents and takes effect for tokens issued from Jan. 1, 2027.",
+      "url": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "California Governor Gavin Newsom has signed a law banning public officials from issuing memecoins. The legislation also restricts crypto companies from offering memecoins tied to public officials to California residents, effective for tokens issued from January 1, 2027.",
+      "significance": 5,
+      "primary_source": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
+      "themes": [
+        "regulation",
+        "legal-compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3JX3KVEP7E99FBBRT94FX62/regulation-office-document-paper-california.jpg",
+      "why_it_matters": "California's memecoin ban for public officials, with its January 2027 effective date, establishes a compliance runway that will force token issuers to price regulatory risk into launch timelines, particularly for politically adjacent assets."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_5832352",
+      "company": "CoinMarketCap (acquiring CoinGlass)",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+      "summary": "CoinMarketCap has acquired the crypto derivatives data platform CoinGlass to expand its data offerings. CoinGlass will continue to operate under its own brand, team, and pricing structure."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_5968298",
+      "title": "Onchain analyst links $18.4 million in Robinhood Chain memecoin extractions to single rug-pull operation",
+      "url": "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "An onchain analyst has identified a rug-pull operation involving nine memecoin launches on the Robinhood Chain. The attackers allegedly bypassed anti-sniping taxes to extract approximately $18.4 million.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-2.png"
+    },
+    {
+      "id": "art_5837031",
+      "title": "‘Shielded Bitcoin' Paper Proposes Private BTC Transfers",
+      "url": "https://www.galaxy.com/insights/research/shielded-bitcoin-private-btc-transfers-l1-zcash",
+      "source": "Galaxy — Insights",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "A new research paper proposes a method for 'Shielded Bitcoin' to enable private transfers on the Bitcoin network. This development aligns with a growing trend and demand for privacy-preserving technologies within the BTC ecosystem.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6I3b6n5PDHzZdn0iqDDYTO/27a01b820a59745ec785c0fb177cf6bf/Bitcoin-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5825188",
+      "title": "Magic Eden scare puts 3,832 NFTs in whitehat protective custody",
+      "url": "https://cointelegraph.com/news/magic-eden-nft-whitehat-vulnerability",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "A whitehat hacker moved 3,832 NFTs into protective custody due to a suspected vulnerability on the Magic Eden marketplace. Yuga Labs has since clarified that the assets are safe.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BXKEGSARVJTVQV05A2NDRW/buy-internet-online-shop-nft.jpg"
+    },
+    {
+      "id": "art_5850263",
+      "title": "Ex-CFTC leader to leave Blockchain Association after CLARITY vote fails",
+      "url": "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Summer Mersinger is departing from the Blockchain Association following the failure of the CLARITY vote. Former CEO Kristin Smith will return to the organization as an interim leader.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3D2CSJVVHTXWXSFEBTMN9GF/leaving-the-company-plain-1.jpg"
+    },
+    {
+      "id": "art_5846680",
+      "title": "Tether says it had ‘limited’ exposure to bank linked to $84M US seizure",
+      "url": "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "neutral",
+      "summary": "Tether has clarified that it had minimal exposure to a bank involved in an $84 million seizure by the US Justice Department. The company stated that only a tiny fraction of its total assets were held at the affected institution.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3CMJJSCGPAGYWMC5WQF9J64/hi-what-happens-to-seized-cryptocurrency-1.jpg"
+    },
+    {
+      "id": "art_5838916",
+      "title": "Andrew Cuomo: America can’t afford to fall behind on the future of finance",
+      "url": "https://fortune.com/2026/09/25/andrew-cuomo-digital-assets-regulation-future-of-finance/",
+      "source": "Fortune Crypto",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Former Governor Andrew Cuomo argues that the United States must embrace the future of finance and digital assets to maintain global economic competitiveness. He emphasizes the need for a clear regulatory framework to prevent the industry from moving offshore.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Gov-Andrew-Cuomo-Headshot.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_5837030",
+      "title": "Why Mention Markets Are So Difficult to Police",
+      "url": "https://www.galaxy.com/insights/research/cftc-mention-market-guidance-manipulation-risks",
+      "source": "Galaxy — Insights",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The article discusses the challenges the CFTC faces in policing mention markets and coordinating trading risks. It highlights the difficulty of regulating individuals who independently determine market outcomes despite regulatory guidance.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/eZBbPZlOWK6AHiVDTslrs/811e2f7cb497f3db64c9f45c2022d1f9/Regulation-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5819218",
+      "title": "Samourai Wallet co-founder faces new transfer after 30-day ordeal",
+      "url": "https://cointelegraph.com/news/samourai-wallet-co-founder-30-day-prison-transfer",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Samourai Wallet co-founder Keonne Rodriguez has reported a series of federal prison transfers following his detention. He claims a new transfer is imminent after his treatment program was deactivated.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BM3DN348KFGP7858XFMCWJ/prison.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_5837031",
+      "title": "‘Shielded Bitcoin' Paper Proposes Private BTC Transfers",
+      "url": "https://www.galaxy.com/insights/research/shielded-bitcoin-private-btc-transfers-l1-zcash",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's shielded Bitcoin proposal merits attention because it addresses the tension between Bitcoin's transparent ledger and institutional demand for transactional privacy, a gap currently filled by custodial workarounds.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6I3b6n5PDHzZdn0iqDDYTO/27a01b820a59745ec785c0fb177cf6bf/Bitcoin-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5837030",
+      "title": "Why Mention Markets Are So Difficult to Police",
+      "url": "https://www.galaxy.com/insights/research/cftc-mention-market-guidance-manipulation-risks",
+      "source": "Galaxy — Insights",
+      "note": "The difficulty of policing mention markets has direct implications for how we underwrite social token and prediction platforms, given that manipulation vectors often outpace detection tooling.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/eZBbPZlOWK6AHiVDTslrs/811e2f7cb497f3db64c9f45c2022d1f9/Regulation-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_5837028",
+      "title": "Weekly Research Brief: AI Governance, Shielded Bitcoin, and Mention Markets",
+      "url": "https://www.galaxy.com/insights/research/ai-agents-bitcoin-privacy-cftc-mention-markets",
+      "source": "Galaxy — Insights",
+      "note": "This weekly brief ties together AI governance, shielded Bitcoin, and mention markets, suggesting Galaxy sees convergence between privacy tech and automated market surveillance that most investors treat as separate categories.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4YdP5n16gPHlJncHOt5BFH/37bea3a14a3c2e33026133bd18e6b7c7/General-ChartGraph-3_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_5939852",
+          "title": "Riot Platforms repays $200M credit facility, releases collateral13m",
+          "url": "https://cointelegraph.com/news/riot-platforms-repays-200m-credit-facility-releases-collateral",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3H4K9S7MJRE0V8KP0S1ZAM6/hi-eu-vote-on-bitcoin-mining-ai-1.png"
+        },
+        {
+          "id": "art_5933877",
+          "title": "Saylor outlines ‘bill of digital rights’ to help build prosperity in future economyOur ambition should be to “enable 10 million new companies to raise capital,” Strategy’s executive chairman Michael Saylor wrote in an essay.",
+          "url": "https://cointelegraph.com/news/saylor-outlines-bill-of-digital-rights-to-help-build-prosperity-in-future-economy",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_5837031",
+          "title": "‘Shielded Bitcoin' Paper Proposes Private BTC Transfers",
+          "url": "https://www.galaxy.com/insights/research/shielded-bitcoin-private-btc-transfers-l1-zcash",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6I3b6n5PDHzZdn0iqDDYTO/27a01b820a59745ec785c0fb177cf6bf/Bitcoin-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_5950358",
+          "title": "'It's really not just a blockchain anymore': Vitalik Buterin maps Ethereum's path to 2030",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_5832352",
+          "title": "CoinMarketCap buys CoinGlass to expand crypto derivatives data",
+          "url": "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3C95VNCWEKXAFT14D52K8ZQ/crypto-market-trading2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_5840710",
+          "title": "Strategy seeks shareholder approval for daily preferred stock dividends",
+          "url": "https://cointelegraph.com/news/strategy-seeks-shareholder-approval-daily-preferred-stock-dividends",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3CNP9TAS87YZRJ48GX2N99M/hi-strategyb.png"
+        },
+        {
+          "id": "art_5892602",
+          "title": "Crypto Fundraisings on Week 20 ",
+          "url": "https://crypto-fundraising.info/blog/dates-20-26-sep-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/20-26-Sep-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_5895387",
+          "title": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
+          "url": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-1.png"
+        },
+        {
+          "id": "art_5837028",
+          "title": "Weekly Research Brief: AI Governance, Shielded Bitcoin, and Mention Markets",
+          "url": "https://www.galaxy.com/insights/research/ai-agents-bitcoin-privacy-cftc-mention-markets",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4YdP5n16gPHlJncHOt5BFH/37bea3a14a3c2e33026133bd18e6b7c7/General-ChartGraph-3_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_5978116",
+          "title": "Newsom signs California ban on public officials issuing memecoins 5m, Newsom signs California ban on public officials issuing memecoins The law also restricts crypto companies from offering certain memecoins tied to public officials to California residents and takes effect for tokens issued from Jan. 1, 2027.",
+          "url": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3JX3KVEP7E99FBBRT94FX62/regulation-office-document-paper-california.jpg"
+        },
+        {
+          "id": "art_5850263",
+          "title": "Ex-CFTC leader to leave Blockchain Association after CLARITY vote fails",
+          "url": "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3D2CSJVVHTXWXSFEBTMN9GF/leaving-the-company-plain-1.jpg"
+        },
+        {
+          "id": "art_5838916",
+          "title": "Andrew Cuomo: America can’t afford to fall behind on the future of finance",
+          "url": "https://fortune.com/2026/09/25/andrew-cuomo-digital-assets-regulation-future-of-finance/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Gov-Andrew-Cuomo-Headshot.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_5837030",
+          "title": "Why Mention Markets Are So Difficult to Police",
+          "url": "https://www.galaxy.com/insights/research/cftc-mention-market-guidance-manipulation-risks",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/eZBbPZlOWK6AHiVDTslrs/811e2f7cb497f3db64c9f45c2022d1f9/Regulation-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_5819218",
+          "title": "Samourai Wallet co-founder faces new transfer after 30-day ordeal",
+          "url": "https://cointelegraph.com/news/samourai-wallet-co-founder-30-day-prison-transfer",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BM3DN348KFGP7858XFMCWJ/prison.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_5975724",
+          "title": "Zano rolls blockchain back a month after Gateway Address exploit",
+          "url": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3JREXHTP98GQ5DQZXPMZ889/zano-rollback.jpg"
+        },
+        {
+          "id": "art_5968298",
+          "title": "Onchain analyst links $18.4 million in Robinhood Chain memecoin extractions to single rug-pull operation",
+          "url": "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-2.png"
+        },
+        {
+          "id": "art_5825188",
+          "title": "Magic Eden scare puts 3,832 NFTs in whitehat protective custody",
+          "url": "https://cointelegraph.com/news/magic-eden-nft-whitehat-vulnerability",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BXKEGSARVJTVQV05A2NDRW/buy-internet-online-shop-nft.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_5846680",
+          "title": "Tether says it had ‘limited’ exposure to bank linked to $84M US seizure",
+          "url": "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3CMJJSCGPAGYWMC5WQF9J64/hi-what-happens-to-seized-cryptocurrency-1.jpg"
+        },
+        {
+          "id": "art_5818618",
+          "title": "Animoca’s Evan Auyang worked in finance and public transit before crypto—Why he thinks the blockchain should be more like a bus",
+          "url": "https://fortune.com/2026/09/25/animoca-evan-auyang-stablecoin-hong-kong/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Evan-Auyang-Animoca.jpg?resize=1200,600"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Vitalik Buterin wants us to stop calling Ethereum a blockchain. He mapped a path to 2030 through Hegota, recursive STARKs, quantum safety. Fine. The rebrand is strategic: capture compute budgets, not just settlement fees. But we underwrite infrastructure on what ships, not what gets keynote slides. The Hegota upgrade is the test. Deliver throughput. Or watch rollups and AI inference networks eat the margin.\n\nSame day, Zano rolled back a month. Gateway Address exploit. Finality undone by governance vote. This is not a bug category. This is a live network admitting its security model could not contain damage in real time. We price that risk into L1 diligence now.\n\nThe contrast is the story. Ethereum pitches abstraction. Zano proves abstraction without operational maturity is liability. Riot repaid $200M debt, released collateral. Defensive. Miners see the same low-volatility horizon we do.\n\nCalifornia banned official memecoins. Effective 2027. Long runway. Issuers will price that in. Or move jurisdictions.\n\nWhat confirms the Ethereum thesis: Hegota benchmarks against competing layers. What kills it: another year of roadmap without measurable share shift from centralized compute.\n\nWe are watching the upgrade, not the essay."
+}
