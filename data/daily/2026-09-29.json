@@ -1,0 +1,510 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-29",
+  "date_display": "September 29, 2026",
+  "generated_at": "2026-09-29T05:00:17.860Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Coinbase Secures Full CFTC Derivatives Stack as Bitget's $388M Hack Exposes Third-Party Security Fragility",
+    "tldr": "Regulatory infrastructure and security vulnerabilities are diverging sharply: Coinbase completes its derivatives clearing monopoly while Bitget's $388 million breach reveals how centralized exchange risk concentrates in opaque vendor relationships, forcing investors to reprime underwriting models for counterparty exposure."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks two opposing vectors in crypto infrastructure—regulatory completion at Coinbase and operational collapse at Bitget—and what this divergence means for how we price centralization risk.",
+  "market_snapshot": {
+    "as_of": "2026-09-29T05:00:17.860Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.86T",
+        "change_24h": "-2.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$94.4B",
+        "change_24h": "-1.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 10,
+    "bearish": 6,
+    "neutral": 8,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_6010158",
+      "title": "Bitget attacker tested risk controls with small transfers before $388 million theft, CEO says",
+      "url": "https://www.theblock.co/news/regulation/2026-09-28-bitget-attacker-tested-risk-controls-small-transfers-388-million-theft-ceo-says-417045",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Bitget CEO Gracy Chen revealed that an attacker tested risk controls with small transfers prior to stealing $388 million. The company's user protection fund will absorb the loss and be replenished to $300 million within a week.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-09-28-bitget-attacker-tested-risk-controls-small-transfers-388-million-theft-ceo-says-417045",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230411_Hack_Generic_4.jpg",
+      "why_it_matters": "The attacker's probing behavior reveals that Bitget's risk controls were observable and gameable, which is a worse signal than random exploitation because it implies systematic detectability that other exchanges may share."
+    },
+    {
+      "id": "art_6008016",
+      "title": "Bitget CEO says $388M hack exploited third-party security vulnerability",
+      "url": "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Bitget's CEO revealed that a $388 million hack was caused by a vulnerability in a third-party security product. The flaw allowed attackers to gain high-level internal credentials and execute fraudulent withdrawal commands.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3M6M7JQDFWAMH8RRVX8PYCQ/crypto-market-manipulation-bitget.jpg",
+      "why_it_matters": "Attribution to a third-party security vendor shifts liability questions toward procurement diligence and vendor concentration, areas where most exchange valuations assume operational competence rather than outsourcing fragility."
+    },
+    {
+      "id": "art_5999644",
+      "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
+      "url": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Bitget has resumed Bitcoin withdrawals following a massive security breach resulting in nearly $388 million in stolen assets. The hacker is currently utilizing THORChain to swap stolen ETH across different blockchains.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KKY0E7P2KHSR2CF4H4E1SY/hi-bitget-blockchain-initiatives-overview.jpg",
+      "why_it_matters": "THORChain's role as the laundering rail demonstrates that cross-chain liquidity infrastructure has matured into a standard exploit exit vector, complicating recovery assumptions and insurance pricing for custodial assets."
+    },
+    {
+      "id": "art_6035274",
+      "title": "Coinbase receives DCO approval from CFTC, completing full derivatives stack",
+      "url": "https://www.theblock.co/news/business/2026-09-28-coinbase-dco-approval-417105",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Coinbase has received Derivatives Clearing Organization (DCO) approval from the CFTC. This allows the company to list, broker, and clear fully collateralized derivatives products entirely in-house.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-09-28-coinbase-dco-approval-417105",
+      "themes": [
+        "regulation",
+        "derivatives"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg",
+      "why_it_matters": "Full vertical integration of listing, brokering, and clearing eliminates reliance on external clearinghouses and captures the entire fee stack, which should reprice Coinbase's derivatives revenue multiple against traditional exchange economics."
+    },
+    {
+      "id": "art_6022368",
+      "title": "Blockchain.com eyes $500M IPO as crypto capital markets thaw: Report16m",
+      "url": "https://cointelegraph.com/news/blockchain-com-500m-ipo-bloomberg-reports",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Blockchain.com is reportedly exploring an initial public offering (IPO) with a target valuation of approximately $500 million. This move signals a potential thawing of crypto capital markets and a shift toward public equity for major industry players.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/blockchain-com-500m-ipo-bloomberg-reports",
+      "themes": [
+        "investment",
+        "ipo"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MTCJ1E1J8KDT907A531CF3/hi-ipo-stocks-bitpgo.png",
+      "why_it_matters": "A $500 million IPO target for Blockchain.com implies public market appetite is testing whether crypto-native firms can sustain valuations below their last private rounds, with implications for the entire venture-backed cohort."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_6003232",
+      "company": "Strategy (formerly MicroStrategy)",
+      "amount": "$143M",
+      "round": "",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc",
+      "summary": "MicroStrategy has acquired an additional 1,665 Bitcoin for approximately $143 million, bringing its total holdings to 847,666 BTC. The company funded these purchases and preferred stock repurchases by selling 1.47 million MSTR shares for $246.2 million."
+    },
+    {
+      "id": "art_5998498",
+      "company": "Monzo",
+      "amount": "£10bn",
+      "round": "M&A",
+      "investors": [
+        "Nubank"
+      ],
+      "category": "Payments",
+      "url": "https://sifted.eu/articles/monzo-sale-reignites-britain-tech-exit-fears/",
+      "summary": "Reports of potential sale talks between UK fintech Monzo and Brazilian digital bank Nubank for £10bn have sparked discussions regarding the UK's tendency to lose successful tech firms to foreign acquisitions."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6018530",
+      "title": "Tether’s USDT at center of Iran’s shadow banking network, new Senate Report says",
+      "url": "https://www.theblock.co/news/regulation/2026-09-28-tethers-usdt-center-iran-shadow-banking-network-new-senate-report-says-417094",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "A new U.S. Senate report alleges that Tether's USDT is being utilized within Iran's shadow banking network. Democratic investigators analyzed data from 846 sanctioned crypto wallets to establish these links.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/04/20240429_Tether_News_3.jpg"
+    },
+    {
+      "id": "art_6017584",
+      "title": "US SEC follows CFTC in staff guidance for crypto12m, US SEC follows CFTC in staff guidance for cryptoWith the failed cloture vote on the CLARITY Act, the SEC announced updates on how federal securities laws could apply to token issuers, following similar guidance from the CFTC.",
+      "url": "https://cointelegraph.com/news/sec-cftc-staff-guidance-crypto-clarity-fail",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The US SEC has released updated staff guidance on the application of federal securities laws to token issuers. This move follows similar guidance from the CFTC and comes after the failure of the CLARITY Act's cloture vote.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MEF526Z3GMGWVA23CRVP2J/hi-sec-cftc-event-overview-1.jpg"
+    },
+    {
+      "id": "art_6016388",
+      "title": "Bybit accepts Franklin Templeton tokenized funds as trading collateral10m",
+      "url": "https://cointelegraph.com/news/bybit-accepts-franklin-templeton-tokenized-funds-trading-collateral",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Bybit has integrated Franklin Templeton's tokenized funds to be used as trading collateral. This move bridges traditional finance assets with crypto trading liquidity.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MHTAW6FCEWPFXPKAW8DJG3/crypto-with-money.jpg"
+    },
+    {
+      "id": "art_6014942",
+      "title": "Citi expands Coinbase partnership to power stablecoin payments for businesses",
+      "url": "https://www.theblock.co/news/business/2026-09-28-citi-coinbase-stablecoin-payments-corporate-clients-417082",
+      "source": "The Block",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Citi is expanding its partnership with Coinbase to enable institutional clients to accept stablecoin payments. The integration utilizes Citi's Virtual Account Wallet and Spring platform alongside Coinbase's payment rails.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg"
+    },
+    {
+      "id": "art_6006820",
+      "title": "MiCA focus shifts from rulemaking to supervision, ESMA chair says",
+      "url": "https://cointelegraph.com/news/mica-shift-rulemaking-to-supervision-esma-chair",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The European Securities and Markets Authority (ESMA) is shifting its focus from creating rules to supervising the implementation of the Markets in Crypto-Assets (MiCA) regulation. Key priorities for 2027 include enhancing the resilience of Crypto-Asset Service Providers (CASPs) and improving coordination between national regulators.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3M2KBZRZGPMFNM6GR5WJ7YC/hi-what-is-mica-markets-in-crypto-assets-regulation-esma-2.jpg"
+    },
+    {
+      "id": "art_6001786",
+      "title": "'Even more orange': Strategy buys 1,665 bitcoin for $143 million as total holdings reach 847,666 BTC",
+      "url": "https://www.theblock.co/news/business/2026-09-28-even-more-orange-michael-saylor-strategy-bitcoin-416976",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Strategy has increased its Bitcoin holdings by purchasing an additional 1,665 BTC for approximately $142.7 million. This brings the company's total holdings to 847,666 BTC.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/strategy-btc-buy-16x9-1.png"
+    },
+    {
+      "id": "art_5985293",
+      "title": "Vitalik Buterin says Hegotá could be Ethereum’s last ‘normal’ forkEthereum’s Vitalik Buterin said PeerDAS marked the start of Ethereum’s transition “from being just a blockchain to being something much more powerful.”",
+      "url": "https://cointelegraph.com/news/vitalik-hegota-ethereum-last-normal-fork",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "Vitalik Buterin describes the implementation of PeerDAS as a pivotal shift for Ethereum, moving it beyond a standard blockchain. He suggests that the Hegotá fork may be the final 'normal' fork as the network evolves into a more powerful system.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3K4SEN7H2DNWHCZQ26DGD49/vitalik-ethereum.png"
+    },
+    {
+      "id": "art_6012800",
+      "title": "Crypto PAC spends $11M to oppose Sherrod Brown in Ohio",
+      "url": "https://cointelegraph.com/news/crypto-industry-spending-ohio-senate-race-sherrod-brown",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "A crypto-backed PAC is spending millions to oppose Senator Sherrod Brown in Ohio. This follows a larger $30 million pledge from the affiliated Fairshake PAC to influence the Senate race.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MAF7X1RZDX1NKKQCCDRKMF/hi-ohios-decision-to-allow-businesses-to-pay-their-taxes-with-bitcoin.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6005790",
+      "title": "Understanding Stable: A Comprehensive Overview",
+      "url": "https://messari.io/report/understanding-stable-a-comprehensive-overview",
+      "source": "Messari — Research",
+      "note": "Stable's architecture deserves scrutiny because stablecoin infrastructure is where the next wave of regulatory perimeter-drawing will land, and this overview maps the design space before rules harden.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/7e300e2b37bffa97a8143111f7bf305ab437002e-6400x3600.png"
+    },
+    {
+      "id": "art_5998498",
+      "title": "'We build them and sell them': Monzo's sale talks reignite fears over Britain's tech exit problem",
+      "url": "https://sifted.eu/articles/monzo-sale-reignites-britain-tech-exit-fears/",
+      "source": "Sifted",
+      "note": "The Monzo-Nubank talks frame a structural question for European venture: whether fintech exits to foreign acquirers represent value realization or ecosystem leakage, with direct read-across to crypto firm domicile decisions.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/05/19100612/Monzo-FY26-Annual-Report-scaled.jpg"
+    },
+    {
+      "id": "art_6005674",
+      "title": "VCs push for US-style rules to cut cost of launching UK funds",
+      "url": "https://sifted.eu/articles/vcs-push-for-us-style-rules-to-cut-cost-of-launching-uk-funds/",
+      "source": "Sifted",
+      "note": "UK fund structuring costs are a real friction for crypto-native managers considering European bases, and this lobbying push signals where regulatory arbitrage opportunities may open or close.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/01/23154040/sara-groblechner-szj72gcdtkU-unsplash-scaled.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6003232",
+          "title": "Strategy buys 1,665 Bitcoin for $143M as BTC stack hits 847,66616m, Strategy buys 1,665 Bitcoin for $143M as BTC stack hits 847,666Strategy sold 1.47 million MSTR shares for $246.2 million, using the proceeds for Bitcoin purchases and STRC preferred stock repurchases.",
+          "url": "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_6001786",
+          "title": "'Even more orange': Strategy buys 1,665 bitcoin for $143 million as total holdings reach 847,666 BTC",
+          "url": "https://www.theblock.co/news/business/2026-09-28-even-more-orange-michael-saylor-strategy-bitcoin-416976",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/strategy-btc-buy-16x9-1.png"
+        },
+        {
+          "id": "art_6011354",
+          "title": "Strive pushes bitcoin holdings above 27,400 BTC with latest $94.5 million purchase",
+          "url": "https://www.theblock.co/news/business/2026-09-28-strive-pushes-bitcoin-holdings-above-27400-btc-latest-94-5-million-purchase-417035",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/01/20240111_Bitcoin_News_3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_5985293",
+          "title": "Vitalik Buterin says Hegotá could be Ethereum’s last ‘normal’ forkEthereum’s Vitalik Buterin said PeerDAS marked the start of Ethereum’s transition “from being just a blockchain to being something much more powerful.”",
+          "url": "https://cointelegraph.com/news/vitalik-hegota-ethereum-last-normal-fork",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3K4SEN7H2DNWHCZQ26DGD49/vitalik-ethereum.png"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6022368",
+          "title": "Blockchain.com eyes $500M IPO as crypto capital markets thaw: Report16m",
+          "url": "https://cointelegraph.com/news/blockchain-com-500m-ipo-bloomberg-reports",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MTCJ1E1J8KDT907A531CF3/hi-ipo-stocks-bitpgo.png"
+        },
+        {
+          "id": "art_6005674",
+          "title": "VCs push for US-style rules to cut cost of launching UK funds",
+          "url": "https://sifted.eu/articles/vcs-push-for-us-style-rules-to-cut-cost-of-launching-uk-funds/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/01/23154040/sara-groblechner-szj72gcdtkU-unsplash-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6014942",
+          "title": "Citi expands Coinbase partnership to power stablecoin payments for businesses",
+          "url": "https://www.theblock.co/news/business/2026-09-28-citi-coinbase-stablecoin-payments-corporate-clients-417082",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/05/20200501_Citigroup_Custody-Daily.jpg"
+        },
+        {
+          "id": "art_5998498",
+          "title": "'We build them and sell them': Monzo's sale talks reignite fears over Britain's tech exit problem",
+          "url": "https://sifted.eu/articles/monzo-sale-reignites-britain-tech-exit-fears/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/05/19100612/Monzo-FY26-Annual-Report-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6035274",
+          "title": "Coinbase receives DCO approval from CFTC, completing full derivatives stack",
+          "url": "https://www.theblock.co/news/business/2026-09-28-coinbase-dco-approval-417105",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
+        },
+        {
+          "id": "art_6018530",
+          "title": "Tether’s USDT at center of Iran’s shadow banking network, new Senate Report says",
+          "url": "https://www.theblock.co/news/regulation/2026-09-28-tethers-usdt-center-iran-shadow-banking-network-new-senate-report-says-417094",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/04/20240429_Tether_News_3.jpg"
+        },
+        {
+          "id": "art_6017584",
+          "title": "US SEC follows CFTC in staff guidance for crypto12m, US SEC follows CFTC in staff guidance for cryptoWith the failed cloture vote on the CLARITY Act, the SEC announced updates on how federal securities laws could apply to token issuers, following similar guidance from the CFTC.",
+          "url": "https://cointelegraph.com/news/sec-cftc-staff-guidance-crypto-clarity-fail",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MEF526Z3GMGWVA23CRVP2J/hi-sec-cftc-event-overview-1.jpg"
+        },
+        {
+          "id": "art_6006820",
+          "title": "MiCA focus shifts from rulemaking to supervision, ESMA chair says",
+          "url": "https://cointelegraph.com/news/mica-shift-rulemaking-to-supervision-esma-chair",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3M2KBZRZGPMFNM6GR5WJ7YC/hi-what-is-mica-markets-in-crypto-assets-regulation-esma-2.jpg"
+        },
+        {
+          "id": "art_6012800",
+          "title": "Crypto PAC spends $11M to oppose Sherrod Brown in Ohio",
+          "url": "https://cointelegraph.com/news/crypto-industry-spending-ohio-senate-race-sherrod-brown",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MAF7X1RZDX1NKKQCCDRKMF/hi-ohios-decision-to-allow-businesses-to-pay-their-taxes-with-bitcoin.jpg"
+        },
+        {
+          "id": "art_6013746",
+          "title": "SEC Commissioner Hester Peirce reflects on her time at the agency, what she still wanted to get done: 'There’s no good time to leave'",
+          "url": "https://www.theblock.co/news/regulation/2026-09-28-sec-commissioner-hester-peirce-reflects-what-she-wanted-get-done-no-good-time-to-leave-417075",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/06/20210628_Hester_Peirce.jpg"
+        },
+        {
+          "id": "art_5997252",
+          "title": "Hong Kong regulators expand financial reporting oversight to licensed crypto firms",
+          "url": "https://cointelegraph.com/news/hong-kong-sfc-afrc-crypto-financial-reporting-mou",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KPPZ3K6FD8803AJAP84ZNZ/hk-flag.png"
+        },
+        {
+          "id": "art_5986488",
+          "title": "South Korea weighs crypto market makers after JPYC trades at 4 times peg 16m, South Korea weighs crypto market makers after JPYC trades at 4 times peg Crypto market making is effectively restricted under South Korea’s manipulation rules, but regulators are reconsidering the approach after a JPYC spiked on Upbit this month.",
+          "url": "https://cointelegraph.com/news/south-korea-weighs-crypto-market-makers-after-jpyc-trades-at-4-times-peg",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6023564",
+          "title": "Canadian ‘crypto king’ set to represent himself at fraud trial42m, Canadian ‘crypto king’ set to represent himself at fraud trialAiden Pleterski was allegedly behind a crypto Ponzi scheme between 2021 and 2022 that resulted in a kidnapping and related criminal charges.",
+          "url": "https://cointelegraph.com/news/canada-aiden-pleterski-fraud-trial-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_6003828",
+          "title": "The crypto pirates have become the Navy. Now what? ",
+          "url": "https://fortune.com/2026/09/28/the-crypto-pirates-have-become-the-navy-now-what/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2290033073-e1790597713297.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6010158",
+          "title": "Bitget attacker tested risk controls with small transfers before $388 million theft, CEO says",
+          "url": "https://www.theblock.co/news/regulation/2026-09-28-bitget-attacker-tested-risk-controls-small-transfers-388-million-theft-ceo-says-417045",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230411_Hack_Generic_4.jpg"
+        },
+        {
+          "id": "art_6008016",
+          "title": "Bitget CEO says $388M hack exploited third-party security vulnerability",
+          "url": "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3M6M7JQDFWAMH8RRVX8PYCQ/crypto-market-manipulation-bitget.jpg"
+        },
+        {
+          "id": "art_5999644",
+          "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
+          "url": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KKY0E7P2KHSR2CF4H4E1SY/hi-bitget-blockchain-initiatives-overview.jpg"
+        },
+        {
+          "id": "art_5996056",
+          "title": "Scammers steal $2M in ETH as fake GIWA network fools DYORSWAP",
+          "url": "https://cointelegraph.com/news/fake-giwa-blockchain-scam-drains-2m-eth",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KJTCBBBDP28G69E25NG96Q/fake-giwa.png"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6005790",
+          "title": "Understanding Stable: A Comprehensive Overview",
+          "url": "https://messari.io/report/understanding-stable-a-comprehensive-overview",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/7e300e2b37bffa97a8143111f7bf305ab437002e-6400x3600.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6016388",
+          "title": "Bybit accepts Franklin Templeton tokenized funds as trading collateral10m",
+          "url": "https://cointelegraph.com/news/bybit-accepts-franklin-templeton-tokenized-funds-trading-collateral",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MHTAW6FCEWPFXPKAW8DJG3/crypto-with-money.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Coinbase now clears its own derivatives. That's the headline. The quieter fact is that Bitget just lost $388 million to a third-party security product Gracy Chen won't name, and the attacker knew exactly which small transfers to run first to test if anyone was watching.\n\nTwo infrastructure stories, same day. One firm verticalizes until it owns the full stack; another discovers it never owned its own risk surface. The market will price Coinbase's CFTC approval as revenue accretion, which it is. But the repricing we actually need is in counterparty diligence. Most LP questionnaires ask about cold wallet percentages and insurance coverage. Few ask which vendor actually holds the keys, or whether that vendor's product is the same one sitting at three other exchanges in the portfolio.\n\nBitget's user protection fund absorbs this. Replenished to $300 million in a week, Chen says. That is a liquidity commitment, not a security fix. The fix would require naming the vendor, auditing the procurement process, and proving the attack vector is closed across all deployments. None of that is public.\n\nWe underwrite exchange exposure on throughput and fee growth. The Bitget breach suggests we should weight vendor opacity and probe-testability at least as heavily. The test: whether any exchange in our portfolio can produce its third-party security architecture under NDA within 48 hours. If not, the risk is unpriced."
+}
