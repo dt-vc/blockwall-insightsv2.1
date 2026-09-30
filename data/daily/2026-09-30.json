@@ -1,0 +1,511 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-09-30",
+  "date_display": "September 30, 2026",
+  "generated_at": "2026-09-30T05:00:18.022Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Coinbase clears its own derivatives as US regulator vacancies hit seven seats",
+    "tldr": "Coinbase secured CFTC approval to operate a US derivatives clearinghouse on the same day that commissioner resignations gutted both the SEC and CFTC, creating a paradox: the infrastructure for regulated crypto derivatives is arriving just as the oversight capacity to police it evaporates."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why the gap between regulatory infrastructure and regulatory capacity is becoming the defining tension for US market structure.",
+  "market_snapshot": {
+    "as_of": "2026-09-30T05:00:18.022Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$83,193",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,669",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.86T",
+        "change_24h": "-2.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$94.7B",
+        "change_24h": "-0.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 8,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 4,
+    "neutral": 5,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_6069017",
+      "title": "Bitget CEO ‘not very optimistic’ on recovering funds from $388M breach10m",
+      "url": "https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Bitget's CEO has expressed pessimism regarding the recovery of funds following a massive $388 million security breach. The statement highlights the difficulty of retrieving stolen digital assets once they have been moved by attackers.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach",
+      "themes": [
+        "security",
+        "exchange-breach"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PS8B3233YZFS40258RE4KQ/hi-top-hacks-so-far-5.jpg",
+      "why_it_matters": "Bitget's $388M loss with near-zero recovery probability underscores how exchange security remains an unpriced risk in CeFi counterparty underwriting, particularly for platforms with opaque custody architectures."
+    },
+    {
+      "id": "art_6040308",
+      "title": "Coinbase gets CFTC approval for US derivatives clearinghouse16m",
+      "url": "https://cointelegraph.com/news/coinbase-gets-cftc-approval-for-us-derivatives-clearinghouse",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Coinbase has received approval from the Commodity Futures Trading Commission (CFTC) to operate as a derivatives clearinghouse in the United States. This move allows the exchange to expand its institutional offerings and provide regulated clearing services for crypto derivatives.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/coinbase-gets-cftc-approval-for-us-derivatives-clearinghouse",
+      "themes": [
+        "regulation",
+        "derivatives"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3NN5Q5DBTGT6TEY43DJDPT2/coinbase.jpg",
+      "why_it_matters": "Coinbase's CFTC clearinghouse approval creates vertical integration in US crypto derivatives—exchange, custody, and now clearing under one roof—which reprices competitive moats for institutional flow but concentrates systemic risk in a single balance sheet."
+    },
+    {
+      "id": "art_6095101",
+      "title": "Robinhood to launch perps, weekend stock trading for US users",
+      "url": "https://www.theblock.co/news/business/2026-09-29-robinhood-perps-trading-417242",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Robinhood is expanding its offering for US users by introducing perpetual futures trading. Additionally, the platform will implement 24/7 trading for select US equities.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/business/2026-09-29-robinhood-perps-trading-417242",
+      "themes": [
+        "payments",
+        "trading"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Robinhood_News.jpg",
+      "why_it_matters": "Robinhood's perpetual futures and 24/7 equity trading collapse the temporal and product boundaries between TradFi and crypto, suggesting retail brokers now underwrite user acquisition on perpetual contract volume rather than spot equity commissions."
+    },
+    {
+      "id": "art_6078593",
+      "title": "Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignation20m, Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignationSeven commissioner seats at the SEC and CFTC will be empty after Friday, leaving only a few leaders at financial regulators to oversee aspects of the $3 trillion crypto industry.",
+      "url": "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Key resignations at the SEC and CFTC have left seven commissioner seats empty, significantly reducing the leadership capacity of US financial regulators. This vacancy occurs as these agencies continue to oversee a crypto industry valued at approximately $3 trillion.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners",
+      "themes": [
+        "regulation",
+        "government-oversight"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3Q8PHD13FEXXYRXMDQWSRRZ/regulations-sec-cftc.png",
+      "why_it_matters": "Seven vacant commissioner seats across the SEC and CFTC leave rulemaking and enforcement in limbo, which means the agencies cannot finalize contested guidance on staking, custody, or exchange registration—stalling the very clarity the industry claims to want."
+    },
+    {
+      "id": "art_6078595",
+      "title": "Kakaopay partners with Dinari, Ondo to explore tokenized Korean stocks",
+      "url": "https://cointelegraph.com/news/kakaopay-securities-dinari-ondo-tokenized-korean-stocks-push",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Kakaopay Securities is collaborating with Dinari and Ondo to explore the tokenization of Korean stocks. This initiative aligns with South Korea's upcoming implementation of a formal token securities framework.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/kakaopay-securities-dinari-ondo-tokenized-korean-stocks-push",
+      "themes": [
+        "tokenization",
+        "real-world-assets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3Q9BFYJ1K3ZGM26SMYW5A0G/hi-south-korea-staking-lending-service.jpg",
+      "why_it_matters": "Kakaopay's partnership with Dinari and Ondo for Korean stock tokenization tests whether Asian retail brokerage infrastructure can leapfrog US capital markets by embedding securities directly into mobile payment rails before the SEC resolves its own tokenization framework."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_6071411",
+      "title": "Bitwise launches first US spot NEAR ETF after token’s recent surge13m",
+      "url": "https://cointelegraph.com/news/bitwise-launches-first-us-spot-near-etf-after-tokens-recent-surge",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Bitwise has launched the first US-based spot NEAR Protocol ETF following a recent price surge for the token. This move expands institutional access to the NEAR ecosystem within the United States.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PYNE5ZA8242JM5VV3J3TZN/hi-token-etf-victory-1.png"
+    },
+    {
+      "id": "art_6059444",
+      "title": "ECB puts AI agent payments on the digital euro drawing board27m",
+      "url": "https://cointelegraph.com/news/ecb-private-firms-ai-agents-digital-euro",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "The European Central Bank is exploring the integration of AI agents to facilitate automated payments using the upcoming digital euro. This move aims to enable machine-to-machine transactions, allowing AI to manage financial tasks autonomously.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PG8ZXT8HQTWKJ0JHNKVNVA/hi-digital-euro.jpg"
+    },
+    {
+      "id": "art_6043897",
+      "title": "Tether says it helped freeze $550M in Iran-linked USDT this year",
+      "url": "https://cointelegraph.com/news/tether-says-it-helped-freeze-550m-in-iran-linked-usdt-this-year",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "neutral",
+      "summary": "Tether reports that it has assisted in freezing approximately $550 million in USDT linked to Iranian entities this year. This action highlights the company's cooperation with regulatory authorities to prevent illicit financial activities.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3NT5GYVR0DHCZ7EB688AQWY/tether-2.jpg"
+    },
+    {
+      "id": "art_6094154",
+      "title": "Binance Pay lets visitors spend USDT at PayPay merchants in Japan",
+      "url": "https://cointelegraph.com/news/binance-pay-usdt-paypay-merchants-japan",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Binance Pay is enabling overseas visitors to spend USDT at PayPay-supported merchants across Japan. The integration is facilitated by HIVEX, ensuring that merchants receive payments in Japanese yen.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3P2PR3RBJ5STG23V6141JFH/hi-how-binance-debit-cards-work.png"
+    },
+    {
+      "id": "art_6072358",
+      "title": "Comer presses Crypto.com, Hyperliquid and PredictIt on identity checks and suspicious trades",
+      "url": "https://www.theblock.co/news/regulation/2026-09-29-comer-presses-crypto-com-hyperliquid-predictit-identity-checks-suspicious-trades-417192",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "House Oversight Committee Chair James Comer is requesting records from Crypto.com, Hyperliquid, and PredictIt regarding identity verification and suspicious trading activity. The inquiry specifically targets potential trades by government insiders and the platforms' reporting practices to regulators.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+    },
+    {
+      "id": "art_6068767",
+      "title": "Aztec relaunches zk.money privacy wallet on its Ethereum Layer 2",
+      "url": "https://www.theblock.co/news/defi/2026-09-29-aztec-zk-money-privacy-wallet-ethereum-layer-2-417174",
+      "source": "The Block",
+      "category": "Layer2",
+      "sentiment": "bullish",
+      "summary": "Aztec has relaunched the zk.money privacy wallet, integrating it directly into its own Ethereum Layer 2 network. The wallet returns after a three-year hiatus to provide users with private balances and transactions.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/aztec-ml.png"
+    },
+    {
+      "id": "art_6054660",
+      "title": "Greece gets first MiCA entrants as watchdog denies Binance-Lagarde claimGreece joined the EU MiCA register with four providers as HCMC expanded its denial of remarks attributed to officials in a report on Binance.",
+      "url": "https://cointelegraph.com/news/greece-first-mica-entrants-hcmc-binance-lagarde",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Greece has officially entered the EU's MiCA register with its first four crypto asset service providers. Simultaneously, the Hellenic Capital Market Commission (HCMC) denied claims attributed to its officials regarding Binance.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3P1CC8JZ9CE9GXZ0SSDV4J0/111111.png"
+    },
+    {
+      "id": "art_6075949",
+      "title": "CryptoQuant says bitcoin correction could be near as traders' unrealized profit hits 21-month high",
+      "url": "https://www.theblock.co/news/markets/2026-09-29-cryptoquant-says-bitcoin-correction-could-near-traders-unrealized-profit-21-month-high-417206",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "CryptoQuant warns that a Bitcoin correction may be imminent despite the ongoing bull market. This outlook is driven by unrealized profits reaching a 21-month high and a cooling of demand.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/01/20240111_Bitcoin_News_2.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6079690",
+      "title": "The State of Crypto Markets w/ Ryan Connor of RockawayX",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/the-state-of-crypto-markets-w-ryan-connor-of-rockaway-x",
+      "source": "Galaxy — Insights",
+      "note": "Connor's discussion with RockawayX likely covers how European fund structures are repricing liquidity terms after the 2024 token unlock cycle, relevant for Blockwall's portfolio construction.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_6054711",
+      "title": "As FlatPay soars, the rest of Nordic fintech searches for its next act",
+      "url": "https://sifted.eu/articles/nordic-fintech-week-dispatch/",
+      "source": "Sifted",
+      "note": "FlatPay's trajectory against Nordic fintech stagnation offers a case study in how regional payment winners extract value when broader venture funding for adjacent categories collapses.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1536,quality=75,fit=cover,format=auto/wp-content/uploads/2026/09/29103035/IMG_6492-scaled.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6075949",
+          "title": "CryptoQuant says bitcoin correction could be near as traders' unrealized profit hits 21-month high",
+          "url": "https://www.theblock.co/news/markets/2026-09-29-cryptoquant-says-bitcoin-correction-could-near-traders-unrealized-profit-21-month-high-417206",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/01/20240111_Bitcoin_News_2.jpg"
+        },
+        {
+          "id": "art_6066373",
+          "title": "Bitcoin tests long-term holder supply cluster as leverage clears, analysts say",
+          "url": "https://www.theblock.co/news/markets/2026-09-29-bitcoin-tests-long-term-holder-supply-cluster-leverage-clears-analysts-say-417162",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/bitcoin-article-16x9-1.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6056802",
+          "title": "Ondo Perps CEO sees 'huge opportunity' for perps in US market, under different model",
+          "url": "https://www.theblock.co/news/regulation/2026-09-29-ondo-perps-ceo-interview-david-wells-417125",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/david-wells-cropped.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_6052268",
+          "title": "BitMine could hit its 5% Ether supply target within weeks ",
+          "url": "https://cointelegraph.com/news/bitmine-ether-supply-target-early-november",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3P2R6QTGGW0GWR2RKYMQNCC/hi-the-7-largest-ethereum-treasury-companies-right-now-ranked-by-holdings.jpg"
+        },
+        {
+          "id": "art_6057052",
+          "title": "Ethereum schedules Glamsterdam upgrade on Sepolia for Oct. 6",
+          "url": "https://cointelegraph.com/news/ethereum-glamsterdam-upgrade-sepolia",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PCAM6EFZWRXAWSS5F2XJAN/fork-workout-ethereum.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6057524",
+          "title": "Token Terminal x The Block ",
+          "url": "https://tokenterminal.com/resources/newsletter/token-terminal-x-the-block",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fasset%2Ffile%2F95624f42-3905-429d-889a-11ce9e7ea253%2FBlock_x_TT.png%3Ft%3D1790679567&w=1200&q=75"
+        },
+        {
+          "id": "art_6063468",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/introducing-blockworks-intel",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6071411",
+          "title": "Bitwise launches first US spot NEAR ETF after token’s recent surge13m",
+          "url": "https://cointelegraph.com/news/bitwise-launches-first-us-spot-near-etf-after-tokens-recent-surge",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PYNE5ZA8242JM5VV3J3TZN/hi-token-etf-victory-1.png"
+        },
+        {
+          "id": "art_6079690",
+          "title": "The State of Crypto Markets w/ Ryan Connor of RockawayX",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/the-state-of-crypto-markets-w-ryan-connor-of-rockaway-x",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_6068767",
+          "title": "Aztec relaunches zk.money privacy wallet on its Ethereum Layer 2",
+          "url": "https://www.theblock.co/news/defi/2026-09-29-aztec-zk-money-privacy-wallet-ethereum-layer-2-417174",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/aztec-ml.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6074732",
+          "title": "Is Existential Risk Securities Fraud?",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-09-29/is-existential-risk-securities-fraud",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6095101",
+          "title": "Robinhood to launch perps, weekend stock trading for US users",
+          "url": "https://www.theblock.co/news/business/2026-09-29-robinhood-perps-trading-417242",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Robinhood_News.jpg"
+        },
+        {
+          "id": "art_6059444",
+          "title": "ECB puts AI agent payments on the digital euro drawing board27m",
+          "url": "https://cointelegraph.com/news/ecb-private-firms-ai-agents-digital-euro",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PG8ZXT8HQTWKJ0JHNKVNVA/hi-digital-euro.jpg"
+        },
+        {
+          "id": "art_6094154",
+          "title": "Binance Pay lets visitors spend USDT at PayPay merchants in Japan",
+          "url": "https://cointelegraph.com/news/binance-pay-usdt-paypay-merchants-japan",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3P2PR3RBJ5STG23V6141JFH/hi-how-binance-debit-cards-work.png"
+        },
+        {
+          "id": "art_6054711",
+          "title": "As FlatPay soars, the rest of Nordic fintech searches for its next act",
+          "url": "https://sifted.eu/articles/nordic-fintech-week-dispatch/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1536,quality=75,fit=cover,format=auto/wp-content/uploads/2026/09/29103035/IMG_6492-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6040308",
+          "title": "Coinbase gets CFTC approval for US derivatives clearinghouse16m",
+          "url": "https://cointelegraph.com/news/coinbase-gets-cftc-approval-for-us-derivatives-clearinghouse",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3NN5Q5DBTGT6TEY43DJDPT2/coinbase.jpg"
+        },
+        {
+          "id": "art_6078593",
+          "title": "Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignation20m, Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignationSeven commissioner seats at the SEC and CFTC will be empty after Friday, leaving only a few leaders at financial regulators to oversee aspects of the $3 trillion crypto industry.",
+          "url": "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3Q8PHD13FEXXYRXMDQWSRRZ/regulations-sec-cftc.png"
+        },
+        {
+          "id": "art_6072358",
+          "title": "Comer presses Crypto.com, Hyperliquid and PredictIt on identity checks and suspicious trades",
+          "url": "https://www.theblock.co/news/regulation/2026-09-29-comer-presses-crypto-com-hyperliquid-predictit-identity-checks-suspicious-trades-417192",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+        },
+        {
+          "id": "art_6054660",
+          "title": "Greece gets first MiCA entrants as watchdog denies Binance-Lagarde claimGreece joined the EU MiCA register with four providers as HCMC expanded its denial of remarks attributed to officials in a report on Binance.",
+          "url": "https://cointelegraph.com/news/greece-first-mica-entrants-hcmc-binance-lagarde",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3P1CC8JZ9CE9GXZ0SSDV4J0/111111.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6069017",
+          "title": "Bitget CEO ‘not very optimistic’ on recovering funds from $388M breach10m",
+          "url": "https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3PS8B3233YZFS40258RE4KQ/hi-top-hacks-so-far-5.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6043897",
+          "title": "Tether says it helped freeze $550M in Iran-linked USDT this year",
+          "url": "https://cointelegraph.com/news/tether-says-it-helped-freeze-550m-in-iran-linked-usdt-this-year",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3NT5GYVR0DHCZ7EB688AQWY/tether-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6078595",
+          "title": "Kakaopay partners with Dinari, Ondo to explore tokenized Korean stocks",
+          "url": "https://cointelegraph.com/news/kakaopay-securities-dinari-ondo-tokenized-korean-stocks-push",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3Q9BFYJ1K3ZGM26SMYW5A0G/hi-south-korea-staking-lending-service.jpg"
+        },
+        {
+          "id": "art_6062532",
+          "title": "RWA 자산은 어떻게 홍콩에서 토큰화되는가?",
+          "url": "https://reports.tiger-research.com/p/how-are-real-world-assets-tokenized-krw",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!wrFv!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F217990044%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_6062533",
+          "title": "How Are Real-World Assets Tokenized in Hong Kong?",
+          "url": "https://reports.tiger-research.com/p/how-are-real-world-assets-tokenized-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!luoV!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F217991145%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Seven empty chairs. That's the count at the SEC and CFTC after Friday, and it matters more than the headlines about who left and why.\n\nCoinbase just got approval to clear its own crypto derivatives. Vertical integration: exchange, custody, clearing. The infrastructure is being built. But the capacity to regulate it—seven vacancies, two agencies, one $3 trillion market—isn't.\n\nWe underwrite this gap. Not the politics, the arithmetic. A clearinghouse needs a regulator with staff and quorum to set margin rules, audit stress tests, and resolve a failed member. The CFTC now has three commissioners. The SEC has three. Both need five to function as designed.\n\nRobinhood is launching perps for US users this quarter. The product pipeline is accelerating into a supervision vacuum. That isn't bullish or bearish by itself. It means the market is pricing in regulatory clarity that the institutions cannot currently deliver.\n\nWhat kills this thesis: a swift confirmation process that restores capacity before the next enforcement action or rulemaking deadline. What confirms it: continued product launches in the gap, with compliance teams writing memos to thin air.\n\nWe are watching the divergence between infrastructure and oversight widen. The value is shifting to firms that can build compliant architecture without waiting for the architecture of compliance."
+}
