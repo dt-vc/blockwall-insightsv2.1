@@ -1,0 +1,581 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-01",
+  "date_display": "October 1, 2026",
+  "generated_at": "2026-10-01T05:00:17.715Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "CFTC Moves to Reclassify Prediction Market Contracts as Swaps as Kalshi Nears $1B Raise at $40B Valuation",
+    "tldr": "The regulatory perimeter around prediction markets is being redrawn just as capital floods in, creating a direct tension between valuation momentum and jurisdictional risk that will determine whether these platforms operate as regulated financial infrastructure or revert to state-by-state gambling fragmentation."
+  },
+  "intro": "Dear Founders, Investors, and Friends, the prediction market sector is simultaneously attracting billion-dollar checks and facing a federal effort to redefine its legal architecture, a collision we are watching closely for what it reveals about how regulators respond when novel financial instruments scale faster than their oversight frameworks.",
+  "market_snapshot": {
+    "as_of": "2026-10-01T05:00:17.715Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$84,001",
+        "change_24h": "+1.0%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,705",
+        "change_24h": "+1.3%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.88T",
+        "change_24h": "-1.9%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$94.7B",
+        "change_24h": "-0.0%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 18,
+    "bearish": 8,
+    "neutral": 4,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_6102534",
+      "title": "Kalshi in advanced talks to raise new funding at $40B valuation: Reuters",
+      "url": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Kalshi is reportedly in advanced negotiations to raise approximately $1 billion in new funding. The round is expected to be led by Sequoia and Wellington, valuing the company at $40 billion.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
+      "themes": [
+        "investment",
+        "funding"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RCTBM6ATW5K6885082AJQ4/kalshi.jpg",
+      "why_it_matters": "A $40 billion valuation for Kalshi, led by Sequoia and Wellington, represents institutional conviction that prediction markets can capture significant flow from both hedging and speculation, but also prices in a regulatory resolution that is actively contested."
+    },
+    {
+      "id": "art_6148019",
+      "title": "CFTC seeks to define event contracts as swaps amid prediction market fight",
+      "url": "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CFTC is attempting to classify event contracts as swaps to assert federal oversight. This move is part of a broader dispute with state regulators regarding whether prediction markets are governed by state gambling laws.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight",
+      "themes": [
+        "regulation",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TG0M8S1BAV7KN2AJ34JJE9/prediction-market.jpg",
+      "why_it_matters": "The CFTC's attempt to classify event contracts as swaps rather than gambling instruments is a jurisdictional land grab that, if successful, would federalize oversight and potentially legitimize the sector, though it risks a prolonged legal fight with states that could freeze product development."
+    },
+    {
+      "id": "art_6145625",
+      "title": "MetaMask exits Lido validators as it investigates security incident 9m, MetaMask exits Lido validators as it investigates security incident MetaMask said it has found no immediate threat to its wallets, while Lido warned the precautionary validator exits could result in lost rewards and downtime penalties.",
+      "url": "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "MetaMask has exited its Lido validators following the discovery of a security incident. While MetaMask reports no immediate threat to user wallets, Lido warned that these precautionary exits may lead to downtime penalties and lost rewards.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident",
+      "themes": [
+        "security",
+        "validator-security"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TCYHE02RXXGBF3G4Q42FE7/metamask.jpg",
+      "why_it_matters": "MetaMask's precautionary validator exits from Lido demonstrate that even established staking infrastructure carries operational security risks that can cascade into immediate economic penalties, reminding investors that yield-bearing DeFi positions require continuous operational due diligence."
+    },
+    {
+      "id": "art_6133657",
+      "title": "Bloomberg brings onchain stablecoin data to its Terminal30m",
+      "url": "https://cointelegraph.com/news/bloomberg-brings-onchain-stablecoin-data-to-its-terminal-news-brief",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Bloomberg has integrated on-chain stablecoin data into its Terminal, providing professional investors with real-time visibility into digital asset flows. This move signals increased institutional adoption and the integration of Web3 data into traditional financial infrastructure.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/bloomberg-brings-onchain-stablecoin-data-to-its-terminal-news-brief",
+      "themes": [
+        "stablecoins",
+        "data-analytics"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SSH74MAM24NXDA35RM1XB4/hi-how-to-improve-your-coding-skills-using-bloomberg.jpg",
+      "why_it_matters": "Bloomberg Terminal integration of on-chain stablecoin data marks a structural integration point where traditional market data infrastructure begins treating digital asset flows as standard inputs, reducing friction for institutional allocation decisions."
+    },
+    {
+      "id": "art_6131013",
+      "title": "White House weighs new CFTC event contract rules in growing prediction market power struggle",
+      "url": "https://www.theblock.co/news/regulation/2026-09-30-white-house-weighs-new-cftc-event-contract-rules-in-growing-prediction-market-power-struggle-417345",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CFTC has submitted proposals to the White House to expand the definition of 'swaps' to include event contracts while excluding casino-style gambling. This move signals an increasing regulatory struggle over the legality and oversight of prediction markets.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-09-30-white-house-weighs-new-cftc-event-contract-rules-in-growing-prediction-market-power-struggle-417345",
+      "themes": [
+        "regulation",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/10/211001_White_House_General.jpg",
+      "why_it_matters": "The White House's consideration of CFTC proposals to expand swap definitions while explicitly excluding casino-style gambling reveals the administration's attempt to draw a policy line that enables regulated prediction markets to exist without normalizing unregulated betting, a balance that will shape the addressable market for platforms like Kalshi."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_6102534",
+      "company": "Kalshi",
+      "amount": "$1B",
+      "round": "",
+      "investors": [
+        "Sequoia",
+        "Wellington"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
+      "summary": "Kalshi is reportedly in advanced negotiations to raise approximately $1 billion in new funding. The round is expected to be led by Sequoia and Wellington, valuing the company at $40 billion."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6127670",
+      "title": "Bitget ‘gradually back to usual’ as protection fund reaches $309M",
+      "url": "https://cointelegraph.com/news/bitget-operations-protection-fund-security-breach",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Bitget is resuming normal operations and withdrawals following a major security breach totaling $388 million. The exchange has replenished its protection fund, which currently stands at $309 million.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SFTGRPFV0GZS69VRZTP86N/hi-funds-are-opening-up-to-investing-into-crypto-2.jpg"
+    },
+    {
+      "id": "art_6119041",
+      "title": "FCA starts accepting crypto authorization applications ahead of 2027 regime",
+      "url": "https://www.theblock.co/news/regulation/2026-09-30-fca-starts-accepting-crypto-authorization-applications-ahead-of-2027-regime-417284",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The UK's Financial Conduct Authority (FCA) has begun accepting authorization applications from crypto firms. This move precedes a new regulatory regime that will fully take effect by February 28, 2027.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/08/20230712_UK_CR_News.jpg"
+    },
+    {
+      "id": "art_6116897",
+      "title": "FCA opens crypto authorization window ahead of 2027 UK regime19m, FCA opens crypto authorization window ahead of 2027 UK regimeCrypto businesses should apply by Feb. 28, 2027, while existing money laundering registrations will not convert into FCA authorization.",
+      "url": "https://cointelegraph.com/news/fca-crypto-authorization-2027-uk-regime",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The UK's Financial Conduct Authority (FCA) has opened a window for crypto businesses to apply for authorization under a new regulatory regime. Companies must apply by February 28, 2027, and existing money laundering registrations will not automatically convert to full authorization.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3S34AE4B11G1QWG7E88GP0J/hi-uk-compliance-deadline-is-upcoming-should-users-expect-crypto-firm-closures-2.jpg"
+    },
+    {
+      "id": "art_6112109",
+      "title": "SlowMist traces Bitget hack activity to Aug. 31 zero-day exploit24m, SlowMist traces Bitget hack activity to Aug. 31 zero-day exploitSlowMist identified malicious activity weeks before the Bitget theft, involving a zero-day vulnerability, two security products and a custom withdrawal tool.",
+      "url": "https://cointelegraph.com/news/bitget-hack-zero-day-slowmist-investigation",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "SlowMist has traced a hack on Bitget back to a zero-day exploit occurring on August 31. The attack involved the use of two security products and a custom-built withdrawal tool to facilitate the theft.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RTGB6W8ZNJPV69XHVA5WD7/hi-crypto-mixers-and-crosschain-bridges-how-hackers-hide-stolen-assets.jpg"
+    },
+    {
+      "id": "art_6140587",
+      "title": "Clarity Act’s failure gave crypto 'faster' regulatory wins, Bitwise CIO says",
+      "url": "https://www.theblock.co/news/markets/2026-09-30-clarity-acts-failure-gave-crypto-faster-regulatory-wins-bitwise-says-417362",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Bitwise CIO Matt Hougan argues that the failure of the Clarity Act actually accelerated certain regulatory wins for the crypto industry. He highlights progress in stablecoin rewards and tokenized stocks, though he cautions that the current regulatory environment remains volatile.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/Clarity-Act-Learn-scaled.jpg"
+    },
+    {
+      "id": "art_6133656",
+      "title": "Base completes Cobalt upgrade, adds new tools for tokenized assets",
+      "url": "https://cointelegraph.com/news/base-cobalt-upgrade-tokenized-finance-b20-kyc",
+      "source": "Cointelegraph",
+      "category": "Layer2",
+      "sentiment": "bullish",
+      "summary": "Base has successfully implemented the Cobalt upgrade, introducing advanced functionality for tokenized assets. The update enables conditional transactions and enhanced tools for compliance and asset management.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RM1RHGZ8GVHFDEWSR01F8Q/base-coinbase.png"
+    },
+    {
+      "id": "art_6131011",
+      "title": "DogeOS launches testnet to bring EVM smart contracts to Dogecoin",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-30-dogeos-launches-public-testnet-dogecoin-zk-rollup-evm-417307",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "DogeOS has launched its testnet aimed at integrating EVM smart contract capabilities into the Dogecoin ecosystem. The project seeks to expand Dogecoin's utility and reduce its dependence on external influencers like Elon Musk.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/kabosu-doge.png"
+    },
+    {
+      "id": "art_6130064",
+      "title": "Brazil’s Petrobras uses Cardano to track sustainable aviation fuel, renewable diesel24m, Brazil’s Petrobras uses Cardano to track sustainable aviation fuel, renewable dieselPetrobras developed two Cardano-based applications to track sustainability claims tied to aviation fuel and renewable diesel as part of an ongoing research collaboration.",
+      "url": "https://cointelegraph.com/news/brazils-petrobras-uses-cardano-to-track-sustainable-aviation-fuel-renewable-diesel",
+      "source": "Cointelegraph",
+      "category": "Enterprise",
+      "sentiment": "bullish",
+      "summary": "Brazil's state-owned oil company Petrobras has developed two applications on the Cardano blockchain to track sustainability claims for renewable diesel and sustainable aviation fuel. This initiative is part of an ongoing research collaboration to enhance transparency in green energy tracking.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SH29GTGYTM0QGMBX47A000/oil-bitcoin-coin-ant-blockchain-sky-platform-production-gas.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6117063",
+      "title": "How to Launch a Chain",
+      "url": "https://messari.io/report/how-to-launch-a-chain",
+      "source": "Messari — Research",
+      "note": "Useful framework for founders navigating the technical and economic trade-offs in launching application-specific chains versus deploying on existing L1s.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/460408764f4e6a49a48f6c1f13acbf92f8e4762f-1500x600.png"
+    },
+    {
+      "id": "art_6126639",
+      "title": "DoubleZero: The Physical Layer of New Finance",
+      "url": "https://messari.io/report/double-zero-the-physical-layer-of-new-finance",
+      "source": "Messari — Research",
+      "note": "Paradigm's thesis on dedicated physical infrastructure for financial networks deserves attention for how it reframes latency and censorship resistance as capital-intensive hardware problems rather than purely protocol design questions.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/3781ad788ef65816bac7ea77b3cf20e36db91cb7-1500x600.png"
+    },
+    {
+      "id": "art_6126323",
+      "title": "Pace, a multiplayer web game about AI race dynamics, by Paradigm.",
+      "url": "https://www.paradigm.xyz/writing/the-game-theory-of-ai-pacing",
+      "source": "Paradigm",
+      "note": "A multiplayer game about AI race dynamics from Paradigm that may surface non-obvious coordination failure modes relevant to anyone underwriting AI x crypto intersectionality.",
+      "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/7ipgwUoO8wdP7gPqyS1CpM/ccb390518aa7b1e3ebbb307837632c45/opengraph-pace.jpg?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6126223",
+          "title": "Bitcoin steadies as soft PCE cools October Fed rate hike bets",
+          "url": "https://www.theblock.co/news/markets/2026-09-30-bitcoin-pce-inflation-october-rate-hike-417335",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/03/20250312_Markets_Category.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6120238",
+          "title": "Hyperliquid Co-founder Jeff Yan says 24-hour clock is not onchain finance's true differentiator",
+          "url": "https://www.theblock.co/news/defi/2026-09-30-hyperliquid-co-founder-jeff-yan-24-hour-clock-not-onchain-finances-true-differentiator-417286",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/eff-yan-kbw-e1790773716198.png"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_6130064",
+          "title": "Brazil’s Petrobras uses Cardano to track sustainable aviation fuel, renewable diesel24m, Brazil’s Petrobras uses Cardano to track sustainable aviation fuel, renewable dieselPetrobras developed two Cardano-based applications to track sustainability claims tied to aviation fuel and renewable diesel as part of an ongoing research collaboration.",
+          "url": "https://cointelegraph.com/news/brazils-petrobras-uses-cardano-to-track-sustainable-aviation-fuel-renewable-diesel",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SH29GTGYTM0QGMBX47A000/oil-bitcoin-coin-ant-blockchain-sky-platform-production-gas.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6131011",
+          "title": "DogeOS launches testnet to bring EVM smart contracts to Dogecoin",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-30-dogeos-launches-public-testnet-dogecoin-zk-rollup-evm-417307",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/kabosu-doge.png"
+        },
+        {
+          "id": "art_6117063",
+          "title": "How to Launch a Chain",
+          "url": "https://messari.io/report/how-to-launch-a-chain",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/460408764f4e6a49a48f6c1f13acbf92f8e4762f-1500x600.png"
+        },
+        {
+          "id": "art_6116173",
+          "title": "Token Terminal x Robinhood Agents ",
+          "url": "https://tokenterminal.com/resources/newsletter/token-terminal-x-robinhood-agents",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fasset%2Ffile%2Feaeeac5c-a6e4-4794-9d05-f90272404e6d%2FHOOD_X_TT.png%3Ft%3D1790768253&w=1200&q=75"
+        },
+        {
+          "id": "art_6126639",
+          "title": "DoubleZero: The Physical Layer of New Finance",
+          "url": "https://messari.io/report/double-zero-the-physical-layer-of-new-finance",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/3781ad788ef65816bac7ea77b3cf20e36db91cb7-1500x600.png"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6102534",
+          "title": "Kalshi in advanced talks to raise new funding at $40B valuation: Reuters",
+          "url": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RCTBM6ATW5K6885082AJQ4/kalshi.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_6133656",
+          "title": "Base completes Cobalt upgrade, adds new tools for tokenized assets",
+          "url": "https://cointelegraph.com/news/base-cobalt-upgrade-tokenized-finance-b20-kyc",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RM1RHGZ8GVHFDEWSR01F8Q/base-coinbase.png"
+        }
+      ]
+    },
+    {
+      "category": "NFT_Gaming",
+      "items": [
+        {
+          "id": "art_6126323",
+          "title": "Pace, a multiplayer web game about AI race dynamics, by Paradigm.",
+          "url": "https://www.paradigm.xyz/writing/the-game-theory-of-ai-pacing",
+          "source": "Paradigm",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/vb2n37v5ldjn/7ipgwUoO8wdP7gPqyS1CpM/ccb390518aa7b1e3ebbb307837632c45/opengraph-pace.jpg?w=1200&h=675&fit=fill&f=center&fm=jpg&q=85"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6097745",
+          "title": "Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debutIn February, ai.com drew enough traffic to crash its website after a $15 million Super Bowl ad, but months later, users are still wondering what’s happened to their promised AI agent.",
+          "url": "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6148019",
+          "title": "CFTC seeks to define event contracts as swaps amid prediction market fight",
+          "url": "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TG0M8S1BAV7KN2AJ34JJE9/prediction-market.jpg"
+        },
+        {
+          "id": "art_6131013",
+          "title": "White House weighs new CFTC event contract rules in growing prediction market power struggle",
+          "url": "https://www.theblock.co/news/regulation/2026-09-30-white-house-weighs-new-cftc-event-contract-rules-in-growing-prediction-market-power-struggle-417345",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/10/211001_White_House_General.jpg"
+        },
+        {
+          "id": "art_6119041",
+          "title": "FCA starts accepting crypto authorization applications ahead of 2027 regime",
+          "url": "https://www.theblock.co/news/regulation/2026-09-30-fca-starts-accepting-crypto-authorization-applications-ahead-of-2027-regime-417284",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/08/20230712_UK_CR_News.jpg"
+        },
+        {
+          "id": "art_6116897",
+          "title": "FCA opens crypto authorization window ahead of 2027 UK regime19m, FCA opens crypto authorization window ahead of 2027 UK regimeCrypto businesses should apply by Feb. 28, 2027, while existing money laundering registrations will not convert into FCA authorization.",
+          "url": "https://cointelegraph.com/news/fca-crypto-authorization-2027-uk-regime",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3S34AE4B11G1QWG7E88GP0J/hi-uk-compliance-deadline-is-upcoming-should-users-expect-crypto-firm-closures-2.jpg"
+        },
+        {
+          "id": "art_6140587",
+          "title": "Clarity Act’s failure gave crypto 'faster' regulatory wins, Bitwise CIO says",
+          "url": "https://www.theblock.co/news/markets/2026-09-30-clarity-acts-failure-gave-crypto-faster-regulatory-wins-bitwise-says-417362",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/Clarity-Act-Learn-scaled.jpg"
+        },
+        {
+          "id": "art_6119291",
+          "title": "Singapore crypto activity grows 55% as broader region contracts",
+          "url": "https://cointelegraph.com/news/singapore-crypto-economy-284b-institutional-activity-chainalysis",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RAGTSRKJH3XGCDAAGQTVXB/regulations-singapore-crypto.jpg"
+        },
+        {
+          "id": "art_6105874",
+          "title": "Kalshi to end liquidity incentive program amid wash trading allegations",
+          "url": "https://www.theblock.co/news/business/2026-09-30-kalshi-ends-trader-incentive-program-417247",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/09/20250917_Kalshi_News.jpg"
+        },
+        {
+          "id": "art_6098942",
+          "title": "Illinois draft crypto tax rules detail DeFi, stablecoin treatment",
+          "url": "https://cointelegraph.com/news/illinois-crypto-tax-rules-defi-stablecoins",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3R8AEFZM0B2PMXZ51BF3E46/usa-tax.png"
+        },
+        {
+          "id": "art_6136996",
+          "title": "CFTC secures over $30 million judgment against defendants in Fundsz fraud case",
+          "url": "https://www.theblock.co/news/regulation/2026-09-30-cftc-secures-over-30-million-judgment-against-defendants-in-fundsz-fraud-case-417365",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/06/20200630_CFTC-Daily.jpg"
+        },
+        {
+          "id": "art_6133655",
+          "title": "Crypto advocacy group announces picks for US Congress as midterms loom",
+          "url": "https://cointelegraph.com/news/stand-with-crypto-coinbase-senate-picks-us-midterms",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SP0XZZ2FXWPN060VSWSTWV/voteblokchain.jpg"
+        },
+        {
+          "id": "art_6116648",
+          "title": "Crypto advocacy group Stand With Crypto rolls out its first round of Senate endorsements after failed Clarity vote",
+          "url": "https://www.theblock.co/news/regulation/2026-09-30-crypto-advocacy-group-stand-with-crypto-first-senate-endorsements-after-failed-clarity-417223",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/11/20201105_OTC_Election.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6145625",
+          "title": "MetaMask exits Lido validators as it investigates security incident 9m, MetaMask exits Lido validators as it investigates security incident MetaMask said it has found no immediate threat to its wallets, while Lido warned the precautionary validator exits could result in lost rewards and downtime penalties.",
+          "url": "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TCYHE02RXXGBF3G4Q42FE7/metamask.jpg"
+        },
+        {
+          "id": "art_6127670",
+          "title": "Bitget ‘gradually back to usual’ as protection fund reaches $309M",
+          "url": "https://cointelegraph.com/news/bitget-operations-protection-fund-security-breach",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SFTGRPFV0GZS69VRZTP86N/hi-funds-are-opening-up-to-investing-into-crypto-2.jpg"
+        },
+        {
+          "id": "art_6112109",
+          "title": "SlowMist traces Bitget hack activity to Aug. 31 zero-day exploit24m, SlowMist traces Bitget hack activity to Aug. 31 zero-day exploitSlowMist identified malicious activity weeks before the Bitget theft, involving a zero-day vulnerability, two security products and a custom withdrawal tool.",
+          "url": "https://cointelegraph.com/news/bitget-hack-zero-day-slowmist-investigation",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3RTGB6W8ZNJPV69XHVA5WD7/hi-crypto-mixers-and-crosschain-bridges-how-hackers-hide-stolen-assets.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6133657",
+          "title": "Bloomberg brings onchain stablecoin data to its Terminal30m",
+          "url": "https://cointelegraph.com/news/bloomberg-brings-onchain-stablecoin-data-to-its-terminal-news-brief",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3SSH74MAM24NXDA35RM1XB4/hi-how-to-improve-your-coding-skills-using-bloomberg.jpg"
+        },
+        {
+          "id": "art_6116647",
+          "title": "Standard Chartered sees over 600% upside for ENA, expects USDe to hit $40 billion by 2028",
+          "url": "https://www.theblock.co/news/markets/2026-09-30-standard-chartered-sees-over-600-upside-for-ena-expects-usde-to-hit-40-billion-by-2028-417274",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/ethena-article-16x9-1.png"
+        },
+        {
+          "id": "art_6104927",
+          "title": "European stablecoin issuer AllUnity launches USD stablecoin USDAU",
+          "url": "https://cointelegraph.com/news/allunity-europe-mica-usd-stablecoin-usdau",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3Q01DCHR1M2F18EADTH89EF/stablecoin11.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6119888",
+          "title": "New report finds that rapid expansion of tokenization is giving rise to new styles of investing",
+          "url": "https://fortune.com/2026/09/30/new-report-expansion-tokenization-new-styles-investing/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2259164948-e1790736165198.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6140006",
+          "title": "🟪 The tokenization of everything  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_e1eb82af-d0c6-4188-bde8-e3ec967ad176",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Prediction markets just got a $40 billion price tag and a federal regulatory threat in the same news cycle. Kalshi's reported billion-dollar raise, led by Sequoia and Wellington, assumes these contracts trade in a light-touch regime. The CFTC has other plans. It is pushing to classify event contracts as swaps, which would federalize oversight and strip states of their gambling-law leverage. The White House is now weighing this exact framing.\n\nWe underwrite this sector on regulatory jurisdiction, not user growth. The Kalshi valuation only clears if the CFTC wins this definitional fight. If states retain gambling classification, the addressable market fragments into fifty regimes and the infrastructure premium collapses.\n\nBloomberg Terminal adding on-chain stablecoin data is the quieter signal. Traditional market data infrastructure is absorbing Web3 inputs as standard. That reduces friction for institutional allocation. It does not reduce regulatory risk.\n\nThe test: watch whether the CFTC's swap reclassification survives White House review and subsequent challenge. If it stalls, the repricing will be sharp and it will start with the most recently marked valuations. We are not underwriting prediction market exposure until that line is drawn."
+}
