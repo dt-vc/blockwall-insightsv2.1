@@ -1,0 +1,709 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-03",
+  "date_display": "October 3, 2026",
+  "generated_at": "2026-10-03T05:00:17.863Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Blast Shutdown Marks First Major Layer 2 Collapse as Costs Exceed Revenue",
+    "tldr": "Paradigm-backed Blast becomes the first significant Ethereum L2 to wind down due to unsustainable unit economics, while ECB advances wholesale CBDC design and Bitget suffers a $387.5M exploit. The throughline: infrastructure subsidies are expiring, and the market is beginning to discriminate between funded narratives and viable businesses."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the bill came due for one of Ethereum's most hyped scaling experiments, and the ECB finally showed its hand on onchain central bank money.",
+  "market_snapshot": {
+    "as_of": "2026-10-03T05:00:17.863Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$84,573",
+        "change_24h": "-2.3%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,675",
+        "change_24h": "-2.4%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.89T",
+        "change_24h": "-3.8%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$95.2B",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 9,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 15,
+    "neutral": 14,
+    "deduped": 15
+  },
+  "top_signals": [
+    {
+      "id": "art_6238921",
+      "title": "Weekly Research Brief: Bitget Hack, AI Accord and SEC FAQs",
+      "url": "https://www.galaxy.com/insights/research/bitget-hack-white-house-ai-accord-sec-crypto-faqs",
+      "source": "Galaxy — Network",
+      "source_domain": "galaxy.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A research brief covering a massive $387.5 million exploit at Bitget alongside regulatory updates from the SEC and a White House AI accord. The report also analyzes trader data from the prediction market Polymarket.",
+      "significance": 9,
+      "primary_source": "https://www.galaxy.com/insights/research/bitget-hack-white-house-ai-accord-sec-crypto-faqs",
+      "themes": [
+        "security",
+        "exploits"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/32akyVNSbOOaqi2uoBdERt/6431b0bad694aa163f50f21508559dbb/General-Cube-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "The Bitget exploit's scale, $387.5M, puts it among the largest centralized exchange breaches in recent years and will accelerate institutional demand for qualified custody separation, directly validating BitGo's thesis that consolidation of exchange and custody functions creates systemic vulnerability."
+    },
+    {
+      "id": "art_6247355",
+      "title": "Blast to wind down Ethereum L2 after costs outpace revenue21m, Blast to wind down Ethereum L2 after costs outpace revenueOnce among Ethereum’s largest layer-2 networks by total value locked, Blast is urging users to move their assets to mainnet ahead of the shutdown.",
+      "url": "https://cointelegraph.com/news/blast-to-wind-down-ethereum-l2-after-costs-outpace-revenue",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Layer2",
+      "sentiment": "bearish",
+      "summary": "Blast, previously one of the largest Ethereum layer-2 networks by TVL, is shutting down its operations. The decision comes as the network's operational costs have surpassed its revenue, prompting a call for users to migrate assets to the Ethereum mainnet.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/blast-to-wind-down-ethereum-l2-after-costs-outpace-revenue",
+      "themes": [
+        "layer2",
+        "network-shutdown"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YVCXVHV01NQ6FAE9XNJ7YQ/hi-terra-chain-test-net-to-go-offline-soon-will-that-be-it-for-the-network.png",
+      "why_it_matters": "Blast's shutdown is the first instance of a well-capitalized, Paradigm-backed L2 failing due to fundamental unit economics rather than technical failure or fraud, which reprices the entire rollup sector from 'scale at all costs' to 'prove sustainable revenue per transaction.'"
+    },
+    {
+      "id": "art_6242313",
+      "title": "Paradigm-backed Layer 2 Blast to wind down network as costs exceed revenue",
+      "url": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Layer2",
+      "sentiment": "bearish",
+      "summary": "Layer 2 network Blast is winding down its operations because operational costs have exceeded its revenue. Users have until October 26 to withdraw their assets via the interface before needing to use bridge contracts directly.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
+      "themes": [
+        "layer2",
+        "network-shutdown"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240507_Blast_News_1.jpg",
+      "why_it_matters": "The October 26 withdrawal deadline creates a forced migration event that will stress-test Blast's bridge contracts and user behavior, offering a live case study in L2 exit dynamics that every rollup investor should monitor."
+    },
+    {
+      "id": "art_6226751",
+      "title": "ECB outlines three models for putting central bank money onchain",
+      "url": "https://www.theblock.co/news/regulation/2026-10-02-ecb-outlines-three-models-for-putting-central-bank-money-onchain-417552",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "ECB Board member Isabel Schnabel has outlined three potential models for integrating central bank money onto blockchain infrastructure. This framework supports the ECB's ongoing development of its own DLT systems, specifically the Pontes and Appia projects.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-10-02-ecb-outlines-three-models-for-putting-central-bank-money-onchain-417552",
+      "themes": [
+        "regulation",
+        "cbdc"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ecb.png",
+      "why_it_matters": "Schnabel's three-model framework, Pontes and Appia, signals the ECB is moving from research to procurement-ready design for wholesale CBDC, which will eventually compete with private stablecoin and tokenized deposit infrastructure on settlement finality and regulatory equivalence."
+    },
+    {
+      "id": "art_6232736",
+      "title": "BitGo CEO says Clarity's failure left capital markets exposed to risk potentially worse than Lehman",
+      "url": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "BitGo CEO Mike Belshe warns that the failure of Clarity has exposed systemic risks within capital markets. He argues that the firm's consolidation of exchange, brokerage, and custody services created a vulnerability comparable to the Lehman Brothers collapse.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+      "themes": [
+        "security",
+        "systemic-risk"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/photo_2026-10-02-21.04.25.jpeg",
+      "why_it_matters": "Belshe's Lehman comparison is self-serving given BitGo's custody positioning, but the underlying point about vertical integration risk is gaining regulatory traction post-FTX and will shape CFTC/SEC custody rulemaking."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_6195899",
+      "company": "Evernorth",
+      "amount": "",
+      "round": "SPAC merger / Nasdaq debut",
+      "investors": [
+        "Armada Acquisition Corp. II"
+      ],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury",
+      "summary": "Evernorth shareholders have approved a merger with Armada Acquisition Corp. II, paving the way for the company to go public on the Nasdaq. The company notably holds a treasury of 473 million XRP."
+    },
+    {
+      "id": "art_6175600",
+      "company": "Monzo",
+      "amount": "£8bn-£10bn",
+      "round": "Acquisition (halted)",
+      "investors": [
+        "Nubank"
+      ],
+      "category": "Payments",
+      "url": "https://sifted.eu/articles/nubank-halts-monzo-acquisition-talks-after-sales-plunge/",
+      "summary": "Nubank has halted acquisition talks with UK-based fintech Monzo following a plunge in sales. The potential deal would have valued Monzo between £8bn and £10bn."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6217175",
+      "title": "Spot bitcoin ETFs log $2.7 billion in September inflows as institutional demand holds",
+      "url": "https://www.theblock.co/news/markets/2026-10-02-spot-bitcoin-etfs-september-inflows-417547",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "US spot Bitcoin ETFs saw significant institutional demand in September, recording $2.65 billion in net inflows. This represents the second-largest monthly inflow since October 2025.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
+    },
+    {
+      "id": "art_6215031",
+      "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
+      "url": "https://cointelegraph.com/news/south-korea-tokenized-securities-rules-2027",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "South Korea has proposed detailed regulatory frameworks for tokenized securities in preparation for a full rollout by February 2027. The rules will specifically address issuance processes, over-the-counter (OTC) trading, and investment limits for retail investors.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XE74WBH0J6TWS0FYDKCWPS/south-korea-tokenization.png"
+    },
+    {
+      "id": "art_6215032",
+      "title": "Zano exploiter created 36.9M unauthorized ZANO before blockchain rollback10m, Zano exploiter created 36.9M unauthorized ZANO before blockchain rollbackThe unauthorized coins were indistinguishable from legitimate ZANO, leaving the team unable to remove them without rolling back the blockchain.",
+      "url": "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "An exploiter created 36.9 million unauthorized ZANO tokens, forcing the project team to perform a blockchain rollback. The rollback was necessary because the fraudulent coins were indistinguishable from legitimate assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XFTC4Y1X9C4TEN43SCBMC8/coins.jpg"
+    },
+    {
+      "id": "art_6213834",
+      "title": "Core Lightning warns attackers are targeting unpatched Bitcoin nodes35m, Core Lightning warns attackers are targeting unpatched Bitcoin nodesNode operators running version 26.06.7 or earlier were told to upgrade immediately.",
+      "url": "https://cointelegraph.com/news/core-lightning-urges-upgrade-amid-reports-attackers-targeting-unpatched-nodes",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Core Lightning has issued an urgent warning to Bitcoin node operators regarding active attacks targeting unpatched software. Users running version 26.06.7 or earlier are advised to upgrade immediately to secure their nodes.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XCTY0H5CWTX6KGY7GT99ER/lightning-network.jpg"
+    },
+    {
+      "id": "art_6244709",
+      "title": "Drift opens exploit recovery claims with initial payouts of just over 1% of user losses",
+      "url": "https://www.theblock.co/news/ecosystems/2026-10-02-drift-opens-exploit-recovery-claims-initial-payouts-just-over-1-user-losses-417581",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Drift has launched its exploit recovery claims process, though initial payouts cover only slightly more than 1% of user losses. DFX holders can choose to redeem now or wait for additional funding, with up to $147.5 million in partner commitments still pending.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240503_Hacks_News_2.jpg"
+    },
+    {
+      "id": "art_6242563",
+      "title": "71% of UK finance leaders expect tokenization to reshape financial services: Lloyds26m, 71% of UK finance leaders expect tokenization to reshape financial services: LloydsA Lloyds survey found that faster payments and settlement are the most significant perceived benefits of tokenization, as the UK builds infrastructure for tokenized finance.",
+      "url": "https://cointelegraph.com/news/71-percent-uk-finance-leaders-expect-tokenization-reshape-financial-services-lloyds",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "A survey by Lloyds reveals that 71% of UK finance leaders believe tokenization will reshape financial services. The primary perceived benefits include faster payments and improved settlement processes as the UK develops its tokenized finance infrastructure.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YKMQ9ZKPKNFEAPV81NBPWJ/blockchainweek2020uk1.png"
+    },
+    {
+      "id": "art_6236577",
+      "title": "‘Euro stablecoin isn’t enough’: EU issuers make case for USD tokens12m",
+      "url": "https://cointelegraph.com/news/euro-stablecoin-not-enough-eu-case-usd-tokens",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "neutral",
+      "summary": "EU stablecoin issuers are arguing that the availability of Euro-denominated tokens is insufficient for market needs. They are advocating for the ability to issue USD-backed tokens within the EU regulatory framework to maintain competitiveness and liquidity.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YC9K50TRYWAJRWVJW83TNN/euro-and-dollar-characters-1.png"
+    },
+    {
+      "id": "art_6235130",
+      "title": "Bitcoin nears highest level since January as $85,000 sell wall clears, US jobs data disappoints",
+      "url": "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitcoin is approaching its highest price levels since January following the clearing of a significant sell wall at $85,000. Market analysts are now monitoring the next resistance cluster at $87,000 amidst disappointing U.S. employment data.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-green.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6243927",
+      "title": "DAWN: Underwriting the Ramp",
+      "url": "https://messari.io/report/dawn-underwriting-the-ramp",
+      "source": "Messari — Research",
+      "note": "Messari's DAWN report examines how ramp economics are evolving as on/off-rail infrastructure becomes a bottleneck for mainstream adoption, directly relevant to anyone underwriting payments or consumer crypto stacks.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c4cc3795b9b0b7080f8024b470678d3e84b46a60-1500x600.png"
+    },
+    {
+      "id": "art_6182633",
+      "title": "The Behavior of Polymarket Traders",
+      "url": "https://www.galaxy.com/insights/research/polymarket-trader-behavior-onchain-analysis-retail-profit-loss-specialization",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's trader behavior analysis on Polymarket offers empirical grounding on prediction market liquidity and participant incentives, useful for distinguishing signal from noise in the sector's growth narrative.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/nAwKLMYvDo94m9ogfzP4a/9c396cf33581f99c8795b971a7ffea18/General-ChartGraph-1_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_6175600",
+      "title": "Nubank halts Monzo acquisition talks after sales plunge",
+      "url": "https://sifted.eu/articles/nubank-halts-monzo-acquisition-talks-after-sales-plunge/",
+      "source": "Sifted",
+      "note": "The Sifted piece on Nubank-Monzo provides context on how fintech M&A is repricing as growth capital tightens, with implications for crypto corporate strategy and treasury deployment.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2025/04/08105456/Monzo-Spring-2366102-scaled-e1763035965264.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6217175",
+          "title": "Spot bitcoin ETFs log $2.7 billion in September inflows as institutional demand holds",
+          "url": "https://www.theblock.co/news/markets/2026-10-02-spot-bitcoin-etfs-september-inflows-417547",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
+        },
+        {
+          "id": "art_6189314",
+          "title": "Citigroup raises one year Bitcoin forecast to $113,000",
+          "url": "https://fortune.com/2026/10/01/citigroup-one-year-bitcoin-forecast-113000/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-932730048-e1790877653462.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6235130",
+          "title": "Bitcoin nears highest level since January as $85,000 sell wall clears, US jobs data disappoints",
+          "url": "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-green.png"
+        },
+        {
+          "id": "art_6175300",
+          "title": "Bitcoin ETFs' 9-day, $3 billion inflow streak comes to an end as $149 million exits the funds",
+          "url": "https://www.theblock.co/news/markets/2026-10-01-bitcoin-etfs-9-day-3-billion-inflow-streak-comes-to-an-end-as-149-million-exits-the-funds-417384",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
+        },
+        {
+          "id": "art_6159989",
+          "title": "Bitcoin think tank questions MSCI’s ‘invisible committee’ over Strategy, Metaplanet rule",
+          "url": "https://cointelegraph.com/news/msci-strategy-metaplanet-index-rule-bpi",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V0V4DAMBZA0R7RFXS3ES6D/hi-why-low-latency-is-important-for-cryptocurrency-exchanges-explained-strategy.jpg"
+        },
+        {
+          "id": "art_6229395",
+          "title": "Bitcoin treasuries may struggle to match Strategy, says Ammous",
+          "url": "https://cointelegraph.com/interview/bitcoin-treasuries-struggle-strategy-says-ammous",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Y0CB1X2FGXJEE6QVA6ZCTS/saifedean-ammous.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6243927",
+          "title": "DAWN: Underwriting the Ramp",
+          "url": "https://messari.io/report/dawn-underwriting-the-ramp",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c4cc3795b9b0b7080f8024b470678d3e84b46a60-1500x600.png"
+        },
+        {
+          "id": "art_6182633",
+          "title": "The Behavior of Polymarket Traders",
+          "url": "https://www.galaxy.com/insights/research/polymarket-trader-behavior-onchain-analysis-retail-profit-loss-specialization",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/nAwKLMYvDo94m9ogfzP4a/9c396cf33581f99c8795b971a7ffea18/General-ChartGraph-1_Green-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_6183679",
+          "title": "Ethereum staking reward burn proposal EIP-8363 pulled from Hegota upgrade",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6241531",
+          "title": "Ethereum September 2026 Update",
+          "url": "https://messari.io/report/ethereum-september-2026-update",
+          "source": "Messari — Research",
+          "sentiment": "neutral",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/ff9e229fcd9be0af03bbf47a25025c9bf45a5826-1983x793.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6248553",
+          "title": "$4.2B crypto bank Anchorage Digital cuts 17% of workforce: Report43m",
+          "url": "https://cointelegraph.com/news/anchorage-digital-cuts-workforce-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_6235696",
+          "title": "Is Robinhood Chain Over? ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_98c1824e-ad21-45fd-aa70-a50332c7d31c",
+          "source": "Blockworks (1)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_6181036",
+          "title": "모나드가 바라본 2030년 한국 가상자산 시장 전망",
+          "url": "https://reports.tiger-research.com/p/monads-outlook-for-koreas-crypto-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!bNaU!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F218342348%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_6181035",
+          "title": "Monad’s Outlook for Korea’s Crypto Market in 2030",
+          "url": "https://reports.tiger-research.com/p/monads-outlook-for-koreas-crypto-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!6uxP!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F218342355%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_6241801",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/olympus-data-dashboard-primer",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6195899",
+          "title": "Evernorth clears shareholder vote ahead of Nasdaq debut with 473M XRP treasury",
+          "url": "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3WJGXZ9FFQTSYAEBHHG5A8X/hi-types-of-consensus-mechanisms-in-blockchain.png"
+        },
+        {
+          "id": "art_6240168",
+          "title": "Crypto’s billions are back, but the premiums aren’t",
+          "url": "https://cointelegraph.com/news/crypto-biz-kalshi-blockchain-com-crypto-treasury-valuations",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YKXXV4WP8TTTRPX217ZDQQ/bitcoin-investment-pump-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_6247355",
+          "title": "Blast to wind down Ethereum L2 after costs outpace revenue21m, Blast to wind down Ethereum L2 after costs outpace revenueOnce among Ethereum’s largest layer-2 networks by total value locked, Blast is urging users to move their assets to mainnet ahead of the shutdown.",
+          "url": "https://cointelegraph.com/news/blast-to-wind-down-ethereum-l2-after-costs-outpace-revenue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YVCXVHV01NQ6FAE9XNJ7YQ/hi-terra-chain-test-net-to-go-offline-soon-will-that-be-it-for-the-network.png"
+        },
+        {
+          "id": "art_6242313",
+          "title": "Paradigm-backed Layer 2 Blast to wind down network as costs exceed revenue",
+          "url": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240507_Blast_News_1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "NFT_Gaming",
+      "items": [
+        {
+          "id": "art_6225805",
+          "title": "Porsche’s ‘long haul’ Web3 project ends in less than four years",
+          "url": "https://cointelegraph.com/news/porsche-shuts-down-web3-project-911-nft",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XVQ90NXXBKZTRCV3S58R4J/porsche-panamera.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6228198",
+          "title": "CONNECT recap: Arthur Hayes on money printing, Wall Street moves onchain",
+          "url": "https://cointelegraph.com/news/connect-recap-arthur-hayes-money-printing-wall-street-onchain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XMMJ91ZBREX0A7R5A5AHXT/connect-text-on-seoul-1.png"
+        },
+        {
+          "id": "art_6195900",
+          "title": "Trump to host 3rd ‘exclusive’ memecoin event amid corruption claims17m, Trump to host 3rd ‘exclusive’ memecoin event amid corruption claimsThe president is scheduled to appear at his golf club in Washington, DC, at a Nov. 22 dinner for his top 185 memecoin holders, following similar events in May 2025 and April 2026.",
+          "url": "https://cointelegraph.com/news/donald-trump-memecoin-dinner-corruption-claims",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6164177",
+          "title": "Visa and Mastercard handle nearly half of Europe’s card payments. The digital euro aims to change that",
+          "url": "https://fortune.com/2026/10/01/europe-digital-euro-challenge-us-visa-mastercard-payments-dominance/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/Fortune_V4_Horiz.png?resize=1200,600"
+        },
+        {
+          "id": "art_6175600",
+          "title": "Nubank halts Monzo acquisition talks after sales plunge",
+          "url": "https://sifted.eu/articles/nubank-halts-monzo-acquisition-talks-after-sales-plunge/",
+          "source": "Sifted",
+          "sentiment": "bearish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2025/04/08105456/Monzo-Spring-2366102-scaled-e1763035965264.jpg"
+        },
+        {
+          "id": "art_6174950",
+          "title": "AI is consuming human knowledge. It should learn how to pay for it",
+          "url": "https://fortune.com/2026/10/01/ai-agents-micropayments-copyright-publishers/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2248542236-e1790780859704.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6226751",
+          "title": "ECB outlines three models for putting central bank money onchain",
+          "url": "https://www.theblock.co/news/regulation/2026-10-02-ecb-outlines-three-models-for-putting-central-bank-money-onchain-417552",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ecb.png"
+        },
+        {
+          "id": "art_6234184",
+          "title": "Circle urges EU to revise stablecoin reserve rules in MiCA review58m, Circle urges EU to revise stablecoin reserve rules in MiCA reviewCircle wants the EU to replace mandatory bank-deposit minimums with more flexible liquidity rules and preserve cross-border stablecoin issuance.",
+          "url": "https://cointelegraph.com/news/circle-eu-stablecoin-reserve-rules-mica-review",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6253346",
+          "title": "European crypto users have ‘more faith’ in regulated firms under MiCA: Bitpanda co-CEO42m, European crypto users have ‘more faith’ in regulated firms under MiCA: Bitpanda co-CEOSpeaking on Cointelegraph’s Chain Reaction, Christian Trummer said MiCA has increased trust in regulated platforms and called for stricter enforcement against noncompliant firms.",
+          "url": "https://cointelegraph.com/news/mica-strengthened-retail-trust-regulated-crypto-exchanges-bitpanda-ceo-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_6214781",
+          "title": "SEC's innovation exemption poses constraint on bringing stock tokens to US, Robinhood crypto chief says",
+          "url": "https://www.theblock.co/news/regulation/2026-10-02-secs-innovation-exemption-robinhood-417538",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/kerbrat_option_C_darkgreen.jpg"
+        },
+        {
+          "id": "art_6188717",
+          "title": "Illinois will postpone implementation of crypto tax following lawsuit",
+          "url": "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3W4DEMZ53S3Q9NK2GTJAT5R/hi-crypto-glossary-tax-2.jpg"
+        },
+        {
+          "id": "art_6167171",
+          "title": "Chainalysis beats most Celsius claims, but ‘audit’ lawsuit survives10m, Chainalysis beats most Celsius claims, but ‘audit’ lawsuit survivesChainalysis still faces an aiding-and-abetting claim over Celsius’ disputed $3.3 billion audit after a judge dismissed 15 other claims.",
+          "url": "https://cointelegraph.com/news/celsius-chainalysis-lawsuit-audit-claim-survives",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6238921",
+          "title": "Weekly Research Brief: Bitget Hack, AI Accord and SEC FAQs",
+          "url": "https://www.galaxy.com/insights/research/bitget-hack-white-house-ai-accord-sec-crypto-faqs",
+          "source": "Galaxy — Network",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/32akyVNSbOOaqi2uoBdERt/6431b0bad694aa163f50f21508559dbb/General-Cube-1_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_6232736",
+          "title": "BitGo CEO says Clarity's failure left capital markets exposed to risk potentially worse than Lehman",
+          "url": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/photo_2026-10-02-21.04.25.jpeg"
+        },
+        {
+          "id": "art_6215032",
+          "title": "Zano exploiter created 36.9M unauthorized ZANO before blockchain rollback10m, Zano exploiter created 36.9M unauthorized ZANO before blockchain rollbackThe unauthorized coins were indistinguishable from legitimate ZANO, leaving the team unable to remove them without rolling back the blockchain.",
+          "url": "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XFTC4Y1X9C4TEN43SCBMC8/coins.jpg"
+        },
+        {
+          "id": "art_6213834",
+          "title": "Core Lightning warns attackers are targeting unpatched Bitcoin nodes35m, Core Lightning warns attackers are targeting unpatched Bitcoin nodesNode operators running version 26.06.7 or earlier were told to upgrade immediately.",
+          "url": "https://cointelegraph.com/news/core-lightning-urges-upgrade-amid-reports-attackers-targeting-unpatched-nodes",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XCTY0H5CWTX6KGY7GT99ER/lightning-network.jpg"
+        },
+        {
+          "id": "art_6244709",
+          "title": "Drift opens exploit recovery claims with initial payouts of just over 1% of user losses",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-02-drift-opens-exploit-recovery-claims-initial-payouts-just-over-1-user-losses-417581",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240503_Hacks_News_2.jpg"
+        },
+        {
+          "id": "art_6207869",
+          "title": "NEAR Intents says its identified the hacker, gives 48-hour ultimatum",
+          "url": "https://cointelegraph.com/news/near-intents-says-its-identified-the-hacker-gives-48-hour-ultimatum",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6225804",
+          "title": "Aave founder says V3 unaffected after third-party adapter exploit drains $305K14m, Aave founder says V3 unaffected after third-party adapter exploit drains $305KAave founder Stani Kulechov said Aave v3 was unaffected after an attacker exploited a third-party adapter to drain about $305,000 from two Safe multisig wallets.",
+          "url": "https://cointelegraph.com/news/aave-v3-third-party-adapter-exploit-305k",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6236577",
+          "title": "‘Euro stablecoin isn’t enough’: EU issuers make case for USD tokens12m",
+          "url": "https://cointelegraph.com/news/euro-stablecoin-not-enough-eu-case-usd-tokens",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YC9K50TRYWAJRWVJW83TNN/euro-and-dollar-characters-1.png"
+        },
+        {
+          "id": "art_6177945",
+          "title": "LATAM stablecoin liquidity may depend on few providers, investor says",
+          "url": "https://cointelegraph.com/news/latam-stablecoin-liquidity-may-depend-on-few-providers-investor-says",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TRC5Z6YAK9RTJ9KC3HWE8H/latam.jpg"
+        },
+        {
+          "id": "art_6241839",
+          "title": "Are AI agents coming for stablecoin balances? ",
+          "url": "https://tokenterminal.com/resources/newsletter/are-ai-agents-coming-for-stablecoin-balances",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6215031",
+          "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
+          "url": "https://cointelegraph.com/news/south-korea-tokenized-securities-rules-2027",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XE74WBH0J6TWS0FYDKCWPS/south-korea-tokenization.png"
+        },
+        {
+          "id": "art_6242563",
+          "title": "71% of UK finance leaders expect tokenization to reshape financial services: Lloyds26m, 71% of UK finance leaders expect tokenization to reshape financial services: LloydsA Lloyds survey found that faster payments and settlement are the most significant perceived benefits of tokenization, as the UK builds infrastructure for tokenized finance.",
+          "url": "https://cointelegraph.com/news/71-percent-uk-finance-leaders-expect-tokenization-reshape-financial-services-lloyds",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YKMQ9ZKPKNFEAPV81NBPWJ/blockchainweek2020uk1.png"
+        },
+        {
+          "id": "art_6171959",
+          "title": "Tokenized assets don’t always mirror traditional markets, Dune finds",
+          "url": "https://cointelegraph.com/news/tokenized-assets-traditional-markets-dune-rwa-report",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3VD85750C29V6G9ST49T6ZH/hi-tokenization-will-bring-desirable-stability-to-emerging-markets.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Blast had Paradigm, a points program, and $2.3 billion in TVL at peak. It is now telling users to bridge home before October 26 because operating costs exceeded revenue. This is not a hack. This is not a rug. This is the first major L2 to die of accounting.\n\nThe rollup playbook was always subsidize, accumulate deposits, find monetization later. Blast ran the experiment honestly and the math killed it. For investors, this reprices the entire sector. We have been underwriting L2s on throughput metrics and developer mindshare. Those are inputs. The output that matters is whether fee revenue covers sequencer costs, data availability, and the subsidy required to retain users. Most cannot.\n\nThe ECB's Schnabel published three models for wholesale CBDC onchain today. Pontes and Appia are not retail payment experiments. They are settlement infrastructure. When central bank money competes directly with private stablecoins on finality and regulatory equivalence, the value in crypto settlement layers shifts from speed to compliance architecture. That is a different underwriting thesis entirely.\n\nWhat would confirm this: another tier-one L2 announcing fee restructuring or shutdown before year-end. What would kill it: a sustainable revenue model emerging from any major rollup that does not depend on token incentives.\n\nWe are watching bridge outflows, not whitepapers."
+}
