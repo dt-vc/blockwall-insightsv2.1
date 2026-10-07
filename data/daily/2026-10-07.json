@@ -1,0 +1,620 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-07",
+  "date_display": "October 7, 2026",
+  "generated_at": "2026-10-07T05:00:18.039Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "OKX hits $25B valuation as Coinbase rebuilds institutional stack, while Abstract's collapse marks L2 reckoning",
+    "tldr": "Exchange infrastructure is repricing upward on institutional traction, but the layer-2 land grab is showing casualties as capital concentrates in proven tokenization and regulated on-ramps."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks capital flowing toward regulated exchange infrastructure and tokenized real-world assets while the L2 experiment loses another well-funded contender.",
+  "market_snapshot": {
+    "as_of": "2026-10-07T05:00:18.039Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$84,087",
+        "change_24h": "-1.8%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,610",
+        "change_24h": "-3.4%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.87T",
+        "change_24h": "-4.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$94.7B",
+        "change_24h": "-2.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 20,
+    "bearish": 6,
+    "neutral": 7,
+    "deduped": 3
+  },
+  "top_signals": [
+    {
+      "id": "art_6465583",
+      "title": "OKX exchange raises fresh capital at $25B valuation",
+      "url": "https://cointelegraph.com/news/okx-exchange-raises-capital-25b-valuation",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "OKX has successfully raised new capital from a group of strategic investors and partners. The funding round establishes a valuation of $25 billion for the exchange.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/okx-exchange-raises-capital-25b-valuation",
+      "themes": [
+        "investment",
+        "exchange-funding"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48NWDDYWBD7SNFGR28DNZC8/hi-how-to-migrate-crypto-from-an-exchange-to-okx.jpg",
+      "why_it_matters": "A $25 billion valuation for OKX in this funding environment signals that strategic investors are underwriting exchange equity on institutional penetration metrics rather than retail volume alone, which reprices the entire CEX competitive set."
+    },
+    {
+      "id": "art_6459332",
+      "title": "Spiko raises $90 million to expand tokenized cash funds across markets",
+      "url": "https://www.theblock.co/news/business/2026-10-06-spiko-raises-90-million-to-expand-tokenized-cash-funds-across-markets-417774",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Spiko has raised $90 million in its latest funding round to expand its tokenized cash fund offerings across various markets. This brings the company's total capital raised to $120 million with assets under management now reaching $2.7 billion.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-06-spiko-raises-90-million-to-expand-tokenized-cash-funds-across-markets-417774",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/spiko.png",
+      "why_it_matters": "Spiko's $90 million raise to push tokenized cash funds past $2.7 billion AUM demonstrates that the RWA thesis has moved from proof-of-concept to scale-out financing, with traditional fund structures now being unbundled onto permissioned chains."
+    },
+    {
+      "id": "art_6497732",
+      "title": "Coinbase Pro to return; Deribit integration creates Coinbase Global Exchange",
+      "url": "https://www.theblock.co/news/business/2026-10-06-coinbase-pro-deribit-integration-coinbase-global-exchange-417867",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Coinbase is set to relaunch Coinbase Pro by the end of the year. Additionally, the company has integrated with Deribit to establish the Coinbase Global Exchange.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-06-coinbase-pro-deribit-integration-coinbase-global-exchange-417867",
+      "themes": [
+        "infrastructure",
+        "exchange"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230419_Coinbase_Generic2.jpg",
+      "why_it_matters": "Coinbase's dual move—resurrecting Pro and integrating Deribit into a Global Exchange—reveals a strategy to own the full institutional workflow from spot through derivatives, effectively building a vertically integrated prime brokerage that competitors will have to match or exit."
+    },
+    {
+      "id": "art_6490782",
+      "title": "Pudgy Penguins-backed Abstract to shut down after ‘tens of millions’ in losses",
+      "url": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Layer2",
+      "sentiment": "bearish",
+      "summary": "Ethereum layer-2 project Abstract is shutting down on December 15 following significant financial losses. CEO Luca Netz cited a failure to achieve product-market fit as the primary reason for the closure.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down",
+      "themes": [
+        "layer2",
+        "infrastructure"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49QY81Q8WDEP0W0BZRYD0A8/abstract.jpg",
+      "why_it_matters": "Abstract's shutdown after tens of millions in losses, despite Pudgy Penguins' brand and Luca Netz's track record, is the clearest admission yet that L2 deployment without sustained transaction demand is just a burn rate in search of a business model."
+    },
+    {
+      "id": "art_6483583",
+      "title": "Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing19m",
+      "url": "https://cointelegraph.com/news/winklevoss-backed-zcash-etf-files-with-sec-for-nasdaq-listing",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "A Winklevoss-backed entity has officially filed with the SEC for the listing of a Zcash ETF on the Nasdaq. This move represents a push to bring privacy-focused digital assets into regulated investment vehicles.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/winklevoss-backed-zcash-etf-files-with-sec-for-nasdaq-listing",
+      "themes": [
+        "investment",
+        "etf"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49DR4VPPGS9RG9R18484EC5/hi-token-etf-victory-2.png",
+      "why_it_matters": "The Zcash ETF filing tests whether privacy-preserving assets can clear the SEC's surveillance-sharing bar, and if approved, it would force a repricing of the entire privacy token category by creating a regulated bid that currently does not exist."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_6465583",
+      "company": "OKX",
+      "amount": "",
+      "round": "",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/okx-exchange-raises-capital-25b-valuation",
+      "summary": "OKX has successfully raised new capital from a group of strategic investors and partners. The funding round establishes a valuation of $25 billion for the exchange."
+    },
+    {
+      "id": "art_6459332",
+      "company": "Spiko",
+      "amount": "$90M",
+      "round": "",
+      "investors": [],
+      "category": "Tokenization",
+      "url": "https://www.theblock.co/news/business/2026-10-06-spiko-raises-90-million-to-expand-tokenized-cash-funds-across-markets-417774",
+      "summary": "Spiko has raised $90 million in its latest funding round to expand its tokenized cash fund offerings across various markets. This brings the company's total capital raised to $120 million with assets under management now reaching $2.7 billion."
+    },
+    {
+      "id": "art_6442834",
+      "company": "Hadrian",
+      "amount": "$40M",
+      "round": "",
+      "investors": [
+        "Forgepoint",
+        "SmartFin"
+      ],
+      "category": "Security",
+      "url": "https://sifted.eu/articles/hadrian-ai-funding-round-cyber-security/",
+      "summary": "Amsterdam-based cybersecurity startup Hadrian has raised $40 million in a funding round led by Forgepoint and SmartFin. The investment comes as the company seeks to combat the acceleration of AI-driven cyberattacks."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6479982",
+      "title": "UK names 6 banks to lead first digitally native government bond",
+      "url": "https://cointelegraph.com/news/uk-taps-6-banks-to-lead-first-digitally-native-government-bond",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The UK government has selected six major financial institutions to lead the issuance of its first digitally native government bond. This move signals a significant step toward the tokenization of sovereign debt and the modernization of government financial infrastructure.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4997XE3Q73505XVEHSA997G/hi-what-are-bonds-and-how-do-they-work-for-crypto-red.png"
+    },
+    {
+      "id": "art_6464132",
+      "title": "Fortitude expands Zcash mining push with up to $100 million equipment commitment",
+      "url": "https://www.theblock.co/news/business/2026-10-06-fortitude-expands-zcash-mining-push-with-up-to-100-million-equipment-commitment-417790",
+      "source": "The Block",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Fortitude is expanding its commitment to Zcash mining with a planned investment of up to $100 million in hardware equipment. This move aims to bolster the security and decentralization of the Zcash network through increased hashing power.",
+      "image_url": null
+    },
+    {
+      "id": "art_6496683",
+      "title": "Q3 Crypto Market Review, Bitget/Near Exploits, and Privacy's Next Era",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/q3-crypto-market-review-bitget-near-exploits-and-privacy-s-next-era",
+      "source": "Galaxy — Insights",
+      "category": "Other",
+      "sentiment": "bullish",
+      "summary": "A comprehensive Q3 review highlighting Bitcoin's rise above $80K and strong Ethereum performance driven by ETF inflows and DEX volumes. The report also addresses the $387 million Bitget exploit and the Ethereum Foundation's new ZK API initiative for privacy and AI.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_6457182",
+      "title": "Hong Kong officials double down on end-2026 deadline for crypto licensing bill",
+      "url": "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Hong Kong government has reaffirmed its commitment to implementing a comprehensive crypto licensing regime by the end of 2026. The proposed framework will cover four distinct categories of digital assets to provide regulatory clarity.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M489R6N7E1AB2YW1Y7Q9J3JB/hi-how-hong-kong-is-turning-tokenized-bonds-into-real-market-infrastructure-1.jpg"
+    },
+    {
+      "id": "art_6455732",
+      "title": "Ondo launches onchain private-company exposure, starting with AI",
+      "url": "https://www.theblock.co/news/business/2026-10-06-ondo-launches-onchain-private-company-exposure-starting-with-ai-417762",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Ondo has launched tokenized private-company notes, beginning with exposure to a pre-IPO AI firm. These assets will track per-share value and allow for 24/7 trading on secondary markets.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ondo.png"
+    },
+    {
+      "id": "art_6454782",
+      "title": "Solana Foundation targets settlement in seconds with DvP launch9m",
+      "url": "https://cointelegraph.com/news/solana-foundation-settlement-seconds-dvp",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "The Solana Foundation is launching a Delivery versus Payment (DvP) framework to enable near-instant settlement of assets. This initiative aims to reduce counterparty risk and increase efficiency in the exchange of digital assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4860PG9THHFYD42RP00GSN1/hi-solana-sol-ecosystem-1.jpg"
+    },
+    {
+      "id": "art_6495582",
+      "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
+      "url": "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "German exchange Bitcoin.de continues to face trading halts after the regulator BaFin rejected its application for MiCA authorization. The company is now searching for regulated partners to resume its operations.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4A095MDC2D69YPTJKJTJZCV/mica.jpg"
+    },
+    {
+      "id": "art_6484350",
+      "title": "‘Most dangerous product in crypto’ vexes Singapore",
+      "url": "https://www.ft.com/content/cd851d45-596b-4745-8c28-ce7ace1d3e43",
+      "source": "FT Crypto",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Singaporean regulators are expressing concern over Hyperliquid Labs and its perpetual futures trading products, which are viewed as high-risk. The city-state is attempting to distance itself from the platform to avoid potential scandal and financial instability.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F1f3c2231-b54a-42c1-8238-b0409473a03c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6496683",
+      "title": "Q3 Crypto Market Review, Bitget/Near Exploits, and Privacy's Next Era",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/q3-crypto-market-review-bitget-near-exploits-and-privacy-s-next-era",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's Q3 review pairs exchange exploit analysis with privacy infrastructure trends, giving a useful frame for how security and compliance are converging as investment themes.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_6472682",
+      "title": "AMM-bivalent: How Not to Deploy Tokenized Stocks in DeFi",
+      "url": "https://www.galaxy.com/insights/research/tokenized-stocks-amm-defi-impermanent-loss-dispersion-sp500-robinhood-chain",
+      "source": "Galaxy — Insights",
+      "note": "This piece on AMM-bivalent tokenized stock deployment is worth reading for the specific failure modes it identifies in current DeFi-equity bridging attempts, which matter for anyone underwriting RWA protocol risk.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2y6Mq74Bngi1paLl7tRcbO/03900f50d7c4d32b568a8cf9d70d1612/General-ChartGraph-2_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_6442834",
+      "title": "Exclusive: Hadrian raises $40m as AI cyberattacks accelerate",
+      "url": "https://sifted.eu/articles/hadrian-ai-funding-round-cyber-security/",
+      "source": "Sifted",
+      "note": "The Hadrian raise coverage includes operational detail on how AI-driven attack surfaces are reshaping cybersecurity procurement timelines, relevant for infrastructure due diligence.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/05154516/Hadrian-Founders-L-R-Rogier-Fischer-Olivier-Beg-Maurice-Clin-scaled.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6467733",
+          "title": "Polymarket rolls out V2 upgrade with single ERC-1155 positions contract, pUSD collateral",
+          "url": "https://www.theblock.co/news/business/2026-10-06-polymarket-rolls-out-v2-upgrade-with-single-erc-1155-positions-contract-pusd-collateral-417804",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/06/polymarket-news-editorial.jpg"
+        },
+        {
+          "id": "art_6464383",
+          "title": "Polymarket overhauls smart contracts with new Protocol V2 rollout",
+          "url": "https://cointelegraph.com/news/polymarket-smart-contract-overhaul-protocol-v2",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48GRG4NZENV80G0JSB2JRWX/news-city-town-billboard-1-polymarket-1.jpg"
+        },
+        {
+          "id": "art_6468932",
+          "title": "Solana treasury DeFi Development authorizes CHAD preferred stock buyback program",
+          "url": "https://www.theblock.co/news/markets/2026-10-06-defi-development-chad-preferred-stock-repurchase-program-417819",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_6466782",
+          "title": "Ethereum’s Glamsterdam upgrade launches on Sepolia testnet",
+          "url": "https://cointelegraph.com/news/ethereums-glamsterdam-upgrade-launches-on-sepolia-testnet",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48FZG6BQZ9TK43EGQKZKHER/hi-vitalik-buterins-vision-for-ethereum-pectra-glamsterdam-beyond.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6497732",
+          "title": "Coinbase Pro to return; Deribit integration creates Coinbase Global Exchange",
+          "url": "https://www.theblock.co/news/business/2026-10-06-coinbase-pro-deribit-integration-coinbase-global-exchange-417867",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230419_Coinbase_Generic2.jpg"
+        },
+        {
+          "id": "art_6464132",
+          "title": "Fortitude expands Zcash mining push with up to $100 million equipment commitment",
+          "url": "https://www.theblock.co/news/business/2026-10-06-fortitude-expands-zcash-mining-push-with-up-to-100-million-equipment-commitment-417790",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_6454782",
+          "title": "Solana Foundation targets settlement in seconds with DvP launch9m",
+          "url": "https://cointelegraph.com/news/solana-foundation-settlement-seconds-dvp",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4860PG9THHFYD42RP00GSN1/hi-solana-sol-ecosystem-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6465583",
+          "title": "OKX exchange raises fresh capital at $25B valuation",
+          "url": "https://cointelegraph.com/news/okx-exchange-raises-capital-25b-valuation",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48NWDDYWBD7SNFGR28DNZC8/hi-how-to-migrate-crypto-from-an-exchange-to-okx.jpg"
+        },
+        {
+          "id": "art_6483583",
+          "title": "Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing19m",
+          "url": "https://cointelegraph.com/news/winklevoss-backed-zcash-etf-files-with-sec-for-nasdaq-listing",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49DR4VPPGS9RG9R18484EC5/hi-token-etf-victory-2.png"
+        },
+        {
+          "id": "art_6470382",
+          "title": "Ripple expands Brevan Howard deal with prime brokerage services",
+          "url": "https://cointelegraph.com/news/ripple-expands-brevan-howard-deal-with-prime-brokerage-services",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48VPXTAZCF52SY8JR6AA45A/handshake-agreement-union-partnership-cooperation-collaboration-join-deal-breaking-news-1.png"
+        },
+        {
+          "id": "art_6475182",
+          "title": "Affluent investors seen boosting crypto exposure: Survey15m",
+          "url": "https://cointelegraph.com/news/majority-of-affluent-investors-across-7-countries-own-crypto-survey",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_6490782",
+          "title": "Pudgy Penguins-backed Abstract to shut down after ‘tens of millions’ in losses",
+          "url": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49QY81Q8WDEP0W0BZRYD0A8/abstract.jpg"
+        },
+        {
+          "id": "art_6451182",
+          "title": "EEZ tests atomic L1-to-L2 transaction in push to unify Ethereum",
+          "url": "https://cointelegraph.com/news/ethereum-eez-atomic-l1-l2-transaction-mainnet",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M47YM6VN7TYVESK6R60XKC5Z/hi-ethereum-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6496683",
+          "title": "Q3 Crypto Market Review, Bitget/Near Exploits, and Privacy's Next Era",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-grid/q3-crypto-market-review-bitget-near-exploits-and-privacy-s-next-era",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_6464982",
+          "title": "A $443 million memecoin frenzy dissolves into nothing—Robinhood and Circle are latest to taste the memecoin boom-and-bust cycle",
+          "url": "https://fortune.com/2026/10/06/443-million-memecoin-frenzy-robinhood-circle-latest-memecoin-boom-bust/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-1397863099-1-e1791258811418.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6477582",
+          "title": "Russia’s digital ruble accounts top 220K in first month, nearly 4X central bank forecast",
+          "url": "https://cointelegraph.com/news/russia-digital-ruble-adoption-brics-cbdc-payments",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49574J2Y2HJE1HW5F7ZW209/russia-kremlin-moscow-red-square-cryptocurrency-coin-cbdc-winter.jpg"
+        },
+        {
+          "id": "art_6472782",
+          "title": "ECB policymaker warns of fragmentation without digital euro",
+          "url": "https://cointelegraph.com/news/european-central-bank-fragmentation-digital-euro",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48SGQ09ZEND1Z4RFZ0R0KKQ/hi-digital-euro-fragmentation.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6457182",
+          "title": "Hong Kong officials double down on end-2026 deadline for crypto licensing bill",
+          "url": "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M489R6N7E1AB2YW1Y7Q9J3JB/hi-how-hong-kong-is-turning-tokenized-bonds-into-real-market-infrastructure-1.jpg"
+        },
+        {
+          "id": "art_6495582",
+          "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
+          "url": "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4A095MDC2D69YPTJKJTJZCV/mica.jpg"
+        },
+        {
+          "id": "art_6484350",
+          "title": "‘Most dangerous product in crypto’ vexes Singapore",
+          "url": "https://www.ft.com/content/cd851d45-596b-4745-8c28-ce7ace1d3e43",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F1f3c2231-b54a-42c1-8238-b0409473a03c.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_6446382",
+          "title": "Better Markets says CFTC is ‘wrong agency’ to regulate retail crypto14m, Better Markets says CFTC is ‘wrong agency’ to regulate retail cryptoBetter Markets said the CFTC’s proposed framework to bring certain cryptocurrency transactions and exchanges under its oversight will leave investors less protected than under the SEC.",
+          "url": "https://cointelegraph.com/news/better-markets-criticize-cftc-regulate-retail-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_6442782",
+          "title": "Rain seeks US trust bank charter days after OCC sued over crypto charters 39m",
+          "url": "https://cointelegraph.com/news/rain-seeks-us-trust-bank-charter-days-after-occ-sued-over-crypto-charters",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6460532",
+          "title": "Rep. Don Davis introduces bill to stop federal candidates trading prediction market contracts tied to their own elections",
+          "url": "https://www.theblock.co/news/regulation/2026-10-06-rep-don-davis-introduces-bill-to-stop-federal-candidates-trading-prediction-market-contracts-tied-to-their-own-elections-417781",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/don-davis.png"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6456932",
+          "title": "ZachXBT says he fronted $349,700 to infiltrate alleged Chinese launderers tied to Lazarus, Bybit hack",
+          "url": "https://www.theblock.co/news/defi/2026-10-06-zachxbt-infiltrated-chinese-launderers-lazarus-hack-417767",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230411_Hack_Generic_4.jpg"
+        },
+        {
+          "id": "art_6442834",
+          "title": "Exclusive: Hadrian raises $40m as AI cyberattacks accelerate",
+          "url": "https://sifted.eu/articles/hadrian-ai-funding-round-cyber-security/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/05154516/Hadrian-Founders-L-R-Rogier-Fischer-Olivier-Beg-Maurice-Clin-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6464382",
+          "title": "Paxos’ $3B USDG stablecoin launches on Arbitrum",
+          "url": "https://cointelegraph.com/news/paxos-3b-usdg-stablecoin-launches-arbitrum",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M46WBG22HWMG48BG05ZYED9S/hi-others-are-making-a-push-to-build-crypto-infrastructure-as-stablecoin-expands-distribution.png"
+        },
+        {
+          "id": "art_6483582",
+          "title": "Conduit sues Tether over allegedly freezing $2.8M without explanation",
+          "url": "https://cointelegraph.com/news/conduit-lawsuit-tether-usdt-freeze",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4978DXD1V002XFV3JZD97G6/hi-amid-crypto-winter-tether.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6459332",
+          "title": "Spiko raises $90 million to expand tokenized cash funds across markets",
+          "url": "https://www.theblock.co/news/business/2026-10-06-spiko-raises-90-million-to-expand-tokenized-cash-funds-across-markets-417774",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/spiko.png"
+        },
+        {
+          "id": "art_6479982",
+          "title": "UK names 6 banks to lead first digitally native government bond",
+          "url": "https://cointelegraph.com/news/uk-taps-6-banks-to-lead-first-digitally-native-government-bond",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4997XE3Q73505XVEHSA997G/hi-what-are-bonds-and-how-do-they-work-for-crypto-red.png"
+        },
+        {
+          "id": "art_6455732",
+          "title": "Ondo launches onchain private-company exposure, starting with AI",
+          "url": "https://www.theblock.co/news/business/2026-10-06-ondo-launches-onchain-private-company-exposure-starting-with-ai-417762",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ondo.png"
+        },
+        {
+          "id": "art_6473982",
+          "title": "Securitize stock jumps 8% amid South Korea tokenization push",
+          "url": "https://cointelegraph.com/news/securitize-lg-cns-south-korea-tokenized-assets",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48YCR57ADWYMKFRMPMVX99K/real-world-assets-rwa-crypto.jpg"
+        },
+        {
+          "id": "art_6455982",
+          "title": "Ondo opens private markets with tokenized pre-IPO AI exposure",
+          "url": "https://cointelegraph.com/news/ondo-private-markets-tokenized-pre-ipo-ai",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M487HXC16SDNYAD6KJFE3J4V/paper-document-man-office-rwa-1.jpg"
+        },
+        {
+          "id": "art_6472682",
+          "title": "AMM-bivalent: How Not to Deploy Tokenized Stocks in DeFi",
+          "url": "https://www.galaxy.com/insights/research/tokenized-stocks-amm-defi-impermanent-loss-dispersion-sp500-robinhood-chain",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2y6Mq74Bngi1paLl7tRcbO/03900f50d7c4d32b568a8cf9d70d1612/General-ChartGraph-2_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Coinbase is building what looks like a prime brokerage. OKX just got priced at $25 billion. These are not the same business, but they rhyme on one thing: the money is in owning the institutional on-ramp, not in launching another chain.\n\nWe have watched the L2 thesis get tested hard. Abstract had capital, a known founder, and Pudgy Penguins' distribution. It is shutting in December. Luca Netz called it product-market fit failure. That is honest. It is also expensive. The tens of millions lost there did not disappear; they were transferred to infrastructure providers, to payroll, to Ethereum mainnet fees. This is how the sector cleanses.\n\nWhat gets repriced now is not just Abstract's equity. It is the assumption that any execution environment can capture value if the application layer is thin. Our portfolio company Spiko is running the opposite playbook—$2.7 billion in AUM, $90 million fresh in, building on top of existing rails rather than minting new ones. Tokenized cash funds do not need a new chain. They need compliance, liquidity, and a yield spread.\n\nThe Zcash ETF filing is a separate bet. Privacy assets in a regulated wrapper is a hard problem the SEC has not yet said yes to. If it clears, the category re-rates overnight. If not, the filing still tells us where sophisticated allocators are looking for edge.\n\nWe underwrite infrastructure on customer concentration and retention. The exchanges are winning both. The L2s are not."
+}
