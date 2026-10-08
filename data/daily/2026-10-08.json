@@ -1,0 +1,505 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-08",
+  "date_display": "October 8, 2026",
+  "generated_at": "2026-10-08T05:00:17.880Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Samsung USDC on Solana Marks Enterprise Stablecoin Inflection as Kazakhstan and SAP Follow",
+    "tldr": "Stablecoins are being absorbed into legacy corporate and consumer infrastructure at accelerating velocity, with Samsung Wallet, SAP, and Kazakhstan's central bank each validating the rails this week. The investment implication is a repricing of who captures the issuance and distribution margin in a post-hype phase."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-10-08T05:00:17.880Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$82,557",
+        "change_24h": "-1.8%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,559",
+        "change_24h": "-1.9%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.82T",
+        "change_24h": "-4.5%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$93.4B",
+        "change_24h": "-2.8%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 4,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 18,
+    "bearish": 4,
+    "neutral": 4,
+    "deduped": 3
+  },
+  "top_signals": [
+    {
+      "id": "art_6554132",
+      "title": "Samsung to launch USDC transfers on Solana for US Galaxy users",
+      "url": "https://www.theblock.co/news/business/2026-10-07-samsung-to-launch-usdc-transfers-on-solana-for-us-galaxy-users-418004",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Samsung is integrating USDC transfers on the Solana blockchain directly into the Samsung Wallet for users in the US. The feature includes built-in fiat on- and off-ramps, removing the need for a separate cryptocurrency application.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-07-samsung-to-launch-usdc-transfers-on-solana-for-us-galaxy-users-418004",
+      "themes": [
+        "payments",
+        "digital-wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/samsung-news.jpg",
+      "why_it_matters": "Samsung embedding USDC transfers natively in its wallet—fiat on/off ramps included—signals that distribution, not standalone crypto apps, is becoming the moat for stablecoin adoption, and Solana's inclusion over Ethereum or Layer-2s reflects where latency-sensitive consumer payments are being underwritten."
+    },
+    {
+      "id": "art_6539982",
+      "title": "Circle brings USDC, EURC payments to SAP customers through Tereina4m",
+      "url": "https://cointelegraph.com/news/circle-usdc-eurc-payments-sap-enterprise-ecosystem",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Circle is integrating its USDC and EURC stablecoins into the SAP ecosystem via Tereina4m. This move allows SAP customers to utilize stablecoin payments for business operations, bridging traditional enterprise software with Web3 financial rails.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/circle-usdc-eurc-payments-sap-enterprise-ecosystem",
+      "themes": [
+        "payments",
+        "enterprise-payments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4C0FKXZZQCVXBKP6KS4MJFP/hi-crypto-negotiation-1.png",
+      "why_it_matters": "SAP integration via Tereina4m means stablecoins are now penetrating ERP workflows where procurement and treasury teams live, which expands addressable volume from retail speculation to B2B working capital and forces us to reassess which chains are optimized for enterprise compliance rather than retail throughput."
+    },
+    {
+      "id": "art_6534932",
+      "title": "Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion",
+      "url": "https://www.theblock.co/news/markets/2026-10-07-grayscale-crypto-etf-market-beyond-bitcoin-ether-417953",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Grayscale indicates that the crypto ETF market is entering a new phase, highlighted by the Zcash ETF surpassing $1 billion in assets. Additionally, the firm is pursuing the tokenization of two covered-call funds via an SEC innovation exemption.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/markets/2026-10-07-grayscale-crypto-etf-market-beyond-bitcoin-ether-417953",
+      "themes": [
+        "investment",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/09/20250919_Greyscale_News_2.jpg",
+      "why_it_matters": "Grayscale's Zcash ETF crossing $1 billion alongside covered-call fund tokenization suggests ETF issuers are weaponizing regulatory exemptions to blur the line between traditional structured products and on-chain wrappers, a move that could reprice incumbents if the SEC innovation pathway holds."
+    },
+    {
+      "id": "art_6532782",
+      "title": "Sui tunnels hit 40.6M TPS in live AI agent test",
+      "url": "https://cointelegraph.com/news/sui-offchain-network-hits-40m-tps-in-live-ai-focused-stress-test",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "The Sui network achieved a record-breaking throughput of 40.6 million transactions per second (TPS) during a live AI agent test. This performance was enabled by programmable tunnels that execute activity off-chain before settling on the blockchain.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/sui-offchain-network-hits-40m-tps-in-live-ai-focused-stress-test",
+      "themes": [
+        "infrastructure",
+        "scalability"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BPXB6KYBV02CEGGX5YB926/hi-how-to-utilize-ai-agents-in-decentralized-finance-defi-platforms.png",
+      "why_it_matters": "40.6 million TPS through programmable tunnels is a benchmark for off-chain execution with on-chain settlement, but the investor question is whether this architecture commoditizes base-layer value capture or merely shifts it to sequencing and verification providers."
+    },
+    {
+      "id": "art_6530382",
+      "title": "Tether, Kazakhstan cenbank mull tenge stablecoin and asset tokenization",
+      "url": "https://cointelegraph.com/news/tether-kazakhstan-central-bank-to-explore-tenge-stablecoin-and-asset-tokenization",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Tether and the National Bank of Kazakhstan are exploring the creation of a tenge-backed stablecoin and the tokenization of assets. This initiative is part of Kazakhstan's broader strategy to expand its digital asset programs and crypto reserves.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/tether-kazakhstan-central-bank-to-explore-tenge-stablecoin-and-asset-tokenization",
+      "themes": [
+        "stablecoins",
+        "tokenization"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BG8ZH12EYMX71E9T5NGZRV/hi-tether-seen-as-a-thread-to-us-financial-system-as-more-fud-around-reserves-emerges-us.png",
+      "why_it_matters": "Kazakhstan's central bank engaging Tether for a tenge stablecoin and asset tokenization indicates that emerging-market monetary authorities are treating stablecoins as reserve and settlement infrastructure, which introduces sovereign credit risk into issuer due diligence in ways most models ignore."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_6527982",
+      "title": "Coinbase brings global crypto derivatives liquidity to US with Deribit integration19m",
+      "url": "https://cointelegraph.com/news/coinbase-deribit-us-crypto-options-perpetual-futures",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Coinbase is integrating Deribit to bring global crypto derivatives liquidity to its US-based users. This move aims to enhance trading capabilities and market depth for derivatives within the Coinbase ecosystem.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BD33W46QKNCCBYY2GVZDZD/crypto-programming-searching-research-coinbase2.jpg"
+    },
+    {
+      "id": "art_6509982",
+      "title": "Russia clears first crypto exchanges, custodians under new law",
+      "url": "https://cointelegraph.com/news/russia-first-crypto-platforms-register-new-law",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Russia has cleared its first group of registered crypto exchanges and custodians under a new legal framework. Sberbank is among the approved entities and intends to launch Bitcoin, Ether, and USDT products on December 1.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AKW3XPT7HT038RPJCR9B5F/digital-bank-russia.jpg"
+    },
+    {
+      "id": "art_6555082",
+      "title": "오르카·루프스케일 합병, 토큰화의 ‘발행 이후’를 잇다",
+      "url": "https://reports.tiger-research.com/p/orca-loopscale-merge-to-connect-the-kor",
+      "source": "Tiger Research",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Solana-based DEX Orca and lending protocol Loopscale have merged to form 'Formation', aiming to integrate the post-issuance lifecycle of tokenized assets. The new entity will combine trading, lending, and vault management to increase asset utility and diversify revenue streams beyond simple trading fees.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!unjF!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F219365482%2Ftwitter.jpg%3Fversion%3D4"
+    },
+    {
+      "id": "art_6548382",
+      "title": "Justin Drake urges crypto ‘bunker mode,’ as AI could break wallet security within months",
+      "url": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Ethereum researcher Justin Drake warns that AI could potentially compromise crypto wallet security and signatures much sooner than quantum computing. He advises users to enter 'bunker mode' by gradually migrating funds to new addresses to mitigate risk.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4CCZ9950ZZBPSK7VXWX6DJ3/ai-hack-3.jpg"
+    },
+    {
+      "id": "art_6529182",
+      "title": "House Finance panel chair says regulator actions on crypto ‘fall short’ of CLARITY bill",
+      "url": "https://cointelegraph.com/news/sec-cftc-crypto-regulations-fall-short-clarity-bill",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "House Finance panel chair French Hill argues that current regulatory actions by the SEC and CFTC lack the clarity provided by proposed legislation. He suggests that a formal law from Congress would be more effective in governing the crypto market than agency-led rules.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BDBYZXWRGYC55QX8JFFZ4N/hi-sec-cftc-and-clarity.png"
+    },
+    {
+      "id": "art_6525332",
+      "title": "Moody’s gives Sky Protocol B3 rating as institutional interest in USDS grows",
+      "url": "https://www.theblock.co/news/business/2026-10-07-moodys-sky-protocol-b3-rating-first-stablecoin-protocol-417931",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Moody's has assigned a B3 rating to Sky Protocol, highlighting growing institutional interest in the USDS stablecoin. Sky is now the only stablecoin protocol to hold ratings from both Moody's and S&P.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/11/20221122_Moodys2.jpg"
+    },
+    {
+      "id": "art_6515982",
+      "title": "Trump-backed WLFI plans USD1 payments for online businesses",
+      "url": "https://cointelegraph.com/news/trump-backed-wlfi-plans-usd1-payments-for-online-businesses",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "World Liberty Financial, a project backed by Donald Trump, is planning to integrate USD1 payments for online businesses. This initiative will be facilitated through a strategic partnership with Mesh.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AX48ZNAS11326MBP7NQJ42/world-liberty-financial.jpg"
+    },
+    {
+      "id": "art_6512382",
+      "title": "BitMine sets 5% Ether supply ‘hard cap’ as accumulation target nears",
+      "url": "https://cointelegraph.com/news/bitmine-ether-5-percent-supply-hard-cap",
+      "source": "Cointelegraph",
+      "category": "Ethereum",
+      "sentiment": "bullish",
+      "summary": "BitMine Chairman Tom Lee announced that the company has established a hard cap for its Ether accumulation at 5% of the total supply. This indicates a massive institutional accumulation strategy for the asset.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AP0BJATXTVZ7SJ2N0M4WW6/token-tom-lee.png"
+    }
+  ],
+  "worth_a_read": [],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6501332",
+          "title": "Bitcoin briefly slides below $84,000 as crypto long liquidations reach $487 million",
+          "url": "https://www.theblock.co/news/markets/2026-10-06-bitcoin-slides-crypto-long-liquidations-surge-417882",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
+        },
+        {
+          "id": "art_6514782",
+          "title": "‘Old money’ has stronger Bitcoin ‘diamond hands,’ says BingX exec",
+          "url": "https://cointelegraph.com/news/bingx-old-money-bitcoin-diamond-hands-token2049",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AVEMQ8SFFCKHSAXB14F6SM/old-money-diamond-hands.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6515983",
+          "title": "Wall Street wealth creation model is unsustainable for most participants: Hyperliquid CEO 38m, Wall Street wealth creation model is unsustainable for most participants: Hyperliquid CEO Early Wall Street wealth-creation opportunities remain inaccessible to retail participants, but Hyperliquid’s perpetual contracts aim to democratize access, according to its CEO.",
+          "url": "https://cointelegraph.com/news/wall-street-wealth-creation-unsustainable-hyperliquid-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_6514532",
+          "title": "Jito's JTX plans mobile app this fall, eyes perps integration later this winter",
+          "url": "https://www.theblock.co/news/defi/2026-10-07-jitos-jtx-plans-mobile-app-this-fall-eyes-perps-integration-later-this-winter-417905",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/jtx.png"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_6512382",
+          "title": "BitMine sets 5% Ether supply ‘hard cap’ as accumulation target nears",
+          "url": "https://cointelegraph.com/news/bitmine-ether-5-percent-supply-hard-cap",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AP0BJATXTVZ7SJ2N0M4WW6/token-tom-lee.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6532782",
+          "title": "Sui tunnels hit 40.6M TPS in live AI agent test",
+          "url": "https://cointelegraph.com/news/sui-offchain-network-hits-40m-tps-in-live-ai-focused-stress-test",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BPXB6KYBV02CEGGX5YB926/hi-how-to-utilize-ai-agents-in-decentralized-finance-defi-platforms.png"
+        },
+        {
+          "id": "art_6527982",
+          "title": "Coinbase brings global crypto derivatives liquidity to US with Deribit integration19m",
+          "url": "https://cointelegraph.com/news/coinbase-deribit-us-crypto-options-perpetual-futures",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BD33W46QKNCCBYY2GVZDZD/crypto-programming-searching-research-coinbase2.jpg"
+        },
+        {
+          "id": "art_6516932",
+          "title": "NEAR's Polosukhin sees shrinking need for centralized exchanges as onchain tools expand",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-07-nears-polosukhin-sees-shrinking-need-for-centralized-exchanges-as-onchain-tools-expand-417912",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Illia-Polosukhin.png"
+        },
+        {
+          "id": "art_6510932",
+          "title": "'Every single exchange' will have to adopt public blockchain infrastructure to compete, Hyperliquid Policy Center CEO says",
+          "url": "https://www.theblock.co/news/regulation/2026-10-07-hyperliquid-policy-center-jake-chervinsky-interview-417896",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/jake_option_A_sepia.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6534932",
+          "title": "Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion",
+          "url": "https://www.theblock.co/news/markets/2026-10-07-grayscale-crypto-etf-market-beyond-bitcoin-ether-417953",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/09/20250919_Greyscale_News_2.jpg"
+        },
+        {
+          "id": "art_6507332",
+          "title": "Robinhood adds $25 million worth of bitcoin to balance sheet as it deepens crypto push",
+          "url": "https://www.theblock.co/news/business/2026-10-07-robinhood-adds-25-million-bitcoin-balance-sheet-417890",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/kerbrat_option_C_darkgreen.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6502782",
+          "title": "Kalshi’s 15-min gold markets overtake Ether just weeks after launch",
+          "url": "https://cointelegraph.com/news/kalshis-15-min-gold-markets-overtake-ether-just-weeks-after-launch",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6535782",
+          "title": "Four tribes partner with Kalshi to launch prediction apps–a move that undercuts Native American opposition to the industry",
+          "url": "https://fortune.com/2026/10/07/tribes-partner-kalshi-launch-prediction-apps-native-american-opposition-industry/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-1233277798-e1791398130871.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6530132",
+          "title": "Hunter Biden says LAPTOP market maker should 'buy it all back and burn it'",
+          "url": "https://www.theblock.co/news/markets/2026-10-07-hunter-biden-laptop-market-maker-should-buy-back-burn-it-417947",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/04/20250411_Tokens_News.jpg"
+        },
+        {
+          "id": "art_6520782",
+          "title": "Chasing 100x tokens is game of ‘irrational exuberance,’ says Polymarket CEO",
+          "url": "https://cointelegraph.com/news/chasing-100x-tokens-irrational-exuberance-polymarket-ceo",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4B3MMABZE2GV838GSA8JBR1/hi-crypto-market-trading-trader-breaking-news-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6554132",
+          "title": "Samsung to launch USDC transfers on Solana for US Galaxy users",
+          "url": "https://www.theblock.co/news/business/2026-10-07-samsung-to-launch-usdc-transfers-on-solana-for-us-galaxy-users-418004",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/samsung-news.jpg"
+        },
+        {
+          "id": "art_6539982",
+          "title": "Circle brings USDC, EURC payments to SAP customers through Tereina4m",
+          "url": "https://cointelegraph.com/news/circle-usdc-eurc-payments-sap-enterprise-ecosystem",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4C0FKXZZQCVXBKP6KS4MJFP/hi-crypto-negotiation-1.png"
+        },
+        {
+          "id": "art_6515982",
+          "title": "Trump-backed WLFI plans USD1 payments for online businesses",
+          "url": "https://cointelegraph.com/news/trump-backed-wlfi-plans-usd1-payments-for-online-businesses",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AX48ZNAS11326MBP7NQJ42/world-liberty-financial.jpg"
+        },
+        {
+          "id": "art_6518382",
+          "title": "Crypto card access doesn’t match global demand, Tangem says",
+          "url": "https://cointelegraph.com/news/crypto-card-access-doesnt-match-global-demand-tangem-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AZ46ZEWXYZR13FPY46ZHFW/hi-crypto-cards-how-are-the-sector-developing-and-what-are-the-biggest-challenges-bitcoin.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6509982",
+          "title": "Russia clears first crypto exchanges, custodians under new law",
+          "url": "https://cointelegraph.com/news/russia-first-crypto-platforms-register-new-law",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AKW3XPT7HT038RPJCR9B5F/digital-bank-russia.jpg"
+        },
+        {
+          "id": "art_6529182",
+          "title": "House Finance panel chair says regulator actions on crypto ‘fall short’ of CLARITY bill",
+          "url": "https://cointelegraph.com/news/sec-cftc-crypto-regulations-fall-short-clarity-bill",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BDBYZXWRGYC55QX8JFFZ4N/hi-sec-cftc-and-clarity.png"
+        },
+        {
+          "id": "art_6507582",
+          "title": "DOJ invokes Bitcoin Fog ruling in potential blow to Roman Storm acquittal bid16m, DOJ invokes Bitcoin Fog ruling in potential blow to Roman Storm acquittal bidProsecutors say a recent Bitcoin Fog appeals court ruling supports their argument that Tornado Cash activity in Manhattan was enough to establish venue for parts of Roman Storm’s case in New York.",
+          "url": "https://cointelegraph.com/news/roman-storm-bitcoin-fog-doj-acquittal-bid",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6548382",
+          "title": "Justin Drake urges crypto ‘bunker mode,’ as AI could break wallet security within months",
+          "url": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4CCZ9950ZZBPSK7VXWX6DJ3/ai-hack-3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6530382",
+          "title": "Tether, Kazakhstan cenbank mull tenge stablecoin and asset tokenization",
+          "url": "https://cointelegraph.com/news/tether-kazakhstan-central-bank-to-explore-tenge-stablecoin-and-asset-tokenization",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4BG8ZH12EYMX71E9T5NGZRV/hi-tether-seen-as-a-thread-to-us-financial-system-as-more-fud-around-reserves-emerges-us.png"
+        },
+        {
+          "id": "art_6525332",
+          "title": "Moody’s gives Sky Protocol B3 rating as institutional interest in USDS grows",
+          "url": "https://www.theblock.co/news/business/2026-10-07-moodys-sky-protocol-b3-rating-first-stablecoin-protocol-417931",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/11/20221122_Moodys2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6555082",
+          "title": "오르카·루프스케일 합병, 토큰화의 ‘발행 이후’를 잇다",
+          "url": "https://reports.tiger-research.com/p/orca-loopscale-merge-to-connect-the-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!unjF!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F219365482%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Samsung put USDC in its wallet this week. Not a crypto phone. The regular one. Fiat on-ramp, fiat off-ramp, Solana rails, no separate app. That is the pattern across three signals today: SAP customers get USDC through Tereina4m; Kazakhstan's central bank talks tenge stablecoins with Tether. Infrastructure is being swallowed by distribution.\n\nWe have seen stablecoin volumes climb before. This is different. The counterparty is changing. Samsung holds the user. SAP holds the enterprise workflow. Kazakhstan holds the regulatory seal. Circle and Tether become plumbing, not product.\n\nOur read: issuance margin compresses as distribution consolidates. The value shifts to whoever owns the KYC layer and the fiat bridge. Solana's inclusion in Samsung's stack is notable—Ethereum absent, no Layer-2 mentioned—because consumer payment latency is being underpriced by infrastructure investors still optimizing for theoretical throughput.\n\nGrayscale's Zcash ETF at $1 billion and its covered-call tokenization play fit here too. Traditional wrappers are being rebuilt on-chain, but the SEC innovation exemption is the single testable variable. If that pathway survives a change in commission leadership, the repricing of asset management incumbents happens fast.\n\nWhat we are underwriting now: whether stablecoin adoption curves are shifting from crypto-native velocity to embedded, invisible transaction volume. The data to watch is not wallet downloads. It is SAP invoice volume settled in USDC, and whether Samsung reports transaction counts at all."
+}
