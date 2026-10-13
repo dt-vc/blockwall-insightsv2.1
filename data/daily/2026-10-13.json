@@ -1,0 +1,572 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-13",
+  "date_display": "October 13, 2026",
+  "generated_at": "2026-10-13T05:00:17.793Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "South Korea blocks 27 exchanges while Kraken clears Dubai — regulatory divergence widens between enforcement and licensing paths",
+    "tldr": "Today's signals show a stark split in how jurisdictions treat crypto: South Korea is blocking unregistered offshore platforms, while the UAE hands Kraken full market approval for dirham trading. The net effect is a repricing of regulatory risk geography for exchange operators and their investors."
+  },
+  "intro": "Dear Founders, Investors, and Friends, here is what moved in Web3 over the last 24 hours and why it matters for the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-10-13T05:00:17.793Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$83,398",
+        "change_24h": "-0.8%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,516",
+        "change_24h": "-1.8%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.82T",
+        "change_24h": "-2.5%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$91.1B",
+        "change_24h": "-1.6%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 15,
+    "bearish": 9,
+    "neutral": 5,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_6842721",
+      "title": "South Korea moves to block 27 crypto websites, including KuCoin, MEXC",
+      "url": "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "South Korea has approved the blocking of 27 unregistered cryptocurrency websites to enhance regulatory oversight. The list of banned platforms includes major exchanges such as KuCoin, MEXC, and Phemex.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SJ32T5MFAHM21PB498EN3Q/korea-website-block.jpg",
+      "why_it_matters": "South Korea's blocking of 27 unregistered exchanges including KuCoin and MEXC signals that enforcement-led regimes are now weaponizing infrastructure access rather than just fines, raising the cost of operating without local licenses and potentially accelerating market share capture by compliant incumbents."
+    },
+    {
+      "id": "art_6830451",
+      "title": "Blur to shut down frontend next month as NFT trading volume dwindles",
+      "url": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "NFT_Gaming",
+      "sentiment": "bearish",
+      "summary": "Blur is shutting down its frontend next month due to declining NFT trading volumes. While the marketplace remains on-chain, its lending protocol Blend will stop matching new loans on November 12.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
+      "themes": [
+        "nft-gaming",
+        "nft-marketplace"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/11/20221107_Blur3.jpg",
+      "why_it_matters": "Blur's frontend shutdown and Blend's cessation of new loan matching marks a structural unwind of NFT leverage infrastructure that we underwrote the sector on during 2022-2023, implying residual value in NFTfi may concentrate in surviving lending primitives rather than marketplace tokens."
+    },
+    {
+      "id": "art_6807613",
+      "title": "Evernorth names former Coinbase investment exec to steer 473 million XRP treasury ahead of Nasdaq debut",
+      "url": "https://www.theblock.co/news/business/2026-10-12-evernorth-former-coinbase-investment-chief-steer-473-million-xrp-treasury-nasdaq-debut-418225",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Evernorth has appointed a former Coinbase investment executive to manage its treasury of 473 million XRP. The company, which completed a SPAC merger with approximately $672 million in XRP, intends to implement yield strategies ahead of its Nasdaq debut.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-12-evernorth-former-coinbase-investment-chief-steer-473-million-xrp-treasury-nasdaq-debut-418225",
+      "themes": [
+        "investment",
+        "treasury-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260108_XRP_News_2.jpg",
+      "why_it_matters": "Evernorth appointing a former Coinbase investment exec to manage 473 million XRP ahead of its Nasdaq debut indicates that SPAC-derived crypto treasuries are now hiring institutional-grade treasury management, which we read as a bet that yield strategies on large altcoin positions will be judged by public market investors as value-accretive rather than speculative."
+    },
+    {
+      "id": "art_6806061",
+      "title": "A ‘Mathpocalypse’ is freaking out cyber and finance experts. Should you be worried?",
+      "url": "https://fortune.com/2026/10/12/ai-cryptography-openai-crypto/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Experts are warning of a potential 'Mathpocalypse' as OpenAI's agents demonstrate advanced mathematical capabilities. This development raises concerns that current public encryption standards could be compromised by AI.",
+      "significance": 7,
+      "primary_source": "https://fortune.com/2026/10/12/ai-cryptography-openai-crypto/",
+      "themes": [
+        "security",
+        "cryptography"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-563963591.jpg?resize=1200,600",
+      "why_it_matters": "OpenAI agents demonstrating advanced mathematical capabilities sufficient to threaten public encryption standards introduces tail risk to cryptographic assumptions that underpin current wallet and custody infrastructure, though the timeline to practical compromise remains the key variable for underwriting security exposure."
+    },
+    {
+      "id": "art_6801853",
+      "title": "Kraken parent clears Dubai’s final hurdle for dirham trading rollout",
+      "url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Kraken's parent company has received full market approval to offer digital asset services in the UAE. This allows the exchange to provide trading services to retail, professional, and institutional investors, including dirham trading.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion",
+      "themes": [
+        "regulation",
+        "licensing"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QPPQ7MEQR102YQ3DC7RK03/hi-overview-of-crypto-in-the-uae-kraken.jpg",
+      "why_it_matters": "Kraken's full market approval in Dubai for dirham trading across retail, professional and institutional tiers validates the UAE's licensing framework as a credible alternative to US regulatory uncertainty, and we expect this to pull exchange margin and talent away from enforcement-heavy jurisdictions."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_6807613",
+      "company": "Evernorth",
+      "amount": "",
+      "round": "SPAC merger",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-10-12-evernorth-former-coinbase-investment-chief-steer-473-million-xrp-treasury-nasdaq-debut-418225",
+      "summary": "Evernorth has appointed a former Coinbase investment executive to manage its treasury of 473 million XRP. The company, which completed a SPAC merger with approximately $672 million in XRP, intends to implement yield strategies ahead of its Nasdaq debut."
+    },
+    {
+      "id": "art_6824091",
+      "company": "Strategy",
+      "amount": "$21M",
+      "round": "",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://fortune.com/2026/10/12/strategy-21-million-bitcoin-corporate-crypto-buying-revival/",
+      "summary": "Strategy has purchased $21 million worth of Bitcoin, signaling a potential revival in corporate crypto acquisitions. This move follows a period of market turmoil and suggests a shift in corporate sentiment back toward accumulation."
+    },
+    {
+      "id": "art_6830701",
+      "company": "Genesis Digital Assets",
+      "amount": "",
+      "round": "Acquisition",
+      "investors": [],
+      "category": "Infrastructure",
+      "url": "https://cointelegraph.com/news/ftx-crypto-mining-ai-data-center",
+      "summary": "An investment company focused on AI and data centers has acquired Genesis Digital Assets, a crypto mining venture formerly controlled by FTX. The acquisition marks a shift in the utility of the infrastructure from cryptocurrency mining to advancing AI capabilities."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6801603",
+      "title": "Standard Chartered launches custody for Ripple's RLUSD on XRP Ledger",
+      "url": "https://www.theblock.co/news/business/2026-10-12-standard-chartered-custody-ripple-rlusd-418258",
+      "source": "The Block",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Standard Chartered has launched custody services for Ripple's RLUSD stablecoin on the XRP Ledger. The bank is collaborating with Ripple and LMAX Group to allow RLUSD to be used as eligible collateral for specific LMAX products.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/standard-chartered.png"
+    },
+    {
+      "id": "art_6800651",
+      "title": "South Korean bank launches Bitcoin-backed business loans: Report40m, South Korean bank launches Bitcoin-backed business loans: ReportJeonbuk Bank reportedly began offering Bitcoin-backed loans to corporate customers, with a third-party custodian holding the cryptocurrency used as collateral.",
+      "url": "https://cointelegraph.com/news/south-korea-jeonbuk-bank-bitcoin-backed-business-loans",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Jeonbuk Bank in South Korea has reportedly launched a new financial product allowing corporate customers to secure business loans using Bitcoin as collateral. The cryptocurrency is managed by a third-party custodian to ensure security.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QKGRPPCEHYJ6JB01H5VKKA/south-korea-bank.png"
+    },
+    {
+      "id": "art_6795843",
+      "title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
+      "url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Financial Stability Board (FSB) has warned of regulatory gaps regarding stablecoins and financial risks posed by AI. These warnings were issued ahead of the G20 finance meeting on October 15 to advocate for stronger global safeguards.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QBHGDKZ7W5F58K506PQBRF/g20-meeting.png"
+    },
+    {
+      "id": "art_6841269",
+      "title": "Bitcoin slides below $82,000 as crypto liquidations surge past $770 million",
+      "url": "https://www.theblock.co/news/markets/2026-10-12-bitcoin-slides-crypto-liquidations-surge-418374",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Bitcoin's price has dropped below $82,000 amid a massive wave of liquidations. Over $770 million in crypto positions were liquidated within a 24-hour period, primarily affecting long traders.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-market.png"
+    },
+    {
+      "id": "art_6839115",
+      "title": "Aptos rolls out Encrypted Mempool to curb frontrunning, sandwich attacks",
+      "url": "https://cointelegraph.com/news/aptos-rolls-out-encrypted-mempool-to-curb-frontrunning-sandwich-attacks",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Aptos has deployed an optional encrypted mempool on its mainnet to enhance trader security. This feature is specifically designed to mitigate the impact of frontrunning and sandwich attacks.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SBPCTGPG3FDASX5ZEZCYYW/aptos.jpg"
+    },
+    {
+      "id": "art_6823489",
+      "title": "US accounting overhaul could make stablecoins more attractive to corporations: Tempo 10m",
+      "url": "https://cointelegraph.com/news/fasb-stablecoin-accounting-rules-corporate-adoption",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Proposed changes to US accounting standards may reduce the financial reporting burden for corporations holding digital assets. This overhaul could make stablecoins a more attractive treasury option for businesses by simplifying how these assets are valued on balance sheets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4RKW2W64HMZE3GZ4F3Q7GM6/anger-regulation-paper-stablecoin.jpg"
+    },
+    {
+      "id": "art_6812421",
+      "title": "Bitmine adds 12,532 ETH as Tom Lee flags potential 'largest-ever' crypto bull market",
+      "url": "https://www.theblock.co/news/business/2026-10-12-bitmine-eth-holdings-6-million-ether-treasury-418296",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Bitmine has increased its holdings by adding 12,532 ETH to its portfolio. This move coincides with analyst Tom Lee predicting a potentially record-breaking crypto bull market.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/eth-ethereum-network.jpg"
+    },
+    {
+      "id": "art_6810268",
+      "title": "Strategy adds 250 Bitcoin as holdings reach 848,250 BTC Michael Saylor’s Strategy said Bitcoin holdings reached 848,250 BTC after its latest purchase, while maintaining a $4.88 billion cash reserve.",
+      "url": "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "MicroStrategy has increased its Bitcoin holdings by another 250 BTC, bringing its total treasury to 848,250 BTC. The company continues its aggressive accumulation strategy while maintaining a significant cash reserve of $4.88 billion.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QZS9YXDW2XY08FHFBXVMGD/hi-how-michael-saylors-strategy-became-the-largest-bitcoin-holder-3.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6823289",
+      "title": "The key to getting more institutions onchain: Rethinking KYC",
+      "url": "https://a16zcrypto.com/posts/article/rethinking-kyc/",
+      "source": "a16z crypto",
+      "note": "a16z crypto's argument that current KYC frameworks are the actual bottleneck to institutional onchain participation deserves attention because it reframes compliance from cost center to product design problem, which matters for anyone building institutional DeFi primitives.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/10/Rethink-KYC19201080.jpg"
+    },
+    {
+      "id": "art_6788683",
+      "title": "Exclusive: Project Europe cofounders step down as fund readies next chapter",
+      "url": "https://sifted.eu/articles/project-europe-founders-step-down-reshuffle/",
+      "source": "Sifted",
+      "note": "The Sifted exclusive on Project Europe's cofounder departures as the fund prepares its next chapter is worth tracking because European venture restructuring often presages strategy pivots that redistribute LP capital across crypto and adjacent deep tech allocations.",
+      "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/09163120/eba17e6b-c3dd-4629-a595-e24531723114-scaled.jpg"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6841269",
+          "title": "Bitcoin slides below $82,000 as crypto liquidations surge past $770 million",
+          "url": "https://www.theblock.co/news/markets/2026-10-12-bitcoin-slides-crypto-liquidations-surge-418374",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-market.png"
+        },
+        {
+          "id": "art_6810268",
+          "title": "Strategy adds 250 Bitcoin as holdings reach 848,250 BTC Michael Saylor’s Strategy said Bitcoin holdings reached 848,250 BTC after its latest purchase, while maintaining a $4.88 billion cash reserve.",
+          "url": "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QZS9YXDW2XY08FHFBXVMGD/hi-how-michael-saylors-strategy-became-the-largest-bitcoin-holder-3.jpg"
+        },
+        {
+          "id": "art_6819883",
+          "title": "Bitcoin miners face widening AI financing costs as lenders scrutinize deals 19m",
+          "url": "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_6824091",
+          "title": "Strategy buys $21 million worth of Bitcoin as corporate crypto buying shows signs of revival",
+          "url": "https://fortune.com/2026/10/12/strategy-21-million-bitcoin-corporate-crypto-buying-revival/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-903721318-e1791821983494.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6812671",
+          "title": "Ledger implant tests Bitcoin ETFs as safer custodial solutions than hardware wallets",
+          "url": "https://cointelegraph.com/news/ledger-implant-bitcoin-etfs-hardware-wallets",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4R688Z9BFT3CGH1NFQ6QZ8X/hi-ledger3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6814825",
+          "title": "DeFi Development grows SOL holdings 12% as CHAD hits record highs",
+          "url": "https://www.theblock.co/news/business/2026-10-12-defi-development-sol-holdings-2-59-million-chad-418307",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_6839115",
+          "title": "Aptos rolls out Encrypted Mempool to curb frontrunning, sandwich attacks",
+          "url": "https://cointelegraph.com/news/aptos-rolls-out-encrypted-mempool-to-curb-frontrunning-sandwich-attacks",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SBPCTGPG3FDASX5ZEZCYYW/aptos.jpg"
+        },
+        {
+          "id": "art_6792237",
+          "title": "DATA Network to migrate to Sui, retire own chain",
+          "url": "https://cointelegraph.com/news/data-network-to-migrate-to-sui-retire-its-own-chain",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Q7JSD7Z2H5EKPCK19PNAQK/blockchain-2.jpg"
+        },
+        {
+          "id": "art_6842121",
+          "title": "‘The norm will be to trade with agents’: Crypto founders learn to love—and fear—AI",
+          "url": "https://fortune.com/2026/10/12/crypto-founders-ai-agentic-trading/",
+          "source": "Fortune Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2298530025.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6823289",
+          "title": "The key to getting more institutions onchain: Rethinking KYC",
+          "url": "https://a16zcrypto.com/posts/article/rethinking-kyc/",
+          "source": "a16z crypto",
+          "sentiment": "bullish",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/10/Rethink-KYC19201080.jpg"
+        },
+        {
+          "id": "art_6830701",
+          "title": "FTX’s crypto mining venture is now used to advance AI",
+          "url": "https://cointelegraph.com/news/ftx-crypto-mining-ai-data-center",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4RW88XV464BJDJNJTY3D37E/hi-top-5-biggest-mining-farms.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_6807613",
+          "title": "Evernorth names former Coinbase investment exec to steer 473 million XRP treasury ahead of Nasdaq debut",
+          "url": "https://www.theblock.co/news/business/2026-10-12-evernorth-former-coinbase-investment-chief-steer-473-million-xrp-treasury-nasdaq-debut-418225",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260108_XRP_News_2.jpg"
+        },
+        {
+          "id": "art_6812421",
+          "title": "Bitmine adds 12,532 ETH as Tom Lee flags potential 'largest-ever' crypto bull market",
+          "url": "https://www.theblock.co/news/business/2026-10-12-bitmine-eth-holdings-6-million-ether-treasury-418296",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/eth-ethereum-network.jpg"
+        },
+        {
+          "id": "art_6788683",
+          "title": "Exclusive: Project Europe cofounders step down as fund readies next chapter",
+          "url": "https://sifted.eu/articles/project-europe-founders-step-down-reshuffle/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/09163120/eba17e6b-c3dd-4629-a595-e24531723114-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "category": "NFT_Gaming",
+      "items": [
+        {
+          "id": "art_6830451",
+          "title": "Blur to shut down frontend next month as NFT trading volume dwindles",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/11/20221107_Blur3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_6823239",
+          "title": "Binance launches AI trading tool after 150,000-user beta",
+          "url": "https://www.theblock.co/news/business/2026-10-12-binance-ai-trading-interface-global-rollout-418349",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6842721",
+          "title": "South Korea moves to block 27 crypto websites, including KuCoin, MEXC",
+          "url": "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SJ32T5MFAHM21PB498EN3Q/korea-website-block.jpg"
+        },
+        {
+          "id": "art_6801853",
+          "title": "Kraken parent clears Dubai’s final hurdle for dirham trading rollout",
+          "url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QPPQ7MEQR102YQ3DC7RK03/hi-overview-of-crypto-in-the-uae-kraken.jpg"
+        },
+        {
+          "id": "art_6795843",
+          "title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
+          "url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QBHGDKZ7W5F58K506PQBRF/g20-meeting.png"
+        },
+        {
+          "id": "art_6823489",
+          "title": "US accounting overhaul could make stablecoins more attractive to corporations: Tempo 10m",
+          "url": "https://cointelegraph.com/news/fasb-stablecoin-accounting-rules-corporate-adoption",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4RKW2W64HMZE3GZ4F3Q7GM6/anger-regulation-paper-stablecoin.jpg"
+        },
+        {
+          "id": "art_6806661",
+          "title": "Australia proposes leverage caps for crypto-settled derivatives",
+          "url": "https://cointelegraph.com/news/australia-asic-crypto-settled-cfd-protections",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QWSHXW7QGDJW1DDTNHBJ0X/cfds.png"
+        },
+        {
+          "id": "art_6791035",
+          "title": "French lawmakers back reporting rule for crypto wallets over $112K 23m, French lawmakers back reporting rule for crypto wallets over $112K Holders could face fines of up to 10,000 euros for failing to declare qualifying assets.",
+          "url": "https://cointelegraph.com/news/french-lawmakers-back-reporting-rule-for-crypto-wallets-over-112k",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_6789583",
+          "title": "Former Acting Chair Caroline Pham says CFTC can regulate almost everything except 'onions and box office receipts'",
+          "url": "https://www.theblock.co/news/regulation/2026-10-12-former-cftc-acting-chair-caroline-pham-onions-418246",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221003_CarolinePham2.jpg"
+        },
+        {
+          "id": "art_6824691",
+          "title": "Crypto PACs report $2.7M spending blitz on House races as midterms loom16m, Crypto PACs report $2.7M spending blitz on House races as midterms loomWith just 22 days until the US midterm elections, a crypto-aligned committee has announced another major ad expenditure to support “pro-crypto” candidates in 2026.",
+          "url": "https://cointelegraph.com/news/crypto-pac-spending-house-races-2026-midterms",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_6829249",
+          "title": "CFTC's new crypto framework could face 2028 election deadline, says TD Cowen",
+          "url": "https://www.theblock.co/news/regulation/2026-10-12-cftcs-new-crypto-framework-could-face-2028-election-deadline-td-cowen-418358",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/06/20200626_CFTC_-Daily.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6806061",
+          "title": "A ‘Mathpocalypse’ is freaking out cyber and finance experts. Should you be worried?",
+          "url": "https://fortune.com/2026/10/12/ai-cryptography-openai-crypto/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-563963591.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_6801603",
+          "title": "Standard Chartered launches custody for Ripple's RLUSD on XRP Ledger",
+          "url": "https://www.theblock.co/news/business/2026-10-12-standard-chartered-custody-ripple-rlusd-418258",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/standard-chartered.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6800651",
+          "title": "South Korean bank launches Bitcoin-backed business loans: Report40m, South Korean bank launches Bitcoin-backed business loans: ReportJeonbuk Bank reportedly began offering Bitcoin-backed loans to corporate customers, with a third-party custodian holding the cryptocurrency used as collateral.",
+          "url": "https://cointelegraph.com/news/south-korea-jeonbuk-bank-bitcoin-backed-business-loans",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QKGRPPCEHYJ6JB01H5VKKA/south-korea-bank.png"
+        },
+        {
+          "id": "art_6819633",
+          "title": "StoneX raises Securitize price target 50% as tokenized stock platform opens new revenue stream",
+          "url": "https://www.theblock.co/news/markets/2026-10-12-stonex-raises-securitize-price-target-tokenized-stocks-418313",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/20251028_Secrutize_News.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "South Korea just cut off KuCoin and MEXC at the ISP level. Not a fine. The site doesn't load. Meanwhile Kraken got full market approval in Dubai for dirham pairs across retail and institutional.\n\nTwo paths. Both real. Both widening.\n\nWe've been tracking exchange regulatory geography as a factor in our underwriting since 2022, and the divergence is now sharp enough to price. Enforcement jurisdictions raise the cost of non-compliance to infrastructure exclusion. Licensing jurisdictions compete for margin and talent with actual rulebooks. The UAE's framework is specific enough that Kraken can launch dirham trading with legal clarity. South Korea's framework is specific enough that 27 platforms know exactly why they're gone.\n\nWhat we underwrite this on: the cost of a Dubai license is now a known quantity. The cost of a Seoul license is, for these 27 platforms, infinite. That asymmetry pulls exchange operations, engineering hires, and eventually liquidity toward licensing regimes.\n\nThe test: watch where Bybit and OKX allocate headcount in Q1-Q2 2025. If Dubai and Abu Dhabi capture senior roles while enforcement jurisdictions see compliance-only hiring, the repricing is underway.\n\nBlur shutting its frontend and stopping Blend loans is the other signal. NFT marketplace tokens were underwritten on volume and leverage multiples. Both are gone. The infrastructure that survives this unwind will determine whether NFTfi has a next chapter or just a liquidation."
+}
