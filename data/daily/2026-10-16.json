@@ -1,0 +1,585 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-16",
+  "date_display": "October 16, 2026",
+  "generated_at": "2026-10-16T05:00:17.819Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Mastercard and EBA advance stablecoin rails while crypto security crisis deepens",
+    "tldr": "Traditional finance and EU regulators are accelerating stablecoin integration even as infrastructure attacks push quarterly hack losses toward $1.2 billion, creating a widening gap between institutional-grade adoption and retail security."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the infrastructure layer splits in two: regulated stablecoins gain bank-grade plumbing while hardware and dev-tool exploits expose how fragile self-custody remains for most users.",
+  "market_snapshot": {
+    "as_of": "2026-10-16T05:00:17.819Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$82,039",
+        "change_24h": "+0.6%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,441",
+        "change_24h": "+2.5%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.77T",
+        "change_24h": "-1.0%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$89.9B",
+        "change_24h": "+0.4%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 11,
+    "bearish": 8,
+    "neutral": 13,
+    "deduped": 2
+  },
+  "top_signals": [
+    {
+      "id": "art_7001365",
+      "title": "Binance.US seeks $1B valuation in potential $100M funding round: Report34m",
+      "url": "https://cointelegraph.com/news/binance-us-funding-valuation-billion",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Binance.US is reportedly seeking a $1 billion valuation as it explores a potential $100 million funding round. This move comes as the exchange navigates ongoing regulatory challenges in the United States.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/binance-us-funding-valuation-billion",
+      "themes": [
+        "investment",
+        "funding"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50GBDK9V1K1J9DSAGNBWX7S/us-binance.jpg",
+      "why_it_matters": "Binance.US pricing itself at $1B amid unresolved SEC exposure tests whether offshore capital will underwrite US regulatory risk at a discount, or whether the entity becomes stranded."
+    },
+    {
+      "id": "art_6996125",
+      "title": "Criminals stole $90mn of crypto by hiding password readers in USB-like devices",
+      "url": "https://www.ft.com/content/70f69253-6017-4259-95c9-48bf0e088b40",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Criminals stole $90 million in cryptocurrency using sophisticated USB-like devices that acted as password readers to compromise secure wallets. Ledger described the incident as one of the most advanced attacks the industry has encountered.",
+      "significance": 8,
+      "primary_source": "https://www.ft.com/content/70f69253-6017-4259-95c9-48bf0e088b40",
+      "themes": [
+        "security",
+        "hardware-wallets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F528950e5-b24e-4751-860a-2b84e4a4cee5.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1",
+      "why_it_matters": "A $90M hardware implant scheme against Ledger users demonstrates that physical supply chain attacks now rival smart contract exploits in scale, repricing what 'secure' self-custody actually costs to build."
+    },
+    {
+      "id": "art_6990547",
+      "title": "Mastercard brings stablecoin balances into traditional banking and card payments 19m",
+      "url": "https://cointelegraph.com/news/mastercard-bvnk-global-money-platform-stablecoins",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Mastercard is integrating stablecoin balances into traditional banking and card payment systems. This move aims to bridge the gap between digital assets and mainstream financial infrastructure for easier spending.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/mastercard-bvnk-global-money-platform-stablecoins",
+      "themes": [
+        "payments",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M501MR4NFX8WGM2DEYYC2STT/hi-could-those-who-left-mastercard-come-back3.jpg",
+      "why_it_matters": "Mastercard's stablecoin integration is the clearest signal yet that payment networks will treat regulated stablecoins as core ledger infrastructure, compressing time-to-mainstream for compliant issuers."
+    },
+    {
+      "id": "art_6981884",
+      "title": "EBA designates Circle’s USDC as the EU’s first 'significant' e-money token",
+      "url": "https://www.theblock.co/news/regulation/2026-10-15-eba-designates-circles-usdc-as-the-eus-first-significant-e-money-token-418637",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The European Banking Authority (EBA) has designated Circle's USDC as the first 'significant' e-money token in the EU. This move shifts direct oversight of USDC's reserves and liquidity to the EBA starting November 12.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-10-15-eba-designates-circles-usdc-as-the-eus-first-significant-e-money-token-418637",
+      "themes": [
+        "regulation",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-15-at-13.49.07.png",
+      "why_it_matters": "EBA designating USDC as 'significant' under MiCA concentrates reserve oversight at the EU level, giving Circle a regulatory moat that Tether and smaller issuers will struggle to match."
+    },
+    {
+      "id": "art_6976124",
+      "title": "Bitget, Liquid exploits push Q3 crypto hacks toward $1.2B",
+      "url": "https://cointelegraph.com/news/bitget-liquid-exploits-push-crypto-hacks-near-12b-q3",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Crypto hacks in Q3 surged by 55% compared to the previous quarter, totaling nearly $1.2 billion. The majority of these losses were attributed to compromised infrastructure and developer tools rather than audited smart contracts.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/bitget-liquid-exploits-push-crypto-hacks-near-12b-q3",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZBJQX8RA4RZN02APHYTQFS/hi-cybercrime-task-force-monitors-the-global-digital-financial-system.jpg",
+      "why_it_matters": "Q3's $1.2B in hacks driven by compromised infrastructure rather than audited contracts means security spend must shift from code audits to devops and supply chain, a reallocation most funds have not made."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_7001365",
+      "company": "Binance.US",
+      "amount": "$100M",
+      "round": "",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/binance-us-funding-valuation-billion",
+      "summary": "Binance.US is reportedly seeking a $1 billion valuation as it explores a potential $100 million funding round. This move comes as the exchange navigates ongoing regulatory challenges in the United States."
+    },
+    {
+      "id": "art_6985739",
+      "company": "Tron Inc.",
+      "amount": "$200M",
+      "round": "ATM offering",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://cointelegraph.com/news/nasdaq-tron-200m-atm-offering-fuel-trx-acquisitions",
+      "summary": "Nasdaq-listed Tron Inc. has established a $200 million at-the-market (ATM) share offering. The company intends to use the net proceeds from this program to acquire more TRX tokens."
+    },
+    {
+      "id": "art_6979129",
+      "company": "Fission",
+      "amount": "$10M",
+      "round": "",
+      "investors": [
+        "Pantera Capital"
+      ],
+      "category": "Tokenization",
+      "url": "https://fortune.com/2026/10/15/pantera-capital-backed-startup-fission-10-million-investors-tokenized-funds-liquidity/",
+      "summary": "Fission, a startup backed by Pantera Capital, has raised $10 million to improve liquidity for tokenized funds. The company aims to provide a mechanism for investors to exit tokenized asset positions more efficiently."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_6993553",
+      "title": "Trump’s former top crypto adviser faces scrutiny over allegations his firm accepted millions from Tether while he shaped key stablecoin law",
+      "url": "https://fortune.com/2026/10/15/trump-former-top-crypto-adviser-scrutiny-allegations-firm-millions-tether-stablecoin-law/",
+      "source": "Fortune Crypto",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Former crypto adviser Bo Hines is facing scrutiny over allegations that his consulting firm, Nxum, received millions from Tether while he was influencing stablecoin legislation. Hines subsequently left the White House to lead Tether's U.S. operations.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2206476118_380f6c-e1792082352772.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_6986941",
+      "title": "Russia to ban direct peer-to-peer crypto trades starting July 202730m, Russia to ban direct peer-to-peer crypto trades starting July 2027Russia plans to ban direct P2P crypto trades from July 1, 2027, while separate rules already prohibit transfers from digital accounts to self-custody wallets.",
+      "url": "https://cointelegraph.com/news/russia-ban-p2p-crypto-trades-july-2027",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Russia intends to implement a ban on direct peer-to-peer (P2P) cryptocurrency trades effective July 1, 2027. This move complements existing restrictions that prohibit the transfer of digital assets from regulated accounts to self-custody wallets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZXEK5DTKX65782NKWA8C3M/russia-p2p-ban-illustration-1.png"
+    },
+    {
+      "id": "art_6980931",
+      "title": "HEX token sellers erase $160M following reports of founder Richard Schueler arrest",
+      "url": "https://cointelegraph.com/news/hex-token-erases-160m-reports-founder-schuelers-arrest",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The HEX token experienced a market capitalization loss of $160 million following reports that founder Richard Schueler was arrested in Istanbul. This arrest comes two years after an Interpol Red Notice was issued for the founder.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZPZ9PD30JJKDBJDB77AQ9B/richard-heart.jpg"
+    },
+    {
+      "id": "art_6976123",
+      "title": "Starknet opens vote on potential Ethereum L2 exit over quantum risks",
+      "url": "https://cointelegraph.com/news/starknet-vote-ethereum-l2-exit-post-quantum-l1",
+      "source": "Cointelegraph",
+      "category": "Layer2",
+      "sentiment": "neutral",
+      "summary": "Starknet has initiated a governance vote to explore the possibility of transitioning from an Ethereum Layer 2 to an independent post-quantum Layer 1. This move is driven by concerns over quantum computing risks and the timeline of Ethereum's own security upgrades.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZFWYVQRAM56PW1PG6VCAV4/starknet.jpg"
+    },
+    {
+      "id": "art_6974921",
+      "title": "Babylon advances native Bitcoin lending proposal on Aave V4",
+      "url": "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Babylon Labs has proposed integrating native Bitcoin collateral into Aave V4. This development would enable users to borrow stablecoins against their BTC without the need for wrapping or bridging assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Z9HV8V8BEZVYHMZC3BE85M/aave-btc.png"
+    },
+    {
+      "id": "art_7012183",
+      "title": "MSCI adopts index exclusion rules that could oust Strategy",
+      "url": "https://cointelegraph.com/news/msci-adopts-index-exclusion-rules-that-could-oust-strategy",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "MSCI is implementing new index eligibility rules that may lead to the removal of crypto treasury companies like Strategy. The final exclusions are expected to be determined by November 11.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M512PJ7T3H0MKWY3KK1SEH21/strategy.jpg"
+    },
+    {
+      "id": "art_7009779",
+      "title": "Australia releases draft bill to adopt OECD crypto tax reporting framework 49m, Australia releases draft bill to adopt OECD crypto tax reporting framework Australia is among 77 jurisdictions committed to adopting CARF, with its first international exchanges of crypto tax data expected in 2028.",
+      "url": "https://cointelegraph.com/news/australia-releases-draft-bill-to-adopt-oecd-crypto-tax-reporting-framework",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Australia has released a draft bill to implement the OECD's Crypto-Asset Reporting Framework (CARF). This move aims to standardize crypto tax reporting and facilitate international data exchanges starting in 2028.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50YHACZSJPAG8A0K041MKBV/hi-how-to-file-cryptocurrency-form-in-australia-1.jpg"
+    },
+    {
+      "id": "art_6992951",
+      "title": "Sweden revisits digital krona as ECB advances digital euro plans",
+      "url": "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation",
+      "source": "Cointelegraph",
+      "category": "Payments",
+      "sentiment": "neutral",
+      "summary": "Sweden's central bank is urging early legislative action to prepare for the implementation of a digital krona. The bank warns that the process could take at least five years to fully realize, coinciding with the ECB's progress on the digital euro.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M505KEFKPMPQ9SXKC8HEV451/stockholm-sweden.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_6997660",
+      "title": "Bitcoin and AI with Jordi Visser",
+      "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/bitcoin-and-ai-with-jordi-visser",
+      "source": "Galaxy — Insights",
+      "note": "Visser's framing of Bitcoin as an asymmetric hedge against AI-driven monetary expansion is worth testing against the actual treasury allocations Galaxy is seeing from corporates.",
+      "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_6962651",
+          "title": "Bitcoin drops below $81,000 as risk-off sentiment weighs on Asian equities",
+          "url": "https://www.theblock.co/news/markets/2026-10-15-bitcoin-drops-asian-equities-tumble-418623",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
+        },
+        {
+          "id": "art_6990297",
+          "title": "CleanSpark and BitFuFu see bitcoin production slip in September as Canaan remains flat",
+          "url": "https://www.theblock.co/news/business/2026-10-15-cleanspark-bitfufu-bitcoin-production-slip-september-canaan-remains-flat-418686",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/10/210930_Bitcoin_Mining_General.jpg"
+        },
+        {
+          "id": "art_6985489",
+          "title": "Bitwise CIO argues bitcoin will benefit whether AI booms or busts",
+          "url": "https://www.theblock.co/news/markets/2026-10-15-bitwise-cio-argues-bitcoin-will-benefit-whether-ai-booms-or-busts-418668",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-15-at-14.38.11.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_6974921",
+          "title": "Babylon advances native Bitcoin lending proposal on Aave V4",
+          "url": "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Z9HV8V8BEZVYHMZC3BE85M/aave-btc.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_7004721",
+          "title": "Farcaster acquired by Balaji’s Network School, with new 'social smart contract' for users",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-15-network-school-acquires-farcaster-from-neynar-418720",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/02/20240212_Farcaster_News.jpg"
+        },
+        {
+          "id": "art_6981883",
+          "title": "Ledger unveils Atom Android device with Solana Mobile integration and new tamper protections amid investigation into modified wallets",
+          "url": "https://www.theblock.co/news/business/2026-10-15-ledger-atom-solana-mobile-418644",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-15-at-12.41.21.png"
+        },
+        {
+          "id": "art_6983085",
+          "title": "Helius CEO Mert Mumtaz joins NEAR Foundation Council",
+          "url": "https://www.theblock.co/news/business/2026-10-15-helius-ceo-mert-mumtaz-joins-near-foundation-council-418656",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-15-at-13.45.41.png"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_7001365",
+          "title": "Binance.US seeks $1B valuation in potential $100M funding round: Report34m",
+          "url": "https://cointelegraph.com/news/binance-us-funding-valuation-billion",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50GBDK9V1K1J9DSAGNBWX7S/us-binance.jpg"
+        },
+        {
+          "id": "art_6985739",
+          "title": "Nasdaq-listed Tron sets up $200M ATM share offering to fuel TRX acquisitions",
+          "url": "https://cointelegraph.com/news/nasdaq-tron-200m-atm-offering-fuel-trx-acquisitions",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZW44RHENZQJH17Z7JFTKHE/hi-crypto-goes-for-nasdaq-tron-1.jpg"
+        },
+        {
+          "id": "art_7012183",
+          "title": "MSCI adopts index exclusion rules that could oust Strategy",
+          "url": "https://cointelegraph.com/news/msci-adopts-index-exclusion-rules-that-could-oust-strategy",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M512PJ7T3H0MKWY3KK1SEH21/strategy.jpg"
+        },
+        {
+          "id": "art_6990299",
+          "title": "DeFi Development boosts CHAD dividend to 14% amid push to grow Solana holdings",
+          "url": "https://www.theblock.co/news/markets/2026-10-15-defi-development-chad-dividend-rate-14-418694",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News4.jpg"
+        },
+        {
+          "id": "art_6997660",
+          "title": "Bitcoin and AI with Jordi Visser",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/bitcoin-and-ai-with-jordi-visser",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_6976123",
+          "title": "Starknet opens vote on potential Ethereum L2 exit over quantum risks",
+          "url": "https://cointelegraph.com/news/starknet-vote-ethereum-l2-exit-post-quantum-l1",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZFWYVQRAM56PW1PG6VCAV4/starknet.jpg"
+        },
+        {
+          "id": "art_6986691",
+          "title": "Starknet opens seven-day vote on independent Layer 1 over quantum risks",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-15-starknet-opens-seven-day-vote-on-independent-layer-1-over-quantum-risks-418673",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/07/starknet_ethereum_layer_2-2.jpeg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_6990547",
+          "title": "Mastercard brings stablecoin balances into traditional banking and card payments 19m",
+          "url": "https://cointelegraph.com/news/mastercard-bvnk-global-money-platform-stablecoins",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M501MR4NFX8WGM2DEYYC2STT/hi-could-those-who-left-mastercard-come-back3.jpg"
+        },
+        {
+          "id": "art_6992951",
+          "title": "Sweden revisits digital krona as ECB advances digital euro plans",
+          "url": "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M505KEFKPMPQ9SXKC8HEV451/stockholm-sweden.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_6981884",
+          "title": "EBA designates Circle’s USDC as the EU’s first 'significant' e-money token",
+          "url": "https://www.theblock.co/news/regulation/2026-10-15-eba-designates-circles-usdc-as-the-eus-first-significant-e-money-token-418637",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-15-at-13.49.07.png"
+        },
+        {
+          "id": "art_6993553",
+          "title": "Trump’s former top crypto adviser faces scrutiny over allegations his firm accepted millions from Tether while he shaped key stablecoin law",
+          "url": "https://fortune.com/2026/10/15/trump-former-top-crypto-adviser-scrutiny-allegations-firm-millions-tether-stablecoin-law/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2206476118_380f6c-e1792082352772.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_6986941",
+          "title": "Russia to ban direct peer-to-peer crypto trades starting July 202730m, Russia to ban direct peer-to-peer crypto trades starting July 2027Russia plans to ban direct P2P crypto trades from July 1, 2027, while separate rules already prohibit transfers from digital accounts to self-custody wallets.",
+          "url": "https://cointelegraph.com/news/russia-ban-p2p-crypto-trades-july-2027",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZXEK5DTKX65782NKWA8C3M/russia-p2p-ban-illustration-1.png"
+        },
+        {
+          "id": "art_7009779",
+          "title": "Australia releases draft bill to adopt OECD crypto tax reporting framework 49m, Australia releases draft bill to adopt OECD crypto tax reporting framework Australia is among 77 jurisdictions committed to adopting CARF, with its first international exchanges of crypto tax data expected in 2028.",
+          "url": "https://cointelegraph.com/news/australia-releases-draft-bill-to-adopt-oecd-crypto-tax-reporting-framework",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50YHACZSJPAG8A0K041MKBV/hi-how-to-file-cryptocurrency-form-in-australia-1.jpg"
+        },
+        {
+          "id": "art_6964103",
+          "title": "Australia seeks feedback on crypto platform rules ahead of 2027 rollout",
+          "url": "https://cointelegraph.com/news/australia-seeks-feedback-on-crypto-platform-rules-ahead-of-2027-rollout",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YYDDF50Q9P09A46TZD9523/hi-world-bank-blockchain-bond-for-australia.jpg"
+        },
+        {
+          "id": "art_6976125",
+          "title": "Thailand crypto ETFs may see slow start despite new rules: CoinShares51m, Thailand crypto ETFs may see slow start despite new rules: CoinSharesThailand’s new Bitcoin and Ether ETF rules take effect Friday, but CoinShares expects modest initial inflows as existing investment options compete for demand.",
+          "url": "https://cointelegraph.com/news/thailand-crypto-etfs-slow-start-new-rules-coinshares",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6966507",
+          "title": "South Korea plans cybersecurity overhaul after attacks hit banks, crypto firms38m, South Korea plans cybersecurity overhaul after attacks hit banks, crypto firmsSouth Korea is proposing tougher cybersecurity assessments after a review identified security deficiencies at 130 financial firms.",
+          "url": "https://cointelegraph.com/news/south-korea-cybersecurity-overhaul-crypto-exchanges",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6977325",
+          "title": "White House crypto council chief Patrick Witt steps down 10m",
+          "url": "https://cointelegraph.com/news/white-house-crypto-council-director-steps-down",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_6996125",
+          "title": "Criminals stole $90mn of crypto by hiding password readers in USB-like devices",
+          "url": "https://www.ft.com/content/70f69253-6017-4259-95c9-48bf0e088b40",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F528950e5-b24e-4751-860a-2b84e4a4cee5.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_6976124",
+          "title": "Bitget, Liquid exploits push Q3 crypto hacks toward $1.2B",
+          "url": "https://cointelegraph.com/news/bitget-liquid-exploits-push-crypto-hacks-near-12b-q3",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZBJQX8RA4RZN02APHYTQFS/hi-cybercrime-task-force-monitors-the-global-digital-financial-system.jpg"
+        },
+        {
+          "id": "art_6980931",
+          "title": "HEX token sellers erase $160M following reports of founder Richard Schueler arrest",
+          "url": "https://cointelegraph.com/news/hex-token-erases-160m-reports-founder-schuelers-arrest",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZPZ9PD30JJKDBJDB77AQ9B/richard-heart.jpg"
+        },
+        {
+          "id": "art_6980932",
+          "title": "Ledger’s answer to wallet tampering costs $849 and ships next year",
+          "url": "https://cointelegraph.com/news/ledger-new-hardware-device-asia-wallet-tampering",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZK037AB51TV6HMKEHD9H8G/ledger-atom-replacement.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_6987893",
+          "title": "Ripple Prime adds RWA swaps referencing perpetual futures listed on Hyperliquid",
+          "url": "https://www.theblock.co/news/business/2026-10-15-ripple-prime-rwa-swaps-perpetual-futures-hyperliquid-418681",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260108_Ripple_News_3.jpg"
+        },
+        {
+          "id": "art_6979129",
+          "title": "Pantera Capital-backed startup Fission raises $10 million to help investors cash out of tokenized funds faster",
+          "url": "https://fortune.com/2026/10/15/pantera-capital-backed-startup-fission-10-million-investors-tokenized-funds-liquidity/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/image-4-2.png?resize=1200,600"
+        },
+        {
+          "id": "art_6995085",
+          "title": "Private Markets Are the New AI Markets",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-10-15/private-markets-are-the-new-ai-markets",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_6989820",
+          "title": "The tokenization train isn't waiting for the U.S. ",
+          "url": "https://tokenterminal.com/resources/newsletter/the-tokenization-train-isn-t-waiting-for-the-u-s",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The EBA just took direct control of USDC reserves. Mastercard will settle card payments against stablecoin balances. Two rails, one direction: regulated stablecoins are becoming the default interbank bridge, not a crypto-native experiment.\n\nWhat struck us was the timing. These moves land the same week we learned criminals implanted hardware in USB devices to drain $90 million from Ledger users, and that Q3 infrastructure exploits—not smart contract bugs—drove hack losses toward $1.2 billion.\n\nSo the gap is widening. Institutions get EBA-supervised, Mastercard-routed stablecoin plumbing. Retail gets supply chain attacks on hardware wallets. The infrastructure thesis is splitting in two, and the capital is following the regulated half.\n\nWe underwrite this as a repricing of what 'infrastructure' means. Not every wallet or bridge is infrastructure. The ones that survive will be those that can pass EBA reserve audits or integrate into existing card networks. Everything else is being priced as a security cost center.\n\nThe test: watch whether Tether seeks equivalent EU designation, or whether it accepts a structurally smaller market position. If it doesn't apply, Circle's regulatory moat becomes a monopoly rent. If it does, the compliance cost floor for stablecoin issuance just rose for everyone."
+}
