@@ -1,0 +1,688 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-10-31",
+  "date_display": "October 31, 2026",
+  "generated_at": "2026-10-31T06:00:17.654Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Binance Suffers Record $6.3B Hack as North Korean Attackers Breach Internal Signing Systems",
+    "tldr": "The largest crypto theft in history exposes the fragility of centralized exchange security architecture, while Ethereum's EIP-7702 upgrade may have inadvertently amplified losses through compromised signing mechanisms."
+  },
+  "intro": "Dear Founders, Investors, and Friends, a single breach of internal wallet-signing infrastructure just erased more value than the GDP of several small nations, and the market's first question is whether a protocol upgrade made it worse.",
+  "market_snapshot": {
+    "as_of": "2026-10-31T06:00:17.654Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$77,174",
+        "change_24h": "-1.6%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,240",
+        "change_24h": "+0.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.62T",
+        "change_24h": "-3.5%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$84.7B",
+        "change_24h": "+1.0%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 8,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 19,
+    "bearish": 18,
+    "neutral": 8,
+    "deduped": 14
+  },
+  "top_signals": [
+    {
+      "id": "art_7872999",
+      "title": "Inside the largest crypto hack on record: How attackers breached Binance for $6.3 billion",
+      "url": "https://www.theblock.co/news/business/2026-10-30-binance-hack-largest-crypto-hack-north-korea-432225",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Attackers breached Binance's internal systems and wallet-signing mechanisms to execute the largest crypto hack in history. The breach resulted in the theft of $6.3 billion across multiple blockchains.",
+      "significance": 10,
+      "primary_source": "https://www.theblock.co/news/business/2026-10-30-binance-hack-largest-crypto-hack-north-korea-432225",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/03/20230317_Binance_Color.jpg",
+      "why_it_matters": "The breach of internal systems rather than external smart contracts suggests that even the most sophisticated centralized exchanges remain critically exposed at their operational core, repricing the entire CeFi security premium downward."
+    },
+    {
+      "id": "art_7866777",
+      "title": "$6.3bn in 30 minutes: how the world’s biggest heist unfolded",
+      "url": "https://www.ft.com/content/e84eceda-040b-4e5f-b906-09768085933a",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "North Korean hackers executed an unprecedented heist targeting Binance, stealing $6.3 billion in just 30 minutes. The attack represents one of the largest thefts in the history of digital assets.",
+      "significance": 10,
+      "primary_source": "https://www.ft.com/content/e84eceda-040b-4e5f-b906-09768085933a",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F837e2bce-aec9-4d67-8c76-45f618d013a7.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1",
+      "why_it_matters": "A 30-minute execution window for a $6.3 billion heist reveals state-level attacker capabilities that render most private-sector defense budgets structurally inadequate."
+    },
+    {
+      "id": "art_7851506",
+      "title": "Binance working with FBI to recover assets following $6.3B hack",
+      "url": "https://cointelegraph.com/news/binance-fbi-recover-assets-hack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance is collaborating with the FBI to recover assets following a massive security breach. The exchange reportedly suffered a record-breaking hack totaling $6.3 billion.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binance-fbi-recover-assets-hack",
+      "themes": [
+        "security",
+        "asset-recovery"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M66DY7634YFAY00EZKKKTQV0/hi-crypto-crime-investigation-regulation-police-cybercrime-criminal-detective-token.jpg",
+      "why_it_matters": "FBI collaboration signals that crypto exchange breaches are now treated as national security incidents, accelerating the regulatory perimeter around custodial infrastructure."
+    },
+    {
+      "id": "art_7846673",
+      "title": "EIP-7702 didn’t cause Binance hack, but may have amplified losses",
+      "url": "https://cointelegraph.com/news/binance-hack-security-ethereum-eip-7702-role",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A massive $6.3 billion hack of Binance is being investigated, with experts analyzing the role of Ethereum's EIP-7702. While EIP-7702 is not cited as the primary cause, it may have amplified the resulting losses due to compromised signing systems.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binance-hack-security-ethereum-eip-7702-role",
+      "themes": [
+        "security",
+        "exploit-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M6602N70GW2FG23Y7A1E55CV/hi-binance-hack.jpg",
+      "why_it_matters": "EIP-7702's potential amplification of losses introduces a liability question for protocol designers that will reverberate through Ethereum governance and upgrade risk pricing."
+    },
+    {
+      "id": "art_7849798",
+      "title": "바이낸스 63억 달러 해킹, 약속만으로 해결할 수 있는가?",
+      "url": "https://reports.tiger-research.com/p/binances-63-billion-hack-kor",
+      "source": "Tiger Research",
+      "source_domain": "reports.tiger-research.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The article discusses a massive $6.3 billion hack involving Binance and questions whether promises alone are sufficient to resolve the situation. It examines the implications of such a significant security breach on the exchange and the broader market.",
+      "significance": 9,
+      "primary_source": "https://reports.tiger-research.com/p/binances-63-billion-hack-kor",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!atZ_!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F222766595%2Ftwitter.jpg%3Fversion%3D4",
+      "why_it_matters": "The Korean-language skepticism about promises-as-resolution highlights a growing creditor-class realism about recovery expectations that will tighten counterparty terms across Asia-Pacific trading relationships."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_7834594",
+      "company": "Strategy (formerly MicroStrategy)",
+      "amount": "$30B",
+      "round": "",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys",
+      "summary": "Michael Saylor indicates that MicroStrategy has the potential to generate up to $30 billion in digital credit to fund further Bitcoin acquisitions. This strategy aims to increase BTC holdings without relying on new common-stock fundraising or immediate price appreciation."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_7864695",
+      "title": "NYSE Parent Signs Deal to Bring Compliant Hyperliquid Perps to U.S.",
+      "url": "https://www.galaxy.com/insights/research/nyse-parent-signs-deal-to-bring-compliant-hyperliquid-perps-to-u-s",
+      "source": "Galaxy — Insights",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The parent company of the NYSE has signed a deal to launch compliant Hyperliquid perpetuals for the U.S. market. The U.S. venue will operate with its own separate liquidity pool, distinct from existing Hyperliquid markets.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/1iYPlK4ZbpfNLHqFQ4iqOx/8d1f090874c5597d5e598540133dddac/General-ChartGraph-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_7846674",
+      "title": "Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasury19m, Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasuryThe attackers held 18,270 BTC early Friday, topping Coinbase’s reported corporate holdings, and an Ether stash exceeding 500,000 ETH.",
+      "url": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A hacker targeting Binance has accumulated a massive cryptocurrency haul that exceeds the corporate Bitcoin holdings of Coinbase. The attacker currently holds over 18,270 BTC and more than 500,000 ETH.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M663XBRMVF35RHDZ0MC72744/hacker-binance-bitcoin-treasury.jpg"
+    },
+    {
+      "id": "art_7870583",
+      "title": "President Trump says they're looking into Binance hack as calls grow for crypto rules",
+      "url": "https://www.theblock.co/news/regulation/2026-10-30-trump-looking-into-binance-hack-calls-grow-for-crypto-rules-432236",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "President Trump indicated that the administration is investigating a Binance hack amid increasing pressure for clearer cryptocurrency regulations. Simultaneously, The Digital Chamber is urging Congress to grant the CFTC regulatory authority over crypto exchanges.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/06/20250602_Trump_News_3.jpg"
+    },
+    {
+      "id": "art_7866001",
+      "title": "Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B 27m",
+      "url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b",
+      "source": "Cointelegraph",
+      "category": "Stablecoins",
+      "sentiment": "bullish",
+      "summary": "Tether reported a Q3 profit of $1.5 billion, contributing to a significant increase in its excess reserves, which have nearly doubled to $8 billion. This financial growth underscores the continued dominance and profitability of the USDT stablecoin issuer.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M671D68XPHRMK1R429A6YV2Q/analytics3-tether.jpg"
+    },
+    {
+      "id": "art_7854879",
+      "title": "Binance says it has $6.34 billion ready to cover hack losses",
+      "url": "https://www.theblock.co/news/ecosystems/2026-10-30-binance-says-it-has-6-34-billion-ready-to-cover-hack-losses-432208",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Binance has announced it has $6.34 billion available to cover losses resulting from a hack. The exchange is utilizing a combination of held tokens and active purchases to ensure user reimbursement.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News_4.jpg"
+    },
+    {
+      "id": "art_7851507",
+      "title": "Binance says it holds $5B in matching tokens to cover hack losses",
+      "url": "https://cointelegraph.com/news/binance-5-billion-replacement-crypto-in-custody",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Binance has revealed it holds over $6.34 billion in reserves to cover potential losses from hacks. This includes $5 billion in matching tokens, while excluding approximately $3 billion in frozen assets.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M66BRB3N5FEXF6ZJA32PXWYM/hi-binance-is-now-accumulating-btc-at-an-even-faster-rate.jpg"
+    },
+    {
+      "id": "art_7849866",
+      "title": "How North Korea became a hacking superpower",
+      "url": "https://www.ft.com/content/46c03338-63d5-43fc-a946-ebcbe9e1c07a",
+      "source": "FT Crypto",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The article examines how North Korea has developed sophisticated cyber warfare capabilities to bypass international sanctions and generate state revenue. It highlights the regime's strategic investment in hacking to sustain its economy through digital theft.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F4f68b7ce-f6f0-4a0d-865e-a670900e3a80.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    },
+    {
+      "id": "art_7843049",
+      "title": "Trezor warns CryptoBilis buyers to move funds over suspected implant35m, Trezor warns CryptoBilis buyers to move funds over suspected implantTrezor urged customers who bought devices from CryptoBilis since March to move their funds after a report of a suspected hardware implant.",
+      "url": "https://cointelegraph.com/news/trezor-cryptobilis-wallet-implant-funds-warning",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Trezor has issued an urgent warning to customers who purchased hardware wallets from the retailer CryptoBilis since March. The warning follows reports of suspected hardware implants that could compromise private keys.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M65XV5M4X2K1YMKC92QM6YWV/trezor-cryptobilis.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_7864695",
+      "title": "NYSE Parent Signs Deal to Bring Compliant Hyperliquid Perps to U.S.",
+      "url": "https://www.galaxy.com/insights/research/nyse-parent-signs-deal-to-bring-compliant-hyperliquid-perps-to-u-s",
+      "source": "Galaxy — Insights",
+      "note": "ICE's move to bring Hyperliquid perpetuals into U.S. compliance structures is the most concrete institutional bridge yet between DeFi-native infrastructure and regulated market access.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/1iYPlK4ZbpfNLHqFQ4iqOx/8d1f090874c5597d5e598540133dddac/General-ChartGraph-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_7864693",
+      "title": "Weekly Research Brief: Binance Hacked; Hyperliquid on Wall Street; Prediction Markets’ Brazil ‘Miss’",
+      "url": "https://www.galaxy.com/insights/research/binance-hack-hyperliquid-perps-brazil-prediction-markets",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's framing of prediction markets' Brazil election miss offers a rare post-mortem on when decentralized forecasting fails and what that implies for information-market design.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4VUHidr9pIQ0VvMrLDsbDQ/7ae1074921e194e7860208db4a5b31ef/General-ChartGraph-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_7850463",
+      "title": "Spark Token Holder Report Q3 2026",
+      "url": "https://messari.io/report/spark-token-holder-report-q3-2026",
+      "source": "Messari — Research",
+      "note": "Spark's Q3 token holder report provides granular data on how a major DeFi protocol is navigating the post-MiCA European regulatory environment.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c54f967887e8379c285a751aa23ec403c7adeeb9-7500x3000.png"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_7834594",
+          "title": "Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacity39m, Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacityMichael Saylor says Strategy could create up to $30 billion in digital credit without new common-stock fundraising or further Bitcoin price gains, as the company plans more BTC purchases.",
+          "url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_7861169",
+          "title": "Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem 23m",
+          "url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_7791107",
+          "title": "Bitcoin lending and yield could drive next wave of institutional demand, Rootstock says",
+          "url": "https://cointelegraph.com/news/bitcoin-lending-and-yield-could-drive-next-wave-of-institutional-demand-rootstock-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M22T4WSTAGZ7E6YW1EWZGJDW/dollar-fiat-money-bitcoin-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_7850463",
+          "title": "Spark Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/spark-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c54f967887e8379c285a751aa23ec403c7adeeb9-7500x3000.png"
+        },
+        {
+          "id": "art_7815873",
+          "title": "Polymarket launches 15-minute ‘Up or Down’ contracts for the price of gold, plans to add stock and forex",
+          "url": "https://fortune.com/2026/10/29/polymarket-now-lets-you-bet-on-golds-price-going-up-or-down-in-the-next-15-minutes/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2300825651.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_7796895",
+          "title": "Uniswap Labs opens fee conversion tool TJAR to apps, starting with Robinhood",
+          "url": "https://www.theblock.co/news/defi/2026-10-29-uniswap-token-jar-tjar-robinhood-432131",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/03/20210323_Uniswap_V3.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_7810434",
+          "title": "Public companies double share of blockchain revenue since 2022: Report",
+          "url": "https://cointelegraph.com/news/public-companies-double-share-of-blockchain-revenue-since-2022-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M64KJ64YRMXTP1BG2ZXATA10/wallet-crypto-savings-digital-assets.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_7793521",
+          "title": "Polygon expands Open Money Stack to Solana, after Tron rollout",
+          "url": "https://cointelegraph.com/news/polygon-brings-open-money-stack-payments-services-to-solana",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5XYK5DA7HNM6JWT8WCYXTGK/polygon-1.jpg"
+        },
+        {
+          "id": "art_7844423",
+          "title": "NEAR: Priced for Intents, Built for AI",
+          "url": "https://messari.io/report/near-priced-for-intents-built-for-ai",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/673fd130a84e025b65db5a603aa8e6de6f45edfb-1080x432.png"
+        },
+        {
+          "id": "art_7795937",
+          "title": "Canton Foundation grants RedStone 15.8M Canton Coin for pricing standard",
+          "url": "https://cointelegraph.com/news/canton-foundation-redstone-coin-pricing-standard",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63MB2FEAQF47JR39WYHBDYS/hi-how-to-tokenize-your-business-equity-a-step-by-step-guide.jpg"
+        },
+        {
+          "id": "art_7794229",
+          "title": "Crypto Trust Services: The Industry’s Next Defining Chapter",
+          "url": "https://reports.tiger-research.com/p/crypto-trust-services-the-industrys-eng",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!x2z1!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F222601533%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_7840383",
+          "title": "Coinbase Q3 net income jumps 66% as prediction markets gain traction",
+          "url": "https://www.theblock.co/news/business/2026-10-30-coinbase-q3-net-income-jumps-432189",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/coinbase_centered_1920x1080.png"
+        },
+        {
+          "id": "art_7794230",
+          "title": "암호화폐 신탁 산업, 1년 뒤 가장 중요한 대목이 될 것",
+          "url": "https://reports.tiger-research.com/p/crypto-trust-services-the-industrys-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!GM0u!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F222601548%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_7791105",
+          "title": "EU investors rank crypto above retirement plans for lasting wealth creation: OKX survey",
+          "url": "https://cointelegraph.com/news/eu-investors-crypto-above-retirement-lasting-wealth",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63ERM4BGFEBV3E6TAR9B0GH/hi-is-bitcoin-a-good-investment-for-retirement.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_7864693",
+          "title": "Weekly Research Brief: Binance Hacked; Hyperliquid on Wall Street; Prediction Markets’ Brazil ‘Miss’",
+          "url": "https://www.galaxy.com/insights/research/binance-hack-hyperliquid-perps-brazil-prediction-markets",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4VUHidr9pIQ0VvMrLDsbDQ/7ae1074921e194e7860208db4a5b31ef/General-ChartGraph-4_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_7847882",
+          "title": "Zcash grants group offers $124M compromise as governance backlash grows",
+          "url": "https://cointelegraph.com/news/zcash-grants-46m-proposal-governance-backlash",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M668WKWWM9YJGJA1PV483QEA/zcash-proposal-grant-allocation.jpg"
+        },
+        {
+          "id": "art_7786439",
+          "title": "Bonk Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/bonk-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/c2d88f8b11f05a1901133450f2899840f9e9bdae-2500x1000.png"
+        },
+        {
+          "id": "art_7864696",
+          "title": "What’s the Difference Between a 20% Chance and a 0% Chance?",
+          "url": "https://www.galaxy.com/insights/research/whats-the-difference-between-a-20-chance-and-a-0-chance",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6m4ZUI8uiQtSiWzC0OXEzk/fa45f511f118a3f07f4bebbc163cb9da/General-ChartGraph-4_Gray-4__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_7864695",
+          "title": "NYSE Parent Signs Deal to Bring Compliant Hyperliquid Perps to U.S.",
+          "url": "https://www.galaxy.com/insights/research/nyse-parent-signs-deal-to-bring-compliant-hyperliquid-perps-to-u-s",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/1iYPlK4ZbpfNLHqFQ4iqOx/8d1f090874c5597d5e598540133dddac/General-ChartGraph-4_Blue-2.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_7870583",
+          "title": "President Trump says they're looking into Binance hack as calls grow for crypto rules",
+          "url": "https://www.theblock.co/news/regulation/2026-10-30-trump-looking-into-binance-hack-calls-grow-for-crypto-rules-432236",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/06/20250602_Trump_News_3.jpg"
+        },
+        {
+          "id": "art_7803185",
+          "title": "KuCoin suspends services in Russia and Belarus",
+          "url": "https://cointelegraph.com/news/kucoin-services-russia-belarus-suspended",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M6474T6TR1T4C3BDRR2HK11E/hi-crypto-offers-russia-no-way-out-from-western-sanctions-stablecoin.jpg"
+        },
+        {
+          "id": "art_7798353",
+          "title": "French Senate adopts bill for automatic sharing of crypto tax data",
+          "url": "https://cointelegraph.com/news/french-senate-adopts-bill-automatic-crypto-tax-data",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63Z0HFSW7F89QRVV968TGA4/hi-crypto-trading-french-regulations-for-individuals-and-businesses-explained2.jpg"
+        },
+        {
+          "id": "art_7794730",
+          "title": "Brazil’s Halloween eve crypto deadline brings more tricks than treats",
+          "url": "https://cointelegraph.com/news/brazil-crypto-license-filing-deadline-hurdles-uncertainty",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63FKA31ZQ62SGYFQ4D2DA02/brazil.png"
+        },
+        {
+          "id": "art_7792315",
+          "title": "HTX agrees to halt unlawful UK crypto promotions after FCA case",
+          "url": "https://cointelegraph.com/news/htx-halt-unlawful-uk-crypto-promotions-fca",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63R9CYRD1Y8NYM7MX76FWJS/hi-how-to-trade-crypto-in-uk1.jpg"
+        },
+        {
+          "id": "art_7777567",
+          "title": "Utah files criminal charges against Kalshi, executives over alleged illegal gambling",
+          "url": "https://www.theblock.co/news/business/2026-10-29-utah-criminal-charges-kalshi-432104",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/kalshi_court_1920x1080.png"
+        },
+        {
+          "id": "art_7791106",
+          "title": "Coinbase seeks Brazil crypto license, expects no service disruption",
+          "url": "https://cointelegraph.com/news/coinbase-brazil-license-no-service-disruption-expected",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M637T12W73D9BN1G0B1PCCAS/hi-listing-frenzy-coinbase-has-added-nearly-100-assets-for-trading-in-202121.jpg"
+        },
+        {
+          "id": "art_7787481",
+          "title": "ECB President Christine Lagarde to step down in February 2027",
+          "url": "https://cointelegraph.com/news/ecb-president-lagarde-step-down-february-2027",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M54ENNHY19CENP5ZV5HX428Z/christine-lagarde-eu.jpg"
+        },
+        {
+          "id": "art_7772985",
+          "title": "Your fridge could one day stake Ether, launch memecoins: CFTC chair",
+          "url": "https://cointelegraph.com/news/a-fridge-that-launches-memecoins-cftc-floats-ai-crypto-future",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M62YRQYZXNTVJN5ND4CSDWQZ/hi-chinese-banking-regulation-blockchain-variant.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_7872999",
+          "title": "Inside the largest crypto hack on record: How attackers breached Binance for $6.3 billion",
+          "url": "https://www.theblock.co/news/business/2026-10-30-binance-hack-largest-crypto-hack-north-korea-432225",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/03/20230317_Binance_Color.jpg"
+        },
+        {
+          "id": "art_7866777",
+          "title": "$6.3bn in 30 minutes: how the world’s biggest heist unfolded",
+          "url": "https://www.ft.com/content/e84eceda-040b-4e5f-b906-09768085933a",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F837e2bce-aec9-4d67-8c76-45f618d013a7.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_7851506",
+          "title": "Binance working with FBI to recover assets following $6.3B hack",
+          "url": "https://cointelegraph.com/news/binance-fbi-recover-assets-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M66DY7634YFAY00EZKKKTQV0/hi-crypto-crime-investigation-regulation-police-cybercrime-criminal-detective-token.jpg"
+        },
+        {
+          "id": "art_7846673",
+          "title": "EIP-7702 didn’t cause Binance hack, but may have amplified losses",
+          "url": "https://cointelegraph.com/news/binance-hack-security-ethereum-eip-7702-role",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M6602N70GW2FG23Y7A1E55CV/hi-binance-hack.jpg"
+        },
+        {
+          "id": "art_7849798",
+          "title": "바이낸스 63억 달러 해킹, 약속만으로 해결할 수 있는가?",
+          "url": "https://reports.tiger-research.com/p/binances-63-billion-hack-kor",
+          "source": "Tiger Research",
+          "sentiment": "bearish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!atZ_!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F222766595%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_7846674",
+          "title": "Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasury19m, Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasuryThe attackers held 18,270 BTC early Friday, topping Coinbase’s reported corporate holdings, and an Ether stash exceeding 500,000 ETH.",
+          "url": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M663XBRMVF35RHDZ0MC72744/hacker-binance-bitcoin-treasury.jpg"
+        },
+        {
+          "id": "art_7854879",
+          "title": "Binance says it has $6.34 billion ready to cover hack losses",
+          "url": "https://www.theblock.co/news/ecosystems/2026-10-30-binance-says-it-has-6-34-billion-ready-to-cover-hack-losses-432208",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News_4.jpg"
+        },
+        {
+          "id": "art_7851507",
+          "title": "Binance says it holds $5B in matching tokens to cover hack losses",
+          "url": "https://cointelegraph.com/news/binance-5-billion-replacement-crypto-in-custody",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M66BRB3N5FEXF6ZJA32PXWYM/hi-binance-is-now-accumulating-btc-at-an-even-faster-rate.jpg"
+        },
+        {
+          "id": "art_7849866",
+          "title": "How North Korea became a hacking superpower",
+          "url": "https://www.ft.com/content/46c03338-63d5-43fc-a946-ebcbe9e1c07a",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F4f68b7ce-f6f0-4a0d-865e-a670900e3a80.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_7843049",
+          "title": "Trezor warns CryptoBilis buyers to move funds over suspected implant35m, Trezor warns CryptoBilis buyers to move funds over suspected implantTrezor urged customers who bought devices from CryptoBilis since March to move their funds after a report of a suspected hardware implant.",
+          "url": "https://cointelegraph.com/news/trezor-cryptobilis-wallet-implant-funds-warning",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M65XV5M4X2K1YMKC92QM6YWV/trezor-cryptobilis.jpg"
+        },
+        {
+          "id": "art_7809225",
+          "title": "Polymarket suspended trading amid reports of user funds being drained",
+          "url": "https://cointelegraph.com/news/polymarket-suspends-trading-user-funds-compromised",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M64FW4X54T1VWYMX6B1PR4H5/hi-you-are-once-again-banning-crypto-content-polymarket-1.jpg"
+        },
+        {
+          "id": "art_7792313",
+          "title": "Chainalysis traces North Korean crypto cash-outs through Garantex",
+          "url": "https://cointelegraph.com/news/chainalysis-dprk-crypto-cash-out-network-ofac-sanctions",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M63QFJK4GE3865D1SZFS77F7/hi-us-sanctions-against-darknet.jpg"
+        },
+        {
+          "id": "art_7808975",
+          "title": "Polymarket pauses trading after $2.65 million exploit, says third-party provider was compromised",
+          "url": "https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241111_Polymarket_News_2.jpg"
+        },
+        {
+          "id": "art_7859711",
+          "title": "Texas brothers sentenced to 15 years for holding Minnesota family at gunpoint in $8 million crypto heist",
+          "url": "https://www.theblock.co/news/regulation/2026-10-30-texas-brothers-sentenced-15-years-8-million-crypto-robbery-minnesota-432221",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/05/police-arrest-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_7866001",
+          "title": "Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B 27m",
+          "url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M671D68XPHRMK1R429A6YV2Q/analytics3-tether.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_7860437",
+          "title": "Tokenized stocks are where stablecoins were in 2020",
+          "url": "https://tokenterminal.com/resources/newsletter/tokenized-stocks-are-where-stablecoins-were-in-2020",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_7792213",
+          "title": "Bringing TradFi Onchain with Harry Austin",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/bringing-trad-fi-onchain-with-harry-austin",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Six point three billion. Thirty minutes. Internal signing systems, not a bridge contract. The Binance hack is the kind of event that separates how people talk about security from how they underwrite it. We have spent years pricing smart contract risk while the actual kill shot came through operational infrastructure—wallet-signing mechanisms that attackers compromised at the exchange layer. That is a repricing event for CeFi counterparty risk, full stop. The EIP-7702 angle is uglier: a protocol upgrade designed to improve account abstraction may have amplified what the thieves could extract once inside. Not the cause, but an accelerant. That distinction matters for how Ethereum governance thinks about backward-compatible changes that touch signing logic. On our radar, the Hyperliquid-ICE deal running parallel to this is the counter-narrative—perpetuals moving into compliant U.S. structures, institutional plumbing replacing trust assumptions. The market is bifurcating between infrastructure that requires operational faith and infrastructure that does not. We are underwriting the latter. The test: whether Binance's recovery rate validates the 'collaborate with law enforcement' model, or whether six billion in flight proves that state-level attackers operate outside any enforcement horizon that matters. We do not know yet. We are not betting on promises."
+}
