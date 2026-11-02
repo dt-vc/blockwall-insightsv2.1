@@ -1,0 +1,399 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-02",
+  "date_display": "November 2, 2026",
+  "generated_at": "2026-11-02T06:00:16.126Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Binance Hit by Record $6.3B Hack as $5.8B Flees in 24 Hours",
+    "tldr": "The largest crypto heist in history has triggered immediate capital flight and forced rival exchanges into defensive security tightening, while an unrelated THORChain bug accidentally disrupted hacker fund movements."
+  },
+  "intro": "Dear Founders, Investors, and Friends, the Binance breach and its aftermath are rewriting the short-term risk calculus for every centralized exchange business model.",
+  "market_snapshot": {
+    "as_of": "2026-11-02T06:00:16.126Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$78,358",
+        "change_24h": "+0.7%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,290",
+        "change_24h": "+1.0%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.62T",
+        "change_24h": "-3.0%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$85.8B",
+        "change_24h": "+1.1%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 2,
+    "bearish": 7,
+    "neutral": 5,
+    "deduped": 30
+  },
+  "top_signals": [
+    {
+      "id": "art_7959056",
+      "title": "Binance says phase one of withdrawals opens after $6.3B hack",
+      "url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has initiated the first phase of user withdrawals following a record-breaking security breach. The hack resulted in a loss of approximately $6.3 billion.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6B7GCDKCRNR2Z23KSY172H6/hi-binance-unchained.jpg",
+      "why_it_matters": "The phased withdrawal approach suggests Binance is liquidity-managing under stress, not merely processing a backlog, which implies internal concern about matching obligations."
+    },
+    {
+      "id": "art_7835201",
+      "title": "The $6.3 billion Binance hack: What we know so far about the biggest crypto heist in history",
+      "url": "https://fortune.com/2026/10/30/what-we-know-about-binance-hack-biggest-crypto-heist/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has suffered a massive security breach resulting in a $6.3 billion loss, marking it as the largest crypto heist in history. There are currently unconfirmed reports suggesting that North Korea may be responsible for the attack.",
+      "significance": 10,
+      "primary_source": "https://fortune.com/2026/10/30/what-we-know-about-binance-hack-biggest-crypto-heist/",
+      "themes": [
+        "security",
+        "hacks"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2275037810.jpg",
+      "why_it_matters": "North Korea attribution, even unconfirmed, elevates this from a commercial security failure to a geopolitical liability that regulators will weaponize in licensing debates."
+    },
+    {
+      "id": "art_7994117",
+      "title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
+      "url": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance experienced $5.8 billion in net outflows within 24 hours after resuming withdrawals following a massive $6.3 billion hack. While the exchange claims activity is stabilizing, the surge indicates significant user capital flight.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack",
+      "themes": [
+        "security",
+        "exchange-outflows"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FQAANP3H5Z0XYV77PNYB10/hi-will-the-blockchain-stop-leaks-of-crypto.jpg",
+      "why_it_matters": "$5.8 billion in net outflows within a single day is a bank-run velocity that no exchange balance sheet is engineered to absorb repeatedly, making this a live solvency stress test."
+    },
+    {
+      "id": "art_7904225",
+      "title": "Crypto exchanges rush to tighten security after $6.3bn Binance heist",
+      "url": "https://www.ft.com/content/c7062e37-86fd-45ef-8f58-573de0fcaaf0",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Crypto exchanges are implementing stricter security measures and fund movement restrictions following a massive $6.3 billion heist at Binance. Rival venues are reacting to the breach by increasing alerts to prevent further illicit transfers.",
+      "significance": 9,
+      "primary_source": "https://www.ft.com/content/c7062e37-86fd-45ef-8f58-573de0fcaaf0",
+      "themes": [
+        "security",
+        "exchange-security"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F94003a00-b408-4a1c-9564-732bb42f4d19.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1",
+      "why_it_matters": "Rival exchanges tightening fund movement restrictions signals competitive differentiation shifting from product to security theater, which raises operational costs industry-wide and compresses margins."
+    },
+    {
+      "id": "art_7998953",
+      "title": "THORChain halts swaps after block reorg bug, slowing Binance hackers",
+      "url": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "THORChain has halted swaps across 10 networks following the discovery of a refund bug triggered by an Ethereum block reorganization. This action has inadvertently hindered the movement of funds stolen in a massive $6.3 billion hack of Binance.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers",
+      "themes": [
+        "security",
+        "exploit-mitigation"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6CYVYY9YQQNJBR6GY3CWVA6/stop-regulation-blockchain-ban.jpg",
+      "why_it_matters": "THORChain's unrelated bug becoming a de facto law enforcement tool exposes how brittle cross-chain infrastructure is, and how little actual control exists over stolen fund flows."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_7834594",
+      "company": "Strategy (formerly MicroStrategy)",
+      "amount": "$30B",
+      "round": "",
+      "investors": [],
+      "category": "Bitcoin",
+      "url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys",
+      "summary": "Michael Saylor indicates that MicroStrategy has the potential to generate up to $30 billion in digital credit to fund further Bitcoin acquisitions. This strategy aims to increase BTC holdings without relying on new common-stock fundraising or immediate price appreciation."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_7975732",
+      "title": "Binance sees $3.64 billion in net outflows after reopening withdrawals following record hack",
+      "url": "https://www.theblock.co/news/business/2026-11-01-binance-sees-3-64-billion-in-net-outflows-after-reopening-withdrawals-following-record-hack-432259",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance experienced $3.64 billion in net outflows after reopening withdrawals following a record hack. The exchange stated these outflows represent 2.1% of its total assets and plans to release an updated proof-of-reserves report.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News_2.jpg"
+    },
+    {
+      "id": "art_8004748",
+      "title": "Spot bitcoin ETFs see largest daily outflows in four months following record Binance hack",
+      "url": "https://www.theblock.co/news/markets/2026-11-01-spot-bitcoin-etfs-largest-four-months-following-binance-hack-432270",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "US spot bitcoin ETFs experienced their largest single-day outflow in four months, losing $643 million on Friday. This market movement follows reports of a record hack involving Binance.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/bitcoin_binance_1920x1080.png"
+    },
+    {
+      "id": "art_8003789",
+      "title": "Bank of Korea probes financial firms’ exposure to crypto risks28m, Bank of Korea probes financial firms’ exposure to crypto risksThe central bank is surveying 31 financial institutions on how a major exchange shutdown, prolonged crypto downturn or losses at another firm could affect their operations.",
+      "url": "https://cointelegraph.com/news/bank-of-korea-probes-financial-firms-exposure-to-crypto-risks",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The Bank of Korea is conducting a survey of 31 financial institutions to assess their exposure to cryptocurrency risks. The probe focuses on how systemic events, such as exchange shutdowns or prolonged market downturns, could impact the stability of the financial sector.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M59TMCWT4YS3BEJ97Y7B01HA/hi-crypto-on-corporate-balance-sheets-south-korea.jpg"
+    },
+    {
+      "id": "art_7968728",
+      "title": "DeepSeek developing AI agent requiring less human input: Report 9m",
+      "url": "https://cointelegraph.com/news/deepseek-developing-ai-agent-requiring-less-human-input-report",
+      "source": "Cointelegraph",
+      "category": "Other",
+      "sentiment": "bullish",
+      "summary": "DeepSeek is reportedly developing a new AI agent designed to operate with significantly less human intervention. The development focuses on increasing autonomy in AI task execution.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6BNBCY09X57GCM10X7FBK0P/make-ai-great1-1.jpg"
+    },
+    {
+      "id": "art_7910697",
+      "title": "Texas brothers sentenced to 15 years in prison for armed crypto robbery, kidnapping",
+      "url": "https://cointelegraph.com/news/texas-brothers-sentenced-to-15-years-in-prison-for-armed-crypto-robbery-kidnapping",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Two brothers in Texas have been sentenced to 15 years in prison following an armed robbery and kidnapping targeting cryptocurrency. The case highlights the physical security risks associated with holding significant digital asset wealth.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M692SNKAR10X68EF1R0WFNT5/hi-break-these-singapore-crypto-rulesand-face-200k-fines-or-jail.jpg"
+    },
+    {
+      "id": "art_7859711",
+      "title": "Texas brothers sentenced to 15 years for holding Minnesota family at gunpoint in $8 million crypto heist",
+      "url": "https://www.theblock.co/news/regulation/2026-10-30-texas-brothers-sentenced-15-years-8-million-crypto-robbery-minnesota-432221",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Two Texas brothers have been sentenced to approximately 15 years in prison for an armed robbery in Minnesota. The heist involved holding a family at gunpoint to steal $8 million in cryptocurrency.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/05/police-arrest-1.jpg"
+    },
+    {
+      "id": "art_7912462",
+      "title": "Crypto Fundraisings on Week 25 ",
+      "url": "https://crypto-fundraising.info/blog/dates-25-31-oct-2026/",
+      "source": "Crypto Fundraising",
+      "category": "Investment",
+      "sentiment": "neutral",
+      "summary": "The article provides a weekly summary of crypto fundraising events for the period of October 25-31, 2026. It serves as a general tracking update for cryptocurrency investments.",
+      "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/25-31-Oct-2026.png"
+    },
+    {
+      "id": "art_7864696",
+      "title": "What’s the Difference Between a 20% Chance and a 0% Chance?",
+      "url": "https://www.galaxy.com/insights/research/whats-the-difference-between-a-20-chance-and-a-0-chance",
+      "source": "Galaxy — Insights",
+      "category": "Other",
+      "sentiment": "neutral",
+      "summary": "The article discusses the psychological interpretation of prediction markets, noting that people often view probability percentages as definitive verdicts rather than measures of uncertainty.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6m4ZUI8uiQtSiWzC0OXEzk/fa45f511f118a3f07f4bebbc163cb9da/General-ChartGraph-4_Gray-4__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_7864696",
+      "title": "What’s the Difference Between a 20% Chance and a 0% Chance?",
+      "url": "https://www.galaxy.com/insights/research/whats-the-difference-between-a-20-chance-and-a-0-chance",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's framework for distinguishing negligible probability from genuine possibility is directly applicable to how markets are currently mispricing tail risk in exchange counterparty exposure.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6m4ZUI8uiQtSiWzC0OXEzk/fa45f511f118a3f07f4bebbc163cb9da/General-ChartGraph-4_Gray-4__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8004748",
+          "title": "Spot bitcoin ETFs see largest daily outflows in four months following record Binance hack",
+          "url": "https://www.theblock.co/news/markets/2026-11-01-spot-bitcoin-etfs-largest-four-months-following-binance-hack-432270",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/bitcoin_binance_1920x1080.png"
+        },
+        {
+          "id": "art_7834594",
+          "title": "Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacity39m, Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacityMichael Saylor says Strategy could create up to $30 billion in digital credit without new common-stock fundraising or further Bitcoin price gains, as the company plans more BTC purchases.",
+          "url": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_7912462",
+          "title": "Crypto Fundraisings on Week 25 ",
+          "url": "https://crypto-fundraising.info/blog/dates-25-31-oct-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/25-31-Oct-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_7968728",
+          "title": "DeepSeek developing AI agent requiring less human input: Report 9m",
+          "url": "https://cointelegraph.com/news/deepseek-developing-ai-agent-requiring-less-human-input-report",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6BNBCY09X57GCM10X7FBK0P/make-ai-great1-1.jpg"
+        },
+        {
+          "id": "art_7864696",
+          "title": "What’s the Difference Between a 20% Chance and a 0% Chance?",
+          "url": "https://www.galaxy.com/insights/research/whats-the-difference-between-a-20-chance-and-a-0-chance",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6m4ZUI8uiQtSiWzC0OXEzk/fa45f511f118a3f07f4bebbc163cb9da/General-ChartGraph-4_Gray-4__1_.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8003789",
+          "title": "Bank of Korea probes financial firms’ exposure to crypto risks28m, Bank of Korea probes financial firms’ exposure to crypto risksThe central bank is surveying 31 financial institutions on how a major exchange shutdown, prolonged crypto downturn or losses at another firm could affect their operations.",
+          "url": "https://cointelegraph.com/news/bank-of-korea-probes-financial-firms-exposure-to-crypto-risks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M59TMCWT4YS3BEJ97Y7B01HA/hi-crypto-on-corporate-balance-sheets-south-korea.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_7959056",
+          "title": "Binance says phase one of withdrawals opens after $6.3B hack",
+          "url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6B7GCDKCRNR2Z23KSY172H6/hi-binance-unchained.jpg"
+        },
+        {
+          "id": "art_7835201",
+          "title": "The $6.3 billion Binance hack: What we know so far about the biggest crypto heist in history",
+          "url": "https://fortune.com/2026/10/30/what-we-know-about-binance-hack-biggest-crypto-heist/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2275037810.jpg"
+        },
+        {
+          "id": "art_7994117",
+          "title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
+          "url": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FQAANP3H5Z0XYV77PNYB10/hi-will-the-blockchain-stop-leaks-of-crypto.jpg"
+        },
+        {
+          "id": "art_7904225",
+          "title": "Crypto exchanges rush to tighten security after $6.3bn Binance heist",
+          "url": "https://www.ft.com/content/c7062e37-86fd-45ef-8f58-573de0fcaaf0",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F94003a00-b408-4a1c-9564-732bb42f4d19.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_7998953",
+          "title": "THORChain halts swaps after block reorg bug, slowing Binance hackers",
+          "url": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6CYVYY9YQQNJBR6GY3CWVA6/stop-regulation-blockchain-ban.jpg"
+        },
+        {
+          "id": "art_7975732",
+          "title": "Binance sees $3.64 billion in net outflows after reopening withdrawals following record hack",
+          "url": "https://www.theblock.co/news/business/2026-11-01-binance-sees-3-64-billion-in-net-outflows-after-reopening-withdrawals-following-record-hack-432259",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News_2.jpg"
+        },
+        {
+          "id": "art_7910697",
+          "title": "Texas brothers sentenced to 15 years in prison for armed crypto robbery, kidnapping",
+          "url": "https://cointelegraph.com/news/texas-brothers-sentenced-to-15-years-in-prison-for-armed-crypto-robbery-kidnapping",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M692SNKAR10X68EF1R0WFNT5/hi-break-these-singapore-crypto-rulesand-face-200k-fines-or-jail.jpg"
+        },
+        {
+          "id": "art_7859711",
+          "title": "Texas brothers sentenced to 15 years for holding Minnesota family at gunpoint in $8 million crypto heist",
+          "url": "https://www.theblock.co/news/regulation/2026-10-30-texas-brothers-sentenced-15-years-8-million-crypto-robbery-minnesota-432221",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/05/police-arrest-1.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Six point three billion in proven reserves is now six point three billion in proven liabilities. Binance opened withdrawals and watched five point eight billion leave inside a day. That's not caution. That's a vote.\n\nWe've spent years underwriting exchanges on user growth, fee tiers, token listings. The repricing happening now is simpler: counterparty risk is being marked to reality. Every founder running a custodial model should assume their users are running the same calculation Binance users just did. The cost of acquiring trust just spiked, and the payback period on security infrastructure shortened to whatever your next audit cycle is.\n\nStrategy's $30 billion credit capacity for Bitcoin buys, announced the same day, reads almost deliberately contrarian. Saylor is betting that institutional BTC demand remains inelastic to exchange failures. We're not sure that's the right side of the trade, but it's a clean expression of conviction.\n\nWhat would change our view? Two consecutive weeks of net inflows returning to Binance. Until then, we assume capital is reallocating to self-custody and regulated venues, and we underwrite every exchange-facing deal accordingly.\n\nThe infrastructure thesis isn't dead. The centralized-custody premium is."
+}
