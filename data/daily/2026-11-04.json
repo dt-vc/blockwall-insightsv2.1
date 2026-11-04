@@ -1,0 +1,549 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-04",
+  "date_display": "November 4, 2026",
+  "generated_at": "2026-11-04T06:00:17.642Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "North Korea's $6.3B Binance breach exposes social engineering as crypto's single point of failure",
+    "tldr": "The largest exchange hack in history was executed not through protocol exploit but through fake LinkedIn job interviews and a compromised AI tool, revealing that human infrastructure—not smart contract risk—now dominates the threat surface for institutional crypto custody."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the industry's most sophisticated security architecture was bypassed by a fake recruiter on LinkedIn, and that should change how we underwrite operational risk across every position in our portfolio.",
+  "market_snapshot": {
+    "as_of": "2026-11-04T06:00:17.642Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$77,782",
+        "change_24h": "+1.6%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,294",
+        "change_24h": "+2.2%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.64T",
+        "change_24h": "-1.2%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$81.4B",
+        "change_24h": "-0.6%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 7,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 12,
+    "bearish": 7,
+    "neutral": 12,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_8092100",
+      "title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
+      "url": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has released a postmortem detailing a massive $6.3 billion hack executed through social engineering and technical exploits. The attackers used fake job interviews and a compromised AI tool to steal employee credentials and bypass wallet-signing security.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack",
+      "themes": [
+        "security",
+        "exploit-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6H1WEHAQHGGSH08YS33AB97/hi-crimeware-as-a-service-a-new-threat-to-crypto-users.png",
+      "why_it_matters": "The $6.3B Binance hack demonstrates that AI-assisted social engineering has rendered traditional multi-sig and wallet-signing security insufficient for institutional-grade custody, forcing a repricing of operational risk in exchange valuations."
+    },
+    {
+      "id": "art_8089078",
+      "title": "North Korea used LinkedIn, fake job interviews to trick Binance engineer in $6.3 billion hack",
+      "url": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "North Korean hackers successfully executed a $6.3 billion hack by targeting a Binance engineer through social engineering on LinkedIn. The attackers used fake job interviews and malicious assignments to gain access to the company's systems.",
+      "significance": 10,
+      "primary_source": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302659435.jpg?resize=1200,600",
+      "why_it_matters": "North Korean state actors targeting individual engineers through professional networks confirms that human-layer exploits are now the primary attack vector for nation-state adversaries, not protocol vulnerabilities."
+    },
+    {
+      "id": "art_8121165",
+      "title": "Democrats claim control of the US Senate",
+      "url": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Democrats have secured control of the US Senate, which is expected to influence the future of crypto regulation. This shift may impact the CLARITY Act, regulatory appointments, and the oversight of Donald Trump's digital asset ventures.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset",
+      "themes": [
+        "regulation",
+        "us-politics"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9F3G1623QRJQS2NY2JXXE/hi-blockchain-voting-is-the-alternative-for-trusted-democratic-elections1.jpg",
+      "why_it_matters": "Democratic Senate control creates a more complex regulatory path for the CLARITY Act and Trump's digital asset ventures, introducing legislative uncertainty that will delay institutional capital deployment timelines."
+    },
+    {
+      "id": "art_8118742",
+      "title": "ZachXBT identifies French bank as alleged victim of $133M crypto theft11m, ZachXBT identifies French bank as alleged victim of $133M crypto theftThe French bank has not confirmed its alleged involvement in the crypto theft, which ZachXBT said could have resulted in losses exceeding $133 million.",
+      "url": "https://cointelegraph.com/news/zachxbt-french-bank-credit-mutuel-arkea-133m-crypto-theft",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "On-chain sleuth ZachXBT has identified a French bank as the potential victim of a massive cryptocurrency theft. The alleged losses are estimated to exceed $133 million, though the bank has not yet confirmed the incident.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/zachxbt-french-bank-credit-mutuel-arkea-133m-crypto-theft",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9R4VF5N3TX90MJQ3PZBSH/hack-theft-eu-bank.png",
+      "why_it_matters": "A $133M potential theft at a French bank, identified by on-chain analysis before institutional disclosure, shows that blockchain transparency is creating asymmetric information advantages for crypto-native investigators over traditional financial institutions."
+    },
+    {
+      "id": "art_8089428",
+      "title": "CFTC approves individual stock perpetual futures trading in US for the first time",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The CFTC has approved the trading of individual stock perpetual futures in the United States for the first time. This move brings a popular crypto-native derivative structure into the regulated US equity markets.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422",
+      "themes": [
+        "regulation",
+        "derivatives"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/04/CFTC.jpg",
+      "why_it_matters": "CFTC approval of stock perpetual futures validates the crypto-native perpetual structure as a regulated financial instrument, opening a path for DeFi derivative architectures to migrate into TradFi infrastructure and capture fee pools previously controlled by CME and OCC."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_8118492",
+      "title": "South Korea's ruling party formally proposes deferral of crypto income tax",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-south-koreas-ruling-party-proposes-deferral-crypto-income-tax-432580",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "South Korea's ruling party has formally proposed delaying the implementation of taxes on cryptocurrency income. The party argues that a comprehensive legal framework, specifically the Digital Asset Basic Act, should be established before taxation begins.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/02/20240220_SouthKorea_News3.jpg"
+    },
+    {
+      "id": "art_8107843",
+      "title": "US midterms election 2026 live: What they mean for crypto",
+      "url": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The article provides live tracking of the 2026 US midterm elections with a focus on crypto-backed candidates. It analyzes how the election results may influence future cryptocurrency regulation in the United States.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HNW6N1NESPPP9VWMSTMCKP/hi-can-polymarket-and-augur-predict-the-next-us-elections2.jpg"
+    },
+    {
+      "id": "art_8101788",
+      "title": "CFTC clears stock perpetual futures for trading on US exchanges",
+      "url": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The CFTC has cleared the trading of stock-linked perpetual futures on regulated US exchanges. While the move opens the door for these instruments, specific trading venues and launch dates have not yet been determined.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HED4AVHBSQQHY2NWN6WVHE/hi-prediction-market-cftc-rule-2.png"
+    },
+    {
+      "id": "art_8080956",
+      "title": "Liquid Network restores full bitcoin backing following $320 million exploit",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Liquid Network has restored its full bitcoin backing following a $320 million exploit that occurred in September. Blockstream provided the missing bitcoin to cover the nearly 600 BTC that remained unreturned.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-03-at-10.31.29.png"
+    },
+    {
+      "id": "art_8079996",
+      "title": "Binance’s net inflows turn positive at $2.3B as withdrawals expand",
+      "url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals",
+      "source": "Cointelegraph",
+      "category": "Other",
+      "sentiment": "neutral",
+      "summary": "Binance saw a reversal in capital movement with $2.2 billion in net inflows over a 24-hour period. This follows a period of heavy outflows and a significant $6.3 billion hack.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6GEN8GP66RSSXHPQAF0HADV/binance-searchlight.jpg"
+    },
+    {
+      "id": "art_8120914",
+      "title": "Former Sen. Sherrod Brown defeats Jon Husted, dealing a blow to crypto PAC Fairshake",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-sherrod-brown-defeats-jon-husted-432495",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Former Senator Sherrod Brown defeated Jon Husted in an Ohio race, marking a setback for the crypto-focused PAC Fairshake. Fairshake had invested millions of dollars into the campaign to oppose Brown.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/05/20220513-News-Sherrod-Brown.jpg"
+    },
+    {
+      "id": "art_8105421",
+      "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+      "url": "https://cointelegraph.com/news/spacex-tokenization-okxice",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bearish",
+      "summary": "SpaceX has blocked the listing of its tokenized stocks on the OKXICE platform, following similar objections from Tesla and Amazon. This occurs despite a growing trend of offshore platforms trading SpaceX tokens since June.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HGH0BNNPHY4QQAS9295KYQ/okxice-with-stop-gesture.png"
+    },
+    {
+      "id": "art_8101538",
+      "title": "CZ calls for crypto security alliance as AI-driven attacks accelerate after Binance hack",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-cz-calls-for-crypto-security-alliance-ai-driven-attacks-accelerate-binance-hack-432458",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "Changpeng Zhao is advocating for the creation of a crypto security alliance to combat the rise of AI-driven attacks. He emphasizes the need for AI-based defenses and industry-wide cooperation to freeze stolen funds more efficiently following a recent hack.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230419_CZ_Generic3.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8091900",
+      "title": "Reusable networks",
+      "url": "https://a16zfrontier.com/posts/article/reusable-networks-as-moat/",
+      "source": "a16z crypto",
+      "note": "a16z's framework for reusable networks offers a structural model for how modular infrastructure layers can capture value without fragmenting liquidity, directly relevant to founders building in the post-rollup era.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/reusablenetworks_a16zfrontier-social.png"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8080956",
+          "title": "Liquid Network restores full bitcoin backing following $320 million exploit",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-03-at-10.31.29.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_8095483",
+          "title": "Prediction markets bet on Democratic sweep of House, Senate in midterm elections",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-midterm-election-odds-polymarket-kalshi-democrats-432461",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_8086756",
+          "title": "JP모건 키넥시스: 은행은 블록체인을 어떻게 써야 하는가?",
+          "url": "https://reports.tiger-research.com/p/jpmorgan-kinexys-how-should-banks-use-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!lKIK!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F223323960%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_8074906",
+          "title": "NEAR governance approves proposal to cut token issuance ceiling to 1.6%",
+          "url": "https://www.theblock.co/news/defi/2026-11-03-near-governance-approves-proposal-to-cut-token-issuance-432378",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/20220126_Near_Protocol_News.jpg"
+        },
+        {
+          "id": "art_8091900",
+          "title": "Reusable networks",
+          "url": "https://a16zfrontier.com/posts/article/reusable-networks-as-moat/",
+          "source": "a16z crypto",
+          "sentiment": "bullish",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/reusablenetworks_a16zfrontier-social.png"
+        },
+        {
+          "id": "art_8092466",
+          "title": "🟪 NEWS: Blockworks MCP now open to everyone  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_710bc6de-8434-46d4-9c27-c3d8ed741bf2",
+          "source": "Blockworks (2)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_8087692",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/we-re-opening-up-blockworks-mcp-to-everyone",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8084837",
+          "title": "Moscow Exchange to launch Bitcoin, Ether and USDT trading in December",
+          "url": "https://cointelegraph.com/news/moscow-exchange-bitcoin-ether-usdt-trading-december",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6GN6W7C4H29GR4MQT2Q1EN2/moscow-btc-eth-tether.png"
+        },
+        {
+          "id": "art_8072736",
+          "title": "ARK buys $17M in Coinbase, Circle shares while trimming Bullish11m",
+          "url": "https://cointelegraph.com/news/ark-buys-coinbase-circle-trims-bullish",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_8085796",
+          "title": "Ethereum Layer 2 Aztec gets Tierra V6 upgrade to support faster private apps",
+          "url": "https://www.theblock.co/news/defi/2026-11-03-ethereum-l2-aztec-tierra-v6-upgrade-private-apps-432399",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/aztec-ml.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_8079996",
+          "title": "Binance’s net inflows turn positive at $2.3B as withdrawals expand",
+          "url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6GEN8GP66RSSXHPQAF0HADV/binance-searchlight.jpg"
+        },
+        {
+          "id": "art_8059426",
+          "title": "Binance begins second withdrawal phase, exchange outflows slow31m",
+          "url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8099096",
+          "title": "How Much Should Anthropic Pop?",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-11-03/how-much-should-anthropic-pop",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8090044",
+          "title": "🟪 America’s retro pastime: Election betting  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_1260367d-ceb0-428c-926c-1a12bd27e514",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8121165",
+          "title": "Democrats claim control of the US Senate",
+          "url": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9F3G1623QRJQS2NY2JXXE/hi-blockchain-voting-is-the-alternative-for-trusted-democratic-elections1.jpg"
+        },
+        {
+          "id": "art_8089428",
+          "title": "CFTC approves individual stock perpetual futures trading in US for the first time",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/04/CFTC.jpg"
+        },
+        {
+          "id": "art_8118492",
+          "title": "South Korea's ruling party formally proposes deferral of crypto income tax",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-south-koreas-ruling-party-proposes-deferral-crypto-income-tax-432580",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/02/20240220_SouthKorea_News3.jpg"
+        },
+        {
+          "id": "art_8107843",
+          "title": "US midterms election 2026 live: What they mean for crypto",
+          "url": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HNW6N1NESPPP9VWMSTMCKP/hi-can-polymarket-and-augur-predict-the-next-us-elections2.jpg"
+        },
+        {
+          "id": "art_8101788",
+          "title": "CFTC clears stock perpetual futures for trading on US exchanges",
+          "url": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HED4AVHBSQQHY2NWN6WVHE/hi-prediction-market-cftc-rule-2.png"
+        },
+        {
+          "id": "art_8120914",
+          "title": "Former Sen. Sherrod Brown defeats Jon Husted, dealing a blow to crypto PAC Fairshake",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-sherrod-brown-defeats-jon-husted-432495",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/05/20220513-News-Sherrod-Brown.jpg"
+        },
+        {
+          "id": "art_8086046",
+          "title": "What’s at stake for crypto as the US votes in the 2026 midterms?",
+          "url": "https://cointelegraph.com/news/us-midterms-2026-stake-crypto-election-day",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8077576",
+          "title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped10m, France postpones 2027 budget vote, crypto exit-tax proposals scrappedThe National Assembly postponed the vote on the budget’s revenue section for the second time, while the Nov. 17 deadline for the first reading examination nears.",
+          "url": "https://cointelegraph.com/news/france-postpones-2027-budget-vote-reject-crypto-exit-tax",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8099366",
+          "title": "US midterms: Prediction markets favor Democrats in key crypto races22m",
+          "url": "https://cointelegraph.com/news/us-midterm-prediction-markets",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8064266",
+          "title": "Crypto.com to withdraw Hong Kong consumer app citing regulatory changes",
+          "url": "https://cointelegraph.com/news/crypto-com-hong-kong-app-shutdown-license-pending",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6FWJCR3YC78YRVRCAXWNJWS/hong-kong-license.jpg"
+        },
+        {
+          "id": "art_8112688",
+          "title": "1inch lawyer sees agencies driving US crypto regulation as midterms unfold",
+          "url": "https://cointelegraph.com/news/1inch-lawyer-sees-agencies-driving-us-crypto-regulation-as-midterms-unfold",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DJ3V1RSDPDYAETXYR8NEK1/hi-us-government-has-shut-down-bitcoin-crypto.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8092100",
+          "title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
+          "url": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6H1WEHAQHGGSH08YS33AB97/hi-crimeware-as-a-service-a-new-threat-to-crypto-users.png"
+        },
+        {
+          "id": "art_8089078",
+          "title": "North Korea used LinkedIn, fake job interviews to trick Binance engineer in $6.3 billion hack",
+          "url": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302659435.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8118742",
+          "title": "ZachXBT identifies French bank as alleged victim of $133M crypto theft11m, ZachXBT identifies French bank as alleged victim of $133M crypto theftThe French bank has not confirmed its alleged involvement in the crypto theft, which ZachXBT said could have resulted in losses exceeding $133 million.",
+          "url": "https://cointelegraph.com/news/zachxbt-french-bank-credit-mutuel-arkea-133m-crypto-theft",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9R4VF5N3TX90MJQ3PZBSH/hack-theft-eu-bank.png"
+        },
+        {
+          "id": "art_8101538",
+          "title": "CZ calls for crypto security alliance as AI-driven attacks accelerate after Binance hack",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-cz-calls-for-crypto-security-alliance-ai-driven-attacks-accelerate-binance-hack-432458",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230419_CZ_Generic3.jpg"
+        },
+        {
+          "id": "art_8066688",
+          "title": "UK warns AI ransomware attack on infrastructure ‘highly likely’ by 2028",
+          "url": "https://cointelegraph.com/news/uk-warns-ai-ransomware-attack-on-infrastructure-highly-likely-by-2028",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6FRVQEAWKQAEZ8JB6F3S0VW/hi-uk-regulations.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_8105421",
+          "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+          "url": "https://cointelegraph.com/news/spacex-tokenization-okxice",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HGH0BNNPHY4QQAS9295KYQ/okxice-with-stop-gesture.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "We underwrite custody risk on protocol architecture. Binance just proved this is incomplete.\n\n$6.3 billion. Fake job interview on LinkedIn. A compromised AI tool. North Korean operators sitting across a video call, stealing credentials, bypassing wallet-signing controls. Not a smart contract exploit. Not a bridge flaw. Human engineering at scale.\n\nThe industry has spent five years and billions hardening code. The perimeter held. The employee didn't. That is not a security failure in the conventional sense. It is a category error in how we model operational risk for institutional positions.\n\nWhat changes: exchange valuations must now carry a premium for human-layer security, not just multi-sig engineering. The insurers, the custodians, the LPs pricing counterparty risk—they are repricing this morning. The question is whether the repricing is sufficient.\n\nThe CFTC's parallel move on stock perpetuals points somewhere else. Crypto-native derivative structures entering regulated markets. Two different vectors. One threat surface expanding, one product surface legitimizing. We are watching where the value shifts between them.\n\nThe test: does any major exchange publicly disclose its social-engineering penetration testing results in the next quarter? Silence there would itself be signal."
+}
