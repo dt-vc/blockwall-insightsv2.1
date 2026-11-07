@@ -1,0 +1,624 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-07",
+  "date_display": "November 7, 2026",
+  "generated_at": "2026-11-07T06:00:17.653Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "US Treasury Softens Crypto Surveillance Rules While Exchange Sector Bleeds from $6.3B Binance Hack and MEXC Sanctions Action",
+    "tldr": "Regulatory tone in Washington is thawing on retirement access and data collection, but the exchange infrastructure is under simultaneous stress from the largest hack in industry history and a major sanctions enforcement action—creating a split screen that reprices custody risk and jurisdictional exposure differently than six months ago."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks a regulatory pivot in Washington against two simultaneous stress fractures in exchange infrastructure, and what that divergence means for how we underwrite operational risk in the quarter ahead.",
+  "market_snapshot": {
+    "as_of": "2026-11-07T06:00:17.653Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$75,954",
+        "change_24h": "+0.4%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,247",
+        "change_24h": "+1.1%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.57T",
+        "change_24h": "-2.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$80.9B",
+        "change_24h": "+0.0%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 14,
+    "bearish": 16,
+    "neutral": 8,
+    "deduped": 16
+  },
+  "top_signals": [
+    {
+      "id": "art_8253165",
+      "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+      "url": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has suffered a massive security breach resulting in a $6.3 billion hack. Experts are currently questioning the effectiveness of the exchange's hot wallet safeguards and internal signing controls.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NZZB32AAV4WA4BCAVB6M4R/hi-how-to-migrate-crypto-from-an-exchange-to-ledger-1.jpg",
+      "why_it_matters": "A $6.3 billion hot wallet breach at the industry's largest exchange by volume forces a repricing of custody premiums and will accelerate institutional demand for verifiable, non-custodial or segregated infrastructure."
+    },
+    {
+      "id": "art_8277133",
+      "title": "Treasury cuts off MEXC Global over alleged $16 billion in transactions linked to Iran, North Korea and Russia",
+      "url": "https://www.theblock.co/news/regulation/2026-11-06-treasury-cuts-off-mexc-global-over-alleged-16-billion-in-transactions-linked-to-iran-north-korea-and-russia-435957",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The U.S. Treasury's FinCEN has issued an order against MEXC Global, designating it as a money laundering concern. The action follows allegations that the exchange processed $16 billion in transactions linked to sanctioned nations including Iran, North Korea, and Russia.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-06-treasury-cuts-off-mexc-global-over-alleged-16-billion-in-transactions-linked-to-iran-north-korea-and-russia-435957",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/06/cropped-6.jpg",
+      "why_it_matters": "FinCEN's designation of MEXC as a primary money laundering concern over $16 billion in sanctioned-nation flows signals that offshore exchange jurisdictional risk is now being priced with enforcement teeth, not just compliance theater."
+    },
+    {
+      "id": "art_8238631",
+      "title": "Crypto exchanges tout cold storage ratios after Binance attack",
+      "url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Major crypto exchanges are publicly verifying their cold storage ratios following a massive $6.3 billion hack of Binance. The move aims to reassure users of the safety of their assets amidst one of the largest security breaches in industry history.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+      "themes": [
+        "security",
+        "exchange-security"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QCQ9E3FBH5XSMVA720JM6M/cold-storage.jpg",
+      "why_it_matters": "The rush to disclose cold storage ratios is defensive marketing, not structural reform—until these disclosures are audited and standardized, they do not underwrite away the concentration risk that made the Binance exploit possible."
+    },
+    {
+      "id": "art_8271078",
+      "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
+      "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Trump administration is moving toward permitting the inclusion of cryptocurrencies within 401(k) retirement plans. This follows initial guidance from the Department of Labor regarding the incorporation of digital assets into retirement portfolios.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+      "themes": [
+        "regulation",
+        "retirement-planning"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/20250523_DJT.jpg",
+      "why_it_matters": "401(k) inclusion would unlock persistent, liability-driven demand from retirement fiduciaries, but the timeline and asset eligibility criteria remain the critical variables for sizing addressable inflows."
+    },
+    {
+      "id": "art_8275922",
+      "title": "US Treasury walks back crypto surveillance 'travel rule' proposal",
+      "url": "https://www.theblock.co/news/regulation/2026-11-06-us-treasury-walks-back-crypto-surveillance-travel-rule-proposal-435951",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The US Treasury, via FinCEN and the Federal Reserve, has rescinded a proposed 'Travel Rule' that would have mandated the collection of data on crypto transfers worth $250 or more. This move walks back a surveillance proposal first introduced in 2020.",
+      "significance": 7,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-06-us-treasury-walks-back-crypto-surveillance-travel-rule-proposal-435951",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/02/department-of-treasury-3-getty.jpg",
+      "why_it_matters": "The withdrawal of the $250 Travel Rule proposal removes a surveillance overhang that would have imposed disproportionate compliance costs on self-custody and non-custodial protocols, preserving structural optionality in the US market."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_8202912",
+      "company": "Uranium Digital",
+      "amount": "$16.5M",
+      "round": "Series A",
+      "investors": [
+        "Blockchain Capital"
+      ],
+      "category": "Tokenization",
+      "url": "https://fortune.com/2026/11/05/big-tech-nuclear-power-startup-uranium-digital-uranium-trading/",
+      "summary": "Uranium Digital has raised $16.5 million in a Series A funding round led by Blockchain Capital. The startup aims to modernize uranium trading by utilizing blockchain technology to track the ownership of physical uranium."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_8272539",
+      "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout25m, Russia finalizes crypto trading rules ahead of Nov. 17 rolloutThe rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December.",
+      "url": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Russia has finalized regulations for cryptocurrency trading, enabling retail investors to trade BTC, ETH, and USDT via regulated intermediaries. The Moscow Exchange is expected to launch its crypto trading services in December.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RZKYX3G2AZB93NGGBV65NX/digital-bank-russia.png"
+    },
+    {
+      "id": "art_8260429",
+      "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins28m, Nigeria sets new crypto licensing rules, bans algorithmic stablecoinsNigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services.",
+      "url": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Nigeria has implemented new licensing rules for crypto payment services and officially banned the use of algorithmic stablecoins. The central bank is expanding its oversight by introducing strict reserve requirements for stablecoin issuers.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RFZC8EDJXT26642DWHC0EV/hi-the-crypto-act-explained-nigeria-1.jpg"
+    },
+    {
+      "id": "art_8262754",
+      "title": "Kazakhstan Expands Its Sovereign Crypto Exposure",
+      "url": "https://www.galaxy.com/insights/research/kazakhstan-crypto-funds-bitcoin-etfs",
+      "source": "Galaxy — Insights",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Kazakhstan is significantly increasing its sovereign exposure to digital assets. The country is allocating a combined $190 million toward crypto funds and Bitcoin ETFs as part of a long-term investment strategy.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4lE7FuBP9c1ohkUrdp7quZ/82cb74cad74045604efe3b159d68db46/Regulation-5_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8255335",
+      "title": "Nigeria's central bank introduces stablecoin licensing rules, bans algorithmic versions",
+      "url": "https://www.theblock.co/news/regulation/2026-11-06-nigerias-central-bank-introduces-stablecoin-licensing-rules-bans-algorithmic-versions-435867",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "The Central Bank of Nigeria has implemented new licensing rules for stablecoin issuers to regulate virtual asset activities within the country. Notably, the new framework explicitly bans the use of algorithmic stablecoins.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-06-at-14.13.09.png"
+    },
+    {
+      "id": "art_8253164",
+      "title": "GOPAX halts crypto trading, withdrawals to move all assets to cold storage39m, GOPAX halts crypto trading, withdrawals to move all assets to cold storageSouth Korea’s GOPAX suspended trading, deposits and standard withdrawals after a hacking threat, with manual withdrawals available through support.",
+      "url": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "South Korean exchange GOPAX has suspended trading, deposits, and standard withdrawals following a hacking threat. The exchange is moving all assets to cold storage to secure user funds, allowing only manual withdrawals via support.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6R5FQT9G760GWMQ4WKS1P1T/storage-crypto-tokens.png"
+    },
+    {
+      "id": "art_8247108",
+      "title": "Hyperliquid Strategies seeks futures registration for perps",
+      "url": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Hyperliquid Strategies is seeking official futures registration to offer onchain perpetual futures to users in the United States. The firm also reported significant activity with $785 million in HYPE purchases during the September quarter.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QXFT81EJZ5FY6966J6NXJE/hiblockchain-powered-prediction-platforms-hyperliquid-2.jpg"
+    },
+    {
+      "id": "art_8242264",
+      "title": "Chainalysis says breach exposed password hashes and live tokens",
+      "url": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Chainalysis has revealed that a recent cyberattack was more severe than initially reported, exposing password hashes and live tokens. The breach expands the scope of the incident from non-sensitive data to critical user security information.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2005NQRX5E6SV5DN6KN3Z8T/hi-how-great-big-companies-use-blockchain3.jpg"
+    },
+    {
+      "id": "art_8276172",
+      "title": "Gnosis Pay breach exposes card details, personal data and crypto wallet information",
+      "url": "https://cointelegraph.com/news/gnosis-pay-breach-exposes-card-details-personal-data-crypto-wallet-information",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Gnosis Pay has disclosed a security breach affecting its crypto debit card system. While customer personal data, payment credentials, and wallet information were exposed, the company confirmed that funds remained unaffected.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6S6NT7VH41TT0QGTWN2DZYP/phone-crypto-cash-cards-evil-smile-hacker.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8262754",
+      "title": "Kazakhstan Expands Its Sovereign Crypto Exposure",
+      "url": "https://www.galaxy.com/insights/research/kazakhstan-crypto-funds-bitcoin-etfs",
+      "source": "Galaxy — Insights",
+      "note": "Kazakhstan's sovereign accumulation provides a live case study in how commodity-exporting states are using crypto reserves to diversify away from dollar-denominated settlement corridors.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4lE7FuBP9c1ohkUrdp7quZ/82cb74cad74045604efe3b159d68db46/Regulation-5_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8262753",
+      "title": "Democratic Midterm Wins Alter the Crypto and AI Landscape",
+      "url": "https://www.galaxy.com/insights/research/democratic-midterm-wins-crypto-ai-policy",
+      "source": "Galaxy — Insights",
+      "note": "The midterm dynamics mapped here will shape which regulatory appointments control the SEC and CFTC agenda-setting through 2026, directly relevant to enforcement velocity on the signals above.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2IJaMVEVs3r5stx24LPzcK/ec47186ef13062ce76f055f430730b11/Regulation-5_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8262751",
+      "title": "How Midterm Elections Could Reshape Crypto and AI",
+      "url": "https://www.galaxy.com/insights/research/midterms-crypto-ai-kazakhstan-flashprove",
+      "source": "Galaxy — Insights",
+      "note": "This earlier framing of the same electoral landscape offers a baseline to judge how much of the current regulatory thaw was contingent on specific outcome probabilities that have since shifted.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/ABCxyoOfPc5RKO7V4fZnu/550f2a3a45d7e3fd5967b1751ee1236c/Regulation-5_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8271328",
+          "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
+          "url": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5D4R4SY5YQGHZN1M57JSE8D/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price-2.jpg"
+        },
+        {
+          "id": "art_8222888",
+          "title": "American Bitcoin’s $126M profit masks mining pressure as rivals turn to AI",
+          "url": "https://cointelegraph.com/news/american-bitcoins-126m-profit-masks-mining-pressure-ai",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6PN518266V0HS41TJ9DPJYP/make-bitcoin-great-again2.png"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_8259219",
+          "title": "Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolved39m, Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolvedEthereum developers are investigating concerns tied to eight smart contract invariants tied to Glamsterdam’s EIP-8037 and EIP-8038.",
+          "url": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_8245647",
+          "title": "Zcash's major network upgrade NU7 goes live on mainnet, cutting block time by threefold",
+          "url": "https://www.theblock.co/news/defi/2026-11-06-zcashs-nu7-goes-live-435807",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/zcash-3.png"
+        },
+        {
+          "id": "art_8262755",
+          "title": "Anthropic Tests Zero-Knowledge Proofs for AI Responses",
+          "url": "https://www.galaxy.com/insights/research/anthropic-flashprove-zero-knowledge-ai-inference",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3RkdNgkpwQx5UhajaQbWGF/c31200f38103f88145e9db5a522bb2e2/Regulation-5_Gray-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8208833",
+          "title": "Consumer apps are now among crypto's largest fee generators",
+          "url": "https://tokenterminal.com/resources/newsletter/consumer-apps-are-now-among-crypto-s-largest-fee-generators",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_8201091",
+          "title": "Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO says25m, Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO saysSunny Lu said AI agents would need identity and reputation systems, making the case while promoting agent-building platform VeWorld.ai.",
+          "url": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8262754",
+          "title": "Kazakhstan Expands Its Sovereign Crypto Exposure",
+          "url": "https://www.galaxy.com/insights/research/kazakhstan-crypto-funds-bitcoin-etfs",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4lE7FuBP9c1ohkUrdp7quZ/82cb74cad74045604efe3b159d68db46/Regulation-5_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8256546",
+          "title": "Crypto ETFs see over half a billion dollars in outflows amid post-midterm market slide",
+          "url": "https://www.theblock.co/news/markets/2026-11-06-crypto-etfs-see-over-half-a-billion-dollars-in-outflows-amid-post-midterm-market-slide-435873",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-06-at-11.04.48.png"
+        },
+        {
+          "id": "art_8205684",
+          "title": "Payward-affiliated fund and clients buy AAVE token stake on secondary market",
+          "url": "https://www.theblock.co/news/business/2026-11-05-payward-affiliated-fund-clients-buy-aave-token-stake-secondary-market-aave-says-434798",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/08/20240819_Aave_News_2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_8269517",
+          "title": "Nearly two-thirds of 2021’s top 100 altcoins have lost more than 90%, CoinMarketCap data shows",
+          "url": "https://fortune.com/2026/11/06/altcoins-lost-90-percent-coinmarketcap-data/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-1340690121.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8262756",
+          "title": "Pons’ Rapid Rise and Retreat on Robinhood Chain",
+          "url": "https://www.galaxy.com/insights/research/pons-fees-token-robinhood-chain",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7wwYVNp0qKqKgpHNStFJ0t/15bbd92431584d959bf5fc2660d1a031/Regulation-5_Gray-4.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8277133",
+          "title": "Treasury cuts off MEXC Global over alleged $16 billion in transactions linked to Iran, North Korea and Russia",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-treasury-cuts-off-mexc-global-over-alleged-16-billion-in-transactions-linked-to-iran-north-korea-and-russia-435957",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/06/cropped-6.jpg"
+        },
+        {
+          "id": "art_8271078",
+          "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/20250523_DJT.jpg"
+        },
+        {
+          "id": "art_8275922",
+          "title": "US Treasury walks back crypto surveillance 'travel rule' proposal",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-us-treasury-walks-back-crypto-surveillance-travel-rule-proposal-435951",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/02/department-of-treasury-3-getty.jpg"
+        },
+        {
+          "id": "art_8272539",
+          "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout25m, Russia finalizes crypto trading rules ahead of Nov. 17 rolloutThe rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December.",
+          "url": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RZKYX3G2AZB93NGGBV65NX/digital-bank-russia.png"
+        },
+        {
+          "id": "art_8260429",
+          "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins28m, Nigeria sets new crypto licensing rules, bans algorithmic stablecoinsNigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services.",
+          "url": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RFZC8EDJXT26642DWHC0EV/hi-the-crypto-act-explained-nigeria-1.jpg"
+        },
+        {
+          "id": "art_8255335",
+          "title": "Nigeria's central bank introduces stablecoin licensing rules, bans algorithmic versions",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-nigerias-central-bank-introduces-stablecoin-licensing-rules-bans-algorithmic-versions-435867",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-06-at-14.13.09.png"
+        },
+        {
+          "id": "art_8247108",
+          "title": "Hyperliquid Strategies seeks futures registration for perps",
+          "url": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QXFT81EJZ5FY6966J6NXJE/hiblockchain-powered-prediction-platforms-hyperliquid-2.jpg"
+        },
+        {
+          "id": "art_8274961",
+          "title": "US 401(k) proposal leaves door open to altcoins, but hurdles remain",
+          "url": "https://cointelegraph.com/news/us-401k-proposal-leaves-door-open-altcoins-hurdles",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6S0G0RDKT5WK8GZZHWMB7ZP/hi-token-burning-explained-sec-1.png"
+        },
+        {
+          "id": "art_8262753",
+          "title": "Democratic Midterm Wins Alter the Crypto and AI Landscape",
+          "url": "https://www.galaxy.com/insights/research/democratic-midterm-wins-crypto-ai-policy",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2IJaMVEVs3r5stx24LPzcK/ec47186ef13062ce76f055f430730b11/Regulation-5_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8206895",
+          "title": "Anchorage Digital seeks CFTC swap dealer registration for crypto options business",
+          "url": "https://www.theblock.co/news/business/2026-11-05-anchorage-digital-seeks-cftc-swap-dealer-registration-for-crypto-options-business-434437",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-05-at-10.46.15.png"
+        },
+        {
+          "id": "art_8190191",
+          "title": "France budget rejection sidelines stablecoin tax, wallet reporting22m, France budget rejection sidelines stablecoin tax, wallet reportingThree adopted amendments, including stablecoin taxation and self-custody reporting, fall away but could be reintroduced in the Senate.",
+          "url": "https://cointelegraph.com/news/france-rejects-budget-revenue-sidelines-crypto-amendments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8262751",
+          "title": "How Midterm Elections Could Reshape Crypto and AI",
+          "url": "https://www.galaxy.com/insights/research/midterms-crypto-ai-kazakhstan-flashprove",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/ABCxyoOfPc5RKO7V4fZnu/550f2a3a45d7e3fd5967b1751ee1236c/Regulation-5_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8253163",
+          "title": "Greece approves 10% tax on crypto gains starting in 202721m, Greece approves 10% tax on crypto gains starting in 2027Greece has approved a 10% tax on cryptocurrency gains starting in 2027, with an exemption for investors whose annual net gains do not exceed 500 euros.",
+          "url": "https://cointelegraph.com/news/greece-approves-10-tax-crypto-gains-2027",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8255585",
+          "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
+          "url": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RC2EEQZ9TEP1YJMEKS9NF7/hi-solana-changes-the-crypto-world-already.jpg"
+        },
+        {
+          "id": "art_8248069",
+          "title": "Kalshi hit with injunction over sports contracts on California tribal lands",
+          "url": "https://www.theblock.co/news/business/2026-11-06-kalshi-injunction-california-tribal-lands-435813",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/kalshi_editorial_1920x1080.png"
+        },
+        {
+          "id": "art_8262758",
+          "title": "Midterms and Markets with Tyler Williams",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/midterms-and-markets-with-tyler-williams",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8253165",
+          "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+          "url": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NZZB32AAV4WA4BCAVB6M4R/hi-how-to-migrate-crypto-from-an-exchange-to-ledger-1.jpg"
+        },
+        {
+          "id": "art_8238631",
+          "title": "Crypto exchanges tout cold storage ratios after Binance attack",
+          "url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QCQ9E3FBH5XSMVA720JM6M/cold-storage.jpg"
+        },
+        {
+          "id": "art_8253164",
+          "title": "GOPAX halts crypto trading, withdrawals to move all assets to cold storage39m, GOPAX halts crypto trading, withdrawals to move all assets to cold storageSouth Korea’s GOPAX suspended trading, deposits and standard withdrawals after a hacking threat, with manual withdrawals available through support.",
+          "url": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6R5FQT9G760GWMQ4WKS1P1T/storage-crypto-tokens.png"
+        },
+        {
+          "id": "art_8242264",
+          "title": "Chainalysis says breach exposed password hashes and live tokens",
+          "url": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2005NQRX5E6SV5DN6KN3Z8T/hi-how-great-big-companies-use-blockchain3.jpg"
+        },
+        {
+          "id": "art_8276172",
+          "title": "Gnosis Pay breach exposes card details, personal data and crypto wallet information",
+          "url": "https://cointelegraph.com/news/gnosis-pay-breach-exposes-card-details-personal-data-crypto-wallet-information",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6S6NT7VH41TT0QGTWN2DZYP/phone-crypto-cash-cards-evil-smile-hacker.png"
+        },
+        {
+          "id": "art_8182926",
+          "title": "Binance, Polymarket seek Polygon hard fork to recover $6.8M in stolen crypto24m, Binance, Polymarket seek Polygon hard fork to recover $6.8M in stolen cryptoPolygon block producers have already frozen the stolen tokens, but a proposed hard fork would allow the funds to be recovered and returned to their owners.",
+          "url": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8185347",
+          "title": "Crédit Mutuel Arkéa resumes operations after attack, assesses losses11m, Crédit Mutuel Arkéa resumes operations after attack, assesses lossesThe bank said customer funds were unaffected after attackers accessed its systems through a service provider’s platform.",
+          "url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_8218655",
+          "title": "Apple and Home Depot join list of objectors to tokenized stock plan pushed by NYSE owner",
+          "url": "https://fortune.com/2026/11/05/apple-home-depot-list-objectors-tokenized-stock-plan-nyse-owner/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302418320-e1793903586953.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8257757",
+          "title": "Hypercall to launch first Anthropic-linked pre-IPO options market",
+          "url": "https://www.theblock.co/news/markets/2026-11-06-hypercall-anthropic-linked-pre-ipo-options-market-435453",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/07/20210712_Finance_Crypto_Move.jpg"
+        },
+        {
+          "id": "art_8202912",
+          "title": "As Big Tech bets on nuclear power, startup Uranium Digital raises $16.5 million to modernize uranium trading",
+          "url": "https://fortune.com/2026/11/05/big-tech-nuclear-power-startup-uranium-digital-uranium-trading/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/AVQ07867.jpg?resize=1200,600"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The Treasury just killed its own Travel Rule. FinCEN walked back the $250 surveillance threshold that would have buried every self-custody wallet in paperwork. Same week, same building, they designated MEXC a money laundering concern over $16 billion in Iranian, North Korean, and Russian flows. The message is not ambiguity. It is precision: compliant domestic plumbing gets room, offshore shadow banking gets the wall.\n\nThen Binance. Six point three billion from hot wallets, and every competitor rushes to tweet their cold storage ratio. These are unaudited, non-standardized, often self-reported numbers. We have seen this movie. It does not end with stronger safeguards. It ends with the next exploit revealing that the ratio was a photograph, not a structure.\n\nWhat we underwrite on now is whether custody architecture is designed so that no single signing key or employee cohort can move material reserves. Not where the marketing slide says the assets sleep.\n\nThe 401(k) opening is real, slower, and depends on fiduciary safe harbor rules we do not yet have. But the directional signal matters: Washington is choosing access over surveillance for domestic participants, while tightening the noose on offshore rails. That is a jurisdictional premium repricing. Not every exchange captures it equally.\n\nThe test: six months from now, does any major US retirement platform actually list crypto, or does the guidance stall at 'under review'? If it stalls, the thaw was noise. If it ships, the liability-driven bid is structural.\n\nWe are watching the plumbing, not the price."
+}
