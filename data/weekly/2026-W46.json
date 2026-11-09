@@ -1,0 +1,1456 @@
+{
+  "schema": 2,
+  "type": "weekly",
+  "id": "2026-W46",
+  "date_display": "Week 46 · November 3 - November 9, 2026",
+  "generated_at": "2026-11-09T06:00:01.997Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Binance's $6.3B social engineering breach forces exchange security model repricing",
+    "tldr": "The largest exchange hack in history was executed via a LinkedIn job interview, not code exploit, exposing that operational security—not cryptography—is the binding constraint for institutional custody. Regulatory pressure simultaneously intensified with FinCEN's MEXC takedown, while policy tailwinds emerged on retirement plan access."
+  },
+  "intro": "Dear Founders, Investors, and Friends, this week the industry's most sophisticated security infrastructure was compromised by a fake recruiter on LinkedIn, forcing a hard reset on how we underwrite exchange and custody risk.",
+  "market_snapshot": {
+    "as_of": "2026-11-09T06:00:01.997Z",
+    "source": "CoinGecko, DefiLlama (week)",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$74,400",
+        "change_24h": "-4.9%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,128",
+        "change_24h": "-7.4%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.49T",
+        "change_24h": null,
+        "direction": "flat"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$79.1B",
+        "change_24h": "-4.4%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 12,
+    "signals": 6,
+    "watching": 12,
+    "bullish": 40,
+    "bearish": 51,
+    "neutral": 36
+  },
+  "top_signals": [
+    {
+      "id": "art_8253165",
+      "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+      "url": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has suffered a massive security breach resulting in a $6.3 billion hack. Experts are currently questioning the effectiveness of the exchange's hot wallet safeguards and internal signing controls.",
+      "significance": 10,
+      "primary_source": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NZZB32AAV4WA4BCAVB6M4R/hi-how-to-migrate-crypto-from-an-exchange-to-ledger-1.jpg",
+      "why_it_matters": "The $6.3 billion scale of this hot wallet compromise suggests either catastrophic signing ceremony failures or a fundamentally flawed key management architecture at the industry's largest exchange by volume, repricing trust premiums across centralized custody providers."
+    },
+    {
+      "id": "art_8089078",
+      "title": "North Korea used LinkedIn, fake job interviews to trick Binance engineer in $6.3 billion hack",
+      "url": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "North Korean hackers successfully executed a $6.3 billion hack by targeting a Binance engineer through social engineering on LinkedIn. The attackers used fake job interviews and malicious assignments to gain access to the company's systems.",
+      "significance": 10,
+      "primary_source": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302659435.jpg?resize=1200,600",
+      "why_it_matters": "North Korea's pivot to human engineering over technical exploits reveals that the attack surface has shifted to personnel vetting and operational procedures, rendering multi-billion dollar hardware security modules irrelevant if an engineer can be socially compromised."
+    },
+    {
+      "id": "art_8025119",
+      "title": "Binance restarts customer withdrawals after $6.3bn heist",
+      "url": "https://www.ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07",
+      "source": "FT Crypto",
+      "source_domain": "ft.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Binance has resumed customer withdrawals following a massive $6.3 billion heist. The exchange has committed to reimbursing users whose assets were stolen in the attack, which has been attributed to a North Korea-linked group.",
+      "significance": 10,
+      "primary_source": "https://www.ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07",
+      "themes": [
+        "security",
+        "exchange-hack"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9b3d7395-8daf-436c-aaf2-185ca6323d8b.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1",
+      "why_it_matters": "Binance's ability to resume withdrawals and commit to reimbursement within days indicates either deep unreported reserves or an implicit backstop that the market will price as a too-big-to-fail subsidy until tested by a simultaneous run."
+    },
+    {
+      "id": "art_8238631",
+      "title": "Crypto exchanges tout cold storage ratios after Binance attack",
+      "url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Major crypto exchanges are publicly verifying their cold storage ratios following a massive $6.3 billion hack of Binance. The move aims to reassure users of the safety of their assets amidst one of the largest security breaches in industry history.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+      "themes": [
+        "security",
+        "exchange-security"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QCQ9E3FBH5XSMVA720JM6M/cold-storage.jpg",
+      "why_it_matters": "The rush to disclose cold storage ratios is theater until verified by third-party attestation, and the speed of this competitive signaling suggests exchanges recognize user deposits are now flightier than pre-FTX."
+    },
+    {
+      "id": "art_8277383",
+      "title": "US Treasury cuts off MEXC over alleged $16B in illicit transactionsThe US Treasury bureau FinCEN on Friday ordered US financial institutions to stop processing transfers involving MEXC Global.",
+      "url": "https://cointelegraph.com/news/us-treasury-bans-mexc-over-alleged-16b-illicit-transactions",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US Treasury's FinCEN has ordered US financial institutions to cease processing transfers involving the exchange MEXC Global. This action follows allegations that the platform was involved in approximately $16 billion in illicit transactions.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/us-treasury-bans-mexc-over-alleged-16b-illicit-transactions",
+      "themes": [
+        "regulation",
+        "compliance"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6SANJYQTNY4SS6GASXKN37C/hi-cover-imagereview-of-mexc.png",
+      "why_it_matters": "FinCEN's MEXC action at the $16 billion alleged volume threshold establishes a new enforcement benchmark that will force compliance cost repricing across offshore exchanges serving US persons indirectly."
+    },
+    {
+      "id": "art_8271078",
+      "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
+      "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The Trump administration is moving toward permitting the inclusion of cryptocurrencies within 401(k) retirement plans. This follows initial guidance from the Department of Labor regarding the incorporation of digital assets into retirement portfolios.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+      "themes": [
+        "regulation",
+        "retirement-planning"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/20250523_DJT.jpg",
+      "why_it_matters": "401(k) crypto inclusion would unlock predictable institutional inflows but the Department of Labor's initial guidance skepticism means this policy remains contingent on a political cycle, making it a 2026-2027 underwriting assumption at earliest."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_8202912",
+      "company": "Uranium Digital",
+      "amount": "$16.5M",
+      "round": "Series A",
+      "investors": [
+        "Blockchain Capital"
+      ],
+      "category": "Tokenization",
+      "url": "https://fortune.com/2026/11/05/big-tech-nuclear-power-startup-uranium-digital-uranium-trading/",
+      "summary": "Uranium Digital has raised $16.5 million in a Series A funding round led by Blockchain Capital. The startup aims to modernize uranium trading by utilizing blockchain technology to track the ownership of physical uranium."
+    },
+    {
+      "id": "art_8139079",
+      "company": "BitGo",
+      "amount": "",
+      "round": "",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-11-04-bitgo-launches-institutional-trading-and-financial-solutions-business-led-by-former-nydig-executive-432646",
+      "summary": "BitGo has launched a new Global Markets division focused on institutional trading and financial solutions. The business will be led by Pete Janney and follows BitGo's acquisition of NYDIG's institutional and trading business."
+    },
+    {
+      "id": "art_8205684",
+      "company": "Payward-affiliated fund",
+      "amount": "",
+      "round": "Secondary market purchase",
+      "investors": [],
+      "category": "Investment",
+      "url": "https://www.theblock.co/news/business/2026-11-05-payward-affiliated-fund-clients-buy-aave-token-stake-secondary-market-aave-says-434798",
+      "summary": "A fund affiliated with Payward and its clients have acquired a stake in AAVE tokens via the secondary market. This move follows previous reports of a potential discounted stake purchase that were initially pushed back."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_8219055",
+      "title": "Prediction markets’ biggest month yet, in 3 charts",
+      "url": "https://a16zfrontier.com/posts/article/prediction-markets-biggest-month-3-charts/",
+      "source": "a16z crypto",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Prediction markets experienced their largest month on record in October 2026, reaching a combined trading volume of $123.6 billion. The growth was driven by record-breaking activity across major venues including Polymarket and Kalshi.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/prediction-markets-record-month-cotw.png"
+    },
+    {
+      "id": "art_8211989",
+      "title": "Europe’s largest asset manager Amundi tokenizes equity index fund on Ethereum",
+      "url": "https://cointelegraph.com/news/amundi-tokenizes-european-equity-index-fund-ethereum",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Amundi, Europe's largest asset manager, has launched a tokenized equity index fund on the Ethereum blockchain. This move expands institutional adoption of on-chain assets as the tokenized stock market grows to $4.24 billion.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6P8H9870ZQY6MMMYHJSDGZ5/hi-how-binance-plans-to-bring-tokenized-us-stocks-4.png"
+    },
+    {
+      "id": "art_8210778",
+      "title": "Paraguay president resigns after collapse of Ueno digital bank",
+      "url": "https://cointelegraph.com/news/paraguay-president-resigns-after-collapse-ueno-digital-bank",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The President of Paraguay has resigned following the collapse of Ueno digital bank. The resignation comes amid regulatory intervention and intense scrutiny regarding the president's previous business connections to the institution.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6PC0KXVM1KKT7EEB7A24X5R/hi-bitcoin-a-property-as-of-paraguay.png"
+    },
+    {
+      "id": "art_8179044",
+      "title": "Crédit Mutuel Arkéa confirms cyberattack after ZachXBT flags $133M in suspected losses",
+      "url": "https://www.theblock.co/news/business/2026-11-04-french-bank-confirms-cyberattack-434372",
+      "source": "The Block",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Crédit Mutuel Arkéa has confirmed it suffered a cyberattack following reports from on-chain sleuth ZachXBT. The bank validated that the suspected losses are in the order of magnitude of $133 million.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/credit_mutuel_arkea_1920x1080.png"
+    },
+    {
+      "id": "art_8133024",
+      "title": "Morgan Stanley among first banks to tokenize US equities, Treasurys through DTCC's service",
+      "url": "https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Morgan Stanley has become one of the first banks to utilize DTCC's new tokenization service for US equities and Treasurys. The bank is further preparing to provide broader support for tokenized equities by the first quarter of 2027.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-04-at-11.18.11.png"
+    },
+    {
+      "id": "art_8121165",
+      "title": "Democrats claim control of the US Senate",
+      "url": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Democrats have secured control of the US Senate, which is expected to influence the future of crypto regulation. This shift may impact the CLARITY Act, regulatory appointments, and the oversight of Donald Trump's digital asset ventures.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9F3G1623QRJQS2NY2JXXE/hi-blockchain-voting-is-the-alternative-for-trusted-democratic-elections1.jpg"
+    },
+    {
+      "id": "art_8089428",
+      "title": "CFTC approves individual stock perpetual futures trading in US for the first time",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "The CFTC has approved the trading of individual stock perpetual futures in the United States for the first time. This move brings a popular crypto-native derivative structure into the regulated US equity markets.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/04/CFTC.jpg"
+    },
+    {
+      "id": "art_8046117",
+      "title": "Crypto investigators flag suspected $106M theft, $786K Solana bot drain",
+      "url": "https://cointelegraph.com/news/zachxbt-flags-suspected-106m-crypto-theft-as-solana-bot-faces-possible-786k-drain",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Crypto investigators have flagged a suspected theft of over $106 million involving an EU entity. Additionally, unusual transfers were detected involving the Solana-based arbitrage bot known as King, resulting in a $786K drain.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6EXKTXJV69233G9DJ6YY0M6/hi-victim-of-a-scam-heres-what-to-do-next-1.jpg"
+    },
+    {
+      "id": "art_8019507",
+      "title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
+      "url": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Hong Kong is advancing its digital asset infrastructure by enabling 24/7 tokenized settlements via EnsembleTX and initiating regulated stablecoin trials. Additionally, HSBC reported significant adoption of RedCoin with 50,000 users.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6DQFSHD8AXWKTB5J9SVZW4V/hong-kong-fund.jpg"
+    },
+    {
+      "id": "art_8410593",
+      "title": "tBTC bridge partially resumes as $120M Aave reserve remains frozen",
+      "url": "https://cointelegraph.com/news/tbtc-bridge-resumes-aave-120m-reserve-frozen",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Threshold's tBTC bridge has partially resumed operations following a security pause. However, Aave has kept its $120 million tBTC reserve frozen, preventing new deposits and borrowing.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6Z7HEM0J3VD1G6Q7DHXMEMM/bitcoin-bridge-paused.png"
+    },
+    {
+      "id": "art_8374263",
+      "title": "Binance France emails announce closure of its users’ accounts on Dec. 31",
+      "url": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Binance France has notified its users via email that their accounts will be closed on December 31. This move signals a significant shift in the exchange's operational presence within the French market.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6XKMA4GCCY02X2C5H5XBVBP/hi-consortium-open-doors-binance.jpg"
+    },
+    {
+      "id": "art_8325573",
+      "title": "Bitcoin ETFs flip negative for 2026 after $1.28 billion outflow week, worst since June",
+      "url": "https://www.theblock.co/news/markets/2026-11-07-bitcoin-etfs-flip-negative-for-2026-after-1-28-billion-outflow-week-worst-since-june-435984",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "U.S.-listed spot Bitcoin ETFs have turned negative for 2026 following a massive $1.28 billion outflow week. This downturn is mirrored across other crypto ETFs, including those for Ether, Solana, and Hyperliquid.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Neon-Liquid-Bitcoin-and-Ethereum-Flow_clean.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8219055",
+      "title": "Prediction markets’ biggest month yet, in 3 charts",
+      "url": "https://a16zfrontier.com/posts/article/prediction-markets-biggest-month-3-charts/",
+      "source": "a16z crypto",
+      "note": "Prediction market volume spikes are increasingly predictive of regulatory event pricing, making this data relevant for event-driven strategies ahead of SEC and CFTC actions.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/prediction-markets-record-month-cotw.png"
+    },
+    {
+      "id": "art_8262754",
+      "title": "Kazakhstan Expands Its Sovereign Crypto Exposure",
+      "url": "https://www.galaxy.com/insights/research/kazakhstan-crypto-funds-bitcoin-etfs",
+      "source": "Galaxy — Insights",
+      "note": "Kazakhstan's sovereign accumulation program provides a template for how energy-rich nations with stranded power can structure state-level Bitcoin exposure without dollar reserve displacement.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4lE7FuBP9c1ohkUrdp7quZ/82cb74cad74045604efe3b159d68db46/Regulation-5_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8262753",
+      "title": "Democratic Midterm Wins Alter the Crypto and AI Landscape",
+      "url": "https://www.galaxy.com/insights/research/democratic-midterm-wins-crypto-ai-policy",
+      "source": "Galaxy — Insights",
+      "note": "The Democratic midterm outcome analysis maps specific committee control shifts that will determine stablecoin legislation timing and SEC chair succession probabilities.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2IJaMVEVs3r5stx24LPzcK/ec47186ef13062ce76f055f430730b11/Regulation-5_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8262751",
+      "title": "How Midterm Elections Could Reshape Crypto and AI",
+      "url": "https://www.galaxy.com/insights/research/midterms-crypto-ai-kazakhstan-flashprove",
+      "source": "Galaxy — Insights",
+      "note": "This earlier Galaxy piece on midterm mechanics offers the probabilistic framework for weighting partisan scenarios against crypto regulatory outcomes in portfolio construction.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/ABCxyoOfPc5RKO7V4fZnu/550f2a3a45d7e3fd5967b1751ee1236c/Regulation-5_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8262755",
+      "title": "Anthropic Tests Zero-Knowledge Proofs for AI Responses",
+      "url": "https://www.galaxy.com/insights/research/anthropic-flashprove-zero-knowledge-ai-inference",
+      "source": "Galaxy — Insights",
+      "note": "Anthropic's zero-knowledge proof integration for AI verifiability has direct applications for on-chain identity and attestation markets, bridging two venture themes Blockwall tracks independently.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3RkdNgkpwQx5UhajaQbWGF/c31200f38103f88145e9db5a522bb2e2/Regulation-5_Gray-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8325573",
+          "title": "Bitcoin ETFs flip negative for 2026 after $1.28 billion outflow week, worst since June",
+          "url": "https://www.theblock.co/news/markets/2026-11-07-bitcoin-etfs-flip-negative-for-2026-after-1-28-billion-outflow-week-worst-since-june-435984",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Neon-Liquid-Bitcoin-and-Ethereum-Flow_clean.png"
+        },
+        {
+          "id": "art_8226521",
+          "title": "Core Scientific to quit Bitcoin mining by year-end as AI business surges",
+          "url": "https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6Q3CQMWTQJT7XAQTHW92TAX/bitcoin-5.jpg"
+        },
+        {
+          "id": "art_8216583",
+          "title": "Bitcoin erases post-election gains as Wall Street selloff triggers over $1 billion in crypto liquidations",
+          "url": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
+        },
+        {
+          "id": "art_8158455",
+          "title": "Bitcoin rebounds past $80,000 as markets shrug off midterms and Binance hack",
+          "url": "https://www.theblock.co/news/markets/2026-11-04-bitcoin-price-midterm-elections-binance-hack-recovery-433030",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-21-at-12.23.49.png"
+        },
+        {
+          "id": "art_8080956",
+          "title": "Liquid Network restores full bitcoin backing following $320 million exploit",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-03-at-10.31.29.png"
+        },
+        {
+          "id": "art_8271328",
+          "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
+          "url": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5D4R4SY5YQGHZN1M57JSE8D/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price-2.jpg"
+        },
+        {
+          "id": "art_8155072",
+          "title": "Riot shares surge on $28B AI lease as Hut 8 sinks on revenue miss13m",
+          "url": "https://cointelegraph.com/news/riots-28b-ai-deal-lifts-shares-as-hut-8-faces-transition-costs",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8033416",
+          "title": "Bitcoin giant Strategy, unfazed by Binance hack, adds over $65 million BTC to its holdings",
+          "url": "https://fortune.com/2026/11/02/bitcoin-giant-strategy-binance-hack-65-million-holdings/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2162970798-e1793636387594.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8222888",
+          "title": "American Bitcoin’s $126M profit masks mining pressure as rivals turn to AI",
+          "url": "https://cointelegraph.com/news/american-bitcoins-126m-profit-masks-mining-pressure-ai",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6PN518266V0HS41TJ9DPJYP/make-bitcoin-great-again2.png"
+        },
+        {
+          "id": "art_8026760",
+          "title": "Strategy spends triple its weekly Bitcoin outlay on STRC buybacks11m, Strategy spends triple its weekly Bitcoin outlay on STRC buybacksStrategy spent $208.2 million buying back STRC preferred shares and $65.5 million on Bitcoin, while allocating $98.5 million to its USD Cash balance.",
+          "url": "https://cointelegraph.com/news/strategy-repurchases-208m-strc-65m-bitcoin",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8046116",
+          "title": "AI poses greater threat to Bitcoin than quantum computing, Swan founder says",
+          "url": "https://cointelegraph.com/news/ai-hackers-threat-bitcoin-quantum-computing-swan",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6F047PK32DP192ZJ19H5DWA/hi-who-are-bam2.png"
+        },
+        {
+          "id": "art_8030137",
+          "title": "Strive inches closer to becoming second-largest public bitcoin holder after latest $10 million buy",
+          "url": "https://www.theblock.co/news/business/2026-11-02-strive-inches-closer-second-largest-public-bitcoin-holder-10-million-buy-432312",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-02-at-14.12.33.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_8219055",
+          "title": "Prediction markets’ biggest month yet, in 3 charts",
+          "url": "https://a16zfrontier.com/posts/article/prediction-markets-biggest-month-3-charts/",
+          "source": "a16z crypto",
+          "sentiment": "bullish",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/prediction-markets-record-month-cotw.png"
+        },
+        {
+          "id": "art_8307658",
+          "title": "Suspicious prediction market activity seen before election poll release: NYT50m, Suspicious prediction market activity seen before election poll release: NYTBets were placed shortly before two recent New York Times/Siena political polls were released to the public, according to a report.",
+          "url": "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_8086756",
+          "title": "JP모건 키넥시스: 은행은 블록체인을 어떻게 써야 하는가?",
+          "url": "https://reports.tiger-research.com/p/jpmorgan-kinexys-how-should-banks-use-kor",
+          "source": "Tiger Research",
+          "sentiment": "bullish",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!lKIK!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F223323960%2Ftwitter.jpg%3Fversion%3D4"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_8383701",
+          "title": "Vitalik Buterin says ETH should be valued as a store of value, not a fee-burning token",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-08-vitalik-buterin-says-eth-should-be-valued-as-a-store-of-value-not-a-fee-burning-token-436022",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Vitalik-Amidst-Crimson-Geometric-Waves_clean.png"
+        },
+        {
+          "id": "art_8259219",
+          "title": "Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolved39m, Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolvedEthereum developers are investigating concerns tied to eight smart contract invariants tied to Glamsterdam’s EIP-8037 and EIP-8038.",
+          "url": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8123586",
+          "title": "Ethereum dev targets 2028 for quantum resistance, a year early",
+          "url": "https://cointelegraph.com/news/ethereum-post-quantum-transition-2028-target",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6JH4H7TR2ZYP94F0GBTNFV0/ethereum-post-quantum.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_8245647",
+          "title": "Zcash's major network upgrade NU7 goes live on mainnet, cutting block time by threefold",
+          "url": "https://www.theblock.co/news/defi/2026-11-06-zcashs-nu7-goes-live-435807",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/zcash-3.png"
+        },
+        {
+          "id": "art_8074906",
+          "title": "NEAR governance approves proposal to cut token issuance ceiling to 1.6%",
+          "url": "https://www.theblock.co/news/defi/2026-11-03-near-governance-approves-proposal-to-cut-token-issuance-432378",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/20220126_Near_Protocol_News.jpg"
+        },
+        {
+          "id": "art_8262755",
+          "title": "Anthropic Tests Zero-Knowledge Proofs for AI Responses",
+          "url": "https://www.galaxy.com/insights/research/anthropic-flashprove-zero-knowledge-ai-inference",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/3RkdNgkpwQx5UhajaQbWGF/c31200f38103f88145e9db5a522bb2e2/Regulation-5_Gray-3.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8208833",
+          "title": "Consumer apps are now among crypto's largest fee generators",
+          "url": "https://tokenterminal.com/resources/newsletter/consumer-apps-are-now-among-crypto-s-largest-fee-generators",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        },
+        {
+          "id": "art_8201091",
+          "title": "Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO says25m, Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO saysSunny Lu said AI agents would need identity and reputation systems, making the case while promoting agent-building platform VeWorld.ai.",
+          "url": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8091900",
+          "title": "Reusable networks",
+          "url": "https://a16zfrontier.com/posts/article/reusable-networks-as-moat/",
+          "source": "a16z crypto",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8092466",
+          "title": "🟪 NEWS: Blockworks MCP now open to everyone  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_710bc6de-8434-46d4-9c27-c3d8ed741bf2",
+          "source": "Blockworks (2)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_8087692",
+          "title": "Blockworks",
+          "url": "https://blockworks.com/insights/we-re-opening-up-blockworks-mcp-to-everyone",
+          "source": "Blockworks (4)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/images/share-image.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8262754",
+          "title": "Kazakhstan Expands Its Sovereign Crypto Exposure",
+          "url": "https://www.galaxy.com/insights/research/kazakhstan-crypto-funds-bitcoin-etfs",
+          "source": "Galaxy — Insights",
+          "sentiment": "bullish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4lE7FuBP9c1ohkUrdp7quZ/82cb74cad74045604efe3b159d68db46/Regulation-5_Gray-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8256546",
+          "title": "Crypto ETFs see over half a billion dollars in outflows amid post-midterm market slide",
+          "url": "https://www.theblock.co/news/markets/2026-11-06-crypto-etfs-see-over-half-a-billion-dollars-in-outflows-amid-post-midterm-market-slide-435873",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-06-at-11.04.48.png"
+        },
+        {
+          "id": "art_8139079",
+          "title": "BitGo launches institutional trading and financial solutions business led by former NYDIG executive",
+          "url": "https://www.theblock.co/news/business/2026-11-04-bitgo-launches-institutional-trading-and-financial-solutions-business-led-by-former-nydig-executive-432646",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-04-at-10.22.17.png"
+        },
+        {
+          "id": "art_8043696",
+          "title": "Coinbase hit with 50% price target cut as post-earnings rout deepens",
+          "url": "https://cointelegraph.com/news/morgan-stanley-cuts-coinbase-target-to-120-as-earnings-recovery-outlook-weakens",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6ERG219T9H0636SG6JB00H1/hi-taxes-doesnt-apply-coinbasemanlaptop.png"
+        },
+        {
+          "id": "art_8037646",
+          "title": "Animoca Brands clears final hurdle for Abu Dhabi fund management26m",
+          "url": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8205684",
+          "title": "Payward-affiliated fund and clients buy AAVE token stake on secondary market",
+          "url": "https://www.theblock.co/news/business/2026-11-05-payward-affiliated-fund-clients-buy-aave-token-stake-secondary-market-aave-says-434798",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/08/20240819_Aave_News_2.jpg"
+        },
+        {
+          "id": "art_8072736",
+          "title": "ARK buys $17M in Coinbase, Circle shares while trimming Bullish11m",
+          "url": "https://cointelegraph.com/news/ark-buys-coinbase-circle-trims-bullish",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8144223",
+          "title": "Sequoia to close London office, cut Europe team",
+          "url": "https://sifted.eu/articles/sequoia-closes-london-office/",
+          "source": "Sifted",
+          "sentiment": "bearish",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=1926,quality=75,fit=cover,format=auto/wp-content/uploads/2020/11/27114104/sequoia.png"
+        },
+        {
+          "id": "art_8122427",
+          "title": "Ex-Hummingbird investor plots new VC firm, sources say",
+          "url": "https://sifted.eu/articles/ex-hummingbird-new-vc-firm/",
+          "source": "Sifted",
+          "sentiment": "neutral",
+          "image_url": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/03171221/hummingbird-2-scaled.png"
+        },
+        {
+          "id": "art_8032153",
+          "title": "How to Read a Crypto Fundraising Announcement",
+          "url": "https://crypto-fundraising.info/blog/how-to-read-a-crypto-fundraising-announcement-valuation-token-allocation-and-vesting-explained/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/2026/11/article_img135.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Layer2",
+      "items": [
+        {
+          "id": "art_8216584",
+          "title": "Base deploys Denim upgrade on mainnet, replacing Flashblocks with 200ms block times",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-05-base-deploys-denim-upgrade-on-mainnet-replacing-flashblocks-with-200ms-block-times-434433",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8085796",
+          "title": "Ethereum Layer 2 Aztec gets Tierra V6 upgrade to support faster private apps",
+          "url": "https://www.theblock.co/news/defi/2026-11-03-ethereum-l2-aztec-tierra-v6-upgrade-private-apps-432399",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/aztec-ml.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_8079996",
+          "title": "Binance’s net inflows turn positive at $2.3B as withdrawals expand",
+          "url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6GEN8GP66RSSXHPQAF0HADV/binance-searchlight.jpg"
+        },
+        {
+          "id": "art_8015879",
+          "title": "OKX draws $445M in net inflows as Binance outflows exceed $7B",
+          "url": "https://cointelegraph.com/news/okx-leads-crypto-exchanges-445m-inflows",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M48NWDDYWBD7SNFGR28DNZC8/hi-how-to-migrate-crypto-from-an-exchange-to-okx.jpg"
+        },
+        {
+          "id": "art_8336472",
+          "title": "Binance CFO steps down nine days after record hack; co-CEO says transition was planned six months ago",
+          "url": "https://www.theblock.co/news/business/2026-11-07-binance-cfo-steps-down-nine-days-after-record-hack-co-ceo-says-transition-was-planned-six-months-ago-435992",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Grayscale-Crypto-Leaders-with-Binance-Gold_clean.png"
+        },
+        {
+          "id": "art_8059426",
+          "title": "Binance begins second withdrawal phase, exchange outflows slow31m",
+          "url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8410343",
+          "title": "Nvidia perps slide as market reacts to CEO Jensen Huang's Chinese spy scandal",
+          "url": "https://www.theblock.co/news/defi/2026-11-08-nvidia-perps-slide-jensen-huang-436047",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/nvidia_jensen_editorial_1920x1080_2jpg.jpg"
+        },
+        {
+          "id": "art_8269517",
+          "title": "Nearly two-thirds of 2021’s top 100 altcoins have lost more than 90%, CoinMarketCap data shows",
+          "url": "https://fortune.com/2026/11/06/altcoins-lost-90-percent-coinmarketcap-data/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-1340690121.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8398233",
+          "title": "Onchain data casts doubt on insider-trading theory in NYT's 'suspicious' election betting story",
+          "url": "https://www.theblock.co/news/defi/2026-11-08-onchain-data-casts-doubt-on-insider-trading-theory-in-nyts-suspicious-election-betting-story-436034",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8302814",
+          "title": "Nvidia may face a more hostile post-election Washington: Report",
+          "url": "https://cointelegraph.com/news/nvidia-may-be-facing-a-more-hostile-post-election-washington-report",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6TF8XXVHRYCKDRNDMW19WCP/analys-analytics-bisiness-man-woman-down-city-crash-nvidia.jpg"
+        },
+        {
+          "id": "art_8262756",
+          "title": "Pons’ Rapid Rise and Retreat on Robinhood Chain",
+          "url": "https://www.galaxy.com/insights/research/pons-fees-token-robinhood-chain",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/7wwYVNp0qKqKgpHNStFJ0t/15bbd92431584d959bf5fc2660d1a031/Regulation-5_Gray-4.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8150840",
+          "title": "Michael Rubin wants Fanatics to be No. 1 in betting. Tuesday’s results in Nebraska and Congress made that climb steeper",
+          "url": "https://fortune.com/2026/11/04/michael-rubin-fanatics-sports-betting-midterms/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2295715512.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8224465",
+          "title": "🟪 My two hours spent in the future  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_d6f3b2d6-325c-4d33-8d9b-28e7810277b6",
+          "source": "Blockworks (2)",
+          "sentiment": "bullish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_8090044",
+          "title": "🟪 America’s retro pastime: Election betting  ",
+          "url": "https://blockworks.com/newsletter/the-breakdown/issue/post_1260367d-ceb0-428c-926c-1a12bd27e514",
+          "source": "Blockworks (2)",
+          "sentiment": "neutral",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2FTheBreakdown_NewsletterPageOG.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_8041006",
+          "title": "Binance Got Some Money Back",
+          "url": "https://www.bloomberg.com/opinion/newsletters/2026-11-02/binance-got-some-money-back",
+          "source": "Matt Levine (Bloomberg)",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_8203262",
+          "title": "Samsung Wallet launches USDC accounts on Solana for US Galaxy users",
+          "url": "https://www.theblock.co/news/business/2026-11-05-samsung-wallet-launches-usdc-accounts-solana-us-galaxy-users-434523",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-05-at-13.37.35.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8277383",
+          "title": "US Treasury cuts off MEXC over alleged $16B in illicit transactionsThe US Treasury bureau FinCEN on Friday ordered US financial institutions to stop processing transfers involving MEXC Global.",
+          "url": "https://cointelegraph.com/news/us-treasury-bans-mexc-over-alleged-16b-illicit-transactions",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6SANJYQTNY4SS6GASXKN37C/hi-cover-imagereview-of-mexc.png"
+        },
+        {
+          "id": "art_8271078",
+          "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/20250523_DJT.jpg"
+        },
+        {
+          "id": "art_8210778",
+          "title": "Paraguay president resigns after collapse of Ueno digital bank",
+          "url": "https://cointelegraph.com/news/paraguay-president-resigns-after-collapse-ueno-digital-bank",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6PC0KXVM1KKT7EEB7A24X5R/hi-bitcoin-a-property-as-of-paraguay.png"
+        },
+        {
+          "id": "art_8121165",
+          "title": "Democrats claim control of the US Senate",
+          "url": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6J9F3G1623QRJQS2NY2JXXE/hi-blockchain-voting-is-the-alternative-for-trusted-democratic-elections1.jpg"
+        },
+        {
+          "id": "art_8089428",
+          "title": "CFTC approves individual stock perpetual futures trading in US for the first time",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/04/CFTC.jpg"
+        },
+        {
+          "id": "art_8374263",
+          "title": "Binance France emails announce closure of its users’ accounts on Dec. 31",
+          "url": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6XKMA4GCCY02X2C5H5XBVBP/hi-consortium-open-doors-binance.jpg"
+        },
+        {
+          "id": "art_8272539",
+          "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout25m, Russia finalizes crypto trading rules ahead of Nov. 17 rolloutThe rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December.",
+          "url": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8260429",
+          "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins28m, Nigeria sets new crypto licensing rules, bans algorithmic stablecoinsNigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services.",
+          "url": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8255335",
+          "title": "Nigeria's central bank introduces stablecoin licensing rules, bans algorithmic versions",
+          "url": "https://www.theblock.co/news/regulation/2026-11-06-nigerias-central-bank-introduces-stablecoin-licensing-rules-bans-algorithmic-versions-435867",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-06-at-14.13.09.png"
+        },
+        {
+          "id": "art_8247108",
+          "title": "Hyperliquid Strategies seeks futures registration for perps",
+          "url": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QXFT81EJZ5FY6966J6NXJE/hiblockchain-powered-prediction-platforms-hyperliquid-2.jpg"
+        },
+        {
+          "id": "art_8196246",
+          "title": "Thailand to block Bitget in December over unlicensed crypto trading",
+          "url": "https://cointelegraph.com/news/thailand-block-bitget-december-unlicensed-crypto-trading",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NPN42BG6Z4FSAM7R35THVD/hi-bitget-research-article-350000-crypto-currency-traders-in-japan-bitget-research-2.jpg"
+        },
+        {
+          "id": "art_8191402",
+          "title": "South Korea seeks 4th crypto tax delay, targets 2029 start",
+          "url": "https://cointelegraph.com/news/south-korea-crypto-tax-fourth-delay-2029",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NF1X9VN5762HVNQXA9D4A7/sk-crypto-tax.png"
+        },
+        {
+          "id": "art_8179042",
+          "title": "The Digital Chamber calls Sherrod Brown's win 'most consequential unfavorable result' for crypto",
+          "url": "https://www.theblock.co/news/regulation/2026-11-04-digital-chamber-sherrod-brown-win-434371",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/washington-dc-capitol-1.jpg"
+        },
+        {
+          "id": "art_8164762",
+          "title": "Crypto PACs eye 2028 “new map” as Democrats take Congress",
+          "url": "https://cointelegraph.com/news/crypto-superpac-midterms",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6M2SQWSSZNC87ZCPY0VEXAT/map-without-green-highlight.png"
+        },
+        {
+          "id": "art_8163299",
+          "title": "Democratic sweep of Congress forces crypto industry to rethink Washington strategy",
+          "url": "https://www.theblock.co/news/regulation/2026-11-04-democratic-sweep-congress-forces-crypto-industry-rethink-washington-strategy-434362",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/congress-outside-alt-e1576830696475.jpg"
+        },
+        {
+          "id": "art_8154822",
+          "title": "French Hill's race still too close to call as House flips, changing the direction of crypto legislation",
+          "url": "https://www.theblock.co/news/regulation/2026-11-04-french-hill-too-close-to-call-house-flips-changing-crypto-legislation-432572",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/02/20230216_FrenchHill.jpg"
+        },
+        {
+          "id": "art_8107843",
+          "title": "US midterms election 2026 live: What they mean for crypto",
+          "url": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HNW6N1NESPPP9VWMSTMCKP/hi-can-polymarket-and-augur-predict-the-next-us-elections2.jpg"
+        },
+        {
+          "id": "art_8101788",
+          "title": "CFTC clears stock perpetual futures for trading on US exchanges",
+          "url": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HED4AVHBSQQHY2NWN6WVHE/hi-prediction-market-cftc-rule-2.png"
+        },
+        {
+          "id": "art_8025551",
+          "title": "FATF targets crypto hubs in review of money laundering controls",
+          "url": "https://cointelegraph.com/news/fatf-targeted-crypto-compliance-jurisdiction-reviews",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6E1Z69CTQ1SFH9R33DZWPA6/fatf-rules.jpg"
+        },
+        {
+          "id": "art_8356877",
+          "title": "Crypto industry braces for reckoning over Trump ties",
+          "url": "https://www.ft.com/content/f1b98a61-4103-447c-bb9a-3dccc0819f61",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F53f93d26-bdc0-4d77-be3f-6f65afbdfaab.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_8311291",
+          "title": "US sanctions Canadian money-exchange firms over Iran ties",
+          "url": "https://cointelegraph.com/news/us-sanctions-canadian-money-exchange-firms-over-iran-ties",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6TV46HT5722N7KQ7PPJEREP/hi-crypto-users-in-iran-sanctions-1.jpg"
+        },
+        {
+          "id": "art_8274961",
+          "title": "US 401(k) proposal leaves door open to altcoins, but hurdles remain",
+          "url": "https://cointelegraph.com/news/us-401k-proposal-leaves-door-open-altcoins-hurdles",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6S0G0RDKT5WK8GZZHWMB7ZP/hi-token-burning-explained-sec-1.png"
+        },
+        {
+          "id": "art_8262753",
+          "title": "Democratic Midterm Wins Alter the Crypto and AI Landscape",
+          "url": "https://www.galaxy.com/insights/research/democratic-midterm-wins-crypto-ai-policy",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2IJaMVEVs3r5stx24LPzcK/ec47186ef13062ce76f055f430730b11/Regulation-5_Blue-1.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8206895",
+          "title": "Anchorage Digital seeks CFTC swap dealer registration for crypto options business",
+          "url": "https://www.theblock.co/news/business/2026-11-05-anchorage-digital-seeks-cftc-swap-dealer-registration-for-crypto-options-business-434437",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-05-at-10.46.15.png"
+        },
+        {
+          "id": "art_8190191",
+          "title": "France budget rejection sidelines stablecoin tax, wallet reporting22m, France budget rejection sidelines stablecoin tax, wallet reportingThree adopted amendments, including stablecoin taxation and self-custody reporting, fall away but could be reintroduced in the Senate.",
+          "url": "https://cointelegraph.com/news/france-rejects-budget-revenue-sidelines-crypto-amendments",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8150839",
+          "title": "Crypto PACs spent $170 million on the midterms—and came up nearly dry",
+          "url": "https://fortune.com/2026/11/04/crypto-pacs-170-million-midterms-came-up-dry/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2303422272-e1793810669288.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8144174",
+          "title": "France backs reporting for self-custodied crypto worth 100K euros or more47m, France backs reporting for self-custodied crypto worth 100K euros or moreThe amendment would require taxpayers to report holdings worth at least $112,000, but the measure still needs to survive the budget process.",
+          "url": "https://cointelegraph.com/news/france-approves-amendment-self-custodied-crypto-wallets-100k",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8141251",
+          "title": "과반수를 차지한 민주당: 미국 중간선거가 바꿀 미국 디지털자산 시장",
+          "url": "https://reports.tiger-research.com/p/democrats-take-congress-what-the-us-kor",
+          "source": "Tiger Research",
+          "sentiment": "neutral",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Z5eW!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftigerresearch.substack.com%2Fapi%2Fv1%2Fpost_preview%2F223463065%2Ftwitter.jpg%3Fversion%3D4"
+        },
+        {
+          "id": "art_8086046",
+          "title": "What’s at stake for crypto as the US votes in the 2026 midterms?",
+          "url": "https://cointelegraph.com/news/us-midterms-2026-stake-crypto-election-day",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8077576",
+          "title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped10m, France postpones 2027 budget vote, crypto exit-tax proposals scrappedThe National Assembly postponed the vote on the budget’s revenue section for the second time, while the Nov. 17 deadline for the first reading examination nears.",
+          "url": "https://cointelegraph.com/news/france-postpones-2027-budget-vote-reject-crypto-exit-tax",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": null
+        },
+        {
+          "id": "art_8048537",
+          "title": "New Jersey drops Coinbase staking order ahead of crypto’s midterm test",
+          "url": "https://cointelegraph.com/news/new-jersey-coinbase-staking",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6F487G3J8FRTKB5QXJC6MD5/larger-brian-armstrong.png"
+        },
+        {
+          "id": "art_8262751",
+          "title": "How Midterm Elections Could Reshape Crypto and AI",
+          "url": "https://www.galaxy.com/insights/research/midterms-crypto-ai-kazakhstan-flashprove",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/ABCxyoOfPc5RKO7V4fZnu/550f2a3a45d7e3fd5967b1751ee1236c/Regulation-5_Black.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8253163",
+          "title": "Greece approves 10% tax on crypto gains starting in 202721m, Greece approves 10% tax on crypto gains starting in 2027Greece has approved a 10% tax on cryptocurrency gains starting in 2027, with an exemption for investors whose annual net gains do not exceed 500 euros.",
+          "url": "https://cointelegraph.com/news/greece-approves-10-tax-crypto-gains-2027",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8099366",
+          "title": "US midterms: Prediction markets favor Democrats in key crypto races22m",
+          "url": "https://cointelegraph.com/news/us-midterm-prediction-markets",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8255585",
+          "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
+          "url": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6RC2EEQZ9TEP1YJMEKS9NF7/hi-solana-changes-the-crypto-world-already.jpg"
+        },
+        {
+          "id": "art_8248069",
+          "title": "Kalshi hit with injunction over sports contracts on California tribal lands",
+          "url": "https://www.theblock.co/news/business/2026-11-06-kalshi-injunction-california-tribal-lands-435813",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/kalshi_editorial_1920x1080.png"
+        },
+        {
+          "id": "art_8262758",
+          "title": "Midterms and Markets with Tyler Williams",
+          "url": "https://www.galaxy.com/insights/podcasts/galaxy-brains/midterms-and-markets-with-tyler-williams",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/f2k4wquz44by/463x5RWiljKDUDreKR2jBr/b63f3a1e75664639bb120e02663c68fc/galaxy.com.png?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8135696",
+          "title": "Justin Sun seeks $264K sanctions over World Liberty’s UAE disclosure17m",
+          "url": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8112688",
+          "title": "1inch lawyer sees agencies driving US crypto regulation as midterms unfold",
+          "url": "https://cointelegraph.com/news/1inch-lawyer-sees-agencies-driving-us-crypto-regulation-as-midterms-unfold",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DJ3V1RSDPDYAETXYR8NEK1/hi-us-government-has-shut-down-bitcoin-crypto.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8253165",
+          "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+          "url": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6NZZB32AAV4WA4BCAVB6M4R/hi-how-to-migrate-crypto-from-an-exchange-to-ledger-1.jpg"
+        },
+        {
+          "id": "art_8089078",
+          "title": "North Korea used LinkedIn, fake job interviews to trick Binance engineer in $6.3 billion hack",
+          "url": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302659435.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8025119",
+          "title": "Binance restarts customer withdrawals after $6.3bn heist",
+          "url": "https://www.ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9b3d7395-8daf-436c-aaf2-185ca6323d8b.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_8238631",
+          "title": "Crypto exchanges tout cold storage ratios after Binance attack",
+          "url": "https://cointelegraph.com/news/binance-hack-puts-crypto-exchanges-cold-wallet-ratio-under-spotlight",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6QCQ9E3FBH5XSMVA720JM6M/cold-storage.jpg"
+        },
+        {
+          "id": "art_8179044",
+          "title": "Crédit Mutuel Arkéa confirms cyberattack after ZachXBT flags $133M in suspected losses",
+          "url": "https://www.theblock.co/news/business/2026-11-04-french-bank-confirms-cyberattack-434372",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/credit_mutuel_arkea_1920x1080.png"
+        },
+        {
+          "id": "art_8046117",
+          "title": "Crypto investigators flag suspected $106M theft, $786K Solana bot drain",
+          "url": "https://cointelegraph.com/news/zachxbt-flags-suspected-106m-crypto-theft-as-solana-bot-faces-possible-786k-drain",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6EXKTXJV69233G9DJ6YY0M6/hi-victim-of-a-scam-heres-what-to-do-next-1.jpg"
+        },
+        {
+          "id": "art_8410593",
+          "title": "tBTC bridge partially resumes as $120M Aave reserve remains frozen",
+          "url": "https://cointelegraph.com/news/tbtc-bridge-resumes-aave-120m-reserve-frozen",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6Z7HEM0J3VD1G6Q7DHXMEMM/bitcoin-bridge-paused.png"
+        },
+        {
+          "id": "art_8253164",
+          "title": "GOPAX halts crypto trading, withdrawals to move all assets to cold storage39m, GOPAX halts crypto trading, withdrawals to move all assets to cold storageSouth Korea’s GOPAX suspended trading, deposits and standard withdrawals after a hacking threat, with manual withdrawals available through support.",
+          "url": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8242264",
+          "title": "Chainalysis says breach exposed password hashes and live tokens",
+          "url": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2005NQRX5E6SV5DN6KN3Z8T/hi-how-great-big-companies-use-blockchain3.jpg"
+        },
+        {
+          "id": "art_8213200",
+          "title": "Fed, OCC check US banks after Binance hack as experts flag security risks 23m",
+          "url": "https://cointelegraph.com/news/fed-occ-check-us-banks-binance-hack-security-risks",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8167182",
+          "title": "Mercado Bitcoin says phased reopening to begin Monday, will cover losses",
+          "url": "https://cointelegraph.com/news/mercado-bitcoin-phased-reopening-to-begin-monday-pledges-to-cover-losses",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6MCS6V48YKBXE34JHPKFCDG/hi-gate-io-5.jpg"
+        },
+        {
+          "id": "art_8133275",
+          "title": "Binance hackers move 81% of stolen Solana, route funds via THORChain",
+          "url": "https://cointelegraph.com/news/binance-hackers-move-81-stolen-solana-route-thorchain",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6JSYN4CMF8CPRYYC0EAT4GM/hi-what-happened-a-follow-up-on-the-hack.jpg"
+        },
+        {
+          "id": "art_8387334",
+          "title": "Web3Auth says it frontran hackers by moving $5.6 million out of exposed Keplr wallets",
+          "url": "https://www.theblock.co/news/defi/2026-11-08-web3auth-says-it-frontran-hackers-by-moving-5-6-million-out-of-exposed-keplr-wallets-436029",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/keplr-web3auth-art.jpg"
+        },
+        {
+          "id": "art_8276172",
+          "title": "Gnosis Pay breach exposes card details, personal data and crypto wallet information",
+          "url": "https://cointelegraph.com/news/gnosis-pay-breach-exposes-card-details-personal-data-crypto-wallet-information",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6S6NT7VH41TT0QGTWN2DZYP/phone-crypto-cash-cards-evil-smile-hacker.png"
+        },
+        {
+          "id": "art_8214411",
+          "title": "Binance, Deribit revoke SignalPlus API keys after fake Teams invite attack",
+          "url": "https://cointelegraph.com/news/binance-deribit-revoke-signalplus-api-fake-teams-attack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6PE57WMSNEKDPGAVGB8MBPQ/password-fraud-hacker-scam.png"
+        },
+        {
+          "id": "art_8173237",
+          "title": "India warns AI-powered hackers targeting crypto exchanges at ‘machine speed’",
+          "url": "https://cointelegraph.com/news/india-warns-ai-powered-hackers-targeting-crypto-exchanges-at-machine-speed",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6MPCPYRKAQX7P4642EX1VWB/ai-hacker.jpg"
+        },
+        {
+          "id": "art_8164761",
+          "title": "BitMart founder says security team ‘severely understaffed’ after new hack",
+          "url": "https://cointelegraph.com/news/bitmart-hack-security-staffing-crypto-exchange-restructuring",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6M43XKTYRKM47HZ3A23XGYW/money-bank-fiat-case-safety-security-huobi.png"
+        },
+        {
+          "id": "art_8101538",
+          "title": "CZ calls for crypto security alliance as AI-driven attacks accelerate after Binance hack",
+          "url": "https://www.theblock.co/news/regulation/2026-11-03-cz-calls-for-crypto-security-alliance-ai-driven-attacks-accelerate-binance-hack-432458",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/04/20230419_CZ_Generic3.jpg"
+        },
+        {
+          "id": "art_8033766",
+          "title": "Binance completes latest proof of reserves as it works to restore assets, withdrawals after record hack",
+          "url": "https://www.theblock.co/news/business/2026-11-02-binance-zero-knowledge-proof-of-reserves-snapshot-hack-recovery-432321",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241127_Binance_News.jpg"
+        },
+        {
+          "id": "art_8026762",
+          "title": "Binance taps half its SAFU Bitcoin holdings, releases reserve proof",
+          "url": "https://cointelegraph.com/news/binance-safu-btc-balance-halves-recovery-unclear",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6E1KKJ1JWX0XVFV8YM0PG3Q/hi-binance-announces-mining-pool-and-chain-white-paper-slammed-for-centralization-in-both-cases.jpg"
+        },
+        {
+          "id": "art_8334050",
+          "title": "Ex-FBI agent pleads guilty to stealing $2.47 million in crypto from wallets tied to 35 investigations",
+          "url": "https://www.theblock.co/news/regulation/2026-11-07-ex-fbi-agent-pleads-guilty-to-stealing-2-47-million-in-crypto-from-wallets-tied-to-35-investigations-435988",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/FBI-and-Bitcoin-Vineyard-Investigation_clean.png"
+        },
+        {
+          "id": "art_8319769",
+          "title": "Ex-FBI counterintelligence agent stole almost $2.5M in crypto43m",
+          "url": "https://cointelegraph.com/news/ex-fbi-counterintelligence-agent-stole-almost-25m-in-crypto",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        },
+        {
+          "id": "art_8182926",
+          "title": "Binance, Polymarket seek Polygon hard fork to recover $6.8M in stolen crypto24m, Binance, Polymarket seek Polygon hard fork to recover $6.8M in stolen cryptoPolygon block producers have already frozen the stolen tokens, but a proposed hard fork would allow the funds to be recovered and returned to their owners.",
+          "url": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": null
+        },
+        {
+          "id": "art_8019506",
+          "title": "Trezor lifts password ceiling after Coldcard’s $100M wallet thefts",
+          "url": "https://cointelegraph.com/news/trezor-wallet-passphrase-limit-128-characters-coldcard-attacks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6DW85CE7ASBEM7RMJHGJZ1M/passphrase-longer.png"
+        },
+        {
+          "id": "art_8089994",
+          "title": "If Binance Isn’t Safe, What Is? ",
+          "url": "https://blockworks.com/newsletter/0xresearch/issue/post_e35a6267-7a24-4856-92a9-f6895fe5a655",
+          "source": "Blockworks (1)",
+          "sentiment": "bearish",
+          "image_url": "https://blockworks.com/_next/image?url=https%3A%2F%2Fblockworks.com%2Fimages%2Fnewsletter%2F0xResearch_NewsletterPageOG_v3.png&w=1920&q=75&webp=false"
+        },
+        {
+          "id": "art_8066688",
+          "title": "UK warns AI ransomware attack on infrastructure ‘highly likely’ by 2028",
+          "url": "https://cointelegraph.com/news/uk-warns-ai-ransomware-attack-on-infrastructure-highly-likely-by-2028",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6FRVQEAWKQAEZ8JB6F3S0VW/hi-uk-regulations.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_8153861",
+          "title": "Circle’s ARC token sale lifts earnings as lower yields weigh on USDC income",
+          "url": "https://cointelegraph.com/news/circles-arc-token-sale-earnings-yields-usdc-income",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6KTPGZ3TZEHDDPCZNDADBR2/coin-crushing-stablecoin-2.png"
+        },
+        {
+          "id": "art_8141501",
+          "title": "Circle reports $865 million in Q3 revenue and reserve income, discloses 5% workforce reduction",
+          "url": "https://www.theblock.co/news/business/2026-11-04-circle-reports-865-million-in-q3-revenue-and-reserve-income-discloses-5-workforce-reduction-432671",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-04-at-12.45.57.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_8211989",
+          "title": "Europe’s largest asset manager Amundi tokenizes equity index fund on Ethereum",
+          "url": "https://cointelegraph.com/news/amundi-tokenizes-european-equity-index-fund-ethereum",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6P8H9870ZQY6MMMYHJSDGZ5/hi-how-binance-plans-to-bring-tokenized-us-stocks-4.png"
+        },
+        {
+          "id": "art_8133024",
+          "title": "Morgan Stanley among first banks to tokenize US equities, Treasurys through DTCC's service",
+          "url": "https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-04-at-11.18.11.png"
+        },
+        {
+          "id": "art_8019507",
+          "title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
+          "url": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6DQFSHD8AXWKTB5J9SVZW4V/hong-kong-fund.jpg"
+        },
+        {
+          "id": "art_8149980",
+          "title": "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
+          "url": "https://www.theblock.co/news/business/2026-11-04-schroders-centrifuge-tokenized-emerging-markets-debt-fund-solana-432878",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/05/20200526_Centrifuge_2-Daily.png"
+        },
+        {
+          "id": "art_8218655",
+          "title": "Apple and Home Depot join list of objectors to tokenized stock plan pushed by NYSE owner",
+          "url": "https://fortune.com/2026/11/05/apple-home-depot-list-objectors-tokenized-stock-plan-nyse-owner/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2302418320-e1793903586953.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8105421",
+          "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+          "url": "https://cointelegraph.com/news/spacex-tokenization-okxice",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6HGH0BNNPHY4QQAS9295KYQ/okxice-with-stop-gesture.png"
+        },
+        {
+          "id": "art_8257757",
+          "title": "Hypercall to launch first Anthropic-linked pre-IPO options market",
+          "url": "https://www.theblock.co/news/markets/2026-11-06-hypercall-anthropic-linked-pre-ipo-options-market-435453",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/07/20210712_Finance_Crypto_Move.jpg"
+        },
+        {
+          "id": "art_8202912",
+          "title": "As Big Tech bets on nuclear power, startup Uranium Digital raises $16.5 million to modernize uranium trading",
+          "url": "https://fortune.com/2026/11/05/big-tech-nuclear-power-startup-uranium-digital-uranium-trading/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/AVQ07867.jpg?resize=1200,600"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The Binance engineer thought they were interviewing for a better role. They completed a coding assignment. The attackers gained internal access. Six point three billion dollars moved.\n\nThis was not a protocol exploit. No zero-day, no bridge flaw. North Korean operators ran a LinkedIn recruiting play against a human being with privileged access, and the largest exchange in crypto history could not distinguish a fake hiring process from a real one.\n\nWe have spent years underwriting custody risk on key generation architecture, HSM vendors, and multi-sig designs. The repricing this week is operational: who has access, how they are screened, what they can touch alone, and whether the organization can detect anomalous signing before completion. The cold storage ratio disclosures now flooding out are meaningless without answering who can move funds and how they are socially engineered.\n\nThe MEXC enforcement at sixteen billion in alleged illicit flow, simultaneous with this breach, tightens the vise. Offshore exchanges face compliance cost spikes or US correspondent banking exclusion. The policy offset—401(k) crypto access—remains a 2026 probability at best given Labor Department resistance.\n\nWhat would confirm the thesis: third-party operational audits with personnel access simulation becoming standard in exchange due diligence. What would kill it: another major breach via the same vector, proving the industry cannot solve for human compromise at scale.\n\nWe are repricing custody premiums downward for technical solutions and upward for operational maturity. The gap between those two is where the next capital allocation mistake lives."
+}
