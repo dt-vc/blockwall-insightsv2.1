@@ -1,0 +1,592 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-13",
+  "date_display": "November 13, 2026",
+  "generated_at": "2026-11-13T06:00:17.692Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "DOJ Seizes $1.2B in Stolen Binance Assets as Exchange Faces $6.3B Hack from Its Own Warned-About Tactic",
+    "tldr": "The same day the DOJ moves to recover stolen Binance funds, the exchange suffers a $6.3 billion breach using fake job interviews—a threat its CSO had explicitly flagged months earlier. The twin events expose a widening gap between enforcement capacity and operational security in centralized crypto infrastructure."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's signals trace a single fracture line: the institutions best positioned to police crypto are not the same ones capable of securing it.",
+  "market_snapshot": {
+    "as_of": "2026-11-13T06:00:17.692Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$68,132",
+        "change_24h": "-7.3%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,911",
+        "change_24h": "-6.5%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.31T",
+        "change_24h": "-8.4%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$74.6B",
+        "change_24h": "-4.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 5,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 14,
+    "bearish": 13,
+    "neutral": 7,
+    "deduped": 1
+  },
+  "top_signals": [
+    {
+      "id": "art_8631212",
+      "title": "DOJ moves to seize $1.2 billion from Binance hack, disrupts North Korean deepfake scheme",
+      "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bullish",
+      "summary": "The US Department of Justice has received court approval to seize over $1.2 billion in assets stolen from Binance. Additionally, the DOJ disrupted a North Korean operation that utilized deepfake video calls for fraudulent schemes.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065",
+      "themes": [
+        "security",
+        "law-enforcement"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/06/department-of-justice-e1584354675491.jpg",
+      "why_it_matters": "The DOJ's seizure capability now outpaces exchange self-defense, suggesting enforcement infrastructure is becoming a more reliable backstop than private security architecture—a repricing of where institutional trust resides."
+    },
+    {
+      "id": "art_8588622",
+      "title": "Binance CSO unwittingly foreshadowed $6.3B hack tactic months before attack",
+      "url": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A massive $6.3 billion hack of Binance was carried out using fake job interview tactics, a specific threat that the company's own Chief Security Officer had warned about months prior. The incident highlights a critical failure in implementing security warnings despite internal foresight.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M772C3WKZ2V15SYTV41CF4T1/hi-a-fake-crypto-job-interview-nearly-installed-malware-on-my-computer.jpg",
+      "why_it_matters": "A $6.3 billion exploit executed via a known vector represents a governance and underwriting failure, not a technical one; investors should discount centralized exchange operational risk premiums until incentive structures align foresight with action."
+    },
+    {
+      "id": "art_8641254",
+      "title": "Trump nominates Hester Peirce successor among SEC, CFTC picks",
+      "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "President Trump has nominated Steven Levine to succeed Hester Peirce at the SEC. The move is part of a broader set of nominations for the SEC and CFTC intended to precede a Senate power shift.",
+      "significance": 8,
+      "primary_source": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks",
+      "themes": [
+        "regulation",
+        "sec-appointments"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M79AVSJ6NY5RD5MSVWPM12XB/white-house-stablecoin-trump.jpg",
+      "why_it_matters": "Levine's nomination to replace Peirce signals continuity in Republican SEC crypto policy but delays any structural shift until post-Senate transition, extending regulatory uncertainty into Q3 deal timelines."
+    },
+    {
+      "id": "art_8618972",
+      "title": "Bitcoin falls to 12-week low as Jensen Huang's exit from Nvidia rattles markets",
+      "url": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Bitcoin has dropped to a 12-week low following the sudden resignation of Nvidia CEO Jensen Huang and MSCI's plan to remove a major bitcoin treasury firm from its indexes. The combined impact of AI sector instability and index adjustments has rattled the digital asset market.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992",
+      "themes": [
+        "bitcoin",
+        "market-analysis"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/nvidia_jensen_editorial_1920x1080_2jpg.jpg",
+      "why_it_matters": "Bitcoin's correlation with AI equity volatility and index inclusion mechanics confirms it trades as a risk asset, not an uncorrelated store, which reprices treasury and collateral use cases until the linkage breaks."
+    },
+    {
+      "id": "art_8616524",
+      "title": "Visa adds Western Union's USDPT stablecoin to its settlement network in Anchorage tie-up",
+      "url": "https://www.theblock.co/news/business/2026-11-12-visa-adds-western-unions-usdpt-stablecoin-to-its-settlement-network-in-anchorage-tie-up-438520",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Payments",
+      "sentiment": "bullish",
+      "summary": "Visa has integrated Western Union's USDPT stablecoin into its settlement network. This allows Visa and its eligible partners to settle VisaNet obligations using the digital asset issued by Anchorage Digital Bank.",
+      "significance": 8,
+      "primary_source": "https://www.theblock.co/news/business/2026-11-12-visa-adds-western-unions-usdpt-stablecoin-to-its-settlement-network-in-anchorage-tie-up-438520",
+      "themes": [
+        "payments",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/visa.png",
+      "why_it_matters": "Visa's settlement integration of Western Union's USDPT through Anchorage validates bank-issued stablecoins over algorithmic alternatives, concentrating value capture among regulated issuers with existing payment rails."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_8608206",
+      "company": "Griffin",
+      "amount": "$20M",
+      "round": "",
+      "investors": [],
+      "category": "Stablecoins",
+      "url": "https://cointelegraph.com/news/digital-bank-griffin-100m-valuation-card-stablecoin",
+      "summary": "Griffin, a UK banking partner for Uber, has raised $20 million to expand its offerings into stablecoin infrastructure and card issuance. The funding round brings the company's valuation to $100 million."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_8611628",
+      "title": "DTCC plans to bring tokenized securities to Solana in second half of 2027",
+      "url": "https://www.theblock.co/news/business/2026-11-12-dtcc-plans-bring-tokenized-securities-solana-second-half-of-2027-438559",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The DTCC plans to integrate tokenized securities onto the Solana blockchain by the second half of 2027. This move follows the recent launch of its tokenization services on the Canton Network and a private Besu network.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-14.11.53.png"
+    },
+    {
+      "id": "art_8610405",
+      "title": "Securitize and Ethena's $100 million BlackRock BUIDL liquidity facility goes live",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-12-securitize-ethena-buidl-liquidity-facility-live-usdc-438442",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Securitize and Ethena have launched a $100 million liquidity facility utilizing BlackRock's BUIDL tokenized fund. This follows an integration enabling 24/7 atomic swaps between the tokenized fund and Ethena's stablecoin.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+    },
+    {
+      "id": "art_8628764",
+      "title": "Louisiana sues Kalshi, Robinhood and other prediction markets in escalating regulatory fight",
+      "url": "https://www.theblock.co/news/regulation/2026-11-12-louisiana-sues-kalshi-robinhood-other-prediction-markets-escalating-regulatory-fight-439052",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Louisiana Attorney General Liz Murrill has filed a lawsuit against several major prediction markets and crypto exchanges, including Coinbase, Gemini, and Polymarket. The legal action marks an escalation in the regulatory fight over the legality of prediction markets within the state.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+    },
+    {
+      "id": "art_8625342",
+      "title": "DTCC Plans Solana Expansion as Wallet Rules Limit Access",
+      "url": "https://cointelegraph.com/news/dtcc-plans-solana-expansion-wallet-rules-limit-access",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "neutral",
+      "summary": "DTCC plans to expand its tokenized securities offerings to the Solana blockchain by 2027. However, the potential for increased trading activity may be hindered by existing regulatory restrictions regarding wallet access.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78HYSFQRVZZRHHY3ZZHRTMW/hi-what-is-chainlink-dtcc.png"
+    },
+    {
+      "id": "art_8607956",
+      "title": "BNY taps Figment to support staking on its digital asset custody platform",
+      "url": "https://www.theblock.co/news/business/2026-11-12-bny-taps-figment-to-support-staking-on-its-digital-asset-custody-platform-438538",
+      "source": "The Block",
+      "category": "Enterprise",
+      "sentiment": "bullish",
+      "summary": "BNY is integrating Figment's staking services into its digital asset custody platform. This allows institutional clients, including asset managers and ETF issuers, to stake their digital assets held with the bank.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-12.20.58.png"
+    },
+    {
+      "id": "art_8632686",
+      "title": "Maple Finance’s strategy rift sends co-founder, COO to the exits",
+      "url": "https://cointelegraph.com/news/maple-finance-strategy-rift-co-founder-coo-exit",
+      "source": "Cointelegraph",
+      "category": "DeFi",
+      "sentiment": "bearish",
+      "summary": "Maple Finance co-founder and COO Joe Flanagan is departing the company following strategic disagreements with CEO Sidney Powell. The leadership rift coincides with a price decline for the protocol's SYRUP token.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78W1BXY18T2XKFJB5NNN63C/image-1.png"
+    },
+    {
+      "id": "art_8631939",
+      "title": "Stellar is now the #2 chain for tokenized funds",
+      "url": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+      "source": "Token Terminal",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "Stellar has ascended to the position of the second-largest blockchain network for tokenized funds. This indicates a growing adoption of the Stellar network for institutional asset tokenization.",
+      "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+    },
+    {
+      "id": "art_8626566",
+      "title": "US Justice Department, business groups and DeFi firms challenge Illinois crypto tax",
+      "url": "https://cointelegraph.com/news/us-justice-department-business-groups-defi-illinois-crypto-tax",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US Justice Department, along with various business groups and DeFi firms, is challenging a 0.2% cryptocurrency tax implemented by the state of Illinois. The challengers argue that the tax imposes excessive compliance costs and conflicts with federal policy.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78NNMK090K8VRSJK706GEH0/hi-more-irs-crypto-reporting-more-danger.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8618164",
+      "title": "Beyond Blockspace: What Is USDG Worth to Arbitrum?",
+      "url": "https://messari.io/report/beyond-blockspace-what-is-usdg-worth-to-arbitrum",
+      "source": "Messari — Research",
+      "note": "Messari's framework for valuing USDG's contribution to Arbitrum sequencer revenue offers a rare attempt to price governance tokens against actual network cash flows rather than TVL multiples.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e6f051eb457cdd988d5b714e05e0c80eb3c622b4-1500x600.png"
+    },
+    {
+      "id": "art_8612540",
+      "title": "Power Perps: A Match Made in Heaven? ",
+      "url": "https://members.delphidigital.io/reports/power-perps-a-match-made-in-heaven",
+      "source": "Delphi Digital",
+      "note": "Delphi's analysis of power perpetuals examines whether the structure solves the funding rate arbitrage problems that have plagued existing perpetual products, relevant to any derivatives protocol underwriting.",
+      "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/11/2124d299-cover-clean-1024x574.png"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8618972",
+          "title": "Bitcoin falls to 12-week low as Jensen Huang's exit from Nvidia rattles markets",
+          "url": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/nvidia_jensen_editorial_1920x1080_2jpg.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_8632686",
+          "title": "Maple Finance’s strategy rift sends co-founder, COO to the exits",
+          "url": "https://cointelegraph.com/news/maple-finance-strategy-rift-co-founder-coo-exit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78W1BXY18T2XKFJB5NNN63C/image-1.png"
+        },
+        {
+          "id": "art_8612540",
+          "title": "Power Perps: A Match Made in Heaven? ",
+          "url": "https://members.delphidigital.io/reports/power-perps-a-match-made-in-heaven",
+          "source": "Delphi Digital",
+          "sentiment": "bullish",
+          "image_url": "https://storage.googleapis.com/members-portal-bucket/uploads/2026/11/2124d299-cover-clean-1024x574.png"
+        }
+      ]
+    },
+    {
+      "category": "Enterprise",
+      "items": [
+        {
+          "id": "art_8607956",
+          "title": "BNY taps Figment to support staking on its digital asset custody platform",
+          "url": "https://www.theblock.co/news/business/2026-11-12-bny-taps-figment-to-support-staking-on-its-digital-asset-custody-platform-438538",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-12.20.58.png"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_8602086",
+          "title": "Ethlabs drops Hegotá slot proposal in push for 2027 quantum readiness",
+          "url": "https://cointelegraph.com/news/ethlabs-ethereum-quantum-security-2027-quick-slots",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M77HNTV6D5P7J0G2ASP711HK/hi-quantum-computer-and-ethereum.jpg"
+        },
+        {
+          "id": "art_8593268",
+          "title": "Ethlabs proposes advancing Ethereum's post-quantum to 2027, citing AI acceleration",
+          "url": "https://www.theblock.co/news/defi/2026-11-12-ethlabs-proposes-ethereum-post-quantum-2027-438494",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8629988",
+          "title": "Gemini trading volume drops 73% as Q3 revenue falls to $41 million",
+          "url": "https://www.theblock.co/news/markets/2026-11-12-gemini-trading-volume-drops-q3-revenue-falls-to-41-million-439050",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/03/20230301_BankruptCompanies_Gemini.jpg"
+        },
+        {
+          "id": "art_8617748",
+          "title": "Exodus' 'cost reset is real' as payments offset crypto wallet slowdown, StoneX says",
+          "url": "https://www.theblock.co/news/markets/2026-11-12-exodus-cost-reset-real-payments-offset-crypto-wallet-slowdown-stonex-438988",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-10-at-13.35.10.png"
+        },
+        {
+          "id": "art_8582252",
+          "title": "'Milestone quarter': Solana Company reports Q3 revenue growth driven by staking rewards",
+          "url": "https://www.theblock.co/news/business/2026-11-11-solana-company-reports-q3-revenue-growth-438448",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/solana-company-1920.png"
+        },
+        {
+          "id": "art_8576382",
+          "title": "MSCI confirms Strategy’s removal from indexes at end of November",
+          "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M76H4XXFRZZF8PWNZVYPMH4D/hi-the-bitcoin-treasury-model-is-breaking-but-microstrategys-isnt-heres-why.jpg"
+        },
+        {
+          "id": "art_8609430",
+          "title": "Bit Digital stock falls 5% in pre-market after Q3 revenue miss",
+          "url": "https://cointelegraph.com/news/bit-digital-stock-falls-q3-revenue-miss",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4B3MMABZE2GV838GSA8JBR1/hi-crypto-market-trading-trader-breaking-news-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_8616524",
+          "title": "Visa adds Western Union's USDPT stablecoin to its settlement network in Anchorage tie-up",
+          "url": "https://www.theblock.co/news/business/2026-11-12-visa-adds-western-unions-usdpt-stablecoin-to-its-settlement-network-in-anchorage-tie-up-438520",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/visa.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8641254",
+          "title": "Trump nominates Hester Peirce successor among SEC, CFTC picks",
+          "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M79AVSJ6NY5RD5MSVWPM12XB/white-house-stablecoin-trump.jpg"
+        },
+        {
+          "id": "art_8628764",
+          "title": "Louisiana sues Kalshi, Robinhood and other prediction markets in escalating regulatory fight",
+          "url": "https://www.theblock.co/news/regulation/2026-11-12-louisiana-sues-kalshi-robinhood-other-prediction-markets-escalating-regulatory-fight-439052",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260120_Prediction-Markets_News_2.jpg"
+        },
+        {
+          "id": "art_8626566",
+          "title": "US Justice Department, business groups and DeFi firms challenge Illinois crypto tax",
+          "url": "https://cointelegraph.com/news/us-justice-department-business-groups-defi-illinois-crypto-tax",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78NNMK090K8VRSJK706GEH0/hi-more-irs-crypto-reporting-more-danger.png"
+        },
+        {
+          "id": "art_8612852",
+          "title": "Andreessen Horowitz, DeFi Education Fund push back against Illinois crypto tax",
+          "url": "https://www.theblock.co/news/regulation/2026-11-12-andreessen-horowitz-defi-education-fund-push-back-against-illinois-crypto-tax-438573",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/06/court-columns.jpg"
+        },
+        {
+          "id": "art_8609431",
+          "title": "Thailand proposes $148K daily cap on stablecoin deposits and withdrawals",
+          "url": "https://cointelegraph.com/news/thailand-tighter-stablecoin-rules-crypto-exchange",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M77Y7BBV3T43FJ34BFN7FBGA/thailand-sec-1.jpg"
+        },
+        {
+          "id": "art_8605758",
+          "title": "EU DeFi proposals could push users to riskier platforms, says Coinbase exec",
+          "url": "https://cointelegraph.com/news/eu-defi-riskier-platforms-coinbase-exec",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M75BK9Y513FMAWX2Y3DCZ3SX/hi-coinbase-hosts-active-stablecoin-traders.jpg"
+        },
+        {
+          "id": "art_8591071",
+          "title": "South Korea to permit crypto withdrawal freezes during hacking threats",
+          "url": "https://cointelegraph.com/news/south-korea-crypto-withdrawal-freezes-suspected-hacks",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M597BM0AMWQ1YPAXSBBRRVZN/south-korea-1.jpg"
+        },
+        {
+          "id": "art_8620196",
+          "title": "NYDFS sets fresh advertising standards for crypto firms",
+          "url": "https://www.theblock.co/news/regulation/2026-11-12-nydfs-sets-fresh-advertising-standards-crypto-firms-439014",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/new-york-1-e1577451823576.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8631212",
+          "title": "DOJ moves to seize $1.2 billion from Binance hack, disrupts North Korean deepfake scheme",
+          "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/06/department-of-justice-e1584354675491.jpg"
+        },
+        {
+          "id": "art_8588622",
+          "title": "Binance CSO unwittingly foreshadowed $6.3B hack tactic months before attack",
+          "url": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M772C3WKZ2V15SYTV41CF4T1/hi-a-fake-crypto-job-interview-nearly-installed-malware-on-my-computer.jpg"
+        },
+        {
+          "id": "art_8603310",
+          "title": "Tron and Tether bring in Chainalysis after T3 crime unit folds",
+          "url": "https://cointelegraph.com/news/tron-tether-chainalysis-cybercrime-task-force-laundering",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZBJQX8RA4RZN02APHYTQFS/hi-cybercrime-task-force-monitors-the-global-digital-financial-system.jpg"
+        },
+        {
+          "id": "art_8596940",
+          "title": "Chainstack says AI-powered security breach exposed customer data; threat now contained",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-12-chainstack-security-breach-438509",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/chainstack_security_1920x1080.jpg"
+        },
+        {
+          "id": "art_8614076",
+          "title": "Unocoin 'login suspension' continues as exchange flags outgoing BitGo ETH transactions",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-12-unocoin-login-suspension-continues-as-exchange-flags-outgoing-bitgo-eth-transactions-438654",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-17.49.06.png"
+        },
+        {
+          "id": "art_8609432",
+          "title": "Crypto hack losses equal 57 cents per $1 earned onchain: Ark’s Valente23m",
+          "url": "https://cointelegraph.com/news/crypto-hackers-stole-57-cents-every-1-earned-ark",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_8618164",
+          "title": "Beyond Blockspace: What Is USDG Worth to Arbitrum?",
+          "url": "https://messari.io/report/beyond-blockspace-what-is-usdg-worth-to-arbitrum",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/e6f051eb457cdd988d5b714e05e0c80eb3c622b4-1500x600.png"
+        },
+        {
+          "id": "art_8610404",
+          "title": "SoFiUSD goes live on Polygon as bank-issued stablecoin expands reach",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-12-sofiusd-goes-live-on-polygon-as-bank-issued-stablecoin-expands-reach-438542",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-13.48.24.png"
+        },
+        {
+          "id": "art_8606732",
+          "title": "BitGo expands institutional stablecoin minting and redemption platform with USDC",
+          "url": "https://www.theblock.co/news/business/2026-11-12-bitgo-expands-institutional-stablecoin-minting-and-redemption-platform-with-usdc-438525",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-10.55.36.png"
+        },
+        {
+          "id": "art_8608206",
+          "title": "Uber’s UK banking partner Griffin raises $20M for stablecoin services",
+          "url": "https://cointelegraph.com/news/digital-bank-griffin-100m-valuation-card-stablecoin",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M77X80E70Q4QE80S3V89N4XY/hi-ceo-of-firm-that-blocked-customer-crypto-owns-25000-btc-may-be-liable2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_8611628",
+          "title": "DTCC plans to bring tokenized securities to Solana in second half of 2027",
+          "url": "https://www.theblock.co/news/business/2026-11-12-dtcc-plans-bring-tokenized-securities-solana-second-half-of-2027-438559",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-12-at-14.11.53.png"
+        },
+        {
+          "id": "art_8610405",
+          "title": "Securitize and Ethena's $100 million BlackRock BUIDL liquidity facility goes live",
+          "url": "https://www.theblock.co/news/ecosystems/2026-11-12-securitize-ethena-buidl-liquidity-facility-live-usdc-438442",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+        },
+        {
+          "id": "art_8625342",
+          "title": "DTCC Plans Solana Expansion as Wallet Rules Limit Access",
+          "url": "https://cointelegraph.com/news/dtcc-plans-solana-expansion-wallet-rules-limit-access",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78HYSFQRVZZRHHY3ZZHRTMW/hi-what-is-chainlink-dtcc.png"
+        },
+        {
+          "id": "art_8631939",
+          "title": "Stellar is now the #2 chain for tokenized funds",
+          "url": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+          "source": "Token Terminal",
+          "sentiment": "bullish",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Binance lost $6.3 billion to fake job interviews. Its CSO had warned about exactly this vector months before. The DOJ, meanwhile, seized $1.2 billion in older stolen Binance funds the same day. One institution executes the threat; another cleans up after. Neither prevents it.\n\nThis is not a security story about better firewalls. It is a governance story about who pays for ignored foresight. The CSO's warning was priced at zero until the exploit happened. Now the cost is $6.3 billion in direct loss plus the regulatory and counterparty premium that will attach to every centralized exchange balance sheet.\n\nVisa understood the alternative. Its USDPT settlement integration with Western Union and Anchorage routes around this exact trust architecture. Bank-issued, regulated, existing rails. No novel threat surface. The market is repricing where operational risk lives, and it is moving toward entities that underwrite compliance as core infrastructure rather than perimeter defense.\n\nWhat kills this read: a single major exchange publishing documented pre-exploit risk assessments with board-level accountability attached. What confirms it: another quarter where enforcement recoveries outpace private prevention."
+}
