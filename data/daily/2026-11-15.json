@@ -1,0 +1,499 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-15",
+  "date_display": "November 15, 2026",
+  "generated_at": "2026-11-15T06:00:17.729Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Bitcoin ETF outflows hit $1.9B over seven days as miner pivot to AI accelerates",
+    "tldr": "Institutional capital is fleeing crypto beta at record velocity while infrastructure operators race to reprice themselves as compute plays, exposing a widening gap between who can and cannot survive the current repricing."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today's brief tracks $1.9 billion in ETF outflows against a miner rebranding for AI data centers, with regulatory pressure closing in from three continents simultaneously.",
+  "market_snapshot": {
+    "as_of": "2026-11-15T06:00:17.729Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,546",
+        "change_24h": "-3.9%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,802",
+        "change_24h": "-5.3%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.21T",
+        "change_24h": "-6.0%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$71.3B",
+        "change_24h": "-4.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 5,
+    "bearish": 13,
+    "neutral": 6,
+    "deduped": 13
+  },
+  "top_signals": [
+    {
+      "id": "art_8749940",
+      "title": "Kava Lend loses roughly $3.8 million to hack, sending KAVA token down nearly 40%",
+      "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Kava Lend suffered a hack resulting in the loss of approximately $3.8 million in KAVA tokens. The incident led to a sharp price decline of nearly 40% for the KAVA token.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/keplr-web3auth-art.jpg",
+      "why_it_matters": "A $3.8 million exploit triggering a 40% token collapse suggests thin liquidity and concentrated holder bases that make DeFi lending protocols uninvestable on standard risk models until custody architectures are rebuilt."
+    },
+    {
+      "id": "art_8741372",
+      "title": "Louisiana AG calls CFTC chair an 'obsequious standard bearer' for prediction markets following agency lawsuit",
+      "url": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The CFTC has filed a lawsuit against Louisiana following a state judge's order banning several prediction markets from offering event contracts in the state. The conflict involves major players including Polymarket, Coinbase, and Robinhood.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342",
+      "themes": [
+        "regulation",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/06/20200630_CFTC-Daily.jpg",
+      "why_it_matters": "The CFTC suing a state over prediction market access, with Polymarket, Coinbase, and Robinhood caught in the crossfire, signals that U.S. regulatory arbitrage between federal and state frameworks is becoming a direct cost of doing business for platforms."
+    },
+    {
+      "id": "art_8736476",
+      "title": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding",
+      "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "U.S. spot Bitcoin ETFs have experienced significant outflows, losing $1.91 billion over seven consecutive trading days. This trend reflects a broader decline across most crypto ETF categories, with only one exception seeing net inflows last week.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+      "themes": [
+        "bitcoin",
+        "etfs"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Neon-Liquid-Bitcoin-and-Ethereum-Flow_clean.png",
+      "why_it_matters": "Seven consecutive trading days of outflows totaling $1.91 billion indicates institutional rebalancing that could force further liquidations if the streak extends, making this a live liquidity stress test for ETF wrapper products."
+    },
+    {
+      "id": "art_8718978",
+      "title": "Meet ‘Captain Keel,’ the 37-year-old steering a Bitcoin miner into the AI data center gold rush",
+      "url": "https://fortune.com/2026/11/14/ben-gagnon-keel-infrastructure-ai-data-center-gold-rush/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Bitcoin",
+      "sentiment": "bullish",
+      "summary": "Bitfarms is rebranding and pivoting toward Keel Infrastructure to capitalize on the AI data center boom. The company is leveraging its power infrastructure capabilities to serve AI giants rather than focusing solely on Bitcoin mining.",
+      "significance": 6,
+      "primary_source": "https://fortune.com/2026/11/14/ben-gagnon-keel-infrastructure-ai-data-center-gold-rush/",
+      "themes": [
+        "bitcoin",
+        "mining"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/7D0A7613-horizontal-crop.jpg?resize=1200,600",
+      "why_it_matters": "Bitfarms' pivot to Keel Infrastructure and AI data centers is the most explicit admission yet that Bitcoin mining economics no longer underwrite the power infrastructure these companies raised capital against, repricing the entire sector on compute demand curves."
+    },
+    {
+      "id": "art_8660588",
+      "title": "Thailand seeks $148,000 daily cap on certain stablecoin transfers to curb money laundering",
+      "url": "https://www.theblock.co/news/regulation/2026-11-13-thailand-seeks-daily-stablecoin-cap-439676",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "Thailand is proposing new regulations to curb money laundering by implementing a $148,000 daily cap on certain stablecoin transfers. The draft rules would also restrict stablecoin transfers to occur only between wallets owned by the same individual.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-13-thailand-seeks-daily-stablecoin-cap-439676",
+      "themes": [
+        "regulation",
+        "stablecoins"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/thailand.png",
+      "why_it_matters": "Thailand's $148,000 daily stablecoin cap and same-wallet restriction would structurally eliminate most commercial use cases, making this a template for how G20 economies could excise stablecoins from payment rails without banning them outright."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_8659364",
+      "title": "JPMorgan reports 36% rise in Strategy share holdings and $540 million in BlackRock's bitcoin ETF",
+      "url": "https://www.theblock.co/news/business/2026-11-13-jpmorgan-reports-36-rise-in-strategy-share-holdings-and-540-million-in-blackrocks-bitcoin-etf-439671",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "JPMorgan has reported a significant increase in its holdings of MicroStrategy shares and a $540 million position in BlackRock's bitcoin ETF. The bank also holds substantial shares in Coinbase and various public bitcoin mining firms.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-13-at-12.11.30.png"
+    },
+    {
+      "id": "art_8658390",
+      "title": "Unocoin keeps deposits and withdrawals halted over suspect transfers",
+      "url": "https://cointelegraph.com/news/unocoin-withdrawals-halted-bitgo-wallet-transfer-probe",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Indian cryptocurrency exchange Unocoin has suspended all deposits and withdrawals following the detection of suspicious transfers. The exchange is currently investigating the potential misuse of BitGo's wallet backup functionality.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27X18G5K0AARQBBJ0SYKFK0/regulations-india-crypto.jpg"
+    },
+    {
+      "id": "art_8649572",
+      "title": "Bitcoin tumbles below $69,000 as Nvidia turmoil adds to Fed-driven market jitters",
+      "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Bitcoin has dropped below the $69,000 mark amid market volatility driven by Federal Reserve concerns and turmoil surrounding Nvidia. The price drop triggered massive liquidations across the crypto market.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/bitcoin_nvidia_fed_1920x1080.jpg"
+    },
+    {
+      "id": "art_8649378",
+      "title": "The Alpine crypto ‘wonderland’ forging close ties with Tether",
+      "url": "https://www.ft.com/content/a1bcce14-c326-488f-b736-6e831b0fb6cf",
+      "source": "FT Crypto",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Lugano is positioning itself as a crypto hub through a strategic partnership and joint venture with stablecoin issuer Tether. While the city aims to boost its economy via digital asset adoption, critics warn of potential risks associated with such close ties to a single stablecoin entity.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F467b5662-e1e5-41bc-be99-11d03e89b640.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    },
+    {
+      "id": "art_8726490",
+      "title": "Trump Media group stares down $1bn debt crunch as bitcoin bet fades",
+      "url": "https://www.ft.com/content/ada459c4-5f43-4a4a-bc6c-90de8897a4f0",
+      "source": "FT Crypto",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "Trump Media & Technology Group is facing a potential $1 billion debt crunch due to a decline in share prices and cryptocurrency values. The company may be forced to sell assets or secure expensive new financing to manage its obligations.",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Febf58b14-8b09-4eed-81e9-405bc229649b.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+    },
+    {
+      "id": "art_8687767",
+      "title": "Kraken parent Payward gains market share as slower trading weighs on earnings",
+      "url": "https://cointelegraph.com/news/kraken-parent-payward-gains-market-share-slower-trading-earnings",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "neutral",
+      "summary": "Payward, the parent company of Kraken, has increased its global crypto spot market share to 6.5%. However, the company faced a 30% decline in trading volume and a significant 66% drop in adjusted EBITDA year-over-year.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7BB5D5YR6N43P941FXA2NG0/hi-kraken-ipo-2.jpg"
+    },
+    {
+      "id": "art_8680422",
+      "title": "Metaplanet swings to $170M loss as Bitcoin sale hits earnings",
+      "url": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Metaplanet reported a $170 million loss for the third quarter, driven by Bitcoin price volatility and increased interest expenses. The company's financial position was further strained by its removal from MSCI indexes.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7AWR4AB715ADV7EW9WZVKDA/hi-how-a-small-crypto-trader-turned-k-into-m-using-a-high-risk-high-precision-strategy-metaplanet.png"
+    },
+    {
+      "id": "art_8668182",
+      "title": "Arthur Hayes ‘flattered’ as Coinbase backs US stock perps",
+      "url": "https://cointelegraph.com/news/arthur-hayes-coinbase-us-stock-perps-cftc",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Arthur Hayes has expressed approval of Coinbase's support for the CFTC regarding the classification of stock perpetual futures. The situation arises amidst an ongoing legal dispute over how these financial instruments should be regulated in the US.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5YN0CT8F4HNHWRJS1ST7JTJ/arthur-hayes.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8672981",
+      "title": "Aave’s Proposed V3 Core Cleanup Targets Riskier Collateral",
+      "url": "https://www.galaxy.com/insights/research/aave-v3-core-asset-deprecation-v4-migration",
+      "source": "Galaxy — Insights",
+      "note": "Aave's V3 collateral cleanup is worth reading because it shows how the largest lending protocol is actively shedding riskier assets, which will directly affect borrowing costs and liquidation dynamics for DeFi strategists.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6ZLG4nRkutbeJIOVyPPUiw/615e8ec68bbaef76f3a21c7db685ad85/Aave_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8662229",
+      "title": "Helium Token Holder Report Q3 2026",
+      "url": "https://messari.io/report/helium-token-holder-report-q3-2026",
+      "source": "Messari — Research",
+      "note": "The Helium token holder report merits attention as a case study in how decentralized wireless networks are or are not converting token incentives into sustainable unit economics.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/dc4d4b832cf955ad3533324c550868102eb7e460-7500x3000.png"
+    },
+    {
+      "id": "art_8672978",
+      "title": "Weekly Research Brief: Open-Weight AI After Jensen; Aave Cleans House; Ethereum Edginess",
+      "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+      "source": "Galaxy — Insights",
+      "note": "Galaxy's weekly brief on open-weight AI and Ethereum positioning is relevant for anyone underwriting whether crypto infrastructure can capture value from the AI compute boom that Bitfarms and others are now chasing.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/26Cu54PeGbwjQ4kltglxwo/79eeb3dd5aa368f154d33a84af74486f/Research_Brief_thumnail_1.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8736476",
+          "title": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding",
+          "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Neon-Liquid-Bitcoin-and-Ethereum-Flow_clean.png"
+        },
+        {
+          "id": "art_8718978",
+          "title": "Meet ‘Captain Keel,’ the 37-year-old steering a Bitcoin miner into the AI data center gold rush",
+          "url": "https://fortune.com/2026/11/14/ben-gagnon-keel-infrastructure-ai-data-center-gold-rush/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/7D0A7613-horizontal-crop.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_8649572",
+          "title": "Bitcoin tumbles below $69,000 as Nvidia turmoil adds to Fed-driven market jitters",
+          "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/bitcoin_nvidia_fed_1920x1080.jpg"
+        },
+        {
+          "id": "art_8680422",
+          "title": "Metaplanet swings to $170M loss as Bitcoin sale hits earnings",
+          "url": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7AWR4AB715ADV7EW9WZVKDA/hi-how-a-small-crypto-trader-turned-k-into-m-using-a-high-risk-high-precision-strategy-metaplanet.png"
+        },
+        {
+          "id": "art_8681034",
+          "title": "‘People are chucking stuff like gold and Bitcoin’ as rising inflation leads investors to seek yield",
+          "url": "https://fortune.com/2026/11/13/people-chucking-gold-bitcoin-rising-inflation-investors-yield/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2301921794-e1794594952801.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_8672981",
+          "title": "Aave’s Proposed V3 Core Cleanup Targets Riskier Collateral",
+          "url": "https://www.galaxy.com/insights/research/aave-v3-core-asset-deprecation-v4-migration",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6ZLG4nRkutbeJIOVyPPUiw/615e8ec68bbaef76f3a21c7db685ad85/Aave_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8654106",
+          "title": "How Novig became the third biggest prediction market site despite launching only months ago",
+          "url": "https://fortune.com/2026/11/13/novig-third-biggest-prediction-market-site/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2295598450-e1794543021451.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_8672982",
+          "title": "Mandatory Fun? Suit Claims Ethereum Foundation Took Irony Too Far",
+          "url": "https://www.galaxy.com/insights/research/ethereum-foundation-lawsuit-kayleen-fulton-seppuku-mandate-vitalik-buterin-retaliation",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/34RNbORsPjtmFa4sNJWE2h/bd1d9ffcea61fb0a3290517e446a3f5a/ETH_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_8662229",
+          "title": "Helium Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/helium-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/dc4d4b832cf955ad3533324c550868102eb7e460-7500x3000.png"
+        },
+        {
+          "id": "art_8713470",
+          "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
+          "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7CHQ8H5VMWGN9MBP9CQVNVC/layoffs-fired-human-resource-hr-leaving-quit-people-ai-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8659364",
+          "title": "JPMorgan reports 36% rise in Strategy share holdings and $540 million in BlackRock's bitcoin ETF",
+          "url": "https://www.theblock.co/news/business/2026-11-13-jpmorgan-reports-36-rise-in-strategy-share-holdings-and-540-million-in-blackrocks-bitcoin-etf-439671",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/Screenshot-2026-11-13-at-12.11.30.png"
+        },
+        {
+          "id": "art_8726490",
+          "title": "Trump Media group stares down $1bn debt crunch as bitcoin bet fades",
+          "url": "https://www.ft.com/content/ada459c4-5f43-4a4a-bc6c-90de8897a4f0",
+          "source": "FT Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Febf58b14-8b09-4eed-81e9-405bc229649b.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_8687767",
+          "title": "Kraken parent Payward gains market share as slower trading weighs on earnings",
+          "url": "https://cointelegraph.com/news/kraken-parent-payward-gains-market-share-slower-trading-earnings",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7BB5D5YR6N43P941FXA2NG0/hi-kraken-ipo-2.jpg"
+        },
+        {
+          "id": "art_8657166",
+          "title": "Jane Street boosts Fidelity Bitcoin ETF holdings nearly 8x, trims IBIT",
+          "url": "https://cointelegraph.com/news/jane-street-add-fidelity-bitcoin-etf-ibit-cut-q3-2026",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M79TZ0N5PFPG1QHFB1F0EQAV/hi-bitcoin-arbitrage-in-2020-can-still-be-profitable.jpg"
+        },
+        {
+          "id": "art_8666958",
+          "title": "Nakamoto shares fall 6% premarket after Q3 revenue turns negative",
+          "url": "https://cointelegraph.com/news/nakamoto-shares-fall-after-negative-q3-revenue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1Y8ZNSF5WMPGFQ1661WSGAG/hi-why-bitcoin-treasury-stocks-fall-faster-than-the-assets-they-hold-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_8672978",
+          "title": "Weekly Research Brief: Open-Weight AI After Jensen; Aave Cleans House; Ethereum Edginess",
+          "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/26Cu54PeGbwjQ4kltglxwo/79eeb3dd5aa368f154d33a84af74486f/Research_Brief_thumnail_1.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8694666",
+          "title": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO",
+          "url": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787",
+          "source": "FT Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb0a78d5d-baf8-4590-8af4-4f5e345b474d.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8741372",
+          "title": "Louisiana AG calls CFTC chair an 'obsequious standard bearer' for prediction markets following agency lawsuit",
+          "url": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/06/20200630_CFTC-Daily.jpg"
+        },
+        {
+          "id": "art_8660588",
+          "title": "Thailand seeks $148,000 daily cap on certain stablecoin transfers to curb money laundering",
+          "url": "https://www.theblock.co/news/regulation/2026-11-13-thailand-seeks-daily-stablecoin-cap-439676",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/thailand.png"
+        },
+        {
+          "id": "art_8649378",
+          "title": "The Alpine crypto ‘wonderland’ forging close ties with Tether",
+          "url": "https://www.ft.com/content/a1bcce14-c326-488f-b736-6e831b0fb6cf",
+          "source": "FT Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F467b5662-e1e5-41bc-be99-11d03e89b640.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        },
+        {
+          "id": "art_8668182",
+          "title": "Arthur Hayes ‘flattered’ as Coinbase backs US stock perps",
+          "url": "https://cointelegraph.com/news/arthur-hayes-coinbase-us-stock-perps-cftc",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5YN0CT8F4HNHWRJS1ST7JTJ/arthur-hayes.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8749940",
+          "title": "Kava Lend loses roughly $3.8 million to hack, sending KAVA token down nearly 40%",
+          "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/keplr-web3auth-art.jpg"
+        },
+        {
+          "id": "art_8658390",
+          "title": "Unocoin keeps deposits and withdrawals halted over suspect transfers",
+          "url": "https://cointelegraph.com/news/unocoin-withdrawals-halted-bitgo-wallet-transfer-probe",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M27X18G5K0AARQBBJ0SYKFK0/regulations-india-crypto.jpg"
+        },
+        {
+          "id": "art_8665734",
+          "title": "Israeli police arrest five in $5M WhatsApp crypto trading probe",
+          "url": "https://cointelegraph.com/news/israel-police-arrest-five-5m-whatsapp-crypto-scheme",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7A9KC13WNDH9B0FYB99Y1X5/hi-fundraising-101-a-beginners-guide-on-raising-funds-using-cryptocurrencies-israel.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Seven straight days. $1.91 billion out of spot Bitcoin ETFs. The only inflows last week went to one fund, and I won't name it because the exception proves nothing.\n\nThis is not a dip. This is institutional rebalancing at velocity we have not seen since launch. The ETF wrapper was supposed to be sticky capital. It is not.\n\nAgainst this, Bitfarms rebrands as Keel Infrastructure and pitches itself to AI data center buyers. We have seen this movie before. Miners with power purchase agreements and stranded energy assets need a new bid because the Bitcoin block subsidy no longer covers their cost of capital. The question is whether AI compute demand reprices those assets faster than the ETF outflows reprice Bitcoin itself.\n\nWhat would kill this thesis: if Keel and its peers cannot secure hyperscaler contracts at the power densities they promise, and we are back to miners trading at cash cost. What would confirm it: a signed offtake with named capacity, not rebranding slides.\n\nThe Thailand stablecoin rules are the quieter move. Same-wallet restrictions and daily caps do not ban stablecoins. They make them useless for payments. That is a more durable form of regulatory containment than an outright prohibition, and it is exportable.\n\nWe are underwriting sectors on repricing speed now. Not narrative."
+}
