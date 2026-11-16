@@ -1,0 +1,432 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-16",
+  "date_display": "November 16, 2026",
+  "generated_at": "2026-11-16T06:00:16.162Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "RWA protocol stUSDT winds down after $2.3B peak as security failures mount across mining and exchanges",
+    "tldr": "The tokenized yield experiment stUSDT is closing shop with a 2027 redemption deadline, while Luxor and Coinone disclose fresh attacks that expose infrastructure fragility across mining and retail custody. The throughline: structural risk is repricing faster than protocols can adapt."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the bill came due on two fronts—tokenized yield promises and operational security assumptions—and the market's repricing of both is already underway.",
+  "market_snapshot": {
+    "as_of": "2026-11-16T06:00:16.162Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$64,333",
+        "change_24h": "-0.3%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,807",
+        "change_24h": "+0.3%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.18T",
+        "change_24h": "-4.3%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$71.4B",
+        "change_24h": "+1.8%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 3,
+    "bearish": 8,
+    "neutral": 5,
+    "deduped": 26
+  },
+  "top_signals": [
+    {
+      "id": "art_8817510",
+      "title": "Luxor CEO warns of AI ‘dark forest’ after Bitcoin miner hijack",
+      "url": "https://cointelegraph.com/news/luxor-ceo-warns-of-ai-dark-forest-after-bitcoin-miner-hijack",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Luxor's CEO has warned of an AI-driven 'dark forest' in cybersecurity following a recent attack on Bitcoin mining operations. Attackers successfully hijacked mining power and redirected it to a different pool.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/luxor-ceo-warns-of-ai-dark-forest-after-bitcoin-miner-hijack",
+      "themes": [
+        "security",
+        "cybersecurity"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1JT29BT8ARQ99J5C2455XSJ/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-1.jpg",
+      "why_it_matters": "The Luxor hijack demonstrates that AI-augmented attack surfaces are now a direct cost of capital for mining operations, and pools that cannot underwrite this operational risk will lose hashrate to vertically integrated players or bleed insurance premiums."
+    },
+    {
+      "id": "art_8772222",
+      "title": "Coinone warns of phishing, identity theft after customer data breach",
+      "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Coinone has issued a warning to its users regarding potential phishing and identity theft following a data breach. The leak occurred via a third-party customer support provider, exposing sensitive personal information of customers.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information",
+      "themes": [
+        "security",
+        "data-breach"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7F3YVA7631KKAGKFRGDJWMH/coinone.png",
+      "why_it_matters": "Coinone's third-party breach is a textbook counterparty failure that reprices the cost of retail onboarding upward and should force exchanges to bring customer support infrastructure back inside the risk perimeter or pay for it in churn."
+    },
+    {
+      "id": "art_8768550",
+      "title": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
+      "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Tokenization",
+      "sentiment": "bearish",
+      "summary": "The Real World Asset (RWA) protocol stUSDT is winding down its operations and ending yield payments. Tokenholders have been given a deadline of May 2027 to redeem their assets.",
+      "significance": 5,
+      "primary_source": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak",
+      "themes": [
+        "tokenization",
+        "rwa"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4STR9GPNQXV18RZ1XBHZJV9/hi-coinflares-exit-and-the-future-of-cloud-mining-3.jpg",
+      "why_it_matters": "stUSDT's wind-down with a two-year redemption runway is the most concrete evidence yet that RWA yield products failed to find sustainable off-chain origination, and the $2.3B peak-to-zero trajectory will tighten LP due diligence on every subsequent tokenized credit product."
+    },
+    {
+      "id": "art_8672981",
+      "title": "Aave’s Proposed V3 Core Cleanup Targets Riskier Collateral",
+      "url": "https://www.galaxy.com/insights/research/aave-v3-core-asset-deprecation-v4-migration",
+      "source": "Galaxy — Insights",
+      "source_domain": "galaxy.com",
+      "category": "DeFi",
+      "sentiment": "neutral",
+      "summary": "LlamaRisk has proposed a cleanup of Aave V3 Core assets to better protect liquidity providers. The proposal suggests offboarding riskier collateral and transitioning those assets to the siloed design of the upcoming Aave V4.",
+      "significance": 5,
+      "primary_source": "https://www.galaxy.com/insights/research/aave-v3-core-asset-deprecation-v4-migration",
+      "themes": [
+        "defi",
+        "risk-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6ZLG4nRkutbeJIOVyPPUiw/615e8ec68bbaef76f3a21c7db685ad85/Aave_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive",
+      "why_it_matters": "Aave's V3 cleanup is a defensive rebalancing ahead of V4 that signals governance is willing to sacrifice TVL for solvency, which we read as the protocol learning to underwrite its collateral book like a money market fund rather than a permissionless vending machine."
+    },
+    {
+      "id": "art_8662229",
+      "title": "Helium Token Holder Report Q3 2026",
+      "url": "https://messari.io/report/helium-token-holder-report-q3-2026",
+      "source": "Messari — Research",
+      "source_domain": "messari.io",
+      "category": "Infrastructure",
+      "sentiment": "bullish",
+      "summary": "Helium reported its Q3 2026 token holder results, highlighting the settlement of $718K in data credits. The network saw a 33% growth in access points during its first full quarter operating at carrier rates.",
+      "significance": 5,
+      "primary_source": "https://messari.io/report/helium-token-holder-report-q3-2026",
+      "themes": [
+        "infrastructure",
+        "depin"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/dc4d4b832cf955ad3533324c550868102eb7e460-7500x3000.png",
+      "why_it_matters": "Helium's carrier-rate quarter and 33% access point growth suggest the network has crossed from speculative infrastructure to measured utility, though the $718K in data credits is still small against the fully diluted token value and needs several quarters of compounding to justify the current network premium."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_8657166",
+      "title": "Jane Street boosts Fidelity Bitcoin ETF holdings nearly 8x, trims IBIT",
+      "url": "https://cointelegraph.com/news/jane-street-add-fidelity-bitcoin-etf-ibit-cut-q3-2026",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Jane Street significantly increased its position in Fidelity's spot Bitcoin ETF during the third quarter, growing its holdings nearly eightfold. Simultaneously, the firm reduced its exposure to BlackRock's IBIT ETF.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M79TZ0N5PFPG1QHFB1F0EQAV/hi-bitcoin-arbitrage-in-2020-can-still-be-profitable.jpg"
+    },
+    {
+      "id": "art_8654106",
+      "title": "How Novig became the third biggest prediction market site despite launching only months ago",
+      "url": "https://fortune.com/2026/11/13/novig-third-biggest-prediction-market-site/",
+      "source": "Fortune Crypto",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Novig has rapidly grown to become the third largest prediction market site within months of its launch. The platform saw a significant volume surge to $1.8 billion monthly, partly driven by high-profile marketing efforts.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2295598450-e1794543021451.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_8802572",
+      "title": "Traders claim $6 million profit by spotting BitGo's public pull request and frontrunning memecoin listing",
+      "url": "https://www.theblock.co/news/defi/2026-11-15-traders-claim-6-million-profit-by-spotting-bitgos-public-pull-request-and-frontrunning-memecoin-listing-440363",
+      "source": "The Block",
+      "category": "Other",
+      "sentiment": "neutral",
+      "summary": "Traders reportedly earned $6 million by frontrunning a memecoin listing on Robinhood. They achieved this by monitoring public code repositories from BitGo and smart contract activity from Wintermute.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/03/20250305_MemeCoin_News_2.jpg"
+    },
+    {
+      "id": "art_8713470",
+      "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
+      "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push",
+      "source": "Cointelegraph",
+      "category": "Infrastructure",
+      "sentiment": "bearish",
+      "summary": "MEGA, the parent company of MegaETH, has reduced its workforce by 20% as part of a broader restructuring effort. The company is shifting its focus toward the launch of a public AI inference market scheduled for December.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7CHQ8H5VMWGN9MBP9CQVNVC/layoffs-fired-human-resource-hr-leaving-quit-people-ai-2.jpg"
+    },
+    {
+      "id": "art_8681034",
+      "title": "‘People are chucking stuff like gold and Bitcoin’ as rising inflation leads investors to seek yield",
+      "url": "https://fortune.com/2026/11/13/people-chucking-gold-bitcoin-rising-inflation-investors-yield/",
+      "source": "Fortune Crypto",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Investors are reportedly moving away from non-yielding assets like gold and Bitcoin in favor of yield-bearing investments due to rising inflation. Analysts warn that the market recovery for these assets may be volatile and difficult.",
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2301921794-e1794594952801.jpg?resize=1200,600"
+    },
+    {
+      "id": "art_8672978",
+      "title": "Weekly Research Brief: Open-Weight AI After Jensen; Aave Cleans House; Ethereum Edginess",
+      "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+      "source": "Galaxy — Insights",
+      "category": "Other",
+      "sentiment": "neutral",
+      "summary": "A weekly research brief from Galaxy covering multiple topics including Nvidia's leadership, Aave's asset management, and Ethereum Foundation controversies. The brief provides analysis on the intersection of AI and blockchain ecosystems.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/26Cu54PeGbwjQ4kltglxwo/79eeb3dd5aa368f154d33a84af74486f/Research_Brief_thumnail_1.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8666958",
+      "title": "Nakamoto shares fall 6% premarket after Q3 revenue turns negative",
+      "url": "https://cointelegraph.com/news/nakamoto-shares-fall-after-negative-q3-revenue",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "bearish",
+      "summary": "Nasdaq-listed Bitcoin treasury company Nakamoto saw its shares drop 6% in pre-market trading. The decline follows the company's report of negative total operating revenue for the third quarter of 2026.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1Y8ZNSF5WMPGFQ1661WSGAG/hi-why-bitcoin-treasury-stocks-fall-faster-than-the-assets-they-hold-2.jpg"
+    },
+    {
+      "id": "art_8665734",
+      "title": "Israeli police arrest five in $5M WhatsApp crypto trading probe",
+      "url": "https://cointelegraph.com/news/israel-police-arrest-five-5m-whatsapp-crypto-scheme",
+      "source": "Cointelegraph",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Israeli police have arrested five individuals as part of a $5 million investigation into a fraudulent crypto trading scheme operated via WhatsApp. The suspects allegedly used fake loans to disguise the proceeds of the operation.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7A9KC13WNDH9B0FYB99Y1X5/hi-fundraising-101-a-beginners-guide-on-raising-funds-using-cryptocurrencies-israel.jpg"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_8672978",
+      "title": "Weekly Research Brief: Open-Weight AI After Jensen; Aave Cleans House; Ethereum Edginess",
+      "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+      "source": "Galaxy — Insights",
+      "note": "The Galaxy brief connects three threads—open-weight AI competitive dynamics, Aave's collateral cleanup, and Ethereum governance tension—that together map how protocol risk management is evolving under pressure.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/26Cu54PeGbwjQ4kltglxwo/79eeb3dd5aa368f154d33a84af74486f/Research_Brief_thumnail_1.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_8672982",
+      "title": "Mandatory Fun? Suit Claims Ethereum Foundation Took Irony Too Far",
+      "url": "https://www.galaxy.com/insights/research/ethereum-foundation-lawsuit-kayleen-fulton-seppuku-mandate-vitalik-buterin-retaliation",
+      "source": "Galaxy — Insights",
+      "note": "The Ironclad suit against the Ethereum Foundation, if it proceeds, could establish precedent for how decentralized organizations bear liability for contributor actions, making this essential reading for anyone underwriting governance token exposure.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/34RNbORsPjtmFa4sNJWE2h/bd1d9ffcea61fb0a3290517e446a3f5a/ETH_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_8681034",
+          "title": "‘People are chucking stuff like gold and Bitcoin’ as rising inflation leads investors to seek yield",
+          "url": "https://fortune.com/2026/11/13/people-chucking-gold-bitcoin-rising-inflation-investors-yield/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2301921794-e1794594952801.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_8672981",
+          "title": "Aave’s Proposed V3 Core Cleanup Targets Riskier Collateral",
+          "url": "https://www.galaxy.com/insights/research/aave-v3-core-asset-deprecation-v4-migration",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/6ZLG4nRkutbeJIOVyPPUiw/615e8ec68bbaef76f3a21c7db685ad85/Aave_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8654106",
+          "title": "How Novig became the third biggest prediction market site despite launching only months ago",
+          "url": "https://fortune.com/2026/11/13/novig-third-biggest-prediction-market-site/",
+          "source": "Fortune Crypto",
+          "sentiment": "bullish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2295598450-e1794543021451.jpg?resize=1200,600"
+        }
+      ]
+    },
+    {
+      "category": "Ethereum",
+      "items": [
+        {
+          "id": "art_8672982",
+          "title": "Mandatory Fun? Suit Claims Ethereum Foundation Took Irony Too Far",
+          "url": "https://www.galaxy.com/insights/research/ethereum-foundation-lawsuit-kayleen-fulton-seppuku-mandate-vitalik-buterin-retaliation",
+          "source": "Galaxy — Insights",
+          "sentiment": "bearish",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/34RNbORsPjtmFa4sNJWE2h/bd1d9ffcea61fb0a3290517e446a3f5a/ETH_image.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_8662229",
+          "title": "Helium Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/helium-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/dc4d4b832cf955ad3533324c550868102eb7e460-7500x3000.png"
+        },
+        {
+          "id": "art_8713470",
+          "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
+          "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7CHQ8H5VMWGN9MBP9CQVNVC/layoffs-fired-human-resource-hr-leaving-quit-people-ai-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_8657166",
+          "title": "Jane Street boosts Fidelity Bitcoin ETF holdings nearly 8x, trims IBIT",
+          "url": "https://cointelegraph.com/news/jane-street-add-fidelity-bitcoin-etf-ibit-cut-q3-2026",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M79TZ0N5PFPG1QHFB1F0EQAV/hi-bitcoin-arbitrage-in-2020-can-still-be-profitable.jpg"
+        },
+        {
+          "id": "art_8666958",
+          "title": "Nakamoto shares fall 6% premarket after Q3 revenue turns negative",
+          "url": "https://cointelegraph.com/news/nakamoto-shares-fall-after-negative-q3-revenue",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1Y8ZNSF5WMPGFQ1661WSGAG/hi-why-bitcoin-treasury-stocks-fall-faster-than-the-assets-they-hold-2.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_8802572",
+          "title": "Traders claim $6 million profit by spotting BitGo's public pull request and frontrunning memecoin listing",
+          "url": "https://www.theblock.co/news/defi/2026-11-15-traders-claim-6-million-profit-by-spotting-bitgos-public-pull-request-and-frontrunning-memecoin-listing-440363",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/03/20250305_MemeCoin_News_2.jpg"
+        },
+        {
+          "id": "art_8672978",
+          "title": "Weekly Research Brief: Open-Weight AI After Jensen; Aave Cleans House; Ethereum Edginess",
+          "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+          "source": "Galaxy — Insights",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/26Cu54PeGbwjQ4kltglxwo/79eeb3dd5aa368f154d33a84af74486f/Research_Brief_thumnail_1.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_8694666",
+          "title": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO",
+          "url": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787",
+          "source": "FT Crypto",
+          "sentiment": "neutral",
+          "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb0a78d5d-baf8-4590-8af4-4f5e345b474d.jpg?source=next-barrier-page&fit=scale-down&quality=highest&width=700&dpr=1"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_8658140",
+          "title": "DOJ, CFTC sue Arkansas to block state enforcement action against Kalshi",
+          "url": "https://www.theblock.co/news/regulation/2026-11-13-doj-cftc-sue-arkansas-to-block-state-enforcement-action-against-kalshi-439669",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/kalshi_cftc_arkansas_1920x1080.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_8817510",
+          "title": "Luxor CEO warns of AI ‘dark forest’ after Bitcoin miner hijack",
+          "url": "https://cointelegraph.com/news/luxor-ceo-warns-of-ai-dark-forest-after-bitcoin-miner-hijack",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1JT29BT8ARQ99J5C2455XSJ/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-1.jpg"
+        },
+        {
+          "id": "art_8772222",
+          "title": "Coinone warns of phishing, identity theft after customer data breach",
+          "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7F3YVA7631KKAGKFRGDJWMH/coinone.png"
+        },
+        {
+          "id": "art_8665734",
+          "title": "Israeli police arrest five in $5M WhatsApp crypto trading probe",
+          "url": "https://cointelegraph.com/news/israel-police-arrest-five-5m-whatsapp-crypto-scheme",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7A9KC13WNDH9B0FYB99Y1X5/hi-fundraising-101-a-beginners-guide-on-raising-funds-using-cryptocurrencies-israel.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_8768550",
+          "title": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
+          "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4STR9GPNQXV18RZ1XBHZJV9/hi-coinflares-exit-and-the-future-of-cloud-mining-3.jpg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "stUSDT is giving tokenholders until May 2027 to get out. Two years to unwind a product that peaked at $2.3 billion. That is not a wind-down. That is an admission the yield never existed as advertised.\n\nWe have watched RWA protocols raise on the premise of bridging off-chain cash flows to on-chain capital. The stUSDT case is the first at scale where the bridge turned out to be one-way. What is repricing here is not the token. It is the underwriting assumption that any protocol can source and verify real-world yield without taking real-world balance-sheet risk.\n\nSame day, Luxor discloses mining power redirected by AI-augmented attackers. Coinone loses customer data through a support vendor. The security failures are not separate from the RWA unwind. They are the same story: infrastructure built for speed is now being stress-tested for survivability.\n\nHelium's $718K in data credits and 33% access growth is the counterpoint. Measured. Boring. Operating at carrier rates. The networks that survive this repricing will be the ones that stopped promising exponentiality and started collecting recurring revenue.\n\nWe are watching one signal to test this: whether Aave's V3 collateral cleanup actually migrates risk off the balance sheet or just shuffles it toward V4 launch. If governance cannot execute the offboarding, the lesson of stUSDT applies to DeFi collateral too.\n\nThe mispricing is not in the tokens. It is in the cost of staying solvent."
+}
