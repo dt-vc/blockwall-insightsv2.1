@@ -1,0 +1,626 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-21",
+  "date_display": "November 21, 2026",
+  "generated_at": "2026-11-21T06:00:17.645Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Binance hackers deploy cross-chain infrastructure at scale as laundering pipeline matures",
+    "tldr": "The same exploit infrastructure—THORChain, Chainflip, coinjoins—is now handling nine-figure flows with operational consistency, while prediction markets draw first federal legislation and stablecoin protocols face bank-run mechanics."
+  },
+  "intro": "Dear Founders, Investors, and Friends, today the infrastructure of illicit cross-chain settlement is running stress-test volumes, and regulators are finally writing specific law for markets that barely existed two years ago.",
+  "market_snapshot": {
+    "as_of": "2026-11-21T06:00:17.645Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$55,758",
+        "change_24h": "-9.8%",
+        "direction": "down"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,559",
+        "change_24h": "-10.4%",
+        "direction": "down"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$1.96T",
+        "change_24h": "-10.3%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$64.6B",
+        "change_24h": "-7.1%",
+        "direction": "down"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 8,
+    "signals": 5,
+    "watching": 8,
+    "bullish": 13,
+    "bearish": 12,
+    "neutral": 12,
+    "deduped": 17
+  },
+  "top_signals": [
+    {
+      "id": "art_9092594",
+      "title": "Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
+      "url": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Attackers have begun laundering funds from a major Binance hack, mixing $149 million in Bitcoin via coinjoins. The broader exploit involved the movement of $860 million in Ether, which was partially swapped for Bitcoin to obscure the trail.",
+      "significance": 9,
+      "primary_source": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758",
+      "themes": [
+        "security",
+        "exploit-hacking"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/ChatGPT-Image-Nov-1-2026-12_51_51-PM_clean.png",
+      "why_it_matters": "Coinjoin volume at this scale signals that privacy-tooling demand is becoming price-inelastic for sophisticated attackers, which underwrites the thesis that compliance-layer investments must outpace mixing-technology iteration or face regulatory overreach."
+    },
+    {
+      "id": "art_9075624",
+      "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
+      "url": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Hackers associated with a Binance exploit have moved nearly $600 million in ETH. The attackers are utilizing THORChain and Chainflip to obfuscate the movement of the stolen funds.",
+      "significance": 9,
+      "primary_source": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KZARS72JZC0FSMD8WX2PAG/aml-money-laundering-crypto-1.jpg",
+      "why_it_matters": "THORChain and Chainflip handling nearly $600 million in exploit flows validates their liquidity depth but simultaneously concentrates existential regulatory risk in their validator sets and bonding mechanisms."
+    },
+    {
+      "id": "art_9095304",
+      "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
+      "url": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "The Wrapped Monero (XMR1) token has crashed 99.8% following a suspected $13.5 million exploit. Bitquery analysis reveals that funds from four previous crypto hacks were used to acquire the asset before the crash.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": true,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7X4D1A62D3GQT3E2RD261Q4/hi-company-hits-vulnerability-2.png",
+      "why_it_matters": "The reuse of funds from four prior hacks to acquire XMR1 before collapse suggests a maturing secondary market for exploit proceeds, where stolen capital itself becomes a traded asset class with its own momentum patterns."
+    },
+    {
+      "id": "art_9092844",
+      "title": "Sky Protocol sees $2 billion in stablecoin withdrawals, disputes illicit fund claims",
+      "url": "https://cointelegraph.com/news/sky-protocol-sees-2b-in-stablecoin-withdrawals-disputes-illicit-fund-claims",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Stablecoins",
+      "sentiment": "bearish",
+      "summary": "Sky Protocol is facing significant outflows with $2 billion in stablecoin withdrawals from its USDS asset. The protocol maintains that the stablecoin has held its peg and is actively disputing claims that the transactions are linked to illicit activity.",
+      "significance": 7,
+      "primary_source": "https://cointelegraph.com/news/sky-protocol-sees-2b-in-stablecoin-withdrawals-disputes-illicit-fund-claims",
+      "themes": [
+        "stablecoins",
+        "risk-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7X2CXDXB4B5SGSAMFZAXXE0/hi-kraken-ipo-1.png",
+      "why_it_matters": "$2 billion in USDS withdrawals without depeg is technically impressive but operationally fragile—Sky Protocol is now underwriting confidence in algorithmic stability during a bank-run scenario that traditional stablecoin architectures have historically failed."
+    },
+    {
+      "id": "art_9093456",
+      "title": "Senate passes first-ever prediction market bill as Democrats turn up heat on upstart industry",
+      "url": "https://fortune.com/2026/11/20/senate-passes-first-ever-prediction-market-bill-as-democrats-turn-up-heat-on-upstart-industry/",
+      "source": "Fortune Crypto",
+      "source_domain": "fortune.com",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The Senate has passed the DEATH BETS Act, the first-ever bill specifically targeting prediction markets. The legislation aims to outlaw wagers tied to war and death, signaling increased regulatory pressure on the industry.",
+      "significance": 7,
+      "primary_source": "https://fortune.com/2026/11/20/senate-passes-first-ever-prediction-market-bill-as-democrats-turn-up-heat-on-upstart-industry/",
+      "themes": [
+        "regulation",
+        "prediction-markets"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2288244515-e1795193510255.jpg?resize=1200,600",
+      "why_it_matters": "The DEATH BETS Act naming prediction markets specifically creates a legislative template that will likely expand to cover crypto-adjacent wagering contracts, repricing the regulatory premium for Polymarket competitors and oracle-dependent platforms."
+    }
+  ],
+  "deals": [
+    {
+      "id": "art_9086744",
+      "company": "Aikido Security",
+      "amount": "",
+      "round": "",
+      "investors": [
+        "Nik Storonsky"
+      ],
+      "category": "Security",
+      "url": "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+      "summary": "Aikido Security, a Ghent-based security software developer backed by Nik Storonsky, is reportedly seeking a valuation of €4bn in its latest funding round."
+    }
+  ],
+  "on_the_radar": [
+    {
+      "id": "art_9085464",
+      "title": "US Senate advances prediction market restrictions with DEATH BETS Act",
+      "url": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act",
+      "source": "Cointelegraph",
+      "category": "Regulation",
+      "sentiment": "bearish",
+      "summary": "The US Senate has advanced the DEATH BETS Act, which aims to ban prediction market contracts involving war, assassination, and death. The legislation is driven by concerns over insider trading and the ethics of betting on catastrophic events.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WS7SH44A7MXA0Q21TD4GY8/hi-when-will-the-prediction-market-take-place-and-what-effect-is-it-having-on-crypto-2.png"
+    },
+    {
+      "id": "art_9085465",
+      "title": "DBS bets it can lose the deposit and keep the client",
+      "url": "https://cointelegraph.com/news/dbs-bets-it-can-lose-the-deposit-and-keep-the-client",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "DBS is integrating USDC minting and a partnership with JPMorgan to facilitate tokenized deposits. The bank aims to retain corporate clients and payment fees as dollar-denominated assets migrate on-chain.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WNFYH0FRWPZX615E3RNKNQ/sponsored-marina-bay-sand-singapore-light-water11-1.jpg"
+    },
+    {
+      "id": "art_9080545",
+      "title": "Lagarde warns Europe could miss chance to unify tokenized markets",
+      "url": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules",
+      "source": "Cointelegraph",
+      "category": "Tokenization",
+      "sentiment": "neutral",
+      "summary": "ECB President Christine Lagarde has cautioned that Europe must act quickly to establish a unified regulatory framework for tokenized markets. She warned that failure to do so could lead to market fragmentation and a missed opportunity to leverage tokenization benefits.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WGQEQ57ZB4C6X8Y2M5KYTQ/christine-lagarde-imf.jpg"
+    },
+    {
+      "id": "art_9008954",
+      "title": "Singapore's MAS issues $77 million in tokenized bills settled via CBDC",
+      "url": "https://www.theblock.co/news/web3/2026-11-19-singapores-mas-tokenized-bills-443562",
+      "source": "The Block",
+      "category": "Tokenization",
+      "sentiment": "bullish",
+      "summary": "The Monetary Authority of Singapore (MAS) has issued $77 million in tokenized bills. These assets were issued natively on the Singapore Dollar Test Network and settled using wholesale CBDCs.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/singapore-scaled.jpg"
+    },
+    {
+      "id": "art_9099974",
+      "title": "DCG’s Zcash miner Fortitude clears vote for Nasdaq listing as ZEC retreats from all-time high",
+      "url": "https://www.theblock.co/news/business/2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasdaq-listing-zec-retreats-all-time-high-444784",
+      "source": "The Block",
+      "category": "Investment",
+      "sentiment": "bullish",
+      "summary": "Zcash miner Fortitude has cleared a shareholder vote to list on the Nasdaq under the ticker TUDE. The listing follows a merger with HeartSciences and is currently pending final approval.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/zcash.png"
+    },
+    {
+      "id": "art_9082754",
+      "title": "Rep. Horsford sees opening for House vote on crypto tax bill before Congress ends",
+      "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-horsford-sees-opening-house-vote-crypto-tax-bill-before-congress-ends-444720",
+      "source": "The Block",
+      "category": "Regulation",
+      "sentiment": "bullish",
+      "summary": "Representative Horsford believes there is an opportunity for the House to vote on a crypto tax bill before the current Congress concludes. The proposed Digital Asset Tax Certainty Act incorporates key provisions from the PARITY Act and has already passed the House Ways and Means Committee.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-2303482998-scaled-e1795184982398.jpg"
+    },
+    {
+      "id": "art_9077834",
+      "title": "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion",
+      "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+      "source": "The Block",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "US spot bitcoin ETFs experienced significant net outflows of $582 million in a single day, contributing to a monthly total nearing $3.5 billion. This trend coincides with a decline in bitcoin's price and a general retreat in crypto trading volumes.",
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/image-2026-11-20T143815.443.jpg"
+    },
+    {
+      "id": "art_9087876",
+      "title": "Who Sandwiches the Sandwichers? ‘MEV Bros’ Acquitted on Fraud Charges",
+      "url": "https://www.galaxy.com/insights/research/mev-bros-acquitted-ethereum-fraud-ruling",
+      "source": "Galaxy — Network",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "A group of MEV traders, referred to as 'MEV Bros,' have been acquitted of fraud charges. The case highlights the ongoing legal debate over whether algorithmic trading strategies in decentralized markets constitute fraud or are simply the exploitation of protocol rules.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2ToCGBp62zzTP8GUkM6kNT/c9ea3b60cbe01c3a9c44b244ae2378b2/acquittal_thumbnail_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_9086744",
+      "title": "Exclusive: Storonsky-backed Aikido seeks €4bn valuation",
+      "url": "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+      "source": "Sifted",
+      "note": "The €4 billion target for a Ghent-based security startup, even with Storonsky's backing, tests whether European SaaS multiples can sustain US-style ambition in a rate environment that has already compressed software valuations.",
+      "image_url": "https://content.sifted.eu/wp-content/uploads/2026/01/14150348/Team_All_Felix-Willem-Roeland-Sem-Madeline-1024x611.png"
+    },
+    {
+      "id": "art_9087876",
+      "title": "Who Sandwiches the Sandwichers? ‘MEV Bros’ Acquitted on Fraud Charges",
+      "url": "https://www.galaxy.com/insights/research/mev-bros-acquitted-ethereum-fraud-ruling",
+      "source": "Galaxy — Network",
+      "note": "The acquittal of 'MEV Bros' on fraud charges establishes that current US criminal law may not reach certain consensus-layer extraction tactics, which has implications for how we underwrite litigation risk in staking and sequencing investments.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2ToCGBp62zzTP8GUkM6kNT/c9ea3b60cbe01c3a9c44b244ae2378b2/acquittal_thumbnail_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_9087877",
+      "title": "Solana’s Institutional Breakpoint",
+      "url": "https://www.galaxy.com/insights/research/solana-breakpoint-institutional-adoption-mainnet-1",
+      "source": "Galaxy — Network",
+      "note": "Solana's institutional positioning at Breakpoint deserves attention for whether the network's latency advantages translate to sticky institutional custody and prime brokerage relationships, or merely conference-stage announcements.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4DbCN7Y3FB7HfvgdDvd5UU/ef0cea0a784e832b1c2dea23bd966f7b/Solana_Breakpoint_image_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_9077834",
+          "title": "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion",
+          "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/image-2026-11-20T143815.443.jpg"
+        },
+        {
+          "id": "art_9067994",
+          "title": "Michael Saylor sees up to $7.5 billion in 'natural demand' for Strategy's STRC preferred stock",
+          "url": "https://www.theblock.co/news/business/2026-11-20-michael-saylor-natural-demand-strategy-strc-444190",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/04/20260410_MichaelSaylor_News_2.jpg"
+        },
+        {
+          "id": "art_9092595",
+          "title": "JPMorgan says bitcoin price correction widens gap to estimated $86,000 production cost",
+          "url": "https://www.theblock.co/news/markets/2026-11-20-jpmorgan-bitcoin-price-correction-gap-86000-production-cost-444763",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-880121294.jpg"
+        },
+        {
+          "id": "art_9033805",
+          "title": "Why higher rates could slow Bitcoin buying at treasury firms",
+          "url": "https://cointelegraph.com/news/why-higher-rates-could-slow-bitcoin-buying-at-treasury-firms",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1XP9EEWDQ84ZSGS1X5SFP19/hi-sbuidl-blackrocks-tokenized-treasury-fund.jpg"
+        },
+        {
+          "id": "art_9002804",
+          "title": "Sygnum sees bitcoin carry trades beating Treasury bills in 2027 as funding recovers",
+          "url": "https://www.theblock.co/news/markets/2026-11-19-sygnum-bitcoin-carry-trades-beating-treasury-bills-2027-443547",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_9022484",
+          "title": "Bitcoin finance protocol Hashi goes live on Sui mainnet",
+          "url": "https://www.theblock.co/news/defi/2026-11-19-bitcoin-finance-protocol-hashi-goes-live-on-sui-mainnet-443608",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-461203600-scaled.jpg"
+        },
+        {
+          "id": "art_9084400",
+          "title": "Olympus Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/olympus-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/92e3e120ea197318f8872b8ff5e6f5908d1190ff-7500x3000.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_9087877",
+          "title": "Solana’s Institutional Breakpoint",
+          "url": "https://www.galaxy.com/insights/research/solana-breakpoint-institutional-adoption-mainnet-1",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4DbCN7Y3FB7HfvgdDvd5UU/ef0cea0a784e832b1c2dea23bd966f7b/Solana_Breakpoint_image_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_9047334",
+          "title": "Ledger CTO Charles Guillemet to leave after nine years at company",
+          "url": "https://cointelegraph.com/news/ledger-cto-charles-guillemet-to-leave-after-nine-years-at-company",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7V13YNHJY11MWW37WA0R9X8/hi-can-locked-liquidity-still-put-defi-users-at-risk.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_9099974",
+          "title": "DCG’s Zcash miner Fortitude clears vote for Nasdaq listing as ZEC retreats from all-time high",
+          "url": "https://www.theblock.co/news/business/2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasdaq-listing-zec-retreats-all-time-high-444784",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/zcash.png"
+        },
+        {
+          "id": "art_9077835",
+          "title": "Ark buys $90 million worth of Anthropic shares on debut, trims Ethereum and Solana staking ETF holdings",
+          "url": "https://www.theblock.co/news/markets/2026-11-20-ark-buys-90-million-worth-of-anthropic-shares-on-debut-trims-ethereum-and-solana-staking-etf-holdings-444226",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-2305894191.jpg"
+        },
+        {
+          "id": "art_9073164",
+          "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
+          "url": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7W70S79VWG5A9Q3C9MCT7R8/vvv.png"
+        },
+        {
+          "id": "art_9015354",
+          "title": "Sweden’s H100 could tap Bitcoin trading pool to fund share buybacks",
+          "url": "https://cointelegraph.com/news/swedens-h100-13m-q3-loss-share-buyback-approval",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7SNB5B19MZXHBMWJSW6SVAN/hi-coinbase-seeks-ipo-1.png"
+        }
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "id": "art_9038474",
+          "title": "Kalshi's Quintenz says insider trading is 'just easier to see' in prediction markets than stocks",
+          "url": "https://www.theblock.co/news/markets/2026-11-19-kalshi-quintenz-insider-trading-prediction-markets-stocks-444133",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/10/20211022_Brian-Quintenz.jpg"
+        },
+        {
+          "id": "art_9025671",
+          "title": "For crypto traders, Anthropic went public already weeks ago",
+          "url": "https://tokenterminal.com/resources/newsletter/for-crypto-traders-anthropic-went-public-already-weeks-ago",
+          "source": "Token Terminal",
+          "sentiment": "neutral",
+          "image_url": "https://tokenterminal.com/_next/image?url=https%3A%2F%2Fbeehiiv-images-production.s3.amazonaws.com%2Fuploads%2Fpublication%2Fthumbnail%2F637e69eb-c694-4331-80d1-e3322d4f226a%2Flandscape_Snapshot_OG_image.png&w=1200&q=75"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "id": "art_9072914",
+          "title": "MoonPay applies for national trust bank charter to expand stablecoin services",
+          "url": "https://www.theblock.co/news/business/2026-11-20-moonpay-applies-occ-national-bank-charter-444198",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-1321781011-scaled.jpg"
+        },
+        {
+          "id": "art_9025360",
+          "title": "Gate Money: From Exchange to Neobank",
+          "url": "https://messari.io/report/gate-money-from-exchange-to-neobank",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/57ae1ba0248cf76a45f6fd2f8562e36dbd1e8b5f-3000x1200.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_9093456",
+          "title": "Senate passes first-ever prediction market bill as Democrats turn up heat on upstart industry",
+          "url": "https://fortune.com/2026/11/20/senate-passes-first-ever-prediction-market-bill-as-democrats-turn-up-heat-on-upstart-industry/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2288244515-e1795193510255.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_9085464",
+          "title": "US Senate advances prediction market restrictions with DEATH BETS Act",
+          "url": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WS7SH44A7MXA0Q21TD4GY8/hi-when-will-the-prediction-market-take-place-and-what-effect-is-it-having-on-crypto-2.png"
+        },
+        {
+          "id": "art_9082754",
+          "title": "Rep. Horsford sees opening for House vote on crypto tax bill before Congress ends",
+          "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-horsford-sees-opening-house-vote-crypto-tax-bill-before-congress-ends-444720",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-2303482998-scaled-e1795184982398.jpg"
+        },
+        {
+          "id": "art_9087876",
+          "title": "Who Sandwiches the Sandwichers? ‘MEV Bros’ Acquitted on Fraud Charges",
+          "url": "https://www.galaxy.com/insights/research/mev-bros-acquitted-ethereum-fraud-ruling",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/2ToCGBp62zzTP8GUkM6kNT/c9ea3b60cbe01c3a9c44b244ae2378b2/acquittal_thumbnail_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        },
+        {
+          "id": "art_9067014",
+          "title": "SEC charges eight firms over fake crypto platforms tied to $37M fraud",
+          "url": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7VWVJFSAZCDB7METDY1P77G/hi-otc-over-the-counter-trade-fraud.jpg"
+        },
+        {
+          "id": "art_9060614",
+          "title": "Coinbase backs CFTC proposal to distinguish prediction market contracts from gambling",
+          "url": "https://www.theblock.co/news/business/2026-11-19-coinbase-backs-cftc-prediction-markets-444152",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/coinbase-unsplash.jpg"
+        },
+        {
+          "id": "art_9082756",
+          "title": "Wintermute policy chief calls for crypto lobby to 'clean house' in D.C.",
+          "url": "https://www.theblock.co/news/regulation/2026-11-20-wintermute-policy-chief-calls-for-crypto-lobby-clean-house-d-c-444721",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/image-2026-11-20T172211.323.jpg"
+        },
+        {
+          "id": "art_9036014",
+          "title": "Ripple's Alderoty doubts Elizabeth Warren will 'set crypto policy in this country,' backs durable agency rules",
+          "url": "https://www.theblock.co/news/regulation/2026-11-19-ripple-alderoty-elizabeth-warren-wont-set-crypto-policy-backs-durable-agency-rules-444105",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/Elizabeth-Warren-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_9092594",
+          "title": "Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
+          "url": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/ChatGPT-Image-Nov-1-2026-12_51_51-PM_clean.png"
+        },
+        {
+          "id": "art_9075624",
+          "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
+          "url": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KZARS72JZC0FSMD8WX2PAG/aml-money-laundering-crypto-1.jpg"
+        },
+        {
+          "id": "art_9095304",
+          "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
+          "url": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7X4D1A62D3GQT3E2RD261Q4/hi-company-hits-vulnerability-2.png"
+        },
+        {
+          "id": "art_9086744",
+          "title": "Exclusive: Storonsky-backed Aikido seeks €4bn valuation",
+          "url": "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+          "source": "Sifted",
+          "sentiment": "bullish",
+          "image_url": "https://content.sifted.eu/wp-content/uploads/2026/01/14150348/Team_All_Felix-Willem-Roeland-Sem-Madeline-1024x611.png"
+        },
+        {
+          "id": "art_9097564",
+          "title": "How I tricked a hacking agent into running my code",
+          "url": "https://a16zfrontier.com/posts/article/deceiving-ai-hacking-agents/",
+          "source": "a16z crypto",
+          "sentiment": "neutral",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/HXll-KpbIAA9dCz.jpeg"
+        },
+        {
+          "id": "art_9007974",
+          "title": "BTCPay Server issues emergency update for 5 security flaws",
+          "url": "https://cointelegraph.com/news/btcpay-server-emergency-update-nginx-security-flaws",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7SBR8JPRT5JWCMRB1JZBYW5/update.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Stablecoins",
+      "items": [
+        {
+          "id": "art_9092844",
+          "title": "Sky Protocol sees $2 billion in stablecoin withdrawals, disputes illicit fund claims",
+          "url": "https://cointelegraph.com/news/sky-protocol-sees-2b-in-stablecoin-withdrawals-disputes-illicit-fund-claims",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7X2CXDXB4B5SGSAMFZAXXE0/hi-kraken-ipo-1.png"
+        }
+      ]
+    },
+    {
+      "category": "Tokenization",
+      "items": [
+        {
+          "id": "art_9085465",
+          "title": "DBS bets it can lose the deposit and keep the client",
+          "url": "https://cointelegraph.com/news/dbs-bets-it-can-lose-the-deposit-and-keep-the-client",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WNFYH0FRWPZX615E3RNKNQ/sponsored-marina-bay-sand-singapore-light-water11-1.jpg"
+        },
+        {
+          "id": "art_9080545",
+          "title": "Lagarde warns Europe could miss chance to unify tokenized markets",
+          "url": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7WGQEQ57ZB4C6X8Y2M5KYTQ/christine-lagarde-imf.jpg"
+        },
+        {
+          "id": "art_9008954",
+          "title": "Singapore's MAS issues $77 million in tokenized bills settled via CBDC",
+          "url": "https://www.theblock.co/news/web3/2026-11-19-singapores-mas-tokenized-bills-443562",
+          "source": "The Block",
+          "sentiment": "bullish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/singapore-scaled.jpg"
+        },
+        {
+          "id": "art_9036876",
+          "title": "Crypto platform’s plan to offer tokenized shares for Anthropic IPO comes up short, following similar SpaceX flop",
+          "url": "https://fortune.com/2026/11/19/crypto-platforms-offer-tokenized-shares-anthropic-ipo-similar-spacex-flop/",
+          "source": "Fortune Crypto",
+          "sentiment": "bearish",
+          "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2305894185-e1795110004627.jpg?resize=1200,600"
+        },
+        {
+          "id": "art_9019045",
+          "title": "GTA VI publisher racks up nearly 3x Nvidia’s tokenized stock volume",
+          "url": "https://cointelegraph.com/news/gta-vi-launch-tokenized-ttwo-trade-triple-nvidia",
+          "source": "Cointelegraph",
+          "sentiment": "bullish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7SPBXY6CFFGCX5R0FEQQY76/gta111111.png"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "The Binance exploiters just ran $600 million through THORChain and Chainflip, then mixed another $149 million in Bitcoin. This is not experimentation. This is operational infrastructure being stress-tested at scale.\n\nWe have watched cross-chain bridges mature from novelty to settlement layer. The same tools now moving exploit proceeds are the ones legitimate users rely on for permissionless swaps. The distinction is becoming harder to underwrite. For Chainflip and THORChain, liquidity depth is now proven. Regulatory exposure is equally proven. The question is which reprices first.\n\nOn a different frequency, the Senate just passed its first prediction-market-specific bill. The DEATH BETS Act names war and death wagers. The template is written. Expansion to adjacent markets is mechanical. Polymarket and its competitors are now underwriting against legislative iteration speed, not just user acquisition.\n\nSky Protocol absorbed $2 billion in USDS redemptions without breaking peg. Algorithmic stability held. That is a data point. Whether it holds under simultaneous exploit and redemption pressure is the test that matters.\n\nWhat would kill the cross-chain laundering thesis: sustained on-chain tracing success rates above 60 percent for mixed outputs. What would confirm it: another nine-figure exploit cleared through the same pipe within ninety days.\n\nWe are watching the pipe."
+}
