@@ -1,0 +1,373 @@
+{
+  "schema": 2,
+  "type": "daily",
+  "id": "2026-11-23",
+  "date_display": "November 23, 2026",
+  "generated_at": "2026-11-23T06:00:16.135Z",
+  "engine": "ollama/kimi-k2.6:cloud",
+  "lead": {
+    "headline": "Cross-chain bridge exploits drain $17.7M across Fusionist, Chainflip, and Cyber in 24 hours",
+    "tldr": "Bridge security failures dominate today's signals with three separate exploits exposing persistent vulnerabilities in cross-chain infrastructure, while traditional finance capital rotates toward AI and away from crypto staking products."
+  },
+  "intro": "Dear Founders, Investors, and Friends, three bridge exploits in one day and a $90 million AI allocation from Ark Invest frame the question of whether crypto's cross-chain infrastructure is underwritable at current valuations.",
+  "market_snapshot": {
+    "as_of": "2026-11-23T06:00:16.135Z",
+    "source": "CoinGecko, DefiLlama",
+    "items": [
+      {
+        "label": "BTC",
+        "value": "$61,601",
+        "change_24h": "+4.8%",
+        "direction": "up"
+      },
+      {
+        "label": "ETH",
+        "value": "$1,730",
+        "change_24h": "+4.6%",
+        "direction": "up"
+      },
+      {
+        "label": "Total Mkt Cap",
+        "value": "$2.10T",
+        "change_24h": "-0.8%",
+        "direction": "down"
+      },
+      {
+        "label": "DeFi TVL",
+        "value": "$69.6B",
+        "change_24h": "+2.6%",
+        "direction": "up"
+      }
+    ]
+  },
+  "stats": {
+    "sources": 6,
+    "signals": 5,
+    "watching": 6,
+    "bullish": 1,
+    "bearish": 5,
+    "neutral": 6,
+    "deduped": 25
+  },
+  "top_signals": [
+    {
+      "id": "art_9221810",
+      "title": "A $2 million exploit leads to a $3.7 million free-for-all as traders empty Fusionist's ACE bridge",
+      "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "A hacker minted a massive amount of fake ACE tokens on the BNB Chain, resulting in an initial $2 million exploit. This triggered a subsequent $3.7 million drain as traders exploited the ACE bridge to swap fake tokens for real assets.",
+      "significance": 6,
+      "primary_source": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/ChatGPT-Image-Nov-22-2026-06_14_06-PM_clean.png",
+      "why_it_matters": "The Fusionist exploit's $2M initial loss cascading to $3.7M demonstrates how bridge design creates reflexive liquidation dynamics that amplify losses beyond the technical vulnerability itself, making recovery economics structurally worse than single-point failures."
+    },
+    {
+      "id": "art_9183899",
+      "title": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
+      "url": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "South Korean exchanges Upbit and Bithumb have suspended deposits and withdrawals for the CYBER token. This action follows reports of suspicious activity involving a cross-chain bridge associated with the Cyber protocol.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M8127PW0MX9AKGQ6Y4GQ51JX/hand-laptop-coin.png",
+      "why_it_matters": "Exchange-level circuit breakers on CYBER signal that centralized venues are now the de facto risk managers for bridge protocols, creating a liability mismatch where CEXs bear reputational cost for flaws in decentralized infrastructure they don't control."
+    },
+    {
+      "id": "art_9177744",
+      "title": "Chainflip confirms $12M hack, offers attacker 10% bounty",
+      "url": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty",
+      "source": "Cointelegraph",
+      "source_domain": "cointelegraph.com",
+      "category": "Security",
+      "sentiment": "bearish",
+      "summary": "Cross-chain protocol Chainflip has confirmed a security breach resulting in a $12 million loss of Bitcoin, Ether, and stablecoins. The protocol is attempting to recover the funds by offering the attacker a 10% bounty.",
+      "significance": 6,
+      "primary_source": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty",
+      "themes": [
+        "security",
+        "exploit"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M80VMG116PQ22VH13YJ5ANN8/hacky-hack-2.png",
+      "why_it_matters": "Chainflip's 10% bounty offer on a $12M hack reveals the pricing tension in exploit response: at $1.2M, the bounty exceeds most bug-bounty program caps but remains below the legal-defense cost of attribution, suggesting protocols are now optimizing for speed of recovery over deterrence."
+    },
+    {
+      "id": "art_9082756",
+      "title": "Wintermute policy chief calls for crypto lobby to 'clean house' in D.C.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-20-wintermute-policy-chief-calls-for-crypto-lobby-clean-house-d-c-444721",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Regulation",
+      "sentiment": "neutral",
+      "summary": "Wintermute's policy chief is urging the crypto lobbying community in Washington D.C. to restructure and improve its approach. This comes amid ongoing tensions between lawmakers, banks, and the SEC regarding tokenization exemptions.",
+      "significance": 5,
+      "primary_source": "https://www.theblock.co/news/regulation/2026-11-20-wintermute-policy-chief-calls-for-crypto-lobby-clean-house-d-c-444721",
+      "themes": [
+        "regulation",
+        "lobbying"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/image-2026-11-20T172211.323.jpg",
+      "why_it_matters": "Wintermute's 'clean house' framing implies the crypto lobby's current structure is priced into regulatory outcomes already, and that reorganization is a necessary condition for advancing tokenization exemptions in the next Congress."
+    },
+    {
+      "id": "art_9077835",
+      "title": "Ark buys $90 million worth of Anthropic shares on debut, trims Ethereum and Solana staking ETF holdings",
+      "url": "https://www.theblock.co/news/markets/2026-11-20-ark-buys-90-million-worth-of-anthropic-shares-on-debut-trims-ethereum-and-solana-staking-etf-holdings-444226",
+      "source": "The Block",
+      "source_domain": "theblock.co",
+      "category": "Investment",
+      "sentiment": "neutral",
+      "summary": "Ark Invest has reduced its holdings in Ethereum and Solana staking ETFs. Simultaneously, the firm invested approximately $90 million into shares of AI company Anthropic.",
+      "significance": 5,
+      "primary_source": "https://www.theblock.co/news/markets/2026-11-20-ark-buys-90-million-worth-of-anthropic-shares-on-debut-trims-ethereum-and-solana-staking-etf-holdings-444226",
+      "themes": [
+        "investment",
+        "asset-management"
+      ],
+      "is_fundraising": false,
+      "funding_amount": null,
+      "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-2305894191.jpg",
+      "why_it_matters": "Ark's $90M Anthropic purchase concurrent with staking ETF trims suggests institutional allocators are repricing the risk-adjusted return of crypto yield against AI equity exposure, a rotation that tightens passive-flow support for Ethereum and Solana staking narratives."
+    }
+  ],
+  "deals": [],
+  "on_the_radar": [
+    {
+      "id": "art_9087877",
+      "title": "Solana’s Institutional Breakpoint",
+      "url": "https://www.galaxy.com/insights/research/solana-breakpoint-institutional-adoption-mainnet-1",
+      "source": "Galaxy — Network",
+      "category": "Infrastructure",
+      "sentiment": "neutral",
+      "summary": "The article analyzes Solana's progress in attracting institutional interest, specifically within the payments and tokenization sectors. It suggests that while performance is a strength, it may not be the sole factor for long-term institutional dominance.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4DbCN7Y3FB7HfvgdDvd5UU/ef0cea0a784e832b1c2dea23bd966f7b/Solana_Breakpoint_image_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_9073164",
+      "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
+      "url": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase",
+      "source": "Cointelegraph",
+      "category": "Investment",
+      "sentiment": "neutral",
+      "summary": "VanEck is terminating its custody agreements with Gemini for its Bitcoin, Ether, and Solana ETFs. The firm will maintain its custody relationship with Coinbase while ending a Solana staking arrangement with Gemini.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7W70S79VWG5A9Q3C9MCT7R8/vvv.png"
+    },
+    {
+      "id": "art_9097564",
+      "title": "How I tricked a hacking agent into running my code",
+      "url": "https://a16zfrontier.com/posts/article/deceiving-ai-hacking-agents/",
+      "source": "a16z crypto",
+      "category": "Security",
+      "sentiment": "neutral",
+      "summary": "A lab experiment demonstrates that AI-driven hacking agents can be deceived into executing a defender's code. This research follows FBI warnings regarding the ARTEX threat.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/HXll-KpbIAA9dCz.jpeg"
+    },
+    {
+      "id": "art_9084400",
+      "title": "Olympus Token Holder Report Q3 2026",
+      "url": "https://messari.io/report/olympus-token-holder-report-q3-2026",
+      "source": "Messari — Research",
+      "category": "DeFi",
+      "sentiment": "bullish",
+      "summary": "Olympus released its Q3 2026 token holder report, highlighting a 24% increase in revenue. The protocol maintains backing at $12.04 per OHM with convertible deposits totaling $21.1M.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/92e3e120ea197318f8872b8ff5e6f5908d1190ff-7500x3000.png"
+    },
+    {
+      "id": "art_9188823",
+      "title": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
+      "url": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand",
+      "source": "Cointelegraph",
+      "category": "Bitcoin",
+      "sentiment": "bearish",
+      "summary": "Bitcoin experienced a brief price flash crash to $17,000 on Kraken's Canadian-dollar trading pair. Kraken has decided to uphold all executed trades, ruling that no system breach occurred.",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M819JW0D1CC9W3NZY32KQ4A0/hi-kraken2-1.jpg"
+    },
+    {
+      "id": "art_9141372",
+      "title": "Crypto Fundraisings on Week 15 ",
+      "url": "https://crypto-fundraising.info/blog/dates-15-21-nov-2026/",
+      "source": "Crypto Fundraising",
+      "category": "Investment",
+      "sentiment": "neutral",
+      "summary": "The article provides a weekly summary of cryptocurrency fundraising events for the period of November 15-21, 2026. It serves as a general tracker for investment opportunities in the crypto space.",
+      "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/15-21-Nov-2026.png"
+    }
+  ],
+  "worth_a_read": [
+    {
+      "id": "art_9087877",
+      "title": "Solana’s Institutional Breakpoint",
+      "url": "https://www.galaxy.com/insights/research/solana-breakpoint-institutional-adoption-mainnet-1",
+      "source": "Galaxy — Network",
+      "note": "Galaxy's institutional Solana analysis likely contains positioning data on validator economics and fee markets that would sharpen underwrites on whether the chain's current throughput justifies its infrastructure valuation.",
+      "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4DbCN7Y3FB7HfvgdDvd5UU/ef0cea0a784e832b1c2dea23bd966f7b/Solana_Breakpoint_image_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+    },
+    {
+      "id": "art_9097564",
+      "title": "How I tricked a hacking agent into running my code",
+      "url": "https://a16zfrontier.com/posts/article/deceiving-ai-hacking-agents/",
+      "source": "a16z crypto",
+      "note": "a16z's agent-hacking case study matters for teams building autonomous on-chain systems, as it maps attack surfaces in LLM-based execution that most security audits don't yet cover.",
+      "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/HXll-KpbIAA9dCz.jpeg"
+    },
+    {
+      "id": "art_9084400",
+      "title": "Olympus Token Holder Report Q3 2026",
+      "url": "https://messari.io/report/olympus-token-holder-report-q3-2026",
+      "source": "Messari — Research",
+      "note": "Messari's Olympus report should be checked for whether the protocol's treasury mechanics have stabilized or if holder concentration is rebuilding, which would signal whether the 2022 collapse model still applies.",
+      "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/92e3e120ea197318f8872b8ff5e6f5908d1190ff-7500x3000.png"
+    }
+  ],
+  "all_resources": [
+    {
+      "category": "Bitcoin",
+      "items": [
+        {
+          "id": "art_9188823",
+          "title": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
+          "url": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M819JW0D1CC9W3NZY32KQ4A0/hi-kraken2-1.jpg"
+        }
+      ]
+    },
+    {
+      "category": "DeFi",
+      "items": [
+        {
+          "id": "art_9084400",
+          "title": "Olympus Token Holder Report Q3 2026",
+          "url": "https://messari.io/report/olympus-token-holder-report-q3-2026",
+          "source": "Messari — Research",
+          "sentiment": "bullish",
+          "image_url": "https://cdn.sanity.io/images/2bt0j8lu/production/92e3e120ea197318f8872b8ff5e6f5908d1190ff-7500x3000.png"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "id": "art_9087877",
+          "title": "Solana’s Institutional Breakpoint",
+          "url": "https://www.galaxy.com/insights/research/solana-breakpoint-institutional-adoption-mainnet-1",
+          "source": "Galaxy — Network",
+          "sentiment": "neutral",
+          "image_url": "https://images.ctfassets.net/h62aj7eo1csj/4DbCN7Y3FB7HfvgdDvd5UU/ef0cea0a784e832b1c2dea23bd966f7b/Solana_Breakpoint_image_2400x1340.jpg?w=1200&h=675&fit=fill&q=60&fm=jpg&fl=progressive"
+        }
+      ]
+    },
+    {
+      "category": "Investment",
+      "items": [
+        {
+          "id": "art_9077835",
+          "title": "Ark buys $90 million worth of Anthropic shares on debut, trims Ethereum and Solana staking ETF holdings",
+          "url": "https://www.theblock.co/news/markets/2026-11-20-ark-buys-90-million-worth-of-anthropic-shares-on-debut-trims-ethereum-and-solana-staking-etf-holdings-444226",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/GettyImages-2305894191.jpg"
+        },
+        {
+          "id": "art_9073164",
+          "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
+          "url": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase",
+          "source": "Cointelegraph",
+          "sentiment": "neutral",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7W70S79VWG5A9Q3C9MCT7R8/vvv.png"
+        },
+        {
+          "id": "art_9141372",
+          "title": "Crypto Fundraisings on Week 15 ",
+          "url": "https://crypto-fundraising.info/blog/dates-15-21-nov-2026/",
+          "source": "Crypto Fundraising",
+          "sentiment": "neutral",
+          "image_url": "https://crypto-fundraising.info/wp-content/uploads/weeklygraphs/share/15-21-Nov-2026.png"
+        }
+      ]
+    },
+    {
+      "category": "Regulation",
+      "items": [
+        {
+          "id": "art_9082756",
+          "title": "Wintermute policy chief calls for crypto lobby to 'clean house' in D.C.",
+          "url": "https://www.theblock.co/news/regulation/2026-11-20-wintermute-policy-chief-calls-for-crypto-lobby-clean-house-d-c-444721",
+          "source": "The Block",
+          "sentiment": "neutral",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/image-2026-11-20T172211.323.jpg"
+        },
+        {
+          "id": "art_9226984",
+          "title": "Half of wallets on Trump’s dinner list got tokens from non-US exchanges",
+          "url": "https://cointelegraph.com/news/half-wallets-trumps-dinner-list-got-tokens-from-non-us-exchanges",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M82Y4PMA2YN6DTA00JY4GVH4/hi-crypto-charts-101-how-to-read-cryptocurrency-charts-trump.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "id": "art_9221810",
+          "title": "A $2 million exploit leads to a $3.7 million free-for-all as traders empty Fusionist's ACE bridge",
+          "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
+          "source": "The Block",
+          "sentiment": "bearish",
+          "image_url": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/11/ChatGPT-Image-Nov-22-2026-06_14_06-PM_clean.png"
+        },
+        {
+          "id": "art_9183899",
+          "title": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
+          "url": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M8127PW0MX9AKGQ6Y4GQ51JX/hand-laptop-coin.png"
+        },
+        {
+          "id": "art_9177744",
+          "title": "Chainflip confirms $12M hack, offers attacker 10% bounty",
+          "url": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty",
+          "source": "Cointelegraph",
+          "sentiment": "bearish",
+          "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M80VMG116PQ22VH13YJ5ANN8/hacky-hack-2.png"
+        },
+        {
+          "id": "art_9097564",
+          "title": "How I tricked a hacking agent into running my code",
+          "url": "https://a16zfrontier.com/posts/article/deceiving-ai-hacking-agents/",
+          "source": "a16z crypto",
+          "sentiment": "neutral",
+          "image_url": "https://dwt2zme5yrom6.cloudfront.net/uploads/2026/11/HXll-KpbIAA9dCz.jpeg"
+        }
+      ]
+    }
+  ],
+  "what_to_watch": [],
+  "linkedin_post": "Three bridges, $17.7 million, one day. Chainflip's bounty offer is now the standard playbook: 10% to make the problem go away. I don't think we've priced what that standard costs.\n\nThe Fusionist exploit is worse than the headline. Two million in fake mints became $3.7 million because the bridge let traders swap counterfeit ACE for real assets without settlement checks. That's not a bug. That's a design assumption about user behavior that held until it didn't.\n\nArk just put $90 million into Anthropic and cut Ethereum and Solana staking ETF exposure. The rotation is explicit. We're watching allocators treat staking yield as a crowded trade and AI equity as the uncorrelated return source. The repricing has started.\n\nWhat confirms this: if Q3 staking ETF flows don't recover after the summer lull, the yield narrative loses its institutional floor. What kills it: a bridge exploit with exchange contagion that forces CEXs to permanently delist bridged assets.\n\nWe're underwriting cross-chain infrastructure on speed of recovery now. That's a lower bar than we should accept."
+}
